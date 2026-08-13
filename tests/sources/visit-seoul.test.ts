@@ -86,11 +86,12 @@ describe('VisitSeoulSource.normalize', () => {
       ...detail,
       schdul_info_bgnde: '',
       schdul_info_endde: '',
-      extra: { ...detail.extra, cmmn_use_time: '상시 개방' },
+      // '상시 개방'은 이제 00:00~24:00으로 파싱된다. 진짜 파싱 불가 원문을 쓴다.
+      extra: { ...detail.extra, cmmn_use_time: '업체별 상이' },
     }
     const [item] = source.normalize([placeDetail]) as any
     expect(item.hours).toBeNull()
-    expect(item.useTime).toBe('상시 개방')
+    expect(item.useTime).toBe('업체별 상이')
   })
 
   it('cate_depth의 마지막 마디를 카테고리로 쓴다', () => {

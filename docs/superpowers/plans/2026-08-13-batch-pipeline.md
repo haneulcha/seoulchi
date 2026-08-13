@@ -1099,6 +1099,14 @@ git commit -m "feat: 서울시 문화행사 소스 어댑터 추가
 
 스펙 6장의 명시된 제약: 100% 파싱되지 않는다. **실패를 조용히 숨기지 않고 `null`을 반환**해 호출 측이 원문을 그대로 보여주게 한다.
 
+**Task 6 실측 후 규칙 하나를 추가했다.** 파싱 실패 원문의 최빈 패턴이
+`24시간` / `상시개방` 계열이었다(실패 116건 중 40건). `00:00~24:00`으로 읽는다 —
+스키마도 새 필드도 건드리지 않고 "지금 열려 있나" 계산이 그대로 돈다.
+성공률 **54% → 86%**.
+
+`연중무휴`는 이 규칙에 넣지 않는다. 쉬는 날이 없다는 뜻이지 24시간이라는 뜻이 아니다
+(`연중무휴 10:00~18:00`이 흔하다). 그건 `closedWeekdays` 쪽 관심사다.
+
 - [ ] **Step 1: 실패하는 테스트 작성**
 
 `tests/lib/hours.test.ts`:
@@ -1236,7 +1244,7 @@ export function parseHours(useTime?: string, closedDays?: string): ParsedHours |
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/lib/hours.test.ts`
-Expected: PASS (11개 통과)
+Expected: PASS (21개 통과 — 상시 개방 규칙 포함)
 
 - [ ] **Step 5: 커밋**
 
