@@ -1,0 +1,375 @@
+# 서울치(seoulchi) — 서울 행사·이벤트 웹앱 설계 스펙
+
+- **작성일**: 2026-08-13
+- **상태**: 초안
+- **프로젝트 디렉토리**: `/Users/haneul/Projects/seoulchi` (빈 git 레포, main 브랜치)
+
+---
+
+## 1. 개요 / 목적
+
+서울에 살면서도 서울에 무슨 일이 일어나는지 모르는 사람을 위한 웹앱. "지금 / 이번 주에 서울에서 무슨 행사·이벤트가 있는지"를 알려준다.
+
+- 제작자 본인이 쓰는 것이 1차 목적 (personal-use-first). 남에게 보여주기 위한 기능보다 본인이 매주 실제로 쓰는 흐름을 우선한다.
+- 모바일을 배제하지 않는 정도가 아니라 **모바일 우선**. 핵심 시나리오 중 하나가 "밖에 나와 있는 상태"이기 때문이다.
+
+## 2. 사용 시나리오와 우선순위
+
+우선순위 순:
+
+| 순위 | 시나리오 | 설명 | 중심축 | MVP |
+|---|---|---|---|---|
+| A | 주말 계획 | 목/금 저녁에 "이번 주말 뭐하지" 하며 훑어봄 | 시간축 | 포함 |
+| B | 지금 당장 근처에서 | 밖에 나와 있는 상태에서 "여기서 뭐 하고 있지?" — **비중이 크다** | 위치 + 오늘 | 포함 |
+| D | 놓치기 싫은 것 알림 | 키워드 알림·구독·푸시 | — | 범위 밖 (확장 지점) |
+| C | 정기 다이제스트 | 주간 뉴스레터 등 | — | 범위 밖 (확장 지점) |
+
+A와 B가 화면 구조를 결정한다: A → 홈(선별)과 탐색(시간·필터), B → 근처 페이지(위치 기반, 모바일 우선).
+
+## 3. 제품의 태도: 선별형이 메인
+
+- 홈은 **선별형(편집자)**이다. "이번 주 서울, 이 12개"처럼 강하게 추려서 보여준다. 결정 피로를 없애는 것이 목적.
+- 망라형(검색엔진식) 탐색은 **별도 페이지 `/explore`**로 분리한다.
+- **근거**: 선별과 망라를 한 화면에서 "둘 다 반쯤" 하면 어느 쪽도 못 하는 화면이 된다. 우선순위(선별이 메인)가 명확하므로 페이지를 분리해 각각의 역할을 온전히 지킨다.
+
+## 4. 아키텍처 개요
+
+```
+[서울시 문화행사 API]  [비짓서울 API]
+        │                  │
+        ▼                  ▼
+   배치 스크립트 (하루 1회: 로컬 → 나중에 GitHub Actions cron)
+   fetch → hydrate → normalize → merge → score → curate(LLM) → emit
+        │
+        ▼
+   data/*.json  (git 커밋 → 자동 재배포)
+        │
+        ▼
+   정적 웹앱 (TanStack Start, SSG, 정적 호스팅)
+```
+
+핵심 결정과 근거:
+
+- **전부 정적, DB 없음.** 원본 API가 하루 1회 갱신이므로 실시간 서빙의 이득이 없다 — 이 사실이 아키텍처를 결정했다. 서버 런타임 0, DB 0, 런타임 API 키 0.
+- 서울시 API가 죽어도 앱은 멀쩡하다 (마지막 커밋된 JSON을 그대로 서빙).
+- 데이터 변경 이력이 git에 남아서 "지난주엔 뭐가 있었지"가 공짜로 된다.
+- 나중에 DB(Supabase)로 갈 때는 배치 스크립트의 출력 대상만 바꾸면 된다 (JSON write → DB upsert). 파이프라인의 나머지는 그대로다.
+
+## 5. 데이터 소스: 두 API를 대칭적으로 사용
+
+### 5-1. 서울시 문화행사 정보 (data.seoul.go.kr, OA-15486)
+
+- **갱신 주기**: 매일 1회
+- **인증**: 인증키 필요 (무료, 즉시 발급). 발급 여부 미확인 — 선행 작업 (14장 참조).
+- **성격**: 공공 문화행사 **전량**. 구청 문화강좌부터 시립미술관 특별전까지 다 들어온다. 망라성이 강점이지만 품질 편차가 크다 — 그래서 선별 단계가 필요하다.
+- **수집 비용**: 낮음. 좌표가 목록에 바로 포함되어 지오코딩이 불필요하고, 목록 1회 호출로 전량 수집 가능 (N+1 없음).
+
+제공 필드:
+
+| 필드 | 내용 |
+|---|---|
+| 분류 | 카테고리 |
+| 자치구 | 구 단위 지역 |
+| 공연/행사명 | 제목 |
+| 장소 | 장소명 |
+| 날짜, 시작일, 종료일 | 행사 기간 |
+| 행사시간 | 시간 |
+| 기관명 | 주최 기관 |
+| 이용대상 | 대상 |
+| 이용요금, 유/무료 | 요금 |
+| 출연자, 프로그램 | 상세 내용 |
+| 홈페이지, 문의 | 링크·연락처 |
+| 위치 (위/경도) | **좌표가 목록에 포함** |
+
+이미지 필드(`MAIN_IMG` 추정)는 문서에서 확인되지 않았다 → **미확인, 구현 첫 단계에서 실제 응답으로 검증할 것** (14장 참조).
+
+### 5-2. 비짓서울 API (api-call.visitseoul.net)
+
+- **인증**: `VISITSEOUL-API-KEY` 헤더 필수. `Content-Type` / `Accept` 모두 `application/json;charset=UTF-8`. 키 발급 여부 미확인 — 선행 작업.
+- **성격**: 관광 관점으로 선별된 콘텐츠. 편집 품질이 높고 이미지가 보장된다.
+
+엔드포인트 4개 전부:
+
+| 문서 | API | 엔드포인트 | 역할 |
+|---|---|---|---|
+| view/10 | 카테고리 목록 | `GET /api/v1/category/list` | 마스터 데이터(캐시). 응답: `com_ctgry_sn`, `ctgry_nm`, `ctgry_path`, `ctgry_level`(1~3), `sort_no` |
+| view/6 | 언어 코드 | `GET /api/v1/code/lang` | 마스터 데이터(캐시). 응답: `code_id`, `code_nm`. 24시간 이상 캐싱 권장 |
+| view/3 | 콘텐츠 목록 | `POST /api/v1/contents/list` | cid 수집. 요청: `com_ctgry_sn`, `lang_code_id`, `keyword`, `sort_type`(latest/abc), `page_no`. 응답: `cid`, `post_ty`, `com_ctgry_sn`, `cate_depth`, `multi_lang_list`, `main_img`, `post_sj`, `sumry`, `creat_dt_text`, `updt_dt_text` + `paging{page_no, page_size(50), total_count}` |
+| view/1 | **콘텐츠 정보** | `GET /api/v1/contents/info` | **본체.** 요청: `cid` |
+
+`/contents/info` 응답 필드 (이 소스의 핵심):
+
+| 구역 | 필드 | 내용 |
+|---|---|---|
+| 최상위 | `cid`, `lang_code_id`, `com_ctgry_sn`, `cate_depth`, `multi_lang_list` | 식별·분류 |
+| 최상위 | `main_img`, `relate_img`(배열) | 이미지 (보장됨) |
+| 최상위 | `post_sj`, `sumry` | 제목, 사람이 쓴 요약 |
+| 최상위 | **`schdul_info_bgnde`**, **`schdul_info_endde`** | **행사 시작일·종료일** |
+| 최상위 | `creat_dt_text`, `updt_dt_text`, `tag`(배열), `post_desc`(HTML) | 메타·상세 |
+| `extra` | `cmmn_telno`, `cmmn_hmpg_url` | 연락처·홈페이지 |
+| `extra` | **`cmmn_use_time`** | 이용시간 (한국어 자유 텍스트) |
+| `extra` | **`trrsrt_use_chrge`** (F=무료/C=유료), `trrsrt_use_chrge_guidance` | 요금·할인 안내 |
+| `extra` | **`closed_days`** | 휴무일 (헛걸음 방지) |
+| `extra` | `disabled_facility`(배열) | 장애인 편의시설 (접근성) |
+| `traffic` | `adres`, **`new_adres`**, `new_zip_code` | 지번·도로명 주소 |
+| `traffic` | **`map_position_x`**(경도), **`map_position_y`**(위도) | 좌표 |
+| `traffic` | **`subway_info`** | 지하철 교통 정보 (서울 앱에 매우 적합) |
+
+중요한 판단 근거:
+
+- 비짓서울은 **리스트에는 좌표·행사기간이 없지만 상세에는 다 있다.** 따라서 "보강재"가 아니라 **1급 대칭 소스**다.
+- 오히려 서울시 문화행사 API에 없는 것을 갖고 있다: `subway_info`, `closed_days`, `disabled_facility`, 사람이 쓴 `sumry`, 보장된 `main_img`.
+- **N+1 문제는 배치에서는 문제가 아니다.** 요청 경로가 아니라 하루 1회 도는 스크립트이기 때문이다. 게다가 리스트 응답의 `updt_dt_text`를 이용해 `cid` + `updt_dt_text`를 키로 상세 응답을 캐시하면, 다음 실행 때 `updt_dt_text`가 그대로인 항목은 상세 호출을 **생략**한다. 초회만 전량(수백~수천 건, rate limit을 두고 몇 분), 이후엔 바뀐 것만 → 정상 상태에서 호출량이 거의 0으로 수렴한다. 캐시 파일(`data/cache/visitseoul.json`)도 레포에 두면 GitHub Actions에서 그대로 재사용된다.
+- 문서에 **`/contents/standard/list` ("표준 콘텐츠 조회")** 엔드포인트가 언급된다. 벌크 조회일 가능성이 있고, 상세를 통째로 준다면 N+1 자체가 사라진다. **키 발급 후 최우선으로 확인할 것** (14장 참조).
+- **수집 범위: 행사성 카테고리뿐 아니라 시설/명소까지 포함한다.** 근거: 선별형 제품의 최대 약점인 "이번 주 맘에 드는 행사가 없음 = 막다른 길"을 메우기 위해서다. 카테고리 트리(`category/list`)를 먼저 뽑아 어디까지 포함할지 확정하는 것이 선행 작업.
+
+### 5-3. 두 소스의 역할 (대칭)
+
+| | 서울시 문화행사 | 비짓서울 |
+|---|---|---|
+| 성격 | 공공 문화행사 전량 | 관광 관점으로 선별된 콘텐츠 |
+| 강점 | 망라성, 목록 1회로 전량 수집 | 편집 품질, 이미지 보장, 지하철·휴무일·접근성 |
+| 좌표/기간 | 목록에 포함 | 상세에 포함 |
+| 수집 비용 | 낮음 | 초회만 높음, 이후 증분 |
+
+- 문화행사 API가 **누락을 막고**(탐색의 망라성), 비짓서울이 **품질을 올린다**(홈 카드의 이미지·소개문).
+- 겹치는 항목은 `sumry` / `main_img`를 비짓서울 것으로 덮어쓴다.
+
+## 6. 데이터 모델: Event | Place
+
+행사와 장소는 시간 의미가 다르므로 `kind`로 구분한다. 행사는 "언제 하는가", 장소는 "언제 열려 있는가"가 질문이다.
+
+```ts
+type ItemKind = 'event' | 'place'
+
+interface BaseItem {
+  id: string                  // `sc-{원본id}` | `vs-{cid}` — 소스 간 충돌 방지 + URL 안전
+  source: 'seoul-culture' | 'visit-seoul'
+  kind: ItemKind
+  title: string
+  summary?: string            // 비짓서울 sumry 우선
+  category: string            // 정규화된 카테고리
+  district?: string           // 자치구
+  place: string               // 장소명
+  address?: string
+  lat?: number                // 없을 수 있음 → 근처 검색에서 제외
+  lng?: number
+  imageUrl?: string
+  linkUrl?: string
+  isFree?: boolean
+  fee?: string                // 원문 (할인 안내 포함)
+  subwayInfo?: string         // 비짓서울 전용
+  tags?: string[]
+}
+
+interface EventItem extends BaseItem {
+  kind: 'event'
+  startDate: string           // ISO
+  endDate: string
+}
+
+interface PlaceItem extends BaseItem {
+  kind: 'place'
+  useTime?: string            // cmmn_use_time 원문
+  closedDays?: string         // closed_days 원문
+  hours?: ParsedHours | null  // 파싱 성공 시에만
+}
+```
+
+- **`id` 형식**: `sc-{원본id}`(서울시 문화행사) / `vs-{cid}`(비짓서울). 콜론 대신 하이픈을 쓰는 이유는 상세 라우트가 `/e/[id]`라서 URL 경로에 그대로 들어가기 때문 — 인코딩 없이 안전해야 한다.
+- **`kind` 판정 규칙**: `schdul_info_bgnde` / `schdul_info_endde`가 있고 유효하면 `event`, 없으면 `place`. 서울시 문화행사 API 항목은 전부 `event`.
+- **주차(`YYYY-Www`) 정의**: **ISO 8601 주차, 월요일 시작, KST(UTC+9) 기준**. 예: `2026-W33`. 배치와 앱이 같은 유틸을 공유해 계산한다 — 어긋나면 존재하지 않는 파일을 읽게 된다.
+- **명시된 제약 — 영업시간 파싱은 best-effort**: `cmmn_use_time`("10:00~18:00, 매주 월요일 휴관" 같은 한국어 자유 텍스트)과 `closed_days` 파싱은 100% 되지 않는다. 파싱 성공 시에만 "지금 열림" 배지를 띄우고, 실패 시에는 배지 없이 **원문 그대로** 표시한다. 실패를 조용히 숨기지 않아 최악의 경우에도 사용자가 직접 판단할 수 있게 한다. 파싱 성공률은 실제 데이터를 보며 규칙을 늘려간다.
+
+## 7. 배치 파이프라인
+
+```
+fetch → hydrate(cache-aware) → normalize → merge → score → curate → emit
+```
+
+1. **fetch** — 소스별 어댑터가 원본 목록을 수집한다.
+2. **hydrate** — 상세가 필요한 소스만. `DetailCache`(`cid` → `{updt_dt_text, detail}`)를 보고 변경분만 상세 호출한다. 문화행사 소스는 통과(identity).
+3. **normalize** — 각 어댑터가 공통 `EventItem` / `PlaceItem` 스키마로 변환한다. **소스별 지식이 사는 유일한 곳.** 이후 단계는 소스를 모른다.
+4. **merge** — 두 소스 병합 + 중복 제거(제목 정규화 + 장소 기준). 겹치면 비짓서울의 `sumry` / `main_img`를 얹는다.
+   - **생존 `id` 규칙**: 겹칠 때는 **서울시 문화행사 항목의 `id`(`sc-…`)를 남긴다.** 근거는 망라성이다 — 문화행사 API가 전량을 담당하므로 그쪽 id가 안정적인 기준선이 된다. 비짓서울에만 있는 항목은 당연히 `vs-…`를 쓴다.
+   - 흡수된 `vs-…` id는 `mergedFrom: string[]`에 남겨, 나중에 원본 추적과 링크 표시에 쓴다.
+5. **score** — 규칙 기반 점수로 300+ 후보를 약 40개로 거른다. 점수 요소: 이번 주 시작 / 주말 개최 / 무료 / 대형 기관 화이트리스트 / 마감 임박 가중치.
+6. **curate** — LLM 어댑터가 후보 40개 → 최종 12개 + 한 줄 코멘트(40자 내외). 실패 시 규칙 상위 12개로 폴백한다.
+7. **emit** — JSON 파일 쓰기 (9장의 출력 파일).
+
+소스 인터페이스:
+
+```ts
+export interface EventSource {
+  readonly name: string
+  fetchList(): Promise<RawListItem[]>
+  hydrate(items: RawListItem[], cache: DetailCache): Promise<RawItem[]>  // 불필요하면 identity
+  normalize(items: RawItem[]): Array<EventItem | PlaceItem>
+}
+```
+
+## 8. 선별(큐레이션)과 LLM 어댑터
+
+### 8-1. 선별 기준: 규칙 + LLM 하이브리드
+
+- 규칙으로 후보를 300+ → 약 40개로 거른 뒤, **그 40개만** LLM에 넘겨 최종 12개 + 한 줄 코멘트(40자 내외)를 받는다.
+- **근거**: 전량을 LLM에 넘기면 비싸고 느리고 결과가 흔들린다. 규칙이 명백한 것(기간·무료·기관)을 거르고, LLM은 규칙으로 표현하기 어려운 "이번 주에 볼 만한가"만 판단한다.
+- **폴백**: LLM이 실패하면 규칙 상위 12개를 그대로 쓴다 — **화면이 절대 비지 않는다.**
+- **환각 방어 2겹**:
+  - (a) LLM은 후보의 `id`만 고르게 하고 이벤트를 생성하지 못하게 한다.
+  - (b) 응답을 받은 뒤 candidates에 없는 `id`는 버린다. 12개 중 9개만 살아남으면 규칙 상위에서 3개를 채운다.
+
+### 8-2. LLM 실행 방식
+
+- **Ollama 로컬로 시작**, 나중에 다른 제품으로 교체 가능하도록 어댑터 인터페이스로 감싼다.
+- 구현체 3종: `OllamaProvider`(시작점), `AnthropicProvider`(나중), `RuleOnlyProvider`(폴백/테스트).
+- `LLM_PROVIDER=ollama|anthropic|rule` 환경변수로 선택한다. 호출 측은 provider 종류를 모른다.
+- 두 프로바이더 모두 동일한 JSON 스키마를 강제한다 (Ollama는 `format`에 JSON 스키마, Anthropic은 `output_config.format`). 따라서 프롬프트를 공유하고 A/B 비교가 가능하다.
+- 사용된 provider 이름은 `data/meta.json`에 기록한다.
+- **후보 변환 시 결측값 처리**: `CurationCandidate`의 `district` / `isFree`는 필수인데 `BaseItem`에서는 옵셔널이다. 변환할 때 **항목을 버리지 않고 기본값으로 채운다** — `district`는 `'미상'`, `isFree`는 `false`. 근거: 자치구가 비었다는 이유로 좋은 행사를 후보에서 떨어뜨리면 선별 품질이 떨어진다. LLM에게는 "미상"도 유용한 정보다.
+
+확정된 인터페이스:
+
+```ts
+export interface CurationCandidate {
+  id: string
+  title: string
+  category: string
+  district: string
+  place: string
+  startDate: string
+  endDate: string
+  isFree: boolean
+  target?: string
+  org?: string
+}
+
+export interface CurationPick {
+  id: string      // 반드시 candidates 안의 id
+  reason: string  // 한 줄 코멘트 (40자 내외)
+}
+
+export interface LlmProvider {
+  readonly name: string   // meta.json에 기록됨
+  curate(input: {
+    candidates: CurationCandidate[]
+    count: number
+    weekLabel: string     // 예: "2026년 8월 셋째 주"
+  }): Promise<CurationPick[]>
+}
+```
+
+## 9. 저장 및 배포
+
+### 9-1. 데이터 저장: 레포에 JSON 커밋 (DB 없음)
+
+출력 파일:
+
+| 파일 | 내용 |
+|---|---|
+| `data/events/YYYY-Www.json` | 그 주의 **event**만 (탐색·근처용, 정규화된 최소 필드) |
+| `data/places.json` | **place 전량** (주에 묶이지 않음) |
+| `data/curated/YYYY-Www.json` | 선별 12개 + "언제 가도 좋은 곳" 6개의 id + 코멘트 |
+| `data/meta.json` | 마지막 갱신 시각, 소스별 건수, 사용된 LLM provider 이름 |
+| `data/cache/visitseoul.json` | 비짓서울 상세 응답 캐시 (`cid` + `updt_dt_text` 키) |
+
+- **주 단위 분할 근거**: 첫 로딩이 가볍고, 지난 주 데이터가 git에 자연스럽게 쌓인다. 전체 건수가 미확인이라 파일 크기는 실측이 필요하다 (14장).
+- **place를 주 파일에서 분리한 근거**: place는 상설이라 특정 주에 속하지 않는다. 주 파일에 매번 전량을 복사하면 같은 데이터가 매주 git에 중복 커밋되어 레포가 불필요하게 커진다. `places.json` 하나를 갱신하는 편이 diff도 읽기 쉽다. 탐색·근처 화면은 두 파일을 함께 읽어 합친다.
+
+### 9-2. 배치 실행 위치: 로컬 → GitHub Actions
+
+- 초기에는 **로컬 스크립트**로 실행하며 프롬프트를 다듬는다 (품질 확인 단계).
+- 만족스러워지면 **동일한 스크립트**를 GitHub Actions cron으로 옮긴다. 스크립트는 그대로고 실행 주체만 바뀐다.
+- GitHub Actions가 결과 JSON을 레포에 커밋 → 자동 재배포.
+
+**단, Ollama는 GitHub Actions 러너에서 사실상 돌릴 수 없다.** 모델 다운로드와 추론이 러너의 시간·메모리 한계에 맞지 않는다. 따라서 두 결정은 다음과 같이 짝지어진다:
+
+| 단계 | 실행 위치 | `LLM_PROVIDER` |
+|---|---|---|
+| 1. 프롬프트 다듬기 | 로컬 (내 맥) | `ollama` |
+| 2. 운영 | GitHub Actions cron | `anthropic` (또는 `rule`) |
+
+즉 **Actions로의 이관 시점이 곧 provider 전환 시점**이다. 어댑터 인터페이스가 이 전환을 환경변수 한 줄로 만들어주는 것이 설계 의도이며, 이 긴장은 결함이 아니라 예정된 경로다. Ollama를 계속 쓰고 싶다면 대안은 self-hosted runner(본인 맥을 러너로 등록)이지만, 그러면 "맥이 꺼져 있어도 돈다"는 이점이 사라진다.
+
+### 9-3. 배포
+
+- Vercel 등 정적 호스팅. 데이터가 전부 정적 JSON이므로 SSG로 빌드한다.
+
+## 10. 화면 구조 (MVP)
+
+### 10-1. 홈 `/` — 선별형 (메인)
+
+- "이번 주 서울" 큰 카드 12개. 각각 한 줄 코멘트, 이미지(없으면 카테고리 색 블록), 제목·장소·기간·무료 배지.
+- 그 아래 **"언제 가도 좋은 곳"** — place 6개. **항상 고정 노출**한다 (행사 품질에 따라 조건부로 띄우지 않는다). 근거: "이번 주 맘에 드는 행사가 없음"이라는 막다른 길을 항상 메워야 하기 때문.
+- **place 6개 선정 규칙** (LLM 없이 규칙만):
+  1. 자격 필터 — 이미지(`imageUrl`)와 좌표(`lat`/`lng`)가 **둘 다** 있는 place만. 이미지 없는 카드가 홈 하단에 놓이면 초라해 보이고, 좌표가 없으면 근처 화면으로 이어지지 않는다.
+  2. 점수 — `summary` 있음 / `subwayInfo` 있음 / `disabled_facility` 있음 / 무료 에 가점.
+  3. **주차 시드로 회전** — 자격을 갖춘 목록을 점수순 정렬한 뒤 `YYYY-Www`를 시드로 결정론적으로 6개를 고른다. 매주 다른 조합이 나오면서도 같은 주에는 항상 같은 결과가 나온다(빌드 재현성).
+  - 근거: LLM을 여기 쓰지 않는 이유는 place가 상설이라 "이번 주 왜 볼 만한가"라는 판단이 성립하지 않기 때문이다. 회전만으로 신선함이 충분하다.
+- 하단에 "전체 둘러보기 →" 링크로 `/explore`.
+
+### 10-2. 탐색 `/explore` — 망라형
+
+- 필터: 날짜(오늘 / 이번 주말 / 이번 주 / 전체) · 자치구 · 카테고리 · 무료만 · 행사/장소.
+- **전부 클라이언트 사이드 필터링** — `events/YYYY-Www.json` 하나로 충분하다.
+- 필터 상태는 URL 쿼리에 실어 공유 가능하게 한다.
+
+### 10-3. 근처 `/nearby` — 위치 기반 (시나리오 B)
+
+- `navigator.geolocation` → 브라우저에서 Haversine 거리 계산 → **거리순 리스트**.
+- 행사·장소 혼합. `hours` 파싱된 항목에는 "지금 열림" 배지. 좌표(`lat`/`lng`)가 없는 항목은 근처 검색에서 제외.
+- **MVP에 지도 없음.** 근거: 카카오맵 SDK를 붙이면 API 키·도메인 등록·번들 크기·모바일 성능이 한꺼번에 들어온다. "가까운 순" 리스트만으로 B의 가치 대부분이 나온다. **지도는 v2**에서 붙이며, 그때는 좌표가 이미 정규화돼 있어 쉽다.
+
+### 10-4. 상세 `/e/[id]`
+
+- 이미지, 상세 설명, 기간·요금·휴무일, 지하철 정보, 원문 링크.
+- SSG로 미리 생성해 공유·검색 노출을 얻는다.
+
+## 11. 기술 스택
+
+- **TanStack Start + TypeScript** (Next.js 대신 명시적으로 선택). 파일 기반 라우팅은 TanStack Router. 데이터가 전부 정적 JSON이므로 프리렌더링/SSG로 빌드하고, 상세 페이지도 미리 생성한다.
+- **Tailwind CSS**, **모바일 우선** (시나리오 B가 밖에서 쓰는 상황).
+- **배치 스크립트**: 같은 레포 `scripts/` 아래, TypeScript + `tsx` 실행. **앱과 타입(`EventItem`, `PlaceItem`)을 공유한다** — 정적 JSON 방식의 큰 이득. 스키마가 어긋나면 빌드가 깨져서 알려준다.
+- 배포: Vercel 등 정적 호스팅.
+
+## 12. 검증·에러 처리
+
+| 실패 지점 | 대응 |
+|---|---|
+| 원본 API가 필드를 바꿈 | 배치 출력에 **Zod 스키마 검증** → 커밋 전에 실패. 근거: 조용히 빈 화면이 나가는 것보다 배치가 깨지는 게 낫다 |
+| LLM 호출 실패 | 규칙 상위 12개로 폴백 — 화면이 절대 비지 않는다 |
+| LLM이 없는 id를 지어냄 | candidates에 없는 id 폐기 + 규칙 상위로 부족분 충당 (환각 방어 2겹) |
+| 영업시간 파싱 실패 | 배지 생략, 원문 그대로 표시 — 실패를 숨기지 않는다 |
+| 서울시/비짓서울 API 다운 | 마지막 커밋된 JSON 서빙 — 앱은 멀쩡 |
+| 좌표 없는 항목 | 근처 검색에서만 제외, 다른 화면에는 정상 노출 |
+
+## 13. MVP 범위와 확장 지점
+
+### MVP 범위 밖 (명시적)
+
+- **지도** — v2. 좌표는 이미 정규화돼 있으므로 그때 붙이기 쉽다.
+- **D: 키워드 알림·구독·푸시** — 계정/DB 필요. 확장 지점으로만 남긴다.
+- **C: 정기 다이제스트/뉴스레터** — 부가 기능.
+- **사용자 계정, 저장/북마크** — 초기엔 필요 시 localStorage.
+- **DB (Supabase 등)** — 필요해지면 배치의 emit 대상만 JSON write → DB upsert로 바꾼다.
+
+### 확장 경로 요약
+
+| 확장 | 바뀌는 것 | 안 바뀌는 것 |
+|---|---|---|
+| 로컬 배치 → GitHub Actions | 실행 주체 | 스크립트 |
+| Ollama → Anthropic | `LLM_PROVIDER` 환경변수 | 프롬프트, 호출 측 코드 |
+| JSON → DB | emit 단계의 출력 대상 | fetch~curate 파이프라인 |
+| 리스트 → 지도 (v2) | `/nearby` UI | 정규화된 좌표 데이터 |
+
+## 14. 미해결 / 선행 작업
+
+구현 시작 전 또는 첫 단계에서 확인해야 하는 항목. 본문의 설계는 아래가 예상대로일 때 기준이며, 다르면 해당 부분을 조정한다.
+
+1. **서울시 열린데이터광장 인증키 발급 여부 미확인.** 무료·즉시 발급이지만 발급했는지 확인되지 않았다. 선행 작업.
+2. **비짓서울 API 키 발급 여부 미확인.** 선행 작업.
+3. **서울시 문화행사 API의 이미지 필드 존재 여부 미확인.** `MAIN_IMG` 추정이나 문서에서 확인되지 않음. 구현 첫 단계에서 실제 응답으로 검증할 것. 없으면 해당 소스 항목은 카테고리 색 블록으로 대체 (홈 카드 설계에 이미 반영됨).
+4. **`/contents/standard/list` 벌크 조회 가능성 미확인.** 상세를 통째로 준다면 N+1과 캐시 설계가 크게 단순해진다. **키 발급 후 최우선으로 확인할 것.**
+5. **비짓서울 카테고리 트리에서 어디까지 수집할지 미확정.** `category/list`를 먼저 뽑아 행사/시설/명소 포함 범위를 확정하는 것이 선행 작업.
+6. **`cmmn_use_time` / `closed_days` 파싱 성공률 미측정.** best-effort 원칙(성공 시에만 배지)은 확정이나, 규칙을 얼마나 늘릴지는 실제 데이터를 보고 결정한다.
+7. **전체 데이터 건수 미확인 → `events/YYYY-Www.json` 크기 미확정.** 주 단위 분할로 대응하되, 초회 수집 후 실측하여 필드 축소·gzip 등 추가 대응 필요 여부를 판단한다.
