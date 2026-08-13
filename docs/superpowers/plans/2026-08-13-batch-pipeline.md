@@ -1870,7 +1870,7 @@ export function mergeItems(groups: Item[][]): Item[] {
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/merge.test.ts`
-Expected: PASS (10개 통과)
+Expected: PASS (12개 통과 — 순수성·그룹 내 중복 케이스 추가)
 
 - [ ] **Step 5: 커밋**
 
