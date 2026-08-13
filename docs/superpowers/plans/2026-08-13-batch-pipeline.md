@@ -103,11 +103,16 @@ npm i -D typescript tsx vitest @types/node
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "probe": "tsx scripts/probe-apis.ts",
-    "batch": "tsx scripts/run-batch.ts"
+    "probe": "tsx --env-file-if-exists=.env scripts/probe-apis.ts",
+    "batch": "tsx --env-file-if-exists=.env scripts/run-batch.ts"
   }
 }
 ```
+
+**`--env-file-if-exists`인 이유**: 로컬에서는 `.env`를 읽고, GitHub Actions에서는
+`.env`가 없어도 조용히 넘어가 워크플로가 주입한 실제 환경변수를 쓴다.
+`--env-file`(if-exists 없이)을 쓰면 Actions에서 `.env: not found`로 죽는다.
+별도 dotenv 패키지는 필요 없다 — Node가 네이티브로 지원한다.
 
 - [ ] **Step 4: `vitest.config.ts` 작성**
 
@@ -138,6 +143,8 @@ dist/
 ```
 SEOUL_API_KEY=
 VISITSEOUL_API_KEY=
+# Task 0의 카테고리 트리 조사 후 채운다 (쉼표 구분)
+VISITSEOUL_CATEGORIES=
 LLM_PROVIDER=ollama
 OLLAMA_HOST=http://localhost:11434
 OLLAMA_MODEL=qwen3:8b
@@ -251,8 +258,12 @@ else console.log('VISITSEOUL_API_KEY 없음 — 건너뜀')
 서울시: <https://data.seoul.go.kr> 로그인 → 인증키 신청 (무료·즉시)
 비짓서울: <https://api.visitseoul.net> 에서 키 신청
 
+`.env.example`을 `.env`로 복사하고 키를 채운다. `.env`는 `.gitignore`에 있으므로 커밋되지 않는다.
+
 ```bash
-SEOUL_API_KEY=xxx VISITSEOUL_API_KEY=yyy npm run probe
+cp .env.example .env
+# .env를 편집해 SEOUL_API_KEY / VISITSEOUL_API_KEY 채우기
+npm run probe
 ```
 
 - [ ] **Step 8: `docs/api-findings.md`에 결과 기록**
@@ -1006,7 +1017,7 @@ Expected: PASS (9개 통과)
 - [ ] **Step 5: 실제 응답으로 검증**
 
 ```bash
-SEOUL_API_KEY=xxx npx tsx -e "
+npx tsx --env-file-if-exists=.env -e "
 import { SeoulCultureSource } from './src/sources/seoul-culture'
 const s = new SeoulCultureSource(process.env.SEOUL_API_KEY!)
 const rows = await s.fetchList()
@@ -2473,7 +2484,7 @@ Expected: PASS (10개 통과)
 
 ```bash
 ollama pull qwen3:8b
-OLLAMA_MODEL=qwen3:8b npx tsx -e "
+npx tsx --env-file-if-exists=.env -e "
 import { OllamaProvider } from './src/llm/ollama'
 const p = new OllamaProvider()
 const picks = await p.curate({
@@ -3406,11 +3417,14 @@ Expected: 전체 PASS
 
 - [ ] **Step 6: 실제 배치 실행**
 
+`.env`에 Task 0의 `docs/api-findings.md`에서 확정한 카테고리를 추가한다:
+
+```
+VISITSEOUL_CATEGORIES=Cg1x6l1,Ce9z7g9
+LLM_PROVIDER=ollama
+```
+
 ```bash
-SEOUL_API_KEY=xxx \
-VISITSEOUL_API_KEY=yyy \
-VISITSEOUL_CATEGORIES=Cg1x6l1,Ce9z7g9 \
-LLM_PROVIDER=ollama \
 npm run batch
 ```
 
@@ -3422,7 +3436,7 @@ npm run batch
 - [ ] **Step 7: 두 번째 실행으로 캐시 동작 확인**
 
 ```bash
-SEOUL_API_KEY=xxx VISITSEOUL_API_KEY=yyy VISITSEOUL_CATEGORIES=... npm run batch
+npm run batch
 ```
 
 로그에 `[visit-seoul] 상세 호출 0건 / 전체 N건`이 찍혀야 한다.
