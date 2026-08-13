@@ -2,10 +2,10 @@
 
 서울에서 이번 주 / 지금 무슨 행사가 있는지 알려주는 웹앱.
 
-## 현재 상태: Task 0 완료 (Task 1부터 구현)
+## 현재 상태
 
-프로젝트 스캐폴딩과 API 실측이 끝났습니다. `src/`에는 아직 코드가 없습니다.
-`npm run probe`만 동작하고, `npm test` / `npm run batch`는 Task 1 이후에 동작합니다.
+계획을 태스크 순서대로 실행 중입니다. **어디까지 왔는지는 `git log --oneline`으로 확인하세요** —
+커밋 하나가 태스크 하나입니다. `npm run batch`는 Task 14까지 끝나야 동작합니다.
 
 - 설계 스펙: `docs/superpowers/specs/2026-08-13-seoul-events-webapp-design.md`
 - 구현 계획: `docs/superpowers/plans/2026-08-13-batch-pipeline.md` (16 태스크)
