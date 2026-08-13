@@ -1055,7 +1055,7 @@ function hashId(input: string): string {
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/sources/seoul-culture.test.ts`
-Expected: PASS (9개 통과)
+Expected: PASS (10개 통과 — fixture 검증 1건 추가)
 
 - [ ] **Step 5: 실제 응답으로 검증**
 
