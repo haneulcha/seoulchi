@@ -1261,6 +1261,8 @@ git commit -m "feat: 영업시간 best-effort 파서 추가
 |---|---|---|
 | 상세 호출 | `GET /contents/info?cid=` | **`POST` + body `{cid, lang_code_id}`.** GET은 405, 쿼리스트링 POST는 400 |
 | 목록 호출 | 항상 성공 | **`com_ctgry_sn` 필터가 약 30% 확률로 500.** 재시도 필요 |
+| 상세 호출 간격 | 120ms면 충분 | **레이트 리밋이 500으로 위장돼 나온다.** 120ms에서 성공률 50%, 400ms에서 67%, 1000ms에서 100%. 재시도 필수 |
+| 상세 실패 | 건너뛰면 됨 | **조용히 건너뛰면 데이터의 60%가 사라진다.** 재시도 후에도 실패한 비율이 높으면 배치를 깨뜨려야 한다 |
 | `cate_depth` | `'문화관광 > 전시시설'` | **선행 공백이 있다** (`' 축제/공연/행사 > 축제'`). `trim()` 필수 |
 | `extra.closed_days` | 항상 존재 | **행사 항목에는 없다.** 옵셔널 |
 | `page_size` | 기본 50 | **200까지 지정 가능** — 초회 수집 요청 수를 1/4로 줄인다 |
@@ -1428,8 +1430,14 @@ import type { DetailCache, EventSource } from '~/sources/types'
 import type { EventItem, Item, PlaceItem } from '~/types/item'
 
 const BASE = 'https://api-call.visitseoul.net/api/v1'
-/** 상세 호출 간 간격(ms). 상대 서버를 배려한다. */
-const DETAIL_DELAY_MS = 120
+/**
+ * 상세 호출 간 간격(ms). 배려가 아니라 필수다 —
+ * 비짓서울은 레이트 리밋을 500으로 위장해 돌려준다(Task 0 실측).
+ * 120ms면 성공률 50%, 400ms면 67%, 1000ms면 100%. 재시도와 함께 쓴다.
+ */
+const DETAIL_DELAY_MS = 400
+/** 재시도 후에도 실패한 상세가 이 비율을 넘으면 배치를 깨뜨린다. */
+const MAX_DETAIL_FAILURE_RATIO = 0.1
 /** 실측상 200까지 받는다. 초회 수집 요청 수를 기본값(50)의 1/4로 줄인다. */
 const LIST_PAGE_SIZE = 200
 /** 카테고리 필터 요청의 간헐적 500에 대한 재시도. */
@@ -1573,6 +1581,7 @@ export class VisitSeoulSource
   ): Promise<VisitSeoulDetail[]> {
     const out: VisitSeoulDetail[] = []
     let fetched = 0
+    let failed = 0
 
     for (const item of items) {
       const updtDtText = item.updt_dt_text ?? ''
@@ -1586,16 +1595,17 @@ export class VisitSeoulSource
       if (fetched > 0) await sleep(DETAIL_DELAY_MS)
 
       // GET은 405, 쿼리스트링 POST는 400. cid를 body에 실은 POST만 통한다(Task 0 실측).
-      const res = await fetch(`${BASE}/contents/info`, {
-        method: 'POST',
-        headers: this.headers,
-        body: JSON.stringify({ cid: item.cid, lang_code_id: 'ko' }),
+      // 레이트 리밋이 500으로 오므로 목록과 같은 재시도를 태운다.
+      const res = await this.postWithRetry(`${BASE}/contents/info`, {
+        cid: item.cid,
+        lang_code_id: 'ko',
       })
       fetched++
 
       if (!res.ok) {
-        // 한 건의 실패가 배치 전체를 멈추게 하지 않는다. 캐시된 구본이 있으면 쓴다.
-        console.warn(`비짓서울 상세 ${res.status}: ${item.cid} — 건너뜀`)
+        // 캐시된 구본이 있으면 쓰고, 없으면 이 항목은 사라진다 — 아래에서 비율을 따진다.
+        console.warn(`비짓서울 상세 ${res.status}: ${item.cid} — 재시도 후에도 실패`)
+        failed++
         if (cached) out.push(cached.detail as VisitSeoulDetail)
         continue
       }
@@ -1606,7 +1616,16 @@ export class VisitSeoulSource
       out.push(detail)
     }
 
-    console.log(`  [visit-seoul] 상세 호출 ${fetched}건 / 전체 ${items.length}건`)
+    console.log(`  [visit-seoul] 상세 호출 ${fetched}건 / 전체 ${items.length}건 / 실패 ${failed}건`)
+
+    // 조용히 절반이 빈 채로 나가는 것보다 배치가 깨지는 게 낫다.
+    if (fetched > 0 && failed / fetched > MAX_DETAIL_FAILURE_RATIO) {
+      throw new Error(
+        `비짓서울 상세 실패율이 너무 높습니다: ${failed}/${fetched}건. ` +
+          `레이트 리밋일 가능성이 높으니 DETAIL_DELAY_MS를 올리세요.`,
+      )
+    }
+
     return out
   }
 
@@ -1663,7 +1682,7 @@ export class VisitSeoulSource
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/sources/visit-seoul.test.ts`
-Expected: PASS (13개 통과)
+Expected: PASS (19개 통과 — 실측으로 드러난 재시도·실패율 케이스 추가)
 
 - [ ] **Step 5: 커밋**
 
