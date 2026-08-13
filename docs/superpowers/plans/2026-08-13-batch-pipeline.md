@@ -18,6 +18,13 @@
 - 주차 키 형식은 **ISO 8601 주차, 월요일 시작**: `YYYY-Www` (예: `2026-W33`)
 - 아이템 `id` 형식: `sc-{원본id}` (서울시 문화행사) / `vs-{cid}` (비짓서울). 콜론 금지 — 상세 라우트 `/e/[id]`에 인코딩 없이 들어가야 한다
 - 소스 이름 리터럴: `'seoul-culture'` | `'visit-seoul'`
+- **과거 컷오프: 오늘(KST) 이전에 끝난 행사는 출력에 넣지 않는다.** 두 소스 모두 아카이브를
+  포함한다(서울시 19,486건 중 97.8%가 종료된 행사, 비짓서울에도 2023년 축제가 남아 있다).
+  주간 파일이라고 해서 주 시작일을 기준으로 삼으면 **이번 주 월요일에 끝난 행사가 목요일 화면에 남는다.**
+  따라서 **유효 시작일은 `max(주 시작일, 오늘)`**이다. `today`는 순수 함수에 인자로 넘긴다 —
+  내부에서 `new Date()`를 부르면 테스트가 날짜에 따라 깨진다
+- 지난 주차를 인자로 준 배치 실행(`npm run batch -- 2025-W20`)은 **의도적으로 지원하지 않는다.**
+  과거 데이터를 쌓지 않기로 했다. 필요해지면 이 제약을 먼저 되돌린다
 - 모든 배치 출력 JSON은 **쓰기 직전 zod 스키마로 검증**한다. 검증 실패 시 파일을 쓰지 않고 프로세스를 0이 아닌 코드로 종료한다
 - API 키는 환경변수로만 읽는다. 코드·커밋에 절대 넣지 않는다: `SEOUL_API_KEY`, `VISITSEOUL_API_KEY`
 - 커밋 메시지는 한국어 본문 + Conventional Commits 접두사(`feat:`, `test:`, `chore:`, `docs:`)
@@ -497,6 +504,7 @@ id는 URL-safe 형식을 강제해 상세 라우트에서 인코딩이 불필요
   - `isoWeekKey(date: Date): string` — `'2026-W33'`
   - `weekRange(key: string): { start: string; end: string }` — KST 기준 월요일~일요일 `YYYY-MM-DD`
   - `weekLabel(key: string): string` — `'2026년 8월 둘째 주'`
+  - `kstToday(now: Date): string` — KST 달력 기준 오늘 `YYYY-MM-DD`. 과거 컷오프의 기준값
 
 배치와 앱이 **같은 유틸을 공유**한다. 어긋나면 앱이 존재하지 않는 파일을 읽는다.
 
@@ -506,7 +514,7 @@ id는 URL-safe 형식을 강제해 상세 라우트에서 인코딩이 불필요
 
 ```ts
 import { describe, expect, it } from 'vitest'
-import { isoWeekKey, weekLabel, weekRange } from '~/lib/week'
+import { isoWeekKey, kstToday, weekLabel, weekRange } from '~/lib/week'
 
 describe('isoWeekKey', () => {
   it('2026-08-13(목)은 2026-W33이다', () => {
@@ -560,6 +568,23 @@ describe('weekLabel', () => {
   it('첫째 주를 올바르게 센다', () => {
     // 2026-W32의 목요일은 8/6 → 첫 번째
     expect(weekLabel('2026-W32')).toBe('2026년 8월 첫째 주')
+  })
+})
+
+describe('kstToday', () => {
+  it('KST 달력 날짜를 YYYY-MM-DD로 준다', () => {
+    expect(kstToday(new Date('2026-08-13T12:00:00+09:00'))).toBe('2026-08-13')
+  })
+
+  it('UTC로는 전날인 이른 새벽도 KST 날짜로 준다', () => {
+    // 2026-08-13T00:30+09:00 = 2026-08-12T15:30Z
+    expect(kstToday(new Date('2026-08-13T00:30:00+09:00'))).toBe('2026-08-13')
+  })
+
+  it('UTC로는 다음날인 늦은 밤도 KST 날짜로 준다', () => {
+    // 2026-08-13T23:30+09:00 = 2026-08-13T14:30Z — 여기선 UTC와 같은 날
+    // 경계를 넘는 쪽: 2026-08-14T08:00+09:00 = 2026-08-13T23:00Z
+    expect(kstToday(new Date('2026-08-14T08:00:00+09:00'))).toBe('2026-08-14')
   })
 })
 ```
@@ -652,12 +677,21 @@ export function weekLabel(key: string): string {
   const ordinal = ORDINALS[nth - 1] ?? `${nth}번째`
   return `${year}년 ${month}월 ${ordinal} 주`
 }
+
+/**
+ * KST 달력 기준 오늘. 과거 컷오프(`max(주 시작일, 오늘)`)의 기준값이다.
+ * `now`를 인자로 받는 이유는 이 유틸을 쓰는 순수 함수들이
+ * 실행 날짜에 따라 결과가 바뀌지 않게 하기 위해서다 — 호출 측이 한 번만 정한다.
+ */
+export function kstToday(now: Date): string {
+  return formatIsoDate(toKstCalendarDate(now))
+}
 ```
 
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/lib/week.test.ts`
-Expected: PASS (11개 통과)
+Expected: PASS (14개 통과)
 
 - [ ] **Step 5: 커밋**
 
@@ -1835,7 +1869,10 @@ git commit -m "feat: 두 소스 병합과 중복 제거 추가
 - Produces:
   - `MAJOR_ORGS: readonly string[]`
   - `scoreEvent(event: EventItem, weekKey: string): number`
-  - `selectCandidates(items: Item[], weekKey: string, limit?: number): EventItem[]`
+  - `selectCandidates(items: Item[], weekKey: string, today: string, limit?: number): EventItem[]`
+
+**과거 컷오프가 사는 곳이 여기다.** `today`(KST `YYYY-MM-DD`)를 받아 이미 끝난 행사를 뺀다.
+자세한 근거는 Global Constraints의 "과거 컷오프" 항목 참조.
 
 - [ ] **Step 1: 실패하는 테스트 작성**
 
@@ -1902,18 +1939,40 @@ describe('scoreEvent', () => {
 })
 
 describe('selectCandidates', () => {
+  // 주 시작일(월). 컷오프가 없을 때의 동작을 보는 기준값.
+  const MONDAY = '2026-08-10'
+
   it('이번 주에 열리지 않는 행사를 제외한다', () => {
     const past = evt({ startDate: '2026-07-01', endDate: '2026-07-31' })
     const future = evt({ startDate: '2026-09-01', endDate: '2026-09-30' })
     const current = evt({ startDate: '2026-08-12', endDate: '2026-08-13' })
-    const picked = selectCandidates([past, future, current], WEEK)
+    const picked = selectCandidates([past, future, current], WEEK, MONDAY)
     expect(picked).toHaveLength(1)
     expect(picked[0]!.startDate).toBe('2026-08-12')
   })
 
   it('주 경계에 걸친 행사를 포함한다', () => {
     const spanning = evt({ startDate: '2026-08-01', endDate: '2026-08-31' })
-    expect(selectCandidates([spanning], WEEK)).toHaveLength(1)
+    expect(selectCandidates([spanning], WEEK, MONDAY)).toHaveLength(1)
+  })
+
+  it('오늘 이전에 끝난 행사를 뺀다 — 같은 주라도', () => {
+    // 목요일에 돌린 배치. 화요일에 끝난 행사는 주에는 걸치지만 이미 지났다.
+    const endedTuesday = evt({ startDate: '2026-08-10', endDate: '2026-08-11' })
+    const stillRunning = evt({ startDate: '2026-08-10', endDate: '2026-08-16' })
+    const picked = selectCandidates([endedTuesday, stillRunning], WEEK, '2026-08-13')
+    expect(picked).toHaveLength(1)
+    expect(picked[0]!.endDate).toBe('2026-08-16')
+  })
+
+  it('오늘 끝나는 행사는 남긴다', () => {
+    const endsToday = evt({ startDate: '2026-08-10', endDate: '2026-08-13' })
+    expect(selectCandidates([endsToday], WEEK, '2026-08-13')).toHaveLength(1)
+  })
+
+  it('지난 주차를 넘겨도 과거 행사가 새어나오지 않는다', () => {
+    const lastWeek = evt({ startDate: '2026-08-03', endDate: '2026-08-09' })
+    expect(selectCandidates([lastWeek], '2026-W32', '2026-08-13')).toHaveLength(0)
   })
 
   it('place는 후보에서 제외한다', () => {
@@ -1925,24 +1984,24 @@ describe('selectCandidates', () => {
       category: '문화관광',
       place: '박물관',
     }
-    expect(selectCandidates([place], WEEK)).toHaveLength(0)
+    expect(selectCandidates([place], WEEK, MONDAY)).toHaveLength(0)
   })
 
   it('limit 개수만큼만 반환한다', () => {
     const many = Array.from({ length: 100 }, () => evt())
-    expect(selectCandidates(many, WEEK, 40)).toHaveLength(40)
+    expect(selectCandidates(many, WEEK, MONDAY, 40)).toHaveLength(40)
   })
 
   it('점수 내림차순으로 정렬한다', () => {
     const low = evt({ title: '낮음', isFree: false })
     const high = evt({ title: '높음', isFree: true, imageUrl: 'https://x/a.jpg', place: '서울시립미술관' })
-    expect(selectCandidates([low, high], WEEK)[0]!.title).toBe('높음')
+    expect(selectCandidates([low, high], WEEK, MONDAY)[0]!.title).toBe('높음')
   })
 
   it('점수가 같으면 제목 순으로 안정 정렬한다', () => {
     const a = evt({ title: '가나다' })
     const b = evt({ title: '나다라' })
-    const first = selectCandidates([b, a], WEEK)
+    const first = selectCandidates([b, a], WEEK, MONDAY)
     expect(first.map((e) => e.title)).toEqual(['가나다', '나다라'])
   })
 })
@@ -2029,12 +2088,23 @@ export function scoreEvent(event: EventItem, weekKey: string): number {
 /**
  * 이번 주에 열리는 event만 골라 점수순 상위 N개를 반환한다.
  * 점수가 같으면 제목 순으로 안정 정렬해 빌드 재현성을 지킨다.
+ *
+ * `today`(KST, YYYY-MM-DD)를 인자로 받아 **이미 끝난 행사를 뺀다.**
+ * 주 시작일만 기준으로 삼으면 월요일에 끝난 행사가 목요일 화면에 남는다.
+ * `today`를 내부에서 만들지 않는 이유는 테스트가 실행 날짜에 따라 깨지지 않게 하기 위해서다.
  */
-export function selectCandidates(items: Item[], weekKey: string, limit = 40): EventItem[] {
+export function selectCandidates(
+  items: Item[],
+  weekKey: string,
+  today: string,
+  limit = 40,
+): EventItem[] {
   const { start, end } = weekRange(weekKey)
+  // 유효 시작일 = max(주 시작일, 오늘). 지난 주차를 넘겨도 과거 행사가 새어나오지 않는다.
+  const from = today > start ? today : start
 
   return items
-    .filter((item): item is EventItem => item.kind === 'event' && overlaps(item, start, end))
+    .filter((item): item is EventItem => item.kind === 'event' && overlaps(item, from, end))
     .map((event) => ({ event, score: scoreEvent(event, weekKey) }))
     .sort((a, b) => b.score - a.score || a.event.title.localeCompare(b.event.title, 'ko'))
     .slice(0, limit)
@@ -2045,7 +2115,7 @@ export function selectCandidates(items: Item[], weekKey: string, limit = 40): Ev
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/score.test.ts`
-Expected: PASS (12개 통과)
+Expected: PASS (15개 통과)
 
 - [ ] **Step 5: 커밋**
 
@@ -3264,11 +3334,21 @@ const outOfWeek: Item = {
   category: '전시', place: '어딘가', startDate: '2026-01-01', endDate: '2026-01-31',
 }
 
+/** 2026-W33에는 걸치지만 목요일(08-13) 시점에는 이미 끝난 행사 */
+const endedEarlyThisWeek: Item = {
+  id: 'sc-ended', source: 'seoul-culture', kind: 'event', title: '월요일에 끝난 행사',
+  category: '전시', place: '어딘가', startDate: '2026-08-10', endDate: '2026-08-11',
+}
+
 describe('runPipeline', () => {
   const opts = {
-    sources: [fakeSource('seoul-culture', [scEvent, outOfWeek]), fakeSource('visit-seoul', [vsPlace])],
+    sources: [
+      fakeSource('seoul-culture', [scEvent, outOfWeek, endedEarlyThisWeek]),
+      fakeSource('visit-seoul', [vsPlace]),
+    ],
     provider: new RuleOnlyProvider(),
     weekKey: '2026-W33',
+    today: '2026-08-13',
     cache: {},
     curatedCount: 12,
     placeCount: 6,
@@ -3277,6 +3357,16 @@ describe('runPipeline', () => {
   it('이번 주 이벤트만 events에 담는다', async () => {
     const out = await runPipeline(opts)
     expect(out.events.map((e) => e.id)).toEqual(['sc-a'])
+  })
+
+  it('이번 주라도 오늘 이전에 끝난 행사는 뺀다', async () => {
+    const out = await runPipeline(opts)
+    expect(out.events.map((e) => e.id)).not.toContain('sc-ended')
+  })
+
+  it('today가 주 시작일보다 이르면 주 전체를 담는다', async () => {
+    const out = await runPipeline({ ...opts, today: '2026-08-01' })
+    expect(out.events.map((e) => e.id).sort()).toEqual(['sc-a', 'sc-ended'])
   })
 
   it('place를 events에서 분리한다', async () => {
@@ -3298,7 +3388,7 @@ describe('runPipeline', () => {
 
   it('소스별 건수를 센다', async () => {
     const out = await runPipeline(opts)
-    expect(out.sourceCounts).toMatchObject({ 'seoul-culture': 2, 'visit-seoul': 1 })
+    expect(out.sourceCounts).toMatchObject({ 'seoul-culture': 3, 'visit-seoul': 1 })
   })
 
   it('provider 이름을 담는다', async () => {
@@ -3331,6 +3421,8 @@ export interface RunOptions {
   sources: EventSource<any, any>[]
   provider: LlmProvider
   weekKey: string
+  /** KST 기준 오늘(YYYY-MM-DD). 이미 끝난 행사를 잘라내는 기준. CLI가 넘긴다. */
+  today: string
   cache: DetailCache
   curatedCount?: number
   placeCount?: number
@@ -3343,7 +3435,7 @@ export interface RunOptions {
  */
 export async function runPipeline(opts: RunOptions): Promise<EmitPayload> {
   const {
-    sources, provider, weekKey, cache,
+    sources, provider, weekKey, today, cache,
     curatedCount = 12, placeCount = 6, candidateCount = 40,
   } = opts
 
@@ -3363,14 +3455,17 @@ export async function runPipeline(opts: RunOptions): Promise<EmitPayload> {
   const merged = mergeItems(groups)
   console.log(`병합 후 ${merged.length}건 (중복 ${groups.flat().length - merged.length}건 제거)`)
 
+  // 과거 컷오프: 유효 시작일은 max(주 시작일, 오늘).
+  // 주 시작일만 쓰면 월요일에 끝난 행사가 목요일 화면에 남는다.
   const { start, end } = weekRange(weekKey)
+  const from = today > start ? today : start
   const events = merged.filter(
-    (i): i is EventItem => i.kind === 'event' && i.startDate <= end && i.endDate >= start,
+    (i): i is EventItem => i.kind === 'event' && i.startDate <= end && i.endDate >= from,
   )
   const places = merged.filter((i): i is PlaceItem => i.kind === 'place')
-  console.log(`이번 주 이벤트 ${events.length}건 / 장소 ${places.length}건`)
+  console.log(`이번 주 이벤트 ${events.length}건 (${from}~${end}) / 장소 ${places.length}건`)
 
-  const candidates = selectCandidates(events, weekKey, candidateCount)
+  const candidates = selectCandidates(events, weekKey, today, candidateCount)
   console.log(`후보 ${candidates.length}건 → 선별 ${curatedCount}건 요청`)
 
   const { entries, providerName } = await curate(candidates, {
@@ -3396,7 +3491,7 @@ export async function runPipeline(opts: RunOptions): Promise<EmitPayload> {
 
 ```ts
 import { readFile } from 'node:fs/promises'
-import { isoWeekKey } from '~/lib/week'
+import { isoWeekKey, kstToday } from '~/lib/week'
 import { createProvider } from '~/llm/index'
 import { emit } from '~/pipeline/emit'
 import { runPipeline } from '~/pipeline/run'
@@ -3422,8 +3517,19 @@ async function loadCache(path: string): Promise<DetailCache> {
   }
 }
 
-const weekKey = process.argv[2] ?? isoWeekKey(new Date())
-console.log(`대상 주차: ${weekKey}\n`)
+const now = new Date()
+const today = kstToday(now)
+const weekKey = process.argv[2] ?? isoWeekKey(now)
+
+// 과거 데이터는 쌓지 않기로 했다. 지난 주차 요청은 조용히 빈 파일을 내는 대신 거절한다.
+if (weekKey < isoWeekKey(now)) {
+  throw new Error(
+    `지난 주차(${weekKey})는 지원하지 않습니다. 과거 데이터를 쌓지 않는 것이 이 배치의 전제입니다.\n` +
+      `정말 필요하면 계획의 "과거 컷오프" 제약을 먼저 되돌리세요.`,
+  )
+}
+
+console.log(`대상 주차: ${weekKey} (오늘 ${today} 이후만 수집)\n`)
 
 const cache = await loadCache('data/cache/visitseoul.json')
 const provider = createProvider()
@@ -3436,6 +3542,7 @@ const payload = await runPipeline({
   ],
   provider,
   weekKey,
+  today,
   cache,
 })
 
@@ -3450,7 +3557,7 @@ console.log(`
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/run.test.ts`
-Expected: PASS (6개 통과)
+Expected: PASS (8개 통과)
 
 - [ ] **Step 5: 전체 테스트 실행**
 
@@ -3459,10 +3566,10 @@ Expected: 전체 PASS
 
 - [ ] **Step 6: 실제 배치 실행**
 
-`.env`에 Task 0의 `docs/api-findings.md`에서 확정한 카테고리를 추가한다:
+`.env.local`에 Task 0에서 확정한 카테고리가 들어 있는지 확인한다(`docs/api-findings.md` 참조):
 
 ```
-VISITSEOUL_CATEGORIES=Cg1x6l1,Ce9z7g9
+VISITSEOUL_CATEGORIES=Cv7s8m5,Ca0o2d4,Cc9i5o2,Ca1z6p7,Co6c2n2
 LLM_PROVIDER=ollama
 ```
 
