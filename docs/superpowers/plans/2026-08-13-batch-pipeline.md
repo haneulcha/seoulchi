@@ -478,7 +478,7 @@ export type Item = z.infer<typeof itemSchema>
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/types/item.test.ts`
-Expected: PASS (10개 통과)
+Expected: PASS (8개 통과)
 
 - [ ] **Step 5: 커밋**
 
