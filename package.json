@@ -1,0 +1,35 @@
+{
+  "name": "seoulchi",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "probe": "tsx --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/probe-apis.ts",
+    "batch": "tsx --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/run-batch.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haneulcha/seoulchi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haneulcha/seoulchi/issues"
+  },
+  "homepage": "https://github.com/haneulcha/seoulchi#readme",
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}

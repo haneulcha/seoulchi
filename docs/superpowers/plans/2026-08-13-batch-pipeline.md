@@ -65,7 +65,7 @@
 - [ ] **Step 1: 프로젝트 초기화**
 
 ```bash
-cd /Users/haneul/Projects/seoulchi
+cd /Users/haneul/Study/seoulchi
 npm init -y
 npm i zod
 npm i -D typescript tsx vitest @types/node
@@ -86,12 +86,14 @@ npm i -D typescript tsx vitest @types/node
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "types": ["node", "vitest/globals"],
-    "baseUrl": ".",
-    "paths": { "~/*": ["src/*"] }
+    "paths": { "~/*": ["./src/*"] }
   },
   "include": ["src", "scripts", "tests"]
 }
 ```
+
+**`baseUrl`이 없는 이유**: TypeScript 7에서 제거됐다(`TS5102`). `paths`의 값을
+`./`로 시작하는 상대 경로로 쓰면 `baseUrl` 없이 동작한다. `src/*`처럼 쓰면 `TS5090`으로 죽는다.
 
 - [ ] **Step 3: `package.json`에 `type`과 스크립트 추가**
 
@@ -103,8 +105,8 @@ npm i -D typescript tsx vitest @types/node
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "probe": "tsx --env-file-if-exists=.env scripts/probe-apis.ts",
-    "batch": "tsx --env-file-if-exists=.env scripts/run-batch.ts"
+    "probe": "tsx --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/probe-apis.ts",
+    "batch": "tsx --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/run-batch.ts"
   }
 }
 ```
@@ -113,6 +115,10 @@ npm i -D typescript tsx vitest @types/node
 `.env`가 없어도 조용히 넘어가 워크플로가 주입한 실제 환경변수를 쓴다.
 `--env-file`(if-exists 없이)을 쓰면 Actions에서 `.env: not found`로 죽는다.
 별도 dotenv 패키지는 필요 없다 — Node가 네이티브로 지원한다.
+
+**`.env.local`도 읽는 이유**: 실제 키가 `.env.local`에 들어 있다. 둘 다 `if-exists`이므로
+어느 쪽만 있어도 동작하고, 나중 플래그가 이기므로 `.env.local`이 `.env`를 덮어쓴다.
+둘 다 `.gitignore`에 있다.
 
 - [ ] **Step 4: `vitest.config.ts` 작성**
 
@@ -128,7 +134,10 @@ export default defineConfig({
 })
 ```
 
-- [ ] **Step 5: `.gitignore`와 `.env.example` 작성**
+- [x] **Step 5: `.gitignore`와 `.env.example` 작성** — 커밋 `bdb4b4f`에서 선반영 완료
+
+실제 커밋된 `.gitignore`는 아래보다 넓다(`.env.local`, `.vinxi/`, `.tanstack/`, `.DS_Store` 포함).
+커밋된 쪽을 쓴다. 아래는 최소 요건으로만 남긴다.
 
 `.gitignore`:
 ```
@@ -1209,7 +1218,18 @@ git commit -m "feat: 영업시간 best-effort 파서 추가
 
 ## Task 6: 비짓서울 어댑터
 
-**게이트:** Task 0에서 `/contents/standard/list`가 상세 필드를 통째로 준다고 확인됐다면, `hydrate`를 그 엔드포인트 한 번 호출로 대체한다(캐시 불필요). 아래는 그렇지 않을 때의 구현이다.
+**게이트 해소 (2026-08-13):** `/contents/standard/list`는 **404 — 존재하지 않는다**(`docs/api-findings.md`).
+벌크 조회 우회로가 없으므로 아래의 캐시 기반 `hydrate`를 그대로 구현한다.
+
+**Task 0 실측으로 아래 코드에서 바뀐 것 (전부 반영됨):**
+
+| 항목 | 계획이 가정한 것 | 실측 |
+|---|---|---|
+| 상세 호출 | `GET /contents/info?cid=` | **`POST` + body `{cid, lang_code_id}`.** GET은 405, 쿼리스트링 POST는 400 |
+| 목록 호출 | 항상 성공 | **`com_ctgry_sn` 필터가 약 30% 확률로 500.** 재시도 필요 |
+| `cate_depth` | `'문화관광 > 전시시설'` | **선행 공백이 있다** (`' 축제/공연/행사 > 축제'`). `trim()` 필수 |
+| `extra.closed_days` | 항상 존재 | **행사 항목에는 없다.** 옵셔널 |
+| `page_size` | 기본 50 | **200까지 지정 가능** — 초회 수집 요청 수를 1/4로 줄인다 |
 
 **Files:**
 - Create: `src/sources/visit-seoul.ts`
@@ -1376,6 +1396,11 @@ import type { EventItem, Item, PlaceItem } from '~/types/item'
 const BASE = 'https://api-call.visitseoul.net/api/v1'
 /** 상세 호출 간 간격(ms). 상대 서버를 배려한다. */
 const DETAIL_DELAY_MS = 120
+/** 실측상 200까지 받는다. 초회 수집 요청 수를 기본값(50)의 1/4로 줄인다. */
+const LIST_PAGE_SIZE = 200
+/** 카테고리 필터 요청의 간헐적 500에 대한 재시도. */
+const LIST_MAX_ATTEMPTS = 4
+const RETRY_BASE_MS = 250
 
 export interface VisitSeoulListItem {
   cid: string
@@ -1462,16 +1487,15 @@ export class VisitSeoulSource
 
     for (const categoryId of this.categoryIds) {
       for (let page = 1; ; page++) {
-        const res = await fetch(`${BASE}/contents/list`, {
-          method: 'POST',
-          headers: this.headers,
-          body: JSON.stringify({
-            com_ctgry_sn: categoryId,
-            lang_code_id: 'ko',
-            page_no: page,
-          }),
+        // 카테고리 필터 요청은 약 30% 확률로 500을 낸다(서버 측 불안정, Task 0 실측).
+        // 재시도 없이는 배치가 임의로 깨진다.
+        const res = await this.postWithRetry(`${BASE}/contents/list`, {
+          com_ctgry_sn: categoryId,
+          lang_code_id: 'ko',
+          page_no: page,
+          page_size: LIST_PAGE_SIZE,
         })
-        if (!res.ok) throw new Error(`비짓서울 목록 ${res.status} (카테고리 ${categoryId})`)
+        if (!res.ok) throw new Error(`비짓서울 목록 ${res.status} (카테고리 ${categoryId}, 재시도 후에도 실패)`)
 
         const json = (await res.json()) as {
           data?: VisitSeoulListItem[]
@@ -1487,6 +1511,21 @@ export class VisitSeoulSource
     }
 
     return [...seen.values()]
+  }
+
+  /** 500이 나면 선형 백오프로 재시도한다. 마지막 응답을 그대로 돌려준다. */
+  private async postWithRetry(url: string, payload: unknown): Promise<Response> {
+    let res!: Response
+    for (let attempt = 1; attempt <= LIST_MAX_ATTEMPTS; attempt++) {
+      if (attempt > 1) await sleep(RETRY_BASE_MS * attempt)
+      res = await fetch(url, {
+        method: 'POST',
+        headers: this.headers,
+        body: JSON.stringify(payload),
+      })
+      if (res.ok) return res
+    }
+    return res
   }
 
   /**
@@ -1512,8 +1551,11 @@ export class VisitSeoulSource
 
       if (fetched > 0) await sleep(DETAIL_DELAY_MS)
 
-      const res = await fetch(`${BASE}/contents/info?cid=${encodeURIComponent(item.cid)}`, {
+      // GET은 405, 쿼리스트링 POST는 400. cid를 body에 실은 POST만 통한다(Task 0 실측).
+      const res = await fetch(`${BASE}/contents/info`, {
+        method: 'POST',
         headers: this.headers,
+        body: JSON.stringify({ cid: item.cid, lang_code_id: 'ko' }),
       })
       fetched++
 
