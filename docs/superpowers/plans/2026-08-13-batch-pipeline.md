@@ -2907,6 +2907,18 @@ LLM이 죽으면 전량 규칙 폴백 — 화면이 절대 비지 않는다."
 
 스펙 10-1의 규칙: 자격 필터(이미지 **and** 좌표) → 점수 → **주차 시드 결정론적 회전**.
 
+**구현 중 계획의 설계 결함이 드러나 고쳤다.** 원래는 자격 있는 항목 *전체*를 회전
+대상으로 삼았는데, 그러면 **점수가 아무 일도 하지 않는다** — 1등이든 꼴등이든 그 주의
+회전 창에 걸리느냐만 남기 때문이다. 계획이 함께 적어둔 "점수 높은 곳을 선호한다"
+테스트가 실제로 실패하면서 드러났다.
+
+회전 범위를 **점수 상위 풀(count × 3)로 제한**한다. 점수의 역할은 순위가 아니라
+**회전 풀의 문턱**이다 — 낮은 점수는 어느 주에도 등장하지 못하고, 풀 안에서는
+매주 다른 조합이 나온다. 풀을 count와 같게 하면 매주 같은 곳만 나오므로 3배로 잡았다.
+
+따라서 "특정 한 곳이 이번 주에 반드시 나온다"는 보장하지 않고, 보장할 필요도 없다.
+테스트도 그 성질(풀 문턱)을 검사하도록 바꿨다.
+
 - [ ] **Step 1: 실패하는 테스트 작성**
 
 `tests/pipeline/pick-places.test.ts`:
@@ -3009,6 +3021,13 @@ const WEIGHTS = {
 } as const
 
 /**
+ * 회전 풀 크기 = count × 이 값. 상위 몇 배까지를 "보여줄 만한 곳"으로 볼지.
+ * 전체를 회전 대상으로 삼으면 점수가 무의미해지고, count와 같게 하면
+ * 매주 같은 곳만 나온다. 3배가 품질 하한과 주간 다양성이 둘 다 사는 지점이다.
+ */
+const ROTATION_POOL_MULTIPLIER = 3
+
+/**
  * 자격: 이미지와 좌표가 둘 다 있는 place만.
  * 이미지 없는 카드는 홈 하단에서 초라해 보이고,
  * 좌표가 없으면 근처 화면으로 이어지지 않는다.
@@ -3047,24 +3066,26 @@ function seedFrom(text: string): number {
  * 판단이 성립하지 않는다. 회전만으로 신선함이 충분하다.
  */
 export function pickPlaces(items: Item[], weekKey: string, count = 6): string[] {
-  const eligible = items
+  const ranked = items
     .filter(isEligible)
     .map((p) => ({ p, score: scorePlace(p) }))
     // 동점은 id 순으로 안정 정렬 — 입력 순서에 의존하지 않는다
     .sort((a, b) => b.score - a.score || a.p.id.localeCompare(b.p.id))
     .map(({ p }) => p.id)
 
-  if (eligible.length <= count) return eligible
+  if (ranked.length <= count) return ranked
 
-  const offset = seedFrom(weekKey) % eligible.length
-  return Array.from({ length: count }, (_, i) => eligible[(offset + i) % eligible.length]!)
+  // 전체가 아니라 상위 풀 안에서만 회전한다. 전체를 돌리면 점수가 무의미해진다.
+  const pool = ranked.slice(0, count * ROTATION_POOL_MULTIPLIER)
+  const offset = seedFrom(weekKey) % pool.length
+  return Array.from({ length: count }, (_, i) => pool[(offset + i) % pool.length]!)
 }
 ```
 
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/pick-places.test.ts`
-Expected: PASS (10개 통과)
+Expected: PASS (12개 통과 — 점수 테스트를 풀 문턱 검사로 교체)
 
 - [ ] **Step 5: 커밋**
 
