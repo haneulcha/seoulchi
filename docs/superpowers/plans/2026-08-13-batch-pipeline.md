@@ -2360,6 +2360,19 @@ RuleOnlyProvider는 폴백 경로이자 테스트용이다."
   - `OllamaProvider` 클래스 — `new OllamaProvider(host?: string, model?: string)`
   - `createProvider(): LlmProvider` — 환경변수로 선택
 
+**Task 9 이후 실측으로 정한 것 (qwen3:30b, 후보 12개 중 4개 선정 기준):**
+
+| 설정 | 값 | 근거 |
+|---|---|---|
+| thinking | **켠다(기본값 유지)** | 끄면 2초로 빨라지지만 **40자 제약을 전부 어긴다**(50·60·54·44자). 켜면 32~54초에 최대 36자. 하루 한 번 도는 배치라 시간은 문제가 아니다 |
+| `seed` | **42 고정** | 같은 seed로 2회 실행 시 선정 id와 코멘트가 **완전히 동일**했다. 출력이 `data/*.json`으로 커밋되므로, 데이터가 안 바뀐 날 diff가 생기면 "지난주엔 뭐가 있었지"를 git으로 보는 이점이 흐려진다 |
+| `temperature` | 0.3 | 계획 그대로 |
+| 기본 모델 | `qwen3:30b` | `.env.local`과 맞춘다 |
+
+**`think: false`를 넣지 마라.** Ollama는 추론을 `message.thinking`으로 분리하므로
+`message.content`는 어차피 깨끗한 JSON이다 — 끌 이유가 없고, 끄면 지시 준수가 무너진다.
+길이 초과는 Task 11의 `MAX_REASON_LENGTH` 절단이 마지막으로 막는다.
+
 - [ ] **Step 1: 실패하는 테스트 작성**
 
 `tests/llm/ollama.test.ts`:
@@ -2506,6 +2519,9 @@ const RESPONSE_FORMAT = {
   required: ['picks'],
 } as const
 
+/** 빌드 재현성을 위한 고정 시드. 바꾸면 같은 데이터에서도 다른 선정이 나온다. */
+const CURATION_SEED = 42
+
 const SYSTEM_PROMPT = `당신은 서울의 문화행사를 고르는 편집자입니다.
 
 주어진 후보 목록에서 이번 주에 가장 볼 만한 행사를 골라주세요.
@@ -2539,7 +2555,7 @@ export class OllamaProvider implements LlmProvider {
 
   constructor(
     private readonly host = process.env.OLLAMA_HOST ?? 'http://localhost:11434',
-    private readonly model = process.env.OLLAMA_MODEL ?? 'qwen3:8b',
+    private readonly model = process.env.OLLAMA_MODEL ?? 'qwen3:30b',
   ) {}
 
   async curate({
@@ -2558,7 +2574,10 @@ export class OllamaProvider implements LlmProvider {
         model: this.model,
         stream: false,
         format: RESPONSE_FORMAT,
-        options: { temperature: 0.3 },
+        // seed 고정 = 재현성. 이 출력이 data/*.json으로 커밋되므로
+        // 데이터가 안 바뀐 날에는 diff도 없어야 한다.
+        // thinking은 끄지 않는다 — 끄면 40자 제약을 지키지 못한다(실측).
+        options: { temperature: 0.3, seed: CURATION_SEED },
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
           { role: 'user', content: buildUserPrompt(candidates, count, weekLabel) },
@@ -2617,7 +2636,7 @@ export function createProvider(): LlmProvider {
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/llm/ollama.test.ts`
-Expected: PASS (10개 통과)
+Expected: PASS (12개 통과 — seed·thinking 설정 고정 2건 추가)
 
 - [ ] **Step 5: 실제 Ollama로 확인**
 
