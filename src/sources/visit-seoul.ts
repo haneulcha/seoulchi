@@ -1,3 +1,4 @@
+import { htmlToText } from '~/lib/html'
 import { parseHours } from '~/lib/hours'
 import type { DetailCache, EventSource } from '~/sources/types'
 import type { EventItem, Item, PlaceItem } from '~/types/item'
@@ -77,6 +78,21 @@ function lastCategorySegment(depth: string | string[] | undefined): string {
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+
+/**
+ * 캐시에 넣기 전에 `post_desc`의 HTML을 걷어낸다.
+ *
+ * 이 캐시는 git에 커밋된다. 원본 그대로 두면 항목마다 붙는 스마트에디터 CSS와
+ * 본문에 박힌 base64 이미지 때문에 17MB가 되고, 매일 배치가 돌 때마다
+ * 그만한 blob이 히스토리에 쌓인다(실측: 본문 텍스트 총량은 1MB뿐이었다).
+ *
+ * 제품에서 외부 HTML을 그대로 렌더링할 일도 없다 — XSS와 스타일 오염만 떠안는다.
+ * 알맹이(텍스트)만 남긴다. 서식이 필요해지면 재수집한다.
+ */
+function slimDetail(detail: VisitSeoulDetail): VisitSeoulDetail {
+  if (detail.post_desc == null) return detail
+  return { ...detail, post_desc: htmlToText(String(detail.post_desc)) }
+}
 
 export class VisitSeoulSource
   implements EventSource<VisitSeoulListItem, VisitSeoulDetail>
@@ -216,7 +232,7 @@ export class VisitSeoulSource
       }
 
       const json = (await res.json()) as { data?: VisitSeoulDetail } & VisitSeoulDetail
-      const detail = json.data ?? json
+      const detail = slimDetail(json.data ?? json)
       cache[item.cid] = { updtDtText, detail }
       out.push(detail)
     }

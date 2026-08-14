@@ -14,10 +14,16 @@ const candidates: CurationCandidate[] = [
   },
 ]
 
+/** Ollama의 스트리밍 응답(NDJSON)을 흉내낸다. 조각을 여러 줄로 쪼개 보낸다. */
 function ollamaResponse(picks: unknown) {
-  return new Response(
-    JSON.stringify({ message: { content: JSON.stringify({ picks }) } }),
-  )
+  const full = JSON.stringify({ picks })
+  const chunks = [full.slice(0, 10), full.slice(10, 25), full.slice(25)]
+  const body =
+    chunks.map((c) => JSON.stringify({ message: { content: c }, done: false })).join('\n') +
+    '\n' +
+    JSON.stringify({ message: { content: '' }, done: true }) +
+    '\n'
+  return new Response(body)
 }
 
 afterEach(() => vi.restoreAllMocks())
@@ -46,8 +52,34 @@ describe('OllamaProvider', () => {
 
     const body = JSON.parse((spy.mock.calls[0]![1] as RequestInit).body as string)
     expect(body.format).toBeDefined()
-    expect(body.stream).toBe(false)
     expect(body.model).toBe('test-model')
+  })
+
+  it('스트리밍으로 요청한다 — stream:false면 5분 헤더 타임아웃에 걸린다', async () => {
+    // 실측: 생성에 224초 + 모델 로딩 40초가 걸리는데 undici 기본 headersTimeout이 300초다.
+    // stream:false면 생성이 끝나야 헤더가 오므로 정상 경로에서 UND_ERR_HEADERS_TIMEOUT이 난다.
+    const spy = vi
+      .spyOn(globalThis, 'fetch')
+      .mockResolvedValue(ollamaResponse([{ id: 'sc-a', reason: 'x' }]))
+
+    await provider.curate({ candidates, count: 1, weekLabel: 'x' })
+
+    const body = JSON.parse((spy.mock.calls[0]![1] as RequestInit).body as string)
+    expect(body.stream).toBe(true)
+  })
+
+  it('여러 조각으로 쪼개져 와도 이어붙여 파싱한다', async () => {
+    vi.spyOn(globalThis, 'fetch').mockResolvedValue(
+      ollamaResponse([
+        { id: 'sc-a', reason: '무료 전시' },
+        { id: 'sc-b', reason: '주말 공연' },
+      ]),
+    )
+    const picks = await provider.curate({ candidates, count: 2, weekLabel: 'x' })
+    expect(picks).toEqual([
+      { id: 'sc-a', reason: '무료 전시' },
+      { id: 'sc-b', reason: '주말 공연' },
+    ])
   })
 
   it('seed를 고정해 보낸다 (출력이 커밋되므로 재현 가능해야 한다)', async () => {

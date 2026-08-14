@@ -158,6 +158,38 @@ describe('VisitSeoulSource.hydrate', () => {
     fetchSpy.mockRestore()
   })
 
+  it('post_desc의 HTML을 걷어내고 캐시에 넣는다', async () => {
+    // 캐시가 git에 커밋되므로 스마트에디터 CSS와 base64 이미지를 그대로 쌓으면 안 된다.
+    // 제품에서 외부 HTML을 렌더링할 일도 없다.
+    const withHtml = {
+      ...detail,
+      post_desc:
+        '<style type="text/css">.se-contents{overflow-x:auto;}</style><p>서울의 여름 축제입니다.</p>',
+    }
+    const fetchSpy = vi
+      .spyOn(globalThis, 'fetch')
+      .mockResolvedValue(new Response(JSON.stringify({ data: withHtml })))
+
+    const cache: DetailCache = {}
+    const [out] = await source.hydrate([listItem], cache)
+
+    expect((out as { post_desc?: string }).post_desc).toBe('서울의 여름 축제입니다.')
+    expect(JSON.stringify(cache)).not.toContain('se-contents')
+    fetchSpy.mockRestore()
+  })
+
+  it('post_desc가 없어도 죽지 않는다', async () => {
+    const fetchSpy = vi
+      .spyOn(globalThis, 'fetch')
+      .mockResolvedValue(new Response(JSON.stringify({ data: detail })))
+
+    const [out] = await source.hydrate([listItem], {})
+
+    expect(out).toMatchObject({ cid: 'KOPsrn1p5' })
+    expect((out as { post_desc?: string }).post_desc).toBeUndefined()
+    fetchSpy.mockRestore()
+  })
+
   it('상세도 500이면 재시도한다 — 레이트 리밋이 500으로 위장돼 온다', async () => {
     const fetchSpy = vi
       .spyOn(globalThis, 'fetch')

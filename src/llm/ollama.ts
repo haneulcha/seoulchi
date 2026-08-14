@@ -55,6 +55,46 @@ function buildUserPrompt(candidates: CurationCandidate[], count: number, weekLab
 ${lines.join('\n')}`
 }
 
+/**
+ * Ollama 스트리밍 응답(NDJSON)에서 message.content 조각을 이어붙인다.
+ * 한 줄이 `{"message":{"content":"..."},"done":false}` 꼴이고 마지막에 done:true가 온다.
+ * 추론은 message.thinking으로 따로 오므로 여기서 걸러진다 — content는 순수 JSON이 된다.
+ */
+async function readStreamedContent(res: Response): Promise<string> {
+  const body = res.body
+  // 스트림이 없는 응답(구버전 Ollama, 테스트 더블)은 통째로 읽어 같은 경로로 처리한다
+  const raw = body ? null : await res.text()
+  const parts: string[] = []
+  let buffer = ''
+
+  const consume = (chunk: string) => {
+    buffer += chunk
+    const lines = buffer.split('\n')
+    buffer = lines.pop() ?? ''
+    for (const line of lines) {
+      if (!line.trim()) continue
+      try {
+        const obj = JSON.parse(line) as { message?: { content?: string } }
+        if (obj.message?.content) parts.push(obj.message.content)
+      } catch {
+        // 조각난 줄은 buffer에 남아 다음 청크와 합쳐진다
+      }
+    }
+  }
+
+  if (raw !== null) {
+    consume(raw)
+  } else {
+    const decoder = new TextDecoder()
+    for await (const chunk of body as unknown as AsyncIterable<Uint8Array>) {
+      consume(decoder.decode(chunk, { stream: true }))
+    }
+  }
+  if (buffer.trim()) consume('\n')
+
+  return parts.join('')
+}
+
 export class OllamaProvider implements LlmProvider {
   readonly name = 'ollama'
 
@@ -77,7 +117,10 @@ export class OllamaProvider implements LlmProvider {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         model: this.model,
-        stream: false,
+        // stream:false면 생성이 끝나야 헤더가 온다. undici 기본 headersTimeout이 300초인데
+        // 실측 생성이 224초 + 모델 로딩 40초라 정상 경로에서 UND_ERR_HEADERS_TIMEOUT이 났다.
+        // 스트리밍은 헤더가 즉시 오므로 생성이 얼마나 길든 끊기지 않는다.
+        stream: true,
         format: RESPONSE_FORMAT,
         // seed 고정 = 재현성. 이 출력이 data/*.json으로 커밋되므로
         // 데이터가 안 바뀐 날에는 diff도 없어야 한다.
@@ -94,8 +137,7 @@ export class OllamaProvider implements LlmProvider {
       throw new Error(`Ollama ${res.status}: ${await res.text().catch(() => '')}`)
     }
 
-    const json = (await res.json()) as { message?: { content?: string } }
-    const content = json.message?.content
+    const content = await readStreamedContent(res)
     if (!content) throw new Error('Ollama 응답에 message.content가 없습니다')
 
     let parsed: unknown
