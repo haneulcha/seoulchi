@@ -1271,6 +1271,8 @@ git commit -m "feat: 영업시간 best-effort 파서 추가
 | 목록 호출 | 항상 성공 | **`com_ctgry_sn` 필터가 약 30% 확률로 500.** 재시도 필요 |
 | 상세 호출 간격 | 120ms면 충분 | **레이트 리밋이 500으로 위장돼 나온다.** 120ms에서 성공률 50%, 400ms에서 67%, 1000ms에서 100%. 재시도 필수 |
 | 상세 실패 | 건너뛰면 됨 | **조용히 건너뛰면 데이터의 60%가 사라진다.** 재시도 후에도 실패한 비율이 높으면 배치를 깨뜨려야 한다 |
+| 재시도 대상 | HTTP 500 | **`fetch`가 던지는 예외도 재시도해야 한다.** 상태만 보면 ECONNRESET 한 번에 배치 전체가 죽는다 — 실제로 2,199건을 도는 중 20분치가 날아갔다 |
+| 캐시 저장 시점 | emit에서 한 번 | **초회 hydrate는 25분 넘게 걸린다.** 마지막에만 저장하면 그 사이 어떤 실패에도 전부 잃는다. CLI가 30초마다 스냅샷을 뜨고, 실패 시에도 남긴다 |
 | `cate_depth` | `'문화관광 > 전시시설'` | **선행 공백이 있다** (`' 축제/공연/행사 > 축제'`). `trim()` 필수 |
 | `extra.closed_days` | 항상 존재 | **행사 항목에는 없다.** 옵셔널 |
 | `page_size` | 기본 50 | **200까지 지정 가능** — 초회 수집 요청 수를 1/4로 줄인다 |
@@ -1563,19 +1565,32 @@ export class VisitSeoulSource
     return [...seen.values()]
   }
 
-  /** 500이 나면 선형 백오프로 재시도한다. 마지막 응답을 그대로 돌려준다. */
+  /**
+   * 선형 백오프로 재시도한다.
+   * **HTTP 상태뿐 아니라 fetch가 던지는 예외(ECONNRESET 등)도 재시도한다.**
+   * 재시도를 다 쓰고도 예외면 던진다 — 목록은 위로, 상세는 그 건만 실패로 센다.
+   */
   private async postWithRetry(url: string, payload: unknown): Promise<Response> {
-    let res!: Response
+    let res: Response | undefined
+    let lastError: unknown
+
     for (let attempt = 1; attempt <= LIST_MAX_ATTEMPTS; attempt++) {
       if (attempt > 1) await sleep(RETRY_BASE_MS * attempt)
-      res = await fetch(url, {
-        method: 'POST',
-        headers: this.headers,
-        body: JSON.stringify(payload),
-      })
-      if (res.ok) return res
+      try {
+        res = await fetch(url, {
+          method: 'POST',
+          headers: this.headers,
+          body: JSON.stringify(payload),
+        })
+        lastError = undefined
+        if (res.ok) return res
+      } catch (error) {
+        lastError = error
+      }
     }
-    return res
+
+    if (lastError) throw lastError
+    return res!
   }
 
   /**
@@ -1690,7 +1705,7 @@ export class VisitSeoulSource
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/sources/visit-seoul.test.ts`
-Expected: PASS (19개 통과 — 실측으로 드러난 재시도·실패율 케이스 추가)
+Expected: PASS (22개 통과 — 재시도·유실률·네트워크 예외 케이스 추가)
 
 - [ ] **Step 5: 커밋**
 

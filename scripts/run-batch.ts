@@ -1,4 +1,5 @@
-import { readFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { dirname } from 'node:path'
 import { isoWeekKey, kstToday } from '~/lib/week'
 import { createProvider } from '~/llm/index'
 import { emit } from '~/pipeline/emit'
@@ -16,12 +17,28 @@ function requireEnv(name: string): string {
   return value
 }
 
+const CACHE_PATH = 'data/cache/visitseoul.json'
+/** 중간 저장 주기. 죽었을 때 잃는 양의 상한이다. */
+const CACHE_SAVE_INTERVAL_MS = 30_000
+
 async function loadCache(path: string): Promise<DetailCache> {
   try {
-    return JSON.parse(await readFile(path, 'utf8')) as DetailCache
+    const cache = JSON.parse(await readFile(path, 'utf8')) as DetailCache
+    console.log(`캐시 ${Object.keys(cache).length}건 로드`)
+    return cache
   } catch {
     console.log('캐시 없음 — 처음부터 수집합니다')
     return {}
+  }
+}
+
+async function saveCache(path: string, cache: DetailCache): Promise<void> {
+  try {
+    await mkdir(dirname(path), { recursive: true })
+    await writeFile(path, JSON.stringify(cache), 'utf8')
+  } catch (error) {
+    // 중간 저장 실패가 배치를 멈추게 하지는 않는다
+    console.warn('캐시 중간 저장 실패:', error)
   }
 }
 
@@ -39,20 +56,40 @@ if (weekKey < isoWeekKey(now)) {
 
 console.log(`대상 주차: ${weekKey} (오늘 ${today} 이후만 수집)\n`)
 
-const cache = await loadCache('data/cache/visitseoul.json')
+const cache = await loadCache(CACHE_PATH)
 const provider = createProvider()
 console.log(`LLM provider: ${provider.name}\n`)
 
-const payload = await runPipeline({
-  sources: [
-    new SeoulCultureSource(requireEnv('SEOUL_API_KEY')),
-    new VisitSeoulSource(requireEnv('VISITSEOUL_API_KEY'), VISIT_SEOUL_CATEGORIES),
-  ],
-  provider,
-  weekKey,
-  today,
-  cache,
-})
+/**
+ * 초회 hydrate는 25분 넘게 걸린다(2,199건 × 레이트 리밋 간격).
+ * 캐시를 emit에서만 저장하면 그 사이 어떤 실패에도 전부 날아간다 — 실제로 겪었다.
+ * hydrate가 cache를 제자리에서 갱신하므로, 주기적으로 스냅샷만 떠두면
+ * 다음 실행이 거기서 이어받는다.
+ */
+const cacheSaver = setInterval(() => {
+  void saveCache(CACHE_PATH, cache)
+}, CACHE_SAVE_INTERVAL_MS)
+
+let payload
+try {
+  payload = await runPipeline({
+    sources: [
+      new SeoulCultureSource(requireEnv('SEOUL_API_KEY')),
+      new VisitSeoulSource(requireEnv('VISITSEOUL_API_KEY'), VISIT_SEOUL_CATEGORIES),
+    ],
+    provider,
+    weekKey,
+    today,
+    cache,
+  })
+} catch (error) {
+  clearInterval(cacheSaver)
+  // 죽더라도 여기까지 받아둔 상세는 남긴다. 다음 실행이 이어받는다.
+  await saveCache(CACHE_PATH, cache)
+  console.error(`\n실패. 수집한 상세 ${Object.keys(cache).length}건은 캐시에 남겼습니다.`)
+  throw error
+}
+clearInterval(cacheSaver)
 
 await emit(payload)
 

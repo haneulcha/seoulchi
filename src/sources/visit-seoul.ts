@@ -127,19 +127,38 @@ export class VisitSeoulSource
     return [...seen.values()]
   }
 
-  /** 500이 나면 선형 백오프로 재시도한다. 마지막 응답을 그대로 돌려준다. */
+  /**
+   * 선형 백오프로 재시도한다. 마지막 응답을 그대로 돌려준다.
+   *
+   * **HTTP 상태(500)뿐 아니라 fetch가 던지는 예외도 재시도한다.**
+   * 상태만 보고 예외를 놓쳤더니, 2,199건을 도는 중 커넥션 리셋 한 번에
+   * 배치 전체가 죽고 20분치 수집이 날아갔다(ECONNRESET, 실측).
+   *
+   * 재시도를 다 쓰고도 예외면 그 예외를 던진다 — 호출 측이 판단한다.
+   * 목록은 못 받으면 진행이 불가능하니 위로 던지고,
+   * 상세는 그 한 건만 실패로 세고 계속 간다.
+   */
   private async postWithRetry(url: string, payload: unknown): Promise<Response> {
-    let res!: Response
+    let res: Response | undefined
+    let lastError: unknown
+
     for (let attempt = 1; attempt <= LIST_MAX_ATTEMPTS; attempt++) {
       if (attempt > 1) await sleep(RETRY_BASE_MS * attempt)
-      res = await fetch(url, {
-        method: 'POST',
-        headers: this.headers,
-        body: JSON.stringify(payload),
-      })
-      if (res.ok) return res
+      try {
+        res = await fetch(url, {
+          method: 'POST',
+          headers: this.headers,
+          body: JSON.stringify(payload),
+        })
+        lastError = undefined
+        if (res.ok) return res
+      } catch (error) {
+        lastError = error
+      }
     }
-    return res
+
+    if (lastError) throw lastError
+    return res!
   }
 
   /**
@@ -170,10 +189,21 @@ export class VisitSeoulSource
 
       // GET은 405, 쿼리스트링 POST는 400. cid를 body에 실은 POST만 통한다(Task 0 실측).
       // 레이트 리밋이 500으로 오므로 목록과 같은 재시도를 태운다.
-      const res = await this.postWithRetry(`${BASE}/contents/info`, {
-        cid: item.cid,
-        lang_code_id: 'ko',
-      })
+      let res: Response
+      try {
+        res = await this.postWithRetry(`${BASE}/contents/info`, {
+          cid: item.cid,
+          lang_code_id: 'ko',
+        })
+      } catch (error) {
+        // 재시도를 다 쓴 네트워크 오류. 이 한 건 때문에 나머지를 버리지 않는다.
+        console.warn(`비짓서울 상세 네트워크 실패: ${item.cid} — ${String(error)}`)
+        fetched++
+        failed++
+        if (cached) out.push(cached.detail as VisitSeoulDetail)
+        else lost++
+        continue
+      }
       fetched++
 
       if (!res.ok) {

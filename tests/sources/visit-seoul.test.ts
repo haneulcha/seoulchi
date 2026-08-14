@@ -171,6 +171,36 @@ describe('VisitSeoulSource.hydrate', () => {
     fetchSpy.mockRestore()
   })
 
+  it('fetch가 예외를 던져도 재시도한다 — ECONNRESET으로 배치가 죽었다', async () => {
+    // 실측: 2,199건을 도는 중 커넥션 리셋 한 번에 배치 전체가 죽었다.
+    // postWithRetry가 HTTP 상태만 보고 예외는 안 잡았기 때문이다.
+    const fetchSpy = vi
+      .spyOn(globalThis, 'fetch')
+      .mockRejectedValueOnce(Object.assign(new TypeError('fetch failed'), { cause: { code: 'ECONNRESET' } }))
+      .mockResolvedValueOnce(new Response(JSON.stringify({ data: detail })))
+
+    const out = await source.hydrate([listItem], {})
+
+    expect(fetchSpy).toHaveBeenCalledTimes(2)
+    expect(out).toEqual([detail])
+    fetchSpy.mockRestore()
+  })
+
+  it('재시도를 다 써도 예외면 그 건만 실패로 세고 계속 간다', async () => {
+    // 20건 중 1건만 상세 호출이 필요하고 그게 네트워크로 죽는 경우.
+    // 한 건 때문에 나머지 19건을 버리면 안 된다.
+    const items = Array.from({ length: 20 }, (_, i) => ({ ...listItem, cid: `KOP${i}` }))
+    const cache: DetailCache = Object.fromEntries(
+      items.slice(1).map((i) => [i.cid, { updtDtText: '2026.08.01', detail: { cid: i.cid } }]),
+    )
+    const fetchSpy = vi.spyOn(globalThis, 'fetch').mockRejectedValue(new TypeError('fetch failed'))
+
+    const out = await source.hydrate(items, cache)
+
+    expect(out).toHaveLength(19)
+    fetchSpy.mockRestore()
+  })
+
   it('재시도 후에도 유실된 비율이 높으면 배치를 깨뜨린다', async () => {
     // 조용히 데이터의 절반이 빠진 채로 나가는 것보다 깨지는 게 낫다.
     // 실측에서 120ms 간격일 때 상세의 60%가 500이었다.
