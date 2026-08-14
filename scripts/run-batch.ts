@@ -35,7 +35,9 @@ async function loadCache(path: string): Promise<DetailCache> {
 async function saveCache(path: string, cache: DetailCache): Promise<void> {
   try {
     await mkdir(dirname(path), { recursive: true })
-    await writeFile(path, JSON.stringify(cache), 'utf8')
+    // emit과 같은 pretty 형식으로 쓴다. 형식이 엇갈리면 실패한 실행이 compact를 남기고
+    // 다음 성공 실행이 pretty로 되돌리면서 파일 전체가 바뀐 diff가 잡힌다.
+    await writeFile(path, `${JSON.stringify(cache, null, 2)}\n`, 'utf8')
   } catch (error) {
     // 중간 저장 실패가 배치를 멈추게 하지는 않는다
     console.warn('캐시 중간 저장 실패:', error)

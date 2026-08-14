@@ -3707,7 +3707,13 @@ git commit -m "chore: 첫 배치 데이터 커밋"
 
 ## Task 15: GitHub Actions 이관
 
-**전제:** Ollama로 프롬프트 품질이 만족스러워진 뒤에 착수한다. Actions 러너에서는 Ollama가 돌지 않으므로 `LLM_PROVIDER`를 `rule`로 시작하고, 이후 `AnthropicProvider`를 추가한다(스펙 9-2).
+**전제:** Ollama로 프롬프트 품질이 만족스러워진 뒤에 착수한다.
+
+**구현 시 계획에서 벗어난 것:**
+- `node-version`을 20 → **22**로 올렸다. 로컬에서 22.22로 개발·검증했다.
+- 워크플로에 `concurrency`(앞 실행이 push하기 전에 다음이 시작되면 커밋이 충돌)와
+  `timeout-minutes: 90`(캐시가 비면 40분 넘게 걸린다), push 재시도를 넣었다.
+- 커밋 메시지 날짜를 KST 기준으로 찍는다. 이 배치의 모든 날짜 계산이 KST다. Actions 러너에서는 Ollama가 돌지 않으므로 `LLM_PROVIDER`를 `rule`로 시작하고, 이후 `AnthropicProvider`를 추가한다(스펙 9-2).
 
 **Files:**
 - Create: `.github/workflows/batch.yml`
@@ -3745,7 +3751,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # 로컬 개발·검증 환경과 맞춘다 (--env-file-if-exists는 20.6+ 필요)
+          node-version: 22
           cache: npm
 
       - run: npm ci
@@ -3799,7 +3806,7 @@ Actions 탭 → 배치 → Run workflow. 성공하면 `data/` 갱신 커밋이 �
 
 ```bash
 npm ci
-cp .env.example .env   # API 키 채우기
+cp .env.example .env.local   # API 키 채우기
 npm test
 npm run batch          # data/*.json 생성
 ```
@@ -3813,7 +3820,7 @@ npm run batch          # data/*.json 생성
 | `VISITSEOUL_CATEGORIES` | 수집 대상 카테고리 (쉼표 구분) |
 | `LLM_PROVIDER` | `ollama` (로컬) \| `rule` (Actions) |
 | `OLLAMA_HOST` | 기본 `http://localhost:11434` |
-| `OLLAMA_MODEL` | 기본 `qwen3:8b` |
+| `OLLAMA_MODEL` | 기본 `qwen3:30b` |
 
 ## 배치
 

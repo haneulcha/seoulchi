@@ -1,0 +1,63 @@
+name: 배치
+
+on:
+  schedule:
+    # 매일 KST 06:00 (UTC 21:00 전날)
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+    inputs:
+      weekKey:
+        description: '대상 주차 (예: 2026-W33). 비우면 오늘 기준'
+        required: false
+
+permissions:
+  contents: write
+
+# 앞 실행이 아직 push하지 않았는데 다음 실행이 시작되면 커밋이 충돌한다
+concurrency:
+  group: batch
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    # 캐시가 비면 비짓서울 상세 2,199건을 받느라 40분 넘게 걸린다
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # 로컬 개발·검증 환경과 맞춘다 (--env-file-if-exists는 20.6+ 필요)
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+
+      - name: 배치 실행
+        env:
+          SEOUL_API_KEY: ${{ secrets.SEOUL_API_KEY }}
+          VISITSEOUL_API_KEY: ${{ secrets.VISITSEOUL_API_KEY }}
+          VISITSEOUL_CATEGORIES: ${{ vars.VISITSEOUL_CATEGORIES }}
+          # 러너에서는 Ollama가 돌지 않는다. 스펙 9-2의 예정된 경로다.
+          LLM_PROVIDER: rule
+        run: npm run batch -- ${{ inputs.weekKey }}
+
+      - name: 변경분 커밋
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/
+          if git diff --staged --quiet; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git commit -m "chore: 배치 데이터 갱신 ($(date -u -d '+9 hours' +%Y-%m-%d))"
+          # 앞 실행이 먼저 push했을 수 있다. 데이터 커밋뿐이라 rebase가 안전하다.
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          done
+          exit 1
