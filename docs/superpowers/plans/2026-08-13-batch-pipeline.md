@@ -3338,7 +3338,7 @@ export async function emit(
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/emit.test.ts`
-Expected: PASS (7개 통과)
+Expected: PASS (9개 통과 — 장소 참조·전체 미기록 2건 추가)
 
 - [ ] **Step 5: 커밋**
 
