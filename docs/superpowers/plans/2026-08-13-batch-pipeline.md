@@ -2881,7 +2881,7 @@ export async function curate(
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/curate.test.ts`
-Expected: PASS (9개 통과)
+Expected: PASS (11개 통과 — 빈 후보·개수 상한 2건 추가)
 
 - [ ] **Step 5: 커밋**
 
