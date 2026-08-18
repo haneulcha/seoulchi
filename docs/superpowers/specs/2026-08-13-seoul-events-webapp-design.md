@@ -149,7 +149,7 @@ interface BaseItem {
   title: string
   summary?: string            // 비짓서울 sumry 우선
   category: string            // 정규화된 카테고리
-  district?: string           // 자치구
+  district?: string           // 자치구. 여기서는 옵셔널 — '미상' 채움은 큐레이션 후보 변환 단계(8-1장)
   place: string               // 장소명
   address?: string
   lat?: number                // 없을 수 있음 → 근처 검색에서 제외
@@ -176,7 +176,7 @@ interface PlaceItem extends BaseItem {
 }
 ```
 
-- **`id` 형식**: `sc-{원본id}`(서울시 문화행사) / `vs-{cid}`(비짓서울). 콜론 대신 하이픈을 쓰는 이유는 상세 라우트가 `/e/[id]`라서 URL 경로에 그대로 들어가기 때문 — 인코딩 없이 안전해야 한다.
+- **`id` 형식**: `sc-{원본id}`(서울시 문화행사) / `vs-{cid}`(비짓서울). 콜론 대신 하이픈을 쓰는 이유는 상세 라우트가 `/e/$id`라서 URL 경로에 그대로 들어가기 때문 — 인코딩 없이 안전해야 한다.
 - **`kind` 판정 규칙**: `schdul_info_bgnde` / `schdul_info_endde`가 있고 유효하면 `event`, 없으면 `place`. 서울시 문화행사 API 항목은 전부 `event`.
 - **주차(`YYYY-Www`) 정의**: **ISO 8601 주차, 월요일 시작, KST(UTC+9) 기준**. 예: `2026-W33`. 배치와 앱이 같은 유틸을 공유해 계산한다 — 어긋나면 존재하지 않는 파일을 읽게 된다.
 - **명시된 제약 — 영업시간 파싱은 best-effort**: `cmmn_use_time`("10:00~18:00, 매주 월요일 휴관" 같은 한국어 자유 텍스트)과 `closed_days` 파싱은 100% 되지 않는다. 파싱 성공 시에만 "지금 열림" 배지를 띄우고, 실패 시에는 배지 없이 **원문 그대로** 표시한다. 실패를 조용히 숨기지 않아 최악의 경우에도 사용자가 직접 판단할 수 있게 한다. 파싱 성공률은 실제 데이터를 보며 규칙을 늘려간다.

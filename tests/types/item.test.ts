@@ -18,7 +18,7 @@ describe('eventItemSchema', () => {
   })
 
   it('콜론이 들어간 id를 거부한다', () => {
-    // 상세 라우트 /e/[id]에 인코딩 없이 들어가야 하므로
+    // 상세 라우트 /e/$id에 인코딩 없이 들어가야 하므로
     expect(() => eventItemSchema.parse({ ...validEvent, id: 'seoul-culture:12345' })).toThrow()
   })
 

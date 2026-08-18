@@ -316,6 +316,7 @@ AGENTS.md의 "두 소스는 대칭이다"가 데이터로 확인됐다. 서로 �
 본문에 base64 이미지가 통째로 박힌 항목도 있었다(raw 2.0MB인데 본문은 548자).
 
 **HTML을 걷어내고 텍스트만 남긴다: 17.4 MB → 7.5 MB (57% 감소).**
+**적용 완료** — 구현은 `src/lib/html.ts`의 `htmlToText`이고, `src/sources/visit-seoul.ts`의 `slimDetail`이 `post_desc`에 적용한다.
 제품에서 외부 HTML을 렌더링할 일이 없으므로 XSS·스타일 오염 위험만 덜어낸 셈이다.
 
 태그 정규식은 속성값을 따옴표째 건너뛴다. `<[^>]*>`로 잡으면

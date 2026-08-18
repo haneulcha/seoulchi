@@ -4,19 +4,32 @@
 
 ## 현재 상태
 
-계획을 태스크 순서대로 실행 중입니다. **어디까지 왔는지는 `git log --oneline`으로 확인하세요** —
-커밋 하나가 태스크 하나입니다. `npm run batch`는 Task 14까지 끝나야 동작합니다.
+**Plan 1(배치)은 완료됐고, Plan 2(웹앱)는 계획만 있고 코드는 아직 없습니다.**
+
+- 배치는 구현·테스트 완료입니다(`src/`, `scripts/`, `tests/` 존재, `npm test` 초록).
+  산출 데이터도 커밋돼 있습니다: `data/events/2026-W33.json`(314건), `data/places.json`(728건),
+  `data/curated/2026-W33.json`(행사 12 + 장소 6), `data/meta.json`, `data/cache/visitseoul.json`.
+- `.github/workflows/batch.yml`이 매일 KST 06:00 cron으로 배치를 돌리게 돼 있지만,
+  **레포에 Actions Secrets·Variables가 하나도 등록돼 있지 않아 아직 한 번도 실행된 적이 없습니다.**
+  등록 전까지 cron은 키 없이 돌다 실패합니다.
+- **커밋된 `data/`는 로컬 Ollama로 만든 것입니다**(`meta.json`의 `llmProvider: "ollama"`).
+  그래서 `curated`의 `reason`에 한국어 코멘트가 들어 있습니다. Actions로 넘어가면
+  `LLM_PROVIDER=rule`이라 `reason`은 빈 문자열이 됩니다 — 지금 데이터만 보고
+  "코멘트는 항상 있다"고 가정하면 안 됩니다.
+
+문서는 넷입니다:
 
 - 설계 스펙: `docs/superpowers/specs/2026-08-13-seoul-events-webapp-design.md`
-- 구현 계획: `docs/superpowers/plans/2026-08-13-batch-pipeline.md` (16 태스크)
+- Plan 1 — 배치: `docs/superpowers/plans/2026-08-13-batch-pipeline.md` (16 태스크, **완료된 이력 문서**)
+- Plan 2 — 웹앱 홈+상세: `docs/superpowers/plans/2026-08-18-webapp-home-detail.md` (Task 0~11 총 12개, **미착수**)
 - **API 실측 결과: `docs/api-findings.md`** — 필드명·호출 규약·건수의 유일한 근거.
   API 응답에 대한 가정을 코드에 넣기 전에 반드시 여기를 봅니다.
 
 **계획 문서가 진실의 원천입니다.** 코드를 쓰기 전에 해당 태스크를 읽으세요.
 태스크에는 테스트 코드와 구현 코드가 전부 들어 있고, 결정의 근거도 함께 적혀 있습니다.
 
-계획은 두 개로 나뉩니다. Plan 1(배치)이 먼저이고, Plan 2(웹앱)는 아직 없습니다 —
-Plan 1의 Task 14에서 측정하는 데이터 파일 크기가 앱의 데이터 로딩 설계를 결정하기 때문입니다.
+Plan 1이 먼저였던 이유: Task 14에서 측정한 데이터 파일 크기가
+앱의 데이터 로딩 설계를 결정하기 때문입니다.
 
 ## 아키텍처의 핵심: 왜 전부 정적인가
 
@@ -66,7 +79,7 @@ Plan 1의 Task 14에서 측정하는 데이터 파일 크기가 앱의 데이터
 
 | 규칙 | 이유 |
 |---|---|
-| `id`는 `sc-{원본id}` / `vs-{cid}`. 콜론 금지 | 상세 라우트 `/e/[id]`에 인코딩 없이 들어가야 함 |
+| `id`는 `sc-{원본id}` / `vs-{cid}`. 콜론 금지 | 상세 라우트 `/e/$id`에 인코딩 없이 들어가야 함 |
 | 주차 키는 ISO 8601 · 월요일 시작 · **KST** (`2026-W33`) | 배치가 쓰고 앱이 읽음. 어긋나면 없는 파일을 읽음 |
 | 유효 시작일은 **`max(주 시작일, 오늘)`**. 지난 주차 배치는 거절 | 두 소스가 아카이브를 포함함. 주 시작일만 쓰면 월요일에 끝난 행사가 목요일 화면에 남음 |
 | `today`는 순수 함수에 **인자로 넘김**. 내부에서 `new Date()` 금지 | 테스트가 실행 날짜에 따라 깨짐 |
@@ -76,7 +89,7 @@ Plan 1의 Task 14에서 측정하는 데이터 파일 크기가 앱의 데이터
 | 영업시간 파싱 실패 시 `null` + 원문 노출 | 실패를 숨기지 않음. 사용자가 직접 판단할 수 있게 |
 | 알 수 없는 `LLM_PROVIDER`는 던짐 | 오타를 폴백으로 삼키면 코멘트가 왜 비었는지 알 수 없음 |
 
-## 명령어 (Task 0 완료 후 사용 가능)
+## 명령어
 
 ```bash
 npm ci

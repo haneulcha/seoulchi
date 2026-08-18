@@ -10,6 +10,8 @@
 
 **Spec:** `docs/superpowers/specs/2026-08-13-seoul-events-webapp-design.md` — 특히 10장(화면 구조, 2026-08-18 갱신본)과 11장(기술 스택). API·데이터 사실의 근거는 `docs/api-findings.md`.
 
+**Tasks:** Task 0~11, **총 12개.** 순서: 0 스캐폴드 → 1 파일 스키마 이동 → 2 데이터 로더 → 3~7 순수 함수(resolveCurated · 날짜 표기 · 카테고리 색 · isOpenNow · pickHomeItems) → 8 실데이터 스모크 → **9 상세 `/e/$id`** → **10 홈 `/`** → 11 정적 서빙 검증 + 문서 갱신. 상세(9)가 홈(10)보다 먼저인 이유: 홈이 상세로 링크를 걸면 `crawlLinks`가 그 링크를 프리렌더하려 들어, 상세 라우트가 없으면 `failOnError` 빌드가 깨진다 — 역순이면 홈 완성 시점에 빌드가 초록일 수 없다(Task 9 본문 참조).
+
 ## Global Constraints
 
 - **1차 배포는 홈 `/`과 상세 `/e/$id` 둘뿐이다.** `/explore`와 `/nearby`는 범위 밖 (스펙 10-2, 10-3 — 다음 증분). 홈 하단 "전체 둘러보기 →" 링크도 넣지 않는다 — 갈 곳이 없다.
