@@ -18,6 +18,13 @@
 - 주차 키 형식은 **ISO 8601 주차, 월요일 시작**: `YYYY-Www` (예: `2026-W33`)
 - 아이템 `id` 형식: `sc-{원본id}` (서울시 문화행사) / `vs-{cid}` (비짓서울). 콜론 금지 — 상세 라우트 `/e/[id]`에 인코딩 없이 들어가야 한다
 - 소스 이름 리터럴: `'seoul-culture'` | `'visit-seoul'`
+- **과거 컷오프: 오늘(KST) 이전에 끝난 행사는 출력에 넣지 않는다.** 두 소스 모두 아카이브를
+  포함한다(서울시 19,486건 중 97.8%가 종료된 행사, 비짓서울에도 2023년 축제가 남아 있다).
+  주간 파일이라고 해서 주 시작일을 기준으로 삼으면 **이번 주 월요일에 끝난 행사가 목요일 화면에 남는다.**
+  따라서 **유효 시작일은 `max(주 시작일, 오늘)`**이다. `today`는 순수 함수에 인자로 넘긴다 —
+  내부에서 `new Date()`를 부르면 테스트가 날짜에 따라 깨진다
+- 지난 주차를 인자로 준 배치 실행(`npm run batch -- 2025-W20`)은 **의도적으로 지원하지 않는다.**
+  과거 데이터를 쌓지 않기로 했다. 필요해지면 이 제약을 먼저 되돌린다
 - 모든 배치 출력 JSON은 **쓰기 직전 zod 스키마로 검증**한다. 검증 실패 시 파일을 쓰지 않고 프로세스를 0이 아닌 코드로 종료한다
 - API 키는 환경변수로만 읽는다. 코드·커밋에 절대 넣지 않는다: `SEOUL_API_KEY`, `VISITSEOUL_API_KEY`
 - 커밋 메시지는 한국어 본문 + Conventional Commits 접두사(`feat:`, `test:`, `chore:`, `docs:`)
@@ -65,7 +72,7 @@
 - [ ] **Step 1: 프로젝트 초기화**
 
 ```bash
-cd /Users/haneul/Projects/seoulchi
+cd /Users/haneul/Study/seoulchi
 npm init -y
 npm i zod
 npm i -D typescript tsx vitest @types/node
@@ -86,12 +93,14 @@ npm i -D typescript tsx vitest @types/node
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "types": ["node", "vitest/globals"],
-    "baseUrl": ".",
-    "paths": { "~/*": ["src/*"] }
+    "paths": { "~/*": ["./src/*"] }
   },
   "include": ["src", "scripts", "tests"]
 }
 ```
+
+**`baseUrl`이 없는 이유**: TypeScript 7에서 제거됐다(`TS5102`). `paths`의 값을
+`./`로 시작하는 상대 경로로 쓰면 `baseUrl` 없이 동작한다. `src/*`처럼 쓰면 `TS5090`으로 죽는다.
 
 - [ ] **Step 3: `package.json`에 `type`과 스크립트 추가**
 
@@ -103,8 +112,8 @@ npm i -D typescript tsx vitest @types/node
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "probe": "tsx --env-file-if-exists=.env scripts/probe-apis.ts",
-    "batch": "tsx --env-file-if-exists=.env scripts/run-batch.ts"
+    "probe": "tsx --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/probe-apis.ts",
+    "batch": "tsx --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/run-batch.ts"
   }
 }
 ```
@@ -113,6 +122,10 @@ npm i -D typescript tsx vitest @types/node
 `.env`가 없어도 조용히 넘어가 워크플로가 주입한 실제 환경변수를 쓴다.
 `--env-file`(if-exists 없이)을 쓰면 Actions에서 `.env: not found`로 죽는다.
 별도 dotenv 패키지는 필요 없다 — Node가 네이티브로 지원한다.
+
+**`.env.local`도 읽는 이유**: 실제 키가 `.env.local`에 들어 있다. 둘 다 `if-exists`이므로
+어느 쪽만 있어도 동작하고, 나중 플래그가 이기므로 `.env.local`이 `.env`를 덮어쓴다.
+둘 다 `.gitignore`에 있다.
 
 - [ ] **Step 4: `vitest.config.ts` 작성**
 
@@ -128,7 +141,10 @@ export default defineConfig({
 })
 ```
 
-- [ ] **Step 5: `.gitignore`와 `.env.example` 작성**
+- [x] **Step 5: `.gitignore`와 `.env.example` 작성** — 커밋 `bdb4b4f`에서 선반영 완료
+
+실제 커밋된 `.gitignore`는 아래보다 넓다(`.env.local`, `.vinxi/`, `.tanstack/`, `.DS_Store` 포함).
+커밋된 쪽을 쓴다. 아래는 최소 요건으로만 남긴다.
 
 `.gitignore`:
 ```
@@ -462,7 +478,7 @@ export type Item = z.infer<typeof itemSchema>
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/types/item.test.ts`
-Expected: PASS (10개 통과)
+Expected: PASS (8개 통과)
 
 - [ ] **Step 5: 커밋**
 
@@ -488,6 +504,7 @@ id는 URL-safe 형식을 강제해 상세 라우트에서 인코딩이 불필요
   - `isoWeekKey(date: Date): string` — `'2026-W33'`
   - `weekRange(key: string): { start: string; end: string }` — KST 기준 월요일~일요일 `YYYY-MM-DD`
   - `weekLabel(key: string): string` — `'2026년 8월 둘째 주'`
+  - `kstToday(now: Date): string` — KST 달력 기준 오늘 `YYYY-MM-DD`. 과거 컷오프의 기준값
 
 배치와 앱이 **같은 유틸을 공유**한다. 어긋나면 앱이 존재하지 않는 파일을 읽는다.
 
@@ -497,7 +514,7 @@ id는 URL-safe 형식을 강제해 상세 라우트에서 인코딩이 불필요
 
 ```ts
 import { describe, expect, it } from 'vitest'
-import { isoWeekKey, weekLabel, weekRange } from '~/lib/week'
+import { isoWeekKey, kstToday, weekLabel, weekRange } from '~/lib/week'
 
 describe('isoWeekKey', () => {
   it('2026-08-13(목)은 2026-W33이다', () => {
@@ -551,6 +568,23 @@ describe('weekLabel', () => {
   it('첫째 주를 올바르게 센다', () => {
     // 2026-W32의 목요일은 8/6 → 첫 번째
     expect(weekLabel('2026-W32')).toBe('2026년 8월 첫째 주')
+  })
+})
+
+describe('kstToday', () => {
+  it('KST 달력 날짜를 YYYY-MM-DD로 준다', () => {
+    expect(kstToday(new Date('2026-08-13T12:00:00+09:00'))).toBe('2026-08-13')
+  })
+
+  it('UTC로는 전날인 이른 새벽도 KST 날짜로 준다', () => {
+    // 2026-08-13T00:30+09:00 = 2026-08-12T15:30Z
+    expect(kstToday(new Date('2026-08-13T00:30:00+09:00'))).toBe('2026-08-13')
+  })
+
+  it('UTC로는 다음날인 늦은 밤도 KST 날짜로 준다', () => {
+    // 2026-08-13T23:30+09:00 = 2026-08-13T14:30Z — 여기선 UTC와 같은 날
+    // 경계를 넘는 쪽: 2026-08-14T08:00+09:00 = 2026-08-13T23:00Z
+    expect(kstToday(new Date('2026-08-14T08:00:00+09:00'))).toBe('2026-08-14')
   })
 })
 ```
@@ -643,12 +677,21 @@ export function weekLabel(key: string): string {
   const ordinal = ORDINALS[nth - 1] ?? `${nth}번째`
   return `${year}년 ${month}월 ${ordinal} 주`
 }
+
+/**
+ * KST 달력 기준 오늘. 과거 컷오프(`max(주 시작일, 오늘)`)의 기준값이다.
+ * `now`를 인자로 받는 이유는 이 유틸을 쓰는 순수 함수들이
+ * 실행 날짜에 따라 결과가 바뀌지 않게 하기 위해서다 — 호출 측이 한 번만 정한다.
+ */
+export function kstToday(now: Date): string {
+  return formatIsoDate(toKstCalendarDate(now))
+}
 ```
 
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/lib/week.test.ts`
-Expected: PASS (11개 통과)
+Expected: PASS (14개 통과)
 
 - [ ] **Step 5: 커밋**
 
@@ -1012,7 +1055,7 @@ function hashId(input: string): string {
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/sources/seoul-culture.test.ts`
-Expected: PASS (9개 통과)
+Expected: PASS (10개 통과 — fixture 검증 1건 추가)
 
 - [ ] **Step 5: 실제 응답으로 검증**
 
@@ -1055,6 +1098,14 @@ git commit -m "feat: 서울시 문화행사 소스 어댑터 추가
 - Produces: `parseHours(useTime?: string, closedDays?: string): ParsedHours | null`
 
 스펙 6장의 명시된 제약: 100% 파싱되지 않는다. **실패를 조용히 숨기지 않고 `null`을 반환**해 호출 측이 원문을 그대로 보여주게 한다.
+
+**Task 6 실측 후 규칙 하나를 추가했다.** 파싱 실패 원문의 최빈 패턴이
+`24시간` / `상시개방` 계열이었다(실패 116건 중 40건). `00:00~24:00`으로 읽는다 —
+스키마도 새 필드도 건드리지 않고 "지금 열려 있나" 계산이 그대로 돈다.
+성공률 **54% → 86%**.
+
+`연중무휴`는 이 규칙에 넣지 않는다. 쉬는 날이 없다는 뜻이지 24시간이라는 뜻이 아니다
+(`연중무휴 10:00~18:00`이 흔하다). 그건 `closedWeekdays` 쪽 관심사다.
 
 - [ ] **Step 1: 실패하는 테스트 작성**
 
@@ -1193,7 +1244,7 @@ export function parseHours(useTime?: string, closedDays?: string): ParsedHours |
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/lib/hours.test.ts`
-Expected: PASS (11개 통과)
+Expected: PASS (21개 통과 — 상시 개방 규칙 포함)
 
 - [ ] **Step 5: 커밋**
 
@@ -1209,7 +1260,23 @@ git commit -m "feat: 영업시간 best-effort 파서 추가
 
 ## Task 6: 비짓서울 어댑터
 
-**게이트:** Task 0에서 `/contents/standard/list`가 상세 필드를 통째로 준다고 확인됐다면, `hydrate`를 그 엔드포인트 한 번 호출로 대체한다(캐시 불필요). 아래는 그렇지 않을 때의 구현이다.
+**게이트 해소 (2026-08-13):** `/contents/standard/list`는 **404 — 존재하지 않는다**(`docs/api-findings.md`).
+벌크 조회 우회로가 없으므로 아래의 캐시 기반 `hydrate`를 그대로 구현한다.
+
+**Task 0 실측으로 아래 코드에서 바뀐 것 (전부 반영됨):**
+
+| 항목 | 계획이 가정한 것 | 실측 |
+|---|---|---|
+| 상세 호출 | `GET /contents/info?cid=` | **`POST` + body `{cid, lang_code_id}`.** GET은 405, 쿼리스트링 POST는 400 |
+| 목록 호출 | 항상 성공 | **`com_ctgry_sn` 필터가 약 30% 확률로 500.** 재시도 필요 |
+| 상세 호출 간격 | 120ms면 충분 | **레이트 리밋이 500으로 위장돼 나온다.** 120ms에서 성공률 50%, 400ms에서 67%, 1000ms에서 100%. 재시도 필수 |
+| 상세 실패 | 건너뛰면 됨 | **조용히 건너뛰면 데이터의 60%가 사라진다.** 재시도 후에도 실패한 비율이 높으면 배치를 깨뜨려야 한다 |
+| 재시도 대상 | HTTP 500 | **`fetch`가 던지는 예외도 재시도해야 한다.** 상태만 보면 ECONNRESET 한 번에 배치 전체가 죽는다 — 실제로 2,199건을 도는 중 20분치가 날아갔다 |
+| 캐시 저장 시점 | emit에서 한 번 | **초회 hydrate는 25분 넘게 걸린다.** 마지막에만 저장하면 그 사이 어떤 실패에도 전부 잃는다. CLI가 30초마다 스냅샷을 뜨고, 실패 시에도 남긴다 |
+| `post_desc` | 원본 HTML 보관 | **HTML을 걷어내고 텍스트만 캐시한다.** 스마트에디터 CSS와 base64 이미지 때문에 캐시가 17.4MB가 됐다(본문 텍스트 총량은 1MB). 텍스트만 남기면 7.5MB. 제품에서 외부 HTML을 렌더링할 일도 없다 |
+| `cate_depth` | `'문화관광 > 전시시설'` | **선행 공백이 있다** (`' 축제/공연/행사 > 축제'`). `trim()` 필수 |
+| `extra.closed_days` | 항상 존재 | **행사 항목에는 없다.** 옵셔널 |
+| `page_size` | 기본 50 | **200까지 지정 가능** — 초회 수집 요청 수를 1/4로 줄인다 |
 
 **Files:**
 - Create: `src/sources/visit-seoul.ts`
@@ -1374,8 +1441,19 @@ import type { DetailCache, EventSource } from '~/sources/types'
 import type { EventItem, Item, PlaceItem } from '~/types/item'
 
 const BASE = 'https://api-call.visitseoul.net/api/v1'
-/** 상세 호출 간 간격(ms). 상대 서버를 배려한다. */
-const DETAIL_DELAY_MS = 120
+/**
+ * 상세 호출 간 간격(ms). 배려가 아니라 필수다 —
+ * 비짓서울은 레이트 리밋을 500으로 위장해 돌려준다(Task 0 실측).
+ * 120ms면 성공률 50%, 400ms면 67%, 1000ms면 100%. 재시도와 함께 쓴다.
+ */
+const DETAIL_DELAY_MS = 400
+/** 재시도 후에도 실패한 상세가 이 비율을 넘으면 배치를 깨뜨린다. */
+const MAX_DETAIL_FAILURE_RATIO = 0.1
+/** 실측상 200까지 받는다. 초회 수집 요청 수를 기본값(50)의 1/4로 줄인다. */
+const LIST_PAGE_SIZE = 200
+/** 카테고리 필터 요청의 간헐적 500에 대한 재시도. */
+const LIST_MAX_ATTEMPTS = 4
+const RETRY_BASE_MS = 250
 
 export interface VisitSeoulListItem {
   cid: string
@@ -1462,16 +1540,15 @@ export class VisitSeoulSource
 
     for (const categoryId of this.categoryIds) {
       for (let page = 1; ; page++) {
-        const res = await fetch(`${BASE}/contents/list`, {
-          method: 'POST',
-          headers: this.headers,
-          body: JSON.stringify({
-            com_ctgry_sn: categoryId,
-            lang_code_id: 'ko',
-            page_no: page,
-          }),
+        // 카테고리 필터 요청은 약 30% 확률로 500을 낸다(서버 측 불안정, Task 0 실측).
+        // 재시도 없이는 배치가 임의로 깨진다.
+        const res = await this.postWithRetry(`${BASE}/contents/list`, {
+          com_ctgry_sn: categoryId,
+          lang_code_id: 'ko',
+          page_no: page,
+          page_size: LIST_PAGE_SIZE,
         })
-        if (!res.ok) throw new Error(`비짓서울 목록 ${res.status} (카테고리 ${categoryId})`)
+        if (!res.ok) throw new Error(`비짓서울 목록 ${res.status} (카테고리 ${categoryId}, 재시도 후에도 실패)`)
 
         const json = (await res.json()) as {
           data?: VisitSeoulListItem[]
@@ -1490,6 +1567,34 @@ export class VisitSeoulSource
   }
 
   /**
+   * 선형 백오프로 재시도한다.
+   * **HTTP 상태뿐 아니라 fetch가 던지는 예외(ECONNRESET 등)도 재시도한다.**
+   * 재시도를 다 쓰고도 예외면 던진다 — 목록은 위로, 상세는 그 건만 실패로 센다.
+   */
+  private async postWithRetry(url: string, payload: unknown): Promise<Response> {
+    let res: Response | undefined
+    let lastError: unknown
+
+    for (let attempt = 1; attempt <= LIST_MAX_ATTEMPTS; attempt++) {
+      if (attempt > 1) await sleep(RETRY_BASE_MS * attempt)
+      try {
+        res = await fetch(url, {
+          method: 'POST',
+          headers: this.headers,
+          body: JSON.stringify(payload),
+        })
+        lastError = undefined
+        if (res.ok) return res
+      } catch (error) {
+        lastError = error
+      }
+    }
+
+    if (lastError) throw lastError
+    return res!
+  }
+
+  /**
    * cid + updt_dt_text를 키로 상세 응답을 캐시한다.
    * 갱신되지 않은 항목은 상세 호출을 생략하므로 정상 상태에서 호출량이 0에 수렴한다.
    * cache는 제자리에서 갱신되며, 호출 측이 이후 파일로 저장한다.
@@ -1500,6 +1605,7 @@ export class VisitSeoulSource
   ): Promise<VisitSeoulDetail[]> {
     const out: VisitSeoulDetail[] = []
     let fetched = 0
+    let failed = 0
 
     for (const item of items) {
       const updtDtText = item.updt_dt_text ?? ''
@@ -1512,14 +1618,18 @@ export class VisitSeoulSource
 
       if (fetched > 0) await sleep(DETAIL_DELAY_MS)
 
-      const res = await fetch(`${BASE}/contents/info?cid=${encodeURIComponent(item.cid)}`, {
-        headers: this.headers,
+      // GET은 405, 쿼리스트링 POST는 400. cid를 body에 실은 POST만 통한다(Task 0 실측).
+      // 레이트 리밋이 500으로 오므로 목록과 같은 재시도를 태운다.
+      const res = await this.postWithRetry(`${BASE}/contents/info`, {
+        cid: item.cid,
+        lang_code_id: 'ko',
       })
       fetched++
 
       if (!res.ok) {
-        // 한 건의 실패가 배치 전체를 멈추게 하지 않는다. 캐시된 구본이 있으면 쓴다.
-        console.warn(`비짓서울 상세 ${res.status}: ${item.cid} — 건너뜀`)
+        // 캐시된 구본이 있으면 쓰고, 없으면 이 항목은 사라진다 — 아래에서 비율을 따진다.
+        console.warn(`비짓서울 상세 ${res.status}: ${item.cid} — 재시도 후에도 실패`)
+        failed++
         if (cached) out.push(cached.detail as VisitSeoulDetail)
         continue
       }
@@ -1530,7 +1640,16 @@ export class VisitSeoulSource
       out.push(detail)
     }
 
-    console.log(`  [visit-seoul] 상세 호출 ${fetched}건 / 전체 ${items.length}건`)
+    console.log(`  [visit-seoul] 상세 호출 ${fetched}건 / 전체 ${items.length}건 / 실패 ${failed}건`)
+
+    // 조용히 절반이 빈 채로 나가는 것보다 배치가 깨지는 게 낫다.
+    if (fetched > 0 && failed / fetched > MAX_DETAIL_FAILURE_RATIO) {
+      throw new Error(
+        `비짓서울 상세 실패율이 너무 높습니다: ${failed}/${fetched}건. ` +
+          `레이트 리밋일 가능성이 높으니 DETAIL_DELAY_MS를 올리세요.`,
+      )
+    }
+
     return out
   }
 
@@ -1587,7 +1706,7 @@ export class VisitSeoulSource
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/sources/visit-seoul.test.ts`
-Expected: PASS (13개 통과)
+Expected: PASS (22개 통과 — 재시도·유실률·네트워크 예외 케이스 추가)
 
 - [ ] **Step 5: 커밋**
 
@@ -1767,7 +1886,7 @@ export function mergeItems(groups: Item[][]): Item[] {
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/merge.test.ts`
-Expected: PASS (10개 통과)
+Expected: PASS (12개 통과 — 순수성·그룹 내 중복 케이스 추가)
 
 - [ ] **Step 5: 커밋**
 
@@ -1793,7 +1912,10 @@ git commit -m "feat: 두 소스 병합과 중복 제거 추가
 - Produces:
   - `MAJOR_ORGS: readonly string[]`
   - `scoreEvent(event: EventItem, weekKey: string): number`
-  - `selectCandidates(items: Item[], weekKey: string, limit?: number): EventItem[]`
+  - `selectCandidates(items: Item[], weekKey: string, today: string, limit?: number): EventItem[]`
+
+**과거 컷오프가 사는 곳이 여기다.** `today`(KST `YYYY-MM-DD`)를 받아 이미 끝난 행사를 뺀다.
+자세한 근거는 Global Constraints의 "과거 컷오프" 항목 참조.
 
 - [ ] **Step 1: 실패하는 테스트 작성**
 
@@ -1860,18 +1982,40 @@ describe('scoreEvent', () => {
 })
 
 describe('selectCandidates', () => {
+  // 주 시작일(월). 컷오프가 없을 때의 동작을 보는 기준값.
+  const MONDAY = '2026-08-10'
+
   it('이번 주에 열리지 않는 행사를 제외한다', () => {
     const past = evt({ startDate: '2026-07-01', endDate: '2026-07-31' })
     const future = evt({ startDate: '2026-09-01', endDate: '2026-09-30' })
     const current = evt({ startDate: '2026-08-12', endDate: '2026-08-13' })
-    const picked = selectCandidates([past, future, current], WEEK)
+    const picked = selectCandidates([past, future, current], WEEK, MONDAY)
     expect(picked).toHaveLength(1)
     expect(picked[0]!.startDate).toBe('2026-08-12')
   })
 
   it('주 경계에 걸친 행사를 포함한다', () => {
     const spanning = evt({ startDate: '2026-08-01', endDate: '2026-08-31' })
-    expect(selectCandidates([spanning], WEEK)).toHaveLength(1)
+    expect(selectCandidates([spanning], WEEK, MONDAY)).toHaveLength(1)
+  })
+
+  it('오늘 이전에 끝난 행사를 뺀다 — 같은 주라도', () => {
+    // 목요일에 돌린 배치. 화요일에 끝난 행사는 주에는 걸치지만 이미 지났다.
+    const endedTuesday = evt({ startDate: '2026-08-10', endDate: '2026-08-11' })
+    const stillRunning = evt({ startDate: '2026-08-10', endDate: '2026-08-16' })
+    const picked = selectCandidates([endedTuesday, stillRunning], WEEK, '2026-08-13')
+    expect(picked).toHaveLength(1)
+    expect(picked[0]!.endDate).toBe('2026-08-16')
+  })
+
+  it('오늘 끝나는 행사는 남긴다', () => {
+    const endsToday = evt({ startDate: '2026-08-10', endDate: '2026-08-13' })
+    expect(selectCandidates([endsToday], WEEK, '2026-08-13')).toHaveLength(1)
+  })
+
+  it('지난 주차를 넘겨도 과거 행사가 새어나오지 않는다', () => {
+    const lastWeek = evt({ startDate: '2026-08-03', endDate: '2026-08-09' })
+    expect(selectCandidates([lastWeek], '2026-W32', '2026-08-13')).toHaveLength(0)
   })
 
   it('place는 후보에서 제외한다', () => {
@@ -1883,24 +2027,24 @@ describe('selectCandidates', () => {
       category: '문화관광',
       place: '박물관',
     }
-    expect(selectCandidates([place], WEEK)).toHaveLength(0)
+    expect(selectCandidates([place], WEEK, MONDAY)).toHaveLength(0)
   })
 
   it('limit 개수만큼만 반환한다', () => {
     const many = Array.from({ length: 100 }, () => evt())
-    expect(selectCandidates(many, WEEK, 40)).toHaveLength(40)
+    expect(selectCandidates(many, WEEK, MONDAY, 40)).toHaveLength(40)
   })
 
   it('점수 내림차순으로 정렬한다', () => {
     const low = evt({ title: '낮음', isFree: false })
     const high = evt({ title: '높음', isFree: true, imageUrl: 'https://x/a.jpg', place: '서울시립미술관' })
-    expect(selectCandidates([low, high], WEEK)[0]!.title).toBe('높음')
+    expect(selectCandidates([low, high], WEEK, MONDAY)[0]!.title).toBe('높음')
   })
 
   it('점수가 같으면 제목 순으로 안정 정렬한다', () => {
     const a = evt({ title: '가나다' })
     const b = evt({ title: '나다라' })
-    const first = selectCandidates([b, a], WEEK)
+    const first = selectCandidates([b, a], WEEK, MONDAY)
     expect(first.map((e) => e.title)).toEqual(['가나다', '나다라'])
   })
 })
@@ -1987,12 +2131,23 @@ export function scoreEvent(event: EventItem, weekKey: string): number {
 /**
  * 이번 주에 열리는 event만 골라 점수순 상위 N개를 반환한다.
  * 점수가 같으면 제목 순으로 안정 정렬해 빌드 재현성을 지킨다.
+ *
+ * `today`(KST, YYYY-MM-DD)를 인자로 받아 **이미 끝난 행사를 뺀다.**
+ * 주 시작일만 기준으로 삼으면 월요일에 끝난 행사가 목요일 화면에 남는다.
+ * `today`를 내부에서 만들지 않는 이유는 테스트가 실행 날짜에 따라 깨지지 않게 하기 위해서다.
  */
-export function selectCandidates(items: Item[], weekKey: string, limit = 40): EventItem[] {
+export function selectCandidates(
+  items: Item[],
+  weekKey: string,
+  today: string,
+  limit = 40,
+): EventItem[] {
   const { start, end } = weekRange(weekKey)
+  // 유효 시작일 = max(주 시작일, 오늘). 지난 주차를 넘겨도 과거 행사가 새어나오지 않는다.
+  const from = today > start ? today : start
 
   return items
-    .filter((item): item is EventItem => item.kind === 'event' && overlaps(item, start, end))
+    .filter((item): item is EventItem => item.kind === 'event' && overlaps(item, from, end))
     .map((event) => ({ event, score: scoreEvent(event, weekKey) }))
     .sort((a, b) => b.score - a.score || a.event.title.localeCompare(b.event.title, 'ko'))
     .slice(0, limit)
@@ -2003,7 +2158,7 @@ export function selectCandidates(items: Item[], weekKey: string, limit = 40): Ev
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/score.test.ts`
-Expected: PASS (12개 통과)
+Expected: PASS (15개 통과)
 
 - [ ] **Step 5: 커밋**
 
@@ -2221,6 +2376,20 @@ RuleOnlyProvider는 폴백 경로이자 테스트용이다."
   - `OllamaProvider` 클래스 — `new OllamaProvider(host?: string, model?: string)`
   - `createProvider(): LlmProvider` — 환경변수로 선택
 
+**Task 9 이후 실측으로 정한 것 (qwen3:30b, 후보 12개 중 4개 선정 기준):**
+
+| 설정 | 값 | 근거 |
+|---|---|---|
+| `stream` | **`true`** | `false`면 생성이 끝나야 헤더가 온다. undici 기본 headersTimeout이 300초인데 생성 224초 + 모델 로딩 40초라 **정상 경로에서 매번 터진다**(실측 `UND_ERR_HEADERS_TIMEOUT`). 스트리밍은 헤더가 즉시 오고, 조각을 이어붙여 파싱한다 |
+| thinking | **켠다(기본값 유지)** | 끄면 2초로 빨라지지만 **40자 제약을 전부 어긴다**(50·60·54·44자). 켜면 32~54초에 최대 36자. 하루 한 번 도는 배치라 시간은 문제가 아니다 |
+| `seed` | **42 고정** | 같은 seed로 2회 실행 시 선정 id와 코멘트가 **완전히 동일**했다. 출력이 `data/*.json`으로 커밋되므로, 데이터가 안 바뀐 날 diff가 생기면 "지난주엔 뭐가 있었지"를 git으로 보는 이점이 흐려진다 |
+| `temperature` | 0.3 | 계획 그대로 |
+| 기본 모델 | `qwen3:30b` | `.env.local`과 맞춘다 |
+
+**`think: false`를 넣지 마라.** Ollama는 추론을 `message.thinking`으로 분리하므로
+`message.content`는 어차피 깨끗한 JSON이다 — 끌 이유가 없고, 끄면 지시 준수가 무너진다.
+길이 초과는 Task 11의 `MAX_REASON_LENGTH` 절단이 마지막으로 막는다.
+
 - [ ] **Step 1: 실패하는 테스트 작성**
 
 `tests/llm/ollama.test.ts`:
@@ -2367,6 +2536,9 @@ const RESPONSE_FORMAT = {
   required: ['picks'],
 } as const
 
+/** 빌드 재현성을 위한 고정 시드. 바꾸면 같은 데이터에서도 다른 선정이 나온다. */
+const CURATION_SEED = 42
+
 const SYSTEM_PROMPT = `당신은 서울의 문화행사를 고르는 편집자입니다.
 
 주어진 후보 목록에서 이번 주에 가장 볼 만한 행사를 골라주세요.
@@ -2400,7 +2572,7 @@ export class OllamaProvider implements LlmProvider {
 
   constructor(
     private readonly host = process.env.OLLAMA_HOST ?? 'http://localhost:11434',
-    private readonly model = process.env.OLLAMA_MODEL ?? 'qwen3:8b',
+    private readonly model = process.env.OLLAMA_MODEL ?? 'qwen3:30b',
   ) {}
 
   async curate({
@@ -2419,7 +2591,10 @@ export class OllamaProvider implements LlmProvider {
         model: this.model,
         stream: false,
         format: RESPONSE_FORMAT,
-        options: { temperature: 0.3 },
+        // seed 고정 = 재현성. 이 출력이 data/*.json으로 커밋되므로
+        // 데이터가 안 바뀐 날에는 diff도 없어야 한다.
+        // thinking은 끄지 않는다 — 끄면 40자 제약을 지키지 못한다(실측).
+        options: { temperature: 0.3, seed: CURATION_SEED },
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
           { role: 'user', content: buildUserPrompt(candidates, count, weekLabel) },
@@ -2478,7 +2653,7 @@ export function createProvider(): LlmProvider {
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/llm/ollama.test.ts`
-Expected: PASS (10개 통과)
+Expected: PASS (12개 통과 — seed·thinking 설정 고정 2건 추가)
 
 - [ ] **Step 5: 실제 Ollama로 확인**
 
@@ -2723,7 +2898,7 @@ export async function curate(
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/curate.test.ts`
-Expected: PASS (9개 통과)
+Expected: PASS (11개 통과 — 빈 후보·개수 상한 2건 추가)
 
 - [ ] **Step 5: 커밋**
 
@@ -2748,6 +2923,18 @@ LLM이 죽으면 전량 규칙 폴백 — 화면이 절대 비지 않는다."
 - Produces: `pickPlaces(items: Item[], weekKey: string, count?: number): string[]` — place id 배열
 
 스펙 10-1의 규칙: 자격 필터(이미지 **and** 좌표) → 점수 → **주차 시드 결정론적 회전**.
+
+**구현 중 계획의 설계 결함이 드러나 고쳤다.** 원래는 자격 있는 항목 *전체*를 회전
+대상으로 삼았는데, 그러면 **점수가 아무 일도 하지 않는다** — 1등이든 꼴등이든 그 주의
+회전 창에 걸리느냐만 남기 때문이다. 계획이 함께 적어둔 "점수 높은 곳을 선호한다"
+테스트가 실제로 실패하면서 드러났다.
+
+회전 범위를 **점수 상위 풀(count × 3)로 제한**한다. 점수의 역할은 순위가 아니라
+**회전 풀의 문턱**이다 — 낮은 점수는 어느 주에도 등장하지 못하고, 풀 안에서는
+매주 다른 조합이 나온다. 풀을 count와 같게 하면 매주 같은 곳만 나오므로 3배로 잡았다.
+
+따라서 "특정 한 곳이 이번 주에 반드시 나온다"는 보장하지 않고, 보장할 필요도 없다.
+테스트도 그 성질(풀 문턱)을 검사하도록 바꿨다.
 
 - [ ] **Step 1: 실패하는 테스트 작성**
 
@@ -2851,6 +3038,13 @@ const WEIGHTS = {
 } as const
 
 /**
+ * 회전 풀 크기 = count × 이 값. 상위 몇 배까지를 "보여줄 만한 곳"으로 볼지.
+ * 전체를 회전 대상으로 삼으면 점수가 무의미해지고, count와 같게 하면
+ * 매주 같은 곳만 나온다. 3배가 품질 하한과 주간 다양성이 둘 다 사는 지점이다.
+ */
+const ROTATION_POOL_MULTIPLIER = 3
+
+/**
  * 자격: 이미지와 좌표가 둘 다 있는 place만.
  * 이미지 없는 카드는 홈 하단에서 초라해 보이고,
  * 좌표가 없으면 근처 화면으로 이어지지 않는다.
@@ -2889,24 +3083,26 @@ function seedFrom(text: string): number {
  * 판단이 성립하지 않는다. 회전만으로 신선함이 충분하다.
  */
 export function pickPlaces(items: Item[], weekKey: string, count = 6): string[] {
-  const eligible = items
+  const ranked = items
     .filter(isEligible)
     .map((p) => ({ p, score: scorePlace(p) }))
     // 동점은 id 순으로 안정 정렬 — 입력 순서에 의존하지 않는다
     .sort((a, b) => b.score - a.score || a.p.id.localeCompare(b.p.id))
     .map(({ p }) => p.id)
 
-  if (eligible.length <= count) return eligible
+  if (ranked.length <= count) return ranked
 
-  const offset = seedFrom(weekKey) % eligible.length
-  return Array.from({ length: count }, (_, i) => eligible[(offset + i) % eligible.length]!)
+  // 전체가 아니라 상위 풀 안에서만 회전한다. 전체를 돌리면 점수가 무의미해진다.
+  const pool = ranked.slice(0, count * ROTATION_POOL_MULTIPLIER)
+  const offset = seedFrom(weekKey) % pool.length
+  return Array.from({ length: count }, (_, i) => pool[(offset + i) % pool.length]!)
 }
 ```
 
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/pick-places.test.ts`
-Expected: PASS (10개 통과)
+Expected: PASS (12개 통과 — 점수 테스트를 풀 문턱 검사로 교체)
 
 - [ ] **Step 5: 커밋**
 
@@ -3159,7 +3355,7 @@ export async function emit(
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/emit.test.ts`
-Expected: PASS (7개 통과)
+Expected: PASS (9개 통과 — 장소 참조·전체 미기록 2건 추가)
 
 - [ ] **Step 5: 커밋**
 
@@ -3222,11 +3418,21 @@ const outOfWeek: Item = {
   category: '전시', place: '어딘가', startDate: '2026-01-01', endDate: '2026-01-31',
 }
 
+/** 2026-W33에는 걸치지만 목요일(08-13) 시점에는 이미 끝난 행사 */
+const endedEarlyThisWeek: Item = {
+  id: 'sc-ended', source: 'seoul-culture', kind: 'event', title: '월요일에 끝난 행사',
+  category: '전시', place: '어딘가', startDate: '2026-08-10', endDate: '2026-08-11',
+}
+
 describe('runPipeline', () => {
   const opts = {
-    sources: [fakeSource('seoul-culture', [scEvent, outOfWeek]), fakeSource('visit-seoul', [vsPlace])],
+    sources: [
+      fakeSource('seoul-culture', [scEvent, outOfWeek, endedEarlyThisWeek]),
+      fakeSource('visit-seoul', [vsPlace]),
+    ],
     provider: new RuleOnlyProvider(),
     weekKey: '2026-W33',
+    today: '2026-08-13',
     cache: {},
     curatedCount: 12,
     placeCount: 6,
@@ -3235,6 +3441,16 @@ describe('runPipeline', () => {
   it('이번 주 이벤트만 events에 담는다', async () => {
     const out = await runPipeline(opts)
     expect(out.events.map((e) => e.id)).toEqual(['sc-a'])
+  })
+
+  it('이번 주라도 오늘 이전에 끝난 행사는 뺀다', async () => {
+    const out = await runPipeline(opts)
+    expect(out.events.map((e) => e.id)).not.toContain('sc-ended')
+  })
+
+  it('today가 주 시작일보다 이르면 주 전체를 담는다', async () => {
+    const out = await runPipeline({ ...opts, today: '2026-08-01' })
+    expect(out.events.map((e) => e.id).sort()).toEqual(['sc-a', 'sc-ended'])
   })
 
   it('place를 events에서 분리한다', async () => {
@@ -3256,7 +3472,7 @@ describe('runPipeline', () => {
 
   it('소스별 건수를 센다', async () => {
     const out = await runPipeline(opts)
-    expect(out.sourceCounts).toMatchObject({ 'seoul-culture': 2, 'visit-seoul': 1 })
+    expect(out.sourceCounts).toMatchObject({ 'seoul-culture': 3, 'visit-seoul': 1 })
   })
 
   it('provider 이름을 담는다', async () => {
@@ -3289,6 +3505,8 @@ export interface RunOptions {
   sources: EventSource<any, any>[]
   provider: LlmProvider
   weekKey: string
+  /** KST 기준 오늘(YYYY-MM-DD). 이미 끝난 행사를 잘라내는 기준. CLI가 넘긴다. */
+  today: string
   cache: DetailCache
   curatedCount?: number
   placeCount?: number
@@ -3301,7 +3519,7 @@ export interface RunOptions {
  */
 export async function runPipeline(opts: RunOptions): Promise<EmitPayload> {
   const {
-    sources, provider, weekKey, cache,
+    sources, provider, weekKey, today, cache,
     curatedCount = 12, placeCount = 6, candidateCount = 40,
   } = opts
 
@@ -3321,14 +3539,17 @@ export async function runPipeline(opts: RunOptions): Promise<EmitPayload> {
   const merged = mergeItems(groups)
   console.log(`병합 후 ${merged.length}건 (중복 ${groups.flat().length - merged.length}건 제거)`)
 
+  // 과거 컷오프: 유효 시작일은 max(주 시작일, 오늘).
+  // 주 시작일만 쓰면 월요일에 끝난 행사가 목요일 화면에 남는다.
   const { start, end } = weekRange(weekKey)
+  const from = today > start ? today : start
   const events = merged.filter(
-    (i): i is EventItem => i.kind === 'event' && i.startDate <= end && i.endDate >= start,
+    (i): i is EventItem => i.kind === 'event' && i.startDate <= end && i.endDate >= from,
   )
   const places = merged.filter((i): i is PlaceItem => i.kind === 'place')
-  console.log(`이번 주 이벤트 ${events.length}건 / 장소 ${places.length}건`)
+  console.log(`이번 주 이벤트 ${events.length}건 (${from}~${end}) / 장소 ${places.length}건`)
 
-  const candidates = selectCandidates(events, weekKey, candidateCount)
+  const candidates = selectCandidates(events, weekKey, today, candidateCount)
   console.log(`후보 ${candidates.length}건 → 선별 ${curatedCount}건 요청`)
 
   const { entries, providerName } = await curate(candidates, {
@@ -3354,7 +3575,7 @@ export async function runPipeline(opts: RunOptions): Promise<EmitPayload> {
 
 ```ts
 import { readFile } from 'node:fs/promises'
-import { isoWeekKey } from '~/lib/week'
+import { isoWeekKey, kstToday } from '~/lib/week'
 import { createProvider } from '~/llm/index'
 import { emit } from '~/pipeline/emit'
 import { runPipeline } from '~/pipeline/run'
@@ -3380,8 +3601,19 @@ async function loadCache(path: string): Promise<DetailCache> {
   }
 }
 
-const weekKey = process.argv[2] ?? isoWeekKey(new Date())
-console.log(`대상 주차: ${weekKey}\n`)
+const now = new Date()
+const today = kstToday(now)
+const weekKey = process.argv[2] ?? isoWeekKey(now)
+
+// 과거 데이터는 쌓지 않기로 했다. 지난 주차 요청은 조용히 빈 파일을 내는 대신 거절한다.
+if (weekKey < isoWeekKey(now)) {
+  throw new Error(
+    `지난 주차(${weekKey})는 지원하지 않습니다. 과거 데이터를 쌓지 않는 것이 이 배치의 전제입니다.\n` +
+      `정말 필요하면 계획의 "과거 컷오프" 제약을 먼저 되돌리세요.`,
+  )
+}
+
+console.log(`대상 주차: ${weekKey} (오늘 ${today} 이후만 수집)\n`)
 
 const cache = await loadCache('data/cache/visitseoul.json')
 const provider = createProvider()
@@ -3394,6 +3626,7 @@ const payload = await runPipeline({
   ],
   provider,
   weekKey,
+  today,
   cache,
 })
 
@@ -3408,7 +3641,7 @@ console.log(`
 - [ ] **Step 4: 테스트 통과 확인**
 
 Run: `npx vitest run tests/pipeline/run.test.ts`
-Expected: PASS (6개 통과)
+Expected: PASS (8개 통과)
 
 - [ ] **Step 5: 전체 테스트 실행**
 
@@ -3417,10 +3650,10 @@ Expected: 전체 PASS
 
 - [ ] **Step 6: 실제 배치 실행**
 
-`.env`에 Task 0의 `docs/api-findings.md`에서 확정한 카테고리를 추가한다:
+`.env.local`에 Task 0에서 확정한 카테고리가 들어 있는지 확인한다(`docs/api-findings.md` 참조):
 
 ```
-VISITSEOUL_CATEGORIES=Cg1x6l1,Ce9z7g9
+VISITSEOUL_CATEGORIES=Cv7s8m5,Ca0o2d4,Cc9i5o2,Ca1z6p7,Co6c2n2
 LLM_PROVIDER=ollama
 ```
 
@@ -3474,7 +3707,13 @@ git commit -m "chore: 첫 배치 데이터 커밋"
 
 ## Task 15: GitHub Actions 이관
 
-**전제:** Ollama로 프롬프트 품질이 만족스러워진 뒤에 착수한다. Actions 러너에서는 Ollama가 돌지 않으므로 `LLM_PROVIDER`를 `rule`로 시작하고, 이후 `AnthropicProvider`를 추가한다(스펙 9-2).
+**전제:** Ollama로 프롬프트 품질이 만족스러워진 뒤에 착수한다.
+
+**구현 시 계획에서 벗어난 것:**
+- `node-version`을 20 → **22**로 올렸다. 로컬에서 22.22로 개발·검증했다.
+- 워크플로에 `concurrency`(앞 실행이 push하기 전에 다음이 시작되면 커밋이 충돌)와
+  `timeout-minutes: 90`(캐시가 비면 40분 넘게 걸린다), push 재시도를 넣었다.
+- 커밋 메시지 날짜를 KST 기준으로 찍는다. 이 배치의 모든 날짜 계산이 KST다. Actions 러너에서는 Ollama가 돌지 않으므로 `LLM_PROVIDER`를 `rule`로 시작하고, 이후 `AnthropicProvider`를 추가한다(스펙 9-2).
 
 **Files:**
 - Create: `.github/workflows/batch.yml`
@@ -3512,7 +3751,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # 로컬 개발·검증 환경과 맞춘다 (--env-file-if-exists는 20.6+ 필요)
+          node-version: 22
           cache: npm
 
       - run: npm ci
@@ -3566,7 +3806,7 @@ Actions 탭 → 배치 → Run workflow. 성공하면 `data/` 갱신 커밋이 �
 
 ```bash
 npm ci
-cp .env.example .env   # API 키 채우기
+cp .env.example .env.local   # API 키 채우기
 npm test
 npm run batch          # data/*.json 생성
 ```
@@ -3580,7 +3820,7 @@ npm run batch          # data/*.json 생성
 | `VISITSEOUL_CATEGORIES` | 수집 대상 카테고리 (쉼표 구분) |
 | `LLM_PROVIDER` | `ollama` (로컬) \| `rule` (Actions) |
 | `OLLAMA_HOST` | 기본 `http://localhost:11434` |
-| `OLLAMA_MODEL` | 기본 `qwen3:8b` |
+| `OLLAMA_MODEL` | 기본 `qwen3:30b` |
 
 ## 배치
 

@@ -1,0 +1,13 @@
+{
+  "updatedAt": "2026-08-14T10:59:22.232Z",
+  "llmProvider": "ollama",
+  "sourceCounts": {
+    "seoul-culture": 19494,
+    "visit-seoul": 2199
+  },
+  "weekKey": "2026-W33",
+  "counts": {
+    "events": 314,
+    "places": 728
+  }
+}
