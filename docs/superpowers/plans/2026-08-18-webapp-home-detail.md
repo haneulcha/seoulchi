@@ -41,6 +41,30 @@ TanStack Start의 API 표면은 버전에 따라 다르다. 아래 코드는 202
 | 5 | `src/router.tsx`의 export 이름 | `export function getRouter()` | build-from-scratch 문서의 현재 형태를 따른다 |
 | 6 | 빌드 산출 디렉토리 | `dist/` 또는 `.output/` (버전에 따라 다름, 둘 다 .gitignore에 있음) | 빌드 로그에 찍힌 경로를 쓴다. Task 0에서 확정하고 이후 태스크의 검증 명령에 그 경로를 쓴다 |
 
+### 확인 결과 (Task 11에서 전부 확인됨 — 위 표의 "가정"보다 아래가 우선한다)
+
+설치 버전: `@tanstack/react-start` / `@tanstack/start-client-core` / `@tanstack/start-static-server-functions` **1.167.29**.
+
+- **#1 — 가정대로.** `tanstackStart({ prerender: { enabled, crawlLinks, failOnError } })`가 설치 버전에서 그대로 동작한다(`vite.config.ts`). `crawlLinks: true`가 홈의 링크를 따라가 상세 18페이지를 줍고, 링크 없는 id는 크롤되지 않아 자동으로 404가 된다 — 스펙 10-5의 "홈이 링크하는 것만"이 설정 하나로 구현된다.
+- **#2 — 가정의 절반이 틀렸다. "미들웨어는 체인 마지막이어야 한다"는 제약은 실재하지 않는다.** 패키지 이름(`@tanstack/start-static-server-functions`)과 `staticFunctionMiddleware`의 동작은 가정대로였으나, 체인 순서 제약은 없다. `createServerFn.d.ts`에서 `ServerFnAfterValidator`와 `ServerFnAfterMiddleware`가 서로의 인터페이스(`ServerFnMiddleware` / `ServerFnValidator`)를 각각 extends하므로 `.validator().middleware()`와 `.middleware().validator()`가 둘 다 타입에 맞는다. 실제 제약은 **`.validator()`를 두 번 부를 수 없다는 것뿐**이다(`ServerFnAfterValidator`가 `ServerFnValidator`를 extends하지 않는다). 코드는 `.validator().middleware([staticFunctionMiddleware]).handler(...)` 순서를 쓴다.
+- **#3 — 해소됨. 정적 서버 함수는 입력값별로 캐시된다. 대비책(`<Link>` → `<a href>`)은 적용하지 않았고, `src/components/cards.tsx`는 `<Link>` 그대로 둔다.** 근거 넷:
+  1. **구현 근거** — `staticFunctionMiddleware.js`의 캐시 URL이 `/__tsr/staticServerFnCache/${sha1(functionId + '__' + jsonToFilenameSafeString(data))}.json`이다. **payload(`data`)가 해시 입력에 들어간다.** 쓰기(`.server` → `addItemToCache`)와 읽기(`.client` → `fetchItem`)가 **같은 함수**를 쓰므로 빌드가 쓴 파일과 클라이언트가 요청하는 URL이 정의상 일치한다.
+  2. **산출물 근거** — `dist/client/__tsr/staticServerFnCache/`에 JSON이 **19개**(홈 1 + 상세 18) 생성됐고, 상세 18개가 각각 **서로 다른 id의 아이템**을 담고 있다. 하나의 파일에 마지막 id만 남는 실패 모드가 아니다.
+  3. **재현 근거** — `getDetail`의 `functionId`(`2295929a…ae07`, `dist/server/assets/_id-*.js`의 `createServerRpc({ id })`)로 해시를 직접 계산했더니 `sc-1z05tw` → `c3426da5….json`, `sc-5m28pn` → `42222c5f….json`으로 **실제 파일과 정확히 일치**했고, 각 파일 내용이 그 id의 아이템이었다. 홈이 링크하는 18개 id 전부가 존재하는 캐시 파일에 대응한다(18/18).
+  4. **정적 서버 근거** — `npx serve dist/client`로 **정적 파일만** 서빙한 뒤, 클라이언트가 계산할 18개 URL을 그대로 HTTP로 요청해 전부 200을 받았고, **응답 본문 18개가 서로 전부 달랐으며 각각 자기 id를 담고 있었다**(18/18). 없는 id(`sc-nope`)의 캐시 URL은 404다.
+- **#4 — 계획의 가정이 거꾸로였다.** 계획은 `.inputValidator`가 현행이고 `.validator`가 구버전이라고 적었으나 **반대다.** 설치된 `@tanstack/start-client-core`의 `createServerFn.d.ts`에서 정식 이름은 **`validator`**이고, `inputValidator`에는 JSDoc 주석 ``/** @deprecated Use `validator` instead. */``가 붙어 있다(타입 정의 3곳 — L81-82, L99-100, L124-125). 코드는 `.validator(...)`를 쓴다.
+- **#5 — 가정대로.** `src/router.tsx`가 `export function getRouter()`를 내보내고 설치 버전이 그대로 인식한다.
+- **#6 — `dist/`가 아니라 `dist/client/`다.** 빌드는 `dist/client/`(정적 배포 대상)와 `dist/server/`로 나뉘어 나온다. 프리렌더 HTML·에셋·정적 서버 함수 캐시는 전부 `dist/client/` 아래다. 이 계획과 태스크 브리프들에 `dist/`로 적힌 검증 명령은 **전부 `dist/client/`로 읽는다.** (덧붙여, 프리렌더 HTML에는 개행이 없어 BSD `grep`이 바이너리로 판단하고 조용히 건너뛴다 — 한글 검색에는 **`grep -a`**를 쓴다.)
+
+### 빌드 시간 (Task 11 실측)
+
+| | 페이지 | 빌드 시간 (wall clock) |
+|---|---|---|
+| Task 0 (스캐폴드) | 1 | 약 **1.00초** (4회: 1.012 / 0.990 / 0.997 / 0.995) |
+| Task 11 (홈+상세 완성) | **19** | 약 **1.30초** (3회: 1.30 / 1.31 / 1.30, 매회 `rm -rf dist` 후) |
+
+**페이지당 증분 ≈ 0.017초** (0.30초 ÷ 18페이지). 프리렌더 페이지 수는 빌드 시간의 지배 항이 아니다 — 고정비(client·ssr 번들링)가 대부분이다. `/explore`·`/nearby`가 붙어 프리렌더가 수백 페이지로 늘어도 이 증분 기준으로는 수 초 안에 들어온다. 스펙 10-5의 "홈이 링크하는 것만" 범위를 빌드 시간 때문에 좁힐 이유는 현재 없다.
+
 ## 실측 데이터 (이 계획의 숫자는 전부 여기서 나왔다)
 
 `data/`는 2026-W33 기준으로 커밋돼 있다. 계획 작성일은 2026-08-18(2026-W34)이다.

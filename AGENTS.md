@@ -4,7 +4,7 @@
 
 ## 현재 상태
 
-**Plan 1(배치)은 완료됐고, Plan 2(웹앱)는 계획만 있고 코드는 아직 없습니다.**
+**Plan 1(배치)과 Plan 2(웹앱 1차: 홈+상세)가 모두 완료됐습니다.**
 
 - 배치는 구현·테스트 완료입니다(`src/`, `scripts/`, `tests/` 존재, `npm test` 초록).
   산출 데이터도 커밋돼 있습니다: `data/events/2026-W33.json`(314건), `data/places.json`(728건),
@@ -16,12 +16,28 @@
   그래서 `curated`의 `reason`에 한국어 코멘트가 들어 있습니다. Actions로 넘어가면
   `LLM_PROVIDER=rule`이라 `reason`은 빈 문자열이 됩니다 — 지금 데이터만 보고
   "코멘트는 항상 있다"고 가정하면 안 됩니다.
+- **웹앱은 홈(`/`)과 상세(`/e/$id`) 두 화면이 동작합니다.** TanStack Start + SSG로
+  `npm run build` 시 **19페이지**(홈 1 + 상세 18)가 프리렌더됩니다. 상세는 홈이 링크하는 것만
+  크롤됩니다 — 링크되지 않은 id는 프리렌더되지 않고 404입니다(스펙 10-5).
+  빌드 시간은 **19페이지에 약 1.3초**이고, Task 0의 1페이지(약 1.0초) 대비
+  **페이지당 증분은 약 0.017초**입니다. 페이지 수는 빌드 시간의 지배 항이 아닙니다.
+- **빌드 산출은 `dist/`가 아니라 `dist/client/`입니다.** 정적 배포 대상이 그쪽이고,
+  프리렌더 HTML·에셋·정적 서버 함수 캐시(`__tsr/staticServerFnCache/`)가 전부 그 아래 있습니다.
+  `dist/server/`는 빌드 중간 산출이라 배포하지 않습니다.
+  프리렌더 HTML에는 개행이 없어 BSD `grep`이 바이너리로 판단하고 조용히 건너뜁니다 —
+  **한글 검색에는 `grep -a`를 쓰세요.**
+- **정적 서버 함수는 입력값별로 캐시됩니다**(Task 11에서 실측 확인).
+  `npx serve dist/client`로 정적 파일만 서빙해도 상세 18개가 각각 자기 데이터를 받습니다.
+  서버 런타임 없이 동작한다는 뜻이고, 홈의 카드는 `<Link>`(클라이언트 네비게이션) 그대로입니다.
+  근거는 Plan 2의 "확인 결과" 절에 있습니다.
 
 문서는 넷입니다:
 
 - 설계 스펙: `docs/superpowers/specs/2026-08-13-seoul-events-webapp-design.md`
 - Plan 1 — 배치: `docs/superpowers/plans/2026-08-13-batch-pipeline.md` (16 태스크, **완료된 이력 문서**)
-- Plan 2 — 웹앱 홈+상세: `docs/superpowers/plans/2026-08-18-webapp-home-detail.md` (Task 0~11 총 12개, **미착수**)
+- Plan 2 — 웹앱 홈+상세: `docs/superpowers/plans/2026-08-18-webapp-home-detail.md` (Task 0~11 총 12개, **완료된 이력 문서**).
+  이 계획의 **"확인 결과" 절**에 TanStack Start 설치 버전(1.167.29)의 실제 API 표면이 적혀 있습니다 —
+  서버 함수 검증 메서드는 `.inputValidator`가 아니라 **`.validator`**입니다(`inputValidator`는 `@deprecated`).
 - **API 실측 결과: `docs/api-findings.md`** — 필드명·호출 규약·건수의 유일한 근거.
   API 응답에 대한 가정을 코드에 넣기 전에 반드시 여기를 봅니다.
 
@@ -29,7 +45,10 @@
 태스크에는 테스트 코드와 구현 코드가 전부 들어 있고, 결정의 근거도 함께 적혀 있습니다.
 
 Plan 1이 먼저였던 이유: Task 14에서 측정한 데이터 파일 크기가
-앱의 데이터 로딩 설계를 결정하기 때문입니다.
+앱의 데이터 로딩 설계를 결정하기 때문입니다. 주간 파일 0.23MB · `places.json` 0.81MB —
+이 크기라면 쪼개거나 인덱싱할 이유가 없습니다. 그래서 Plan 2는 **"주간 파일 통째 로드 + 전부 SSG"**를
+택했고, 그 로드는 빌드 타임에만 일어나므로 **클라이언트 번들에는 데이터가 한 건도 들어가지 않습니다**
+(Task 11에서 `dist/client/assets/*.js`에 place id 패턴이 없음을 확인).
 
 ## 아키텍처의 핵심: 왜 전부 정적인가
 
@@ -100,6 +119,9 @@ npx vitest run tests/lib/week.test.ts -t '연말 경계' # 테스트 하나
 npm run probe             # API 실측 (Task 0)
 npm run batch             # 배치 실행 → data/*.json
 npm run batch -- 2026-W33 # 특정 주차
+npm run dev               # 웹앱 개발 서버 (localhost:3000)
+npm run build             # 정적 빌드 → dist/client/ (19페이지 프리렌더)
+npx serve dist/client     # 빌드 결과를 정적 파일로만 서빙해 확인
 ```
 
 환경변수는 `.env.example` 참조. 배치 스크립트는 Node 네이티브
