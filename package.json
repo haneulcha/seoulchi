@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "probe": "tsx --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/probe-apis.ts",

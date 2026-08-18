@@ -4,9 +4,9 @@ import { staticFunctionMiddleware } from '@tanstack/start-static-server-function
 import { BigEventCard, CompactEventRow, PlaceCard } from '~/components/cards'
 import { loadCurated, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
-import { formatUpdatedAt } from '~/lib/dates'
+import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
 import { pickHomeItems } from '~/lib/home'
-import { kstToday, weekLabel } from '~/lib/week'
+import { kstToday, weekRange } from '~/lib/week'
 
 /** 빌드 타임에 한 번 실행. 여기가 new Date()를 부르는 유일한 서버 경계다 */
 const getHomeData = createServerFn({ method: 'GET' })
@@ -20,7 +20,7 @@ const getHomeData = createServerFn({ method: 'GET' })
     const today = kstToday(new Date()) // 오늘 = 빌드 시각의 KST 날짜. 배치 커밋 → 재배포 때 갱신된다
 
     return {
-      weekLabel: weekLabel(meta.weekKey),
+      weekRangeLabel: formatWeekRange(weekRange(meta.weekKey)),
       updatedLabel: formatUpdatedAt(meta.updatedAt),
       today,
       entries: pickHomeItems({ events: week.items, picks: resolved.picks, today }),
@@ -41,7 +41,7 @@ function Home() {
   return (
     <main className="mx-auto max-w-xl px-4 py-6">
       <header className="mb-6">
-        <p className="text-sm text-gray-500">{data.weekLabel}</p>
+        <p className="text-sm text-gray-500">{data.weekRangeLabel}</p>
         <h1 className="text-2xl font-bold">이번 주 서울</h1>
         <p className="mt-1 text-xs text-gray-400">{data.updatedLabel}</p>
       </header>

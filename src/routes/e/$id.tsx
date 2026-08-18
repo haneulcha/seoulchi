@@ -62,7 +62,10 @@ function Detail() {
         {item.kind === 'event' && (
           <Fact label="기간" value={formatDateRange(item.startDate, item.endDate, today)} />
         )}
-        <Fact label="장소" value={item.address ? `${item.place} (${item.address})` : item.place} />
+        {item.kind === 'event' && (
+          <Fact label="장소" value={item.address ? `${item.place} (${item.address})` : item.place} />
+        )}
+        {item.kind === 'place' && <Fact label="주소" value={item.address} />}
         <Fact label="요금" value={fee} />
         <Fact label="지하철" value={item.subwayInfo} />
         {item.kind === 'place' && <Fact label="휴무일" value={item.closedDays} />}
@@ -95,7 +98,7 @@ function Fact({ label, value, badge }: { label: string; value?: string; badge?: 
   return (
     <div className="flex gap-3 text-sm">
       <dt className="w-14 shrink-0 text-gray-500">{label}</dt>
-      <dd className="min-w-0">
+      <dd className="min-w-0 whitespace-pre-line">
         {value}
         {badge}
       </dd>

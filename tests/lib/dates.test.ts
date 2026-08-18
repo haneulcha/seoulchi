@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { formatDateRange, formatUpdatedAt } from '~/lib/dates'
+import { formatDateRange, formatUpdatedAt, formatWeekRange } from '~/lib/dates'
 
 const TODAY = '2026-08-18'
 
@@ -34,5 +34,15 @@ describe('formatUpdatedAt', () => {
 
   it('KST 변환이 날짜를 넘기는 경우', () => {
     expect(formatUpdatedAt('2026-08-14T16:30:00Z')).toBe('8/15 01:30 갱신')
+  })
+})
+
+describe('formatWeekRange', () => {
+  it('시작일과 종료일을 월/일로 표기한다', () => {
+    expect(formatWeekRange({ start: '2026-08-10', end: '2026-08-16' })).toBe('8/10 – 8/16 기준')
+  })
+
+  it('해를 넘는 범위도 월/일만 표기한다', () => {
+    expect(formatWeekRange({ start: '2026-12-29', end: '2027-01-04' })).toBe('12/29 – 1/4 기준')
   })
 })

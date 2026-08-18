@@ -28,3 +28,19 @@ export function formatUpdatedAt(iso: string): string {
   const mm = String(kst.getUTCMinutes()).padStart(2, '0')
   return `${kst.getUTCMonth() + 1}/${kst.getUTCDate()} ${hh}:${mm} 갱신`
 }
+
+/** 'YYYY-MM-DD' → '8/10'. 요일 없이 월/일만 — weekRange 라벨은 요일까지는 필요 없다 */
+function formatMonthDay(iso: string): string {
+  const [, m, d] = iso.split('-').map(Number)
+  return `${m}/${d}`
+}
+
+/**
+ * week.ts의 weekRange({start, end})를 '8/10 – 8/16 기준'으로 표기한다.
+ * 헤더의 주차 라벨이 실제 데이터가 속한 주(week.ts weekLabel 서수 표기)와
+ * 어긋나 보이는 문제를 막는다 — 서수 대신 날짜 범위를 보여주면 데이터가
+ * 어느 주의 것인지가 명시적이라 화면이 거짓말을 하지 않는다.
+ */
+export function formatWeekRange({ start, end }: { start: string; end: string }): string {
+  return `${formatMonthDay(start)} – ${formatMonthDay(end)} 기준`
+}
