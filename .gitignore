@@ -16,3 +16,6 @@ dist/
 # 에디터·OS
 .DS_Store
 *.log
+
+# TanStack Router가 dev/build 때마다 재생성
+src/routeTree.gen.ts
