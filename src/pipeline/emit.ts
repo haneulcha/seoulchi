@@ -1,34 +1,14 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
-import { z } from 'zod'
 import type { CuratedEntry } from '~/pipeline/curate'
 import type { DetailCache } from '~/sources/types'
-import { eventItemSchema, placeItemSchema, type EventItem, type PlaceItem } from '~/types/item'
-
-const weekKeySchema = z.string().regex(/^\d{4}-W\d{2}$/)
-
-export const weeklyEventsSchema = z.object({
-  weekKey: weekKeySchema,
-  items: z.array(eventItemSchema),
-})
-
-export const placesFileSchema = z.object({
-  items: z.array(placeItemSchema),
-})
-
-export const curatedFileSchema = z.object({
-  weekKey: weekKeySchema,
-  picks: z.array(z.object({ id: z.string(), reason: z.string() })),
-  places: z.array(z.string()),
-})
-
-export const metaSchema = z.object({
-  updatedAt: z.string(),
-  llmProvider: z.string(),
-  sourceCounts: z.record(z.string(), z.number()),
-  weekKey: weekKeySchema,
-  counts: z.object({ events: z.number(), places: z.number() }),
-})
+import { type EventItem, type PlaceItem } from '~/types/item'
+import {
+  curatedFileSchema,
+  metaSchema,
+  placesFileSchema,
+  weeklyEventsSchema,
+} from '~/types/files'
 
 export interface EmitPayload {
   weekKey: string

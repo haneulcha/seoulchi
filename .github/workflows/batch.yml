@@ -36,6 +36,9 @@ jobs:
 
       - run: npm test
 
+      - run: npm run build
+      - run: npm run typecheck
+
       - name: 배치 실행
         env:
           SEOUL_API_KEY: ${{ secrets.SEOUL_API_KEY }}

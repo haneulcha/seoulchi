@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 export const sourceNameSchema = z.enum(['seoul-culture', 'visit-seoul'])
 
-/** 상세 라우트 /e/[id]에 인코딩 없이 들어가야 하므로 URL-safe 문자만 허용 */
+/** 상세 라우트 /e/$id에 인코딩 없이 들어가야 하므로 URL-safe 문자만 허용 */
 const idSchema = z.string().regex(/^(sc|vs)-[A-Za-z0-9_-]+$/, 'id는 sc- 또는 vs- 접두사와 URL-safe 문자만 허용')
 const isoDateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, '날짜는 YYYY-MM-DD 형식')
 
