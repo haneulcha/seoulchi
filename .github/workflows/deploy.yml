@@ -1,0 +1,64 @@
+name: 배포
+
+on:
+  # 배치가 data/를 커밋하면 그 push가 재배포를 유발한다
+  push:
+    branches: [main]
+  # 배치(KST 06:00) 30분 뒤. 배치가 실패하거나 데이터가 그대로여도 이 실행이
+  # today를 새로 박는다 — 화면의 신선도를 배치 성공에 묶지 않기 위한 것이다.
+  # 프리렌더된 HTML에는 빌드 시각의 KST 날짜가 들어가고, 홈의 만료 필터
+  # (endDate >= today)가 그 값을 쓰므로 이게 없으면 지난 행사가 계속 남는다.
+  schedule:
+    - cron: '30 21 * * *' # KST 06:30 (UTC 21:30 전날)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 배포는 앞의 것이 끝난 뒤에 이어서 한다. 중간 실행을 취소하면 Pages가
+# 반쯤 올라간 상태로 남을 수 있다.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # 배치 워크플로와 같은 버전으로 맞춘다
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # 깨진 상태가 배포되지 않게 먼저 막는다.
+      # tests/data/smoke.test.ts는 오늘 날짜 기준으로 홈 12자리가 차는지를
+      # 단언하므로, 데이터가 너무 묵으면 여기서 배포가 멈춘다 — 의도된 게이트다.
+      - run: npm test
+
+      - run: npm run build
+
+      - run: npm run typecheck
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          # 프리렌더 산출물. dist/server는 올리지 않는다 — 서버 런타임이 없다.
+          path: dist/client
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
