@@ -2166,7 +2166,7 @@
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=76228&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "linkUrl": "https://www.sbs.co.kr/",
       "isFree": false,
-      "subwayInfo": "지하철 5호선 오목교역 2번출구, 328m",
+      "subwayInfo": "지하철 5호선 오목교역 2번출구, 382m",
       "tags": [
         "SBS등촌공개홀",
         "상암SBS프리즘타워",
@@ -2558,7 +2558,7 @@
         "전시"
       ],
       "kind": "place",
-      "useTime": "화-일 10:00-19:00",
+      "useTime": "화-일 10:00-19:00\r\n(전시 입장 마감시간 18:30)",
       "closedDays": "월요일",
       "hours": {
         "open": "10:00",
@@ -3092,10 +3092,10 @@
     {
       "id": "vs-KOP9hdag0",
       "source": "visit-seoul",
-      "title": "Piknic",
+      "title": "piknic",
       "summary": "2018년 개관한 피크닉은 전시장, 카페, 상점, 레스토랑, 정원과 텃밭이 함께 자리하는 도심 속 문화 공간입니다.",
       "category": "문화관광",
-      "place": "Piknic",
+      "place": "piknic",
       "address": "서울시 중구 퇴계로6가길 30 피크닉",
       "lat": 37.5569763923852,
       "lng": 126.978121332046,
@@ -3140,10 +3140,10 @@
         "서울차전문점"
       ],
       "kind": "place",
-      "useTime": "12:00 ~ 19:00",
-      "closedDays": "월, 화",
+      "useTime": "13:00 ~ 19:00",
+      "closedDays": "월, 화, 토, 일",
       "hours": {
-        "open": "12:00",
+        "open": "13:00",
         "close": "19:00",
         "closedWeekdays": []
       }
@@ -4204,13 +4204,10 @@
       ],
       "kind": "place",
       "useTime": "12:00 ~ 20:00",
-      "closedDays": "월요일 휴무",
       "hours": {
         "open": "12:00",
         "close": "20:00",
-        "closedWeekdays": [
-          1
-        ]
+        "closedWeekdays": []
       }
     },
     {
@@ -7630,7 +7627,6 @@
       "lat": 37.5527417982,
       "lng": 127.0742978822,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75721&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://convention.sejong.ac.kr/convention/index.do",
       "isFree": false,
       "subwayInfo": "지하철 7호선 어린이대공원역 6번 출구,  280m",
       "tags": [
@@ -9079,11 +9075,13 @@
       ],
       "kind": "place",
       "useTime": "10:00~22:00",
-      "closedDays": "월",
+      "closedDays": "월요일 정기휴무",
       "hours": {
         "open": "10:00",
         "close": "22:00",
-        "closedWeekdays": []
+        "closedWeekdays": [
+          1
+        ]
       }
     },
     {
@@ -9754,21 +9752,26 @@
       "isFree": false,
       "subwayInfo": "지하철 1호선/경의중앙선,용산역 3번 출구, 약 4m (도보 1분)",
       "tags": [
-        "빅휠",
         "다이사이",
         " 블랙잭",
         "레저",
         "슬롯머신",
         " 남산",
         " 룰렛",
+        "빅휠",
         " 서울드래곤시티",
         " 세븐럭카지노",
         "바카라",
         " 카지노"
       ],
       "kind": "place",
+      "useTime": "24시간 영업",
       "closedDays": "연중무휴",
-      "hours": null
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOP000305",
@@ -11932,7 +11935,7 @@
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=16806&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "linkUrl": "https://www.sac.or.kr/site/main/home",
       "isFree": false,
-      "subwayInfo": "지하철 3호선 남부터미널역 5번 출구,  1km \r\n지하철 2호선 방배역 1번출구,  1.6km",
+      "subwayInfo": "지하철 3호선 남부터미널역 4-2번 출구,  654m",
       "tags": [
         "서울핫플",
         " 공연",
@@ -12480,9 +12483,9 @@
       "lng": 127.07357366047684,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=2643&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
       "isFree": false,
-      "subwayInfo": "지하철 2/9호선 종합운동장역 5, 6번 출구,  10m",
+      "subwayInfo": "지하철 2/9호선 종합운동장역 5, 6번 출구,  168m",
       "tags": [
-        " 잠실종합운동장",
+        "잠실종합운동장",
         " 경기장",
         " 레저",
         " LG트윈스",
@@ -15718,7 +15721,7 @@
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72107&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "linkUrl": "https://www.instagram.com/dulle_camping",
       "isFree": false,
-      "subwayInfo": "지하철 3호선 구파발역 2번 출구,  7211 버스 이용",
+      "subwayInfo": "지하철 3호선 구파발역 2번 출구,  7211 버스로 약 15분 거리",
       "tags": [
         "은평바베큐장",
         "서울캠핑장",
@@ -16175,15 +16178,9 @@
         "북촌한옥마을"
       ],
       "kind": "place",
-      "useTime": "09:30~16:00",
+      "useTime": "정규과정 \r\n- 월, 수, 목, 금, 토 오전 9시 30분 및 오후 2시\r\n- 일 오후 2시\r\n특별 과정\r\n- 토 오후 4시, 일 오전 10시",
       "closedDays": "매주 화요일",
-      "hours": {
-        "open": "09:30",
-        "close": "16:00",
-        "closedWeekdays": [
-          2
-        ]
-      }
+      "hours": null
     },
     {
       "id": "vs-KOPou8ab9",
@@ -16197,7 +16194,7 @@
       "lng": 126.973309404307,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60880&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "isFree": false,
-      "subwayInfo": "지하철 3호선 경복궁역 3번 출구,  400m",
+      "subwayInfo": "지하철 3호선 경복궁역 3번 출구,  404m",
       "tags": [
         "한글캘리그라피체험",
         "한글",
@@ -22764,10 +22761,11 @@
       "lat": 37.5423844956,
       "lng": 126.9018188878,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=16327&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/seonyudo.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300019",
       "isFree": false,
       "subwayInfo": "지하철 9호선 선유도역 2번 출구,  782m",
       "tags": [
+        "여의도",
         " 선유도",
         " 양화한강공원",
         "양화대교",
@@ -22775,7 +22773,6 @@
         " 국회의사당",
         " 야경",
         " 선유도역",
-        "여의도",
         " 선유도공원"
       ],
       "kind": "place",
@@ -22901,15 +22898,15 @@
       "lng": 126.9578133,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=15765&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
       "isFree": true,
-      "subwayInfo": "지하철 9호선 노들역 3번출구, 650m",
+      "subwayInfo": "지하철 9호선 노들역 3번출구, 467m",
       "tags": [
+        "한류",
         "jyj",
         "용양봉저정공원",
         "노량진",
         "용봉정근린공원",
         "사진촬영",
         "한류관광",
-        "한류",
         "유승호",
         "슈퍼주니어M",
         "야경",
@@ -23029,12 +23026,12 @@
       "lat": 37.52119310951147,
       "lng": 126.9845702137518,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=65034&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 경의중앙선 / 4호선 이촌역 2번 출구,  724m\r\n지하철 경의중앙선 서빙고역 1번 출구, 678m",
       "tags": [
-        " 공원",
-        "자연",
-        "용산가족공원"
+        "공원",
+        "용산가족공원",
+        "자연"
       ],
       "kind": "place",
       "useTime": "연중 24시간 개방",

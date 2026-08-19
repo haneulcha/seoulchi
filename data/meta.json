@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-08-14T10:59:22.232Z",
-  "llmProvider": "ollama",
+  "updatedAt": "2026-08-19T21:17:28.227Z",
+  "llmProvider": "rule",
   "sourceCounts": {
-    "seoul-culture": 19494,
+    "seoul-culture": 19509,
     "visit-seoul": 2199
   },
-  "weekKey": "2026-W33",
+  "weekKey": "2026-W34",
   "counts": {
-    "events": 314,
+    "events": 319,
     "places": 728
   }
 }

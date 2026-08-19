@@ -67532,7 +67532,7 @@
     }
   },
   "KOP3f5lvc": {
-    "updtDtText": "2025.11.07",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP3f5lvc",
       "lang_code_id": "ko",
@@ -67550,7 +67550,7 @@
       "post_sj": "SBS",
       "sumry": "지상파 민영 상업 방송사",
       "creat_dt_text": "2025.09.26",
-      "updt_dt_text": "2025.11.07",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "SBS등촌공개홀",
         "상암SBS프리즘타워",
@@ -67572,7 +67572,7 @@
         "new_adres": "서울 양천구 목동서로 161 SBS 방송센터",
         "map_position_x": "126.87374657727",
         "map_position_y": "37.5291902429029",
-        "subway_info": "지하철 5호선 오목교역 2번출구, 328m"
+        "subway_info": "지하철 5호선 오목교역 2번출구, 382m"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -67582,7 +67582,7 @@
     }
   },
   "KOPnw1hit": {
-    "updtDtText": "2025.10.01",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOPnw1hit",
       "lang_code_id": "ko",
@@ -67598,7 +67598,7 @@
       "post_sj": "상암동 MBC 신사옥",
       "sumry": "지상파 방송사 중 하나로 방송문화진흥회가 운영하는 방송사",
       "creat_dt_text": "2025.09.26",
-      "updt_dt_text": "2025.10.01",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "상암동MBC",
         "MBC신사옥",
@@ -69549,7 +69549,7 @@
     }
   },
   "KOPx6grff": {
-    "updtDtText": "2025.08.14",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOPx6grff",
       "lang_code_id": "ko",
@@ -69567,7 +69567,7 @@
       "post_sj": "예술의전당 서울서예박물관",
       "sumry": "서예 및 서화에 대한 전시를 개최하는 예술의전당 내 위치한 서울서예박물관",
       "creat_dt_text": "2025.08.11",
-      "updt_dt_text": "2025.08.14",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "예술의전당",
         "서울서예박물관",
@@ -69580,7 +69580,7 @@
         "cmmn_telno": "1688-1352",
         "cmmn_hmpg_url": "www.sac.or.kr",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "화-일 10:00-19:00",
+        "cmmn_use_time": "화-일 10:00-19:00\r\n(전시 입장 마감시간 18:30)",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [
           "장애인화장실",
@@ -73543,7 +73543,7 @@
     }
   },
   "KOP9hdag0": {
-    "updtDtText": "2026.08.14",
+    "updtDtText": "2026.08.19",
     "detail": {
       "cid": "KOP9hdag0",
       "lang_code_id": "ko",
@@ -73558,10 +73558,10 @@
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=80838&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=80839&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
-      "post_sj": "Piknic",
+      "post_sj": "piknic",
       "sumry": "2018년 개관한 피크닉은 전시장, 카페, 상점, 레스토랑, 정원과 텃밭이 함께 자리하는 도심 속 문화 공간입니다. ",
       "creat_dt_text": "2025.02.17",
-      "updt_dt_text": "2026.08.14",
+      "updt_dt_text": "2026.08.19",
       "tag": [
         "전시",
         "예술",
@@ -73597,7 +73597,7 @@
     }
   },
   "KOP3elqxf": {
-    "updtDtText": "2025.09.09",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP3elqxf",
       "lang_code_id": "ko",
@@ -73614,7 +73614,7 @@
       "post_sj": "월하보이",
       "sumry": "북촌에 자리한 보이차 전문 티룸",
       "creat_dt_text": "2025.01.16",
-      "updt_dt_text": "2025.09.09",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "다도체험",
         "북촌다도",
@@ -73624,12 +73624,12 @@
         "cmmn_telno": "0507-1349-2340",
         "cmmn_hmpg_url": "https://www.instagram.com/whtea_seoul/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "12:00 ~ 19:00",
+        "cmmn_use_time": "13:00 ~ 19:00",
         "cmmn_important": "주차는 정독도서관 또는 국립현대미술관 서울관에 주차하시면 편리합니다.",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "수 ~ 일",
-        "closed_days": "월, 화"
+        "business_days": "수 ~ 금",
+        "closed_days": "월, 화, 토, 일"
       },
       "traffic": {
         "adres": "서울 종로구 화동 118-2",
@@ -73648,7 +73648,7 @@
     }
   },
   "KOPwo1ido": {
-    "updtDtText": "2025.09.07",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOPwo1ido",
       "lang_code_id": "ko",
@@ -73668,9 +73668,9 @@
       "schdul_info_endde": "2025.02.16",
       "place": "여의도 한강공원",
       "creat_dt_text": "2025.01.16",
-      "updt_dt_text": "2025.09.07",
+      "updt_dt_text": "2026.08.18",
       "tag": [
-        " 겨울철액티비티",
+        "겨울철액티비티",
         "눈썰매장",
         "한강눈썰매장",
         "한강공원"
@@ -73679,11 +73679,11 @@
         "cmmn_telno": "02-785-0478",
         "cmmn_hmpg_url": "https://hangang.seoul.go.kr/www/facility/map.tab?opt2=REST&opt3=POOL&opt11=SNOW_SLEDDING",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "9:00 ~ 17:00\r\n*노면정비: 12:00 ~ 12:40",
-        "cmmn_important": "기상악화로 안전에 우려가 있을 경우 운영시간이 임의로 조정될 수 있습니다.",
+        "cmmn_use_time": "10:00 ~ 17:00\r\n*노면정비: 12:00 ~ 12:40",
+        "cmmn_important": "기상악화로 안전에 우려가 있을 경우 운영시간이 임의로 조정될 수 있습니다.\r\n25~26년도 한강공원 눈썰매장 운영 종료",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
-        "business_days": "24.12.24 ~25.02.16",
+        "business_days": "25.12.31~26.02.18",
         "usage_fee": "입장료 6,000원 \r\n놀이기구 1회 이용 5,000~7,000원 (놀이기구별 상이)\r\n체험 공산 1회 이용 4,000원~5,000원 (체험별 상이)"
       },
       "traffic": {
@@ -73701,7 +73701,7 @@
     }
   },
   "KOPxzqqj2": {
-    "updtDtText": "2025.09.07",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOPxzqqj2",
       "lang_code_id": "ko",
@@ -73718,7 +73718,7 @@
       "post_sj": "아크앤북 TP타워 여의도점",
       "sumry": "일상을 풍요롭게 만드는 도심형 북라운지",
       "creat_dt_text": "2025.01.16",
-      "updt_dt_text": "2025.09.07",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "여의도카페",
         " 여의도북카페",
@@ -73730,6 +73730,7 @@
         "cmmn_hmpg_url": "https://arcnbook.com/home",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "월 ~금 07:30 ~21:00\r\n토 ~ 일 10:00~21:00",
+        "cmmn_important": "주방 메뉴 주중 9:00 / 주말 11:30 이용 가능",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
       },
@@ -83542,7 +83543,7 @@
     }
   },
   "KOPav9wgq": {
-    "updtDtText": "2025.11.01",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOPav9wgq",
       "lang_code_id": "ko",
@@ -83560,7 +83561,7 @@
       "post_sj": "B the B",
       "sumry": "서울만의 뷰티를 세계에 선보이는, 서울 뷰티·패션의 핵심거점",
       "creat_dt_text": "2023.03.02",
-      "updt_dt_text": "2025.11.01",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "DDP",
         "뷰티",
@@ -83580,8 +83581,7 @@
           "엘리베이터",
           "장애인 안내(휠체어 대여 및 기타)"
         ],
-        "business_days": "화요일 ~ 일요일",
-        "closed_days": "월요일 휴무"
+        "business_days": "매일"
       },
       "traffic": {
         "adres": "서울 중구 을지로7가 143",
@@ -84250,7 +84250,7 @@
     }
   },
   "KOP041926": {
-    "updtDtText": "2025.09.07",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP041926",
       "lang_code_id": "ko",
@@ -84268,7 +84268,7 @@
       "post_sj": "송파 책박물관",
       "sumry": "오감으로 체험하는 책 문화, 송파 책박물관",
       "creat_dt_text": "2022.10.18",
-      "updt_dt_text": "2025.09.07",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "책박물관",
         "송파책박물관",
@@ -84280,6 +84280,7 @@
         "cmmn_hmpg_url": "https://www.bookmuseum.go.kr/",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "화요일 ~ 일요일 10:00~18:00",
+        "cmmn_important": "주차 가능 \r\n최초 30분 무료\r\n추가 요금 5분당 150원",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "closed_days": "매주 월요일, 법정공휴일 "
@@ -89980,7 +89981,7 @@
     }
   },
   "KOP024668": {
-    "updtDtText": "2025.09.11",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP024668",
       "lang_code_id": "ko",
@@ -89998,7 +89999,7 @@
       "post_sj": "세종대 컨벤션센터",
       "sumry": " 국제 수준의 시설로 전격 ‘원스톱’ 서비스를 제공하는 공연장,회의실, 전시장",
       "creat_dt_text": "2018.02.19",
-      "updt_dt_text": "2025.09.11",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "어린이대공원역",
         "세종대학교",
@@ -90011,8 +90012,7 @@
         "공연장"
       ],
       "extra": {
-        "cmmn_telno": "02-3408-4459",
-        "cmmn_hmpg_url": "http://convention.sejong.ac.kr/convention/index.do",
+        "cmmn_telno": "02-3408-4497",
         "cmmn_hmpg_lang": "한국어",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
@@ -92470,7 +92470,7 @@
     }
   },
   "KOP001951": {
-    "updtDtText": "2025.09.11",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP001951",
       "lang_code_id": "ko",
@@ -92488,7 +92488,7 @@
       "post_sj": "보라매 암벽등반장",
       "sumry": "보라매공원을 재정비해 청소년 테마 공원으로 바꾼 후에 만들어짐",
       "creat_dt_text": "2016.01.10",
-      "updt_dt_text": "2025.09.11",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "서울암벽등반",
         "공원",
@@ -92505,7 +92505,7 @@
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
         "business_days": "화~일",
-        "closed_days": "월",
+        "closed_days": "월요일 정기휴무",
         "usage_fee": "일반일 일일체험 (2회 등반) 5,000원"
       },
       "traffic": {
@@ -93708,7 +93708,7 @@
     }
   },
   "KOP000358": {
-    "updtDtText": "2025.06.02",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP000358",
       "lang_code_id": "ko",
@@ -93724,23 +93724,24 @@
       "post_sj": "세븐럭 카지노(서울드래곤시티점)",
       "sumry": "도시적인 세련된 인테리어가 특색 있는 세븐럭 카지노 서울드래곤시티점 ",
       "creat_dt_text": "2016.01.02",
-      "updt_dt_text": "2025.06.02",
+      "updt_dt_text": "2026.08.18",
       "tag": [
-        "빅휠",
         "다이사이",
         " 블랙잭",
         "레저",
         "슬롯머신",
         " 남산",
         " 룰렛",
+        "빅휠",
         " 서울드래곤시티",
         " 세븐럭카지노",
         "바카라",
         " 카지노"
       ],
       "extra": {
-        "cmmn_telno": "02-2021-6000",
+        "cmmn_telno": "02-2021-6100",
         "cmmn_hmpg_url": "http://www.7luck.com",
+        "cmmn_use_time": "24시간 영업",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "월요일~일요일",
@@ -95567,7 +95568,7 @@
     }
   },
   "KOP006225": {
-    "updtDtText": "2025.11.05",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP006225",
       "lang_code_id": "ko",
@@ -95585,7 +95586,7 @@
       "post_sj": "국립국악원",
       "sumry": "국립국악원은 전통음악과 무용 등의 국악의 보존, 발전을 위해 설립",
       "creat_dt_text": "2011.11.02",
-      "updt_dt_text": "2025.11.05",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "공연",
         " 문화예술",
@@ -95603,12 +95604,13 @@
         "cmmn_telno": "02-580-3300",
         "cmmn_hmpg_url": "http://www.gugak.go.kr",
         "cmmn_use_time": "공연 일정에 따라 다름",
+        "cmmn_important": "주차장 유료\r\n일반요금: 10분당 1,000원\r\n전시: 3시간 미만 4,000원\r\n공연교육: 3시간 미만 4,000원 / 3~5시간 6,000원\r\n\r\n20분 이내 출차 시 무료\r\n토,일 및 공휴일에 한하여 주차요금 1.5배 부과",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [
+          "장애인화장실",
           "장애인 전용 주차장",
           "접근가능",
-          "엘리베이터",
-          "장애인화장실"
+          "엘리베이터"
         ],
         "closed_days": "홈페이지 공연 일정 참조"
       },
@@ -97491,7 +97493,7 @@
     }
   },
   "KOP003986": {
-    "updtDtText": "2025.11.05",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP003986",
       "lang_code_id": "ko",
@@ -97509,7 +97511,7 @@
       "post_sj": "예술의전당",
       "sumry": "예술의 전당은 1988년 음악당과 서예박물관을 시작으로 단계별 개관",
       "creat_dt_text": "2009.06.03",
-      "updt_dt_text": "2025.11.05",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "서울핫플",
         " 공연",
@@ -97549,7 +97551,7 @@
         "new_adres": "서울특별시 서초구 남부순환로 2406  (서초동)",
         "map_position_x": "127.01331855561996",
         "map_position_y": "37.47948213244365",
-        "subway_info": "지하철 3호선 남부터미널역 5번 출구,  1km \r\n지하철 2호선 방배역 1번출구,  1.6km"
+        "subway_info": "지하철 3호선 남부터미널역 4-2번 출구,  654m "
       },
       "tourist": {
         "guidance_service": "ul",
@@ -98484,7 +98486,7 @@
     }
   },
   "KOP002642": {
-    "updtDtText": "2025.11.01",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP002642",
       "lang_code_id": "ko",
@@ -98502,9 +98504,9 @@
       "post_sj": "잠실야구장",
       "sumry": " 한국 프로 야구의 LG 트윈스와 두산 베어스의 2개 구단이 홈구장",
       "creat_dt_text": "2009.05.31",
-      "updt_dt_text": "2025.11.01",
+      "updt_dt_text": "2026.08.18",
       "tag": [
-        " 잠실종합운동장",
+        "잠실종합운동장",
         " 경기장",
         " 레저",
         " LG트윈스",
@@ -98530,7 +98532,7 @@
         "new_adres": "서울 송파구 올림픽로 19-2 서울종합운동장",
         "map_position_x": "127.07357366047684",
         "map_position_y": "37.51648445904668",
-        "subway_info": "지하철 2/9호선 종합운동장역 5, 6번 출구,  10m"
+        "subway_info": "지하철 2/9호선 종합운동장역 5, 6번 출구,  168m"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -104060,7 +104062,7 @@
     }
   },
   "KOP512i62": {
-    "updtDtText": "2025.09.17",
+    "updtDtText": "2026.08.17",
     "detail": {
       "cid": "KOP512i62",
       "lang_code_id": "ko",
@@ -104077,7 +104079,7 @@
       "post_sj": "북한산둘레캠프",
       "sumry": "북한산둘레캠프는 북한산 뷰를 즐길 수 있는 캠핑장",
       "creat_dt_text": "2025.02.19",
-      "updt_dt_text": "2025.09.17",
+      "updt_dt_text": "2026.08.17",
       "tag": [
         "은평바베큐장",
         "서울캠핑장",
@@ -104098,7 +104100,7 @@
         "new_adres": "서울 은평구 연서로 608-2 (진관동, 북한산둘레캠핑장)",
         "map_position_x": "126.93886936504",
         "map_position_y": "37.6479569403592",
-        "subway_info": "지하철 3호선 구파발역 2번 출구,  7211 버스 이용"
+        "subway_info": "지하철 3호선 구파발역 2번 출구,  7211 버스로 약 15분 거리"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -104834,7 +104836,7 @@
     }
   },
   "KOP75ls3r": {
-    "updtDtText": "2025.09.06",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP75ls3r",
       "lang_code_id": "ko",
@@ -104852,7 +104854,7 @@
       "post_sj": "서울김치문화체험관",
       "sumry": "북촌 한옥마을에 위치한 한국의 전통음식인 김치만들기 체험",
       "creat_dt_text": "2023.07.24",
-      "updt_dt_text": "2025.09.06",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "김치",
         " 김장체험",
@@ -104865,7 +104867,7 @@
         "cmmn_telno": "02-318-7051",
         "cmmn_hmpg_url": "http://www.kimchischool.net/xe/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "09:30~16:00",
+        "cmmn_use_time": "정규과정 \r\n- 월, 수, 목, 금, 토 오전 9시 30분 및 오후 2시\r\n- 일 오후 2시\r\n특별 과정\r\n- 토 오후 4시, 일 오전 10시",
         "cmmn_important": "영어, 일본어로 클래스를 진행하며 예약 필수입니다.",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
@@ -104888,7 +104890,7 @@
     }
   },
   "KOPou8ab9": {
-    "updtDtText": "2025.08.25",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOPou8ab9",
       "lang_code_id": "ko",
@@ -104905,7 +104907,7 @@
       "post_sj": "미스맥 서촌한옥스튜디오",
       "sumry": "서촌 한옥에서 즐기는 한글캘리그라피 체험",
       "creat_dt_text": "2023.07.18",
-      "updt_dt_text": "2025.08.25",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "한글캘리그라피체험",
         "한글",
@@ -104929,7 +104931,7 @@
         "new_adres": "서울 종로구 효자로7길 8 (통의동)",
         "map_position_x": "126.973309404307",
         "map_position_y": "37.578971050389",
-        "subway_info": "지하철 3호선 경복궁역 3번 출구,  400m"
+        "subway_info": "지하철 3호선 경복궁역 3번 출구,  404m"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -115204,7 +115206,7 @@
     }
   },
   "KOP037952": {
-    "updtDtText": "2025.07.19",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP037952",
       "lang_code_id": "ko",
@@ -115220,7 +115222,7 @@
       "post_sj": "수성동계곡",
       "sumry": "겸재 정선의 '장동팔경첩' 수성동 그림으로 등장하는 아름다운 계곡.",
       "creat_dt_text": "2021.06.25",
-      "updt_dt_text": "2025.07.19",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "서울",
         "도심속힐링",
@@ -115237,6 +115239,7 @@
       "extra": {
         "cmmn_telno": "02-2148-2844",
         "cmmn_use_time": "24시간, 연중무휴",
+        "cmmn_important": "이용요금 무료",
         "trrsrt_use_chrge": "F",
         "disabled_facility": []
       },
@@ -116322,7 +116325,7 @@
     }
   },
   "KOP016327": {
-    "updtDtText": "2025.10.28",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP016327",
       "lang_code_id": "ko",
@@ -116339,8 +116342,9 @@
       "post_sj": "선유도 야경",
       "sumry": " 양화대교와 성산대교 사이에 위치한 공원으로 야경때문에 인기.",
       "creat_dt_text": "2016.03.14",
-      "updt_dt_text": "2025.10.28",
+      "updt_dt_text": "2026.08.18",
       "tag": [
+        "여의도",
         " 선유도",
         " 양화한강공원",
         "양화대교",
@@ -116348,12 +116352,11 @@
         " 국회의사당",
         " 야경",
         " 선유도역",
-        "여의도",
         " 선유도공원"
       ],
       "extra": {
         "cmmn_telno": "02-2631-9368",
-        "cmmn_hmpg_url": "http://parks.seoul.go.kr/template/sub/seonyudo.do",
+        "cmmn_hmpg_url": "https://parks.seoul.go.kr/content.do?key=2604300019",
         "cmmn_use_time": "06:00 ~ 24:00 ",
         "cmmn_important": "선유도 \r\n물봉선과 쇠뜨기, 수련, 검정말 등 각종 수생 식물 1만여 본이 심어져 있습니다. 특히 시간의 정원은 세로 41미터, 깊이 5미터 규모의 침전지 2개를 활용한 것으로 이곳이 한때 수원지였음을 보여줍니다. 118종의 수목과 풀, 꽃을 여러 개의 작은 정원에 나눠 심어 사계절을 느낄 수 있도록 꾸며놓았습니다. 구조물의 칙칙한 색깔과 거친 표면, 불규칙한 선이 각종 식물들과 절묘하게 어울려 마치 시간이 정지된 듯한 느낌을 줍니다.",
         "trrsrt_use_chrge": "N",
@@ -116549,7 +116552,7 @@
     }
   },
   "KOP015765": {
-    "updtDtText": "2025.10.27",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP015765",
       "lang_code_id": "ko",
@@ -116569,15 +116572,15 @@
       "post_sj": "용양봉저정공원",
       "sumry": " 63빌딩부터 한강대교와 북한산, 멀리 남산타워까지 한눈에 조망",
       "creat_dt_text": "2016.02.24",
-      "updt_dt_text": "2025.10.27",
+      "updt_dt_text": "2026.08.18",
       "tag": [
+        "한류",
         "jyj",
         "용양봉저정공원",
         "노량진",
         "용봉정근린공원",
         "사진촬영",
         "한류관광",
-        "한류",
         "유승호",
         "슈퍼주니어M",
         "야경",
@@ -116598,7 +116601,7 @@
         "adres2": "용양봉저정공원",
         "map_position_x": "126.9578133",
         "map_position_y": "37.5112029",
-        "subway_info": "지하철 9호선 노들역 3번출구, 650m\r\n"
+        "subway_info": "지하철 9호선 노들역 3번출구, 467m\r\n"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -116775,7 +116778,7 @@
     }
   },
   "KOP001306": {
-    "updtDtText": "2025.12.02",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP001306",
       "lang_code_id": "ko",
@@ -116793,19 +116796,19 @@
       "post_sj": "용산가족공원",
       "sumry": "넓은 잔디밭과 연못 그리고 산책로가 있는 가족 공원. ",
       "creat_dt_text": "2016.01.07",
-      "updt_dt_text": "2025.12.02",
+      "updt_dt_text": "2026.08.18",
       "tag": [
-        " 공원",
-        "자연",
-        "용산가족공원"
+        "공원",
+        "용산가족공원",
+        "자연"
       ],
       "extra": {
-        "cmmn_telno": "\t02-792-5661",
+        "cmmn_telno": "02-792-5661",
         "cmmn_use_time": "연중 24시간 개방 ",
         "cmmn_important": "맨발공원 : 용산공원에는 발바닥 지압을 할 수 있는 맨발공원이 조성되어 있습니다. 발바닥에는 말초신경이 모여 있어 발을 자극하면 장기 기능을 활성화시켜 피로 회복에 좋습니다. 초보자 코스와 숙련자 코스가 따로 나뉘어 있어 이용이 편리합니다. 발바닥 부위별 자극 효과를 그림으로 표시한 안내 표지판도 있습니다. ",
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "F",
         "disabled_facility": [],
-        "business_days": "월요일~일요일 "
+        "business_days": "매일"
       },
       "traffic": {
         "zip_code": "140-026",
@@ -117473,7 +117476,7 @@
     }
   },
   "KOP002429": {
-    "updtDtText": "2025.12.15",
+    "updtDtText": "2026.08.18",
     "detail": {
       "cid": "KOP002429",
       "lang_code_id": "ko",
@@ -117491,7 +117494,7 @@
       "post_sj": "양재천&탄천",
       "sumry": "양재천은 경기 과천시와 서울 남부를 흐르는 하천으로 한여울이라고도 함.",
       "creat_dt_text": "2009.05.30",
-      "updt_dt_text": "2025.12.15",
+      "updt_dt_text": "2026.08.18",
       "tag": [
         "하천",
         " 양재천벚꽃",
