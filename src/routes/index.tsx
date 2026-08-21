@@ -41,9 +41,9 @@ function Home() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-6 sm:px-6 md:py-10 lg:px-8">
       <header className="mb-6 md:mb-10">
-        <p className="text-sm text-gray-500">{data.weekRangeLabel}</p>
+        <p className="text-sm text-ink-subtle">{data.weekRangeLabel}</p>
         <h1 className="text-2xl font-bold md:text-3xl">이번 주 서울</h1>
-        <p className="mt-1 text-xs text-gray-500">{data.updatedLabel}</p>
+        <p className="mt-1 text-xs text-ink-subtle">{data.updatedLabel}</p>
       </header>
 
       {/* 3개라 md 이상에서 3단이 딱 한 줄로 떨어진다. 고아 칸이 없고 셋을 한 세트로 읽게 한다 */}

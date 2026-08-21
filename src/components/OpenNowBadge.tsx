@@ -17,7 +17,7 @@ export function OpenNowBadge({ hours }: { hours: ParsedHours | null }) {
 
   if (!open) return null
   return (
-    <span className="ml-2 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800">
+    <span className="ml-2 rounded-full bg-success-subtle-bg px-2 py-0.5 text-xs font-medium text-success-text">
       지금 열림
     </span>
   )

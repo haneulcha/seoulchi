@@ -9,14 +9,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Design Context
 
-화면(UI/UX)을 건드리기 전에 읽습니다. `impeccable` 명령들도 이 두 문서를 먼저 읽습니다.
+화면(UI/UX)을 건드리기 전에 읽습니다. `impeccable` 명령들도 이 세 문서를 먼저 읽습니다.
 
 - **[PRODUCT.md](PRODUCT.md)** — register(`product`), platform(`web`), 사용자, 성공 정의,
   포지셔닝, 안티레퍼런스, 디자인 원칙. **성공은 조회가 아니라 외출로 측정합니다.**
+- **[DESIGN.md](DESIGN.md)** — 색 시스템. 스케일·역할·대비 근거와 아직 안 정한 것.
+  **색은 여기가 유일한 근거입니다** — 화면에 색을 쓰기 전에 읽으세요.
 - **[docs/2026-08-21-ui-ux-critique.md](docs/2026-08-21-ui-ux-critique.md)** — 홈·상세 실측 진단
   (17/40, P0 2건). 다음에 무엇을 고칠지의 근거입니다.
 
-DESIGN.md(색·타이포·간격)는 아직 없습니다. 시각 방향을 정한 뒤 `/impeccable document`로 만듭니다.
+DESIGN.md는 색만 다룹니다. 타이포와 간격은 아직 시스템이 없고 Tailwind 기본값입니다.
+
+Tailwind 기본 팔레트는 꺼져 있습니다(`src/styles/theme.css`의 `--color-*: initial`).
+`text-gray-500` 같은 시스템 밖 클래스는 컴파일되지 않습니다 — 역할 토큰을 쓰세요.
 
 ## 이 레포는 계획 주도로 진행됩니다
 
