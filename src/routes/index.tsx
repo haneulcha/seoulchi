@@ -39,28 +39,43 @@ function Home() {
   const rest = data.entries.slice(3)
 
   return (
-    <main className="mx-auto max-w-xl px-4 py-6">
-      <header className="mb-6">
+    <main className="mx-auto max-w-5xl px-4 py-6 sm:px-6 md:py-10 lg:px-8">
+      <header className="mb-6 md:mb-10">
         <p className="text-sm text-gray-500">{data.weekRangeLabel}</p>
-        <h1 className="text-2xl font-bold">이번 주 서울</h1>
-        <p className="mt-1 text-xs text-gray-400">{data.updatedLabel}</p>
+        <h1 className="text-2xl font-bold md:text-3xl">이번 주 서울</h1>
+        <p className="mt-1 text-xs text-gray-500">{data.updatedLabel}</p>
       </header>
 
-      <section aria-label="이번 주 추천" className="space-y-6">
-        {big.map((entry) => (
-          <BigEventCard key={entry.item.id} entry={entry} today={data.today} />
+      {/*
+        md 이상에서 2단 + 1번 픽이 리드 슬롯(2칸). 3개를 3등분하면 셋 다 같은 무게가 되는데,
+        홈은 선별형이라 1위가 1위로 보여야 한다. 2단이라 고아 칸도 안 생긴다.
+      */}
+      <section className="grid gap-6 md:grid-cols-2">
+        <h2 className="text-lg font-bold md:col-span-2">이번 주 추천</h2>
+        {big.map((entry, i) => (
+          <BigEventCard key={entry.item.id} entry={entry} today={data.today} lead={i === 0} />
         ))}
       </section>
 
-      <section aria-label="이번 주 나머지" className="mt-8 space-y-4">
-        {rest.map((entry) => (
-          <CompactEventRow key={entry.item.id} entry={entry} today={data.today} />
-        ))}
+      {/*
+        열 수를 브레이크포인트가 아니라 콘텐츠가 정한다 — 컴팩트 행은 300px 밑으로 내려가면
+        제목이 잘려서 읽을 게 없어진다. auto-fit이면 폭에 따라 1 → 2 → 3열로 알아서 간다.
+        min(300px,100%)인 이유: 그냥 300px로 두면 320px 기기(안쪽 288px)에서
+        트랙이 300px으로 고정돼 12px 넘친다. 실측으로 확인했다.
+      */}
+      <section className="mt-10 md:mt-14">
+        <h2 className="text-lg font-bold">이번 주에 더 있는 것</h2>
+        <div className="mt-4 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-x-6 gap-y-4">
+          {rest.map((entry) => (
+            <CompactEventRow key={entry.item.id} entry={entry} today={data.today} />
+          ))}
+        </div>
       </section>
 
-      <section aria-label="언제 가도 좋은 곳" className="mt-12">
+      {/* 6개라 2·3·6으로만 나눠떨어진다. lg에서 한 줄 선반이 되면 행사 영역과 무게가 안 겹친다 */}
+      <section className="mt-12 md:mt-16">
         <h2 className="text-lg font-bold">언제 가도 좋은 곳</h2>
-        <div className="mt-4 grid grid-cols-2 gap-4">
+        <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {data.places.map((place) => (
             <PlaceCard key={place.id} place={place} />
           ))}
