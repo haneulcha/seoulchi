@@ -45,49 +45,62 @@ function Detail() {
   const fee = item.fee ?? (item.isFree ? '무료' : undefined)
 
   return (
-    <main className="mx-auto max-w-xl px-4 py-6">
-      <ItemImage
-        src={item.imageUrl}
-        alt=""
-        category={item.category}
-        className="aspect-video w-full rounded-xl object-cover"
-      />
-      <h1 className="mt-4 text-2xl font-bold">{item.title}</h1>
-      <p className="mt-1 text-sm text-gray-500">
-        {item.category}
-        {item.district ? ` · ${item.district}` : ''}
-      </p>
+    /*
+     * 홈과 달리 1024까지 넓히지 않는다 — 여기는 사실 목록과 본문이라
+     * 폭을 다 쓰면 줄이 길어져서 읽기가 나빠진다. 대신 md 이상에서 2단으로 갈라
+     * 이미지와 내용을 나란히 놓는 쪽으로 폭을 쓴다.
+     */
+    <main className="mx-auto max-w-4xl px-4 py-6 sm:px-6 md:py-10 lg:px-8">
+      <div className="md:grid md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:items-start md:gap-8">
+        <ItemImage
+          src={item.imageUrl}
+          alt=""
+          category={item.category}
+          className="aspect-video w-full rounded-xl object-cover"
+        />
+        <div className="min-w-0">
+          <h1 className="mt-4 text-2xl font-bold md:mt-0 md:text-3xl">{item.title}</h1>
+          <p className="mt-1 text-sm text-gray-500">
+            {item.category}
+            {item.district ? ` · ${item.district}` : ''}
+          </p>
 
-      <dl className="mt-6 space-y-3">
-        {item.kind === 'event' && (
-          <Fact label="기간" value={formatDateRange(item.startDate, item.endDate, today)} />
-        )}
-        {item.kind === 'event' && (
-          <Fact label="장소" value={item.address ? `${item.place} (${item.address})` : item.place} />
-        )}
-        {item.kind === 'place' && <Fact label="주소" value={item.address} />}
-        <Fact label="요금" value={fee} />
-        <Fact label="지하철" value={item.subwayInfo} />
-        {item.kind === 'place' && <Fact label="휴무일" value={item.closedDays} />}
-        {item.kind === 'place' && (
-          <Fact
-            label="이용시간"
-            value={item.useTime}
-            badge={<OpenNowBadge hours={item.hours ?? null} />}
-          />
-        )}
-      </dl>
+          <dl className="mt-6 space-y-3">
+            {item.kind === 'event' && (
+              <Fact label="기간" value={formatDateRange(item.startDate, item.endDate, today)} />
+            )}
+            {item.kind === 'event' && (
+              <Fact
+                label="장소"
+                value={item.address ? `${item.place} (${item.address})` : item.place}
+              />
+            )}
+            {item.kind === 'place' && <Fact label="주소" value={item.address} />}
+            <Fact label="요금" value={fee} />
+            <Fact label="지하철" value={item.subwayInfo} />
+            {item.kind === 'place' && <Fact label="휴무일" value={item.closedDays} />}
+            {item.kind === 'place' && (
+              <Fact
+                label="이용시간"
+                value={item.useTime}
+                badge={<OpenNowBadge hours={item.hours ?? null} />}
+              />
+            )}
+          </dl>
 
-      {item.linkUrl && (
-        <a
-          href={item.linkUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-8 block rounded-lg bg-gray-900 px-4 py-3 text-center font-medium text-white"
-        >
-          원문 보기
-        </a>
-      )}
+          {/* 모바일에서는 엄지로 누르는 전폭 버튼, md 이상에서는 내용에 맞춘 폭 */}
+          {item.linkUrl && (
+            <a
+              href={item.linkUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-8 block rounded-lg bg-gray-900 px-6 py-3 text-center font-medium text-white md:inline-block"
+            >
+              원문 보기
+            </a>
+          )}
+        </div>
+      </div>
     </main>
   )
 }
