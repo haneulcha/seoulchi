@@ -1281,6 +1281,39 @@
       }
     },
     {
+      "id": "vs-KOPmv93re",
+      "source": "visit-seoul",
+      "title": "디뮤지엄 (D MUSEUM)",
+      "summary": "영감을 디자인하는 복합문화예술센터",
+      "category": "기타전시시설",
+      "place": "디뮤지엄 (D MUSEUM)",
+      "address": "서울 성동구 왕십리로 83-21 (성수동1가, 아크로 서울포레스트)",
+      "lat": 37.5441547484979,
+      "lng": 127.043357753557,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81568&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.daelimmuseum.org/",
+      "isFree": false,
+      "subwayInfo": "지하철 수인분당선 서울숲역 4번출구, 35m",
+      "tags": [
+        "대림미술관",
+        "디뮤지엄",
+        "서울숲",
+        "문화",
+        "예술",
+        "서울전시"
+      ],
+      "kind": "place",
+      "useTime": "화,수,목,일 11:00-18:00 / 금,토 11:00-19:00 (마지막 입장 시간: 전시 종료 1시간 전)",
+      "closedDays": "매주 월요일",
+      "hours": {
+        "open": "11:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          1
+        ]
+      }
+    },
+    {
       "id": "vs-KOPfxnbtp",
       "source": "visit-seoul",
       "title": "여의도 인라인스케이트장",
@@ -2719,7 +2752,7 @@
       "lng": 126.965918565819,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74401&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://lib.jongno.go.kr//index.php",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 3호선 경복궁역 3번출구, 1.9km",
       "tags": [
         "청운문학도서관",
@@ -4098,7 +4131,7 @@
       "lng": 127.065983191885,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=68854&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "http://www.j-bug.co.kr/",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 7호선 자양역 3번 출구,  228m",
       "tags": [
         "한강이야기전시관",
@@ -4112,15 +4145,16 @@
         "뚝섬자벌레"
       ],
       "kind": "place",
-      "useTime": "화요일~금요일 09:00~18:00\r\n토요일~일요일 09:00~20:00",
-      "closedDays": "월요일",
+      "useTime": "화요일~목요일 10:00~19:00\r\n금요일~토요일10:00~22:00 (8월~12월 야간 운영)\r\n일요일, 공휴일 10:00~20:00",
+      "closedDays": "월요일, 1/1, 설날 및 추석 당일",
       "hours": {
-        "open": "09:00",
-        "close": "18:00",
+        "open": "10:00",
+        "close": "19:00",
         "closedWeekdays": [
           0,
           1,
           2,
+          4,
           5,
           6
         ]
@@ -9144,8 +9178,15 @@
         " 풍류"
       ],
       "kind": "place",
-      "useTime": "목요 상설기획공연 이야기 풍류 오후 7:30 시작\r\n화, 목, 금, 토요일 국가무형문화재 초청공연 진행\r\n※ 티켓은 당일 공연시작 2시간 전부터 발권",
-      "hours": null
+      "useTime": "10:00~19:00",
+      "closedDays": "월요일",
+      "hours": {
+        "open": "10:00",
+        "close": "19:00",
+        "closedWeekdays": [
+          1
+        ]
+      }
     },
     {
       "id": "vs-KOP001562",
@@ -11164,7 +11205,7 @@
       "isFree": true,
       "subwayInfo": "지하철 9호선/신림선 샛강역 4번 출구,  643m",
       "tags": [
-        " 샛강역",
+        "샛강역",
         " 여의도",
         " 관광지",
         " 산책로",
@@ -11175,7 +11216,13 @@
         "자연"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "24시간",
+      "closedDays": "연중무휴",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOP004924",
@@ -12750,37 +12797,6 @@
         "close": "18:00",
         "closedWeekdays": []
       }
-    },
-    {
-      "id": "vs-KOP002285",
-      "source": "visit-seoul",
-      "title": "국립현대미술관 창동레지던시",
-      "summary": "일반 관람객에게 현대미술이 더욱 친근히 다가갈 수 있도록 마련된 미술문화 공간",
-      "category": "전시시설",
-      "place": "국립현대미술관 창동레지던시",
-      "address": "서울특별시 도봉구 덕릉로 257 (창동)",
-      "lat": 37.640682,
-      "lng": 127.03941,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=76187&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "https://www.mmca.go.kr/",
-      "isFree": false,
-      "subwayInfo": "지하철 4호선 수유역 1번출구,  버스 1127, 1138  외환은행(창동지점) 하차, 120m\r\n지하철 1호선 창동역 2번출구,  버스1157번  외환은행 앞 하차,  120m",
-      "tags": [
-        "수유역",
-        " 창동레시던시",
-        " 문화",
-        " 국립현대미술관",
-        " 창동역",
-        "예술",
-        " 미술관",
-        " 전시",
-        " 미술",
-        " 현대미술",
-        " 문화체육관광부"
-      ],
-      "kind": "place",
-      "useTime": "개인 작업실 : 24시간 개방을 원칙으로 하되 레지던시 운영상 불가피한 경우 이를 제한할 수 있습니다.\r\n전시실 : 공무원 근무일 및 근무시간에 준하여 운영하되 필요하다고 인정될 경우 이를 조정하여 운영할 수 있습니다.",
-      "hours": null
     },
     {
       "id": "vs-KOP002275",
@@ -14592,6 +14608,38 @@
       }
     },
     {
+      "id": "vs-KOPsdmz8m",
+      "source": "visit-seoul",
+      "title": "한강레져스포츠",
+      "summary": "도심 속 한강에서 만나는 수상레저 체험 공간",
+      "category": "기타체험",
+      "place": "한강레져스포츠",
+      "address": "서울 영등포구 여의동로 290 (여의도동, 노들나루)",
+      "lat": 37.5258142565639,
+      "lng": 126.938409524559,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81557&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.hangangwp.com/",
+      "isFree": false,
+      "subwayInfo": "지하철 5호선 여의나루역 3번출구, 553m",
+      "tags": [
+        "레져스포츠",
+        "제트스키",
+        "모터보트",
+        "바나나보트",
+        "디스코팡팡",
+        "트렘폴린",
+        "한강",
+        "수상액티비티"
+      ],
+      "kind": "place",
+      "useTime": "평일 12:00-20:00 / 주말 10:00-22:00",
+      "hours": {
+        "open": "12:00",
+        "close": "20:00",
+        "closedWeekdays": []
+      }
+    },
+    {
       "id": "vs-KOPuuvdzi",
       "source": "visit-seoul",
       "title": "아르테파인 용산(모터사이클 렌탈샵) / Artefine Yongsan(Motorcycle Rental shop)",
@@ -15335,7 +15383,13 @@
         "셀프사진"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "24시간",
+      "closedDays": "연중무휴",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOPerc3q8",
@@ -15918,7 +15972,7 @@
       "lng": 126.987150409394,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67426&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://www.seoulculturelounge.com",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철1호선 종각역 4번 출구,  400m",
       "tags": [
         "한류체험",
@@ -16875,13 +16929,10 @@
       ],
       "kind": "place",
       "useTime": "09:30~19:00 (경복궁 야간개장시 22:00까지)",
-      "closedDays": "화요일",
       "hours": {
         "open": "09:30",
         "close": "19:00",
-        "closedWeekdays": [
-          2
-        ]
+        "closedWeekdays": []
       }
     },
     {
@@ -21426,6 +21477,59 @@
         "close": "18:00",
         "closedWeekdays": []
       }
+    },
+    {
+      "id": "vs-KOPtte3ed",
+      "source": "visit-seoul",
+      "title": "용왕산 스카이워크",
+      "summary": "숲 위를 걸으며 도심과 한강을 한눈에 조망할 수 있는 곳",
+      "category": "자연공원",
+      "place": "용왕산 스카이워크",
+      "address": "서울 양천구 용왕정길 43",
+      "lat": 37.544085833533,
+      "lng": 126.878022299352,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81571&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "isFree": false,
+      "subwayInfo": "지하철 9호선 신목동역 1번출구, 598m",
+      "tags": [
+        "용왕산",
+        "서울야경",
+        "양천구명소",
+        "한강뷰",
+        "무장애데크길",
+        "서울전망대"
+      ],
+      "kind": "place",
+      "useTime": "24시간 상시 개방",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOP3pm9nc",
+      "source": "visit-seoul",
+      "title": "북한산 체험형 숲속쉼터",
+      "summary": "도심 속 휴양·치유 공간으로 조성된 강북구를 대표하는 로컬 명소",
+      "category": "자연공원",
+      "place": "북한산 체험형 숲속쉼터",
+      "address": "서울 강북구 수유동 산 123-11",
+      "lat": 37.6350250618394,
+      "lng": 127.008406523761,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81563&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "isFree": false,
+      "subwayInfo": "지하철 우이신설선 화계역 2번출구, 1.6km",
+      "tags": [
+        "숲속쉼터",
+        "강북구명소",
+        "웰니스관광",
+        "북한산둘레길",
+        "맨발산책로",
+        "북한산"
+      ],
+      "kind": "place",
+      "hours": null
     },
     {
       "id": "vs-KOPtr2tsi",
