@@ -17,5 +17,11 @@ dist/
 .DS_Store
 *.log
 
+# 브라우저 검증 산출물 (스크린샷·스냅샷). 그때그때 다시 찍습니다
+.playwright-mcp/
+
+# impeccable live 모드의 세션 복구 상태 (로컬 런타임 산물)
+.impeccable/live/sessions/
+
 # TanStack Router가 dev/build 때마다 재생성
 src/routeTree.gen.ts

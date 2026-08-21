@@ -7,6 +7,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **[AGENTS.md](AGENTS.md)** — 아키텍처, 도메인 사실, 프로젝트 규칙, 명령어.
 이 파일은 Claude Code에만 해당하는 내용만 담습니다.
 
+## Design Context
+
+화면(UI/UX)을 건드리기 전에 읽습니다. `impeccable` 명령들도 이 두 문서를 먼저 읽습니다.
+
+- **[PRODUCT.md](PRODUCT.md)** — register(`product`), platform(`web`), 사용자, 성공 정의,
+  포지셔닝, 안티레퍼런스, 디자인 원칙. **성공은 조회가 아니라 외출로 측정합니다.**
+- **[docs/2026-08-21-ui-ux-critique.md](docs/2026-08-21-ui-ux-critique.md)** — 홈·상세 실측 진단
+  (17/40, P0 2건). 다음에 무엇을 고칠지의 근거입니다.
+
+DESIGN.md(색·타이포·간격)는 아직 없습니다. 시각 방향을 정한 뒤 `/impeccable document`로 만듭니다.
+
 ## 이 레포는 계획 주도로 진행됩니다
 
 코드를 쓰기 전에 해당 태스크를 읽으세요. 계획에는 테스트·구현 코드와 결정의 근거가 이미 들어 있습니다.
