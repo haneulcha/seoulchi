@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import { staticFunctionMiddleware } from '@tanstack/start-static-server-functions'
-import { BigEventCard, CompactEventRow, PlaceCard } from '~/components/cards'
+import { CompactEventRow, EventPosterCard, PlaceCard } from '~/components/cards'
 import { loadCurated, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
 import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
@@ -46,15 +46,14 @@ function Home() {
         <p className="mt-1 text-xs text-gray-500">{data.updatedLabel}</p>
       </header>
 
-      {/*
-        md 이상에서 2단 + 1번 픽이 리드 슬롯(2칸). 3개를 3등분하면 셋 다 같은 무게가 되는데,
-        홈은 선별형이라 1위가 1위로 보여야 한다. 2단이라 고아 칸도 안 생긴다.
-      */}
-      <section className="grid gap-6 md:grid-cols-2">
-        <h2 className="text-lg font-bold md:col-span-2">이번 주 추천</h2>
-        {big.map((entry, i) => (
-          <BigEventCard key={entry.item.id} entry={entry} today={data.today} lead={i === 0} />
-        ))}
+      {/* 3개라 md 이상에서 3단이 딱 한 줄로 떨어진다. 고아 칸이 없고 셋을 한 세트로 읽게 한다 */}
+      <section>
+        <h2 className="text-lg font-bold">이번 주 추천</h2>
+        <div className="mt-4 grid gap-6 md:grid-cols-3">
+          {big.map((entry) => (
+            <EventPosterCard key={entry.item.id} entry={entry} today={data.today} />
+          ))}
+        </div>
       </section>
 
       {/*
@@ -65,7 +64,8 @@ function Home() {
       */}
       <section className="mt-10 md:mt-14">
         <h2 className="text-lg font-bold">이번 주에 더 있는 것</h2>
-        <div className="mt-4 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-x-6 gap-y-4">
+        {/* 행마다 border-t가 붙으므로 세로 간격은 행이 스스로 갖는다(gap-y 없음) */}
+        <div className="mt-4 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-x-6">
           {rest.map((entry) => (
             <CompactEventRow key={entry.item.id} entry={entry} today={data.today} />
           ))}
