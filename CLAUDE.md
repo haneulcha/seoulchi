@@ -36,6 +36,18 @@ Tailwind 기본 팔레트는 꺼져 있습니다(`src/styles/theme.css`의 `--co
 계획에 없는 새 기능을 요청받으면 코드부터 쓰지 말고 `superpowers:brainstorming`으로 시작하세요.
 이 레포의 스펙과 계획이 그 과정에서 나온 산출물입니다.
 
+## 백엔드 이관
+
+서버·DB를 붙이는 작업은 **[docs/2026-08-22-backend-migration-plan.md](docs/2026-08-22-backend-migration-plan.md)**
+를 먼저 읽습니다. 목표 도메인 모델(event·occurrence·venue), 현재 타입과의 필드 매핑,
+동일성 판정 설계(`merge.ts`가 가야 할 곳), 0~4단계 로드맵이 들어 있습니다.
+
+**이 이관의 1차 목적은 백엔드 학습입니다.** 로드맵은 최단 경로가 아니라 각 개념이 왜
+필요한지 겪게 되는 순서로 짜여 있습니다 — 목표 스키마를 앞당겨 전부 구현하지 마세요(문서 1장).
+
+각 단계를 실제로 실행할 때는 `docs/superpowers/plans/`에 태스크 계획을 따로 쓰고
+이 문서를 Spec으로 가리킵니다.
+
 ## 모델 위임
 
 Fable 5는 판단과 설계와 품질 게이트에 충실하며, 리서치는 Sonnet, 구현은 Opus,
