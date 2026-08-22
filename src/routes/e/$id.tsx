@@ -4,6 +4,7 @@ import { staticFunctionMiddleware } from '@tanstack/start-static-server-function
 import type { ReactNode } from 'react'
 import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
+import { PAGE } from '~/components/page'
 import { loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { formatDateRange } from '~/lib/dates'
 import { kstToday } from '~/lib/week'
@@ -50,7 +51,12 @@ function Detail() {
      * 폭을 다 쓰면 줄이 길어져서 읽기가 나빠진다. 대신 md 이상에서 2단으로 갈라
      * 이미지와 내용을 나란히 놓는 쪽으로 폭을 쓴다.
      */
-    <main className="mx-auto max-w-4xl px-4 py-6 sm:px-6 md:py-10 lg:px-8">
+    /*
+     * 폭은 `PAGE`(상한 1024)를 그대로 쓴다. 여기가 사실 목록과 본문인데도 줄이 길어지지 않는 건
+     * 아래 2단 그리드 덕이다 — 1024 안쪽 960에서 7fr 칸이 약 541px이다.
+     * 단이 갈라지는 시점(md=768)이 상한이 걸리는 시점(1024)보다 앞서므로 1단에서는 넓어지지 않는다.
+     */
+    <main className={`${PAGE} py-6 md:py-10`}>
       <div className="md:grid md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:items-start md:gap-8">
         <ItemImage
           src={item.imageUrl}

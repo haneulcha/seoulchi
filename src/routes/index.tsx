@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import { staticFunctionMiddleware } from '@tanstack/start-static-server-functions'
 import { CompactEventRow, EventPosterCard, PlaceCard } from '~/components/cards'
+import { PAGE } from '~/components/page'
 import { loadCurated, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
 import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
@@ -39,7 +40,7 @@ function Home() {
   const rest = data.entries.slice(3)
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-6 sm:px-6 md:py-10 lg:px-8">
+    <main className={`${PAGE} py-6 md:py-10`}>
       <header className="mb-6 md:mb-10">
         <p className="text-sm text-ink-subtle">{data.weekRangeLabel}</p>
         <h1 className="text-2xl font-bold md:text-3xl">이번 주 서울</h1>
