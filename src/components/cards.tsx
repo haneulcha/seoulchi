@@ -15,7 +15,7 @@ const POSTER = 'aspect-[3/4]'
 function Fee({ item }: { item: EventItem }) {
   const fee = item.fee ?? (item.isFree ? '무료' : undefined)
   if (!fee) return null
-  return <span className="text-green-700"> · {fee}</span>
+  return <span className="text-success-text"> · {fee}</span>
 }
 
 /** 장소 · 기간 · 요금 한 줄. 카드 종류가 달라도 같은 순서로 읽히게 한다 */
@@ -57,9 +57,9 @@ export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: str
       {/* 제목·메타는 붙이고(mt-1) 코멘트는 떼어 놓는다(mt-2) — 코멘트는 사실이 아니라 목소리다 */}
       <div className="min-w-0 md:mt-3">
         <h3 className="font-bold md:text-lg">{e.title}</h3>
-        <MetaLine item={e} today={today} className="mt-1 text-sm text-gray-600" />
+        <MetaLine item={e} today={today} className="mt-1 text-sm text-ink-muted" />
         {/* 코멘트는 있을 때만 — 운영 배치(rule)는 reason이 빈 문자열이다. 빈 자리를 남기지 않는다 */}
-        {entry.reason !== '' && <p className="mt-2 text-sm text-gray-800">{entry.reason}</p>}
+        {entry.reason !== '' && <p className="mt-2 text-sm text-ink">{entry.reason}</p>}
       </div>
     </Link>
   )
@@ -79,10 +79,10 @@ export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: str
 export function CompactEventRow({ entry, today }: { entry: HomeEntry; today: string }) {
   const e = entry.item
   return (
-    <Link to="/e/$id" params={{ id: e.id }} className="block border-t border-gray-200 py-3">
+    <Link to="/e/$id" params={{ id: e.id }} className="block border-t border-neutral-border py-3">
       <h3 className="line-clamp-2 font-medium">{e.title}</h3>
-      <MetaLine item={e} today={today} className="mt-1 truncate text-sm text-gray-600" />
-      {entry.reason !== '' && <p className="truncate text-sm text-gray-500">{entry.reason}</p>}
+      <MetaLine item={e} today={today} className="mt-1 truncate text-sm text-ink-muted" />
+      {entry.reason !== '' && <p className="truncate text-sm text-ink-subtle">{entry.reason}</p>}
     </Link>
   )
 }
@@ -104,7 +104,7 @@ export function PlaceCard({ place }: { place: PlaceItem }) {
       />
       {/* 좁은 칸에서 한 줄 truncate면 "의학박물관 (구 대한…"이 된다. 두 줄까지 허용한다 */}
       <h3 className="mt-2 line-clamp-2 text-sm font-medium">{place.title}</h3>
-      {place.subwayInfo && <p className="truncate text-xs text-gray-500">{place.subwayInfo}</p>}
+      {place.subwayInfo && <p className="truncate text-xs text-ink-subtle">{place.subwayInfo}</p>}
     </Link>
   )
 }

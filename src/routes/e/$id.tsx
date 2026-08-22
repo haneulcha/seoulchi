@@ -60,7 +60,7 @@ function Detail() {
         />
         <div className="min-w-0">
           <h1 className="mt-4 text-2xl font-bold md:mt-0 md:text-3xl">{item.title}</h1>
-          <p className="mt-1 text-sm text-gray-500">
+          <p className="mt-1 text-sm text-ink-subtle">
             {item.category}
             {item.district ? ` · ${item.district}` : ''}
           </p>
@@ -94,7 +94,7 @@ function Detail() {
               href={item.linkUrl}
               target="_blank"
               rel="noreferrer"
-              className="mt-8 block rounded-lg bg-gray-900 px-6 py-3 text-center font-medium text-white md:inline-block"
+              className="mt-8 block rounded-lg bg-ink px-6 py-3 text-center font-medium text-surface md:inline-block"
             >
               원문 보기
             </a>
@@ -110,7 +110,7 @@ function Fact({ label, value, badge }: { label: string; value?: string; badge?: 
   if (!value) return null
   return (
     <div className="flex gap-3 text-sm">
-      <dt className="w-14 shrink-0 text-gray-500">{label}</dt>
+      <dt className="w-14 shrink-0 text-ink-subtle">{label}</dt>
       <dd className="min-w-0 whitespace-pre-line">
         {value}
         {badge}
