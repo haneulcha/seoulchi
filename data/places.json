@@ -2085,8 +2085,8 @@
       "isFree": false,
       "subwayInfo": "지하철 2호선/8호선 잠실역 4번출구, 144m",
       "tags": [
-        "잠실롯데월드타워",
         "잠실",
+        "잠실롯데월드타워",
         "어린이",
         "가족여행",
         "테마파크",
@@ -6884,41 +6884,6 @@
       ],
       "kind": "place",
       "hours": null
-    },
-    {
-      "id": "vs-KOP028334",
-      "source": "visit-seoul",
-      "title": "CGV 씨네 라이브러리",
-      "summary": "CGV 씨네 라이브러리는 국내 최초 영화 전문 도서관과 아트하우스를 갖춘 도심 한복판 문화공간",
-      "category": "미술관/화랑",
-      "place": "CGV 씨네 라이브러리",
-      "address": "서울 중구 퇴계로 123 (충무로2가, 하이헤리엇)",
-      "lat": 37.56126607811881,
-      "lng": 126.98536328312971,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=28334&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "linkUrl": "https://cgv.co.kr/cnm/bzplcCgv/0105001",
-      "isFree": false,
-      "subwayInfo": "지하철 4호선 명동역 7번 출구, 16m",
-      "tags": [
-        "아트하우스",
-        "영화전문도서관",
-        "명동역",
-        "책",
-        "휴식",
-        "CGV",
-        "씨네라이브러리",
-        "도서",
-        "영화관",
-        "문화공간",
-        "도서관"
-      ],
-      "kind": "place",
-      "useTime": "12:00 ~ 21:00",
-      "hours": {
-        "open": "12:00",
-        "close": "21:00",
-        "closedWeekdays": []
-      }
     },
     {
       "id": "vs-KOP028280",
@@ -16714,11 +16679,11 @@
         " 동작역"
       ],
       "kind": "place",
-      "useTime": "매일 10:00 - 22:00 카페 - 연중무휴(명절제외)\r\n매일 14:00 - 22:00 요트 - 매주 월요일 휴무",
+      "useTime": "매일 12:00 - 21:00 카페 - 연중무휴(명절제외)\r\n매일 14:00 - 22:00 요트 - 매주 월요일 휴무",
       "closedDays": "매주 월요일",
       "hours": {
-        "open": "10:00",
-        "close": "22:00",
+        "open": "12:00",
+        "close": "21:00",
         "closedWeekdays": []
       }
     },
