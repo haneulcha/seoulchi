@@ -1827,11 +1827,11 @@
         "서울가볼만한곳"
       ],
       "kind": "place",
-      "useTime": "전시장: 10:30 - 21:00 (20:00 입장 마감) / 아트숍&카페 트레스텔레: 10:30 - 22:00",
+      "useTime": "전시장: 10:30~20:00 (입장 마감 19:00)/ 아트숍&카페 트레스텔레: 10:30 - 22:00",
       "closedDays": "연중무휴",
       "hours": {
         "open": "10:30",
-        "close": "21:00",
+        "close": "20:00",
         "closedWeekdays": []
       }
     },
@@ -2493,12 +2493,12 @@
       ],
       "kind": "place",
       "useTime": "10:00-18:00",
-      "closedDays": "일요일",
+      "closedDays": "월요일",
       "hours": {
         "open": "10:00",
         "close": "18:00",
         "closedWeekdays": [
-          0
+          1
         ]
       }
     },
@@ -3687,10 +3687,10 @@
         "전시"
       ],
       "kind": "place",
-      "useTime": "매일 11:00 ~ 20:00\r\n(매표 및 입장 마감 19:00)",
+      "useTime": "매일 10:30 ~ 19:00\r\n(매표 및 입장 마감 18:00)",
       "hours": {
-        "open": "11:00",
-        "close": "20:00",
+        "open": "10:30",
+        "close": "19:00",
         "closedWeekdays": []
       }
     },
@@ -3743,11 +3743,14 @@
         "SEOULDAL"
       ],
       "kind": "place",
-      "useTime": "12:00~22:00 (마지막 비행 21:30)\r\n* 성수기(4~6월, 9~11월) 주말 10:00~22:00",
+      "useTime": "12:00~22:00 (마지막 비행 21:30)\r\n* 8월~10월 금요일, 토요일 1시간 연장 운영 (23:00까지)",
       "hours": {
         "open": "12:00",
         "close": "22:00",
-        "closedWeekdays": []
+        "closedWeekdays": [
+          5,
+          6
+        ]
       }
     },
     {
@@ -16529,31 +16532,6 @@
       "hours": null
     },
     {
-      "id": "vs-KOP034412",
-      "source": "visit-seoul",
-      "title": "컬러풀뮤지엄(COLORPOOL MUSEUM)",
-      "summary": "놀면서 사진 찍을 수 있는 인생샷 공장!",
-      "category": "기타체험",
-      "place": "컬러풀뮤지엄(COLORPOOL MUSEUM)",
-      "address": "서울 종로구 인사동길 49 (관훈동)",
-      "lat": 37.5744668688197,
-      "lng": 126.983552182559,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75740&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://colorpoolmuseum.com/",
-      "isFree": false,
-      "subwayInfo": "지하철 3호선 안국역 6번 출구,  180m",
-      "tags": [
-        "컬러풀뮤지엄COLORPOOL-MUSEUM"
-      ],
-      "kind": "place",
-      "useTime": "10:00 ~ 20:00",
-      "hours": {
-        "open": "10:00",
-        "close": "20:00",
-        "closedWeekdays": []
-      }
-    },
-    {
       "id": "vs-KOP034361",
       "source": "visit-seoul",
       "title": "세라듀 도자기공방",
@@ -17364,17 +17342,12 @@
         " 전통문화체험"
       ],
       "kind": "place",
-      "useTime": "월요일 ~ 금요일 09:00 ~ 19:00\r\n토요일 ~ 일요일 09:00 ~ 18:00",
+      "useTime": "09:00 ~ 18:00",
       "closedDays": "1월 1일, 설/추석연휴 휴관",
       "hours": {
         "open": "09:00",
-        "close": "19:00",
-        "closedWeekdays": [
-          0,
-          1,
-          5,
-          6
-        ]
+        "close": "18:00",
+        "closedWeekdays": []
       }
     },
     {

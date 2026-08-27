@@ -63307,7 +63307,7 @@
     }
   },
   "KOP5uw5dz": {
-    "updtDtText": "2026.05.21",
+    "updtDtText": "2026.08.26",
     "detail": {
       "cid": "KOP5uw5dz",
       "lang_code_id": "ko",
@@ -63321,7 +63321,7 @@
       "post_sj": "마이아트뮤지엄 원그로브점",
       "sumry": "일상과 예술이 만나는 미술관",
       "creat_dt_text": "2026.05.19",
-      "updt_dt_text": "2026.05.21",
+      "updt_dt_text": "2026.08.26",
       "tag": [
         "서울전시",
         "마곡전시",
@@ -63333,12 +63333,12 @@
         "cmmn_telno": "02-6106-0020 ",
         "cmmn_hmpg_url": "www.mamuone.com",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "전시장: 10:30 - 21:00 (20:00 입장 마감) / 아트숍&카페 트레스텔레: 10:30 - 22:00",
+        "cmmn_use_time": "전시장: 10:30~20:00 (입장 마감 19:00)/ 아트숍&카페 트레스텔레: 10:30 - 22:00",
         "cmmn_important": "무료 도슨트 진행\r\n어린이 전시연계 프로그램 - 키즈 아트클래스 운영 ",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [
-          "장애인화장실",
           "장애인 전용 주차장",
+          "장애인화장실",
           "접근가능",
           "엘리베이터",
           "장애인 안내(휠체어 대여 및 기타)"
@@ -68608,7 +68608,7 @@
     }
   },
   "KOP4khc7y": {
-    "updtDtText": "2026.05.07",
+    "updtDtText": "2026.08.25",
     "detail": {
       "cid": "KOP4khc7y",
       "lang_code_id": "ko",
@@ -68625,7 +68625,7 @@
       "post_sj": "스페이스K 서울",
       "sumry": "새로운 시각예술의 흐름을 소개하는 문화예술 나눔공간",
       "creat_dt_text": "2025.09.03",
-      "updt_dt_text": "2026.05.07",
+      "updt_dt_text": "2026.08.25",
       "tag": [
         "전시관람",
         "스페이스K 서울",
@@ -68643,8 +68643,8 @@
         "cmmn_important": "토슨트 시간 안내\r\n화-금 14:00 / 토,일 11:00, 14:00, 16:00",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "월요일-토요일",
-        "closed_days": "일요일"
+        "business_days": "화요일-일요일",
+        "closed_days": "월요일"
       },
       "traffic": {
         "adres": "서울 강서구 마곡동 772",
@@ -78266,7 +78266,7 @@
     }
   },
   "KOPcyotr4": {
-    "updtDtText": "2025.09.10",
+    "updtDtText": "2026.08.25",
     "detail": {
       "cid": "KOPcyotr4",
       "lang_code_id": "ko",
@@ -78284,7 +78284,7 @@
       "post_sj": "THART 띠아트",
       "sumry": "스토리몰입형 미디어아트 극장, 띠아트",
       "creat_dt_text": "2024.07.22",
-      "updt_dt_text": "2025.09.10",
+      "updt_dt_text": "2026.08.25",
       "tag": [
         "전시관",
         "전시회",
@@ -78297,7 +78297,7 @@
         "cmmn_telno": "0507-1354-9894",
         "cmmn_hmpg_url": "https://thart.co.kr/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "매일 11:00 ~ 20:00\r\n(매표 및 입장 마감 19:00)",
+        "cmmn_use_time": "매일 10:30 ~ 19:00\r\n(매표 및 입장 마감 18:00)",
         "cmmn_important": "자세한 정보는 인스타그램 @thart_official 을 참고해주시길 바랍니다.",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
@@ -78686,7 +78686,7 @@
     }
   },
   "KOPrn1wrn": {
-    "updtDtText": "2026.04.01",
+    "updtDtText": "2026.08.25",
     "detail": {
       "cid": "KOPrn1wrn",
       "lang_code_id": "ko",
@@ -78704,7 +78704,7 @@
       "post_sj": "서울달 (SEOULDAL)",
       "sumry": "서울의 야경을 하늘에서 가장 생생하게 관람할 수 있는 헬륨가스기구",
       "creat_dt_text": "2024.07.11",
-      "updt_dt_text": "2026.04.01",
+      "updt_dt_text": "2026.08.25",
       "tag": [
         "여의도공원",
         "서울달",
@@ -78715,7 +78715,7 @@
         "cmmn_telno": "070-4155-4528",
         "cmmn_hmpg_url": "https://seouldal-official.notion.site/SEOULDAL-4c409ba5254b49c8b4e55646e37ac063?v=a49dbdd84eee4a2fac0ccb259755dce9",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "12:00~22:00 (마지막 비행 21:30)\r\n* 성수기(4~6월, 9~11월) 주말 10:00~22:00",
+        "cmmn_use_time": "12:00~22:00 (마지막 비행 21:30)\r\n* 8월~10월 금요일, 토요일 1시간 연장 운영 (23:00까지)\r\n",
         "cmmn_important": "- 해당 체험시설은 강풍, 폭우 등 기상상황에 민감하여 실시간으로 기구 운행 여부가 결정됨을 미리 안내드립니다. 현장 방문 시 바로 탑승이 어려울 경우에는 운행이 가능할 때 까지 대기 후 탑승하시거나, 다른 날짜에 방문해주시기를 부탁드립니다.\r\n- 만 19세 미만의 탑승자는 반드시 만 19세 이상의 보호자와 동반 탑승해야 합니다.\r\n- 거동이 불편한 분께서는 보호자와 동반 탑승해야 합니다.\r\n- 110cm 이하의 탑승객은 시야 제한이 있을 수 있습니다.\r\n- 폭이 90cm가 넘는 휠체어/유모차 등은 탑승이 불가하여 탑승 전 소지품 보관함 옆에 보관해야 합니다.\r\n- 반려동물과의 동반 탑승은 불가하며, 반려동물의 별도 대기 장소가 없어 반려동물과의 방문은 삼가주시기 바랍니다.\r\n- 임산부, 고소공포증 및 기타 건강의 특이사항이 있으신 분들께서는 탑승에 숙고바랍니다.\r\n- 별도의 주차공간이 없어 대중교통 혹은 주변의 공영 및 민영주차장(유료)을 이용해주시기 바랍니다.",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
@@ -106759,7 +106759,7 @@
     }
   },
   "KOP019558": {
-    "updtDtText": "2026.08.06",
+    "updtDtText": "2026.08.26",
     "detail": {
       "cid": "KOP019558",
       "lang_code_id": "ko",
@@ -106776,7 +106776,7 @@
       "post_sj": "템플스테이 통합정보센터",
       "sumry": "국내, 외국인 방문객에게 전국의 템플스테이와 사찰음식에 관한 정보와 체험프로그램을 제공",
       "creat_dt_text": "2016.11.15",
-      "updt_dt_text": "2026.08.06",
+      "updt_dt_text": "2026.08.26",
       "tag": [
         "체험",
         " 안국역",
@@ -106794,7 +106794,7 @@
         "cmmn_telno": "02-2031-2000",
         "cmmn_hmpg_url": "https://www.templestay.com ",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "월요일 ~ 금요일 09:00 ~ 19:00\r\n토요일 ~ 일요일 09:00 ~ 18:00",
+        "cmmn_use_time": "09:00 ~ 18:00",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "월요일 ~ 일요일 ",
@@ -106814,7 +106814,7 @@
         "guidance_service": "ul",
         "safe_mng": "ul"
       },
-      "post_desc": "템플스테이 홍보관은 내,외국인을 대상으로 템플스테이와 불교문화유산 및 사찰음식에 관한 정보와 서비스를 제공하는 장소입니다. 아울러, 템플수테이 홍보관에서 스님과의 차담, 연꽃등 및 합장주 만들기 등 불교문화 체험프로그램을 할 수 있습니다. 스님과의 차담 (월, 화, 금, 토, 일) 합장주 만들기 (화, 수, 토) 사경쓰기 (상시) *상기 일정은 내부 사정으로 변동될 수 있습니다."
+      "post_desc": "템플스테이 홍보관은 내,외국인을 대상으로 템플스테이와 불교문화유산 및 사찰음식에 관한 정보와 서비스를 제공하는 장소입니다. 아울러, 템플스테이 홍보관에서 스님과의 차담, 연꽃등 및 합장주 만들기 등 불교문화 체험프로그램을 할 수 있습니다. - 스님과의 차담 (목,금,토,일) - 향기로운 명상 (월, 수) - 연등 만들기 (월, 목, 일) - 단주 만들기 (화, 토) - 전통문양 채색 (수) - 인경 (금) - 사경쓰기 (상시) *상기 일정은 내부 사정으로 변동될 수 있습니다."
     }
   },
   "KOP018916": {
@@ -118403,6 +118403,54 @@
         "safe_mng": "ul"
       },
       "post_desc": "36년간 방치됐던 녹지를 약 5만㎡ 규모의 휴양·치유 공간으로 조성된 북한산 체험형 숨속쉼터에서는 숲속쉼터 곳곳에 다양한 산림 여가공간이 마련되어 있어 북한산 자연이 주는 치유를 온전히 느낄 수 있습니다. 서울 둘레길과 연계해 공간 내 순환이 가능하도록 코스가 구성되어 있으며 4가지 테마의 숲길을 조성하고 각각의 진입로를 정비하여 유아·어르신 등 다양한 연령층이 이용할 수 있습니다. 서울시 최초의 자연형 황토 맨발 순환 산책로와 유아 놀이시설, 명상 쉼터 등 시민들을 위한 여가공간이 갖춰져 있습니다."
+    }
+  },
+  "KOPun82v3": {
+    "updtDtText": "2026.08.26",
+    "detail": {
+      "cid": "KOPun82v3",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPun82v3,en:ENPun82v3,ja:JPPun82v3,zh-CN:CNPun82v3,zh-TW:TCPun82v3,ru:RUPun82v3",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81789&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81791&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81792&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81793&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "한화와 함께하는 서울세계불꽃축제 2026",
+      "sumry": "시민의 일상에 즐거움을 선사하기 위해 한화 그룹에서 꾸준히 진행해 온 대한민국 최고의 축제",
+      "schdul_info_bgnde": "2026.09.05",
+      "schdul_info_endde": "2026.09.05",
+      "place": "여의도 한강공원 일대",
+      "creat_dt_text": "2026.08.20",
+      "updt_dt_text": "2026.08.26",
+      "tag": [
+        "2026서울세계불꽃축제",
+        "여의도한강공원",
+        "서울축제",
+        "불꽃축제",
+        "한화"
+      ],
+      "extra": {
+        "cmmn_telno": "02-519-9778",
+        "cmmn_hmpg_url": "https://hanwhafireworks.com/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "13:00~23:00",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "무료 \r\n(유료 티켓예매는 홈페이지에서 확인해주세요)"
+      },
+      "traffic": {
+        "adres": "서울 영등포구 여의도동 8",
+        "new_zip_code": "07337",
+        "new_adres": "서울 영등포구 여의동로 330 여의도 한강공원 일대",
+        "map_position_x": "126.933595431713",
+        "map_position_y": "37.5263474738219",
+        "subway_info": "지하철 5호선 여의나루역 3번출구, 75m"
+      },
+      "post_desc": "2026년 9월, 저마다의 색으로 오늘을 살아가는 우리가 함께 만드는 위로와 희망의 이야기 \"당신의 빛을 찾아서 Your Infinite Colors\" 영국, 미국, 한국팀이 연출하는 한강을 수 놓을 화려한 불꽃의 향연을 느껴보길 바랍니다. 사전행사 13:00~19:00 (6시간) 시민참여 프로그램, 여의도한강공원/멀티프라자 공식행사 19:40~20:00 (20분) 내빈소개, 환영사 및 축사, 개막식 세리머니 불꽃쇼 20:00~21:10 (70분) 영국, 미국, 한국 인파해산 21:10~22:00(50분) 애프터 DJ 공연 클린캠페인 21:10~23:00 (110분) 한화봉사단 쓰레기 수거활동 행사장 전역"
     }
   }
 }
