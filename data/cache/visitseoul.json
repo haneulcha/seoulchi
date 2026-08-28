@@ -60977,7 +60977,7 @@
     }
   },
   "KOP4u05qa": {
-    "updtDtText": "2026.07.06",
+    "updtDtText": "2026.08.28",
     "detail": {
       "cid": "KOP4u05qa",
       "lang_code_id": "ko",
@@ -60994,7 +60994,7 @@
       "post_sj": "성북예술창작터",
       "sumry": "창작의 다양한 지형에서 실험을 이어가는 살아있는 창작의 공간",
       "creat_dt_text": "2026.07.02",
-      "updt_dt_text": "2026.07.06",
+      "updt_dt_text": "2026.08.28",
       "tag": [
         "성북구미술관",
         "미술관",
@@ -61024,7 +61024,7 @@
         "guidance_service": "ul",
         "safe_mng": "ul"
       },
-      "post_desc": "성북예술창작터는 시각예술분야의 창작자를 지원·양성하고, 창작의 다양한 지형에서 실험을 이어가는 ‘살아있는 창작의 공간’으로 조성된 성북구립미술관의 첫 번째 분관입니다. 2013년 4월 문을 연 성북예술창작터는 창의적이고 실험적인 예술가를 발견하고, 나아가 지역-커뮤니티를 기반으로 한 네트워킹 및 협업으로 열린 미술문화를 만들어가기 위한 지속적인 시도를 이어왔습니다. 성북예술창작터는 시각예술전문공간으로서 청년, 신진 작가를 포함하여 다장르의 창작자들과 함께 미래를 준비하고 축적해나가는 경험의 장으로 자리매김하고 있습니다."
+      "post_desc": "성북예술창작터는 시각예술분야 창작자 지원 및 역량 강화에 힘쓰며, 창작의 다양한 지형에서 장르를 넘나드는 융복합적인 실험을 이어가는 ‘살아있는 창작의 공간’입니다. 2013년 4월 문을 연 성북예술창작터는 창의적이고 실험적인 예술가를 발견하고, 나아가 지역-커뮤니티를 기반으로 한 네트워킹 및 협업으로 열린 미술문화를 만들어가기 위한 노력을 지속하고 있습니다. 청년과 신진 작가를 비롯하여 다장르의 창작자들과 함께 동시대 담론을 생산하고 미래를 준비, 축적해나가는 독보적인 예술 플랫폼으로 자리매김하고 있습니다."
     }
   },
   "KOPhs2wlq": {
@@ -71012,18 +71012,18 @@
     }
   },
   "KOP20kefn": {
-    "updtDtText": "2026.08.14",
+    "updtDtText": "2026.08.28",
     "detail": {
       "cid": "KOP20kefn",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Cg1x6l1",
       "cate_depth": " 문화관광  > 전시시설",
       "multi_lang_list": "ko:KOP20kefn,en:ENP20kefn,ja:JPP20kefn,zh-CN:CNP20kefn,zh-TW:TCP20kefn,ru:RUP20kefn",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74201&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74201&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "relate_img": [
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74202&fileTy=MEDIA&fileNo=1&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74203&fileTy=MEDIA&fileNo=1&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74204&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74202&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74203&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74204&fileTy=MEDIA&fileNo=2&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74205&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74206&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
@@ -71033,7 +71033,7 @@
       "schdul_info_endde": "2026.12.31",
       "place": "청계천 광교 하단, 광교 갤러리 일대",
       "creat_dt_text": "2025.07.08",
-      "updt_dt_text": "2026.08.14",
+      "updt_dt_text": "2026.08.28",
       "tag": [
         "서울관광재단",
         "청계소울오션",
@@ -71064,7 +71064,7 @@
         "guidance_service": "ul",
         "safe_mng": "ul"
       },
-      "post_desc": "서울관광재단에서 운영하는 청계 소울 오션(Cheonggye Soul Ocean)은 미디어아트 관광 콘텐츠로 청계천 수변 자원을 활용한 미디어아트 전시입니다. 연중 야간 전시로 운영되어지며, 청계천 광교 하단과 광교 갤러리 일대에서 만나 볼 수 있습니다. 미디어아트는 청계천 수면 미디어아트 전시(수중 영상)와 광교갤러리 벽면 영상, 광교갤러리 앞 보행로에서 인터렉티브 미디어아트 영상으로 구분하여 다양한 작품을 전시합니다."
+      "post_desc": "서울관광재단에서 운영하는 청계 소울 오션(Cheonggye Soul Ocean)은 미디어아트 관광 콘텐츠로 청계천 수변 자원을 활용한 미디어아트 전시입니다. 연중 야간 전시로 운영되어지며, 청계천 광교 하단과 광교 갤러리 일대에서 만나 볼 수 있습니다. 미디어아트는 청계천 수면 미디어아트 전시(수중 영상)를 기반으로 매월 새로운 콘텐츠가 론칭됩니다.관람객이 직접 참여할 수 있는 인터랙티브 미디어아트 작품 등 다양한 작품을 전시합니다."
     }
   },
   "KOPeenv2i": {
@@ -99536,7 +99536,7 @@
     }
   },
   "KOP002101": {
-    "updtDtText": "2025.07.20",
+    "updtDtText": "2026.08.27",
     "detail": {
       "cid": "KOP002101",
       "lang_code_id": "ko",
@@ -99554,15 +99554,15 @@
       "post_sj": "서울월드컵경기장",
       "sumry": "2002년 월드컵을 위해 지어진 대형 스포츠 시설로, 축구경기와 문화행사가 열리는 복합 공간",
       "creat_dt_text": "2009.05.26",
-      "updt_dt_text": "2025.07.20",
+      "updt_dt_text": "2026.08.27",
       "tag": [
-        "서울월드컵경기장",
-        " 상암월드컵경기장",
+        "상암월드컵경기장",
         " 경기장",
         " 스타디움",
         " 스타디움투어",
         "마포구",
         " K리그",
+        "서울월드컵경기장",
         " 체육시설",
         " 프로축구",
         "문화공간",
@@ -99575,6 +99575,7 @@
       "extra": {
         "cmmn_telno": "02-2128-2002",
         "cmmn_hmpg_url": "http://www.sisul.or.kr/open_content/worldcup/",
+        "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "09:00 ~ 18:00 (매주 월요일 / 명절 연휴 / 근로자의 날(5.1.) / 경기행사일 관람시간 제한)\r\n*월드컵몰의 경우 각 매장별로 차이가 있음 ",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
@@ -99595,7 +99596,7 @@
         "guidance_service": "ul",
         "safe_mng": "ul"
       },
-      "post_desc": "서울월드컵경기장은 2002년 한일 월드컵축구대회를 개최하기 위해 만들어졌습니다. 한일 월드컵 이후에는 축구 전용 경기장으로 사용하기도 하며 체육시설, 문화시설과 월드컵 기념관 등을 세워 새로운 문화공간의 기능을 하고 있습니다. 프로축구 K리그 FC 서울의 홈구장이기도 합니다. 또한 함성 소리 가득했던 2002년 서울월드컵경기장. 그 역사의 현장을 둘러보고 이제는 세계적인 건축 예술물로 손꼽히는 서울월드컵경기장의 美를 감상할 수 있고 관중들이 모두 빠진 고요한 경기장을 마주할 수 있는 기회!를 서울월드컵경기장 투어 프로그램을 통해 확인할 수 있습니다. <서울월드컵경기장 투어> - 투어내용: 견학과 체험을 결합한 시민 대상 유료투어 - 대상: 일반 시민, 외국인 관광객 등 단체 (10인 이상) 및 개인 - 관람회차: 오전 10시~오후 3시 (총 4회차, 11~1시 점심시간) - 결제방법: 현장 결제 (카드 및 현금) - 투어코스: 스타디움 투어 대기공간 → 현관 결제 → 주경기장 → 선수감독실A, 워밍업실A(FC서울) → 선수감독실B, 워밍업실B(2002 월드컵) → 영상관 → 건립존 → 기념품샵 → 종료(해산)"
+      "post_desc": "서울월드컵경기장은 2002년 한일 월드컵축구대회를 개최하기 위해 만들어졌습니다. 한일 월드컵 이후에는 축구 전용 경기장으로 사용하기도 하며 체육시설, 문화시설과 월드컵 기념관 등을 세워 새로운 문화공간의 기능을 하고 있습니다. 프로축구 K리그 FC 서울의 홈구장이기도 합니다. 또한 함성 소리 가득했던 2002년 서울월드컵경기장. 그 역사의 현장을 둘러보고 이제는 세계적인 건축 예술물로 손꼽히는 서울월드컵경기장의 美를 감상할 수 있고 관중들이 모두 빠진 고요한 경기장을 마주할 수 있는 기회!를 서울월드컵경기장 투어 프로그램을 통해 확인할 수 있습니다. <서울월드컵경기장 투어> - 투어내용: 견학과 체험을 결합한 시민 대상 유료투어 - 대상: 일반 시민, 외국인 관광객 등 단체 (10인 이상) 및 개인 - 관람회차: 오전 09시~오후 4시 (총 4회차, 12~1시 점심시간) - 결제방법: 현장 결제 (카드 및 현금) - 투어코스: 투어 대기실 → VIP룸 → 그라운드 관람 체험 → 감독실 → 선수 대기실 → 워밍업실 → 역사관 → 월드컵 기념관(풋볼팬타지움) 기념품숍"
     }
   },
   "KOP002130": {
@@ -118451,6 +118452,272 @@
         "subway_info": "지하철 5호선 여의나루역 3번출구, 75m"
       },
       "post_desc": "2026년 9월, 저마다의 색으로 오늘을 살아가는 우리가 함께 만드는 위로와 희망의 이야기 \"당신의 빛을 찾아서 Your Infinite Colors\" 영국, 미국, 한국팀이 연출하는 한강을 수 놓을 화려한 불꽃의 향연을 느껴보길 바랍니다. 사전행사 13:00~19:00 (6시간) 시민참여 프로그램, 여의도한강공원/멀티프라자 공식행사 19:40~20:00 (20분) 내빈소개, 환영사 및 축사, 개막식 세리머니 불꽃쇼 20:00~21:10 (70분) 영국, 미국, 한국 인파해산 21:10~22:00(50분) 애프터 DJ 공연 클린캠페인 21:10~23:00 (110분) 한화봉사단 쓰레기 수거활동 행사장 전역"
+    }
+  },
+  "KOPptkfz1": {
+    "updtDtText": "2026.08.27",
+    "detail": {
+      "cid": "KOPptkfz1",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPptkfz1,en:ENPptkfz1,ja:JPPptkfz1,zh-CN:CNPptkfz1,zh-TW:TCPptkfz1,ru:RUPptkfz1",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81703&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81705&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2027 S/S 서울패션위크\t",
+      "sumry": " DDP와 잠실 롯데월드몰 등에서 개최하는 글로벌 패션 비즈니스 축제\t\r\n",
+      "schdul_info_bgnde": "2026.09.01",
+      "schdul_info_endde": "2026.09.06",
+      "place": "DDP 및 잠실 롯데월드몰 잔디광장\t",
+      "creat_dt_text": "2026.08.24",
+      "updt_dt_text": "2026.08.27",
+      "tag": [
+        "2027SS서울패션위크",
+        "DDP패션쇼",
+        "롯데월드타워",
+        "K패션축제",
+        "서울패션위크"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2133-8789\t",
+        "cmmn_hmpg_url": "02-2133-8789\t",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "10:00~ 20:00(* 프로그램별 상이)\t\r\n",
+        "cmmn_important": "일정은 홈페이지에서 확인해주세요\t\r\n",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 중구 을지로7가 143",
+        "new_zip_code": "04566",
+        "new_adres": "서울 중구 을지로 281 (을지로7가)",
+        "new_adres2": "DDP",
+        "map_position_x": "127.010890355484",
+        "map_position_y": "37.5680445876689",
+        "subway_info": "DDP : 지하철 2호선/4호선/5호선 동대문역사문화공원역 1번출구, 26m\r\n롯데월드몰 : 지하철 2호선/8호선 잠실역 10번출구, 316m"
+      },
+      "post_desc": "2027 S/S 서울패션위크은 서울시가 9월 1일(화)부터 6일(일)까지 DDP와 잠실 롯데월드몰 등에서 개최하는 글로벌 패션 비즈니스 축제입니다. 이번 시즌에는 21개 패션쇼와 8개 프레젠테이션을 통해 국내 디자이너 브랜드를 선보이고, 97개 브랜드가 참여하는 트레이드쇼를 통해 해외 바이어와의 실질적인 비즈니스 기회를 제공합니다. 또한 NCT 아티스트 패션 전시·체험존 등 시민 참여 프로그램을 확대해 패션을 산업을 넘어 문화·관광 콘텐츠로 확장하고, K-패션의 글로벌 경쟁력 강화와 서울 패션산업 활성화를 도모합니다."
+    }
+  },
+  "KOPwqkvqs": {
+    "updtDtText": "2026.08.27",
+    "detail": {
+      "cid": "KOPwqkvqs",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPwqkvqs,en:ENPwqkvqs,ja:JPPwqkvqs,zh-CN:CNPwqkvqs,zh-TW:TCPwqkvqs,ru:RUPwqkvqs",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81700&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81702&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 서울국제작가축제",
+      "sumry": "누구세요? Who are we? 한국문학과 세계문학의 교류를 위해 2006년부터 이어온 글로벌 문학 축제",
+      "schdul_info_bgnde": "2026.09.11",
+      "schdul_info_endde": "2026.09.16",
+      "place": "아라아트센터",
+      "creat_dt_text": "2026.08.20",
+      "updt_dt_text": "2026.08.27",
+      "tag": [
+        "서울국제작가축제",
+        "SIWF",
+        "누구세요?",
+        "작가축제",
+        "도서축제",
+        "책",
+        "전시회",
+        "아라아트센터",
+        "인사동",
+        "인사동데이트",
+        "인사동가볼만한곳"
+      ],
+      "extra": {
+        "cmmn_telno": "02-6339-1232",
+        "cmmn_hmpg_url": "https://www.siwf.or.kr/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "프로그램 별 상이",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "엘리베이터"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 종로구 견지동 85-24",
+        "new_zip_code": "03145",
+        "new_adres": "서울 종로구 인사동9길 26 (견지동, 아라아트센터)",
+        "map_position_x": "126.983623718252",
+        "map_position_y": "37.5734697478172",
+        "subway_info": "지하철 1호선 종각역 3-1번출구, 301\r\n지하철 3호선 안국역 6번출구, 459m"
+      },
+      "post_desc": "서울국제작가축제는 한국문학과 세계문학의 교류를 위해 2006년부터 이어온 글로벌 문학 축제입니다. 올해로 15회를 맞이하는 2026 서울국제작가축제는 작가, 독자, 그리고 다양한 언어와 이야기가 한자리에서 만나는 특별한 자리를 만들었습니다. 국내 작가는 물론, 평소 쉽게 접하기 어려운 해외 작가들과 함께 대담, 워크숍, 전시 등 풍성한 프로그램을 통해 문학을 더욱 가깝게 경험할 수 있습니다. 책과 사람, 언어와 감정이 교차하는 축제의 현장에서 '누구세요?'라는 물음 아래 오직 사람과 사람 사이에서만 가능한 문학의 깊은 경험 속으로 여러분을 초대합니다."
+    }
+  },
+  "KOPbr2z6a": {
+    "updtDtText": "2026.08.27",
+    "detail": {
+      "cid": "KOPbr2z6a",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPbr2z6a,en:ENPbr2z6a,ja:JPPbr2z6a,zh-CN:CNPbr2z6a,zh-TW:TCPbr2z6a,ru:RUPbr2z6a",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81695&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81697&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81698&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81699&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "DDP 디자인마이애미 서울 2026 (Design Miami Seoul)",
+      "sumry": "'살롱(Salon)' 개념을 도입해 디자인을 문화적 담론과 비즈니스가 함께 이루어지는 플랫폼으로 확장한 디자인마이애미 서울",
+      "schdul_info_bgnde": "2026.08.31",
+      "schdul_info_endde": "2026.09.06",
+      "place": "동대문디자인플라자(DDP) 디자인랩 1층 SHOWROOM",
+      "creat_dt_text": "2026.08.20",
+      "updt_dt_text": "2026.08.27",
+      "tag": [
+        "DDP",
+        "서울디자인재단",
+        "디자인마이애미",
+        "DESIGNMIAMI"
+      ],
+      "extra": {
+        "cmmn_telno": "전시문의 02-2096-0112 / 예매문의 010-3767-2214",
+        "cmmn_hmpg_url": "https://ddp.or.kr/index.html?menuno=240&siteno=2&bbsno=609&boardno=15&bbstopno=609&act=view&subno=2",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "9.1(화) ~ 9.5(토) 10:00~20:00/9.6(일) 10:00~18:00 ※종료 30분전 입장 마감 ※8.31은 VIP 프리뷰",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "usage_fee": "(얼리버드 티켓, 8.24까지 신청가능)일일권: 20,000원, 프리미엄 패스: 60,000원\r\n(일반)일일권: 28,000원, 프리미엄 패스: 80,000원"
+      },
+      "traffic": {
+        "adres": "서울 중구 을지로7가 143",
+        "new_zip_code": "04566",
+        "new_adres": "서울 중구 을지로 281 디자인랩 1층 SHOWROOM",
+        "map_position_x": "127.010890355484",
+        "map_position_y": "37.5680445876689",
+        "subway_info": "지하철 2호선/4호선/5호선 동대문역사문화공원역 1번출구, 50m"
+      },
+      "post_desc": "디자인마이애미(Design Miami)는 세계적인 갤러리와 디자이너, 브랜드, 컬렉터를 연결하며 20~21세기 가구와 조명, 예술 오브제 등 컬렉터블 디자인을 선보이는 글로벌 디자인 플랫폼입니다. [행사내용] - 갤러리 프로그램 : 콜렉터블 디자인 작품을 보고, 즐기고, 콜렉팅 하는 디자인 살롱 - 스페셜 프로그램 : 브랜드 협업 특별 프로젝트 전시 - 인 시추(in Situ) 프로그램 : 아시아 및 한국 디자인을 조명하는 큐레이션 전시 - 디자인 토크 : 콜렉터블 디자인 트랜드 및 아시아 디자인의 현재와 가능성에 대한 담론 - 리셉션, VIP투어 : 디자이너, 컬렉터, 브랜드 등 디자인계가 교류하는 네트워킹 행사"
+    }
+  },
+  "KOPii0mwl": {
+    "updtDtText": "2026.08.27",
+    "detail": {
+      "cid": "KOPii0mwl",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPii0mwl,en:ENPii0mwl,ja:JPPii0mwl,zh-CN:CNPii0mwl,zh-TW:TCPii0mwl,ru:RUPii0mwl",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81688&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81690&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81691&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81692&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81693&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81694&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "섬유기획전 《안식의 결 Texture of Rest》\t",
+      "sumry": "현대인에게 섬유의 고유한 물성인 '연결'과 '인내'를 매개로 흩어진 자아를 다시 '직조'하는 시간을 건네는 섬유기획전\t\r\n",
+      "schdul_info_bgnde": "2026.07.24",
+      "schdul_info_endde": "2026.10.02",
+      "place": "우란문화재단 우란1경, 우란2경\t",
+      "creat_dt_text": "2026.08.25",
+      "updt_dt_text": "2026.08.27",
+      "tag": [
+        "《--Texture-of-Rest》"
+      ],
+      "extra": {
+        "cmmn_telno": "02-465-1418\t",
+        "cmmn_hmpg_url": "https://wooranfdn.org/program/exhibition_view.jsp?idx=206\t",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "11:00-19:00 (매주 일요일 및 공휴일 휴관)\t\r\n",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [
+          "접근가능",
+          "엘리베이터"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 성동구 성수동2가 314-12",
+        "new_zip_code": "04782",
+        "new_adres": "서울 성동구 연무장7길 11 (성수동2가, 우란문화재단)",
+        "map_position_x": "127.054414338211",
+        "map_position_y": "37.5438046379393",
+        "subway_info": "지하철 2호선 성수역 4번출구, 120m\t\r\n"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "우란문화재단의 두 번째 섬유기획전 《안식의 결》은 정보와 관계의 홍수 속에서 자아를 상실해 가는 현대인에게 섬유의 고유한 물성인 '연결'과 '인내'를 매개로 흩어진 자아를 다시 '직조'하는 시간을 건넵니다. 이번 전시에서 섬유는 단순한 감상의 대상을 벗어나, 우리 내면의 문턱을 넘어, 고통의 심연을 정직하게 관통하며, 진정한 평안으로 나아가는 '살아있는 치유의 여정'을 선사합니다. 이는 고통을 외면하는 것이 아니라 마주할 때 비로소 진정한 평안을 마주할 수 있음을 시사합니다. 외부의 소음을 잠시 끄고 자신의 내면과 밀도 높게 대화하며, 마침내 도달할 정화된 안식의 결을 경험해 보시기 바랍니다."
+    }
+  },
+  "KOPzxk4rc": {
+    "updtDtText": "2026.08.27",
+    "detail": {
+      "cid": "KOPzxk4rc",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPzxk4rc,en:ENPzxk4rc,ja:JPPzxk4rc,zh-CN:CNPzxk4rc,zh-TW:TCPzxk4rc,ru:RUPzxk4rc",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81706&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81708&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "SKETCH 2026: 유동의 미학",
+      "sumry": "금융과 예술이 교류하고 서로의 언어를 공유하는 새로운 만남의 장",
+      "schdul_info_bgnde": "2026.08.28",
+      "schdul_info_endde": "2026.09.17",
+      "place": "송원아트센터",
+      "creat_dt_text": "2026.08.25",
+      "updt_dt_text": "2026.08.27",
+      "tag": [
+        "무료전시",
+        "서울전시",
+        "SKETCH",
+        "2026",
+        "김휘아",
+        "아하콜렉티브",
+        "유아연",
+        "장우주",
+        "전시"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2138-0095",
+        "cmmn_hmpg_url": "https://www.instagram.com/dreamnext_sketch/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "11:00~18:00",
+        "cmmn_important": "전시 오프닝 세레모니(2026.09.02 수)\r\n미술주간 연계 ‘삼청나잇' 행사 (2026.09.03 목)",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "엘리베이터"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 종로구 화동 106-5",
+        "new_zip_code": "03061",
+        "new_adres": "서울 종로구 윤보선길 75 (화동)",
+        "map_position_x": "126.983448207812",
+        "map_position_y": "37.5793191593831",
+        "subway_info": "지하철 3호선 안국역 1번출구, 400m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "송원아트센터에서 개최되는 전시의 주제인 ‘유동의 미학’은 금융과 예술이 공유하는 가치의 움직임을 의미하며 이러한 금융 시장의 '흐름'은 자본시장뿐 아니라 예술에도 공통적으로 내재된 본질이기도 합니다. 자본의 가치가 신뢰를 기반으로 끊임없이 변화하고 재평가되듯, 예술의 가치 또한 관람자의 경험과 해석을 통해 새로운 의미를 획득하며 살아 움직입니다. 유동의 상태를 전제하기에 빛을 발하는 이 둘은, 본질적 공통점을 갖기에 먼 듯 보이면서도 서로간 닮아 있습니다. 이번 전시는 공모를 거쳐 선정된 작가 김휘아, 아하콜렉티브, 유아연, 장우주 작가가 함께 다양한 작품을 선보입니다."
     }
   }
 }
