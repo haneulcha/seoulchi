@@ -1281,6 +1281,82 @@
       }
     },
     {
+      "id": "vs-KOPfo3uv0",
+      "source": "visit-seoul",
+      "title": "광나루한강공원 모두의놀이터",
+      "summary": "나이와 장애에 관계없이 모든 어린이가 함께 즐길 수 있는 6,000㎡ 규모의 창의 놀이공간",
+      "category": "레저스포츠시설",
+      "place": "광나루한강공원 모두의놀이터",
+      "address": "서울 강동구 천호동 351-1",
+      "lat": 37.5454408612397,
+      "lng": 127.119850611256,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81836&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "isFree": false,
+      "subwayInfo": "지하철 8호선 암사역 3번출구, 954m",
+      "tags": [
+        "무장애",
+        "놀이공간",
+        "유니버설",
+        "디자인",
+        "창의",
+        "놀이",
+        "대형",
+        "그물놀이",
+        "광나루한강공원",
+        "모두의놀이터",
+        "어린이놀이터"
+      ],
+      "kind": "place",
+      "useTime": "24시간",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOP3s1wvi",
+      "source": "visit-seoul",
+      "title": "퐁피두센터 한화",
+      "summary": "세계적인 근현대미술 작품을 서울에서 만나볼 수 있는 여의도 63빌딩의 새로운 문화예술 공간",
+      "category": "미술관/화랑",
+      "place": "퐁피두센터 한화",
+      "address": "서울 영등포구 63로 50 63빌딩 별관",
+      "lat": 37.5196641552816,
+      "lng": 126.939909338068,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81827&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.centrepompidou-hanwha.kr/",
+      "isFree": false,
+      "subwayInfo": "지하철 5호선 여의나루역 1번출구에서 버스이용(5634번, 5633번,261번) '63빌딩, 여의도성모병원' 정류장에서 하차",
+      "tags": [
+        "한화",
+        "파리",
+        "퐁피두센터",
+        "한화문화재단",
+        "여의도",
+        "63빌딩",
+        "근현대미술",
+        "현대미술관",
+        "기획",
+        "전시",
+        "문화예술",
+        "공간",
+        "퐁피두센터"
+      ],
+      "kind": "place",
+      "useTime": "목,금,일,화요일 10:00 -18:00\r\n수,토요일 10:00 - 21:00",
+      "closedDays": "매주 월요일",
+      "hours": {
+        "open": "10:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          1,
+          2,
+          6
+        ]
+      }
+    },
+    {
       "id": "vs-KOPmv93re",
       "source": "visit-seoul",
       "title": "디뮤지엄 (D MUSEUM)",
@@ -3210,6 +3286,34 @@
       }
     },
     {
+      "id": "vs-KOP68y59t",
+      "source": "visit-seoul",
+      "title": "뚝섬한강공원 눈썰매장",
+      "summary": "눈썰매와 다양한 놀이·체험 공간으로 온 가족이 겨울의 즐거움을 만끽",
+      "category": "레저스포츠시설",
+      "place": "뚝섬한강공원 눈썰매장",
+      "address": "서울 광진구 자양동 112",
+      "lat": 37.5299661390608,
+      "lng": 127.06776897975973,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=71796&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://hangang.seoul.go.kr/www/facility/map.tab?opt2=REST&opt3=POOL&opt11=SNOW_SLEDDING",
+      "isFree": false,
+      "subwayInfo": "지하철 7호선 자양역 2번출구,  100m",
+      "tags": [
+        "한강공원",
+        "한강눈썰매장",
+        "겨울철액티비티",
+        "눈썰매장"
+      ],
+      "kind": "place",
+      "useTime": "10:00 ~ 17:00\r\n*노면정비: 12:00 ~ 13:00",
+      "hours": {
+        "open": "10:00",
+        "close": "17:00",
+        "closedWeekdays": []
+      }
+    },
+    {
       "id": "vs-KOPup1c05",
       "source": "visit-seoul",
       "title": "국립정동극장 세실",
@@ -4480,14 +4584,20 @@
       "isFree": false,
       "subwayInfo": "지하철 4호선 명동역 1번 출구,  211m",
       "tags": [
-        " 예장마당",
+        "예장마당",
         "남산예장공원",
         "유구",
         "기억6",
         "이회영기념관"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "상시개방",
+      "closedDays": "연중무휴",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOP041926",
@@ -21413,6 +21523,47 @@
       "hours": {
         "open": "09:00",
         "close": "18:00",
+        "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOPylc4hg",
+      "source": "visit-seoul",
+      "title": "초안산수국동산",
+      "summary": "약 1만 그루의 다채로운 수국과 산책로, 생태연못이 어우러진 도심 속 생태정원",
+      "category": "자연공원",
+      "place": "초안산수국동산",
+      "address": "서울 노원구 월계로45가길 9",
+      "lat": 37.6302844506448,
+      "lng": 127.049264552091,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81842&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "isFree": false,
+      "subwayInfo": "지하철 1호선 월계역 3번출구, 1.7km\r\n지하철 1호선/경춘선 광운대역에서 1133번 버스이용 (염광고등학교 하차)",
+      "tags": [
+        "초안산수국동산",
+        "노원구",
+        "수국",
+        "명소",
+        "생태정원",
+        "산림",
+        "복원",
+        "수국축제",
+        "순환산책로",
+        "생태연못",
+        "작은",
+        "폭포",
+        "야간",
+        "경관조명",
+        "도심",
+        "속",
+        "힐링",
+        "공간"
+      ],
+      "kind": "place",
+      "useTime": "24시간",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
         "closedWeekdays": []
       }
     },

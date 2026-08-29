@@ -73754,7 +73754,7 @@
     }
   },
   "KOP68y59t": {
-    "updtDtText": "2025.08.23",
+    "updtDtText": "2026.08.29",
     "detail": {
       "cid": "KOP68y59t",
       "lang_code_id": "ko",
@@ -73770,14 +73770,12 @@
       ],
       "post_sj": "뚝섬한강공원 눈썰매장",
       "sumry": "눈썰매와 다양한 놀이·체험 공간으로 온 가족이 겨울의 즐거움을 만끽",
-      "schdul_info_bgnde": "2024.12.24",
-      "schdul_info_endde": "2025.02.16",
       "place": "뚝섬한강공원",
       "creat_dt_text": "2025.01.15",
-      "updt_dt_text": "2025.08.23",
+      "updt_dt_text": "2026.08.29",
       "tag": [
-        "한강눈썰매장",
         "한강공원",
+        "한강눈썰매장",
         "겨울철액티비티",
         "눈썰매장"
       ],
@@ -73785,11 +73783,11 @@
         "cmmn_telno": "02-452-5955",
         "cmmn_hmpg_url": "https://hangang.seoul.go.kr/www/facility/map.tab?opt2=REST&opt3=POOL&opt11=SNOW_SLEDDING ",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "9:00 ~ 17:00\r\n*노면정비: 12:00 ~ 12:40",
+        "cmmn_use_time": "10:00 ~ 17:00\r\n*노면정비: 12:00 ~ 13:00",
         "cmmn_important": "기상악화로 안전에 우려가 있을 경우 운영시간이 임의로 조정될 수 있습니다.",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
-        "business_days": "24.12.24 ~25.02.16",
+        "business_days": "겨울 시즌 한정 운영 (매년 12월 중순경 ~ 이듬해 2월 중순)",
         "usage_fee": "입장료 6,000원 \r\n놀이기구 1회 이용 5,000~7,000원 (놀이기구별 상이)\r\n체험 공산 1회 이용 4,000원~5,000원 (체험별 상이)"
       },
       "traffic": {
@@ -81477,7 +81475,7 @@
     }
   },
   "KOP5gy81t": {
-    "updtDtText": "2024.10.15",
+    "updtDtText": "2026.08.29",
     "detail": {
       "cid": "KOP5gy81t",
       "lang_code_id": "ko",
@@ -81495,7 +81493,7 @@
       "post_sj": "한글파크아카데미",
       "sumry": "회화 수업을 중심으로 정규회화과정, 단기유학과정, 원데이클래스, 토픽대책반 등 다양한 수업을 개설하고 있습니다.",
       "creat_dt_text": "2023.10.20",
-      "updt_dt_text": "2024.10.15",
+      "updt_dt_text": "2026.08.29",
       "tag": [
         "한국어",
         "한국어교실",
@@ -81511,6 +81509,7 @@
         "cmmn_important": "수강문의는 홈페이지에서 가능합니다.",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
+        "business_days": "평일",
         "closed_days": "토요일, 일요일, 공휴일 "
       },
       "traffic": {
@@ -84205,7 +84204,7 @@
     }
   },
   "KOP042009": {
-    "updtDtText": "2025.08.19",
+    "updtDtText": "2026.08.28",
     "detail": {
       "cid": "KOP042009",
       "lang_code_id": "ko",
@@ -84223,18 +84222,20 @@
       "post_sj": "남산예장공원",
       "sumry": "역사와 함께 걷는 산책길, 남산예장공원",
       "creat_dt_text": "2022.10.21",
-      "updt_dt_text": "2025.08.19",
+      "updt_dt_text": "2026.08.28",
       "tag": [
-        " 예장마당",
+        "예장마당",
         "남산예장공원",
         "유구",
         "기억6",
         "이회영기념관"
       ],
       "extra": {
+        "cmmn_use_time": "상시개방",
         "cmmn_important": "이회영 기념관과 기억6 등 내부 시설의 이용 시간은 별도로 확인해주세요!",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": []
+        "disabled_facility": [],
+        "closed_days": "연중무휴"
       },
       "traffic": {
         "adres": "서울 중구 예장동 4-1",
@@ -103983,7 +103984,7 @@
     }
   },
   "KOPlwvkl4": {
-    "updtDtText": "2025.12.13",
+    "updtDtText": "2026.08.29",
     "detail": {
       "cid": "KOPlwvkl4",
       "lang_code_id": "ko",
@@ -104001,7 +104002,7 @@
       "post_sj": "한강초교앞보도육교",
       "sumry": "남산타워와 용산 도심의 반짝이는 야경을 담을 수 있는 숨은 시티뷰 스팟",
       "creat_dt_text": "2025.02.21",
-      "updt_dt_text": "2025.12.13",
+      "updt_dt_text": "2026.08.29",
       "tag": [
         "용산가볼만한곳",
         "서울사진스팟",
@@ -104122,7 +104123,7 @@
     }
   },
   "KOPa2rvwq": {
-    "updtDtText": "2025.06.24",
+    "updtDtText": "2026.08.29",
     "detail": {
       "cid": "KOPa2rvwq",
       "lang_code_id": "ko",
@@ -104140,15 +104141,16 @@
       "post_sj": "손기정문화도서관",
       "sumry": " 예술적이고 감성적인 분위기의 책과 휴식을 동시에 즐길 수 있는 장소.",
       "creat_dt_text": "2025.02.17",
-      "updt_dt_text": "2025.06.24",
+      "updt_dt_text": "2026.08.29",
       "tag": [
         "서울역놀거리",
         "손기정공원",
         "서울도서관"
       ],
       "extra": {
-        "cmmn_telno": "0507-1382-2950",
+        "cmmn_telno": "02-2230-2950",
         "cmmn_hmpg_url": "https://www.junggulib.or.kr/index.do",
+        "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "9:00 ~22:00",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
@@ -118718,6 +118720,187 @@
         "safe_mng": "ul"
       },
       "post_desc": "송원아트센터에서 개최되는 전시의 주제인 ‘유동의 미학’은 금융과 예술이 공유하는 가치의 움직임을 의미하며 이러한 금융 시장의 '흐름'은 자본시장뿐 아니라 예술에도 공통적으로 내재된 본질이기도 합니다. 자본의 가치가 신뢰를 기반으로 끊임없이 변화하고 재평가되듯, 예술의 가치 또한 관람자의 경험과 해석을 통해 새로운 의미를 획득하며 살아 움직입니다. 유동의 상태를 전제하기에 빛을 발하는 이 둘은, 본질적 공통점을 갖기에 먼 듯 보이면서도 서로간 닮아 있습니다. 이번 전시는 공모를 거쳐 선정된 작가 김휘아, 아하콜렉티브, 유아연, 장우주 작가가 함께 다양한 작품을 선보입니다."
+    }
+  },
+  "KOPfo3uv0": {
+    "updtDtText": "2026.08.28",
+    "detail": {
+      "cid": "KOPfo3uv0",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Co0g3x0",
+      "cate_depth": " 문화관광  > 레저스포츠시설",
+      "multi_lang_list": "ko:KOPfo3uv0,en:ENPfo3uv0,ja:JPPfo3uv0,zh-CN:CNPfo3uv0,zh-TW:TCPfo3uv0,ru:RUPfo3uv0,ms:MLPfo3uv0",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81836&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81837&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81838&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81839&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81840&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81841&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "광나루한강공원 모두의놀이터",
+      "sumry": "나이와 장애에 관계없이 모든 어린이가 함께 즐길 수 있는 6,000㎡ 규모의 창의 놀이공간",
+      "creat_dt_text": "2026.08.24",
+      "updt_dt_text": "2026.08.28",
+      "tag": [
+        "무장애",
+        "놀이공간",
+        "유니버설",
+        "디자인",
+        "창의",
+        "놀이",
+        "대형",
+        "그물놀이",
+        "광나루한강공원",
+        "모두의놀이터",
+        "어린이놀이터"
+      ],
+      "extra": {
+        "cmmn_telno": "02-3780-0501",
+        "cmmn_use_time": " 24시간",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "business_days": "연중무휴"
+      },
+      "traffic": {
+        "adres": "서울 강동구 천호동 483-8",
+        "new_zip_code": "05250",
+        "new_adres": "서울 강동구 천호동 351-1",
+        "map_position_x": "127.119850611256",
+        "map_position_y": "37.5454408612397",
+        "subway_info": "지하철 8호선 암사역 3번출구, 954m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "광나루한강공원 모두의놀이터는 나이와 장애 유무에 관계없이 모든 어린이가 함께 즐길 수 있도록 조성된 6,000㎡ 규모의 대형 놀이공간입니다. 계단을 최소화한 평탄한 동선과 안전한 경사로를 적용했으며, 대형 그물놀이와 미끄럼 언덕, 다양한 형태의 그네 등 창의력과 모험심을 자극하는 시설을 갖추고 있습니다. 한강의 자연을 배경으로 아이들이 자유롭게 놀이를 만들고 가족이 함께 휴식할 수 있는 서울시 최초의 거점형 어린이놀이터입니다."
+    }
+  },
+  "KOP3s1wvi": {
+    "updtDtText": "2026.08.28",
+    "detail": {
+      "cid": "KOP3s1wvi",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Ct9t6m8",
+      "cate_depth": " 문화관광  > 전시시설 > 미술관/화랑",
+      "multi_lang_list": "ko:KOP3s1wvi,en:ENP3s1wvi,ja:JPP3s1wvi,zh-CN:CNP3s1wvi,zh-TW:TCP3s1wvi,ru:RUP3s1wvi,ms:MLP3s1wvi",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81827&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81828&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81829&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81830&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81831&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "퐁피두센터 한화",
+      "sumry": "세계적인 근현대미술 작품을 서울에서 만나볼 수 있는 여의도 63빌딩의 새로운 문화예술 공간",
+      "creat_dt_text": "2026.08.24",
+      "updt_dt_text": "2026.08.28",
+      "tag": [
+        "한화",
+        "파리",
+        "퐁피두센터",
+        "한화문화재단",
+        "여의도",
+        "63빌딩",
+        "근현대미술",
+        "현대미술관",
+        "기획",
+        "전시",
+        "문화예술",
+        "공간",
+        "퐁피두센터"
+      ],
+      "extra": {
+        "cmmn_telno": "02-789-5550",
+        "cmmn_hmpg_url": "https://www.centrepompidou-hanwha.kr/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "목,금,일,화요일 10:00 -18:00\r\n수,토요일 10:00 - 21:00",
+        "cmmn_important": "※ 입장 마감은 관람 종료 30분 전입니다.",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "closed_days": "매주 월요일"
+      },
+      "traffic": {
+        "adres": "서울 영등포구 여의도동 60",
+        "new_zip_code": "07345",
+        "new_adres": "서울 영등포구 63로 50 63빌딩 별관",
+        "map_position_x": "126.939909338068",
+        "map_position_y": "37.5196641552816",
+        "subway_info": "지하철 5호선 여의나루역 1번출구에서 버스이용(5634번, 5633번,261번) '63빌딩, 여의도성모병원' 정류장에서 하차"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "퐁피두센터 한화는 파리 퐁피두센터와 한화문화재단의 협력을 통해 2026년 6월 여의도 63빌딩에 문을 연 현대미술관입니다. 약 3,000㎡ 규모의 공간에 두 개의 대형 전시관을 갖추고 있으며, 퐁피두센터가 소장한 세계적인 근현대 미술 작품과 국내외 동시대 작가들의 기획 전시를 선보입니다. 프랑스 건축가 장 미셸 빌모트가 설계한 ‘빛의 상자’ 콘셉트의 건축물도 주요 볼거리로, 한국과 프랑스를 비롯한 세계 예술계를 연결하는 새로운 문화예술 거점을 지향합니다."
+    }
+  },
+  "KOPylc4hg": {
+    "updtDtText": "2026.08.28",
+    "detail": {
+      "cid": "KOPylc4hg",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cp3b3j9",
+      "cate_depth": " 자연관광 > 자연공원",
+      "multi_lang_list": "ko:KOPylc4hg,en:ENPylc4hg,ja:JPPylc4hg,zh-CN:CNPylc4hg,zh-TW:TCPylc4hg,ru:RUPylc4hg,ms:MLPylc4hg",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81842&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81843&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81844&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81845&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81846&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81847&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "초안산수국동산",
+      "sumry": "약 1만 그루의 다채로운 수국과 산책로, 생태연못이 어우러진 도심 속 생태정원",
+      "creat_dt_text": "2026.08.24",
+      "updt_dt_text": "2026.08.28",
+      "tag": [
+        "초안산수국동산",
+        "노원구",
+        "수국",
+        "명소",
+        "생태정원",
+        "산림",
+        "복원",
+        "수국축제",
+        "순환산책로",
+        "생태연못",
+        "작은",
+        "폭포",
+        "야간",
+        "경관조명",
+        "도심",
+        "속",
+        "힐링",
+        "공간"
+      ],
+      "extra": {
+        "cmmn_use_time": " 24시간",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "business_days": "연중무휴"
+      },
+      "traffic": {
+        "adres": "서울 노원구 월계동 820",
+        "new_zip_code": "01874",
+        "new_adres": "서울 노원구 월계로45가길 9",
+        "map_position_x": "127.049264552091",
+        "map_position_y": "37.6302844506448",
+        "subway_info": "지하철 1호선 월계역 3번출구, 1.7km\r\n지하철 1호선/경춘선 광운대역에서 1133번 버스이용 (염광고등학교 하차)"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "초안산수국동산은 과거 쓰레기와 불법 경작으로 훼손된 산림을 복원해 조성한 노원구의 대표 생태정원입니다. 약 1만 그루의 다양한 수국이 어우러져 초여름부터 아름다운 꽃길을 감상할 수 있으며, 자연형 계류와 작은 폭포, 생태연못, 물레방아, 순환산책로와 쉼터도 갖추고 있습니다. 낮에는 형형색색의 수국을, 밤에는 경관조명과 어우러진 정원을 즐길 수 있는 도심 속 휴식 명소입니다."
     }
   }
 }
