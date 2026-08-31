@@ -1,6 +1,8 @@
 import { z } from 'zod'
-import { CATEGORY_GROUPS } from '~/lib/category'
-import { eventItemSchema, parsedHoursSchema, placeItemSchema } from '~/types/item'
+// 상대 경로: 이 파일은 load.ts를 거쳐 vite.config.ts에서도 import된다.
+// 별칭 '~'는 vite config 로드 시점엔 안 풀린다 — load.ts 상단 주석 참고.
+import { CATEGORY_GROUPS } from '../lib/category'
+import { eventItemSchema, parsedHoursSchema, placeItemSchema } from './item'
 
 export const weekKeySchema = z.string().regex(/^\d{4}-W\d{2}$/)
 

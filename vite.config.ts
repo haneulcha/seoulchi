@@ -1,10 +1,10 @@
-import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact from '@vitejs/plugin-react'
 import { defineConfig, type Plugin } from 'vite'
 import { findRootStaticFnCacheUrl, rewriteStaticFnCacheUrl } from './src/build/static-fn-base'
+import { loadIndex } from './src/data/load'
 
 /**
  * 카탈로그 전량 프리렌더(스펙 4장). 탐색이 카탈로그 전부로 링크를 걸므로
@@ -23,9 +23,21 @@ import { findRootStaticFnCacheUrl, rewriteStaticFnCacheUrl } from './src/build/s
  * (예: 필터 기준이 어긋나는 미래 변경) crawlLinks 없이는 그 자리가 그대로 404가 되고
  * failOnError 빌드가 깨진다 — 링크 대상은 항상 페이지가 있어야 한다는 불변식의 안전망이다.
  */
-const catalogPages = (
-  JSON.parse(readFileSync('data/index.json', 'utf8')) as { items: Array<{ id: string }> }
-).items.map((item) => ({ path: `/e/${item.id}` }))
+function catalogPagePaths(): Array<{ path: string }> {
+  try {
+    // loadIndex는 catalogIndexSchema로 검증한다 — 깨진 인덱스가 /e/undefined 같은
+    // 경로를 조용히 만들어 내는 대신, 실패가 여기서(빌드 시작 시점) 바로 드러난다.
+    return loadIndex().items.map((item) => ({ path: `/e/${item.id}` }))
+  } catch (cause) {
+    throw new Error(
+      'data/index.json을 읽지 못했습니다. 배치를 먼저 돌리세요(npm run batch). ' +
+        '이 파일은 상세 페이지 프리렌더 목록의 원천입니다.',
+      { cause },
+    )
+  }
+}
+
+const catalogPages = catalogPagePaths()
 
 // GitHub Pages 프로젝트 사이트는 https://<user>.github.io/seoulchi/ 아래에 얹힌다.
 // 이 값이 없으면 에셋 URL이 전부 /로 시작해 404가 난다. router.tsx의 basepath와 짝이다.
