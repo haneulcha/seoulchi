@@ -141,7 +141,7 @@ Plan 1이 먼저였던 이유: Task 14에서 측정한 데이터 파일 크기�
 | LLM이 고른 id 중 후보에 없는 것은 버리고 규칙 상위로 채움 | 환각 방어 2겹. 화면이 절대 비지 않음 |
 | 영업시간 파싱 실패 시 `null` + 원문 노출 | 실패를 숨기지 않음. 사용자가 직접 판단할 수 있게 |
 | 알 수 없는 `LLM_PROVIDER`는 던짐 | 오타를 폴백으로 삼키면 코멘트가 왜 비었는지 알 수 없음 |
-| `src/types/files.ts`와 `src/data/load.ts`는 `~` 별칭 대신 **상대 경로 import**를 유지 | `vite.config.ts`가 프리렌더 목록을 만들려고 `loadIndex`를 직접 import하는데, vite는 자기 config를 로드할 때 tsconfig paths를 풀지 않음. 별칭을 넣으면 빌드가 config 로드 시점에 깨짐 |
+| `src/data/load.ts`·`src/types/files.ts`와 그 전이 의존(`src/types/item.ts`, `src/lib/category.ts`)은 `~` 별칭 대신 **상대 경로 import**를 유지 | `vite.config.ts`가 프리렌더 목록을 만들려고 `loadIndex`를 직접 import하는데, vite는 자기 config를 로드할 때 tsconfig paths를 풀지 않음. 별칭을 넣으면 빌드가 config 로드 시점에 깨짐. 이 네 파일 중 하나라도 별칭을 쓰면 체인 전체가 끊김 |
 
 ## 명령어
 
