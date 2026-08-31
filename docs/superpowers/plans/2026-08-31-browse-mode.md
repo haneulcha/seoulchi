@@ -52,10 +52,21 @@ Plan 2에서 이 표의 가정 6개 중 2개가 틀렸었다(`.validator` 방향
 
 ### 확인 결과 (Task 0·9·10 실행 후 여기 기록 — 위 표의 "가정"보다 이 절이 우선한다)
 
-_(아직 비어 있음. Task 0이 #1·#2를, Task 9가 #3을, Task 10이 #4를 채운다.)_
+_(Task 9가 #3을, Task 10이 #4를 채운다.)_
 
-- **#1 —** (설치 버전, 명시 목록 키의 정확한 이름·위치·타입, 근거 파일 경로:라인)
-- **#2 —** (스파이크에 쓴 id, 산출 파일 경로, HTML 내용 확인 결과)
+- **#1 — 경로 A 확정.** 설치 버전: `@tanstack/react-start@1.168.46` (`@tanstack/start-plugin-core@1.171.36` deduped, `npm ls` 실측 2026-09-01).
+  명시적 페이지 목록은 스펙이 가정한 `prerender.pages`가 아니라 **플러그인 옵션 최상위 `pages`** 키다 — `tanstackStart({ pages: [...], prerender: {...} })`처럼 `prerender`와 형제로 준다.
+  근거: `node_modules/@tanstack/start-plugin-core/dist/esm/schema.d.ts:708-716`(`tanstackStartOptionsSchema`, 입력 스키마) — `pages: z.ZodDefault<z.ZodOptional<z.ZodArray<z.ZodObject<{ path: z.ZodString; sitemap?: {...}; fromCrawl?: boolean; prerender?: {...} }>>>>`. 같은 형태가 `parseStartConfig`의 반환 타입(130-149행, 정규화 후)과 `tanstackStartOptionsObjectSchema`(439행)에도 반복된다.
+  항목 타입은 문자열 배열이 아니라 **`{ path: string; sitemap?; fromCrawl?; prerender?: { enabled?, outputPath?, autoSubfolderIndex?, crawlLinks?, retryCount?, retryDelay?, onSuccess?, headers? } }` 객체 배열**이다. `path`만 필수.
+  최상위 `prerender`(전역 옵션: `enabled`/`concurrency`/`filter`/`failOnError`/`crawlLinks`/...)는 `pages`와 별개의 형제 키이고, 항목별 `page.prerender`는 전역 옵션을 오버라이드할 뿐 대체하지 않는다.
+  **`crawlLinks` 병행 가능 — 확정.** 근거: `dist/esm/prerender.js`. `startConfig.pages`(명시 목록, 비어 있으면 `[{path:'/'}]`)를 전부 큐에 넣어 프리렌더하고(`pages.forEach(addCrawlPageTask)`), **명시 목록이든 크롤로 발견됐든 관계없이** 성공적으로 렌더된 모든 HTML에서 `prerenderOptions.crawlLinks ?? true`가 참이면 `<a href>` 링크를 추출해 추가로 크롤 큐에 넣는다(`fromCrawl: true`). 즉 명시 목록과 crawlLinks는 서로 배타적인 두 모드가 아니라 **같은 큐에 합류하는 두 시드**다 — 명시 목록에 없는 홈 링크 18개는 여전히 crawlLinks로, 명시 목록에만 있는 id는 그것대로 프리렌더된다.
+
+- **#2 — 스파이크 결과.** 사용한 id: `sc-1ez0sn8` (2026-W35 주간 파일에는 있으나 curated 12선에는 없는 실존 행사, Step 3 스크립트로 선정).
+  `vite.config.ts`의 `tanstackStart({...})`에 `pages: [{ path: '/e/sc-1ez0sn8' }]`를 임시로 추가하고 `npm run build` 실행 — 로그에 `[prerender] Crawling: /e/sc-1ez0sn8`(base 없는 그대로)가 명시 목록 항목으로 뜨고, 홈 크롤로 잡힌 나머지 18페이지는 여전히 `/seoulchi/e/...`(base 포함)로 크롤됨. 총 20페이지 프리렌더(기존 19 + 명시 1건), crawlLinks가 죽지 않고 병행됨을 실측으로 확인.
+  산출 경로: `dist/client/e/sc-1ez0sn8/index.html` — 가정 #2(base 없이 `/e/<id>`로 주면 `dist/client/e/<id>/index.html`에 떨어진다) **그대로 재현**. `withoutBase()`가 파일명 계산 시 base를 벗겨내므로 명시 목록 항목도 crawlLinks 산출과 같은 자리에 놓인다.
+  `grep -a -c '기간' dist/client/e/sc-1ez0sn8/index.html` → **1**. `getDetail`이 해당 id를 해석해 상세 본문(기간 라벨)을 렌더했음을 확인.
+  Step 4 원복: `vite.config.ts`에서 임시 추가한 `pages` 줄 제거 → `git diff --stat vite.config.ts` 빈 출력 확인 → `npm run build` 재실행, 19페이지로 복귀(Plan 2와 동일 수·구성) 확인.
+
 - **#3 —** (에셋 파일명, dev/build 각각의 URL)
 - **#4 —** (동작 여부, 폴백 사용 여부)
 
