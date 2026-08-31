@@ -1,4 +1,6 @@
 import { addDays } from '~/lib/dates'
+import { categoryGroup } from '~/lib/category'
+import type { CatalogIndexFile, CatalogIndexItem } from '~/types/files'
 import type { EventItem, PlaceItem } from '~/types/item'
 
 export interface CatalogAnomaly {
@@ -63,4 +65,37 @@ const DISTRICT_RE = new RegExp(SEOUL_DISTRICTS.join('|'))
  */
 export function districtFromAddress(address?: string): string | undefined {
   return address ? (DISTRICT_RE.exec(address)?.[0] ?? undefined) : undefined
+}
+
+/**
+ * 슬림 투영(스펙 5장). 필드가 없으면 키 자체를 만들지 않는다 —
+ * JSON.stringify의 undefined 탈락에 기대지 않고 여기서 생략을 보장한다.
+ * 좌표는 쌍으로만 담는다: 한쪽만 있는 좌표는 좌표가 아니다.
+ */
+export function buildCatalogIndex(sel: CatalogSelection, generatedAt: string): CatalogIndexFile {
+  const events = sel.events.map((e): CatalogIndexItem => ({
+    id: e.id, kind: 'event', title: e.title, group: categoryGroup(e.category),
+    ...(e.district !== undefined && { district: e.district }),
+    place: e.place,
+    ...(e.lat !== undefined && e.lng !== undefined && { lat: e.lat, lng: e.lng }),
+    ...(e.isFree !== undefined && { isFree: e.isFree }),
+    ...(e.imageUrl !== undefined && { imageUrl: e.imageUrl }),
+    startDate: e.startDate, endDate: e.endDate,
+  }))
+
+  const places = sel.places.map((p): CatalogIndexItem => {
+    // 장소 원본에는 district가 없다(0/733). 주소에서 파생한다 — 원본은 건드리지 않는다
+    const district = p.district ?? districtFromAddress(p.address)
+    return {
+      id: p.id, kind: 'place', title: p.title, group: categoryGroup(p.category),
+      ...(district !== undefined && { district }),
+      ...(p.lat !== undefined && p.lng !== undefined && { lat: p.lat, lng: p.lng }),
+      ...(p.isFree !== undefined && { isFree: p.isFree }),
+      ...(p.imageUrl !== undefined && { imageUrl: p.imageUrl }),
+      // hours: null(파싱 실패)도 undefined(원문 없음)도 생략 — 생략이 곧 '영업시간 미상'
+      ...(p.hours != null && { hours: p.hours }),
+    }
+  })
+
+  return { generatedAt, horizonEnd: sel.horizonEnd, items: [...events, ...places] }
 }
