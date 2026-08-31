@@ -4,32 +4,55 @@
 
 ## 현재 상태
 
-**Plan 1(배치)과 Plan 2(웹앱 1차: 홈+상세)가 모두 완료됐습니다.**
+**Plan 1(배치), Plan 2(웹앱 1차: 홈+상세), 탐색 모드(`docs/superpowers/plans/2026-08-31-browse-mode.md`)가 모두 완료됐습니다.**
 
 - 배치는 구현·테스트 완료입니다(`src/`, `scripts/`, `tests/` 존재, `npm test` 초록).
-  산출 데이터도 커밋돼 있습니다: `data/events/2026-W33.json`(314건), `data/places.json`(728건),
-  `data/curated/2026-W33.json`(행사 12 + 장소 6), `data/meta.json`, `data/cache/visitseoul.json`.
-- `.github/workflows/batch.yml`이 매일 KST 06:00 cron으로 배치를 돌리게 돼 있지만,
-  **레포에 Actions Secrets·Variables가 하나도 등록돼 있지 않아 아직 한 번도 실행된 적이 없습니다.**
-  등록 전까지 cron은 키 없이 돌다 실패합니다.
-- **커밋된 `data/`는 로컬 Ollama로 만든 것입니다**(`meta.json`의 `llmProvider: "ollama"`).
-  그래서 `curated`의 `reason`에 한국어 코멘트가 들어 있습니다. Actions로 넘어가면
-  `LLM_PROVIDER=rule`이라 `reason`은 빈 문자열이 됩니다 — 지금 데이터만 보고
-  "코멘트는 항상 있다"고 가정하면 안 됩니다.
-- **웹앱은 홈(`/`)과 상세(`/e/$id`) 두 화면이 동작합니다.** TanStack Start + SSG로
-  `npm run build` 시 **19페이지**(홈 1 + 상세 18)가 프리렌더됩니다. 상세는 홈이 링크하는 것만
-  크롤됩니다 — 링크되지 않은 id는 프리렌더되지 않고 404입니다(스펙 10-5).
-  빌드 시간은 **19페이지에 약 1.3초**이고, Task 0의 1페이지(약 1.0초) 대비
-  **페이지당 증분은 약 0.017초**입니다. 페이지 수는 빌드 시간의 지배 항이 아닙니다.
+  Plan 1 시절 산출 데이터(`data/events/2026-W33.json`(314건) 등)는 이후 일일 배치가 계속
+  덮어썼습니다 — 아래 "산출 데이터"가 현재 값이고, 이 문단의 최초 수치는 낡았습니다.
+- **배치는 매일 돕니다 — "한 번도 실행된 적이 없다"는 서술은 낡았습니다.**
+  `.github/workflows/batch.yml`이 매일 KST 06:00 cron으로 배치를 돌리고,
+  `github-actions[bot]`이 `data/`를 커밋한 이력이 **8건**입니다(가장 최근 2026-08-29,
+  `git log --author=github-actions -- data/`로 2026-09-01 재확인 가능). Actions Secrets는
+  이미 등록돼 정상 작동 중입니다.
+- **커밋된 `data/`는 이제 규칙 기반(`rule`)입니다 — "로컬 Ollama로 만들었다"는 서술은 낡았습니다.**
+  `data/meta.json`의 `llmProvider`가 **`"rule"`**입니다(2026-09-01 실측). 이 문서가 예고했던
+  "Actions 이관 = provider 전환"이 이미 일어났다는 뜻입니다. `curated`의 `reason`은 빈
+  문자열이고, "코멘트는 한국어로 달려 있다"고 가정하면 안 됩니다.
+- **산출 데이터(2026-09-01 실측)**: `data/meta.json` — `weekKey` **`2026-W35`**,
+  행사 **272**건 · 장소 **733**건, `anomalies` 3건, `unmappedCategories` 0건.
+  탐색용 슬림 인덱스 `data/index.json` **975항목**(행사 242 + 장소 733,
+  455KB raw / 60.7KB gzip)과 상세 SSG 전용 전체 필드 `data/catalog.json`
+  **242항목**(184KB raw / 34.0KB gzip)이 새로 커밋돼 있습니다. 로컬에 API 키가 없어
+  8주 전체가 아니라 커밋된 주간 파일 + `places.json`만으로 만든 축소판이라 미래 시작
+  행사가 0건입니다 — 진짜 8주 데이터는 일일 Actions 배치가 채웁니다.
+- **웹앱은 세 화면이 동작합니다: 홈(`/`)·탐색(`/browse`)·상세(`/e/$id`).** TanStack Start + SSG로
+  `npm run build` 시 **977페이지**(상세 975 + `/browse` 1 + 홈 1, `find dist/client -name
+  index.html | wc -l`로 셀 것 — 프리렌더 로그 줄 수는 ANSI 색상 코드 때문에 부풀어 보인다)가
+  프리렌더됩니다. **"상세는 홈이 링크하는 것만 크롤되고 링크 안 된 id는 404"였던 Plan 2
+  시절 서술은 낡았습니다** — 이제 카탈로그 전량이 프리렌더되므로 카탈로그에 있는 id는
+  홈이 링크하든 안 하든 전부 정적 페이지가 있습니다. 카탈로그에도 없는 진짜 존재하지
+  않는 id(예: `/e/sc-nope`)는 여전히 404이지만, 정적 호스팅이라 앱의 `NotFoundComponent`가
+  아니라 정적 서버/호스트 쪽의 기본 404가 뜹니다(커스텀 404.html이 없음, 2026-09-01
+  `python3 -m http.server`로 재확인). 빌드 시간은 **3회 평균 약 10.72초**(2026-09-01 실측:
+  10.78s/10.62s/10.76s)이고, Plan 2의 19페이지 1.3초 대비 **페이지당 증분은 약 0.010초**로
+  Plan 2가 추정한 0.017초보다 낮습니다. 페이지 수는 여전히 빌드 시간의 지배 항이 아닙니다.
 - **빌드 산출은 `dist/`가 아니라 `dist/client/`입니다.** 정적 배포 대상이 그쪽이고,
   프리렌더 HTML·에셋·정적 서버 함수 캐시(`__tsr/staticServerFnCache/`)가 전부 그 아래 있습니다.
   `dist/server/`는 빌드 중간 산출이라 배포하지 않습니다.
   프리렌더 HTML에는 개행이 없어 BSD `grep`이 바이너리로 판단하고 조용히 건너뜁니다 —
   **한글 검색에는 `grep -a`를 쓰세요.**
-- **정적 서버 함수는 입력값별로 캐시됩니다**(Task 11에서 실측 확인).
-  `npx serve dist/client`로 정적 파일만 서빙해도 상세 18개가 각각 자기 데이터를 받습니다.
+- **정적 서버 함수는 입력값별로 캐시됩니다**(Task 11·Task 13에서 실측 확인).
+  `npx serve dist/client`로 정적 파일만 서빙해도 상세 975개가 각각 자기 데이터를 받습니다.
   서버 런타임 없이 동작한다는 뜻이고, 홈의 카드는 `<Link>`(클라이언트 네비게이션) 그대로입니다.
-  근거는 Plan 2의 "확인 결과" 절에 있습니다.
+  근거는 Plan 2와 탐색 모드 계획의 "확인 결과" 절에 있습니다.
+- **API 키는 로컬 파일이 아니라 GitHub Actions Secrets에 있습니다 — "실제 키는
+  `.env.local`에 있다"는 서술은 낡았고 세션을 오도합니다.** 이 레포를 체크아웃한
+  환경에는 `.env.local`이 **없습니다**(2026-09-01 `find . -maxdepth 1 -name ".env*"`
+  확인 — `.env.example`만 있음). 실제 `SEOUL_API_KEY`·`VISITSEOUL_API_KEY`는 GitHub
+  저장소의 **Actions Secrets**에만 등록돼 있고, `.github/workflows/batch.yml`이
+  `secrets.SEOUL_API_KEY` / `secrets.VISITSEOUL_API_KEY`로 주입합니다(`LLM_PROVIDER=rule`도
+  같은 워크플로에 하드코딩). 로컬에서 배치를 돌리려면 `.env.local`을 **직접 만들어
+  채워야** 하고, 이미 채워진 로컬 키가 있다고 가정하고 계획을 세우면 안 됩니다.
 
 문서는 넷입니다:
 
@@ -132,14 +155,16 @@ npm run probe             # API 실측 (Task 0)
 npm run batch             # 배치 실행 → data/*.json
 npm run batch -- 2026-W33 # 특정 주차
 npm run dev               # 웹앱 개발 서버 (localhost:3000)
-npm run build             # 정적 빌드 → dist/client/ (19페이지 프리렌더)
+npm run build             # 정적 빌드 → dist/client/ (977페이지 프리렌더 — 카탈로그 전량)
 npx serve dist/client     # 빌드 결과를 정적 파일로만 서빙해 확인
 ```
 
 환경변수는 `.env.example` 참조. 배치 스크립트는 Node 네이티브
 `--env-file-if-exists`로 `.env`와 `.env.local`을 순서대로 읽으므로 dotenv 패키지가 필요 없고,
 GitHub Actions에서는 둘 다 없어도 주입된 환경변수로 동작합니다.
-실제 키는 `.env.local`에 있습니다(둘 다 `.gitignore`됨).
+**로컬에 키를 채우려면 `.env.local`을 직접 만들어야 합니다** — 이 레포를 새로 체크아웃한
+환경에는 그 파일이 없습니다. 실제로 항상 채워져 있는 키는 GitHub Actions Secrets뿐입니다
+(위 "현재 상태" 참고). 둘 다 `.gitignore`됩니다.
 
 ## 작업 방식
 
