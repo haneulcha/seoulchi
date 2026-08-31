@@ -1,5 +1,6 @@
 const WEEKDAYS = ['일', '월', '화', '수', '목', '금', '토'] as const
 const KST_OFFSET_MS = 9 * 60 * 60 * 1000
+const DAY_MS = 24 * 60 * 60 * 1000
 
 /** 'YYYY-MM-DD'(KST 달력 날짜) → '8/15(토)'. UTC로 만들어 읽으므로 실행 환경 타임존과 무관하다 */
 function formatDay(iso: string): string {
@@ -43,4 +44,34 @@ function formatMonthDay(iso: string): string {
  */
 export function formatWeekRange({ start, end }: { start: string; end: string }): string {
   return `${formatMonthDay(start)} – ${formatMonthDay(end)} 기준`
+}
+
+/** 'YYYY-MM-DD' ± 일수. UTC로 계산하므로 실행 환경 타임존과 무관하다 */
+export function addDays(iso: string, days: number): string {
+  return new Date(Date.parse(`${iso}T00:00:00Z`) + days * DAY_MS).toISOString().slice(0, 10)
+}
+
+/** 'YYYY-MM-DD' → 0=일 … 6=토. closedWeekdays·formatDay와 같은 규약 */
+export function weekdayOf(iso: string): number {
+  const [y, m, d] = iso.split('-').map(Number)
+  return new Date(Date.UTC(y!, m! - 1, d!)).getUTCDay()
+}
+
+/**
+ * 탐색 목록의 상대 날짜(스펙 7장). 절대 날짜보다 '오늘까지'가 앞선다(PRODUCT.md).
+ * - 진행 중: '오늘까지' 또는 'M/D까지'
+ * - 시작 전: 다가오는 주말(토~일)에 딱 맞으면 '토·일', 아니면 'M/D 시작'
+ * '토·일'은 오늘이 월~금일 때만 쓴다 — 주말에 보면 다음 주말과 오독된다.
+ */
+export function relativeDateLabel(startDate: string, endDate: string, today: string): string {
+  if (startDate > today) {
+    const wd = weekdayOf(today)
+    if (wd >= 1 && wd <= 5) {
+      const sat = addDays(today, 6 - wd)
+      if (startDate === sat && endDate === addDays(sat, 1)) return '토·일'
+    }
+    return `${formatMonthDay(startDate)} 시작`
+  }
+  if (endDate === today) return '오늘까지'
+  return `${formatMonthDay(endDate)}까지`
 }
