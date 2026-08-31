@@ -70,7 +70,10 @@ _(Task 9가 #3을, Task 10이 #4를 채운다.)_
 - **#3 — 가정대로 동작. 확정.** `import indexUrl from '../../data/index.json?url'`이 dev·build 양쪽에서 base(`/seoulchi/`)가 붙은 URL을 그대로 돌려준다. 폴백(vite 플러그인 `emitFile`)은 필요 없었다.
   **dev**: `curl http://localhost:3000/seoulchi/src/routes/browse.tsx?tsr-split=component`로 컴파일된 라우트 모듈을 직접 받아 확인 — `import indexUrl from "/seoulchi/data/index.json?import&url"`. 그 URL을 그대로 `curl`하면 200 · `content-type: application/json`으로 원본 인덱스가 온다(파일을 그대로 서빙, 해시 없음).
   **build**: `npm run build` 산출에 해시된 에셋 `dist/client/assets/index-Dn3OpHIg.json`(465.91 kB raw · gzip 60.94 kB, 빌드 로그 실측)이 방출됐고, 클라이언트 번들 `dist/client/assets/browse-D1-x9gXO.js` 안에 리터럴 `` `/seoulchi/assets/index-Dn3OpHIg.json` ``로 인라인돼 있다(`grep -rao` 확인) — base 포함, 별도 처리 불필요.
-- **#4 —** (동작 여부, 폴백 사용 여부)
+- **#4 — 가정대로 동작. 확정, 폴백 불필요.** `validateSearch: browseSearchSchema`를 zod v4(`4.4.3`) 스키마 그대로 넘겼고 타입·런타임 양쪽에서 문제없이 동작했다.
+  **타입**: `npm run typecheck`(`tsc --noEmit`) 통과 — `Route.useSearch()`가 `BrowseSearch`(그룹은 `CategoryGroup | undefined` 등)로 정확히 추론됨. Standard Schema 경유 추론이 깨지지 않았다.
+  **런타임**: dev 브라우저 확인(Playwright) — `?group=공연&free=true` 직접 로드 시 두 필터 모두 눌린 상태로 시작, `?group=없는값`(zod enum 밖의 값) 로드 시 콘솔 에러 없이 조용히 `/seoulchi/browse`(그룹 없음)로 정리됨. `browseSearchSchema`의 `.catch(undefined)`가 라우터 경계에서 그대로 작동해 화면이 깨지지 않았다.
+  폴백(`validateSearch: (search) => browseSearchSchema.parse(search)`)은 쓰지 않았다.
 
 ## 실측 데이터 (이 계획의 숫자는 전부 여기서 나왔다)
 

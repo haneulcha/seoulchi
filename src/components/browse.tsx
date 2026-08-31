@@ -1,7 +1,11 @@
-import { Link } from '@tanstack/react-router'
+import { Link, useNavigate } from '@tanstack/react-router'
+import type { ReactNode } from 'react'
 import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
-import { formatDistance, type TimelineGroup } from '~/lib/browse-filter'
+import {
+  FILTER_LABELS, formatDistance, type RelaxSuggestion, type TimelineGroup,
+} from '~/lib/browse-filter'
+import { CHIP_GROUPS, type BrowseSearch } from '~/lib/browse-search'
 import { formatUpdatedAt, relativeDateLabel } from '~/lib/dates'
 import type {
   CatalogEventIndexItem, CatalogIndexFile, CatalogPlaceIndexItem,
@@ -168,6 +172,105 @@ export function StaleCatalog({ index }: { index: CatalogIndexFile }) {
         이 카탈로그는 {index.horizonEnd}까지를 담고 있고 오늘은 그 뒤입니다.
       </p>
       <p className="mt-1 text-xs text-warning-text">{formatUpdatedAt(index.generatedAt)}</p>
+    </div>
+  )
+}
+
+function Chip({
+  active, onClick, disabled = false, children,
+}: { active: boolean; onClick: () => void; disabled?: boolean; children: ReactNode }) {
+  return (
+    <button
+      type="button" onClick={onClick} disabled={disabled} aria-pressed={active}
+      className={`shrink-0 rounded-full px-3 py-1.5 text-sm ${
+        active ? 'bg-ink font-medium text-surface' : 'border border-neutral-border text-ink-muted'
+      } ${disabled ? 'opacity-40' : ''}`}
+    >
+      {children}
+    </button>
+  )
+}
+
+/**
+ * 필터 컨트롤(스펙 7장 스케치). 칩 한 줄(가로 스크롤, 단일 선택) + 토글 줄 + 자치구 셀렉트.
+ * 모든 변경이 navigate(push)라 뒤로가기가 필터를 되돌린다 — 그게 URL에 두는 이유다.
+ * '기타' 13건은 칩에서 뺀다 — 칩 한 자리 값을 못 한다. 숨기는 게 아니라 '전체'에 있다.
+ * 자치구 24개는 칩이 안 되므로 셀렉트다.
+ */
+export function BrowseControls({
+  search, districts, nearDisabledReason,
+}: { search: BrowseSearch; districts: string[]; nearDisabledReason?: string }) {
+  const navigate = useNavigate()
+  const patch = (p: Partial<BrowseSearch>) =>
+    void navigate({ to: '/browse', search: { ...search, ...p } })
+
+  return (
+    <div className="mt-4 space-y-2">
+      <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="카테고리">
+        <Chip active={search.group === undefined} onClick={() => patch({ group: undefined })}>전체</Chip>
+        {CHIP_GROUPS.map((g) => (
+          <Chip key={g} active={search.group === g}
+            onClick={() => patch({ group: search.group === g ? undefined : g })}>
+            {g}
+          </Chip>
+        ))}
+      </div>
+      <div className="flex flex-wrap items-center gap-2" role="group" aria-label="정렬과 필터">
+        <Chip active={search.near === true} disabled={nearDisabledReason !== undefined}
+          onClick={() => patch({ near: search.near ? undefined : true })}>
+          ⊙ 가까운 순
+        </Chip>
+        <Chip active={search.free === true}
+          onClick={() => patch({ free: search.free ? undefined : true })}>
+          무료만
+        </Chip>
+        <Chip active={search.open === true}
+          onClick={() => patch({ open: search.open ? undefined : true })}>
+          지금 열림
+        </Chip>
+        <select
+          value={search.district ?? ''}
+          onChange={(e) => patch({ district: e.target.value === '' ? undefined : e.target.value })}
+          aria-label="자치구"
+          className="rounded-full border border-neutral-border bg-surface px-3 py-1.5 text-sm text-ink-muted"
+        >
+          <option value="">자치구 전체</option>
+          {districts.map((d) => (
+            <option key={d} value={d}>{d}</option>
+          ))}
+        </select>
+      </div>
+      {nearDisabledReason !== undefined && (
+        <p className="text-sm text-warning-text">{nearDisabledReason}</p>
+      )}
+    </div>
+  )
+}
+
+/**
+ * 0건의 응답(스펙 8장): 막다른 길 대신 어떤 필터를 풀면 몇 건이 나오는지.
+ * 제안이 Link라 누르면 그 필터가 풀리고, 뒤로가기로 되돌아온다.
+ */
+export function EmptyResult({
+  suggestions, search,
+}: { suggestions: RelaxSuggestion[]; search: BrowseSearch }) {
+  return (
+    <div className="mt-12 py-8 text-center">
+      <p className="font-medium">조건에 맞는 게 없습니다</p>
+      {suggestions.length > 0 ? (
+        <ul className="mt-4 space-y-2 text-sm">
+          {suggestions.map((s) => (
+            <li key={s.filter}>
+              <Link to="/browse" search={{ ...search, [s.filter]: undefined }}
+                className="text-ink-muted underline">
+                '{FILTER_LABELS[s.filter]}'을(를) 풀면 {s.count}건
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="mt-2 text-sm text-ink-subtle">모든 필터를 풀어도 결과가 없습니다</p>
+      )}
     </div>
   )
 }
