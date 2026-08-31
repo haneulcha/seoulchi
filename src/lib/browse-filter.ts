@@ -85,12 +85,23 @@ export function groupByTimeline(
     cursor = addDays(end, 1)
   }
 
+  // groups가 비면 아래 폴백(groups[groups.length - 1])이 undefined가 되고,
+  // 예전 코드의 `g?.items.push(e)`처럼 옵셔널 체이닝이 모든 행사를 조용히
+  // 삼킨다 — horizonEnd < today(인덱스가 8주 넘게 묵음)일 때 재현된다.
+  // 조용한 0건은 스펙 8장·PRODUCT.md 위반이므로 여기서 계약 위반을 던진다.
+  if (groups.length === 0) {
+    throw new Error(
+      `시간 축 그룹을 만들 수 없습니다: horizonEnd(${horizonEnd})가 today(${today})보다 앞섭니다 — 인덱스가 8주 넘게 묵었습니다`,
+    )
+  }
+
   for (const e of events) {
     const eff = maxStr(e.startDate, today)
-    // selectCatalog가 [today, horizonEnd] 밖을 이미 걸렀으므로 항상 찾는다.
-    // 못 찾으면 데이터가 계약을 어긴 것 — 조용히 버리지 않도록 마지막 그룹에 넣는다
-    const g = groups.find((g) => g.start <= eff && eff <= g.end) ?? groups[groups.length - 1]
-    g?.items.push(e)
+    // selectCatalog가 [today, horizonEnd] 밖을 이미 걸렀으므로 보통은 찾는다.
+    // 못 찾으면(경계 오차 등) 데이터를 버리지 않고 마지막 그룹에 넣는다 —
+    // 위에서 groups가 비지 않음을 보장했으므로 g는 항상 존재한다.
+    const g = groups.find((g) => g.start <= eff && eff <= g.end) ?? groups[groups.length - 1]!
+    g.items.push(e)
   }
 
   // 그룹 안 정렬: 유효 시작일 → 종료일(마감 임박순) → id. 홈 pickHomeItems와 같은 결정론

@@ -131,6 +131,15 @@ describe('groupByTimeline', () => {
     expect(total).toBe(1)
   })
 
+  it('horizonEnd < today면 던진다 — 인덱스가 8주 넘게 묵으면 groups가 비어 조용한 0건이 된다(행사 없음)', () => {
+    expect(() => groupByTimeline([], '2026-09-01', '2026-08-01')).toThrow(/8주/)
+  })
+
+  it('horizonEnd < today면 던진다 — 행사가 있어도 계약 위반은 입력 개수와 무관하다', () => {
+    const events = [evIdx('sc-a', { startDate: '2026-07-01', endDate: '2026-07-31' })]
+    expect(() => groupByTimeline(events, '2026-09-01', '2026-08-01')).toThrow(/8주/)
+  })
+
   it('그룹 안은 유효 시작일 → 종료일 → id 순 — 홈과 같은 결정론', () => {
     const events = [
       evIdx('sc-b', { startDate: '2026-08-01', endDate: '2026-09-20' }),
