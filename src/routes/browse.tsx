@@ -77,7 +77,13 @@ function Browse() {
     }
   }, [attempt])
 
-  /** 위치는 near가 켜졌을 때만 묻는다 — 안 쓰는 권한을 미리 조르지 않는다 */
+  /**
+   * 위치는 near가 켜졌을 때만 묻는다 — 안 쓰는 권한을 미리 조르지 않는다.
+   * cancelled 가드는 위 카탈로그 fetch effect와 같은 패턴: near를 켰다가 응답 전에
+   * 끄면 effect가 재실행되고 geo가 idle로 리셋되는데, 그 뒤에 도착하는 늦은 콜백이
+   * (거부하지 않았는데도) geo를 denied/ok로 덮어써서는 안 된다 — 화면이 사실이 아닌
+   * 걸 말하게 된다(PRODUCT.md).
+   */
   useEffect(() => {
     if (search.near !== true) {
       setGeo({ status: 'idle' })
@@ -87,11 +93,21 @@ function Browse() {
       setGeo({ status: 'denied' })
       return
     }
+    let cancelled = false
     setGeo({ status: 'waiting' })
     navigator.geolocation.getCurrentPosition(
-      (pos) => setGeo({ status: 'ok', origin: { lat: pos.coords.latitude, lng: pos.coords.longitude } }),
-      () => setGeo({ status: 'denied' }),
+      (pos) => {
+        if (!cancelled) {
+          setGeo({ status: 'ok', origin: { lat: pos.coords.latitude, lng: pos.coords.longitude } })
+        }
+      },
+      () => {
+        if (!cancelled) setGeo({ status: 'denied' })
+      },
     )
+    return () => {
+      cancelled = true
+    }
   }, [search.near])
 
   return (
@@ -111,7 +127,10 @@ function Browse() {
         search={search}
         districts={state.status === 'ready' ? districtsOf(state.index) : []}
         nearDisabledReason={
-          geo.status === 'denied'
+          // near가 꺼져 있으면 geo.status가 어떤 값이든(레이스로 뒤늦게 denied가
+          // 와도) 사유를 보이지 않는다 — 꺼진 필터에 대한 실패 사유는 존재하지
+          // 않는다. cancelled 가드와 이중 방어: 지우면 안 되는 자리다.
+          search.near === true && geo.status === 'denied'
             ? '위치 권한이 없어 가까운 순을 쓸 수 없습니다 — 자치구로 좁혀 보세요'
             : undefined
         }
