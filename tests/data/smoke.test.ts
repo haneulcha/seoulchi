@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { loadCurated, loadMeta, loadPlaces, loadWeek } from '~/data/load'
+import { loadCatalog, loadCurated, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
 import { pickHomeItems } from '~/lib/home'
 import { kstToday } from '~/lib/week'
@@ -36,5 +36,45 @@ describe('실데이터 스모크: 홈이 요구하는 18개 id가 전부 해석�
 
   it('place 6개 카드가 전부 이미지가 있다 — 배치의 자격 필터(스펙 10-1)가 지켜졌다', () => {
     for (const p of resolved.places) expect(p.imageUrl).toBeTruthy()
+  })
+})
+
+/**
+ * 탐색 카탈로그의 실데이터 무결성. 빌드(전량 프리렌더 + 클라이언트 fetch)가
+ * 기대는 것과 정확히 같은 경로다.
+ */
+describe('실데이터 스모크: 탐색 카탈로그', () => {
+  const index = loadIndex()
+  const catalog = loadCatalog()
+  const placesFile = loadPlaces()
+
+  it('인덱스의 행사 id가 전부 catalog.json에서 해석된다 — 상세 SSG의 전제', () => {
+    const ids = new Set(catalog.items.map((i) => i.id))
+    for (const item of index.items) {
+      if (item.kind === 'event') expect(ids.has(item.id), item.id).toBe(true)
+    }
+  })
+
+  it('인덱스의 장소 id가 전부 places.json에서 해석된다', () => {
+    const ids = new Set(placesFile.items.map((i) => i.id))
+    for (const item of index.items) {
+      if (item.kind === 'place') expect(ids.has(item.id), item.id).toBe(true)
+    }
+  })
+
+  it('horizonEnd가 인덱스와 카탈로그에서 일치한다', () => {
+    expect(index.horizonEnd).toBe(catalog.horizonEnd)
+  })
+
+  it('(0,0) 좌표가 없다 — 좌표 없으면 생략 규칙의 실데이터 검증', () => {
+    for (const item of index.items) {
+      if (item.lat !== undefined) expect(item.lat, item.id).not.toBe(0)
+    }
+  })
+
+  it('meta에 anomalies·unmappedCategories가 기록돼 있다', () => {
+    const meta = loadMeta()
+    expect(meta.anomalies).toBeTypeOf('number')
+    expect(Array.isArray(meta.unmappedCategories)).toBe(true)
   })
 })

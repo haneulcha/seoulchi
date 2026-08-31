@@ -9,5 +9,7 @@
   "counts": {
     "events": 272,
     "places": 733
-  }
+  },
+  "anomalies": 3,
+  "unmappedCategories": []
 }

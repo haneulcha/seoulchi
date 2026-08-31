@@ -1,8 +1,10 @@
 import type { LlmProvider } from '~/llm/types'
+import { unmappedCategories } from '~/lib/category'
 import { curate } from '~/pipeline/curate'
 import type { EmitPayload } from '~/pipeline/emit'
 import { mergeItems } from '~/pipeline/merge'
 import { pickPlaces } from '~/pipeline/pick-places'
+import { selectCatalog } from '~/pipeline/select-catalog'
 import { selectCandidates } from '~/pipeline/score'
 import { weekLabel, weekRange } from '~/lib/week'
 import type { DetailCache, EventSource } from '~/sources/types'
@@ -46,14 +48,27 @@ export async function runPipeline(opts: RunOptions): Promise<EmitPayload> {
   const merged = mergeItems(groups)
   console.log(`병합 후 ${merged.length}건 (중복 ${groups.flat().length - merged.length}건 제거)`)
 
+  const allEvents = merged.filter((i): i is EventItem => i.kind === 'event')
+  const places = merged.filter((i): i is PlaceItem => i.kind === 'place')
+
+  // 카탈로그는 주간 창과 무관한 8주 지평이다 — 주간 필터보다 먼저 골라야
+  // 미래 시작 행사가 살아 있다(주간 파일의 미래 행사는 0건 — 스펙 3장 실측)
+  const catalog = selectCatalog(allEvents, places, today)
+  for (const a of catalog.anomalies) {
+    // stderr — 실패를 숨기지 않는다. 건수는 emit이 meta.anomalies로 남긴다
+    console.error(`[카탈로그] endDate 이상치 제외: ${a.id} (${a.endDate})`)
+  }
+  const unmapped = unmappedCategories([...catalog.events, ...catalog.places])
+  if (unmapped.length > 0) {
+    console.error(`[카탈로그] 미매핑 카테고리 ${unmapped.length}건 → '기타'로 노출: ${unmapped.join(', ')}`)
+  }
+  console.log(`카탈로그 ${catalog.events.length}건 (오늘~${catalog.horizonEnd}) / 이상치 ${catalog.anomalies.length}건`)
+
   // 과거 컷오프: 유효 시작일은 max(주 시작일, 오늘).
   // 주 시작일만 쓰면 월요일에 끝난 행사가 목요일 화면에 남는다.
   const { start, end } = weekRange(weekKey)
   const from = today > start ? today : start
-  const events = merged.filter(
-    (i): i is EventItem => i.kind === 'event' && i.startDate <= end && i.endDate >= from,
-  )
-  const places = merged.filter((i): i is PlaceItem => i.kind === 'place')
+  const events = allEvents.filter((e) => e.startDate <= end && e.endDate >= from)
   console.log(`이번 주 이벤트 ${events.length}건 (${from}~${end}) / 장소 ${places.length}건`)
 
   const candidates = selectCandidates(events, weekKey, today, candidateCount)
@@ -74,5 +89,7 @@ export async function runPipeline(opts: RunOptions): Promise<EmitPayload> {
     providerName,
     cache,
     sourceCounts,
+    catalog,
+    unmappedCategories: unmapped,
   }
 }

@@ -91,3 +91,58 @@ describe('runPipeline', () => {
     expect((await runPipeline(opts)).providerName).toBe('rule')
   })
 })
+
+/** 주간 창(W33) 밖이지만 8주 지평(today 08-13 기준 ~10-08) 안의 미래 행사 */
+const futureEvent: Item = {
+  id: 'sc-미래', source: 'seoul-culture', kind: 'event', title: '가을 축제',
+  category: '축제-문화/예술', place: '어딘가', startDate: '2026-09-20', endDate: '2026-09-22',
+}
+
+/** 원본 오타 — endDate가 3년 뒤를 넘는다 */
+const farFuture: Item = {
+  id: 'sc-이상치', source: 'seoul-culture', kind: 'event', title: '오타 행사',
+  category: '전시/미술', place: '어딘가', startDate: '2026-08-10', endDate: '2626-08-08',
+}
+
+describe('runPipeline: 탐색 카탈로그', () => {
+  // 기존 describe 안의 opts는 스코프 밖이라 여기서 따로 만든다 (같은 값)
+  const catalogOpts = {
+    sources: [
+      fakeSource('seoul-culture', [scEvent, outOfWeek, endedEarlyThisWeek, futureEvent, farFuture]),
+      fakeSource('visit-seoul', [vsPlace]),
+    ],
+    provider: new RuleOnlyProvider(),
+    weekKey: '2026-W33',
+    today: '2026-08-13',
+    cache: {},
+    curatedCount: 12,
+    placeCount: 6,
+  }
+
+  it('카탈로그는 주간 창 밖의 미래 행사를 담는다 — 주간 events에는 없다', async () => {
+    const out = await runPipeline(catalogOpts)
+    expect(out.catalog.events.map((e) => e.id)).toContain('sc-미래')
+    expect(out.events.map((e) => e.id)).not.toContain('sc-미래')
+  })
+
+  it('이미 끝난 행사는 카탈로그에도 없다', async () => {
+    const out = await runPipeline(catalogOpts)
+    expect(out.catalog.events.map((e) => e.id)).not.toContain('sc-old')
+  })
+
+  it('endDate 이상치는 카탈로그에서 빠지고 anomalies에 남는다', async () => {
+    const out = await runPipeline(catalogOpts)
+    expect(out.catalog.events.map((e) => e.id)).not.toContain('sc-이상치')
+    expect(out.catalog.anomalies).toEqual([{ id: 'sc-이상치', endDate: '2626-08-08' }])
+  })
+
+  it("미매핑 카테고리를 수집한다 — 픽스처의 '전시'는 원시값이 아니다('전시/미술'이 원시값)", async () => {
+    const out = await runPipeline(catalogOpts)
+    expect(out.unmappedCategories).toEqual(['전시'])
+  })
+
+  it('카탈로그의 장소는 places와 같다', async () => {
+    const out = await runPipeline(catalogOpts)
+    expect(out.catalog.places).toEqual(out.places)
+  })
+})

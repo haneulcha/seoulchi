@@ -1,10 +1,14 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import {
+  catalogEventsSchema,
+  catalogIndexSchema,
   curatedFileSchema,
   metaSchema,
   placesFileSchema,
   weeklyEventsSchema,
+  type CatalogEventsFile,
+  type CatalogIndexFile,
   type CuratedFile,
   type MetaFile,
   type PlacesFile,
@@ -36,4 +40,12 @@ export function loadPlaces(dataDir = 'data'): PlacesFile {
 
 export function loadCurated(weekKey: string, dataDir = 'data'): CuratedFile {
   return curatedFileSchema.parse(readJson(dataDir, 'curated', `${weekKey}.json`))
+}
+
+export function loadCatalog(dataDir = 'data'): CatalogEventsFile {
+  return catalogEventsSchema.parse(readJson(dataDir, 'catalog.json'))
+}
+
+export function loadIndex(dataDir = 'data'): CatalogIndexFile {
+  return catalogIndexSchema.parse(readJson(dataDir, 'index.json'))
 }
