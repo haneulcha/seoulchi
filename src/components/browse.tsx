@@ -177,14 +177,14 @@ export function StaleCatalog({ index }: { index: CatalogIndexFile }) {
 }
 
 function Chip({
-  active, onClick, disabled = false, children,
-}: { active: boolean; onClick: () => void; disabled?: boolean; children: ReactNode }) {
+  active, onClick, children,
+}: { active: boolean; onClick: () => void; children: ReactNode }) {
   return (
     <button
-      type="button" onClick={onClick} disabled={disabled} aria-pressed={active}
+      type="button" onClick={onClick} aria-pressed={active}
       className={`shrink-0 rounded-full px-3 py-1.5 text-sm ${
         active ? 'bg-ink font-medium text-surface' : 'border border-neutral-border text-ink-muted'
-      } ${disabled ? 'opacity-40' : ''}`}
+      }`}
     >
       {children}
     </button>
@@ -236,7 +236,14 @@ export function BrowseControls({
         ))}
       </div>
       <div className="flex flex-wrap items-center gap-2" role="group" aria-label="정렬과 필터">
-        <Chip active={shown.near === true} disabled={nearDisabledReason !== undefined}
+        {/*
+          권한 거부(nearDisabledReason)면 active를 false로 그린다 — 목록은
+          실제로 거리순이 아니므로(geo.status === 'ok'가 아님) 칩이 그 사실을
+          정직하게 반영해야 한다(차단 3). disabled는 쓰지 않는다: 꺼진 채로
+          그려지면 다시 켜서 재시도할 수 있어야 하고, 이미 꺼져 보이니 끌
+          필요도 없다 — disabled였다면 눌러도 아무 반응이 없어 위 둘 다 막힌다.
+        */}
+        <Chip active={shown.near === true && nearDisabledReason === undefined}
           onClick={() => patch({ near: search.near ? undefined : true })}>
           ⊙ 가까운 순
         </Chip>
