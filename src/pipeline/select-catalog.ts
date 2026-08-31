@@ -52,7 +52,7 @@ export function selectCatalog(
 const SEOUL_DISTRICTS = [
   '강남구', '강동구', '강북구', '강서구', '관악구', '광진구', '구로구', '금천구',
   '노원구', '도봉구', '동대문구', '동작구', '마포구', '서대문구', '서초구', '성동구',
-  '성북구', '송파구', '양천구', '영등포구', '용산구', '은평구', '종로구', '중랑구', '중구',
+  '성북구', '송파구', '양천구', '영등포구', '용산구', '은평구', '종로구', '중구', '중랑구',
 ] as const
 
 const DISTRICT_RE = new RegExp(SEOUL_DISTRICTS.join('|'))
@@ -64,7 +64,7 @@ const DISTRICT_RE = new RegExp(SEOUL_DISTRICTS.join('|'))
  * 실패 시 undefined — 좌표 규칙과 같은 태도(없으면 필드 생략).
  */
 export function districtFromAddress(address?: string): string | undefined {
-  return address ? (DISTRICT_RE.exec(address)?.[0] ?? undefined) : undefined
+  return address ? DISTRICT_RE.exec(address)?.[0] : undefined
 }
 
 /**
@@ -73,15 +73,19 @@ export function districtFromAddress(address?: string): string | undefined {
  * 좌표는 쌍으로만 담는다: 한쪽만 있는 좌표는 좌표가 아니다.
  */
 export function buildCatalogIndex(sel: CatalogSelection, generatedAt: string): CatalogIndexFile {
-  const events = sel.events.map((e): CatalogIndexItem => ({
-    id: e.id, kind: 'event', title: e.title, group: categoryGroup(e.category),
-    ...(e.district !== undefined && { district: e.district }),
-    place: e.place,
-    ...(e.lat !== undefined && e.lng !== undefined && { lat: e.lat, lng: e.lng }),
-    ...(e.isFree !== undefined && { isFree: e.isFree }),
-    ...(e.imageUrl !== undefined && { imageUrl: e.imageUrl }),
-    startDate: e.startDate, endDate: e.endDate,
-  }))
+  const events = sel.events.map((e): CatalogIndexItem => {
+    // 행사도 장소와 같은 모양으로 파생한다 — 원본 district가 비면 address에서 뽑는다
+    const district = e.district ?? districtFromAddress(e.address)
+    return {
+      id: e.id, kind: 'event', title: e.title, group: categoryGroup(e.category),
+      ...(district !== undefined && { district }),
+      place: e.place,
+      ...(e.lat !== undefined && e.lng !== undefined && { lat: e.lat, lng: e.lng }),
+      ...(e.isFree !== undefined && { isFree: e.isFree }),
+      ...(e.imageUrl !== undefined && { imageUrl: e.imageUrl }),
+      startDate: e.startDate, endDate: e.endDate,
+    }
+  })
 
   const places = sel.places.map((p): CatalogIndexItem => {
     // 장소 원본에는 district가 없다(0/733). 주소에서 파생한다 — 원본은 건드리지 않는다

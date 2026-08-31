@@ -155,4 +155,12 @@ describe('buildCatalogIndex', () => {
     const [item] = build([], [noAddr]).items
     expect(item).not.toHaveProperty('district')
   })
+
+  it('행사도 주소에서 자치구를 파생한다', () => {
+    // fullEvent()는 이미 district: '중구'를 갖고 있어 이 경로를 안 태운다 —
+    // district가 없는 별도 픽스처로 파생 경로 자체를 확인한다(차단 1 회귀)
+    const noDistrict: EventItem = { ...fullEvent(), district: undefined, address: '서울 성동구 뚝섬로 273' }
+    const [item] = build([noDistrict], []).items
+    expect(item).toHaveProperty('district', '성동구')
+  })
 })
