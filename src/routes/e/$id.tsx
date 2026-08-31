@@ -5,15 +5,15 @@ import type { ReactNode } from 'react'
 import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
 import { PAGE } from '~/components/page'
-import { loadMeta, loadPlaces, loadWeek } from '~/data/load'
+import { loadCatalog, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { formatDateRange } from '~/lib/dates'
 import { kstToday } from '~/lib/week'
 import type { Item } from '~/types/item'
 
 /**
  * 정적 서버 함수 — 빌드 타임에 실행되고 결과가 정적 JSON으로 캐시된다.
- * 프리렌더 범위(19페이지)는 홈이 링크하는 id에서 결정되고, 여기는 id를 찾을 뿐이다.
- * 링크되지 않은 id는 애초에 페이지가 생성되지 않아 404다(스펙 10-5).
+ * 프리렌더 범위는 카탈로그 전량(vite.config.ts의 명시 목록)이고, 여기는 id를 찾을 뿐이다.
+ * 인덱스에 없는 id는 애초에 페이지가 생성되지 않아 404다.
  *
  * `.validator`는 설치된 @tanstack/start-client-core 기준 이름이다.
  * `.inputValidator`도 같은 함수를 가리키지만 타입 정의에 @deprecated가 붙어 있다.
@@ -24,9 +24,18 @@ const getDetail = createServerFn({ method: 'GET' })
   .handler(({ data: id }): { item: Item; today: string } | null => {
     const meta = loadMeta() // 현재 주차는 meta.weekKey — isoWeekKey(new Date()) 금지
     const week = loadWeek(meta.weekKey)
+    const catalog = loadCatalog()
     const places = loadPlaces()
+    /**
+     * 조회 사슬: 주간 → 카탈로그 → 장소.
+     * 주간이 먼저인 이유: endDate 이상치(예: 2626-08-08)는 주간 파일에는 있지만
+     * 카탈로그에서는 제외돼 있다 — 홈이 링크하는 id는 전부 여기서 해석돼야 한다.
+     * 카탈로그가 있어야 미래 시작 행사(주간 파일에 0건)의 상세가 성립한다.
+     */
     const item: Item | undefined =
-      week.items.find((i) => i.id === id) ?? places.items.find((i) => i.id === id)
+      week.items.find((i) => i.id === id) ??
+      catalog.items.find((i) => i.id === id) ??
+      places.items.find((i) => i.id === id)
     if (!item) return null
     return { item, today: kstToday(new Date()) } // 오늘 = 빌드 시각의 KST 날짜
   })
