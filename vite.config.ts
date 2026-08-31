@@ -37,7 +37,9 @@ function catalogPagePaths(): Array<{ path: string }> {
   }
 }
 
-const catalogPages = catalogPagePaths()
+// /browse는 아직 어디서도 링크하지 않는다(헤더 세그먼트는 Task 11) — crawlLinks가
+// 못 줍는 라우트라 명시 목록에 직접 추가한다. 앞에 두는 이유는 없다(순서 무관, 같은 큐).
+const pages = [{ path: '/browse' }, ...catalogPagePaths()]
 
 // GitHub Pages 프로젝트 사이트는 https://<user>.github.io/seoulchi/ 아래에 얹힌다.
 // 이 값이 없으면 에셋 URL이 전부 /로 시작해 404가 난다. router.tsx의 basepath와 짝이다.
@@ -86,10 +88,10 @@ export default defineConfig({
     staticFnBasePath(),
     tailwindcss(),
     tanstackStart({
-      pages: catalogPages,
+      pages,
       prerender: {
         enabled: true,
-        // 명시 목록(catalogPages)과 병행되는 두 번째 시드. 홈이 링크하지만 인덱스에는
+        // 명시 목록(pages)과 병행되는 두 번째 시드. 홈이 링크하지만 인덱스에는
         // 없는 id(이상치·필터링된 curated)를 여기서 잡는다 — 링크가 전혀 없는 id는
         // 여전히 크롤되지 않으므로 자동으로 404다
         crawlLinks: true,

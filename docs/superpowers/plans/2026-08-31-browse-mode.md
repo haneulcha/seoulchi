@@ -67,7 +67,9 @@ _(Task 9가 #3을, Task 10이 #4를 채운다.)_
   `grep -a -c '기간' dist/client/e/sc-1ez0sn8/index.html` → **1**. `getDetail`이 해당 id를 해석해 상세 본문(기간 라벨)을 렌더했음을 확인.
   Step 4 원복: `vite.config.ts`에서 임시 추가한 `pages` 줄 제거 → `git diff --stat vite.config.ts` 빈 출력 확인 → `npm run build` 재실행, 19페이지로 복귀(Plan 2와 동일 수·구성) 확인.
 
-- **#3 —** (에셋 파일명, dev/build 각각의 URL)
+- **#3 — 가정대로 동작. 확정.** `import indexUrl from '../../data/index.json?url'`이 dev·build 양쪽에서 base(`/seoulchi/`)가 붙은 URL을 그대로 돌려준다. 폴백(vite 플러그인 `emitFile`)은 필요 없었다.
+  **dev**: `curl http://localhost:3000/seoulchi/src/routes/browse.tsx?tsr-split=component`로 컴파일된 라우트 모듈을 직접 받아 확인 — `import indexUrl from "/seoulchi/data/index.json?import&url"`. 그 URL을 그대로 `curl`하면 200 · `content-type: application/json`으로 원본 인덱스가 온다(파일을 그대로 서빙, 해시 없음).
+  **build**: `npm run build` 산출에 해시된 에셋 `dist/client/assets/index-Dn3OpHIg.json`(465.91 kB raw · gzip 60.94 kB, 빌드 로그 실측)이 방출됐고, 클라이언트 번들 `dist/client/assets/browse-D1-x9gXO.js` 안에 리터럴 `` `/seoulchi/assets/index-Dn3OpHIg.json` ``로 인라인돼 있다(`grep -rao` 확인) — base 포함, 별도 처리 불필요.
 - **#4 —** (동작 여부, 폴백 사용 여부)
 
 ## 실측 데이터 (이 계획의 숫자는 전부 여기서 나왔다)
