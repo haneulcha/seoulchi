@@ -81,7 +81,7 @@ function NotFound() {
     <main className={`${PAGE} py-16 text-center`}>
       {/* 루트 헤더가 shell의 h1을 갖는다 — 이건 그 안의 콘텐츠라 h2다. h1로 되돌리지 말 것 */}
       <h2 className="text-xl font-bold">없는 페이지입니다</h2>
-      <a href="/" className="mt-6 inline-block underline">홈으로</a>
+      <Link to="/" className="mt-6 inline-block underline">홈으로</Link>
     </main>
   )
 }
