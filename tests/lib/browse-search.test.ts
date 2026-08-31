@@ -3,7 +3,9 @@ import { browseSearchSchema, CHIP_GROUPS, toBrowseFilters } from '~/lib/browse-s
 
 describe('browseSearchSchema', () => {
   it('유효한 조합을 그대로 통과시킨다 (왕복)', () => {
-    const search = { group: '공연' as const, district: '마포구', free: true as const, near: true as const }
+    const search = {
+      group: '공연' as const, district: '마포구', free: true as const, open: true as const, near: true as const,
+    }
     expect(browseSearchSchema.parse(search)).toEqual(search)
   })
 

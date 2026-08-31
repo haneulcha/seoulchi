@@ -49,6 +49,8 @@ describe('실데이터 스모크: 탐색 카탈로그', () => {
   const placesFile = loadPlaces()
 
   it('인덱스의 행사 id가 전부 catalog.json에서 해석된다 — 상세 SSG의 전제', () => {
+    // 인덱스가 비어 있으면 아래 루프가 공허하게 통과한다 — 먼저 행사가 실제로 있는지 확인한다
+    expect(index.items.filter((i) => i.kind === 'event').length).toBeGreaterThan(0)
     const ids = new Set(catalog.items.map((i) => i.id))
     for (const item of index.items) {
       if (item.kind === 'event') expect(ids.has(item.id), item.id).toBe(true)
