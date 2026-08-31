@@ -1,5 +1,5 @@
 import { Link, useNavigate } from '@tanstack/react-router'
-import type { ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
 import {
@@ -204,32 +204,52 @@ export function BrowseControls({
   const patch = (p: Partial<BrowseSearch>) =>
     void navigate({ to: '/browse', search: { ...search, ...p } })
 
+  /**
+   * 정적 프리렌더는 쿼리스트링을 모른 채 /browse를 찍어 칩·셀렉트를 "필터
+   * 없음" 모양으로 굳힌다. 방문자가 ?group=... 을 달고 그 정적 HTML을 직접
+   * 열면(새로고침·북마크·공유 링크), 클라이언트의 search는 첫 렌더부터 이미
+   * 옳지만(목록 필터링은 이 값으로 정확히 됨) — React 하이드레이션은 이
+   * 불일치를 "속성 하나하나 패치"가 아니라 "서버 DOM을 그대로 두고 내부
+   * 기록만 조용히 정정"으로 처리한다(실측: fiber.memoizedProps는 이미
+   * 맞는데 실제 DOM 속성은 서버 값에 영원히 묶임 — 이후 같은 값의 렌더는
+   * "변화 없음"으로 보여 패치를 시도조차 안 한다). OpenNowBadge·ThemeToggle과
+   * 같은 방법으로 피한다: 첫 렌더는 SSR과 똑같이 "필터 없음"으로 그리고,
+   * 마운트 직후(useEffect)에야 진짜 search로 다시 그린다 — 이건 하이드레이션이
+   * 아니라 평범한 클라이언트 리렌더라 React가 정상적으로 DOM을 패치한다
+   * (실측 확인). 필터의 원천은 여전히 search(URL) 하나뿐이다 — patch는 항상
+   * 실제 search를 읽고, shown은 "무엇을 보여줄지"의 타이밍만 한 틱 늦출 뿐
+   * 별도 상태를 만들지 않는다.
+   */
+  const [hydrated, setHydrated] = useState(false)
+  useEffect(() => setHydrated(true), [])
+  const shown: BrowseSearch = hydrated ? search : {}
+
   return (
     <div className="mt-4 space-y-2">
       <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="카테고리">
-        <Chip active={search.group === undefined} onClick={() => patch({ group: undefined })}>전체</Chip>
+        <Chip active={shown.group === undefined} onClick={() => patch({ group: undefined })}>전체</Chip>
         {CHIP_GROUPS.map((g) => (
-          <Chip key={g} active={search.group === g}
+          <Chip key={g} active={shown.group === g}
             onClick={() => patch({ group: search.group === g ? undefined : g })}>
             {g}
           </Chip>
         ))}
       </div>
       <div className="flex flex-wrap items-center gap-2" role="group" aria-label="정렬과 필터">
-        <Chip active={search.near === true} disabled={nearDisabledReason !== undefined}
+        <Chip active={shown.near === true} disabled={nearDisabledReason !== undefined}
           onClick={() => patch({ near: search.near ? undefined : true })}>
           ⊙ 가까운 순
         </Chip>
-        <Chip active={search.free === true}
+        <Chip active={shown.free === true}
           onClick={() => patch({ free: search.free ? undefined : true })}>
           무료만
         </Chip>
-        <Chip active={search.open === true}
+        <Chip active={shown.open === true}
           onClick={() => patch({ open: search.open ? undefined : true })}>
           지금 열림
         </Chip>
         <select
-          value={search.district ?? ''}
+          value={shown.district ?? ''}
           onChange={(e) => patch({ district: e.target.value === '' ? undefined : e.target.value })}
           aria-label="자치구"
           className="rounded-full border border-neutral-border bg-surface px-3 py-1.5 text-sm text-ink-muted"
