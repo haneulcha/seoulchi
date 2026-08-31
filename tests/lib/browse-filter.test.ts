@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
-  applyFilters, formatDistance, groupByTimeline, relaxSuggestions, sortByDistance,
+  applyFilters, formatDistance, groupByTimeline, isCatalogStale, relaxSuggestions, sortByDistance,
 } from '~/lib/browse-filter'
 import type { CatalogEventIndexItem, CatalogIndexItem, CatalogPlaceIndexItem } from '~/types/files'
 
@@ -149,6 +149,20 @@ describe('groupByTimeline', () => {
     ]
     const first = groupByTimeline(events, TODAY, HORIZON)[0]!
     expect(first.items.map((i) => i.id)).toEqual(['sc-임박', 'sc-a', 'sc-b', 'sc-수요일'])
+  })
+})
+
+describe('isCatalogStale', () => {
+  it('horizonEnd < today면 참 — 인덱스가 지평을 지났다', () => {
+    expect(isCatalogStale('2026-08-01', '2026-09-01')).toBe(true)
+  })
+
+  it('horizonEnd === today면 거짓 — 지평 마지막 날은 아직 유효하다', () => {
+    expect(isCatalogStale('2026-09-01', '2026-09-01')).toBe(false)
+  })
+
+  it('horizonEnd > today면 거짓', () => {
+    expect(isCatalogStale('2026-10-26', '2026-09-01')).toBe(false)
   })
 })
 

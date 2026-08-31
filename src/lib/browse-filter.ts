@@ -53,6 +53,15 @@ function endOfMonth(iso: string): string {
 }
 
 /**
+ * 인덱스가 지평을 지났는가 — 8주 넘게 배치가 안 돌았다는 뜻이다.
+ * `groupByTimeline`의 throw 조건과 `/browse`의 "묵은 데이터" 가드가 **같은 술어를 쓴다.**
+ * 둘이 따로 판단하면 조건이 갈라지는 순간 가드를 빠져나간 입력이 throw에 도달한다.
+ */
+export function isCatalogStale(horizonEnd: string, today: string): boolean {
+  return horizonEnd < today
+}
+
+/**
  * 시간 축은 필터가 아니라 목록의 골격이다(스펙 7장).
  * [today, horizonEnd]를 겹침 없이 나눈다: 오늘~금 / 이번 주말 / 다음 주 / 월별.
  * 항목은 유효 시작일 max(startDate, today)가 속한 그룹에 한 번만 놓는다 —
@@ -64,6 +73,14 @@ export function groupByTimeline(
   today: string,
   horizonEnd: string,
 ): TimelineGroup[] {
+  // 원인을 직접 말하는 조건: 지평이 지났으면(horizonEnd < today) 애초에
+  // 그룹을 만들 수 없다 — /browse의 가드(isCatalogStale)와 같은 술어다.
+  if (isCatalogStale(horizonEnd, today)) {
+    throw new Error(
+      `시간 축 그룹을 만들 수 없습니다: horizonEnd(${horizonEnd})가 today(${today})보다 앞섭니다 — 인덱스가 8주 넘게 묵었습니다`,
+    )
+  }
+
   const iso = (weekdayOf(today) + 6) % 7 // 0=월 … 6=일
   const monday = addDays(today, -iso)
   const groups: TimelineGroup[] = []
@@ -85,10 +102,9 @@ export function groupByTimeline(
     cursor = addDays(end, 1)
   }
 
-  // groups가 비면 아래 폴백(groups[groups.length - 1])이 undefined가 되고,
-  // 예전 코드의 `g?.items.push(e)`처럼 옵셔널 체이닝이 모든 행사를 조용히
-  // 삼킨다 — horizonEnd < today(인덱스가 8주 넘게 묵음)일 때 재현된다.
-  // 조용한 0건은 스펙 8장·PRODUCT.md 위반이므로 여기서 계약 위반을 던진다.
+  // 결과 확인(방어적 이중화): isCatalogStale이 false인데도 groups가 비는
+  // 경로가 생기면(로직 변경으로 위 throw가 뚫리면) 여기서도 잡는다 —
+  // 아래 groups[groups.length - 1]! 단언이 항상 정당하려면 이게 필요하다.
   if (groups.length === 0) {
     throw new Error(
       `시간 축 그룹을 만들 수 없습니다: horizonEnd(${horizonEnd})가 today(${today})보다 앞섭니다 — 인덱스가 8주 넘게 묵었습니다`,

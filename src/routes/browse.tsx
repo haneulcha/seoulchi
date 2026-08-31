@@ -5,7 +5,7 @@ import {
   BrowseEventRow, BrowsePlaceRow, CatalogError, CatalogSkeleton, StaleCatalog, TimelineSection,
 } from '~/components/browse'
 import { PAGE } from '~/components/page'
-import { groupByTimeline } from '~/lib/browse-filter'
+import { groupByTimeline, isCatalogStale } from '~/lib/browse-filter'
 import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
 import { kstToday } from '~/lib/week'
 import {
@@ -69,9 +69,10 @@ function Browse() {
       )}
       {state.status === 'ready' &&
         // 2층 방어의 두 번째 층(사용자 룰링) — groupByTimeline(6a7198f)은
-        // horizonEnd < today면 던진다. 그 호출은 BrowseList 안에 있으므로,
-        // BrowseList를 아예 마운트하지 않고 여기서 갈라 막는다.
-        (state.index.horizonEnd < state.today ? (
+        // isCatalogStale이 참이면 던진다. 그 호출은 BrowseList 안에 있으므로,
+        // BrowseList를 아예 마운트하지 않고 여기서 갈라 막는다. groupByTimeline의
+        // throw와 여기 가드가 같은 술어(isCatalogStale)를 쓰므로 둘이 어긋날 수 없다.
+        (isCatalogStale(state.index.horizonEnd, state.today) ? (
           <StaleCatalog index={state.index} />
         ) : (
           <BrowseList
