@@ -74,7 +74,7 @@ function Detail() {
           className="aspect-video w-full rounded-xl object-cover"
         />
         <div className="min-w-0">
-          <h1 className="mt-4 text-2xl font-bold md:mt-0 md:text-3xl">{item.title}</h1>
+          <h2 className="mt-4 text-2xl font-bold md:mt-0 md:text-3xl">{item.title}</h2>
           <p className="mt-1 text-sm text-ink-subtle">
             {item.category}
             {item.district ? ` · ${item.district}` : ''}
