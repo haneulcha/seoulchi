@@ -3100,10 +3100,11 @@
         "청계천"
       ],
       "kind": "place",
-      "useTime": "1,5층 월-일 10:00-19:00\r\n2-4층 화-일 10:00-19:00",
+      "useTime": "화-일 10:00~20:00\r\n*5층 관광안내센터 및 카페 연중무휴",
+      "closedDays": "월요일",
       "hours": {
         "open": "10:00",
-        "close": "19:00",
+        "close": "20:00",
         "closedWeekdays": []
       }
     },
@@ -21827,7 +21828,7 @@
       "lng": 126.990759396185,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=73186&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://gil.seoul.go.kr/index.do",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 4호선 회현역 4번출구, 2.6km",
       "tags": [
         "남산",
@@ -21838,6 +21839,7 @@
         "전망대"
       ],
       "kind": "place",
+      "closedDays": "연중무휴",
       "hours": null
     },
     {

@@ -71965,7 +71965,7 @@
     }
   },
   "KOPitng4e": {
-    "updtDtText": "2025.06.05",
+    "updtDtText": "2026.08.31",
     "detail": {
       "cid": "KOPitng4e",
       "lang_code_id": "ko",
@@ -71981,7 +71981,7 @@
       "post_sj": "하이커 그라운드",
       "sumry": "한류 문화를 즐길 수 있는 복합문화공간",
       "creat_dt_text": "2025.05.28",
-      "updt_dt_text": "2025.06.05",
+      "updt_dt_text": "2026.08.31",
       "tag": [
         "한류문화",
         "K-콘텐츠",
@@ -71995,9 +71995,10 @@
         "cmmn_telno": "02-729-9498",
         "cmmn_hmpg_url": "https://hikr.visitkorea.or.kr/",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "1,5층 월-일 10:00-19:00\r\n2-4층 화-일 10:00-19:00",
+        "cmmn_use_time": "화-일 10:00~20:00\r\n*5층 관광안내센터 및 카페 연중무휴",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
+        "closed_days": "월요일",
         "usage_fee": "입장료 무료 (유료 관람료는 별도 공지)"
       },
       "traffic": {
@@ -72237,7 +72238,7 @@
     }
   },
   "KOPqspquw": {
-    "updtDtText": "2025.05.22",
+    "updtDtText": "2026.08.30",
     "detail": {
       "cid": "KOPqspquw",
       "lang_code_id": "ko",
@@ -72254,7 +72255,7 @@
       "post_sj": "스트라이크존 서울 잠실구장",
       "sumry": "열띤 야구 응원에 이어 야구 체험이 가능한 스크린 야구장 ",
       "creat_dt_text": "2025.05.16",
-      "updt_dt_text": "2025.05.22",
+      "updt_dt_text": "2026.08.30",
       "tag": [
         "야구체험",
         "야구게임",
@@ -103839,7 +103840,7 @@
     }
   },
   "KOP8j6kof": {
-    "updtDtText": "2025.06.05",
+    "updtDtText": "2026.08.31",
     "detail": {
       "cid": "KOP8j6kof",
       "lang_code_id": "ko",
@@ -103855,7 +103856,7 @@
       "post_sj": "뷰티플레이 홍대점",
       "sumry": "한국 화장품과 K-뷰티를 온전히 경험할 수 있는 뷰티체험공간",
       "creat_dt_text": "2025.05.28",
-      "updt_dt_text": "2025.06.05",
+      "updt_dt_text": "2026.08.31",
       "tag": [
         "뷰티플레이",
         "뷰티체험",
@@ -103883,13 +103884,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "3",
         "safe_mng": "ul"
       },
       "post_desc": "뷰티플레이는 보건복지부의 지원을 받아 한국화장품산업연구원 내에 설립된 3층 규모의 뷰티체험공간입니다. 다양한 브랜드 제품이 전시되어 있어 K-뷰티 최신 트렌드와 컨셉을 한번에 파악할 수 있습니다. 또한 일부 브랜드 매장 내에는 팝업 이벤트를 열어 새로운 제품을 체험해 볼 수 있을 뿐만 아니라 할인된 가격으로 제품을 구매할 수 있는 기회도 제공됩니다.일반적으로 비용이 많이 드는 퍼스널 컬러 테스트와 피부 진단도 AI 장비를 통해 5분 정도 빠르고 간편하게 진단받을 수 있습니다."
     }
   },
   "KOPpz1oh8": {
-    "updtDtText": "2025.06.05",
+    "updtDtText": "2026.08.31",
     "detail": {
       "cid": "KOPpz1oh8",
       "lang_code_id": "ko",
@@ -103906,7 +103908,7 @@
       "post_sj": "더봄 : 퍼스널컬러,메이크업 명동",
       "sumry": "나를 재발견하는 퍼스널 컬러 체험",
       "creat_dt_text": "2025.05.28",
-      "updt_dt_text": "2025.06.05",
+      "updt_dt_text": "2026.08.31",
       "tag": [
         "퍼스널컬러",
         " 명동",
@@ -114265,7 +114267,7 @@
     }
   },
   "KOP9jn7zj": {
-    "updtDtText": "2025.06.20",
+    "updtDtText": "2026.08.31",
     "detail": {
       "cid": "KOP9jn7zj",
       "lang_code_id": "ko",
@@ -114281,7 +114283,7 @@
       "post_sj": "남산 둘레길",
       "sumry": "서울의 중심 남산, N서울 타워 중심으로 산책하는 힐링 코스 둘레길",
       "creat_dt_text": "2025.05.22",
-      "updt_dt_text": "2025.06.20",
+      "updt_dt_text": "2026.08.31",
       "tag": [
         "남산",
         "N서울타워",
@@ -114294,8 +114296,9 @@
         "cmmn_telno": "서울둘레길 안내센터 02-779-7902~4",
         "cmmn_hmpg_url": "https://gil.seoul.go.kr/index.do",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),중국어(번체)",
-        "trrsrt_use_chrge": "N",
-        "disabled_facility": []
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "closed_days": "연중무휴"
       },
       "traffic": {
         "adres": "서울 용산구 용산동2가 산 1-3",
