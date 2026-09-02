@@ -69913,7 +69913,7 @@
     }
   },
   "KOPn0qtcb": {
-    "updtDtText": "2026.05.08",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOPn0qtcb",
       "lang_code_id": "ko",
@@ -69931,8 +69931,9 @@
       "post_sj": "리버시티수상스키장",
       "sumry": "한강에서 수상 액티비티를 즐길 수 있는 곳",
       "creat_dt_text": "2025.07.30",
-      "updt_dt_text": "2026.05.08",
+      "updt_dt_text": "2026.09.02",
       "tag": [
+        "수상스키",
         "수상액티비티",
         "한강액티비티",
         "웨이크서핑",
@@ -69940,18 +69941,17 @@
         "패들보드",
         "리버시티수상스키장",
         "한강시민공원",
-        "웨이크보드",
-        "수상스키"
+        "웨이크보드"
       ],
       "extra": {
         "cmmn_telno": "0507-1409-3314",
         "cmmn_hmpg_url": "http://www.hanrivercity.com/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "06:00-20:30",
+        "cmmn_use_time": "06:00-20:00",
         "cmmn_important": "장비대여 가능\r\n속옷, 수건, 세면도구는 준비해주세요.",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
-        "usage_fee": "웨이크서핑 1일 패키지 15만원, 수상스키 2만7000원, 웨이크보드 2만 8000원, 웨이크 서핑 7만원, 카약 & 패들보드 3만5000원, 수상스키 & 스키보드 초보 강습 7만원, 10회 패키지 30만원"
+        "usage_fee": "웨이크서핑 1일 패키지 15만원, 수상스키 3만원, 웨이크보드 3만원, 웨이크 서핑 7만원, 카약 & 패들보드 3만5000원, 수상스키 & 스키보드 초보 강습 8만원, 10회 패키지 33만원"
       },
       "traffic": {
         "adres": "서울 강남구 압구정동 379",
@@ -69969,7 +69969,7 @@
     }
   },
   "KOP2s8isl": {
-    "updtDtText": "2025.08.04",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOP2s8isl",
       "lang_code_id": "ko",
@@ -69987,7 +69987,7 @@
       "post_sj": "잠원 한강공원 수영장",
       "sumry": "여름에만 즐길 수 있는 한강공원 수영장",
       "creat_dt_text": "2025.07.30",
-      "updt_dt_text": "2025.08.04",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "잠원수영장",
         "한강공원수영장",
@@ -70004,6 +70004,7 @@
         "cmmn_important": "- 36개월 미만 영유아 입장 제한\r\n- 돗자리 준비 필수 (선베드 유료 대여 가능)",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
+        "closed_days": "리모델링 공사로 '26~27년까지 운영하지 않습니다.",
         "usage_fee": "- 수영장 어린이(6~12세) 3000원, 청소년(13~18세) 4000원, 성인(19세 이상) 5000원\r\n- 물놀이장 어린이 1000원, 청소년 2000원, 성인 3000원\r\n- 물품 보관함 대여 1회권 3000원, 선베드 10000원"
       },
       "traffic": {
@@ -70022,7 +70023,7 @@
     }
   },
   "KOP3fknzc": {
-    "updtDtText": "2025.08.04",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOP3fknzc",
       "lang_code_id": "ko",
@@ -70040,7 +70041,7 @@
       "post_sj": "BLUE SQUARE 블루스퀘어",
       "sumry": "한국 뮤지컬 팬이라면 꼭 들러야 할 대표 공연장",
       "creat_dt_text": "2025.07.25",
-      "updt_dt_text": "2025.08.04",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "블루스퀘어",
         "뮤지컬",
@@ -70070,13 +70071,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "아티스트에게는 꿈의 무대이자 관객들에게는 특별한 즐거움을 선사하는 공간으로, 1,766석 규모의 뮤지컬 전문 공연장 신한카드홀과 1,379석(스탠딩 2,800석) 규모의 다목적 공연장 SOL트래블홀로 구성된 국내 최대 공연장입니다. 티켓 예매는 인터파크 웹사이트를 통해 간편하게 예약할 수 있습니다. 그 외에도 트렌디한 전시행사 공간 NEMO, 나만의 서재와 카페가 함께 어우러진 고품격 문화공간 북파크 라운지, 탁 트인 남산 전망으로 이국적인 정취를 풍기는 카페 필로스, 공연의 여운을 와인과 함께 곱씹을 수 있는 정통 레스토랑 스테이지B, 오리엔탈 푸드 전문점 솔로스키친도 함께 운영하고 있습니다."
     }
   },
   "KOP67o3xb": {
-    "updtDtText": "2025.11.12",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOP67o3xb",
       "lang_code_id": "ko",
@@ -70094,7 +70096,7 @@
       "post_sj": "서울올림픽주경기장",
       "sumry": "잠실에 위치한 서울종합운동장의 메인 경기장",
       "creat_dt_text": "2025.07.25",
-      "updt_dt_text": "2025.11.12",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "서울올림픽주경기장",
         "서울종합운동장",
@@ -70128,7 +70130,7 @@
     }
   },
   "KOP87afpd": {
-    "updtDtText": "2025.11.11",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOP87afpd",
       "lang_code_id": "ko",
@@ -70145,7 +70147,7 @@
       "post_sj": "청담대교",
       "sumry": "국내 최초 복층교량, 영화 및 애니메이션 속 그 장소",
       "creat_dt_text": "2025.07.25",
-      "updt_dt_text": "2025.11.11",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "청담대교",
         "한강다리",
@@ -70348,7 +70350,7 @@
     }
   },
   "KOPh15wjf": {
-    "updtDtText": "2025.07.24",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOPh15wjf",
       "lang_code_id": "ko",
@@ -70366,7 +70368,7 @@
       "post_sj": "여의나루역 러너스테이션",
       "sumry": "운동 전·후 이용할 수 있는 한강 러너들을 위한 지하철 체육 편의시설",
       "creat_dt_text": "2025.07.18",
-      "updt_dt_text": "2025.07.24",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "러너스테이션",
         "러너스베이스캠프",
@@ -70386,6 +70388,7 @@
         "cmmn_important": "*정기 러닝 클래스 및 이색 프로그램 운영(사전 신청)\r\n*러닝 크루 대상 무료 공간 대관 가능",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
+        "closed_days": "연중무휴",
         "usage_fee": "무료 입장\t\r\n[물품보관함-유료]\r\n-주중(4시간) : 소형(2,200원) 중형(3,300원) 대형(4,400원)\r\n-주말(4시간) : 소형(3,100원) 중형(4,600원) 대형(6,100원)\r\n-추가요금(1시간당) : 소형(+500원) 중형(+800원) 대형(+1,000원)"
       },
       "traffic": {
@@ -71068,7 +71071,7 @@
     }
   },
   "KOPeenv2i": {
-    "updtDtText": "2025.07.15",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOPeenv2i",
       "lang_code_id": "ko",
@@ -71086,14 +71089,14 @@
       "post_sj": "서울백제어린이박물관",
       "sumry": "서울 한강유역의 고대역사와 문화를 전시 및 교육하는 강남권 유일의 어린이박물관",
       "creat_dt_text": "2025.07.08",
-      "updt_dt_text": "2025.07.15",
+      "updt_dt_text": "2026.09.02",
       "tag": [
-        "몽촌토성",
         "올림픽공원",
         "유물전시",
         "서울고대역사",
         "서울백제어린이박물관",
-        "한성백제박물관"
+        "한성백제박물관",
+        "몽촌토성"
       ],
       "extra": {
         "cmmn_telno": "02-2152-5900",
@@ -71104,6 +71107,7 @@
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
           "장애인화장실",
+          "장애인 전용 주차장",
           "접근가능"
         ],
         "closed_days": "매주 월요일 휴관, 1월 1일\r\n*월요일이 휴일인 경우 정상개관",
@@ -103631,7 +103635,7 @@
     }
   },
   "KOPgu3ezw": {
-    "updtDtText": "2026.04.17",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOPgu3ezw",
       "lang_code_id": "ko",
@@ -103648,7 +103652,7 @@
       "post_sj": "강풀 만화 거리 투어",
       "sumry": "  강풀 만화거리 벽화 투어와 만화 캐릭터 그리는 방법 배우는 프로그램",
       "creat_dt_text": "2025.08.05",
-      "updt_dt_text": "2026.04.17",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "웹툰",
         "벽화",
@@ -103662,10 +103666,9 @@
         "강풀"
       ],
       "extra": {
-        "cmmn_telno": "010-7628-9059",
+        "cmmn_telno": "02-3425-6174",
         "cmmn_hmpg_url": "https://en.journeypick.com/reservation/detail.html?product_no=49",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "매주 목요일, 금요일 : 14시, 16시",
         "cmmn_important": "영어와 한국어로 설명하고, 사전 예약시에 일본어도 가능",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
@@ -103687,7 +103690,7 @@
     }
   },
   "KOP0jakmu": {
-    "updtDtText": "2025.07.21",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOP0jakmu",
       "lang_code_id": "ko",
@@ -103705,7 +103708,7 @@
       "post_sj": "파크하비오 워터킹덤 워터파크&찜질스파",
       "sumry": "도심 속에서 즐기는 실내 워터파크와 찜찔방 ",
       "creat_dt_text": "2025.07.11",
-      "updt_dt_text": "2025.07.21",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "워터킹덤하비오",
         "워터파크",
@@ -103735,6 +103738,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "송파 파크하비오 워터킹덤 워터파크&찜질스파는 실내형 워터파크와 사우나, 찜질방으로 구성된 사계절 편안한 휴식을 즐길 수 있는 넓은 규모의 도심 속 복합문화공간입니다. 지중해의 산토리니를 그대로 옮겨 놓은 듯한 이국적 정취의 워터파크와 멀리 나갈 필요 없이, 궃은 날씨에도 상관없이 지친 몸을 따듯하게 덥히고 피로도 풀 수 있는 사우나와 찜질방을 즐겨보세요."
@@ -114117,7 +114121,7 @@
     }
   },
   "KOPda1e2c": {
-    "updtDtText": "2025.08.04",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOPda1e2c",
       "lang_code_id": "ko",
@@ -114135,7 +114139,7 @@
       "post_sj": "수락산 벽운계곡",
       "sumry": "지하철로 갈 수 있는 서울 근교 계곡",
       "creat_dt_text": "2025.07.28",
-      "updt_dt_text": "2025.08.04",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "수락산 벽운계곡",
         "수락산",
@@ -118464,7 +118468,7 @@
     }
   },
   "KOPptkfz1": {
-    "updtDtText": "2026.08.27",
+    "updtDtText": "2026.09.02",
     "detail": {
       "cid": "KOPptkfz1",
       "lang_code_id": "ko",
@@ -118481,7 +118485,7 @@
       "schdul_info_endde": "2026.09.06",
       "place": "DDP 및 잠실 롯데월드몰 잔디광장\t",
       "creat_dt_text": "2026.08.24",
-      "updt_dt_text": "2026.08.27",
+      "updt_dt_text": "2026.09.02",
       "tag": [
         "2027SS서울패션위크",
         "DDP패션쇼",
@@ -118491,17 +118495,17 @@
       ],
       "extra": {
         "cmmn_telno": "02-2133-8789\t",
-        "cmmn_hmpg_url": "02-2133-8789\t",
+        "cmmn_hmpg_url": "https://www.seoulfashionweek.org/",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "10:00~ 20:00(* 프로그램별 상이)\t\r\n",
         "cmmn_important": "일정은 홈페이지에서 확인해주세요\t\r\n",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실",
           "장애인 전용 주차장",
           "접근가능",
           "엘리베이터",
-          "장애인 안내(휠체어 대여 및 기타)"
+          "장애인 안내(휠체어 대여 및 기타)",
+          "장애인화장실"
         ]
       },
       "traffic": {
@@ -118908,6 +118912,108 @@
         "safe_mng": "ul"
       },
       "post_desc": "초안산수국동산은 과거 쓰레기와 불법 경작으로 훼손된 산림을 복원해 조성한 노원구의 대표 생태정원입니다. 약 1만 그루의 다양한 수국이 어우러져 초여름부터 아름다운 꽃길을 감상할 수 있으며, 자연형 계류와 작은 폭포, 생태연못, 물레방아, 순환산책로와 쉼터도 갖추고 있습니다. 낮에는 형형색색의 수국을, 밤에는 경관조명과 어우러진 정원을 즐길 수 있는 도심 속 휴식 명소입니다."
+    }
+  },
+  "KOPex1iie": {
+    "updtDtText": "2026.09.02",
+    "detail": {
+      "cid": "KOPex1iie",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPex1iie,en:ENPex1iie,ja:JPPex1iie,zh-CN:CNPex1iie,zh-TW:TCPex1iie,ru:RUPex1iie,ms:MLPex1iie",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81726&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81727&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81728&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81729&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81730&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "파메서울",
+      "sumry": "복잡한 도심 위, 온전한 여유 속에서 휴식과 대화가 오가는 라운지",
+      "creat_dt_text": "2026.08.25",
+      "updt_dt_text": "2026.09.02",
+      "tag": [
+        "갤러리",
+        "서울전시",
+        "서울갤러리",
+        "용산쇼룸"
+      ],
+      "extra": {
+        "cmmn_telno": "02-565-1300",
+        "cmmn_hmpg_url": "https://www.instagram.com/pharmeseoul/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "평일 10:00-17:00",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "closed_days": "매주 토요일,일요일"
+      },
+      "traffic": {
+        "adres": "서울 용산구 한강로3가 98",
+        "new_zip_code": "04387",
+        "new_adres": "서울 용산구 서빙고로 17 20층",
+        "map_position_x": "126.966566172294",
+        "map_position_y": "37.5269056148241",
+        "subway_info": "지하철 4호선 신용산역 2번출구, 267m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "파메서울은 복잡한 도심 위, 온전한 여유 속에서 휴식과 대화가 오가는 라운지입니다. 선별된 작품을 통해 새로운 시선과 감각을 깨우는 전시 공간이자, 다양한 문화 클래스와 교류가 이루어지는 네트워킹 허브를 구현한 공간입니다. 창밖으로 흐르는 서울의 계절을 배경 삼아 감각이 교차하는 곳, 일상의 소음을 지우고 당신의 감도를 완성하는 가장 여유로운 시간을 느껴보시길 바랍니다."
+    }
+  },
+  "KOPw0625e": {
+    "updtDtText": "2026.09.02",
+    "detail": {
+      "cid": "KOPw0625e",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cq3m6s6",
+      "cate_depth": " 체험관광 > 공예체험",
+      "multi_lang_list": "ko:KOPw0625e,en:ENPw0625e,ja:JPPw0625e,zh-CN:CNPw0625e,zh-TW:TCPw0625e,ru:RUPw0625e,ms:MLPw0625e",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81714&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81715&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81716&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81717&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81718&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81719&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "포터림",
+      "sumry": "도심 속에서 흙을 만지며 무언가를 만드는 즐거움과 여유를 느낄 수 있는 도자기 공방",
+      "creat_dt_text": "2026.08.25",
+      "updt_dt_text": "2026.09.02",
+      "tag": [
+        "도예",
+        "용산공방",
+        "도자기공방",
+        "원데이클래스",
+        "물레체험",
+        "미니달항아리"
+      ],
+      "extra": {
+        "cmmn_telno": "0507-1371-9495",
+        "cmmn_hmpg_url": "https://www.instagram.com/potterim_",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "월~금 10:00-19:00\r\n토 11:00-18:00 / 일 11:00-15:00",
+        "cmmn_important": "원데이클래스 및 정규 수강은 예약제로 운영\r\n(당일 예약은 전화나 문자로 문의주세요.)",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "정규수강 월4회 (150분) 280,000원\r\n미니달항아리 원데이클래스 95,000원\r\n원데이클래스 물레 체험 60,000원\r\n원데이클래스 핸드빌딩 60,000워"
+      },
+      "traffic": {
+        "adres": "서울 용산구 한강로2가 77-2",
+        "new_zip_code": "04382",
+        "new_adres": "서울 용산구 한강대로40길 25 4층 포터림 도자기공방",
+        "map_position_x": "126.970653369124",
+        "map_position_y": "37.5302989726222",
+        "subway_info": "지하철 4호선 신용산역 1번출구, 199m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "도자기 공방 포터림은 도심 속에서 흙을 만지며 무언가를 만드는 즐거움과 여유를 느낄 수 있는 곳으로 원데이클래스와 도예 정규 수강을 운영하고 있습니다. 청자·백자 모던 스타일 그릇 '못'과 '팟팟팟' 토분 자체 브랜드를 운영하고 있으며, 공방 곳곳에 있는 다양한 작품들을 감상할 수 있습니다. 손끝 감각에 집중하는 시간을 포터림에서 여유롭게 느껴보시길 바랍니다."
     }
   }
 }

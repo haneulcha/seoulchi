@@ -1281,6 +1281,38 @@
       }
     },
     {
+      "id": "vs-KOPex1iie",
+      "source": "visit-seoul",
+      "title": "파메서울",
+      "summary": "복잡한 도심 위, 온전한 여유 속에서 휴식과 대화가 오가는 라운지",
+      "category": "전시시설",
+      "place": "파메서울",
+      "address": "서울 용산구 서빙고로 17 20층",
+      "lat": 37.5269056148241,
+      "lng": 126.966566172294,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81726&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.instagram.com/pharmeseoul/",
+      "isFree": false,
+      "subwayInfo": "지하철 4호선 신용산역 2번출구, 267m",
+      "tags": [
+        "갤러리",
+        "서울전시",
+        "서울갤러리",
+        "용산쇼룸"
+      ],
+      "kind": "place",
+      "useTime": "평일 10:00-17:00",
+      "closedDays": "매주 토요일,일요일",
+      "hours": {
+        "open": "10:00",
+        "close": "17:00",
+        "closedWeekdays": [
+          0,
+          6
+        ]
+      }
+    },
+    {
       "id": "vs-KOPfo3uv0",
       "source": "visit-seoul",
       "title": "광나루한강공원 모두의놀이터",
@@ -2692,6 +2724,7 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 압구정역 6번출구, 1.2km",
       "tags": [
+        "수상스키",
         "수상액티비티",
         "한강액티비티",
         "웨이크서핑",
@@ -2699,14 +2732,13 @@
         "패들보드",
         "리버시티수상스키장",
         "한강시민공원",
-        "웨이크보드",
-        "수상스키"
+        "웨이크보드"
       ],
       "kind": "place",
-      "useTime": "06:00-20:30",
+      "useTime": "06:00-20:00",
       "hours": {
         "open": "06:00",
-        "close": "20:30",
+        "close": "20:00",
         "closedWeekdays": []
       }
     },
@@ -2734,6 +2766,7 @@
       ],
       "kind": "place",
       "useTime": "6월 20일 ~ 8월 31일 / 9시 ~ 22시",
+      "closedDays": "리모델링 공사로 '26~27년까지 운영하지 않습니다.",
       "hours": null
     },
     {
@@ -2876,6 +2909,7 @@
       ],
       "kind": "place",
       "useTime": "물품보관함 06:00~24:00",
+      "closedDays": "연중무휴",
       "hours": {
         "open": "06:00",
         "close": "24:00",
@@ -2932,12 +2966,12 @@
       "isFree": true,
       "subwayInfo": "지하철 5호선/9호선 올림픽공원역 3번출구, 1.6km / 8호선 몽촌토성역 1번출구, 1.7km",
       "tags": [
-        "몽촌토성",
         "올림픽공원",
         "유물전시",
         "서울고대역사",
         "서울백제어린이박물관",
-        "한성백제박물관"
+        "한성백제박물관",
+        "몽촌토성"
       ],
       "kind": "place",
       "useTime": "[평일] 9:00 ~ 18:00(자율관람) *17:30 입장마감\r\n[주말 및 공휴일] 9:30 ~ 17:30(사전예약)",
@@ -14692,6 +14726,36 @@
       }
     },
     {
+      "id": "vs-KOPw0625e",
+      "source": "visit-seoul",
+      "title": "포터림",
+      "summary": "도심 속에서 흙을 만지며 무언가를 만드는 즐거움과 여유를 느낄 수 있는 도자기 공방",
+      "category": "공예체험",
+      "place": "포터림",
+      "address": "서울 용산구 한강대로40길 25 4층 포터림 도자기공방",
+      "lat": 37.5302989726222,
+      "lng": 126.970653369124,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81714&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.instagram.com/potterim_",
+      "isFree": false,
+      "subwayInfo": "지하철 4호선 신용산역 1번출구, 199m",
+      "tags": [
+        "도예",
+        "용산공방",
+        "도자기공방",
+        "원데이클래스",
+        "물레체험",
+        "미니달항아리"
+      ],
+      "kind": "place",
+      "useTime": "월~금 10:00-19:00\r\n토 11:00-18:00 / 일 11:00-15:00",
+      "hours": {
+        "open": "10:00",
+        "close": "19:00",
+        "closedWeekdays": []
+      }
+    },
+    {
       "id": "vs-KOPsdmz8m",
       "source": "visit-seoul",
       "title": "한강레져스포츠",
@@ -15619,7 +15683,6 @@
         "강풀"
       ],
       "kind": "place",
-      "useTime": "매주 목요일, 금요일 : 14시, 16시",
       "hours": null
     },
     {

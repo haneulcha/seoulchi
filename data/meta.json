@@ -1,15 +1,17 @@
 {
-  "updatedAt": "2026-09-01T22:54:29.465Z",
+  "updatedAt": "2026-09-02T22:55:43.693Z",
   "llmProvider": "rule",
   "sourceCounts": {
-    "seoul-culture": 19501,
-    "visit-seoul": 2213
+    "seoul-culture": 19492,
+    "visit-seoul": 2215
   },
   "weekKey": "2026-W36",
   "counts": {
-    "events": 298,
-    "places": 733
+    "events": 295,
+    "places": 735
   },
   "anomalies": 3,
-  "unmappedCategories": []
+  "unmappedCategories": [
+    "독주/독창회"
+  ]
 }
