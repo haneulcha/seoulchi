@@ -1,9 +1,40 @@
 import { mkdtemp, readFile, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { afterEach, beforeEach, describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { emit } from '~/pipeline/emit'
 import type { EventItem, PlaceItem } from '~/types/item'
+
+/**
+ * 인덱스↔카탈로그 참조 무결성 검사(emit.ts, "인덱스가 카탈로그에 없는 행사를…")를
+ * 위한 모킹. 이 갈래는 payload만으로는 도달 불가능하다 — index.json과 catalog.json이
+ * 둘 다 같은 payload.catalog.events에서 나오기 때문(emit.ts 주석 참고). 검사 자체는
+ * 살아 있는 코드이므로(미래에 두 투영이 갈라지는 버그를 잡는 게 목적), buildCatalogIndex가
+ * 유령 항목을 하나 더 얹도록 모킹해 갈래를 직접 태운다. phantomEvent 플래그로 이 파일의
+ * 다른 모든 테스트(대부분 실제 buildCatalogIndex 결과에 기대는)는 영향받지 않게 한다.
+ */
+const mockFlags = { phantomEvent: false }
+
+vi.mock('~/pipeline/select-catalog', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('~/pipeline/select-catalog')>()
+  return {
+    ...actual,
+    buildCatalogIndex: (...args: Parameters<typeof actual.buildCatalogIndex>) => {
+      const real = actual.buildCatalogIndex(...args)
+      if (!mockFlags.phantomEvent) return real
+      return {
+        ...real,
+        items: [
+          ...real.items,
+          {
+            id: 'sc-유령', kind: 'event' as const, title: '유령 행사', group: '전시' as const,
+            place: '어딘가', startDate: '2026-08-10', endDate: '2026-08-16',
+          },
+        ],
+      }
+    },
+  }
+})
 
 const event: EventItem = {
   id: 'sc-a', source: 'seoul-culture', kind: 'event', title: '행사',
@@ -33,6 +64,13 @@ const basePayload = {
   providerName: 'ollama',
   cache: {},
   sourceCounts: { 'seoul-culture': 1, 'visit-seoul': 1 },
+  catalog: {
+    events: [event],
+    places: [place],
+    horizonEnd: '2026-10-26',
+    anomalies: [{ id: 'sc-이상', endDate: '2626-08-08' }],
+  },
+  unmappedCategories: ['수수께끼분류'],
 }
 
 async function readJson(path: string) {
@@ -114,6 +152,74 @@ describe('emit', () => {
       emit(bad, { dataDir: dir, now: new Date('2026-08-13T00:00:00Z') }),
     ).rejects.toThrow()
     for (const f of ['events/2026-W33.json', 'places.json', 'curated/2026-W33.json', 'meta.json']) {
+      await expect(readJson(f)).rejects.toThrow()
+    }
+  })
+})
+
+describe('emit: 탐색 카탈로그', () => {
+  const NOW = new Date('2026-08-13T00:00:00Z')
+
+  it('catalog.json에 8주 행사의 전체 필드를 쓴다', async () => {
+    await emit(basePayload, { dataDir: dir, now: NOW })
+    expect(await readJson('catalog.json')).toMatchObject({
+      horizonEnd: '2026-10-26',
+      items: [{ id: 'sc-a', source: 'seoul-culture' }], // source가 있다 = 전체 필드
+    })
+  })
+
+  it('index.json에 슬림 항목을 쓰고 generatedAt은 meta.updatedAt과 같은 now다', async () => {
+    await emit(basePayload, { dataDir: dir, now: NOW })
+    const index = await readJson('index.json')
+    expect(index.generatedAt).toBe('2026-08-13T00:00:00.000Z')
+    expect(index.items).toHaveLength(2) // 행사 1 + 장소 1
+    expect(index.items[0]).not.toHaveProperty('source') // 슬림이다
+  })
+
+  it('meta에 이상치 건수와 미매핑 카테고리를 남긴다 — 실패를 숨기지 않는다', async () => {
+    await emit(basePayload, { dataDir: dir, now: NOW })
+    expect(await readJson('meta.json')).toMatchObject({
+      anomalies: 1,
+      unmappedCategories: ['수수께끼분류'],
+    })
+  })
+
+  it('카탈로그에 스키마 위반이 있으면 어떤 파일도 쓰지 않는다', async () => {
+    const bad = {
+      ...basePayload,
+      catalog: { ...basePayload.catalog, events: [{ ...event, id: 'bad:id' }] as EventItem[] },
+    }
+    await expect(emit(bad, { dataDir: dir, now: NOW })).rejects.toThrow()
+    for (const f of ['events/2026-W33.json', 'places.json', 'catalog.json', 'index.json', 'meta.json']) {
+      await expect(readJson(f)).rejects.toThrow()
+    }
+  })
+
+  it('인덱스가 카탈로그에 없는 행사를 가리키면 던진다 — 두 투영이 갈라지는 미래 버그 방어', async () => {
+    // 실제 selectCatalog/buildCatalogIndex로는 index와 catalogEvents가 항상 같은
+    // payload.catalog.events에서 나와 이 갈래에 정의상 도달할 수 없다(위 모킹 주석 참고).
+    // 유령 이벤트를 index.items에 얹어 검사 코드 자체가 살아 있는지 직접 확인한다.
+    mockFlags.phantomEvent = true
+    try {
+      await expect(emit(basePayload, { dataDir: dir, now: NOW })).rejects.toThrow(/행사/)
+      for (const f of ['events/2026-W33.json', 'places.json', 'catalog.json', 'index.json', 'meta.json']) {
+        await expect(readJson(f)).rejects.toThrow()
+      }
+    } finally {
+      mockFlags.phantomEvent = false
+    }
+  })
+
+  it('인덱스가 존재하지 않는 장소를 가리키면 던진다', async () => {
+    // 이 갈래는 모킹 없이 payload만으로 도달 가능하다: buildCatalogIndex는
+    // payload.catalog.places를 보고, 참조 무결성 검사는 payload.places(최상위)로
+    // 만든 placeIds를 본다 — 서로 다른 필드다.
+    const bad = {
+      ...basePayload,
+      catalog: { ...basePayload.catalog, places: [{ ...place, id: 'vs-유령' }] },
+    }
+    await expect(emit(bad, { dataDir: dir, now: NOW })).rejects.toThrow(/장소/)
+    for (const f of ['events/2026-W33.json', 'places.json', 'catalog.json', 'index.json', 'meta.json']) {
       await expect(readJson(f)).rejects.toThrow()
     }
   })

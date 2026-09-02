@@ -43,7 +43,6 @@ function Home() {
     <main className={`${PAGE} py-6 md:py-10`}>
       <header className="mb-6 md:mb-10">
         <p className="text-sm text-ink-subtle">{data.weekRangeLabel}</p>
-        <h1 className="text-2xl font-bold md:text-3xl">이번 주 서울</h1>
         <p className="mt-1 text-xs text-ink-subtle">{data.updatedLabel}</p>
       </header>
 
@@ -82,7 +81,6 @@ function Home() {
           ))}
         </div>
       </section>
-      {/* "전체 둘러보기 →"는 넣지 않는다 — /explore가 아직 없다 (스펙 10-1) */}
     </main>
   )
 }

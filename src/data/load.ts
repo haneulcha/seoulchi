@@ -1,15 +1,23 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
+// 상대 경로(별칭 '~' 아님): vite.config.ts가 catalogPagePaths() 위해 이 파일을 직접 import한다.
+// vite는 자기 자신의 config 파일을 로드할 때 tsconfig paths/별칭을 풀지 않는다(rolldown에
+// tsconfig:false 하드코딩, bundle·runner 로더 모두 동일 — 실측 확인). static-fn-base.ts가
+// import를 아예 안 갖는 것과 같은 이유다.
 import {
+  catalogEventsSchema,
+  catalogIndexSchema,
   curatedFileSchema,
   metaSchema,
   placesFileSchema,
   weeklyEventsSchema,
+  type CatalogEventsFile,
+  type CatalogIndexFile,
   type CuratedFile,
   type MetaFile,
   type PlacesFile,
   type WeeklyEventsFile,
-} from '~/types/files'
+} from '../types/files'
 
 /**
  * 빌드 타임 전용. 정적 서버 함수 핸들러와 테스트에서만 import할 것.
@@ -36,4 +44,12 @@ export function loadPlaces(dataDir = 'data'): PlacesFile {
 
 export function loadCurated(weekKey: string, dataDir = 'data'): CuratedFile {
   return curatedFileSchema.parse(readJson(dataDir, 'curated', `${weekKey}.json`))
+}
+
+export function loadCatalog(dataDir = 'data'): CatalogEventsFile {
+  return catalogEventsSchema.parse(readJson(dataDir, 'catalog.json'))
+}
+
+export function loadIndex(dataDir = 'data'): CatalogIndexFile {
+  return catalogIndexSchema.parse(readJson(dataDir, 'index.json'))
 }

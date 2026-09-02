@@ -2,7 +2,7 @@ import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
-import { loadCurated, loadMeta, loadPlaces, loadWeek } from '~/data/load'
+import { loadCatalog, loadCurated, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 
 const validEvent = {
   id: 'sc-1',
@@ -49,6 +49,21 @@ describe('data 로더', () => {
       join(dir, 'curated', '2026-W34.json'),
       JSON.stringify({ weekKey: '2026-W34', picks: [{ id: 'sc-1', reason: '' }], places: ['vs-KOP1'] }),
     )
+    await writeFile(
+      join(dir, 'catalog.json'),
+      JSON.stringify({ horizonEnd: '2026-10-26', items: [validEvent] }),
+    )
+    await writeFile(
+      join(dir, 'index.json'),
+      JSON.stringify({
+        generatedAt: '2026-08-31T00:00:00.000Z',
+        horizonEnd: '2026-10-26',
+        items: [{
+          id: 'sc-1', kind: 'event', title: '행사', group: '전시',
+          place: '어딘가', startDate: '2026-08-17', endDate: '2026-08-23',
+        }],
+      }),
+    )
   })
 
   afterEach(async () => {
@@ -82,5 +97,19 @@ describe('data 로더', () => {
 
   it('파일이 없으면 던진다 — 없는 주차를 읽으려는 실수가 빌드에서 드러난다', () => {
     expect(() => loadWeek('2026-W01', dir)).toThrow()
+  })
+
+  it('loadCatalog가 8주 카탈로그를 검증하며 읽는다', () => {
+    expect(loadCatalog(dir).items[0]!.id).toBe('sc-1')
+    expect(loadCatalog(dir).horizonEnd).toBe('2026-10-26')
+  })
+
+  it('loadIndex가 슬림 인덱스를 검증하며 읽는다', () => {
+    expect(loadIndex(dir).items).toHaveLength(1)
+  })
+
+  it('인덱스 스키마가 어긋나면 던진다', async () => {
+    await writeFile(join(dir, 'index.json'), JSON.stringify({ items: [] }))
+    expect(() => loadIndex(dir)).toThrow()
   })
 })
