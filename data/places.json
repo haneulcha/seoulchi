@@ -2363,12 +2363,12 @@
       "isFree": false,
       "subwayInfo": "지하철 1호선 종각역 1번출구, 93m",
       "tags": [
-        "롤파크",
         "e스포츠",
         "롤파크경기장",
         "LCK",
         "롤파크PC방",
-        "롤파크굿즈"
+        "롤파크굿즈",
+        "롤파크"
       ],
       "kind": "place",
       "useTime": "11:00-20:00",
@@ -2569,11 +2569,14 @@
         "마곡 공연장"
       ],
       "kind": "place",
-      "useTime": "매일 10:00-23:00",
+      "useTime": "10:00-23:00",
+      "closedDays": "매주 월요일",
       "hours": {
         "open": "10:00",
         "close": "23:00",
-        "closedWeekdays": []
+        "closedWeekdays": [
+          1
+        ]
       }
     },
     {
@@ -2634,7 +2637,7 @@
       ],
       "kind": "place",
       "useTime": "10:00-19:00",
-      "closedDays": "월요일 휴관",
+      "closedDays": "임시휴관 (2027년 3월 재개관 예정)\r\n월요일 휴관",
       "hours": {
         "open": "10:00",
         "close": "19:00",
@@ -2667,7 +2670,7 @@
       ],
       "kind": "place",
       "useTime": "10:00-19:00",
-      "closedDays": "월요일 휴관",
+      "closedDays": "임시휴관 (2027년 3월 재개관 예정)\r\n월요일 휴관",
       "hours": {
         "open": "10:00",
         "close": "19:00",
@@ -15569,6 +15572,40 @@
       "hours": null
     },
     {
+      "id": "vs-KOP3kiw23",
+      "source": "visit-seoul",
+      "title": "나도 명상 한번 해볼까?",
+      "summary": "아름다운 금선사에서 지도 스님과 함께 하는 명상 제험 프로그램",
+      "category": "산사체험",
+      "place": "나도 명상 한번 해볼까?",
+      "address": "서울 종로구 비봉길 137 (구기동, 금선사)",
+      "lat": 37.6207199441963,
+      "lng": 126.953420987682,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75178&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://geumsunsa.templestay.com",
+      "isFree": false,
+      "subwayInfo": "지하철 3호선 경복궁역 3번 출구",
+      "tags": [
+        "템플스데이",
+        " 명상",
+        " 차담",
+        " 불교",
+        " 체험",
+        "금선사"
+      ],
+      "kind": "place",
+      "useTime": "09:00 ~ 18:00",
+      "closedDays": "월요일, 일요일",
+      "hours": {
+        "open": "09:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          0,
+          1
+        ]
+      }
+    },
+    {
       "id": "vs-KOPe60s5s",
       "source": "visit-seoul",
       "title": "딜리센트 향수&캔들공방",
@@ -15649,9 +15686,9 @@
         "촬영"
       ],
       "kind": "place",
-      "useTime": "매일 10:00 ~ 20:00",
+      "useTime": "매일 12:00 ~ 20:00",
       "hours": {
-        "open": "10:00",
+        "open": "12:00",
         "close": "20:00",
         "closedWeekdays": []
       }

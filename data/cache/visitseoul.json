@@ -223,7 +223,7 @@
     }
   },
   "KOPl5u8ht": {
-    "updtDtText": "2026.08.04",
+    "updtDtText": "2026.09.03",
     "detail": {
       "cid": "KOPl5u8ht",
       "lang_code_id": "ko",
@@ -241,7 +241,7 @@
       "schdul_info_endde": "2026.08.29",
       "place": "의성종합운동장/ 경북 의성군 의성읍 516",
       "creat_dt_text": "2026.07.07",
-      "updt_dt_text": "2026.08.04",
+      "updt_dt_text": "2026.09.03",
       "tag": [
         "의성",
         "  제3회 의성 썸머 뮤직 페스타",
@@ -4312,7 +4312,7 @@
     }
   },
   "KOPwku0fa": {
-    "updtDtText": "2025.06.25",
+    "updtDtText": "2026.09.03",
     "detail": {
       "cid": "KOPwku0fa",
       "lang_code_id": "ko",
@@ -4333,11 +4333,11 @@
       "schdul_info_endde": "2025.10.05",
       "place": "경상북도 안동시",
       "creat_dt_text": "2025.06.13",
-      "updt_dt_text": "2025.06.25",
+      "updt_dt_text": "2026.09.03",
       "tag": [
-        " 탈춤축제",
         "탈춤",
-        " 안동하회마을"
+        " 안동하회마을",
+        "탈춤축제"
       ],
       "extra": {
         "trrsrt_use_chrge": "N",
@@ -67634,7 +67634,7 @@
     }
   },
   "KOPm73wet": {
-    "updtDtText": "2025.10.10",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOPm73wet",
       "lang_code_id": "ko",
@@ -67652,14 +67652,14 @@
       "post_sj": "롤파크",
       "sumry": "e스포츠의 중심 롤파크 경기장",
       "creat_dt_text": "2025.09.23",
-      "updt_dt_text": "2025.10.10",
+      "updt_dt_text": "2026.09.04",
       "tag": [
-        "롤파크",
         "e스포츠",
         "롤파크경기장",
         "LCK",
         "롤파크PC방",
-        "롤파크굿즈"
+        "롤파크굿즈",
+        "롤파크"
       ],
       "extra": {
         "cmmn_telno": "02-2039-9584",
@@ -67668,7 +67668,8 @@
         "cmmn_use_time": "11:00-20:00",
         "cmmn_important": "-  롤파크는 LCK / WCK 정규 리그 일정에 따라 운영되며, 경기가 있는 날에는 경기 종료 시간이 운영 종료 시간입니다.\r\n-  인터파크 티켓에서 예매 가능",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": []
+        "disabled_facility": [],
+        "business_days": "매일"
       },
       "traffic": {
         "adres": "서울 종로구 청진동 70",
@@ -67686,7 +67687,7 @@
     }
   },
   "KOPfpky3x": {
-    "updtDtText": "2025.10.10",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOPfpky3x",
       "lang_code_id": "ko",
@@ -67703,7 +67704,7 @@
       "post_sj": "e스포츠 명예의 전당",
       "sumry": "e스포츠 선수들의 업적을 기념하는 전시관",
       "creat_dt_text": "2025.09.23",
-      "updt_dt_text": "2025.10.10",
+      "updt_dt_text": "2026.09.04",
       "tag": [
         "e스포츠 명예의 전당",
         "전시관",
@@ -67717,7 +67718,7 @@
         "cmmn_hmpg_url": "http://esportshistory.kr",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "11:00-18:00",
-        "cmmn_important": "- 10명 미만은 예약없이 방문하여 관람 가능 (공식 홈페이지에서 단체예약 가능)\r\n- 한국어/영어/중국어 오디오 가이드 제공",
+        "cmmn_important": "- 10명 미만은 예약없이 방문하여 관람 가능 (공식 홈페이지에서 단체예약 가능)\r\n- 한국어/영어/중국어 오디오 가이드 제공\r\n- 주차 가능(유료)",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "closed_days": "매주 월요일"
@@ -67738,7 +67739,7 @@
     }
   },
   "KOP6eo011": {
-    "updtDtText": "2025.10.10",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOP6eo011",
       "lang_code_id": "ko",
@@ -67754,7 +67755,7 @@
       "post_sj": "넷마블게임박물관",
       "sumry": "다양한 게임 체험형 박물관",
       "creat_dt_text": "2025.09.23",
-      "updt_dt_text": "2025.10.10",
+      "updt_dt_text": "2026.09.04",
       "tag": [
         "게임박물관",
         "체험형박물관",
@@ -68136,7 +68137,7 @@
     }
   },
   "KOPn0wsm1": {
-    "updtDtText": "2025.09.12",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOPn0wsm1",
       "lang_code_id": "ko",
@@ -68154,7 +68155,7 @@
       "post_sj": "플랫폼엘 (PLATFORM-L)",
       "sumry": "예술을 만드는 사람과 향유하는 사람 모두를 위해 열려 있는 미술관",
       "creat_dt_text": "2025.09.09",
-      "updt_dt_text": "2025.09.12",
+      "updt_dt_text": "2026.09.04",
       "tag": [
         "리틀엘(LITTLE-L)",
         "서울미술관",
@@ -68167,6 +68168,7 @@
         "cmmn_hmpg_url": "https://platform-l.org/",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "11:00-20:00",
+        "cmmn_important": "추석 연휴 휴무",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "closed_days": "매주 월요일"
@@ -68187,7 +68189,7 @@
     }
   },
   "KOPet80lf": {
-    "updtDtText": "2025.09.12",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOPet80lf",
       "lang_code_id": "ko",
@@ -68205,7 +68207,7 @@
       "post_sj": "페이스갤러리 서울",
       "sumry": "동시대를 대표하는 세계적인 미술 갤러리",
       "creat_dt_text": "2025.09.09",
-      "updt_dt_text": "2025.09.12",
+      "updt_dt_text": "2026.09.04",
       "tag": [
         "페이스갤러리",
         "한강진갤러리",
@@ -68238,7 +68240,7 @@
     }
   },
   "KOP5hau1h": {
-    "updtDtText": "2025.09.12",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOP5hau1h",
       "lang_code_id": "ko",
@@ -68255,7 +68257,7 @@
       "post_sj": "갤러리조선",
       "sumry": "한국의 두 번째로 오래된 화랑인 조선화랑의 정신을 계승한 갤러리",
       "creat_dt_text": "2025.09.09",
-      "updt_dt_text": "2025.09.12",
+      "updt_dt_text": "2026.09.04",
       "tag": [
         "갤러리조선",
         "서울전시",
@@ -68553,7 +68555,7 @@
     }
   },
   "KOPjy51fz": {
-    "updtDtText": "2025.09.08",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOPjy51fz",
       "lang_code_id": "ko",
@@ -68571,7 +68573,7 @@
       "post_sj": "LG아트센터 서울",
       "sumry": "현대 공연예술의 흐름을 소개하며 동시대 아티스트, 관객과 함께 호흡하는 공연장",
       "creat_dt_text": "2025.09.03",
-      "updt_dt_text": "2025.09.08",
+      "updt_dt_text": "2026.09.04",
       "tag": [
         "서울 공연장",
         "복합 문화예술 공간",
@@ -68587,10 +68589,11 @@
         "cmmn_telno": "1661-0017",
         "cmmn_hmpg_url": "https://www.lgart.com/home/ko/main",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "매일 10:00-23:00",
+        "cmmn_use_time": "10:00-23:00",
         "cmmn_important": "주차장이 협소하여, 상시 만차로 대중교통 이용해 주시길 바랍니다.",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": []
+        "disabled_facility": [],
+        "closed_days": "매주 월요일"
       },
       "traffic": {
         "adres": "서울 강서구 마곡동 812",
@@ -69390,7 +69393,7 @@
     }
   },
   "KOPzncurn": {
-    "updtDtText": "2025.08.21",
+    "updtDtText": "2026.09.03",
     "detail": {
       "cid": "KOPzncurn",
       "lang_code_id": "ko",
@@ -69406,7 +69409,7 @@
       "post_sj": "한지가헌 도슨트 프로그램ￜ상설체험프로그램ￜ한지인화소",
       "sumry": "한지가헌 공간 및 전시 설명 도슨프 프로그램과 상설체험프로그램, 한지인화소 체험 ",
       "creat_dt_text": "2025.08.20",
-      "updt_dt_text": "2025.08.21",
+      "updt_dt_text": "2026.09.03",
       "tag": [
         "한국공예디자인문화진흥원",
         "한지",
@@ -69424,7 +69427,7 @@
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
         "business_days": "화요일 - 일요일",
-        "closed_days": "월요일 휴관",
+        "closed_days": "임시휴관 (2027년 3월 재개관 예정)\r\n월요일 휴관",
         "usage_fee": "입장료 무료, 상설체험 및 도슨트 무료"
       },
       "traffic": {
@@ -69443,7 +69446,7 @@
     }
   },
   "KOP6nkrnk": {
-    "updtDtText": "2025.08.21",
+    "updtDtText": "2026.09.03",
     "detail": {
       "cid": "KOP6nkrnk",
       "lang_code_id": "ko",
@@ -69461,7 +69464,7 @@
       "post_sj": "한지가헌",
       "sumry": "국내 한지공방들과 전통종이에 대한 전문적 공간 및 한지문화홍보관",
       "creat_dt_text": "2025.08.20",
-      "updt_dt_text": "2025.08.21",
+      "updt_dt_text": "2026.09.03",
       "tag": [
         "한지가헌",
         "한지문화홍보관",
@@ -69478,7 +69481,7 @@
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "화요일 - 일요일",
-        "closed_days": "월요일 휴관"
+        "closed_days": "임시휴관 (2027년 3월 재개관 예정)\r\n월요일 휴관"
       },
       "traffic": {
         "adres": "서울 종로구 재동 8",
@@ -103422,7 +103425,7 @@
     }
   },
   "KOPerc3q8": {
-    "updtDtText": "2025.10.10",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOPerc3q8",
       "lang_code_id": "ko",
@@ -103439,7 +103442,7 @@
       "post_sj": "나비잠 안마의자 광화문시그니처점",
       "sumry": "24시간 무인 안마의자로 언제나 쉴 수 있는 휴식공간",
       "creat_dt_text": "2025.09.23",
-      "updt_dt_text": "2025.10.10",
+      "updt_dt_text": "2026.09.04",
       "tag": [
         "나비잠안마의자",
         "광화문시그니처점",
@@ -103452,7 +103455,7 @@
         "힐링"
       ],
       "extra": {
-        "cmmn_telno": "0507-1450-0207",
+        "cmmn_telno": "010-2719-3103",
         "cmmn_hmpg_url": "https://www.nabi-jam.com/book",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "24시간 영업 (연중무휴)",
@@ -103476,7 +103479,7 @@
     }
   },
   "KOPe60s5s": {
-    "updtDtText": "2025.09.12",
+    "updtDtText": "2026.09.04",
     "detail": {
       "cid": "KOPe60s5s",
       "lang_code_id": "ko",
@@ -103494,7 +103497,7 @@
       "post_sj": "딜리센트 향수&캔들공방",
       "sumry": "나만의 향수&캔들 만들기 체험",
       "creat_dt_text": "2025.08.22",
-      "updt_dt_text": "2025.09.12",
+      "updt_dt_text": "2026.09.04",
       "tag": [
         "캔들공방",
         "향수공방",
@@ -103509,7 +103512,7 @@
         "cmmn_hmpg_url": "https://www.instagram.com/dillyscent",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "월-금 10:00-22:00 / 일 10:00-16:00",
-        "cmmn_important": "네이버예약을 통해 예약 가능",
+        "cmmn_important": "네이버예약을 통해 예약 가능\r\n주차가능(최초 60분 6,900원/ 추가요부 5분당 500원, 최대24,000원) ",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
       },
@@ -103579,7 +103582,7 @@
     }
   },
   "KOPfj804w": {
-    "updtDtText": "2025.08.21",
+    "updtDtText": "2026.09.03",
     "detail": {
       "cid": "KOPfj804w",
       "lang_code_id": "ko",
@@ -103597,7 +103600,7 @@
       "post_sj": "스튜디오 코스모스",
       "sumry": "지금 이 순간, 가장 아름다운 나를 스튜디오 코스모스에 기록하기",
       "creat_dt_text": "2025.08.20",
-      "updt_dt_text": "2025.08.21",
+      "updt_dt_text": "2026.09.03",
       "tag": [
         "portrait",
         "kbeauty",
@@ -103611,12 +103614,10 @@
         "cmmn_telno": "010-6542-6890",
         "cmmn_hmpg_url": "https://www.studiocosmos.co.kr",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "매일 10:00 ~ 20:00",
+        "cmmn_use_time": "매일 12:00 ~ 20:00",
         "cmmn_important": "영어 소통 가능",
         "trrsrt_use_chrge": "C",
-        "disabled_facility": [
-          "엘리베이터"
-        ],
+        "disabled_facility": [],
         "usage_fee": "­420,000원 (2개 컨셉, 2 hair·makeup sessions)\r\n­550,000원 (3개 컨셉, 3 hair·makeup sessions)"
       },
       "traffic": {
@@ -119014,6 +119015,192 @@
         "safe_mng": "ul"
       },
       "post_desc": "도자기 공방 포터림은 도심 속에서 흙을 만지며 무언가를 만드는 즐거움과 여유를 느낄 수 있는 곳으로 원데이클래스와 도예 정규 수강을 운영하고 있습니다. 청자·백자 모던 스타일 그릇 '못'과 '팟팟팟' 토분 자체 브랜드를 운영하고 있으며, 공방 곳곳에 있는 다양한 작품들을 감상할 수 있습니다. 손끝 감각에 집중하는 시간을 포터림에서 여유롭게 느껴보시길 바랍니다."
+    }
+  },
+  "KOP92ex3j": {
+    "updtDtText": "2026.09.03",
+    "detail": {
+      "cid": "KOP92ex3j",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP92ex3j,en:ENP92ex3j",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82133&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82134&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82135&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82136&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": " 2026 안동국제탈춤페스티벌",
+      "sumry": "중앙선1942안동역, 탈춤공원",
+      "schdul_info_bgnde": "2026.09.24",
+      "schdul_info_endde": "2026.10.04",
+      "place": "경상북도 안동시",
+      "creat_dt_text": "2026.09.03",
+      "updt_dt_text": "2026.09.03",
+      "tag": [
+        "2026"
+      ],
+      "extra": {
+        "cmmn_srvc_24h_at": "N",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "stroller_rent": "N"
+      },
+      "traffic": {
+        "adres": "경북 안동시 운흥동 224",
+        "new_zip_code": "36706",
+        "new_adres": "경북 안동시 경동로 684 (운흥동)",
+        "map_position_x": "128.732933952556",
+        "map_position_y": "36.5627063939235"
+      },
+      "post_desc": "경상북도 안동시에서 1997 년부터 매년 개최되는 대표적인 국제 탈춤 축제로 \"세계를 하나로 만드는 문화의 춤\"을 주제로 5대양 6대주 세계 각 국의 탈과 탈춤을 만날 수 있는 특별한 여행의 장을 마련합니다. “ 탈과 탈춤은 인간의 삶과 꿈, 그리고 희망을 상징하는 인류의 가장 일반적이고도 보편적인 문화입니다. 탈과 탈춤을 통해 모두가 동등하고 신분의 구분이 없는 자유와 평등한 세상을 만들고자 합니다. 또한 다양한 퍼포먼스를 통해 서로가 소통할 수 있는 화합과 대동의 장을 만들어 세계인을 하나로 연결해 주는 축제입니다. 주요 프로그램으로는 국내 · 외 탈춤 공연 및 세계 탈놀이 경연대회 , 탈춤 배우기 , 거리 퍼레이드 등이 있습니다. 행사명 2026 안동국제탈춤 페스 티 벌 기간 2026년 9월 24일(목) ~ 10월 4일(일) 장소 경상북도 안동시 중앙선 1942 안동역 , 원도심, 탈춤공원 일원 홈페이지 안동국제탈춤페스티벌 SNS Instagram"
+    }
+  },
+  "KOPpt87df": {
+    "updtDtText": "2026.09.03",
+    "detail": {
+      "cid": "KOPpt87df",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPpt87df",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82129&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82132&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82131&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82130&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "명량대첩축제",
+      "sumry": "명량대첩축제",
+      "schdul_info_bgnde": "2026.09.11",
+      "schdul_info_endde": "2026.09.13",
+      "place": "전남광주통합특별시 진도군 ",
+      "creat_dt_text": "2026.09.03",
+      "updt_dt_text": "2026.09.03",
+      "tag": [
+        "울돌목",
+        " 2026축제",
+        "명량대첩축제",
+        " 전남축제",
+        " 진도여행",
+        " 해남여행",
+        " 녹진관광지",
+        " 우수영관광지",
+        " 이순신",
+        " 축제추천",
+        " 국내여행",
+        "명량대첩"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "전남광주통합특별시 진도군 군내면 녹진리 1-31",
+        "new_zip_code": "58900",
+        "new_adres": "전남광주통합특별시 진도군 군내면 명량대첩로 11 (녹진리)",
+        "map_position_x": "126.303432739421",
+        "map_position_y": "34.5690469323559"
+      },
+      "post_desc": "불멸의 명량! 호국의 울돌목! 행사명 명량대첩축제 기간 2026년 9월 11일(금) ~ 9월 13일(일) 장소 전남광주통합특별시 진도군 군내면 명량대첩로 11 홈페이지 명량대첩축제 - 2026 진도·해남 이순신 역사축제 | 9.11~9.13 SNS Instagram"
+    }
+  },
+  "KOP3s3hrx": {
+    "updtDtText": "2026.09.03",
+    "detail": {
+      "cid": "KOP3s3hrx",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP3s3hrx,en:ENP3s3hrx",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82125&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82127&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82126&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82128&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82128&fileTy=MEDIA&fileNo=2&thumbTy=M"
+      ],
+      "post_sj": "2026 여수세계섬박람회",
+      "sumry": "2026 여수세계섬박람회",
+      "schdul_info_bgnde": "2026.09.05",
+      "schdul_info_endde": "2026.11.04",
+      "place": "전남광주통합특별시 여수시 ",
+      "creat_dt_text": "2026.09.03",
+      "updt_dt_text": "2026.09.03",
+      "tag": [
+        "2026 여수세계섬박람회",
+        " 여수",
+        " 섬박람회"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "전남광주통합특별시 여수시 돌산읍 우두리 1181",
+        "new_zip_code": "59770",
+        "new_adres": "전남광주통합특별시 여수시 돌산읍 강남해안로 196 (우두리)",
+        "map_position_x": "127.757058148201",
+        "map_position_y": "34.7136293020056"
+      },
+      "post_desc": "행사명 2026 여수세계섬박람회 기간 2026년 9월 5일(토) ~ 11월 4일(수) 장소 여수시 돌산 진모지구, 여수세계박람회장, 개도, 금오도 일원 홈페이지 2026여수세계섬박람회 SNS Instagram"
+    }
+  },
+  "KOP3kiw23": {
+    "updtDtText": "2026.09.04",
+    "detail": {
+      "cid": "KOP3kiw23",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cq9d5v0",
+      "cate_depth": " 체험관광 > 산사체험",
+      "multi_lang_list": "ko:KOP3kiw23,en:ENP3kiw23,ja:JPP3kiw23,zh-CN:CNP3kiw23,zh-TW:TCP3kiw23",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75178&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75179&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75180&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75181&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75182&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75183&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "나도 명상 한번 해볼까?",
+      "sumry": "아름다운 금선사에서 지도 스님과 함께 하는 명상 제험 프로그램",
+      "place": "금선사 ",
+      "creat_dt_text": "2025.08.25",
+      "updt_dt_text": "2026.09.04",
+      "tag": [
+        "템플스데이",
+        " 명상",
+        " 차담",
+        " 불교",
+        " 체험",
+        "금선사"
+      ],
+      "extra": {
+        "cmmn_telno": "02 395-9955",
+        "cmmn_hmpg_url": "https://geumsunsa.templestay.com",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "09:00 ~ 18:00",
+        "cmmn_important": "스님으로부터 영어로 직접 명상지도를 받습니다",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "business_days": "화요일~토요일",
+        "closed_days": "월요일, 일요일",
+        "usage_fee": "20.000원 (재참여시 10.000원)"
+      },
+      "traffic": {
+        "adres": "서울 종로구 구기동 196-2",
+        "new_zip_code": "03000",
+        "new_adres": "서울 종로구 비봉길 137 (구기동, 금선사)",
+        "map_position_x": "126.953420987682",
+        "map_position_y": "37.6207199441963",
+        "subway_info": "지하철 3호선 경복궁역 3번 출구"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "외국인 템플스테이로 유명한 아름다운 금선사에서 지도 스님과 함께 하는 명상 제헝 프로그램입니다 스님과 함께 108배를 하면서 나를 돌아보고, 명상지도와 명상 실습, 차담을 통해 일상의 고민과 서로의 얘기를 나누어 봅니다. 20-30대 현지인들과 함께 서로의 얘 기를 나누며 스님으로부터 불교의 핵심인 명상을 배워볼 수 있습니다,"
     }
   }
 }
