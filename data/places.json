@@ -2104,14 +2104,14 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 경복궁역 3번출구에서 1711번, 1020번 환승 후 예능교회 하차",
       "tags": [
-        "서울아트센터도암",
         "갤러리",
         "미술관",
         "평창동갤러리",
         "평창동미술관",
         "도암갤러리",
         "무료전시",
-        "예술체험"
+        "예술체험",
+        "서울아트센터도암"
       ],
       "kind": "place",
       "useTime": "화-토 10:00-18:00",
@@ -2171,10 +2171,10 @@
         "무장애길"
       ],
       "kind": "place",
-      "useTime": "시민 이용 모니터링 기간 9:00-17:00 임시 개방 (2025년 11월 28일까지) \r\n*이후 전면 개방 예정",
+      "useTime": "24시간 상시 개방",
       "hours": {
-        "open": "09:00",
-        "close": "17:00",
+        "open": "00:00",
+        "close": "24:00",
         "closedWeekdays": []
       }
     },
@@ -2274,7 +2274,7 @@
       "summary": "CJ ENM의 유료방송 채널",
       "category": "기타문화관광지",
       "place": "tvN",
-      "address": "서울 마포구 상암산로 66 (상암동, CJ ENM CENTER)",
+      "address": "서울 마포구 상암산로 66 (상암동, CJ E&M CENTER)",
       "lat": 37.5783960630744,
       "lng": 126.891522106224,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=76230&fileTy=MEDIA&fileNo=2&thumbTy=M",
@@ -15278,11 +15278,11 @@
         "경복궁"
       ],
       "kind": "place",
-      "useTime": "11:00-20:00",
+      "useTime": "11:00-19:00",
       "closedDays": "화요일",
       "hours": {
         "open": "11:00",
-        "close": "20:00",
+        "close": "19:00",
         "closedWeekdays": [
           2
         ]
@@ -15435,7 +15435,6 @@
       "isFree": false,
       "subwayInfo": "지하철 2호선/6호선 합정역 1번/2번출구, 400m",
       "tags": [
-        "여성전용",
         "마사지",
         "스파",
         "목욕탕",
@@ -15445,7 +15444,8 @@
         "서울",
         "홍대",
         "합정",
-        "망원"
+        "망원",
+        "여성전용"
       ],
       "kind": "place",
       "useTime": "07:00-22:00",
@@ -21825,7 +21825,7 @@
       "lng": 126.982158117042,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77247&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://gil.seoul.go.kr/index.do",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 4호선 회현역 4번출구, 1.1km\r\n지하철 1호선/4호선/공항철도/경의중앙선 서울역 10번출구, 1.2km",
       "tags": [
         "남산 하늘숲길",
@@ -21838,7 +21838,12 @@
         "남산N서울타워"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "24시간 상시 개방",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOPda1e2c",
