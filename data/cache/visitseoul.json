@@ -103485,7 +103485,7 @@
     }
   },
   "KOPe60s5s": {
-    "updtDtText": "2026.09.04",
+    "updtDtText": "2026.09.07",
     "detail": {
       "cid": "KOPe60s5s",
       "lang_code_id": "ko",
@@ -103503,10 +103503,10 @@
       "post_sj": "딜리센트 향수&캔들공방",
       "sumry": "나만의 향수&캔들 만들기 체험",
       "creat_dt_text": "2025.08.22",
-      "updt_dt_text": "2026.09.04",
+      "updt_dt_text": "2026.09.07",
       "tag": [
-        "캔들공방",
         "향수공방",
+        "캔들공방",
         "원데이클래스",
         "핸드크림",
         "을지로공방",
@@ -103523,12 +103523,12 @@
         "disabled_facility": []
       },
       "traffic": {
-        "adres": "서울 중구 주교동 17",
-        "new_zip_code": "04546",
-        "new_adres": "서울 중구 청계천로 208-1 301호",
-        "map_position_x": "127.000836391109",
-        "map_position_y": "37.5691490769468",
-        "subway_info": "지하철 2호선/5호선 을지로4가역 4번출구, 335m"
+        "adres": "서울 중구 을지로3가 286-2",
+        "new_zip_code": "04549",
+        "new_adres": "서울시 중구 충무로 54-17 301호\t",
+        "map_position_x": "126.99345834654",
+        "map_position_y": "37.565883329503",
+        "subway_info": "지하철 2/3호선 을지로3가역 7번출구, 121m\t\r\n"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -103538,7 +103538,7 @@
     }
   },
   "KOPil6eky": {
-    "updtDtText": "2026.04.17",
+    "updtDtText": "2026.09.07",
     "detail": {
       "cid": "KOPil6eky",
       "lang_code_id": "ko",
@@ -103555,7 +103555,7 @@
       "post_sj": "레터링주얼리랩",
       "sumry": "한글에서 영감을 받은 독창적인 액세서리 만들기 체험",
       "creat_dt_text": "2025.08.22",
-      "updt_dt_text": "2026.04.17",
+      "updt_dt_text": "2026.09.07",
       "tag": [
         "공방체험",
         "한글 레터링 주얼리 체험",
@@ -103567,10 +103567,11 @@
       "extra": {
         "cmmn_hmpg_url": "https://www.instagram.com/lettering_jewelry_lab/",
         "cmmn_hmpg_lang": "영어",
-        "cmmn_use_time": "매일 오전 10:30 / 오후 2:00 / 오후 5:00\r\n※ 업체 사정으로 인해 이용 시간 혹은 운영일 변경 가능성 있으므로 방문 전 업체로 사전 문의해주세요.",
+        "cmmn_use_time": " 오전 10:30 / 오후 2:00 / 오후 5:00\r\n※ 업체 사정으로 인해 이용 시간 혹은 운영일 변경 가능성 있으므로 방문 전 업체로 사전 문의해주세요.",
         "cmmn_important": "체험 소요시간 1시간 30분~2시간\r\n체험 가능한 최소/최대 인원 : 1명/4명",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": []
+        "disabled_facility": [],
+        "closed_days": "일요일"
       },
       "traffic": {
         "adres": "서울 중구 을지로1가 50-1",
@@ -106895,7 +106896,7 @@
     }
   },
   "KOP018903": {
-    "updtDtText": "2025.09.09",
+    "updtDtText": "2026.09.07",
     "detail": {
       "cid": "KOP018903",
       "lang_code_id": "ko",
@@ -106912,12 +106913,12 @@
       "post_sj": "전통혼례보공방",
       "sumry": "전통 규방 공예의 멋을 직접 체험할 수 있는 공간",
       "creat_dt_text": "2016.08.26",
-      "updt_dt_text": "2025.09.09",
+      "updt_dt_text": "2026.09.07",
       "tag": [
-        "관광지",
         "북촌",
         "전통공예품",
         "전통혼례보공방",
+        "관광지",
         "서울관광",
         "천연염색",
         "북촌한옥마을",
@@ -106933,6 +106934,7 @@
         "cmmn_use_time": "11:00 ~ 17:00 KST\r\n",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
+        "business_days": "화~일",
         "closed_days": "월요일 휴무",
         "usage_fee": "전화문의\r\n"
       },
