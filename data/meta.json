@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-09-07T23:10:14.464Z",
+  "updatedAt": "2026-09-08T23:04:15.487Z",
   "llmProvider": "rule",
   "sourceCounts": {
-    "seoul-culture": 19496,
+    "seoul-culture": 19499,
     "visit-seoul": 2231
   },
   "weekKey": "2026-W37",
   "counts": {
-    "events": 331,
+    "events": 335,
     "places": 736
   },
   "anomalies": 3,
