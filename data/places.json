@@ -2999,7 +2999,7 @@
       "lng": 127.049506212905,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=73708&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://science.seoul.go.kr/RAIM/index.do",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 1호선/4호선 창동역 1번출구, 332m",
       "tags": [
         "서울RAIM",
@@ -7550,9 +7550,8 @@
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=68359&fileTy=MEDIA&fileNo=3&thumbTy=M",
       "linkUrl": "https://www.starfield.co.kr/coexmall/entertainment/library.do",
       "isFree": true,
-      "subwayInfo": "지하철 2호선 삼성역 5번 출구,  319m\r\n지하철 9호선 봉은사역 7번 출구,  328m",
+      "subwayInfo": "지하철 2호선 삼성역 5번 출구,  353m\r\n지하철 9호선 봉은사역 7번 출구,  328m",
       "tags": [
-        "코엑스",
         " 강남",
         "도서관",
         " 문화",
@@ -7561,7 +7560,8 @@
         "별마당",
         "독서",
         " 서울도서관",
-        "삼성동"
+        "삼성동",
+        "코엑스"
       ],
       "kind": "place",
       "useTime": "10:30 ~ 22:00",
@@ -8059,7 +8059,7 @@
       "lng": 126.969772737969,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=23496&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
       "linkUrl": "https://parks.seoul.go.kr/parks/detailView.do?pIdx=1382#target05",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 1호선/ 4호선/ 경의중앙선/ 공항철도 서울역 7번 출구,  148m",
       "tags": [
         "서울여행",
@@ -8076,7 +8076,12 @@
         "야경"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "24시간",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOP023466",
@@ -11086,7 +11091,7 @@
       "lng": 126.91407018463296,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=68370&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "http://www.assembly.go.kr",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 9호선 국회의사당역 1번 출구,  438m",
       "tags": [
         "의원회관",
@@ -11886,7 +11891,7 @@
       "lat": 37.56727675048224,
       "lng": 126.86802808369316,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77038&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/worldcuppark.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300022",
       "isFree": false,
       "subwayInfo": "지하철 6호선 월드컵경기장역 1번 출구에서 맹꽁이전동차 매표소까지  803m\r\n지하철 6호선 월드컵경기장역 1번 출구에서 하늘공원까지  1.9km",
       "tags": [
@@ -11905,9 +11910,9 @@
         "서울억새명소"
       ],
       "kind": "place",
-      "useTime": "※ 매일 05:00~22:00  (월마다 유동적)\r\n(일몰시간 고려해서 매달 통제시간이 달라지므로 홈페이지 확인 필수)",
+      "useTime": "※ 매일 06:00~22:00  (월마다 유동적)\r\n(일몰시간 고려해서 매달 통제시간이 달라지므로 홈페이지 확인 필수)",
       "hours": {
-        "open": "05:00",
+        "open": "06:00",
         "close": "22:00",
         "closedWeekdays": []
       }
@@ -12240,7 +12245,7 @@
       "lat": 37.5805913515,
       "lng": 127.006530034,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=68260&fileTy=MEDIA&fileNo=3&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/naksan.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300011",
       "isFree": true,
       "subwayInfo": "지하철 4호선 혜화역 2번 출구,  491m",
       "tags": [
@@ -12258,10 +12263,10 @@
         "혜화역데이트"
       ],
       "kind": "place",
-      "useTime": "낙산 전시관 09:00 ~ 18:00 (동절기 09:00 ~ 17:00)\r\n※공원은 24시간 개방",
+      "useTime": "낙산 전시관 09:00 ~ 17:00\r\n※공원은 24시간 개방",
       "hours": {
         "open": "09:00",
-        "close": "18:00",
+        "close": "17:00",
         "closedWeekdays": []
       }
     },
@@ -14113,7 +14118,7 @@
         "습지생태원"
       ],
       "kind": "place",
-      "useTime": "서울숲은 24시간 개방합니다.\r\n생태숲 : 05:30~21:30 (생태보전구역)\r\n곤충식물원 : 10:00~17:00 (매주 월 휴관) / 동절기(11~4월) 단축운영 11:00~16:00 (3시30분까지 입장가능, 매주 월 휴관) \r\n나비정원 : 10:00~17:00 (5~10월 운영, 매주 월 휴관)\r\n생태학습장 : 프로그램 운영 시 개장\r\n바닥분수 가동시간 : 5~9월 가동(월요일 정기점검)\r\n                              -5~6월,9월 : 1,2,3,4시, 30분씩 4회\r\n                              -7~8월 : 12,1,2,3,4시, 30분씩 5회\r\n방문자센터 : 연중 무휴, 10:00~18:00\r\n                    휠체어, 유모차, 보행보조차 대여: 최대 2시간 무료대여(※ 신분증 필요)\r\n커뮤니티센터 : 프로그램 및 전시 등의 운영시 개장",
+      "useTime": "서울숲은 24시간 개방합니다.\r\n생태숲 : 05:30~21:30 (생태보전구역)\r\n곤충식물원 : 10:00~17:00 (매주 월 휴관) / 동절기(11~2월) 단축운영 11:00~16:00 (3시30분까지 입장가능, 매주 월 휴관) \r\n나비정원 : 10:00~17:00 (5~10월 운영, 매주 월 휴관)\r\n생태학습장 : 프로그램 운영 시 개장\r\n바닥분수 가동시간 : 5~10월 가동\r\n                              12:00, 13:00, 14:00, 15:00, 16:00, 17:00 / 30분씩 6회 가동              \r\n방문자센터 : 연중 무휴, 09:00~18:00\r\n                    휠체어, 유모차 대여: 최대 2시간 무료대여(※ 신분증 필요)\r\n커뮤니티센터 : 프로그램 및 전시 등의 운영시 개장",
       "closedDays": "연중무휴",
       "hours": {
         "open": "05:30",
@@ -23417,7 +23422,12 @@
         "을지로"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "상시개방",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOP011395",
