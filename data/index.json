@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-16T23:24:52.294Z",
-  "horizonEnd": "2026-11-12",
+  "generatedAt": "2026-09-17T23:16:20.202Z",
+  "horizonEnd": "2026-11-13",
   "items": [
     {
       "id": "sc-1dzuetw",
@@ -101,20 +101,6 @@
       "endDate": "2026-10-25"
     },
     {
-      "id": "sc-15veybs",
-      "kind": "event",
-      "title": "[꿈의숲아트센터] 2026 꿈의숲 시즌콘서트: Fall in Autumn - 심아일랜드",
-      "group": "공연",
-      "district": "강북구",
-      "place": "꿈의숲아트센터 퍼포먼스홀",
-      "lat": 37.6202544613023,
-      "lng": 127.044324732036,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e36a6f0a88c340f0b02344764381e3ff&thumb=Y",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-24"
-    },
-    {
       "id": "sc-1ljatnh",
       "kind": "event",
       "title": "2026 서울뮤직페스티벌",
@@ -125,6 +111,20 @@
       "lng": 126.958036465507,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ed45eecf54544a7d959553083b8733ec&thumb=Y",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24"
+    },
+    {
+      "id": "sc-15veybs",
+      "kind": "event",
+      "title": "[꿈의숲아트센터] 2026 꿈의숲 시즌콘서트: Fall in Autumn - 심아일랜드",
+      "group": "공연",
+      "district": "강북구",
+      "place": "꿈의숲아트센터 퍼포먼스홀",
+      "lat": 37.6202544613023,
+      "lng": 127.044324732036,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e36a6f0a88c340f0b02344764381e3ff&thumb=Y",
       "startDate": "2026-10-24",
       "endDate": "2026-10-24"
     },
@@ -199,6 +199,20 @@
       "endDate": "2026-10-18"
     },
     {
+      "id": "sc-9o09jz",
+      "kind": "event",
+      "title": "[서울시어울림플라자] 어울림 스테이지(Stage) - '나는 코다입니다.'",
+      "group": "공연",
+      "district": "강서구",
+      "place": "서울시 어울림플라자 B동 지하 1층 공연장",
+      "lat": 37.5535154167762,
+      "lng": 126.861449995331,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=f8ffe74a10f9472bba2dc447c1f92510&thumb=Y",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18"
+    },
+    {
       "id": "sc-1klz8em",
       "kind": "event",
       "title": "[도산안창호기념관] 2026 어린이 역사체험",
@@ -227,16 +241,16 @@
       "endDate": "2026-10-18"
     },
     {
-      "id": "sc-ryjkl3",
+      "id": "sc-1ad3az7",
       "kind": "event",
-      "title": "어울림 컬쳐 클래스(Culture Class) - 미술로 보는 창의력의 세계",
-      "group": "체험·배움",
-      "district": "강서구",
-      "place": "서울시 어울림플라자 B동 지하 2층 문화센터",
-      "lat": 37.5535154167762,
-      "lng": 126.861449995331,
+      "title": "2026 하늘소음 그리기대회",
+      "group": "축제",
+      "district": "양천구",
+      "place": "서서울호수공원 문화데크광장",
+      "lat": 37.5273211945791,
+      "lng": 126.830491355042,
       "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c68b2bb336c9456ca3e0729981d29341&thumb=Y",
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fbdf336ea5be4e2da57fd024fe316eb1&thumb=Y",
       "startDate": "2026-10-17",
       "endDate": "2026-10-17"
     },
@@ -255,34 +269,6 @@
       "endDate": "2026-10-17"
     },
     {
-      "id": "sc-1a8fp1u",
-      "kind": "event",
-      "title": "[마포문화재단] 2026 [인디스커버리 : FESTA] TRACK 02",
-      "group": "공연",
-      "district": "마포구",
-      "place": "마포아트센터 아트홀맥",
-      "lat": 37.54987259578174,
-      "lng": 126.9455874749264,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=49e49e5ac957439caa32f2e01e720560&thumb=Y",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17"
-    },
-    {
-      "id": "sc-1ad3az7",
-      "kind": "event",
-      "title": "2026 하늘소음 그리기대회",
-      "group": "축제",
-      "district": "양천구",
-      "place": "서서울호수공원 문화데크광장",
-      "lat": 37.5273211945791,
-      "lng": 126.830491355042,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fbdf336ea5be4e2da57fd024fe316eb1&thumb=Y",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17"
-    },
-    {
       "id": "sc-lb5wgr",
       "kind": "event",
       "title": "[광진문화재단] 2026 생활예술축제 [춤추는광진]",
@@ -293,6 +279,20 @@
       "lng": 127.077746180044,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ce6d5915fe4e47d89823a5f7384f4097&thumb=Y",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17"
+    },
+    {
+      "id": "sc-1a8fp1u",
+      "kind": "event",
+      "title": "[마포문화재단] 2026 [인디스커버리 : FESTA] TRACK 02",
+      "group": "공연",
+      "district": "마포구",
+      "place": "마포아트센터 아트홀맥",
+      "lat": 37.54987259578174,
+      "lng": 126.9455874749264,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=49e49e5ac957439caa32f2e01e720560&thumb=Y",
       "startDate": "2026-10-17",
       "endDate": "2026-10-17"
     },
@@ -465,34 +465,6 @@
       "endDate": "2026-10-11"
     },
     {
-      "id": "sc-127xjsl",
-      "kind": "event",
-      "title": "2026 어슬렁페스티발",
-      "group": "축제",
-      "district": "마포구",
-      "place": "마포구 상수동 카페거리일대 (제비다방~그문화다방)",
-      "lat": 37.54661199536863,
-      "lng": 126.92310495685415,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1cbf284a7063478491dc1fbd2cb77801&thumb=Y",
-      "startDate": "2026-10-10",
-      "endDate": "2026-10-10"
-    },
-    {
-      "id": "sc-ivwsc6",
-      "kind": "event",
-      "title": "[세종문화회관] 2026 대한민국국악관현악축제 [특별공연] 중앙국악관현악단",
-      "group": "공연",
-      "district": "종로구",
-      "place": "세종M씨어터",
-      "lat": 37.57260128068914,
-      "lng": 126.97577534746529,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=deb9adf9f18f42ccace3008bc08ee7aa&thumb=Y",
-      "startDate": "2026-10-10",
-      "endDate": "2026-10-10"
-    },
-    {
       "id": "sc-t4aoay",
       "kind": "event",
       "title": "[중랑문화재단] 2026 중랑용마폭포축제",
@@ -503,20 +475,6 @@
       "lng": 127.089122137473,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6219b0843237431896e39eb784c9bb65&thumb=Y",
-      "startDate": "2026-10-10",
-      "endDate": "2026-10-10"
-    },
-    {
-      "id": "sc-1x8voz3",
-      "kind": "event",
-      "title": "2026 동작 서커스 데이",
-      "group": "축제",
-      "district": "동작구",
-      "place": "노량진 축구장(서울시 동작구 노들로 688)",
-      "lat": 37.51538706519041,
-      "lng": 126.94146976560032,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=bef98439428d4a709ad1f68697bf93f9&thumb=Y",
       "startDate": "2026-10-10",
       "endDate": "2026-10-10"
     },
@@ -535,6 +493,34 @@
       "endDate": "2026-10-10"
     },
     {
+      "id": "sc-ivwsc6",
+      "kind": "event",
+      "title": "[세종문화회관] 2026 대한민국국악관현악축제 [특별공연] 중앙국악관현악단",
+      "group": "공연",
+      "district": "종로구",
+      "place": "세종M씨어터",
+      "lat": 37.57260128068914,
+      "lng": 126.97577534746529,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=deb9adf9f18f42ccace3008bc08ee7aa&thumb=Y",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10"
+    },
+    {
+      "id": "sc-1x8voz3",
+      "kind": "event",
+      "title": "2026 동작 서커스 데이",
+      "group": "축제",
+      "district": "동작구",
+      "place": "노량진 축구장(서울시 동작구 노들로 688)",
+      "lat": 37.51538706519041,
+      "lng": 126.94146976560032,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=bef98439428d4a709ad1f68697bf93f9&thumb=Y",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10"
+    },
+    {
       "id": "sc-1mft9tm",
       "kind": "event",
       "title": "김진세 클래식 기타 독주회 [사적인 플레이리스트]",
@@ -545,6 +531,20 @@
       "lng": 127.014215239186,
       "isFree": false,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1cba367cad0d40f69b301737962f93d5&thumb=Y",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-10"
+    },
+    {
+      "id": "sc-127xjsl",
+      "kind": "event",
+      "title": "2026 어슬렁페스티발",
+      "group": "축제",
+      "district": "마포구",
+      "place": "마포구 상수동 카페거리일대 (제비다방~그문화다방)",
+      "lat": 37.54661199536863,
+      "lng": 126.92310495685415,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1cbf284a7063478491dc1fbd2cb77801&thumb=Y",
       "startDate": "2026-10-10",
       "endDate": "2026-10-10"
     },
@@ -773,20 +773,6 @@
       "endDate": "2026-10-04"
     },
     {
-      "id": "sc-1n3ypu6",
-      "kind": "event",
-      "title": "대목장(大木匠) ― 나무의 숨결을 잇는 사람",
-      "group": "체험·배움",
-      "district": "종로구",
-      "place": "열린송현 녹지광장",
-      "lat": 37.57651039211841,
-      "lng": 126.98157018878199,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4eac0e46428044739d7f332bbd821716&thumb=Y",
-      "startDate": "2026-10-03",
-      "endDate": "2026-10-03"
-    },
-    {
       "id": "sc-1sjct1r",
       "kind": "event",
       "title": "[관악문화재단] 2026 샤로수길 클럽데이",
@@ -825,6 +811,20 @@
       "lng": 127.071439570463,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=593f0f67f16341b3b9f16d54fb2a865e&thumb=Y",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03"
+    },
+    {
+      "id": "sc-1n3ypu6",
+      "kind": "event",
+      "title": "대목장(大木匠) ― 나무의 숨결을 잇는 사람",
+      "group": "체험·배움",
+      "district": "종로구",
+      "place": "열린송현 녹지광장",
+      "lat": 37.57651039211841,
+      "lng": 126.98157018878199,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4eac0e46428044739d7f332bbd821716&thumb=Y",
       "startDate": "2026-10-03",
       "endDate": "2026-10-03"
     },
@@ -885,34 +885,6 @@
       "endDate": "2026-10-11"
     },
     {
-      "id": "sc-7hgk9u",
-      "kind": "event",
-      "title": "벨지안 비어 위켄드 코리아 2026",
-      "group": "축제",
-      "district": "광진구",
-      "place": "커먼그라운드 야외광장 및 중앙팝업",
-      "lat": 37.5410566332301,
-      "lng": 127.065669226745,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4be4539e917743ecb150ef4d8217de11&thumb=Y",
-      "startDate": "2026-10-02",
-      "endDate": "2026-10-05"
-    },
-    {
-      "id": "sc-qus1vw",
-      "kind": "event",
-      "title": "비올리스트 강동엽 보웬 전곡 시리즈 II - The English Rachmaninoff",
-      "group": "공연",
-      "district": "서초구",
-      "place": "예술의전당 리사이틀홀",
-      "lat": 37.4802401962069,
-      "lng": 127.014215239186,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d9d52f1ade2649cea6a87293d165bd38&thumb=Y",
-      "startDate": "2026-10-02",
-      "endDate": "2026-10-02"
-    },
-    {
       "id": "sc-zoszfg",
       "kind": "event",
       "title": "2026 서울시 구립여성합창단 합창 페스티벌",
@@ -937,6 +909,20 @@
       "lng": 126.867088741096,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6b50f1040c0f415f8c7d46d5558eff80&thumb=Y",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02"
+    },
+    {
+      "id": "sc-qus1vw",
+      "kind": "event",
+      "title": "비올리스트 강동엽 보웬 전곡 시리즈 II - The English Rachmaninoff",
+      "group": "공연",
+      "district": "서초구",
+      "place": "예술의전당 리사이틀홀",
+      "lat": 37.4802401962069,
+      "lng": 127.014215239186,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d9d52f1ade2649cea6a87293d165bd38&thumb=Y",
       "startDate": "2026-10-02",
       "endDate": "2026-10-02"
     },
@@ -1011,20 +997,6 @@
       "endDate": "2026-10-22"
     },
     {
-      "id": "sc-1o9dicq",
-      "kind": "event",
-      "title": "2026 인사동 엔틱&아트페어",
-      "group": "축제",
-      "district": "종로구",
-      "place": "인사아트프라자, 안녕인사동 및 인사동 문화지구 전 지역",
-      "lat": 37.5738579749684,
-      "lng": 126.985609522118,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=467396e36da347099415c3b621bab272&thumb=Y",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-04"
-    },
-    {
       "id": "sc-1qc5q9t",
       "kind": "event",
       "title": "2026년 광진구 하반기 야외도서관 [아차산 숲과 쉼]",
@@ -1039,18 +1011,18 @@
       "endDate": "2026-10-04"
     },
     {
-      "id": "sc-qxoip0",
+      "id": "sc-1o9dicq",
       "kind": "event",
-      "title": "[금천문화재단] 2026 공연장상주단체 기획공연 [두아:유월의 눈]",
-      "group": "공연",
-      "district": "금천구",
-      "place": "금천뮤지컬센터",
-      "lat": 37.468777055274,
-      "lng": 126.894474890365,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=62034cda11ad4980b153d529b313106f&thumb=Y",
+      "title": "2026 인사동 엔틱&아트페어",
+      "group": "축제",
+      "district": "종로구",
+      "place": "인사아트프라자, 안녕인사동 및 인사동 문화지구 전 지역",
+      "lat": 37.5738579749684,
+      "lng": 126.985609522118,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=467396e36da347099415c3b621bab272&thumb=Y",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-03"
+      "endDate": "2026-10-04"
     },
     {
       "id": "sc-12spih5",
@@ -1063,6 +1035,20 @@
       "lng": 126.995269636407,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=cb3fed5d689f47709392c9f2a06f41f3&thumb=Y",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-03"
+    },
+    {
+      "id": "sc-qxoip0",
+      "kind": "event",
+      "title": "[금천문화재단] 2026 공연장상주단체 기획공연 [두아:유월의 눈]",
+      "group": "공연",
+      "district": "금천구",
+      "place": "금천뮤지컬센터",
+      "lat": 37.468777055274,
+      "lng": 126.894474890365,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=62034cda11ad4980b153d529b313106f&thumb=Y",
       "startDate": "2026-10-01",
       "endDate": "2026-10-03"
     },
@@ -1135,20 +1121,6 @@
       "endDate": "2026-10-02"
     },
     {
-      "id": "sc-1nshwsf",
-      "kind": "event",
-      "title": "[마포문화재단] M 마티네 [2026 MAC 모닝 콘서트 ＃7]",
-      "group": "공연",
-      "district": "마포구",
-      "place": "마포아트센터 아트홀맥",
-      "lat": 37.54987259578174,
-      "lng": 126.9455874749264,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fa3ffc13a923427b959e4a2e97695728&thumb=Y",
-      "startDate": "2026-09-30",
-      "endDate": "2026-09-30"
-    },
-    {
       "id": "sc-b9neqn",
       "kind": "event",
       "title": "경기시나위 [해금가락을 爲하다]",
@@ -1163,16 +1135,16 @@
       "endDate": "2026-09-30"
     },
     {
-      "id": "sc-hc28yr",
+      "id": "sc-1nshwsf",
       "kind": "event",
-      "title": "[서초문화원] 서초인문학 아카데미 [AI 시대의 인간다움] 김기현 교수",
-      "group": "체험·배움",
-      "district": "서초구",
-      "place": "서초문화예술회관 아트홀",
-      "lat": 37.4818278430879,
-      "lng": 127.035957179608,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c02c0bb4c1954e4aa905cd600b158541&thumb=Y",
+      "title": "[마포문화재단] M 마티네 [2026 MAC 모닝 콘서트 ＃7]",
+      "group": "공연",
+      "district": "마포구",
+      "place": "마포아트센터 아트홀맥",
+      "lat": 37.54987259578174,
+      "lng": 126.9455874749264,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fa3ffc13a923427b959e4a2e97695728&thumb=Y",
       "startDate": "2026-09-30",
       "endDate": "2026-09-30"
     },
@@ -1191,6 +1163,20 @@
       "endDate": "2026-09-30"
     },
     {
+      "id": "sc-hc28yr",
+      "kind": "event",
+      "title": "[서초문화원] 서초인문학 아카데미 [AI 시대의 인간다움] 김기현 교수",
+      "group": "체험·배움",
+      "district": "서초구",
+      "place": "서초문화예술회관 아트홀",
+      "lat": 37.4818278430879,
+      "lng": 127.035957179608,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c02c0bb4c1954e4aa905cd600b158541&thumb=Y",
+      "startDate": "2026-09-30",
+      "endDate": "2026-09-30"
+    },
+    {
       "id": "sc-qyc0ts",
       "kind": "event",
       "title": "[공연봄날X전국무용제] 해외무용단 쇼케이스",
@@ -1201,20 +1187,6 @@
       "lng": 126.927901672834,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e22883bd4fcb4f90b93e025f34b12bd2&thumb=Y",
-      "startDate": "2026-09-29",
-      "endDate": "2026-09-29"
-    },
-    {
-      "id": "sc-1o31wet",
-      "kind": "event",
-      "title": "[서울역사박물관] 2026 학예역량 강화 해외 박물관 전문가 초청 워크숍",
-      "group": "기타",
-      "district": "종로구",
-      "place": "서울역사박물관 야주개홀  (1층)",
-      "lat": 37.570507525011855,
-      "lng": 126.97052372473162,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c9ceb639183d472894e0c51f29349561&thumb=Y",
       "startDate": "2026-09-29",
       "endDate": "2026-09-29"
     },
@@ -1243,6 +1215,20 @@
       "lng": 126.99165409240258,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=237219eae3e44fdba423fad5b5a443bc&thumb=Y",
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29"
+    },
+    {
+      "id": "sc-1o31wet",
+      "kind": "event",
+      "title": "[서울역사박물관] 2026 학예역량 강화 해외 박물관 전문가 초청 워크숍",
+      "group": "기타",
+      "district": "종로구",
+      "place": "서울역사박물관 야주개홀  (1층)",
+      "lat": 37.570507525011855,
+      "lng": 126.97052372473162,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c9ceb639183d472894e0c51f29349561&thumb=Y",
       "startDate": "2026-09-29",
       "endDate": "2026-09-29"
     },
@@ -1289,20 +1275,6 @@
       "endDate": "2026-09-26"
     },
     {
-      "id": "sc-1368pgm",
-      "kind": "event",
-      "title": "[서울역사박물관] 2026년 서울역사박물관 [한가위 한마당 - 오색 한가위]",
-      "group": "축제",
-      "district": "종로구",
-      "place": "서울역사박물관 실내 및 중정",
-      "lat": 37.570507525011855,
-      "lng": 126.97052372473162,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a7015e9ac73c4a46a7083cb3fb4391d6&thumb=Y",
-      "startDate": "2026-09-26",
-      "endDate": "2026-09-26"
-    },
-    {
       "id": "sc-1gy1068",
       "kind": "event",
       "title": "[서울갤러리] 추향저격 라이브 [벌룬티스트 펌프]",
@@ -1313,6 +1285,20 @@
       "lng": 126.977918351844,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ffccf7f8a5c04f4aa6b8e2ad3c8ccc28&thumb=Y",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-26"
+    },
+    {
+      "id": "sc-1368pgm",
+      "kind": "event",
+      "title": "[서울역사박물관] 2026년 서울역사박물관 [한가위 한마당 - 오색 한가위]",
+      "group": "축제",
+      "district": "종로구",
+      "place": "서울역사박물관 실내 및 중정",
+      "lat": 37.570507525011855,
+      "lng": 126.97052372473162,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a7015e9ac73c4a46a7083cb3fb4391d6&thumb=Y",
       "startDate": "2026-09-26",
       "endDate": "2026-09-26"
     },
@@ -1499,16 +1485,16 @@
       "endDate": "2026-09-23"
     },
     {
-      "id": "sc-1emygul",
+      "id": "sc-cg9if9",
       "kind": "event",
-      "title": "[서울디자인창업센터] 서울디자인런 2026 - 투자를 준비해야 할 때는?",
+      "title": "[2기] 서울아트책보고 북클럽 X 은행나무 : 세 번째 시간 『은둔하는 청년들』 / 김서연 마케터",
       "group": "체험·배움",
-      "district": "마포구",
-      "place": "서울디자인창업센터 3층 네트워킹 라운지",
-      "lat": 37.5570869317695,
-      "lng": 126.927412756979,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e7e08ad7dab54070a128f3adaa45b1fd&thumb=Y",
+      "district": "구로구",
+      "place": "서울아트책보고 워크숍룸",
+      "lat": 37.4982125677913,
+      "lng": 126.867088741096,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4810c11c737a4176a832b213405c65bb&thumb=Y",
       "startDate": "2026-09-22",
       "endDate": "2026-09-22"
     },
@@ -1527,18 +1513,32 @@
       "endDate": "2026-09-22"
     },
     {
-      "id": "sc-cg9if9",
+      "id": "sc-1emygul",
       "kind": "event",
-      "title": "[2기] 서울아트책보고 북클럽 X 은행나무 : 세 번째 시간 『은둔하는 청년들』 / 김서연 마케터",
+      "title": "[서울디자인창업센터] 서울디자인런 2026 - 투자를 준비해야 할 때는?",
       "group": "체험·배움",
-      "district": "구로구",
-      "place": "서울아트책보고 워크숍룸",
-      "lat": 37.4982125677913,
-      "lng": 126.867088741096,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4810c11c737a4176a832b213405c65bb&thumb=Y",
+      "district": "마포구",
+      "place": "서울디자인창업센터 3층 네트워킹 라운지",
+      "lat": 37.5570869317695,
+      "lng": 126.927412756979,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e7e08ad7dab54070a128f3adaa45b1fd&thumb=Y",
       "startDate": "2026-09-22",
       "endDate": "2026-09-22"
+    },
+    {
+      "id": "sc-1cwetj7",
+      "kind": "event",
+      "title": "[서울갤러리] 추향저격 라이브 [싱어송라이터 유카]",
+      "group": "공연",
+      "district": "중구",
+      "place": "서울갤러리 지하 1층 공연장",
+      "lat": 37.566370776634,
+      "lng": 126.977918351844,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ae9231c845b646398293faf0634892e7&thumb=Y",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20"
     },
     {
       "id": "sc-cp2oxz",
@@ -1551,62 +1551,6 @@
       "lng": 127.009818464555,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0ebd2a77197a4e9baa3daf85a8f8fc60&thumb=Y",
-      "startDate": "2026-09-20",
-      "endDate": "2026-09-20"
-    },
-    {
-      "id": "sc-1t0q5cg",
-      "kind": "event",
-      "title": "[TEAM 낙원장×김근태기념도서관] 9월 오픈도서관 [당신의 왜]",
-      "group": "체험·배움",
-      "district": "도봉구",
-      "place": "김근태기념도서관 전관",
-      "lat": 37.6876674374375,
-      "lng": 127.044019937677,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b2a350855c254b338e89109646b541b2&thumb=Y",
-      "startDate": "2026-09-20",
-      "endDate": "2026-09-20"
-    },
-    {
-      "id": "sc-13gi2oq",
-      "kind": "event",
-      "title": "2026 다름다움 페스티벌",
-      "group": "축제",
-      "district": "서초구",
-      "place": "반포한강공원 예빛섬 야외무대 일원",
-      "lat": 37.5097694752014,
-      "lng": 126.995269636407,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=574618453e43472ab0c0836521ac8f0d&thumb=Y",
-      "startDate": "2026-09-20",
-      "endDate": "2026-09-20"
-    },
-    {
-      "id": "sc-ni6b1j",
-      "kind": "event",
-      "title": "2026 문래시티팝페스티벌",
-      "group": "축제",
-      "district": "영등포구",
-      "place": "영등포구 도림로 141길 특설무대",
-      "lat": 37.5142589272797,
-      "lng": 126.897682058175,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=91a81e6d005b41e68c912e54aaf3f922&thumb=Y",
-      "startDate": "2026-09-20",
-      "endDate": "2026-09-20"
-    },
-    {
-      "id": "sc-1ei8ct1",
-      "kind": "event",
-      "title": "[서울아트책보고] 이루리북스 『해충 3대 비극』북토크: 해충과 나누는 대화",
-      "group": "체험·배움",
-      "district": "구로구",
-      "place": "서울아트책보고 워크숍룸",
-      "lat": 37.4982125677913,
-      "lng": 126.867088741096,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ffce98d59bda4aef9ea8b01bbf758ba2&thumb=Y",
       "startDate": "2026-09-20",
       "endDate": "2026-09-20"
     },
@@ -1625,16 +1569,30 @@
       "endDate": "2026-09-20"
     },
     {
-      "id": "sc-1fhrlo8",
+      "id": "sc-1t0q5cg",
       "kind": "event",
-      "title": "[2026 조선왕릉 톺아보기] 도심 속 왕릉 예(禮) 산책 - 조선왕릉 골든벨",
+      "title": "[TEAM 낙원장×김근태기념도서관] 9월 오픈도서관 [당신의 왜]",
       "group": "체험·배움",
-      "district": "강남구",
-      "place": "선정릉",
-      "lat": 37.5073677154051,
-      "lng": 127.047165945717,
+      "district": "도봉구",
+      "place": "김근태기념도서관 전관",
+      "lat": 37.6876674374375,
+      "lng": 127.044019937677,
       "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c6b845f0d9ba474c964712759dbfe415&thumb=Y",
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b2a350855c254b338e89109646b541b2&thumb=Y",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-ni6b1j",
+      "kind": "event",
+      "title": "2026 문래시티팝페스티벌",
+      "group": "축제",
+      "district": "영등포구",
+      "place": "영등포구 도림로 141길 특설무대",
+      "lat": 37.5142589272797,
+      "lng": 126.897682058175,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=91a81e6d005b41e68c912e54aaf3f922&thumb=Y",
       "startDate": "2026-09-20",
       "endDate": "2026-09-20"
     },
@@ -1653,16 +1611,44 @@
       "endDate": "2026-09-20"
     },
     {
-      "id": "sc-1cwetj7",
+      "id": "sc-13gi2oq",
       "kind": "event",
-      "title": "[서울갤러리] 추향저격 라이브 [싱어송라이터 유카]",
-      "group": "공연",
-      "district": "중구",
-      "place": "서울갤러리 지하 1층 공연장",
-      "lat": 37.566370776634,
-      "lng": 126.977918351844,
+      "title": "2026 다름다움 페스티벌",
+      "group": "축제",
+      "district": "서초구",
+      "place": "반포한강공원 예빛섬 야외무대 일원",
+      "lat": 37.5097694752014,
+      "lng": 126.995269636407,
       "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ae9231c845b646398293faf0634892e7&thumb=Y",
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=574618453e43472ab0c0836521ac8f0d&thumb=Y",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-1fhrlo8",
+      "kind": "event",
+      "title": "[2026 조선왕릉 톺아보기] 도심 속 왕릉 예(禮) 산책 - 조선왕릉 골든벨",
+      "group": "체험·배움",
+      "district": "강남구",
+      "place": "선정릉",
+      "lat": 37.5073677154051,
+      "lng": 127.047165945717,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c6b845f0d9ba474c964712759dbfe415&thumb=Y",
+      "startDate": "2026-09-20",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-1ei8ct1",
+      "kind": "event",
+      "title": "[서울아트책보고] 이루리북스 『해충 3대 비극』북토크: 해충과 나누는 대화",
+      "group": "체험·배움",
+      "district": "구로구",
+      "place": "서울아트책보고 워크숍룸",
+      "lat": 37.4982125677913,
+      "lng": 126.867088741096,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ffce98d59bda4aef9ea8b01bbf758ba2&thumb=Y",
       "startDate": "2026-09-20",
       "endDate": "2026-09-20"
     },
@@ -1679,6 +1665,34 @@
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a24fc116ade14a679df76fa0480d85dc&thumb=Y",
       "startDate": "2026-09-19",
       "endDate": "2026-11-21"
+    },
+    {
+      "id": "sc-14v70si",
+      "kind": "event",
+      "title": "2026 서리풀뮤직페스티벌",
+      "group": "축제",
+      "district": "서초구",
+      "place": "반포대로(서초역~서초3동 사거리)",
+      "lat": 37.484649703679786,
+      "lng": 127.01113139491571,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9b779e3f788b45b5b137fa9ea5c88782&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-podkie",
+      "kind": "event",
+      "title": "[구로구] 구로G페스티벌(아시아문화축제)",
+      "group": "축제",
+      "district": "구로구",
+      "place": "안양천(구일역) ~ 안양천 생태초화원(도림천역)",
+      "lat": 37.502964337383354,
+      "lng": 126.87261084179218,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=26cd63e2bd7345e9994a0c27103fb54c&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-20"
     },
     {
       "id": "sc-9p9mlo",
@@ -1709,104 +1723,6 @@
       "endDate": "2026-09-20"
     },
     {
-      "id": "sc-podkie",
-      "kind": "event",
-      "title": "[구로구] 구로G페스티벌(아시아문화축제)",
-      "group": "축제",
-      "district": "구로구",
-      "place": "안양천(구일역) ~ 안양천 생태초화원(도림천역)",
-      "lat": 37.502964337383354,
-      "lng": 126.87261084179218,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=26cd63e2bd7345e9994a0c27103fb54c&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-20"
-    },
-    {
-      "id": "sc-14v70si",
-      "kind": "event",
-      "title": "2026 서리풀뮤직페스티벌",
-      "group": "축제",
-      "district": "서초구",
-      "place": "반포대로(서초역~서초3동 사거리)",
-      "lat": 37.484649703679786,
-      "lng": 127.01113139491571,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9b779e3f788b45b5b137fa9ea5c88782&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-20"
-    },
-    {
-      "id": "sc-cqcd4c",
-      "kind": "event",
-      "title": "[서울갤러리] 추향저격 라이브 [시네마틱 클래식 앙상블 한음]",
-      "group": "공연",
-      "district": "중구",
-      "place": "서울갤러리 지하 1층 공연장",
-      "lat": 37.566370776634,
-      "lng": 126.977918351844,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=414f8267309b4995bdde3a6ed788f9ab&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-8j5k4i",
-      "kind": "event",
-      "title": "[성동문화재단] 2026 성동구 구립도서관 북 페스티벌",
-      "group": "축제",
-      "district": "성동구",
-      "place": "소월아트홀 앞 광장, 행당어린이꿈공원, 성동구립도서관 앞",
-      "lat": 37.5593072327953,
-      "lng": 127.036006376334,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=62eb2514a2e9468e97a8f0f2679588c2&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-vy47hs",
-      "kind": "event",
-      "title": "[구산동도서관마을] 9월 독서의 달 이달의 인문학 「빵 안 파는 빵집」-빵이(차에셀) 저자와의 만남",
-      "group": "체험·배움",
-      "district": "은평구",
-      "place": "구산동도서관마을 3층 힐링캠프",
-      "lat": 37.6101785198664,
-      "lng": 126.9126891869,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ba8e9568777c4303aaa5ff44e38f36bd&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-afdu1y",
-      "kind": "event",
-      "title": "서울남산국악당 X SIDance [살아 있는 모든 순간]",
-      "group": "공연",
-      "district": "중구",
-      "place": "서울남산국악당 크라운해태홀",
-      "lat": 37.5583499463987,
-      "lng": 126.994021611776,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a9c0e6f536424e378c2d6e907b4e2972&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-17vwmdu",
-      "kind": "event",
-      "title": "[용산역사박물관] 2026 용산역사박물관 [월간 청음회] 9월",
-      "group": "공연",
-      "district": "용산구",
-      "place": "용산역사박물관 1층 로비",
-      "lat": 37.5256680404431,
-      "lng": 126.965769395985,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b4be912e9b2a4e059b314f54dd65e17e&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
       "id": "sc-164xf1q",
       "kind": "event",
       "title": "[하자센터] 2026 인스파이어x하자 데이: 최초공개",
@@ -1817,62 +1733,6 @@
       "lng": 126.90329955667,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4e0905eb131042eeb03702e1d5c657a3&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-3tshum",
-      "kind": "event",
-      "title": "[청계천박물관] 2026 청계천박물관 개관기념일 문화행사",
-      "group": "축제",
-      "district": "성동구",
-      "place": "청계천박물관 1층 북카페, 3층 강당",
-      "lat": 37.5712661734969,
-      "lng": 127.03504316401,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e60c0ae686964f24b2042e038e8f3eb4&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-juigv8",
-      "kind": "event",
-      "title": "[서울도서관] 2026 움직이는 서울형책방 12회 : 과학책방 갈다",
-      "group": "체험·배움",
-      "district": "종로구",
-      "place": "광화문 라운지 (광화문역 9번 출구)",
-      "lat": 37.5716228232824,
-      "lng": 126.976787992565,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c120e17a1f6744a59ef2d871798923d7&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-18an6gn",
-      "kind": "event",
-      "title": "2026 서울 헤리티지 & 웰니스 걷기 페스티벌",
-      "group": "축제",
-      "district": "마포구",
-      "place": "서울함공원 광장 및 한강변 산책로(홍제천 쪽)",
-      "lat": 37.553149913904406,
-      "lng": 126.89790946100058,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=da00e1aa57d74714af70f0247e963af7&thumb=Y",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-1bs7bc8",
-      "kind": "event",
-      "title": "문예북흥 No.70 - 『새는 하늘을 자유롭게 풀어놓고』, 시는 마음을 자유롭게 풀어둔다. 황인숙 시인과 함께하는 시상詩想의 산책.",
-      "group": "체험·배움",
-      "district": "은평구",
-      "place": "이호철북콘서트홀",
-      "lat": 37.6139964990436,
-      "lng": 126.926499742667,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d31bbb118686406fa8817bbe6363e352&thumb=Y",
       "startDate": "2026-09-19",
       "endDate": "2026-09-19"
     },
@@ -1891,6 +1751,20 @@
       "endDate": "2026-09-19"
     },
     {
+      "id": "sc-juigv8",
+      "kind": "event",
+      "title": "[서울도서관] 2026 움직이는 서울형책방 12회 : 과학책방 갈다",
+      "group": "체험·배움",
+      "district": "종로구",
+      "place": "광화문 라운지 (광화문역 9번 출구)",
+      "lat": 37.5716228232824,
+      "lng": 126.976787992565,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c120e17a1f6744a59ef2d871798923d7&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
       "id": "sc-17ow0kn",
       "kind": "event",
       "title": "[서울공예박물관] 2026 SeMoCA 공예강좌 #5",
@@ -1901,6 +1775,20 @@
       "lng": 126.983533363501,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fc4dbb70ef9744a0ad30462461d4865f&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
+      "id": "sc-cqcd4c",
+      "kind": "event",
+      "title": "[서울갤러리] 추향저격 라이브 [시네마틱 클래식 앙상블 한음]",
+      "group": "공연",
+      "district": "중구",
+      "place": "서울갤러리 지하 1층 공연장",
+      "lat": 37.566370776634,
+      "lng": 126.977918351844,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=414f8267309b4995bdde3a6ed788f9ab&thumb=Y",
       "startDate": "2026-09-19",
       "endDate": "2026-09-19"
     },
@@ -1929,6 +1817,104 @@
       "lng": 126.98708335796199,
       "isFree": false,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5b88d7ca14d24762801b4a7501db6583&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
+      "id": "sc-3tshum",
+      "kind": "event",
+      "title": "[청계천박물관] 2026 청계천박물관 개관기념일 문화행사",
+      "group": "축제",
+      "district": "성동구",
+      "place": "청계천박물관 1층 북카페, 3층 강당",
+      "lat": 37.5712661734969,
+      "lng": 127.03504316401,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=e60c0ae686964f24b2042e038e8f3eb4&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
+      "id": "sc-1bs7bc8",
+      "kind": "event",
+      "title": "문예북흥 No.70 - 『새는 하늘을 자유롭게 풀어놓고』, 시는 마음을 자유롭게 풀어둔다. 황인숙 시인과 함께하는 시상詩想의 산책.",
+      "group": "체험·배움",
+      "district": "은평구",
+      "place": "이호철북콘서트홀",
+      "lat": 37.6139964990436,
+      "lng": 126.926499742667,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d31bbb118686406fa8817bbe6363e352&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
+      "id": "sc-17vwmdu",
+      "kind": "event",
+      "title": "[용산역사박물관] 2026 용산역사박물관 [월간 청음회] 9월",
+      "group": "공연",
+      "district": "용산구",
+      "place": "용산역사박물관 1층 로비",
+      "lat": 37.5256680404431,
+      "lng": 126.965769395985,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b4be912e9b2a4e059b314f54dd65e17e&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
+      "id": "sc-afdu1y",
+      "kind": "event",
+      "title": "서울남산국악당 X SIDance [살아 있는 모든 순간]",
+      "group": "공연",
+      "district": "중구",
+      "place": "서울남산국악당 크라운해태홀",
+      "lat": 37.5583499463987,
+      "lng": 126.994021611776,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a9c0e6f536424e378c2d6e907b4e2972&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
+      "id": "sc-vy47hs",
+      "kind": "event",
+      "title": "[구산동도서관마을] 9월 독서의 달 이달의 인문학 「빵 안 파는 빵집」-빵이(차에셀) 저자와의 만남",
+      "group": "체험·배움",
+      "district": "은평구",
+      "place": "구산동도서관마을 3층 힐링캠프",
+      "lat": 37.6101785198664,
+      "lng": 126.9126891869,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ba8e9568777c4303aaa5ff44e38f36bd&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
+      "id": "sc-18an6gn",
+      "kind": "event",
+      "title": "2026 서울 헤리티지 & 웰니스 걷기 페스티벌",
+      "group": "축제",
+      "district": "마포구",
+      "place": "서울함공원 광장 및 한강변 산책로(홍제천 쪽)",
+      "lat": 37.553149913904406,
+      "lng": 126.89790946100058,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=da00e1aa57d74714af70f0247e963af7&thumb=Y",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19"
+    },
+    {
+      "id": "sc-8j5k4i",
+      "kind": "event",
+      "title": "[성동문화재단] 2026 성동구 구립도서관 북 페스티벌",
+      "group": "축제",
+      "district": "성동구",
+      "place": "소월아트홀 앞 광장, 행당어린이꿈공원, 성동구립도서관 앞",
+      "lat": 37.5593072327953,
+      "lng": 127.036006376334,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=62eb2514a2e9468e97a8f0f2679588c2&thumb=Y",
       "startDate": "2026-09-19",
       "endDate": "2026-09-19"
     },
@@ -1975,34 +1961,6 @@
       "endDate": "2026-11-25"
     },
     {
-      "id": "sc-1mh5u7a",
-      "kind": "event",
-      "title": "[서울문화재단] 서울스테이지 in 어텀",
-      "group": "공연",
-      "district": "성동구",
-      "place": "서울숲 야외무대",
-      "lat": 37.5430701468405,
-      "lng": 127.041799099222,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5cdaa36625bb464b91316b32eaffb490&thumb=Y",
-      "startDate": "2026-09-18",
-      "endDate": "2026-09-20"
-    },
-    {
-      "id": "sc-tq94zm",
-      "kind": "event",
-      "title": "[서울시 어울림플라자] 어울림 성장캠프 : 일도 JOB GO! 미래도 JOB GO!",
-      "group": "체험·배움",
-      "district": "강서구",
-      "place": "서울시 어울림플라자 3층 연수시설, 4층 연수객실",
-      "lat": 37.5535154167762,
-      "lng": 126.861449995331,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c81576b483db48daa2e68029d641d803&thumb=Y",
-      "startDate": "2026-09-18",
-      "endDate": "2026-09-20"
-    },
-    {
       "id": "sc-bit5jv",
       "kind": "event",
       "title": "[마포구립서강도서관] 9월/행사 [2026년 과월호 정기간행물 무료 나눔]",
@@ -2017,6 +1975,20 @@
       "endDate": "2026-09-20"
     },
     {
+      "id": "sc-1mh5u7a",
+      "kind": "event",
+      "title": "[서울문화재단] 서울스테이지 in 어텀",
+      "group": "공연",
+      "district": "성동구",
+      "place": "서울숲 야외무대",
+      "lat": 37.5430701468405,
+      "lng": 127.041799099222,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5cdaa36625bb464b91316b32eaffb490&thumb=Y",
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-20"
+    },
+    {
       "id": "sc-e5pl22",
       "kind": "event",
       "title": "[동대문문화재단] 2026 답십리영화미디어아트센터 영화제 [시네마 웨이브]",
@@ -2027,6 +1999,20 @@
       "lng": 127.063764029874,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c37ec45c46164df98f8b2355b76856b8&thumb=Y",
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-tq94zm",
+      "kind": "event",
+      "title": "[서울시 어울림플라자] 어울림 성장캠프 : 일도 JOB GO! 미래도 JOB GO!",
+      "group": "체험·배움",
+      "district": "강서구",
+      "place": "서울시 어울림플라자 3층 연수시설, 4층 연수객실",
+      "lat": 37.5535154167762,
+      "lng": 126.861449995331,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c81576b483db48daa2e68029d641d803&thumb=Y",
       "startDate": "2026-09-18",
       "endDate": "2026-09-20"
     },
@@ -2059,6 +2045,20 @@
       "endDate": "2026-09-19"
     },
     {
+      "id": "sc-12t346s",
+      "kind": "event",
+      "title": "[역삼푸른솔도서관] 예소연 작가와의 만남",
+      "group": "체험·배움",
+      "district": "강남구",
+      "place": "역삼푸른솔도서관 프로그램실",
+      "lat": 37.496499181425,
+      "lng": 127.032028764698,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=488e17912f67427e9b1e5037179a67e2&thumb=Y",
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-18"
+    },
+    {
       "id": "sc-i8f9dc",
       "kind": "event",
       "title": "[서울 문화의 밤] 9월 작가힙톡(Hip-Talk) - (조배준) 포스트 휴먼의 질문하는 독서",
@@ -2073,30 +2073,16 @@
       "endDate": "2026-09-18"
     },
     {
-      "id": "sc-12prgmd",
+      "id": "sc-1vs1o2u",
       "kind": "event",
-      "title": "2026년 야간 공연 관람권_[번식하는 곰팡이]",
-      "group": "공연",
-      "district": "종로구",
-      "place": "선돌극장",
-      "lat": 37.5868126204241,
-      "lng": 126.99976518,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=2a4737eeb77e4417ade61e7d7cb65f74&thumb=Y",
-      "startDate": "2026-09-18",
-      "endDate": "2026-09-18"
-    },
-    {
-      "id": "sc-12t346s",
-      "kind": "event",
-      "title": "[역삼푸른솔도서관] 예소연 작가와의 만남",
+      "title": "[마포구립서강도서관] 9월/어린이강좌 [파파로 동물원의 비밀, 어린이 도서관초대석] 김지영 작가",
       "group": "체험·배움",
-      "district": "강남구",
-      "place": "역삼푸른솔도서관 프로그램실",
-      "lat": 37.496499181425,
-      "lng": 127.032028764698,
+      "district": "마포구",
+      "place": "마포구립서강도서관 4층 어린이자료실",
+      "lat": 37.5477347268018,
+      "lng": 126.932061794829,
       "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=488e17912f67427e9b1e5037179a67e2&thumb=Y",
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6a88154a676442b8949bcd70da8eb050&thumb=Y",
       "startDate": "2026-09-18",
       "endDate": "2026-09-18"
     },
@@ -2115,30 +2101,16 @@
       "endDate": "2026-09-18"
     },
     {
-      "id": "sc-khn8fd",
+      "id": "sc-12prgmd",
       "kind": "event",
-      "title": "[서울책보고] 첫눈토크#7 『이름 없는 것들의 밤』 정보라 작가",
-      "group": "체험·배움",
-      "district": "송파구",
-      "place": "서울책보고 라운지 (잠실나루역 1번 출구 도보 1분)",
-      "lat": 37.52202784263066,
-      "lng": 127.1038467712633,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0dc206684bb24f539b364a61c7e3a8ee&thumb=Y",
-      "startDate": "2026-09-18",
-      "endDate": "2026-09-18"
-    },
-    {
-      "id": "sc-1vs1o2u",
-      "kind": "event",
-      "title": "[마포구립서강도서관] 9월/어린이강좌 [파파로 동물원의 비밀, 어린이 도서관초대석] 김지영 작가",
-      "group": "체험·배움",
-      "district": "마포구",
-      "place": "마포구립서강도서관 4층 어린이자료실",
-      "lat": 37.5477347268018,
-      "lng": 126.932061794829,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6a88154a676442b8949bcd70da8eb050&thumb=Y",
+      "title": "2026년 야간 공연 관람권_[번식하는 곰팡이]",
+      "group": "공연",
+      "district": "종로구",
+      "place": "선돌극장",
+      "lat": 37.5868126204241,
+      "lng": 126.99976518,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=2a4737eeb77e4417ade61e7d7cb65f74&thumb=Y",
       "startDate": "2026-09-18",
       "endDate": "2026-09-18"
     },
@@ -2185,6 +2157,20 @@
       "endDate": "2026-09-18"
     },
     {
+      "id": "sc-khn8fd",
+      "kind": "event",
+      "title": "[서울책보고] 첫눈토크#7 『이름 없는 것들의 밤』 정보라 작가",
+      "group": "체험·배움",
+      "district": "송파구",
+      "place": "서울책보고 라운지 (잠실나루역 1번 출구 도보 1분)",
+      "lat": 37.52202784263066,
+      "lng": 127.1038467712633,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0dc206684bb24f539b364a61c7e3a8ee&thumb=Y",
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-18"
+    },
+    {
       "id": "sc-luxnfe",
       "kind": "event",
       "title": "[서울백제어린이박물관] 유아~초등 1학년 동반가족 대상 [서울역사생태탐험대3] 가을",
@@ -2213,20 +2199,6 @@
       "endDate": "2026-10-08"
     },
     {
-      "id": "sc-ueuzlb",
-      "kind": "event",
-      "title": "연극 [페이백]",
-      "group": "공연",
-      "district": "성북구",
-      "place": "미아리고개예술극장",
-      "lat": 37.5978990882553,
-      "lng": 127.021459209446,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=3d8c6e88fad4460997677fbfe2c89860&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-20"
-    },
-    {
       "id": "sc-187kobh",
       "kind": "event",
       "title": "[영등포문화재단] 제1회 영등포북페스타 [오늘만 북클럽]",
@@ -2237,6 +2209,20 @@
       "lng": 126.89393784817102,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4fb1aeec1b8048539da4a8cfd7e6e17a&thumb=Y",
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-ueuzlb",
+      "kind": "event",
+      "title": "연극 [페이백]",
+      "group": "공연",
+      "district": "성북구",
+      "place": "미아리고개예술극장",
+      "lat": 37.5978990882553,
+      "lng": 127.021459209446,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=3d8c6e88fad4460997677fbfe2c89860&thumb=Y",
       "startDate": "2026-09-17",
       "endDate": "2026-09-20"
     },
@@ -2255,20 +2241,6 @@
       "endDate": "2026-09-20"
     },
     {
-      "id": "sc-1prmc49",
-      "kind": "event",
-      "title": "[서울소방재난본부] 2026년 서울안전한마당",
-      "group": "체험·배움",
-      "district": "영등포구",
-      "place": "여의도공원 문화의마당",
-      "lat": 37.5268088229325,
-      "lng": 126.922284053463,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ee3cb96fe42340c487fe2b10285d3f7a&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-19"
-    },
-    {
       "id": "sc-1a8dv4u",
       "kind": "event",
       "title": "[서울문화재단] 2026 금천예술공장 오픈스튜디오 [에코톤(ECOTONE): 겹치는 파동 확장하는 영역]",
@@ -2283,130 +2255,18 @@
       "endDate": "2026-09-19"
     },
     {
-      "id": "sc-16lixhk",
+      "id": "sc-1prmc49",
       "kind": "event",
-      "title": "9월 국회문화극장 [퍼펙트슛]",
-      "group": "공연",
-      "district": "영등포구",
-      "place": "국회의원회관 2층 대회의실",
-      "lat": 37.531903776358305,
-      "lng": 126.91417369231625,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ce83109192b9401db72bfdea4c84b50d&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
-    },
-    {
-      "id": "sc-1xvvdp2",
-      "kind": "event",
-      "title": "수림뉴웨이브 2026 - 정은혜 [Eot - Pulse]",
-      "group": "공연",
-      "district": "동대문구",
-      "place": "수림문화재단 김희수SPACE1",
-      "lat": 37.590705971349955,
-      "lng": 127.04281951646153,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=3147750611014b8fa504f35e1857a287&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
-    },
-    {
-      "id": "sc-ic561s",
-      "kind": "event",
-      "title": "[영등포문화재단] 예술 창작 원데이 워크숍 [마음공작소]",
+      "title": "[서울소방재난본부] 2026년 서울안전한마당",
       "group": "체험·배움",
       "district": "영등포구",
-      "place": "YDP창의예술교육센터",
-      "lat": 37.5377136039448,
-      "lng": 126.895802789396,
+      "place": "여의도공원 문화의마당",
+      "lat": 37.5268088229325,
+      "lng": 126.922284053463,
       "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=638650d2d8e747888ae66bd7af749c40&thumb=Y",
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ee3cb96fe42340c487fe2b10285d3f7a&thumb=Y",
       "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
-    },
-    {
-      "id": "sc-1e1tav5",
-      "kind": "event",
-      "title": "서울디자인런2026@SUP 4회차 [소재에서 제품으로 ― 브랜드와 양산의 현실]",
-      "group": "체험·배움",
-      "district": "성동구",
-      "place": "서울새활용프라자 5층 교육실",
-      "lat": 37.5586850612677,
-      "lng": 127.057851176035,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=949b61ef8e5747dd8711cf2196c18942&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
-    },
-    {
-      "id": "sc-1yu2rb6",
-      "kind": "event",
-      "title": "[재능 혜화 마티네] with 김덕우, 송영민",
-      "group": "공연",
-      "district": "종로구",
-      "place": "JCC 재능아트센터 콘서트홀",
-      "lat": 37.5871831839413,
-      "lng": 127.001885702262,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=be8b6bc27c754c68bc3ada0245e64496&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
-    },
-    {
-      "id": "sc-1763imx",
-      "kind": "event",
-      "title": "[마포문화재단] 제11회 M 클래식 축제 [소프라노 황수미 리사이틀]",
-      "group": "공연",
-      "district": "마포구",
-      "place": "마포아트센터 아트홀맥",
-      "lat": 37.54987259578174,
-      "lng": 126.9455874749264,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=7d94ec9c19bc411882c4cea646417c4f&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
-    },
-    {
-      "id": "sc-1m7x5xz",
-      "kind": "event",
-      "title": "2026 일제강제동원희생자 전국합동위령제",
-      "group": "축제",
-      "district": "중구",
-      "place": "서울시청 8층 다목적홀",
-      "lat": 37.566370776634,
-      "lng": 126.977918351844,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=80523297352840d394c637110f20fab8&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
-    },
-    {
-      "id": "sc-jl4gw5",
-      "kind": "event",
-      "title": "[한국도박문제예방치유원] 제18회 도박중독 추방의 날 기념식",
-      "group": "기타",
-      "district": "서초구",
-      "place": "국립중앙도서관 국제회의장",
-      "lat": 37.4974225959085,
-      "lng": 127.003227919207,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=efe85147f39943889d57132b51d5ab61&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
-    },
-    {
-      "id": "sc-12al9v1",
-      "kind": "event",
-      "title": "[성동문화재단] 2026년 골목 바이브 6회차",
-      "group": "공연",
-      "district": "성동구",
-      "place": "LOOOP 베이커리 카페",
-      "lat": 37.54421972585316,
-      "lng": 127.05242817980589,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6ad18d676e754ccf95b95a80ca90c662&thumb=Y",
-      "startDate": "2026-09-17",
-      "endDate": "2026-09-17"
+      "endDate": "2026-09-19"
     },
     {
       "id": "sc-553a9h",
@@ -2451,20 +2311,6 @@
       "endDate": "2026-09-21"
     },
     {
-      "id": "sc-1dgki9z",
-      "kind": "event",
-      "title": "[문학주간2026] 곁눈질",
-      "group": "축제",
-      "district": "종로구",
-      "place": "대학로 마로니에 공원 일대",
-      "lat": 37.5811855191284,
-      "lng": 127.002999899724,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=cb8e4af0d28448b1b6ec5891a8a5daad&thumb=Y",
-      "startDate": "2026-09-16",
-      "endDate": "2026-09-20"
-    },
-    {
       "id": "sc-ngd22g",
       "kind": "event",
       "title": "[서울시립미술관 서소문본관] 2026 SeMA 9월 외국어 전시해설",
@@ -2475,6 +2321,20 @@
       "lng": 126.973699316136,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0effc49566f244c4aed3d8eb83c259e6&thumb=Y",
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-1dgki9z",
+      "kind": "event",
+      "title": "[문학주간2026] 곁눈질",
+      "group": "축제",
+      "district": "종로구",
+      "place": "대학로 마로니에 공원 일대",
+      "lat": 37.5811855191284,
+      "lng": 127.002999899724,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=cb8e4af0d28448b1b6ec5891a8a5daad&thumb=Y",
       "startDate": "2026-09-16",
       "endDate": "2026-09-20"
     },
@@ -3095,20 +2955,6 @@
       "endDate": "2026-10-08"
     },
     {
-      "id": "sc-1tgdp1a",
-      "kind": "event",
-      "title": "[노원문화재단] 문화공간 정담 기획전시 [손이 머문 자리, 공릉]",
-      "group": "전시",
-      "district": "노원구",
-      "place": "문화공간 정담",
-      "lat": 37.6501722795275,
-      "lng": 127.080886310499,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6fd2045f8bb94ae59a8fb7196f9563c3&thumb=Y",
-      "startDate": "2026-09-03",
-      "endDate": "2026-09-30"
-    },
-    {
       "id": "sc-qzzjw6",
       "kind": "event",
       "title": "[구립증산도서관] 9월 미니멀 북큐레이션 [달마다, 나를 아끼는 습관] 운동이 일상이 되는 순간",
@@ -3119,6 +2965,20 @@
       "lng": 126.907671330325,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=06aa49fca59b46a09763aa0e0a9bf138&thumb=Y",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-30"
+    },
+    {
+      "id": "sc-1tgdp1a",
+      "kind": "event",
+      "title": "[노원문화재단] 문화공간 정담 기획전시 [손이 머문 자리, 공릉]",
+      "group": "전시",
+      "district": "노원구",
+      "place": "문화공간 정담",
+      "lat": 37.6501722795275,
+      "lng": 127.080886310499,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6fd2045f8bb94ae59a8fb7196f9563c3&thumb=Y",
       "startDate": "2026-09-03",
       "endDate": "2026-09-30"
     },
@@ -3149,20 +3009,6 @@
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5a1314f6323f4ce891c9c02ac1c8cd08&thumb=Y",
       "startDate": "2026-09-03",
       "endDate": "2026-09-19"
-    },
-    {
-      "id": "sc-11zuxfe",
-      "kind": "event",
-      "title": "국회 개방 정오의 콘서트 [9월 국회 버스킹]",
-      "group": "공연",
-      "district": "영등포구",
-      "place": "국회 중앙잔디광장(국회도서관 방면)",
-      "lat": 37.53107599249476,
-      "lng": 126.9157528949096,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a35cbde940d94e9ab66bc5de8f2969e8&thumb=Y",
-      "startDate": "2026-09-03",
-      "endDate": "2026-09-17"
     },
     {
       "id": "sc-7ar4ls",
@@ -3221,20 +3067,6 @@
       "endDate": "2026-10-07"
     },
     {
-      "id": "sc-1qvh1wp",
-      "kind": "event",
-      "title": "[개봉도서관] 2026년 특성화 프로그램 [찾아가는 금융교실]",
-      "group": "체험·배움",
-      "district": "구로구",
-      "place": "구로구공익활동지원센터 소회의실(잇다)",
-      "lat": 37.4925074569953,
-      "lng": 126.862032946026,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=57ef8462d71b469fbcbe52c61f840b30&thumb=Y",
-      "startDate": "2026-09-02",
-      "endDate": "2026-09-23"
-    },
-    {
       "id": "sc-11ajn5c",
       "kind": "event",
       "title": "[구산동도서관마을] 2026년 도서관 다문화 서비스 - 문화 다양성을 말하다 : 『그래도 되는 차별은 없다』 저자와의 만남",
@@ -3245,6 +3077,20 @@
       "lng": 126.9126891869,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1fde01cb7e4646c3ae6ea9c618ffaa82&thumb=Y",
+      "startDate": "2026-09-02",
+      "endDate": "2026-09-23"
+    },
+    {
+      "id": "sc-1qvh1wp",
+      "kind": "event",
+      "title": "[개봉도서관] 2026년 특성화 프로그램 [찾아가는 금융교실]",
+      "group": "체험·배움",
+      "district": "구로구",
+      "place": "구로구공익활동지원센터 소회의실(잇다)",
+      "lat": 37.4925074569953,
+      "lng": 126.862032946026,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=57ef8462d71b469fbcbe52c61f840b30&thumb=Y",
       "startDate": "2026-09-02",
       "endDate": "2026-09-23"
     },
@@ -3333,20 +3179,6 @@
       "endDate": "2026-10-11"
     },
     {
-      "id": "sc-qayl13",
-      "kind": "event",
-      "title": "[중랑문화재단] 2026 중랑아트센터 [나대기 예술아카데미] 9월 프로그램",
-      "group": "체험·배움",
-      "district": "중랑구",
-      "place": "중랑아트센터 프로그램실/시청각실",
-      "lat": 37.5983328190955,
-      "lng": 127.091624142481,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0acac25c7d99447e94d7f52b5260f46f&thumb=Y",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
       "id": "sc-1s22spc",
       "kind": "event",
       "title": "[구립증산도서관] 2026년 9월 북인사이트 : 이호철통일로문학상",
@@ -3357,20 +3189,6 @@
       "lng": 126.907671330325,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=2be92ae1d2004e65ab6a2e5db5a41924&thumb=Y",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-30"
-    },
-    {
-      "id": "sc-1rmc1tr",
-      "kind": "event",
-      "title": "[구립증산도서관] 어린이열람실 9월 북큐레이션 [책을 읽으면 과학이 궁금해져!]",
-      "group": "체험·배움",
-      "district": "은평구",
-      "place": "구립증산도서관 3층 어린이열람실",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=34aff97abcb14db6ad0d446d72f69b86&thumb=Y",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
@@ -3389,16 +3207,16 @@
       "endDate": "2026-09-30"
     },
     {
-      "id": "sc-8rg6g5",
+      "id": "sc-qayl13",
       "kind": "event",
-      "title": "[구립증산도서관] 2026 9월 자녀교육 특성화 온라인 북큐레이션 [부모의 한 장이 아이의 한 걸음으로] '도서관의 달'",
+      "title": "[중랑문화재단] 2026 중랑아트센터 [나대기 예술아카데미] 9월 프로그램",
       "group": "체험·배움",
-      "district": "은평구",
-      "place": "구립증산도서관 홈페이지",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=08b35a1d550d456b8a2ee89372e1ab39&thumb=Y",
+      "district": "중랑구",
+      "place": "중랑아트센터 프로그램실/시청각실",
+      "lat": 37.5983328190955,
+      "lng": 127.091624142481,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0acac25c7d99447e94d7f52b5260f46f&thumb=Y",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
@@ -3417,6 +3235,34 @@
       "endDate": "2026-09-30"
     },
     {
+      "id": "sc-1xu2ktz",
+      "kind": "event",
+      "title": "[송파 청년아티스트센터] 예술가와 함께하는 풍납 탐구 생활 9월 프로그램",
+      "group": "체험·배움",
+      "district": "송파구",
+      "place": "송파 청년아티스트센터 1층",
+      "lat": 37.5340686405498,
+      "lng": 127.115954729217,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=eaa7ab3dd97f485d8ae6e2f6ecae9a20&thumb=Y",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
+      "id": "sc-1rmc1tr",
+      "kind": "event",
+      "title": "[구립증산도서관] 어린이열람실 9월 북큐레이션 [책을 읽으면 과학이 궁금해져!]",
+      "group": "체험·배움",
+      "district": "은평구",
+      "place": "구립증산도서관 3층 어린이열람실",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=34aff97abcb14db6ad0d446d72f69b86&thumb=Y",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30"
+    },
+    {
       "id": "sc-1qnxsn3",
       "kind": "event",
       "title": "[구립증산도서관] 온라인 북큐레이션 [어른이를 위한 그림책] 9월 : 자연이 들려주는 이야기",
@@ -3431,16 +3277,16 @@
       "endDate": "2026-09-30"
     },
     {
-      "id": "sc-1xu2ktz",
+      "id": "sc-8rg6g5",
       "kind": "event",
-      "title": "[송파 청년아티스트센터] 예술가와 함께하는 풍납 탐구 생활 9월 프로그램",
+      "title": "[구립증산도서관] 2026 9월 자녀교육 특성화 온라인 북큐레이션 [부모의 한 장이 아이의 한 걸음으로] '도서관의 달'",
       "group": "체험·배움",
-      "district": "송파구",
-      "place": "송파 청년아티스트센터 1층",
-      "lat": 37.5340686405498,
-      "lng": 127.115954729217,
+      "district": "은평구",
+      "place": "구립증산도서관 홈페이지",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
       "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=eaa7ab3dd97f485d8ae6e2f6ecae9a20&thumb=Y",
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=08b35a1d550d456b8a2ee89372e1ab39&thumb=Y",
       "startDate": "2026-09-01",
       "endDate": "2026-09-30"
     },
@@ -3473,20 +3319,6 @@
       "endDate": "2026-09-27"
     },
     {
-      "id": "sc-1jvtoen",
-      "kind": "event",
-      "title": "[남산골한옥마을] 2026 남산골 아트 프로젝트 [겹, Layer-層] 첫 번째 선정 전시 《재(材)의 집》",
-      "group": "전시",
-      "district": "중구",
-      "place": "남산골한옥마을 이승업 가옥",
-      "lat": 37.559304933707146,
-      "lng": 126.994440072131,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a9e62386284a490e9bf203b66832ab7d&thumb=Y",
-      "startDate": "2026-09-01",
-      "endDate": "2026-09-20"
-    },
-    {
       "id": "sc-gi73bc",
       "kind": "event",
       "title": "[영등포문화재단] 2026 예술기술도시기획전 [인류학 연습: 인간은 우리인가?]",
@@ -3497,6 +3329,20 @@
       "lng": 126.894348719109,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b4a19eff5e3649bb984702c375f1bc6c&thumb=Y",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-1jvtoen",
+      "kind": "event",
+      "title": "[남산골한옥마을] 2026 남산골 아트 프로젝트 [겹, Layer-層] 첫 번째 선정 전시 《재(材)의 집》",
+      "group": "전시",
+      "district": "중구",
+      "place": "남산골한옥마을 이승업 가옥",
+      "lat": 37.559304933707146,
+      "lng": 126.994440072131,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a9e62386284a490e9bf203b66832ab7d&thumb=Y",
       "startDate": "2026-09-01",
       "endDate": "2026-09-20"
     },
@@ -3585,20 +3431,6 @@
       "endDate": "2026-10-23"
     },
     {
-      "id": "sc-fg18v4",
-      "kind": "event",
-      "title": "[SKETCH 2026 : 유동의 미학] 우리는 단 한 번도 멎은 적 없다.",
-      "group": "전시",
-      "district": "종로구",
-      "place": "송원아트센터 (서울특별시 종로구 화동 윤보선길 75) 1F, B2F, B3F 전시장",
-      "lat": 37.5793191593831,
-      "lng": 126.983448207812,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=783015b8e65b43c99f66b7807c41c3d8&thumb=Y",
-      "startDate": "2026-08-28",
-      "endDate": "2026-09-17"
-    },
-    {
       "id": "sc-2mqlix",
       "kind": "event",
       "title": "[서울시립 미술아카이브] 26/27 레퍼런스 라이브러리 [책 생각들]",
@@ -3669,20 +3501,6 @@
       "endDate": "2026-09-19"
     },
     {
-      "id": "sc-1htu3jt",
-      "kind": "event",
-      "title": "2026 Crisp Wedge Frize 최종 선정 작가 [정재인 개인전: 나는 매일 밤 거미집을 망친다]",
-      "group": "전시",
-      "district": "마포구",
-      "place": "크리스프 웨지",
-      "lat": 37.5493590071323,
-      "lng": 126.916412664084,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d01ee4c880ef42608d5d71bb0d0488b3&thumb=Y",
-      "startDate": "2026-08-27",
-      "endDate": "2026-09-17"
-    },
-    {
       "id": "sc-82fsy8",
       "kind": "event",
       "title": "[청계천박물관] 2026년 하반기 온라인 교육 [톡톡톡 청계천]",
@@ -3739,20 +3557,6 @@
       "endDate": "2026-09-29"
     },
     {
-      "id": "sc-ttc6od",
-      "kind": "event",
-      "title": "배준현·황예랑 [빌려온 믿음 Borrowed Faith]",
-      "group": "전시",
-      "district": "강남구",
-      "place": "오에이오에이",
-      "lat": 37.5000442067308,
-      "lng": 127.057072857318,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fc94f9431fc449c59c981fb26298b05b&thumb=Y",
-      "startDate": "2026-08-26",
-      "endDate": "2026-09-23"
-    },
-    {
       "id": "sc-uchcah",
       "kind": "event",
       "title": "[은평문화재단] 예술인문 아카데미 《세계의 음악도시를 여행하다》 - 클래식으로 떠나는 음악기행",
@@ -3763,6 +3567,20 @@
       "lng": 126.927901672834,
       "isFree": false,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=83f31b7c0a9945eaa5bc097cd02c5547&thumb=Y",
+      "startDate": "2026-08-26",
+      "endDate": "2026-09-23"
+    },
+    {
+      "id": "sc-ttc6od",
+      "kind": "event",
+      "title": "배준현·황예랑 [빌려온 믿음 Borrowed Faith]",
+      "group": "전시",
+      "district": "강남구",
+      "place": "오에이오에이",
+      "lat": 37.5000442067308,
+      "lng": 127.057072857318,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fc94f9431fc449c59c981fb26298b05b&thumb=Y",
       "startDate": "2026-08-26",
       "endDate": "2026-09-23"
     },
@@ -3806,20 +3624,6 @@
       "endDate": "2026-09-19"
     },
     {
-      "id": "sc-1utlana",
-      "kind": "event",
-      "title": "[성동문화재단] 영화로 떠나는 예술여행, 시네마 공감",
-      "group": "체험·배움",
-      "district": "성동구",
-      "place": "다락옥수, 성수아트홀",
-      "lat": 37.5429326268813,
-      "lng": 127.016893391887,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b41c8a448d2f4edca9479c48cc1c6573&thumb=Y",
-      "startDate": "2026-08-24",
-      "endDate": "2026-11-09"
-    },
-    {
       "id": "sc-1kwdkoo",
       "kind": "event",
       "title": "[서울문화재단] 《PLAY-UP 아카데미》 드라마투르기적 사고와 실전: 창작 현장에서의 드라마투르그 역할과 실전 이해",
@@ -3830,6 +3634,20 @@
       "lng": 127.006040752071,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1d5cdc5e4f7c4fe3846e02e991e920e7&thumb=Y",
+      "startDate": "2026-08-24",
+      "endDate": "2026-11-09"
+    },
+    {
+      "id": "sc-1utlana",
+      "kind": "event",
+      "title": "[성동문화재단] 영화로 떠나는 예술여행, 시네마 공감",
+      "group": "체험·배움",
+      "district": "성동구",
+      "place": "다락옥수, 성수아트홀",
+      "lat": 37.5429326268813,
+      "lng": 127.016893391887,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b41c8a448d2f4edca9479c48cc1c6573&thumb=Y",
       "startDate": "2026-08-24",
       "endDate": "2026-11-09"
     },
@@ -3848,20 +3666,6 @@
       "endDate": "2026-10-10"
     },
     {
-      "id": "sc-lk3swo",
-      "kind": "event",
-      "title": "[관악문화재단] 2026 꿈다락 문화예술학교 [도시의 쉼표- 관악, 우리들의 해비타트]",
-      "group": "체험·배움",
-      "district": "관악구",
-      "place": "싱글벙글교육센터 및 관악구 일대 야외 공간 (관악구 남부순환로234길 73)",
-      "lat": 37.4760962512417,
-      "lng": 126.956288055678,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=435506e0085c49e4b44295d8849c4529&thumb=Y",
-      "startDate": "2026-08-22",
-      "endDate": "2026-09-20"
-    },
-    {
       "id": "sc-qudyf4",
       "kind": "event",
       "title": "[관악문화재단] 2026 꿈다락 문화예술학교 [도시의 쉼표 - 다시 만나는 공간, 다시 깨우는 감각]",
@@ -3872,6 +3676,20 @@
       "lng": 126.956288055678,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=f5cd464ce10343e3bb2767d269bf43a9&thumb=Y",
+      "startDate": "2026-08-22",
+      "endDate": "2026-09-20"
+    },
+    {
+      "id": "sc-lk3swo",
+      "kind": "event",
+      "title": "[관악문화재단] 2026 꿈다락 문화예술학교 [도시의 쉼표- 관악, 우리들의 해비타트]",
+      "group": "체험·배움",
+      "district": "관악구",
+      "place": "싱글벙글교육센터 및 관악구 일대 야외 공간 (관악구 남부순환로234길 73)",
+      "lat": 37.4760962512417,
+      "lng": 126.956288055678,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=435506e0085c49e4b44295d8849c4529&thumb=Y",
       "startDate": "2026-08-22",
       "endDate": "2026-09-20"
     },
@@ -4170,20 +3988,6 @@
       "endDate": "2026-11-21"
     },
     {
-      "id": "sc-17z5t79",
-      "kind": "event",
-      "title": "[중구문화재단] 뮤지컬 [디어 에반 핸슨]",
-      "group": "공연",
-      "district": "중구",
-      "place": "충무아트센터",
-      "lat": 37.5659409687669,
-      "lng": 127.014790889728,
-      "isFree": false,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=19fb5eb0e087415984110cf261bd84bb&thumb=Y",
-      "startDate": "2026-08-01",
-      "endDate": "2026-11-01"
-    },
-    {
       "id": "sc-1i9hry2",
       "kind": "event",
       "title": "[광진문화재단] 2026 생활밀착형 문화예술교육 지원사업 [가가호호(家家好好)] - 광진",
@@ -4194,6 +3998,20 @@
       "lng": 127.070576040786,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=32b51532623942c58edee6f7c82549de&thumb=Y",
+      "startDate": "2026-08-01",
+      "endDate": "2026-11-01"
+    },
+    {
+      "id": "sc-17z5t79",
+      "kind": "event",
+      "title": "[중구문화재단] 뮤지컬 [디어 에반 핸슨]",
+      "group": "공연",
+      "district": "중구",
+      "place": "충무아트센터",
+      "lat": 37.5659409687669,
+      "lng": 127.014790889728,
+      "isFree": false,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=19fb5eb0e087415984110cf261bd84bb&thumb=Y",
       "startDate": "2026-08-01",
       "endDate": "2026-11-01"
     },
@@ -4478,20 +4296,6 @@
       "endDate": "2026-10-31"
     },
     {
-      "id": "sc-1hzjsiv",
-      "kind": "event",
-      "title": "[마포구립서강도서관] 3분기/어린이갤러리 [내일은 맑겠습니다]",
-      "group": "전시",
-      "district": "마포구",
-      "place": "마포구립서강도서관 4층 어린이자료실",
-      "lat": 37.5477347268018,
-      "lng": 126.932061794829,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fdc9077da2cc4801b891f62f5eefab98&thumb=Y",
-      "startDate": "2026-07-01",
-      "endDate": "2026-09-30"
-    },
-    {
       "id": "sc-uvs5fa",
       "kind": "event",
       "title": "[문학의집·서울] 제5회 시의 정원",
@@ -4502,6 +4306,20 @@
       "lng": 126.9892390979,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5bdf4cf0b36d4cfcb91822678092bfa0&thumb=Y",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-30"
+    },
+    {
+      "id": "sc-1hzjsiv",
+      "kind": "event",
+      "title": "[마포구립서강도서관] 3분기/어린이갤러리 [내일은 맑겠습니다]",
+      "group": "전시",
+      "district": "마포구",
+      "place": "마포구립서강도서관 4층 어린이자료실",
+      "lat": 37.5477347268018,
+      "lng": 126.932061794829,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=fdc9077da2cc4801b891f62f5eefab98&thumb=Y",
       "startDate": "2026-07-01",
       "endDate": "2026-09-30"
     },
@@ -5584,20 +5402,6 @@
       "endDate": "2027-12-31"
     },
     {
-      "id": "sc-1il62mw",
-      "kind": "event",
-      "title": "[서울디자인재단] 2025 [Now for Zero-Waste Vol.2 : 새로제로] 展",
-      "group": "전시",
-      "district": "성동구",
-      "place": "서울새활용플라자 1층 새활용하우스",
-      "lat": 37.5586850612677,
-      "lng": 127.057851176035,
-      "isFree": true,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6d22a5166ca244068a398ed32972e504&thumb=Y",
-      "startDate": "2026-01-02",
-      "endDate": "2026-12-31"
-    },
-    {
       "id": "sc-j87n2a",
       "kind": "event",
       "title": "[서울디자인재단] [해치와 나눔히어로] 장난감 기부, 나눔 체험",
@@ -5622,6 +5426,20 @@
       "lng": 127.057851176035,
       "isFree": true,
       "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=80e93c16fdef4ae49cf04b149dc2701f&thumb=Y",
+      "startDate": "2026-01-02",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": "sc-1il62mw",
+      "kind": "event",
+      "title": "[서울디자인재단] 2025 [Now for Zero-Waste Vol.2 : 새로제로] 展",
+      "group": "전시",
+      "district": "성동구",
+      "place": "서울새활용플라자 1층 새활용하우스",
+      "lat": 37.5586850612677,
+      "lng": 127.057851176035,
+      "isFree": true,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6d22a5166ca244068a398ed32972e504&thumb=Y",
       "startDate": "2026-01-02",
       "endDate": "2026-12-31"
     },
@@ -6024,20 +5842,6 @@
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81688&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "startDate": "2026-07-24",
       "endDate": "2026-10-02"
-    },
-    {
-      "id": "vs-KOPzxk4rc",
-      "kind": "event",
-      "title": "SKETCH 2026: 유동의 미학",
-      "group": "전시",
-      "district": "종로구",
-      "place": "SKETCH 2026: 유동의 미학",
-      "lat": 37.5793191593831,
-      "lng": 126.983448207812,
-      "isFree": true,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81706&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "startDate": "2026-08-28",
-      "endDate": "2026-09-17"
     },
     {
       "id": "vs-KOPa0vdy2",
@@ -11660,6 +11464,7 @@
         "open": "09:00",
         "close": "21:00",
         "closedWeekdays": [
+          0,
           1
         ]
       }
@@ -11932,7 +11737,7 @@
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=5060&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
       "hours": {
         "open": "09:00",
-        "close": "20:00",
+        "close": "18:00",
         "closedWeekdays": []
       }
     },
@@ -13066,7 +12871,10 @@
         "close": "18:00",
         "closedWeekdays": [
           0,
-          1
+          1,
+          2,
+          3,
+          4
         ]
       }
     },
@@ -15348,7 +15156,10 @@
       "hours": {
         "open": "10:00",
         "close": "13:00",
-        "closedWeekdays": []
+        "closedWeekdays": [
+          2,
+          6
+        ]
       }
     },
     {
