@@ -90478,7 +90478,7 @@
     }
   },
   "KOP023496": {
-    "updtDtText": "2026.09.10",
+    "updtDtText": "2026.09.19",
     "detail": {
       "cid": "KOP023496",
       "lang_code_id": "ko",
@@ -90497,7 +90497,7 @@
       "post_sj": "서울로7017",
       "sumry": "6개 구역을 잇는 공중보행로의 기능과 녹지광장을 결합하는 도심전망대.",
       "creat_dt_text": "2017.11.08",
-      "updt_dt_text": "2026.09.10",
+      "updt_dt_text": "2026.09.19",
       "tag": [
         "서울여행",
         "서울로7017",
@@ -90514,7 +90514,7 @@
       ],
       "extra": {
         "cmmn_telno": "02-313-7017",
-        "cmmn_hmpg_url": "https://parks.seoul.go.kr/parks/detailView.do?pIdx=1382#target05",
+        "cmmn_hmpg_url": "https://parks.seoul.go.kr/content.do?key=2605090001",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
@@ -110075,7 +110075,7 @@
     }
   },
   "KOP023760": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.19",
     "detail": {
       "cid": "KOP023760",
       "lang_code_id": "ko",
@@ -110094,7 +110094,7 @@
       "post_sj": "숙정문",
       "sumry": "서울성곽을 이루는 사대문(四大門) 가운데 하나로, 도성의 북쪽 대문",
       "creat_dt_text": "2017.11.30",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.19",
       "tag": [
         "주말나들이",
         "서울사대문",
@@ -110193,7 +110193,7 @@
     }
   },
   "KOP023758": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.19",
     "detail": {
       "cid": "KOP023758",
       "lang_code_id": "ko",
@@ -110211,7 +110211,7 @@
       "post_sj": "소덕문 터(옛 서소문)",
       "sumry": "도성의 서남쪽인 숭례문과 돈의문의 중간지점의 소문(小門) ",
       "creat_dt_text": "2017.11.30",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.19",
       "tag": [
         "성문",
         " 소문",
@@ -110247,7 +110247,7 @@
     }
   },
   "KOP023606": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.19",
     "detail": {
       "cid": "KOP023606",
       "lang_code_id": "ko",
@@ -110266,7 +110266,7 @@
       "post_sj": "혜화문",
       "sumry": "도성을 에워싸는 성곽을 쌓을 때 도성의 북동방에 설치한 문(門)",
       "creat_dt_text": "2017.11.16",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.19",
       "tag": [
         "성문",
         "혜화문",
@@ -110307,7 +110307,7 @@
     }
   },
   "KOP023605": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.19",
     "detail": {
       "cid": "KOP023605",
       "lang_code_id": "ko",
@@ -110325,7 +110325,7 @@
       "post_sj": "광희문",
       "sumry": "서소문(西小門)과 함께 시신(屍身)을 내보내던 문",
       "creat_dt_text": "2017.11.16",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.19",
       "tag": [
         "4소문",
         " 동대문",
@@ -110361,7 +110361,7 @@
     }
   },
   "KOP023563": {
-    "updtDtText": "2026.04.12",
+    "updtDtText": "2026.09.19",
     "detail": {
       "cid": "KOP023563",
       "lang_code_id": "ko",
@@ -110379,7 +110379,7 @@
       "post_sj": "덕수궁돌담길",
       "sumry": "고즈넉한 분위기와 아름다운 풍경으로 유명한 서울 도심 산책로",
       "creat_dt_text": "2017.11.13",
-      "updt_dt_text": "2026.04.12",
+      "updt_dt_text": "2026.09.19",
       "tag": [
         "서울나들이",
         "서울걷기좋은곳",
@@ -110415,7 +110415,7 @@
     }
   },
   "KOP022888": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.19",
     "detail": {
       "cid": "KOP022888",
       "lang_code_id": "ko",
@@ -110433,7 +110433,7 @@
       "post_sj": "숭례문(남대문)",
       "sumry": "숭례문은 국보로 지정된 서울 도성의 남쪽 정문 남대문(南大門). ",
       "creat_dt_text": "2017.09.07",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.19",
       "tag": [
         "숭례문",
         " 국보제1호",
