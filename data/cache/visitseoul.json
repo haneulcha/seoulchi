@@ -89402,7 +89402,7 @@
     }
   },
   "KOP026676": {
-    "updtDtText": "2026.04.11",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP026676",
       "lang_code_id": "ko",
@@ -89420,7 +89420,7 @@
       "post_sj": "공근혜갤러리",
       "sumry": "해외 유명 사진작가들을 국내에 처음 소개하며 한국 사진계에 큰 영향력을 끼친 화랑",
       "creat_dt_text": "2018.09.20",
-      "updt_dt_text": "2026.04.11",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "청와대",
         "현대미술",
@@ -89442,7 +89442,7 @@
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "화요일~토요일",
-        "closed_days": "일요일, 월요일",
+        "closed_days": "일요일, 월요일, 추석 연휴",
         "usage_fee": "무료"
       },
       "traffic": {
@@ -89463,7 +89463,7 @@
     }
   },
   "KOP026675": {
-    "updtDtText": "2026.04.26",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP026675",
       "lang_code_id": "ko",
@@ -89481,7 +89481,7 @@
       "post_sj": "공평도시유적전시관",
       "sumry": " 조선 600년 역사를 한눈에 볼 수 있는 도시박물관",
       "creat_dt_text": "2018.09.20",
-      "updt_dt_text": "2026.04.26",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "공평도시유적전시관",
         "서울역사박물관",
@@ -89496,7 +89496,7 @@
       "extra": {
         "cmmn_telno": "02-724-0135",
         "cmmn_hmpg_url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_gongpyeong/annex_gongpyeong_01.jsp?sso=ok",
-        "cmmn_hmpg_lang": "한국어",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
         "cmmn_use_time": "09:00 - 18:00",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
@@ -89520,7 +89520,7 @@
     }
   },
   "KOP026558": {
-    "updtDtText": "2026.09.10",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP026558",
       "lang_code_id": "ko",
@@ -89538,9 +89538,9 @@
       "post_sj": "별마당 도서관",
       "sumry": "천장까지 이어진 책장이 인상적인, 책과 문화가 어우러진 열린 복합 문화 공간",
       "creat_dt_text": "2018.09.06",
-      "updt_dt_text": "2026.09.10",
+      "updt_dt_text": "2026.09.21",
       "tag": [
-        " 강남",
+        "강남",
         "도서관",
         " 문화",
         "북콘서트",
@@ -89560,7 +89560,6 @@
         "disabled_facility": [],
         "business_days": "월~일",
         "closed_days": "연중무휴",
-        "stroller_rent": "Y",
         "usage_fee": "무료"
       },
       "traffic": {
@@ -89577,11 +89576,11 @@
         "parking_fclty": "1",
         "safe_mng": "ul"
       },
-      "post_desc": "코엑스몰 중심에 위치한 별마당 도서관은 휴식과 만남, 그리고 책을 주제로 소통하는 문화 감성 공간으로써 누구나 무료로 이용할 수 있도록 모두에게 열려 있습니다. 인문, 경제, 취미 실용 등 분야별로 다양한 도서가 구비되어 있고 외국 원서 코너, 유명인의 서재 코너, 아이패드로 볼 수 있는 Ebook, 특히 해외 잡지까지 총 6백 여종의 잡지를 모아놓은 잡지 특화 코너는 일반 도서관과 차별화된 별마당 도서관의 장점입니다. 별마당 도서관에서는 저자들과 직접 만나는 작가 토크쇼와 시 낭송회, 명사 초청 강연회 및 음악이 함께하는 북콘서트 등 책을 주제로 한 다채로운 문화 행사도 전개됩니다. 별마당 도서관에 대해 자주 묻는 질문 별마당 도서관에서 열리는 강연과 공연 일정이 궁금합니다. 별마당 도서관에서 열리는 최신 강연과 공연 일정은 아래 웹사이트에서 확인할 수 있습니다. 별마당 도서관 이달의 강연・공연 일정 보러가기 별마당 도서관의 운영시간은 어떻게 되나요? 별마당 도서관의 운영시간은 10:30 ~ 22:00입니다. (2026년 기준) 별마당 도서관에 무료로 입장할 수 있나요? 네. 별마당 도서관은 누구나 무료로 이용할 수 있도록 모두에게 열려있습니다. (2025년 기준)"
+      "post_desc": "코엑스몰 중심에 위치한 별마당 도서관은 휴식과 만남, 그리고 책을 주제로 소통하는 문화 감성 공간으로써 누구나 무료로 이용할 수 있도록 모두에게 열려 있습니다. 인문, 경제, 취미 실용 등 분야별로 다양한 도서가 구비되어 있고 외국 원서 코너, 유명인의 서재 코너, 아이패드로 볼 수 있는 Ebook, 특히 해외 잡지까지 총 6백 여종의 잡지를 모아놓은 잡지 특화 코너는 일반 도서관과 차별화된 별마당 도서관의 장점입니다. 별마당 도서관에서는 저자들과 직접 만나는 작가 토크쇼와 시 낭송회, 명사 초청 강연회 및 음악이 함께하는 북콘서트 등 책을 주제로 한 다채로운 문화 행사도 전개됩니다. 별마당 도서관에 대해 자주 묻는 질문 별마당 도서관에서 열리는 강연과 공연 일정이 궁금합니다. 별마당 도서관에서 열리는 최신 강연과 공연 일정은 아래 웹사이트에서 확인할 수 있습니다. 별마당 도서관 이달의 강연・공연 일정 보러가기 별마당 도서관의 운영시간은 어떻게 되나요? 별마당 도서관의 운영시간은 10:30 ~ 22:00입니다. (2026년 기준) 별마당 도서관에 무료로 입장할 수 있나요? 네. 별마당 도서관은 누구나 무료로 이용할 수 있도록 모두에게 열려있습니다. (2026년 기준)"
     }
   },
   "KOP026206": {
-    "updtDtText": "2026.04.22",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP026206",
       "lang_code_id": "ko",
@@ -89602,7 +89601,7 @@
       "schdul_info_bgnde": "2025.08.11",
       "schdul_info_endde": "2025.08.13",
       "creat_dt_text": "2018.08.06",
-      "updt_dt_text": "2026.04.22",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "동대문",
         "유물",
@@ -89618,12 +89617,12 @@
         "cmmn_telno": "02-2153-0200",
         "cmmn_hmpg_url": "https://www.ddp.or.kr/?menuno=303",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "10:00~19:00",
+        "cmmn_use_time": "10:00 ~ 18:00 (※ 12~13시 휴관)",
         "cmmn_important": "※ 월요일이 공휴일인 경우에도 휴관합니다",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "화~일요일",
-        "closed_days": "월요일",
+        "closed_days": " 1월 1일, 구정당일, 추석당일, 매주 월요일 ",
         "stroller_rent": "Y",
         "usage_fee": "무료"
       },
@@ -89647,7 +89646,7 @@
     }
   },
   "KOP025929": {
-    "updtDtText": "2026.07.29",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP025929",
       "lang_code_id": "ko",
@@ -89665,7 +89664,7 @@
       "post_sj": "탈방 ",
       "sumry": "다양한 종류의 전통 수공예 탈을 만나볼 수 있는 곳",
       "creat_dt_text": "2018.07.11",
-      "updt_dt_text": "2026.07.29",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "목공예품",
         "산대탈",
@@ -89684,7 +89683,7 @@
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "월요일~토요일",
-        "closed_days": "일요일 "
+        "closed_days": "일요일 , 추석"
       },
       "traffic": {
         "adres": "서울 종로구 관훈동 71",
@@ -89703,7 +89702,7 @@
     }
   },
   "KOP024807": {
-    "updtDtText": "2026.04.28",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP024807",
       "lang_code_id": "ko",
@@ -89718,7 +89717,7 @@
       "post_sj": "인천공항 제2여객터미널 관광정보센터 ",
       "sumry": "인천공항 제2여객터미널에 위치한 관광정보센터로 2018년 1월 18일에 개관",
       "creat_dt_text": "2018.02.27",
-      "updt_dt_text": "2026.04.28",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "인천공항-제2여객터미널-관광정보센터",
         "인천공항2터미널역",
@@ -89730,7 +89729,7 @@
         "cmmn_telno": "032-743-3269",
         "cmmn_hmpg_url": "https://www.sta.or.kr/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "07:00~22:00 (식사시간: 11:00~13:00, 17:00~19:00(유동적 운영))",
+        "cmmn_use_time": "07:00~22:00",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "closed_days": "연중무휴"
@@ -89822,7 +89821,7 @@
     }
   },
   "KOP024732": {
-    "updtDtText": "2026.04.23",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP024732",
       "lang_code_id": "ko",
@@ -89840,7 +89839,7 @@
       "post_sj": "SJ쿤스트할레",
       "sumry": " 전시, 파티, 공연, 패션쇼, 워크숍 같은 프로그램과 연계된 일상 예술을 제공",
       "creat_dt_text": "2018.02.20",
-      "updt_dt_text": "2026.04.23",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "타이거버스",
         " 강남구청역",
@@ -89853,10 +89852,9 @@
         "cmmn_telno": "010-2014-9722",
         "cmmn_hmpg_url": "http://sjkunsthalle.com/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "평일 09:00 - 18:00 대관문의\r\n평일 11:00 - 22:00 카페\r\n평일 11:00 - 18:00 피규어갤러리(JDstudio)",
+        "cmmn_use_time": "· 카페 운영시간: 평일 09:00-18:00 (대관시 미운영)",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": [],
-        "business_days": "월요일~일요일"
+        "disabled_facility": []
       },
       "traffic": {
         "zip_code": "135-819",
@@ -89869,6 +89867,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "SJ쿤스트할레는 회의과 토론을 하는 문화예술적 플랫폼으로 만들어져 전시, 파티, 공연, 패션쇼, 워크숍 같은 프로그램과 연계된 일상 예술을 제공합니다. 컨테이너 구조물로 만들어진 “Kunsthalle” 는 독일어로 “Art Hall” 을 의미, 고정된 갤러리가 담아 내지 못 했던 다양한 문화를 자유롭게 표현하고자 여백의 넓은 공간감의 인테리어로 문화의 다양성을 확고하고 창조적 문화의 실험공간으로 큐레이팅이 가능하며 예술을 시도하여 전 세계의 트렌드 세터 들의 이목을 끄는 문화 예술 혁신의 공간입니다."
@@ -89934,7 +89933,7 @@
     }
   },
   "KOP024679": {
-    "updtDtText": "2026.06.19",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP024679",
       "lang_code_id": "ko",
@@ -89952,7 +89951,7 @@
       "post_sj": "동대문디자인플라자 (DDP)",
       "sumry": "서울특별시청이 2014년 3월 21일 문을 연 복합문화공간",
       "creat_dt_text": "2018.02.19",
-      "updt_dt_text": "2026.06.19",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "서울놀거리",
         "서울데이트코스",
@@ -89969,7 +89968,7 @@
         "cmmn_hmpg_url": "https://ddp.or.kr/",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "10:00 ~ 20:00 (공간별 운영시간 상이, 홈페이지 참조)",
-        "cmmn_important": "유모차는 종합안내실에서 대여 가능\r\n만 6개월 이상 36개월 미만일 경우 신분증 보관 후 10:00-17:30까지 무료 대여가능 (18:00 이전까지 반납/ 수, 금 20:00)\r\n종합안내실 : 02-2153-0000\r\n운영시간 : 10:00-21:00 (연중무휴, 음력설 당일 휴무)",
+        "cmmn_important": "유모차는 종합안내실에서 대여 가능\r\n만 6개월 이상 36개월 미만일 경우 신분증 보관 후 10:00-17:30까지 무료 대여가능 (18:00 이전까지 반납)\r\n종합안내실 : 02-2153-0000\r\n운영시간 : 10:00-21:00 (연중무휴, 음력설 당일 휴무)",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [
           "장애인화장실",
@@ -89979,6 +89978,7 @@
           "장애인 안내(휠체어 대여 및 기타)"
         ],
         "business_days": "매일",
+        "closed_days": "1월 1일 / 설날 / 추석 당일",
         "stroller_rent": "Y"
       },
       "traffic": {
@@ -89991,7 +89991,7 @@
         "subway_info": "지하철2/4/5호선 동대문역사문화공원역 1번 출구,  37m"
       },
       "tourist": {
-        "guidance_service": "ul",
+        "guidance_service": "2",
         "parking_fclty": "1",
         "safe_mng": "ul"
       },
@@ -90052,7 +90052,7 @@
     }
   },
   "KOP024663": {
-    "updtDtText": "2026.04.12",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP024663",
       "lang_code_id": "ko",
@@ -90070,10 +90070,9 @@
       "post_sj": "코엑스",
       "sumry": "국제회의와 국제적 리셉션, 업무 세미나와 소규모 회의 같은 대형 이벤트를 제공하는 콘퍼런스홀이 특징",
       "creat_dt_text": "2018.02.19",
-      "updt_dt_text": "2026.04.12",
+      "updt_dt_text": "2026.09.21",
       "tag": [
-        "삼성역",
-        " 컨벤션홀",
+        "컨벤션홀",
         "아쿠아리움",
         " 별마당도서관",
         " 쇼핑",
@@ -90090,13 +90089,14 @@
         " 콘서트",
         " 코엑스몰",
         " 박람회",
-        " 전시"
+        " 전시",
+        "삼성역"
       ],
       "extra": {
         "cmmn_telno": "02-6000-0114",
         "cmmn_hmpg_url": "www.coex.co.kr",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "매일 10:00 - 18:00 (행사 종료시간 상이)",
+        "cmmn_use_time": "행사별 상이하므로  홈페이지 참조",
         "cmmn_important": "물품보관소 : A홀 신한은행 옆 에스컬레이터(상행) 앞/ B홀 안내데스크 옆 에스컬레이터(상행/하행) 앞",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [
@@ -90126,7 +90126,7 @@
     }
   },
   "KOP024645": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP024645",
       "lang_code_id": "ko",
@@ -90144,7 +90144,7 @@
       "post_sj": "세빛섬",
       "sumry": "서울 도심 한가운데의 한강 수변에서 문화와 여가를 즐길 수 있는 문화 복합공간.",
       "creat_dt_text": "2018.02.14",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "공연",
         "수상문화공간",
@@ -90161,7 +90161,7 @@
         "cmmn_telno": "1566-3433",
         "cmmn_hmpg_url": "http://www.somesevit.co.kr/kr/index.do",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "11:00 ~ 22:00",
+        "cmmn_use_time": "각 섬별로 상이하므로 홈페이지 참조",
         "cmmn_important": "세빛섬 내부의 매장을 이용할 경우 각 매장 이용시간이 다르기 때문에 반드시 홈페이지를 통해 이용시간을 확인하고 가는 것이 좋습니다. 인근에 달빛무지개 분수가 있습니다. 만약 4~10월에 방문계획이 있는 관광객이라면 하루 3~7차례 가동하는 달빛무지개분수도 놓쳐서는 안될 관광명소입니다. ",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
@@ -90297,7 +90297,7 @@
     }
   },
   "KOP024591": {
-    "updtDtText": "2026.04.14",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP024591",
       "lang_code_id": "ko",
@@ -90315,7 +90315,7 @@
       "post_sj": "서울중앙우체국",
       "sumry": " 스카이홀의 해외 비즈니스 고객에 알맞은 동시통역,  다목적 회의장과 리셉션홀도 제공.",
       "creat_dt_text": "2018.02.13",
-      "updt_dt_text": "2026.04.14",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "타이거버스",
         "서울중앙우체국",
@@ -90329,9 +90329,10 @@
         "cmmn_hmpg_url": "https://www.koreapost.go.kr/100/index.do",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "우편업무 09:00~18:00\r\n금융업무 09:00~16:30 ",
-        "trrsrt_use_chrge": "F",
+        "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "월요일~금요일 "
+        "business_days": "월요일~금요일 ",
+        "closed_days": "토, 일, 공휴일"
       },
       "traffic": {
         "zip_code": "100-709",
@@ -106190,7 +106191,7 @@
     }
   },
   "KOP025927": {
-    "updtDtText": "2026.08.03",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP025927",
       "lang_code_id": "ko",
@@ -106208,7 +106209,7 @@
       "post_sj": "명신당필방",
       "sumry": "예술가들과 함께 성장한 문방사우 가게",
       "creat_dt_text": "2018.07.11",
-      "updt_dt_text": "2026.08.03",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "먹",
         "서화재료판매",
@@ -106228,7 +106229,7 @@
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "매일",
-        "closed_days": "없음"
+        "closed_days": "명절"
       },
       "traffic": {
         "adres": "서울 종로구 관훈동 18",
@@ -110137,7 +110138,7 @@
     }
   },
   "KOP023759": {
-    "updtDtText": "2026.04.12",
+    "updtDtText": "2026.09.21",
     "detail": {
       "cid": "KOP023759",
       "lang_code_id": "ko",
@@ -110154,7 +110155,7 @@
       "post_sj": "돈의문 터(옛 서대문)",
       "sumry": "돈의문은 서울 도성의 서쪽 문 1915년 3월 도로 확장공사를 위해 철거됨.\r\n",
       "creat_dt_text": "2017.11.30",
-      "updt_dt_text": "2026.04.12",
+      "updt_dt_text": "2026.09.21",
       "tag": [
         "서대문역",
         "서대문",

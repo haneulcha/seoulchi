@@ -7489,7 +7489,7 @@
       ],
       "kind": "place",
       "useTime": "화요일~토요일 10:30~17:30",
-      "closedDays": "일요일, 월요일",
+      "closedDays": "일요일, 월요일, 추석 연휴",
       "hours": {
         "open": "10:30",
         "close": "17:30",
@@ -7552,7 +7552,7 @@
       "isFree": true,
       "subwayInfo": "지하철 2호선 삼성역 5번 출구,  353m\r\n지하철 9호선 봉은사역 7번 출구,  328m",
       "tags": [
-        " 강남",
+        "강남",
         "도서관",
         " 문화",
         "북콘서트",
@@ -7598,7 +7598,7 @@
       ],
       "kind": "place",
       "useTime": "11:00 - 19:00",
-      "closedDays": "일요일",
+      "closedDays": "일요일 , 추석",
       "hours": {
         "open": "11:00",
         "close": "19:00",
@@ -7629,7 +7629,7 @@
         "제2여객터미널"
       ],
       "kind": "place",
-      "useTime": "07:00~22:00 (식사시간: 11:00~13:00, 17:00~19:00(유동적 운영))",
+      "useTime": "07:00~22:00",
       "closedDays": "연중무휴",
       "hours": {
         "open": "07:00",
@@ -7700,7 +7700,7 @@
         "압구정로데오거리"
       ],
       "kind": "place",
-      "useTime": "평일 09:00 - 18:00 대관문의\r\n평일 11:00 - 22:00 카페\r\n평일 11:00 - 18:00 피규어갤러리(JDstudio)",
+      "useTime": "· 카페 운영시간: 평일 09:00-18:00 (대관시 미운영)",
       "hours": {
         "open": "09:00",
         "close": "18:00",
@@ -7765,6 +7765,7 @@
       ],
       "kind": "place",
       "useTime": "10:00 ~ 20:00 (공간별 운영시간 상이, 홈페이지 참조)",
+      "closedDays": "1월 1일 / 설날 / 추석 당일",
       "hours": {
         "open": "10:00",
         "close": "20:00",
@@ -7813,8 +7814,7 @@
       "isFree": false,
       "subwayInfo": "지하철 2호선 삼성역 6번 출구, 273m",
       "tags": [
-        "삼성역",
-        " 컨벤션홀",
+        "컨벤션홀",
         "아쿠아리움",
         " 별마당도서관",
         " 쇼핑",
@@ -7831,15 +7831,12 @@
         " 콘서트",
         " 코엑스몰",
         " 박람회",
-        " 전시"
+        " 전시",
+        "삼성역"
       ],
       "kind": "place",
-      "useTime": "매일 10:00 - 18:00 (행사 종료시간 상이)",
-      "hours": {
-        "open": "10:00",
-        "close": "18:00",
-        "closedWeekdays": []
-      }
+      "useTime": "행사별 상이하므로  홈페이지 참조",
+      "hours": null
     },
     {
       "id": "vs-KOP024645",
@@ -7868,13 +7865,9 @@
         "야간명소"
       ],
       "kind": "place",
-      "useTime": "11:00 ~ 22:00",
+      "useTime": "각 섬별로 상이하므로 홈페이지 참조",
       "closedDays": "연중무휴",
-      "hours": {
-        "open": "11:00",
-        "close": "22:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP024630",
@@ -7957,7 +7950,7 @@
       "lng": 126.98216694,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=18447&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "linkUrl": "https://www.koreapost.go.kr/100/index.do",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 4호선 명동역 5번 출구,  329m",
       "tags": [
         "타이거버스",
@@ -7969,6 +7962,7 @@
       ],
       "kind": "place",
       "useTime": "우편업무 09:00~18:00\r\n금융업무 09:00~16:30",
+      "closedDays": "토, 일, 공휴일",
       "hours": {
         "open": "09:00",
         "close": "18:00",
@@ -17208,7 +17202,7 @@
       ],
       "kind": "place",
       "useTime": "09:30~19:00",
-      "closedDays": "없음",
+      "closedDays": "명절",
       "hours": {
         "open": "09:30",
         "close": "19:00",
