@@ -7166,11 +7166,13 @@
       ],
       "kind": "place",
       "useTime": "10:00~19:00 (KST)",
-      "closedDays": "설, 추석 당일 휴무",
+      "closedDays": "설, 추석 당일, 월요일",
       "hours": {
         "open": "10:00",
         "close": "19:00",
-        "closedWeekdays": []
+        "closedWeekdays": [
+          1
+        ]
       }
     },
     {
@@ -7231,7 +7233,7 @@
         "삼일교-관광안내소"
       ],
       "kind": "place",
-      "useTime": "10:00~19:00\r\n  ※ 운영시간은 상황에 따라 변동될 수 있으며, 설날 및 추석 연휴는 휴무",
+      "useTime": "10:00~19:00",
       "closedDays": "※ 설, 추석 당일 휴관",
       "hours": {
         "open": "10:00",
@@ -7357,11 +7359,13 @@
       ],
       "kind": "place",
       "useTime": "10:00~18:00",
-      "closedDays": "설, 추석명절 휴무",
+      "closedDays": "설, 추석 명절 당일, 월요일",
       "hours": {
         "open": "10:00",
         "close": "18:00",
-        "closedWeekdays": []
+        "closedWeekdays": [
+          1
+        ]
       }
     },
     {
@@ -7410,14 +7414,14 @@
       "isFree": true,
       "subwayInfo": "지하철 3호선 안국역 1번 출구,  527m",
       "tags": [
-        "관광안내소",
         "정독도서관",
         "북촌마을관광안내소",
-        "외국어안내"
+        "외국어안내",
+        "관광안내소"
       ],
       "kind": "place",
-      "useTime": "​09:00~18:00(일요일 휴관)",
-      "closedDays": "연중무휴 (설, 추석 명절 당일만 휴무)",
+      "useTime": "​09:00~18:00",
+      "closedDays": "설, 추석 명절 당일",
       "hours": {
         "open": "09:00",
         "close": "18:00",
@@ -17131,7 +17135,7 @@
       ],
       "kind": "place",
       "useTime": "10:00~17:00",
-      "closedDays": "매주 일요일",
+      "closedDays": "매주 일요일, 추석",
       "hours": {
         "open": "10:00",
         "close": "17:00",
@@ -17158,14 +17162,14 @@
         "옥공예",
         " 종로",
         " 전통",
-        " 종로귀금속거리",
         "오래가게",
         " 공방",
-        " 종로5"
+        " 종로5",
+        " 종로귀금속거리"
       ],
       "kind": "place",
       "useTime": "월요일~금요일 10:30~18:30",
-      "closedDays": "주말 정기 휴무\r\n8/15",
+      "closedDays": "주말, 공휴일",
       "hours": {
         "open": "10:30",
         "close": "18:30",

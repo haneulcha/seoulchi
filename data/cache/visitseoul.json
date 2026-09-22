@@ -88817,7 +88817,7 @@
     }
   },
   "KOP027231": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027231",
       "lang_code_id": "ko",
@@ -88831,7 +88831,7 @@
       "post_sj": "신촌역사 관광안내소",
       "sumry": "여행객들에게 여행 정보, 통역, 예약, 관광홍보물, 편의시설을 제공",
       "creat_dt_text": "2018.10.26",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "신촌역사-관광안내소",
         "구신촌역사",
@@ -88849,13 +88849,13 @@
         "cmmn_use_time": "10:00~19:00 (KST)",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
-        "closed_days": "설, 추석 당일 휴무",
+        "closed_days": "설, 추석 당일, 월요일",
         "usage_fee": "무료"
       },
       "traffic": {
-        "zip_code": "120-140",
-        "adres": "서울 서대문구 신촌동 74-12",
-        "new_zip_code": "03765",
+        "zip_code": "120140",
+        "adres": "서울 서대문구 신촌동 74-21",
+        "new_zip_code": "120140",
         "new_adres": "서울 서대문구 신촌역로 30 (신촌동, 신촌민자역사)",
         "new_adres2": "신촌역사 내",
         "map_position_x": "126.9423868649",
@@ -88870,7 +88870,7 @@
     }
   },
   "KOP027225": {
-    "updtDtText": "2026.04.26",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027225",
       "lang_code_id": "ko",
@@ -88886,7 +88886,7 @@
       "post_sj": "광화문 관광안내소",
       "sumry": "여행 정보, 통역 안내 서비스, 예약 서비스, 관광홍보물, 편의시설을 제공",
       "creat_dt_text": "2018.10.26",
-      "updt_dt_text": "2026.04.26",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "광화문-관광안내소",
         "광화문",
@@ -88919,14 +88919,14 @@
         "subway_info": "지하철 5호선 광화문역 6번 출구,  13m"
       },
       "tourist": {
-        "guidance_service": "ul",
+        "guidance_service": "3",
         "safe_mng": "ul"
       },
       "post_desc": "광화문에 위치한 관광안내소로 서울을 방문하는 여행객들에게 여행 정보, 통역 안내 서비스, 예약 서비스, 관광홍보물, 편의시설을 제공합니다. 영어, 일본어, 중국어 안내가 가능합니다."
     }
   },
   "KOP027221": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027221",
       "lang_code_id": "ko",
@@ -88941,7 +88941,7 @@
       "post_sj": "서울 관광기념품 전시관•여행자지원센터",
       "sumry": "종로에 위치한 관광안내소. 여행 정보, 통역 안내 서비스, 예약 서비스 제공",
       "creat_dt_text": "2018.10.26",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "삼일교",
         "청계천",
@@ -88953,10 +88953,10 @@
         "삼일교-관광안내소"
       ],
       "extra": {
-        "cmmn_telno": "02-720-0872 (관광안내, 기념품) / 1800-9008 (여행자지원센터)",
+        "cmmn_telno": "070-7008-3322",
         "cmmn_hmpg_url": "https://tiac.or.kr/lang_kr",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
-        "cmmn_use_time": "10:00~19:00\r\n  ※ 운영시간은 상황에 따라 변동될 수 있으며, 설날 및 추석 연휴는 휴무 ",
+        "cmmn_use_time": "10:00~19:00\r\n",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "closed_days": "※ 설, 추석 당일 휴관",
@@ -88981,7 +88981,7 @@
     }
   },
   "KOP027219": {
-    "updtDtText": "2026.08.04",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027219",
       "lang_code_id": "ko",
@@ -88995,7 +88995,7 @@
       "post_sj": "남대문시장 관광안내소",
       "sumry": "남대문 시장에 위치 여행 정보, 통역 안내 서비스, 예약 서비스 등을  제공",
       "creat_dt_text": "2018.10.26",
-      "updt_dt_text": "2026.08.04",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "남대문",
         "남대문시장",
@@ -89032,7 +89032,7 @@
     }
   },
   "KOP027218": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027218",
       "lang_code_id": "ko",
@@ -89046,7 +89046,7 @@
       "post_sj": "이태원 관광안내소(지하)",
       "sumry": "이태원역사 내에 위치한 관광안내소로  여행 정보 제공",
       "creat_dt_text": "2018.10.26",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "이태원역",
         "이태원-관광안내소지하",
@@ -89084,7 +89084,7 @@
     }
   },
   "KOP027215": {
-    "updtDtText": "2026.04.28",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027215",
       "lang_code_id": "ko",
@@ -89098,7 +89098,7 @@
       "post_sj": "동대문 관광안내소",
       "sumry": "동대문역사문화공원역 앞에 위치한 관광안내소",
       "creat_dt_text": "2018.10.26",
-      "updt_dt_text": "2026.04.28",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "동대문-관광안내소",
         "안내소",
@@ -89127,14 +89127,14 @@
         "subway_info": "지하철 2/4/5호선 동대문역사문화공원역 14번 출구,  18m \r\n지하철 1/4호선 동대문역 8번 출구,  466m"
       },
       "tourist": {
-        "guidance_service": "ul",
+        "guidance_service": "3",
         "safe_mng": "ul"
       },
       "post_desc": "동대문역사문화공원역 앞에 위치한 관광안내소로 서울을 방문하는 여행객들에게 여행 정보, 통역 안내 서비스, 관광홍보물, 편의시설을 제공합니다. 영어, 일본어, 중국어 안내가 가능하며 디스커버서울패스를 판매하고 있습니다."
     }
   },
   "KOP027193": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027193",
       "lang_code_id": "ko",
@@ -89148,7 +89148,7 @@
       "post_sj": "송파관광정보센터",
       "sumry": "송파관광정보센터는 내·외국인 관광객의 편의를 위해 설립",
       "creat_dt_text": "2018.10.25",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "송파",
         "사랑의자물쇠",
@@ -89159,14 +89159,14 @@
         "관광안내"
       ],
       "extra": {
-        "cmmn_telno": "+82-2-421-0970~1",
+        "cmmn_telno": "0507-1475-0970",
         "cmmn_use_time": "10:00~18:00",
         "cmmn_important": "외국어 전화응대 가능 (영어, 일본어, 중국어)",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
           "장애인 안내(휠체어 대여 및 기타)"
         ],
-        "closed_days": "설, 추석명절 휴무",
+        "closed_days": "설, 추석 명절 당일, 월요일",
         "usage_fee": "무료"
       },
       "traffic": {
@@ -89186,7 +89186,7 @@
     }
   },
   "KOP027190": {
-    "updtDtText": "2026.04.28",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027190",
       "lang_code_id": "ko",
@@ -89202,7 +89202,7 @@
       "post_sj": "마포관광정보센터",
       "sumry": "마포관광정보센터는 홍대입구역 7번 출구에서 도보 3분 거리에 있는 관광안내소",
       "creat_dt_text": "2018.10.25",
-      "updt_dt_text": "2026.04.28",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "마포관광정보센터",
         "홍대관광",
@@ -89220,6 +89220,7 @@
         "cmmn_important": "외국어 응대 가능 (영어, 일본어, 중국어)",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
+        "business_days": "매일",
         "usage_fee": "무료"
       },
       "traffic": {
@@ -89238,7 +89239,7 @@
     }
   },
   "KOP027189": {
-    "updtDtText": "2026.04.28",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027189",
       "lang_code_id": "ko",
@@ -89252,22 +89253,23 @@
       "post_sj": "북촌마을관광안내소",
       "sumry": "정독도서관 내 부지를 활용하여 건립, 관광정보 제공 및 통역 안내서비스",
       "creat_dt_text": "2018.10.24",
-      "updt_dt_text": "2026.04.28",
+      "updt_dt_text": "2026.09.22",
       "tag": [
-        "관광안내소",
         "정독도서관",
         "북촌마을관광안내소",
-        "외국어안내"
+        "외국어안내",
+        "관광안내소"
       ],
       "extra": {
         "cmmn_telno": "02-2148-4161 ",
         "cmmn_hmpg_url": "https://www.sta.or.kr/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "​09:00~18:00(일요일 휴관)",
+        "cmmn_use_time": "​09:00~18:00",
         "cmmn_important": "서비스언어 : 영어, 중국어, 일어 (해당 외국어 가능 안내사 휴무일은 불가)",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
-        "closed_days": "연중무휴 (설, 추석 명절 당일만 휴무)"
+        "business_days": "매일",
+        "closed_days": "설, 추석 명절 당일"
       },
       "traffic": {
         "zip_code": "110-210",
@@ -89344,7 +89346,7 @@
     }
   },
   "KOP027105": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027105",
       "lang_code_id": "ko",
@@ -89362,7 +89364,7 @@
       "post_sj": "근현대사기념관",
       "sumry": "독립정신과 민주주의의 뜻을 제대로 기억하고 전파하기 위해 설립",
       "creat_dt_text": "2018.10.19",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "순국선열",
         " 민주주의",
@@ -89379,7 +89381,8 @@
         "cmmn_use_time": "09:00~18:00 (마감 30분 전까지 입장)",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실"
+          "장애인화장실",
+          "장애인 전용 주차장"
         ],
         "closed_days": "-월요일 (월요일이 공휴일인 경우 개관하고, 다음 평일에 휴관)\r\n-1월 1일\r\n-설날, 추석 연휴\r\n-강북구청이 지정한 날",
         "usage_fee": "무료"
@@ -106083,7 +106086,7 @@
     }
   },
   "KOP027813": {
-    "updtDtText": "2026.07.29",
+    "updtDtText": "2026.09.23",
     "detail": {
       "cid": "KOP027813",
       "lang_code_id": "ko",
@@ -106101,7 +106104,7 @@
       "post_sj": "북촌목공예공방",
       "sumry": "전통탈 만들기 체험을 즐길 수 있는 북촌의 목공방",
       "creat_dt_text": "2018.12.11",
-      "updt_dt_text": "2026.07.29",
+      "updt_dt_text": "2026.09.23",
       "tag": [
         "목공예",
         "북촌",
@@ -106117,7 +106120,7 @@
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
         "business_days": "월요일 ~ 토요일",
-        "closed_days": "매주 일요일",
+        "closed_days": "매주 일요일, 추석",
         "usage_fee": "체험별 상이"
       },
       "traffic": {
@@ -106137,7 +106140,7 @@
     }
   },
   "KOP027812": {
-    "updtDtText": "2026.07.25",
+    "updtDtText": "2026.09.23",
     "detail": {
       "cid": "KOP027812",
       "lang_code_id": "ko",
@@ -106155,15 +106158,15 @@
       "post_sj": "가원공방",
       "sumry": "서울시 무형문화재 제37호 옥장이 운영하는 공방",
       "creat_dt_text": "2018.12.11",
-      "updt_dt_text": "2026.07.25",
+      "updt_dt_text": "2026.09.23",
       "tag": [
         "옥공예",
         " 종로",
         " 전통",
-        " 종로귀금속거리",
         "오래가게",
         " 공방",
-        " 종로5"
+        " 종로5",
+        " 종로귀금속거리"
       ],
       "extra": {
         "cmmn_telno": "02-814-0250",
@@ -106173,7 +106176,7 @@
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "평일",
-        "closed_days": "주말 정기 휴무\r\n8/15 "
+        "closed_days": "주말, 공휴일"
       },
       "traffic": {
         "adres": "서울 종로구 봉익동 23",
@@ -110024,7 +110027,7 @@
     }
   },
   "KOP027112": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.22",
     "detail": {
       "cid": "KOP027112",
       "lang_code_id": "ko",
@@ -110040,7 +110043,7 @@
       "post_sj": "초대길",
       "sumry": "초대길은 강북구 근현대사기념관 개관을 기념하여 새롭게 기획된 둘레길 코스",
       "creat_dt_text": "2018.10.22",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.22",
       "tag": [
         "순국선열묘역",
         " 트레킹",
