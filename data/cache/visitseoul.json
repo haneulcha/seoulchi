@@ -88185,7 +88185,7 @@
     }
   },
   "KOP029381": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.09.23",
     "detail": {
       "cid": "KOP029381",
       "lang_code_id": "ko",
@@ -88203,9 +88203,8 @@
       "post_sj": "돈의문역사관",
       "sumry": "새문안 동네의 식당으로 운영되던 건물들을 활용하여 새롭게 조성한 문화공간 ",
       "creat_dt_text": "2019.05.02",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.09.23",
       "tag": [
-        "돈의문",
         " 돈의문역사관",
         "한정",
         " 유적",
@@ -88216,16 +88215,18 @@
         " 새문안로",
         "문화공간",
         " 아지오",
-        " 돈의문박물관마을"
+        " 돈의문박물관마을",
+        "돈의문"
       ],
       "extra": {
         "cmmn_telno": "02-724-0271",
         "cmmn_hmpg_url": "https://museum.seoul.go.kr/www/intro/annexIntro/annex_donuimoon/annex_donuimoon_01.jsp?sso=ok",
-        "cmmn_hmpg_lang": "한국어",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
         "cmmn_use_time": "09:00 ~ 18:00 (입장마감 17:30)",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "화요일~일요일",
+        "closed_days": " * 2026년 12월 31일까지 휴관 예정\r\n 1월 1일, 공휴일을 제외한 매주 월요일",
         "usage_fee": "무료"
       },
       "traffic": {
@@ -88482,7 +88483,7 @@
     }
   },
   "KOP028340": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.09.23",
     "detail": {
       "cid": "KOP028340",
       "lang_code_id": "ko",
@@ -88500,15 +88501,15 @@
       "post_sj": "연세대 캠퍼스",
       "sumry": "연세대 캠퍼스는 외관이 아름다워 영화나 드라마에도 자주 등장.",
       "creat_dt_text": "2019.02.08",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.09.23",
       "tag": [
+        "연세대 캠퍼스",
         " 연세대학교",
         " 대학교",
         " 신촌",
         " 언더우드",
         "캠퍼스",
-        " 홍대",
-        "연세대 캠퍼스"
+        " 홍대"
       ],
       "extra": {
         "cmmn_telno": "02-2123-2114",
@@ -88534,7 +88535,7 @@
     }
   },
   "KOP028338": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.09.23",
     "detail": {
       "cid": "KOP028338",
       "lang_code_id": "ko",
@@ -88552,7 +88553,7 @@
       "post_sj": "ECC(Ewha Campus Complex)",
       "sumry": "이화여자대학교 캠퍼스 내에 조성한 복합 단지",
       "creat_dt_text": "2019.02.08",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.09.23",
       "tag": [
         "ECC",
         " EwhaCampusComplex",
@@ -88575,7 +88576,7 @@
         "new_adres": "서울 서대문구 이화여대길 52 (대현동, 이화여자대학교)",
         "map_position_x": "126.9502882721266",
         "map_position_y": "37.56446406709584",
-        "subway_info": "지하철 2호선 이대역 3번 출구,  500m"
+        "subway_info": "지하철 2호선 이대역 3번 출구,  340m"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -109920,7 +109921,7 @@
     }
   },
   "KOP029394": {
-    "updtDtText": "2026.04.26",
+    "updtDtText": "2026.09.23",
     "detail": {
       "cid": "KOP029394",
       "lang_code_id": "ko",
@@ -109938,7 +109939,7 @@
       "post_sj": "절두산순교성지",
       "sumry": "한국천주교순교자박물관으로 천주교의 대표적 성지",
       "creat_dt_text": "2019.05.07",
-      "updt_dt_text": "2026.04.26",
+      "updt_dt_text": "2026.09.23",
       "tag": [
         "순례",
         " 순교자박물관",
@@ -109957,7 +109958,7 @@
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "화요일~일요일",
-        "closed_days": "월요일"
+        "closed_days": "매주 월요일, 1월 1일, 설 및 추석 연휴"
       },
       "traffic": {
         "zip_code": "121-883",
@@ -109976,7 +109977,7 @@
     }
   },
   "KOP028339": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.23",
     "detail": {
       "cid": "KOP028339",
       "lang_code_id": "ko",
@@ -109993,7 +109994,7 @@
       "post_sj": "봉원사",
       "sumry": "신라 진성여왕 3년(889년)에 현 연세대 터에 창건한 절",
       "creat_dt_text": "2019.02.08",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.23",
       "tag": [
         "연꽃",
         " 절",
@@ -110017,7 +110018,7 @@
         "new_adres": "서울 서대문구 봉원사길 120 (봉원사)",
         "map_position_x": "126.94764794962",
         "map_position_y": "37.5719174931081",
-        "subway_info": "지하철 2호선 신촌역 3번 출구,  7024버스 환승 봉원사길정류장 하차,  378m\r\n"
+        "subway_info": "지하철 2호선 신촌역 4번 출구,  7024버스 환승 봉원사길정류장 하차,  378m\r\n"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -115990,7 +115991,7 @@
     }
   },
   "KOP028656": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.09.23",
     "detail": {
       "cid": "KOP028656",
       "lang_code_id": "ko",
@@ -116008,7 +116009,7 @@
       "post_sj": "백범광장공원",
       "sumry": "백범광장공원은 서울 중구 회현동 남산공원을 올라가는 도중 산 중턱에 위치",
       "creat_dt_text": "2019.03.07",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.09.23",
       "tag": [
         "김구",
         " 백범광장공원",
@@ -116022,11 +116023,7 @@
         "cmmn_telno": "02-3783-5900",
         "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능"
-        ],
+        "disabled_facility": [],
         "business_days": "매일",
         "closed_days": "연중무휴",
         "usage_fee": "무료"
@@ -119936,6 +119933,261 @@
         "safe_mng": "ul"
       },
       "post_desc": "가을 하늘 아래 푸르른 잔디밭에서 즐기는 우리 음악 나들이 추석 연휴, 삼현과 피리밴드 저클이 선사하는 흥겨운 무대로 초대합니다. 올가을 가장 여유롭고 신나는 하루, <여유작 콘서트>에서 함께하세요!"
+    }
+  },
+  "KOPbdvixl": {
+    "updtDtText": "2026.09.23",
+    "detail": {
+      "cid": "KOPbdvixl",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPbdvixl,en:ENPbdvixl,ja:JPPbdvixl,zh-CN:CNPbdvixl,zh-TW:TCPbdvixl,ru:RUPbdvixl",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82299&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82301&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82302&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82303&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82304&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82305&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 서울미식주간 (TASTE OF SEOUL 2026)",
+      "sumry": "서울 미식의 고유한 가치를 전 세계에 알리는 글로벌 미식 축제",
+      "schdul_info_bgnde": "2026.10.23",
+      "schdul_info_endde": "2026.10.29",
+      "place": "DDP 및 서울 전역",
+      "creat_dt_text": "2026.09.17",
+      "updt_dt_text": "2026.09.23",
+      "tag": [
+        "서울미식주간",
+        "서울",
+        "테이스트오브서울",
+        "tasteofseoul",
+        "seoul"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2058-1070",
+        "cmmn_hmpg_url": "https://tasteofseoul.visitseoul.net/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "12:00 ~ 17:00",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "일부 프로그램 유료 (서울미식마켓, 서울미식투어 등)"
+      },
+      "traffic": {
+        "adres": "서울 중구 을지로7가 143",
+        "new_zip_code": "04566",
+        "new_adres": "서울 중구 을지로 281 (을지로7가)",
+        "map_position_x": "127.010890355484",
+        "map_position_y": "37.5680445876689",
+        "subway_info": "지하철 2호선/4호선/5호선 동대문역사문화공원역 1번출구, 365m"
+      },
+      "post_desc": "서울 미식의 고유한 가치를 전 세계에 알리는 글로벌 미식 축제로, ‘서울 미식 100선’ 발표와 연계하여 셰프, 레스토랑, 전통시장이 함께 참여하는 다채로운 미식 경험을 제공합니다."
+    }
+  },
+  "KOPjeyrgm": {
+    "updtDtText": "2026.09.23",
+    "detail": {
+      "cid": "KOPjeyrgm",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPjeyrgm,en:ENPjeyrgm,ja:JPPjeyrgm,zh-CN:CNPjeyrgm,zh-TW:TCPjeyrgm,ru:RUPjeyrgm",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82267&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82269&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 사랑 – 인도문화축제 개막식",
+      "sumry": "인도의 8대 고전무용 가운데 하나인 오디시(Odissi) 공연",
+      "schdul_info_bgnde": "2026.09.15",
+      "schdul_info_endde": "2026.09.15",
+      "place": "이화여자대학교 삼성홀",
+      "creat_dt_text": "2026.09.14",
+      "updt_dt_text": "2026.09.23",
+      "tag": [
+        "인도문화축제",
+        "인도전통무용"
+      ],
+      "extra": {
+        "cmmn_telno": "02-792-4257",
+        "cmmn_hmpg_url": "https://www.indembassyseoul.gov.in/icc/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "18:30-19:50",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 서대문구 대현동 11-1",
+        "new_zip_code": "03760",
+        "new_adres": "서울 서대문구 이화여대길 52 이화여자대학교 이화캠퍼스복합단지ECC 지하4층",
+        "map_position_x": "126.950288837762",
+        "map_position_y": "37.5644645178259",
+        "subway_info": "지하철 2호선 이대역 3번출구, 294m"
+      },
+      "post_desc": "주한인도대사관에서 2026 사랑-인도문화축제(Sarang Festival of India in Korea) 개막식에 귀하를 초대합니다. 이번 개막식에서는 인도의 8대 고전무용 가운데 하나인 오디시(Odissi) 공연을 선보입니다. 오디시는 오디샤(Odisha)에서 유래한 전통 고전무용으로, 인도 전통문화의 우아한 자세와 섬세한 손짓, 풍부한 표정과 리드미컬한 움직임을 통해 신화와 이야기를 표현하는 전통 무용입니다. 이번 공연을 통해 오랜 역사와 전통을 간직한 인도의 예술과 문화를 가까이에서 경험하고, 인도와 한국이 이어온 우정과 문화 교류의 의미를 함께 나누는 뜻깊은 시간이 될 것입니다. 2026 사랑-인도문화축제의 특별한 시작을 함께해 주시기 바랍니다."
+    }
+  },
+  "KOPld2cm9": {
+    "updtDtText": "2026.09.23",
+    "detail": {
+      "cid": "KOPld2cm9",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPld2cm9,en:ENPld2cm9,ja:JPPld2cm9,zh-CN:CNPld2cm9,zh-TW:TCPld2cm9,ru:RUPld2cm9",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82264&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82266&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "프로젝트 WAT : 여성X예술X기술",
+      "sumry": "포용·다양성·생태 등 여성적 가치와 기술의 확장적 재해석을 통해, 인간적인 온기를 회복하고자 기획된 전시",
+      "schdul_info_bgnde": "2026.08.21",
+      "schdul_info_endde": "2026.09.23",
+      "place": "성북예술창작터",
+      "creat_dt_text": "2026.09.14",
+      "updt_dt_text": "2026.09.23",
+      "tag": [
+        "프로젝트W.A.T.",
+        "성북문화재단",
+        "성북예술창작터",
+        "여성",
+        "예술기술",
+        "여성기술"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2038-9989 ",
+        "cmmn_hmpg_url": "https://sma.sbculture.or.kr/youngartspace/index.do",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "10시-18시 (일,월 및 공휴일 휴관)",
+        "cmmn_important": "- 기획전시 《아무 때나-어디서나-무엇이나: 일상의 연금술》(8.21~9.23)\r\n- 특별강연 《여성×예술×기술: 계보 읽기와 새로운 가능성 더듬기》(8.29/ 9.12 *총 2회차) ",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 성북구 성북동1가 74-1",
+        "new_zip_code": "02880",
+        "new_adres": "서울 성북구 성북로 23 (성북동1가, 성북예술창작터)",
+        "map_position_x": "127.004123001975",
+        "map_position_y": "37.5900522477346",
+        "subway_info": "지하철 4호선 한성대입구역 5번출구, 200m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "성북예술창작터에서 진행되고 있는 [프로젝트 W.A.T.: 여성X예술X기술]은 초기술(Hyper-technology), 초연결 시대 속 '인간 소외의 역설'에 주목합니다. 이 프로젝트는 포용·다양성·생태 등 여성적 가치와 기술의 확장적 재해석을 통해, 인간적인 온기를 회복하고자 기획되었습니다. [프로젝트 W.A.T.: 여성X예술X기술]은 특별 강연과 기획 전시로 만나볼 수 있습니다. 총 7명의 작가가 참여, 동양화에서부터 AI 기술까지 선보이는 기획 전시 《아무 때나-어디서나-무엇이나: 일상의 연금술》은 9월 23일(수)까지 개최 됩니다. 지난 8월 29일에 열린 오영진 교수의 특강에 이어 9월 12일로 예정된 이택광 교수의 특별 강연 <약한 기술과 예술> 및 수경-재배 작가의 전시연계 워크숍은 신청을 통해 참여 가능합니다. *신청방법 홈페이지 참조"
+    }
+  },
+  "KOPm986je": {
+    "updtDtText": "2026.09.23",
+    "detail": {
+      "cid": "KOPm986je",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPm986je,en:ENPm986je,ja:JPPm986je,zh-CN:CNPm986je,zh-TW:TCPm986je,ru:RUPm986je",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82227&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82229&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82230&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82231&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82232&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82233&fileTy=MEDIA&fileNo=2&thumbTy=M"
+      ],
+      "post_sj": "김덕용, 변용국 2인전 《결에 머문 빛》",
+      "sumry": "서로 다른 세계를 탐구해 온 두 작가는 한국적 감각 속에 존재하는 ‘머무는 빛’에서 만나, 자연과 내면, 시간과 기억이 교차하는 풍경을 펼쳐 보이는 전시",
+      "schdul_info_bgnde": "2026.08.28",
+      "schdul_info_endde": "2026.10.31",
+      "place": "아트큐브 투알투 갤러리",
+      "creat_dt_text": "2026.09.14",
+      "updt_dt_text": "2026.09.23",
+      "tag": [
+        "갤러리",
+        "김덕용",
+        "변용국",
+        "회화",
+        "미디어아트",
+        "nft",
+        "exhibition",
+        "전시"
+      ],
+      "extra": {
+        "cmmn_telno": "010-8407-5165",
+        "cmmn_hmpg_url": "https://www.artcube2r2.com/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "화~토 11am-06pm (월, 일, 공휴일 휴무)",
+        "cmmn_important": "도슨트 가능, 미디어아트, 작가 굿즈 판매",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "접근가능",
+          "엘리베이터"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 강남구 역삼동 683-13",
+        "new_zip_code": "06145",
+        "new_adres": "서울 강남구 선릉로 563 (역삼동) 1층",
+        "map_position_x": "127.044212516797",
+        "map_position_y": "37.5088515512806",
+        "subway_info": "지하철 9호선/수인분당선 선정릉역 4번출구, 176m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "이번 전시 [결에 머문 빛]은 한국적 빛의 감각을 동시대 회화의 언어로 확장해 온 두 작가, 김덕용과 변용국의 작업 세계를 조명합니다. 김덕용의 빛이 자연 속에서 발견되는 빛이라면, 변용국의 빛은 마음속에서 발현되는 빛입니다. 한 작가는 외부 세계의 순간을 포착하고, 다른 작가는 내면에 축적된 시간을 드러냅니다. 그러나 두 작가의 작업은 결국 하나의 지점, 한국적 감각 속에 존재하는 '머무는 빛'에서 만납니다."
+    }
+  },
+  "KOPt2kzbo": {
+    "updtDtText": "2026.09.23",
+    "detail": {
+      "cid": "KOPt2kzbo",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cf1y9k1",
+      "cate_depth": " 체험관광 > 웰니스관광",
+      "multi_lang_list": "ko:KOPt2kzbo,en:ENPt2kzbo,ja:JPPt2kzbo,zh-CN:CNPt2kzbo,zh-TW:TCPt2kzbo,ru:RUPt2kzbo,ms:MLPt2kzbo",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82295&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82296&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82297&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82298&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "이글필라테스 EAGLE PILATES",
+      "sumry": "외국인 방문객을 위한 1:1 필라테스 체험 레슨이 가능한 개인레슨 전문센터",
+      "creat_dt_text": "2026.09.17",
+      "updt_dt_text": "2026.09.23",
+      "tag": [
+        "필라테스",
+        "명동필라테스",
+        "외국인필라테스",
+        "체험",
+        "웰니스"
+      ],
+      "extra": {
+        "cmmn_telno": "010-3294-6848",
+        "cmmn_hmpg_url": "https://www.eaglepilates.co.kr/for-international-tourists",
+        "cmmn_hmpg_lang": "영어",
+        "cmmn_use_time": "예약 페이지에서 확인",
+        "cmmn_important": "편안한 운동복을 준비하거나 입고 방문해 주세요.\r\n- 간단한 컨디션 체크 및 상담\r\n- 1:1 프라이빗 레슨 50분\r\n- 쉬운 영어로 진행되어 영어가 익숙하지 않은 분도 참여 가능\r\n- 수업 후 기념 사진 제공\r\n- 가격 및 예약 가능 시간은 예약 페이지에서 확인",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "business_days": "월-토",
+        "closed_days": "일요일",
+        "usage_fee": "예약 페이지에서 확인"
+      },
+      "traffic": {
+        "adres": "서울 중구 충무로2가 60-12",
+        "new_zip_code": "04537",
+        "new_adres": "서울 중구 명동8가길 58  3층 (충무로2가)",
+        "map_position_x": "126.988221957349",
+        "map_position_y": "37.5617790650241",
+        "subway_info": "지하철 4호선 명동역 10번출구, 89m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "외국인 방문객을 위한 1:1 필라테스 체험 레슨이 가능하며 서울 명동에 위치한 개인레슨 전문센터로, 체형과 움직임을 고려한 안전하고 전문적인 수업을 진행합니다. 여행 중 잠시 자신의 몸에 집중하고 새로운 활력과 즐거움을 경험할 수 있는 필라테스 체험 레슨으로, 초보자도 편안하게 참여할 수 있습니다."
     }
   }
 }

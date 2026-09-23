@@ -6831,7 +6831,6 @@
       "isFree": true,
       "subwayInfo": "지하철 5호선 서대문역 4번 출구,  400m",
       "tags": [
-        "돈의문",
         " 돈의문역사관",
         "한정",
         " 유적",
@@ -6842,14 +6841,18 @@
         " 새문안로",
         "문화공간",
         " 아지오",
-        " 돈의문박물관마을"
+        " 돈의문박물관마을",
+        "돈의문"
       ],
       "kind": "place",
       "useTime": "09:00 ~ 18:00 (입장마감 17:30)",
+      "closedDays": "* 2026년 12월 31일까지 휴관 예정\r\n 1월 1일, 공휴일을 제외한 매주 월요일",
       "hours": {
         "open": "09:00",
         "close": "18:00",
-        "closedWeekdays": []
+        "closedWeekdays": [
+          1
+        ]
       }
     },
     {
@@ -7003,13 +7006,13 @@
       "isFree": false,
       "subwayInfo": "지하철 2호선 신촌역 2번 출구,  564m",
       "tags": [
+        "연세대 캠퍼스",
         " 연세대학교",
         " 대학교",
         " 신촌",
         " 언더우드",
         "캠퍼스",
-        " 홍대",
-        "연세대 캠퍼스"
+        " 홍대"
       ],
       "kind": "place",
       "hours": null
@@ -7026,7 +7029,7 @@
       "lng": 126.9502882721266,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75912&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "isFree": false,
-      "subwayInfo": "지하철 2호선 이대역 3번 출구,  500m",
+      "subwayInfo": "지하철 2호선 이대역 3번 출구,  340m",
       "tags": [
         "ECC",
         " EwhaCampusComplex",
@@ -14745,6 +14748,32 @@
       }
     },
     {
+      "id": "vs-KOPt2kzbo",
+      "source": "visit-seoul",
+      "title": "이글필라테스 EAGLE PILATES",
+      "summary": "외국인 방문객을 위한 1:1 필라테스 체험 레슨이 가능한 개인레슨 전문센터",
+      "category": "웰니스관광",
+      "place": "이글필라테스 EAGLE PILATES",
+      "address": "서울 중구 명동8가길 58  3층 (충무로2가)",
+      "lat": 37.5617790650241,
+      "lng": 126.988221957349,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82295&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.eaglepilates.co.kr/for-international-tourists",
+      "isFree": false,
+      "subwayInfo": "지하철 4호선 명동역 10번출구, 89m",
+      "tags": [
+        "필라테스",
+        "명동필라테스",
+        "외국인필라테스",
+        "체험",
+        "웰니스"
+      ],
+      "kind": "place",
+      "useTime": "예약 페이지에서 확인",
+      "closedDays": "일요일",
+      "hours": null
+    },
+    {
       "id": "vs-KOPw0625e",
       "source": "visit-seoul",
       "title": "포터림",
@@ -19396,7 +19425,7 @@
       ],
       "kind": "place",
       "useTime": "09:30~17:00",
-      "closedDays": "월요일",
+      "closedDays": "매주 월요일, 1월 1일, 설 및 추석 연휴",
       "hours": {
         "open": "09:30",
         "close": "17:00",
@@ -19418,7 +19447,7 @@
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=28339&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
       "linkUrl": "http://www.bongwonsa.or.kr/index.php",
       "isFree": false,
-      "subwayInfo": "지하철 2호선 신촌역 3번 출구,  7024버스 환승 봉원사길정류장 하차,  378m",
+      "subwayInfo": "지하철 2호선 신촌역 4번 출구,  7024버스 환승 봉원사길정류장 하차,  378m",
       "tags": [
         "연꽃",
         " 절",
