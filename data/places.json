@@ -6130,7 +6130,7 @@
       ],
       "kind": "place",
       "useTime": "10:00-18:00 (입장마감 17:30)",
-      "closedDays": "월요일(월요일이 공휴일인 경우 다음날 휴관), 1월1일",
+      "closedDays": "1월 1일, 설날, 추석, 매주 월요일(공휴일인 경우 다음날)",
       "hours": {
         "open": "10:00",
         "close": "18:00",
@@ -6187,12 +6187,13 @@
         "자연사박물관"
       ],
       "kind": "place",
-      "useTime": "월~토: 10:00~17:00 (일요일, 법정공휴일, 개교기념일 휴관)",
+      "useTime": "월~금: 10:00~17:00",
+      "closedDays": "토요일, 법정공휴일, 개교기념일(4월 28일) 및 전시 교체 시기",
       "hours": {
         "open": "10:00",
         "close": "17:00",
         "closedWeekdays": [
-          0
+          6
         ]
       }
     },
@@ -6207,7 +6208,7 @@
       "lat": 37.5604666954517,
       "lng": 127.060364943935,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=33825&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "linkUrl": "http://sssmuseum.org",
+      "linkUrl": "https://sssmuseum.seoul.kr/",
       "isFree": true,
       "subwayInfo": "지하철 5호선 장한평역 8번 출구,  1.2km",
       "tags": [
@@ -6317,13 +6318,11 @@
       ],
       "kind": "place",
       "useTime": "월요일~일요일 09:00~18:00 \r\n(12:00 ~ 13:00 휴게시간)",
+      "closedDays": "연중무휴",
       "hours": {
         "open": "09:00",
         "close": "18:00",
-        "closedWeekdays": [
-          0,
-          1
-        ]
+        "closedWeekdays": []
       }
     },
     {
@@ -6386,8 +6385,8 @@
         "전시",
         "도서관",
         "순교성지",
-        "지상공원",
-        "충정로역"
+        "충정로역",
+        "지상공원"
       ],
       "kind": "place",
       "useTime": "09:30~17:30",
@@ -6576,6 +6575,7 @@
       ],
       "kind": "place",
       "useTime": "평일 10:00~18:00\r\n토요일 10:00~18:00\r\n일요일 14:00~19:00",
+      "closedDays": "재정비로 별도 공지 시까지 임시 휴관",
       "hours": {
         "open": "10:00",
         "close": "18:00",
@@ -6673,7 +6673,6 @@
       "isFree": false,
       "subwayInfo": "지하철 신분당선 양재시민의숲역 4번 출구,  60m",
       "tags": [
-        "박람회",
         " 교역전",
         " 전시",
         "컨벤션",
@@ -6681,6 +6680,7 @@
         "국제회의",
         " 회의실",
         "aT센터",
+        "박람회",
         " 양재시민의숲역"
       ],
       "kind": "place",
@@ -16880,7 +16880,7 @@
         "활쏘기"
       ],
       "kind": "place",
-      "useTime": "10:00~18:00",
+      "useTime": "10:00~18:00 (관람종료 30분 전까지 입장 가능)",
       "closedDays": "-월요일 \r\n-1월 1일\r\n-설날·추석 당일",
       "hours": {
         "open": "10:00",
@@ -19390,11 +19390,11 @@
         " 광화문"
       ],
       "kind": "place",
-      "useTime": "국궁전시관 10:00~17:00",
+      "useTime": "국궁전시관 10:00~18:00",
       "closedDays": "월요일, 1월 1일, 설 당일, 추석 당일",
       "hours": {
         "open": "10:00",
-        "close": "17:00",
+        "close": "18:00",
         "closedWeekdays": [
           1
         ]

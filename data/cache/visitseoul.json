@@ -86707,7 +86707,7 @@
     }
   },
   "KOP034857": {
-    "updtDtText": "2026.04.14",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP034857",
       "lang_code_id": "ko",
@@ -86724,7 +86724,7 @@
       "post_sj": "서울기록원",
       "sumry": "서울의 시정기록과 시민기록을 수집하는 서울의 대표 문화기관",
       "creat_dt_text": "2020.08.19",
-      "updt_dt_text": "2026.04.14",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "서울기록원"
       ],
@@ -86733,6 +86733,7 @@
         "cmmn_hmpg_url": "https://archives.seoul.go.kr",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "10:00 ~ 17:00",
+        "cmmn_important": "휴실기간: 2026. 9. 21.(월) ~ 10. 19.(월)\r\n대상공간: 제1‧2전시실, 어린이기록체험실\r\n※ 교육 프로그램과 기록열람실은 정상 운영됩니다.",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
           "장애인화장실",
@@ -86972,7 +86973,7 @@
     }
   },
   "KOP034149": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP034149",
       "lang_code_id": "ko",
@@ -86990,7 +86991,7 @@
       "post_sj": "서울도시건축전시관",
       "sumry": "도시, 건축에 관심있는 모든 국내외인들에게 관련 자료를 공유, 전시 및 행사.",
       "creat_dt_text": "2020.05.29",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "도시",
         " 서울데이트",
@@ -87017,7 +87018,7 @@
           "엘리베이터"
         ],
         "business_days": "화요일~일요일\r\n",
-        "closed_days": "월요일(월요일이 공휴일인 경우 다음날 휴관), 1월1일",
+        "closed_days": "1월 1일, 설날, 추석, 매주 월요일(공휴일인 경우 다음날)",
         "usage_fee": "무료"
       },
       "traffic": {
@@ -87087,7 +87088,7 @@
     }
   },
   "KOP033828": {
-    "updtDtText": "2026.04.11",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP033828",
       "lang_code_id": "ko",
@@ -87106,7 +87107,7 @@
       "post_sj": "성신여대 복식박물관 및 자연사박물관",
       "sumry": "성신여대 운정그린캠퍼스에는 있는 복식박물관과 자연사박물관.",
       "creat_dt_text": "2020.04.21",
-      "updt_dt_text": "2026.04.11",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "성신여대 복식박물관",
         "자연사박물관"
@@ -87115,10 +87116,11 @@
         "cmmn_telno": "복식박물관:  02-920-2657 / 자연사박물관: 02-920-7890 ",
         "cmmn_hmpg_url": "https://www.sungshin.ac.kr/sites/museum/index.do",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "월~토: 10:00~17:00 (일요일, 법정공휴일, 개교기념일 휴관)",
+        "cmmn_use_time": "월~금: 10:00~17:00 ",
         "cmmn_important": "도슨트 전시해설의 경우 희망일 기준 5일전까지 신청",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
+        "closed_days": "토요일, 법정공휴일, 개교기념일(4월 28일) 및 전시 교체 시기",
         "usage_fee": "입장권: 성인 2,000원, 초/중/고 1,500원, 유아(36개월 이상) 1000원\r\n주차요금: 기본 30분 1,500원, 초과 10분당 500원, 일일 최고 20,000원(교내 지하주차장 B2 이용)"
       },
       "traffic": {
@@ -87138,7 +87140,7 @@
     }
   },
   "KOP033825": {
-    "updtDtText": "2026.04.24",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP033825",
       "lang_code_id": "ko",
@@ -87156,7 +87158,7 @@
       "post_sj": "서울하수도과학관",
       "sumry": "국내외 하수도과학관과  물재생센터를 함께 운영하는 현장 중심형 공간",
       "creat_dt_text": "2020.04.21",
-      "updt_dt_text": "2026.04.24",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "환경",
         " 교육",
@@ -87170,7 +87172,7 @@
       ],
       "extra": {
         "cmmn_telno": "02-2211-2540",
-        "cmmn_hmpg_url": "http://sssmuseum.org",
+        "cmmn_hmpg_url": "https://sssmuseum.seoul.kr/",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "화요일~일요일(9:00~17:00)",
         "trrsrt_use_chrge": "F",
@@ -87250,7 +87252,7 @@
     }
   },
   "KOP032734": {
-    "updtDtText": "2026.04.15",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP032734",
       "lang_code_id": "ko",
@@ -87268,7 +87270,7 @@
       "post_sj": "안녕인사동 ",
       "sumry": "어제, 오늘, 내일을 잇는 공간을 담아 추억과 즐거움을 선사하는 문화복합몰. ",
       "creat_dt_text": "2019.12.17",
-      "updt_dt_text": "2026.04.15",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "인사동놀거리",
         "안녕인사동",
@@ -87299,13 +87301,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "안녕인사동은 어제, 오늘, 내일을 잇는 공간을 담아 추억과 즐거운을 선사하는 문화복합몰입니다. 다양한 먹거리와 볼거리, 즐길거리로 일상의 재미와 여유를 제공합니다."
     }
   },
   "KOP032529": {
-    "updtDtText": "2026.04.28",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP032529",
       "lang_code_id": "ko",
@@ -87323,7 +87326,7 @@
       "post_sj": "정동1928 아트센터",
       "sumry": "1928년에 구세군 사관양성 및 선교와 사회사업을 위한 본부",
       "creat_dt_text": "2019.12.02",
-      "updt_dt_text": "2026.04.28",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "정동길산책",
         "구세군중앙회관",
@@ -87346,7 +87349,8 @@
         "cmmn_use_time": "월요일~일요일 09:00~18:00 \r\n(12:00 ~ 13:00 휴게시간) ",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "월요일~일요일 "
+        "business_days": "월요일~일요일 ",
+        "closed_days": "연중무휴"
       },
       "traffic": {
         "zip_code": "100-120",
@@ -87428,7 +87432,7 @@
     }
   },
   "KOP030804": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP030804",
       "lang_code_id": "ko",
@@ -87446,7 +87450,7 @@
       "post_sj": "서소문성지역사박물관",
       "sumry": "서소문성지역사박물관은 조선 후기 한국 교회사를 한눈에 살펴볼 수 있는 역사박물관. ",
       "creat_dt_text": "2019.08.13",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "서소문성지역사박물관",
         "교회사",
@@ -87454,18 +87458,21 @@
         "전시",
         "도서관",
         "순교성지",
-        "지상공원",
-        "충정로역"
+        "충정로역",
+        "지상공원"
       ],
       "extra": {
         "cmmn_telno": "02-3147-2401",
         "cmmn_hmpg_url": "https://www.seosomun.org",
-        "cmmn_hmpg_lang": "한국어",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),말레이어",
         "cmmn_use_time": "09:30~17:30",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [],
+        "disabled_facility": [
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
         "business_days": "화요일~일요일",
         "closed_days": "월요일, 1월 1일, 설날, 추석 당일",
+        "stroller_rent": "Y",
         "usage_fee": "무료"
       },
       "traffic": {
@@ -87486,7 +87493,7 @@
     }
   },
   "KOP030803": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP030803",
       "lang_code_id": "ko",
@@ -87504,7 +87511,7 @@
       "post_sj": "아모레퍼시픽미술관",
       "sumry": "아모레퍼시픽 미술관은 서울시 용산의 아모레퍼시픽 신본사에 새롭게 문을 연 미술관.",
       "creat_dt_text": "2019.08.13",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "기획전",
         "현대미술",
@@ -87536,7 +87543,8 @@
         "subway_info": "지하철 4호선 신용산역 1번 출구,  84m"
       },
       "tourist": {
-        "guidance_service": "1, 7",
+        "guidance_service": "1, 2, 7",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "아모레퍼시픽 미술관은 서울시 용산의 아모레퍼시픽 신본사에 새롭게 문을 연 미술관입니다. ‘일상 속의 아름다움을 발견하는 열린 공간’을 지향하고, 대중과 소통하기 위해 설립되었습니다. 이런 목적에 따라 한국 고미술과 국내외 현대미술을 수집·연구 · 전시하며, 관련 연구자 및 학회, 젊은 작가를 지원합니다. 지하 1층 전시실에서는 고미술과 현대미술, 한국미술을 아우르는 다채로운 기획 전시가 열립니다. 지상 1~3층까지 이어진 대형 공간 ‘아트리움’ 1층에는 미술관 로비와 뮤지엄숍, 전시공간인 ‘ APMA 캐비닛’, 세계의 전시 도록 라이브러리(apLAP)의 시설을 갖추고 있습니다."
@@ -87724,7 +87732,7 @@
     }
   },
   "KOP029578": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP029578",
       "lang_code_id": "ko",
@@ -87741,7 +87749,7 @@
       "post_sj": "쉼박물관",
       "sumry": "잊혀져 가는 문화를 보존하고 현대 문화예술과 접목시켜 새로운 문화창출",
       "creat_dt_text": "2019.05.28",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "광화문역",
         "쉼박물관",
@@ -87763,6 +87771,7 @@
         "cmmn_important": "현재 휴관중 (홈페이지 공지사항 참고)",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
+        "closed_days": "재정비로 별도 공지 시까지 임시 휴관",
         "usage_fee": "대인 10,000원\r\n소인 5,000원"
       },
       "traffic": {
@@ -87900,7 +87909,7 @@
     }
   },
   "KOP029561": {
-    "updtDtText": "2026.09.11",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP029561",
       "lang_code_id": "ko",
@@ -87918,9 +87927,8 @@
       "post_sj": "aT센터",
       "sumry": " 국제적인 전시, 컨벤션과 무역 비즈니스가 이루어지는 전시, 컨벤션센터",
       "creat_dt_text": "2019.05.28",
-      "updt_dt_text": "2026.09.11",
+      "updt_dt_text": "2026.09.26",
       "tag": [
-        "박람회",
         " 교역전",
         " 전시",
         "컨벤션",
@@ -87928,6 +87936,7 @@
         "국제회의",
         " 회의실",
         "aT센터",
+        "박람회",
         " 양재시민의숲역"
       ],
       "extra": {
@@ -87948,6 +87957,7 @@
       "tourist": {
         "guidance_service": "ul",
         "parking_fclty": "1",
+        "parking_fclty_chrge_hour_car": "4200",
         "safe_mng": "ul"
       },
       "post_desc": "aT센터는 국제적인 전시, 컨벤션과 무역 비즈니스가 한 곳에서 이루어지는 새로운 스타일의 전시, 컨벤션센터입니다. 최첨단 수준의 전시장과 회의장에서 다양한 형태의 전시, 회의, 세미나, 연회, 이벤트, 공연 등을 개최할 수 있으며, 동시 통역시스템, AV시스템, 냉장창고 등 최첨단 시설을 갖추고 있습니다. 교통이 편리하고 병원, 헬스클럽, 상가, 식당가, 대형주차장 등 다양한 편의시설을 갖추고 있어 시민의 문화, 휴식 공간으로도 활용되고 있습니다."
@@ -105607,7 +105617,7 @@
     }
   },
   "KOP029767": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP029767",
       "lang_code_id": "ko",
@@ -105624,7 +105634,7 @@
       "post_sj": "국궁전시관",
       "sumry": "국궁의 역사, 우리 활의 우수성과 특수성의 자료들이 전시",
       "creat_dt_text": "2019.06.11",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "경복궁역",
         " 황학정",
@@ -105640,7 +105650,7 @@
         "cmmn_telno": "02-722-1600",
         "cmmn_hmpg_url": "https://www.jfac.or.kr/site/main/content/kbow01",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "10:00~18:00",
+        "cmmn_use_time": "10:00~18:00 (관람종료 30분 전까지 입장 가능)",
         "cmmn_important": "※ 단체 관람시 사전예약\r\n활쏘기 체험 프로그램 (유료)\r\n매주 금 (10:00-14:00), 마지막주 토 (10:00-12:00)\r\n※계절이나 날씨 등 전시관 상황에 따라 변동 가능",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
@@ -109870,7 +109880,7 @@
     }
   },
   "KOP029766": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.09.26",
     "detail": {
       "cid": "KOP029766",
       "lang_code_id": "ko",
@@ -109885,7 +109895,7 @@
       "post_sj": "황학정",
       "sumry": "심신단련을 위한 궁술은 장려되어야 한다는 고종황제의 뜻에 따라 지어진 활터",
       "creat_dt_text": "2019.06.11",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.09.26",
       "tag": [
         "경복궁역",
         " 경희궁",
@@ -109898,7 +109908,7 @@
         "cmmn_telno": "02-738-5785",
         "cmmn_hmpg_url": "http://www.hwanghakjeong.org/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "국궁전시관 10:00~17:00\r\n",
+        "cmmn_use_time": "국궁전시관 10:00~18:00\r\n",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "화요일~일요일",
