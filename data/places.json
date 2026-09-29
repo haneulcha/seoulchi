@@ -14759,7 +14759,7 @@
       "lat": 37.5617790650241,
       "lng": 126.988221957349,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82295&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "https://www.eaglepilates.co.kr/for-international-tourists",
+      "linkUrl": "https://www.eaglepilates.co.kr/%ED%99%88",
       "isFree": false,
       "subwayInfo": "지하철 4호선 명동역 10번출구, 89m",
       "tags": [
@@ -17155,8 +17155,8 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 안국역 3번 출구,  625m",
       "tags": [
-        "목공예",
         "북촌",
+        "목공예",
         "북촌한옥마을",
         "전시",
         "공예체험",
@@ -17224,8 +17224,8 @@
       "isFree": false,
       "subwayInfo": "지하철 1/3/5호선 종로3가역 5번 출구,  358m",
       "tags": [
-        "먹",
         "서화재료판매",
+        "먹",
         " 붓",
         " 벼루",
         " 문인화",
