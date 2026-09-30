@@ -16572,6 +16572,38 @@
       }
     },
     {
+      "id": "vs-KOPrs9x47",
+      "source": "visit-seoul",
+      "title": "혜성미용실",
+      "summary": "불에 달군 인두로 파마해주는 미용실",
+      "category": "기타체험",
+      "place": "혜성미용실",
+      "address": "서울 구로구 고척로6길 42 (오류동)",
+      "lat": 37.4965819685833,
+      "lng": 126.841079964036,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60155&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "isFree": false,
+      "subwayInfo": "지하철 1호선 오류동역 3번 출구,  473m",
+      "tags": [
+        "인두파마",
+        " 구로",
+        " 오류동",
+        "미장원",
+        "오래가게",
+        " 미용실"
+      ],
+      "kind": "place",
+      "useTime": "08:00~19:40",
+      "closedDays": "첫째, 셋째 주 화요일 휴무",
+      "hours": {
+        "open": "08:00",
+        "close": "19:40",
+        "closedWeekdays": [
+          2
+        ]
+      }
+    },
+    {
       "id": "vs-KOP56qewe",
       "source": "visit-seoul",
       "title": "설화철물",
@@ -16888,6 +16920,42 @@
         "close": "18:00",
         "closedWeekdays": [
           1
+        ]
+      }
+    },
+    {
+      "id": "vs-KOP029716",
+      "source": "visit-seoul",
+      "title": "성우이용원",
+      "summary": "100여 년의 시간 동안 자리를 지켜온 추억의 이발소",
+      "category": "기타체험",
+      "place": "성우이용원",
+      "address": "서울 마포구 효창원로97길 4-1",
+      "lat": 37.5495594064023,
+      "lng": 126.963337206543,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60363&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "futureheritage.seoul.go.kr/web/investigate/aroundHeritageView.do?htId=171",
+      "isFree": false,
+      "subwayInfo": "지하철 5호선 애오개역 4번 출구,  927m",
+      "tags": [
+        "남성전문",
+        " 바버샵",
+        " 공덕",
+        " 서울역",
+        " 청파동",
+        " 서울미래유산",
+        "오래가게",
+        " 이용원",
+        " 이발소"
+      ],
+      "kind": "place",
+      "useTime": "09:00~18:00",
+      "closedDays": "수요일",
+      "hours": {
+        "open": "09:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          3
         ]
       }
     },

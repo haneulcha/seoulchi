@@ -120299,5 +120299,112 @@
       },
       "post_desc": "서울라이트 한강 빛섬축제는 서울 한강을 무대로 펼치는 국내 최대 규모의 수변 레이저아트 축제입니다. '2026 서울라이트 한강 빛섬축제'는 빛을 매개로 예술과 자연, 도시를 연결하는 서울 대표 야간 미디어아트 축제입니다. 올해는 노들섬을 무대로 '빛의 서사시(Rhapsody of Light)'를 펼치며, 한강의 물과 불, 토양, 공기, 생명의 에너지를 하나의 서사로 풀어냅니다. 노들섬 야외 공간에서는 세계적인 미디어아티스트들의 대형 레이저 설치와 미디어아트가 펼쳐지고, 연결다리와 진입 공간에서는 빛의 산책로와 프로젝션 맵핑이 축제 공간을 다채롭게 연출합니다. 실내 공간에서는 키네틱, 설치, 영상 작업과 오디오비주얼 퍼포먼스가 이어지며, 대학 참여 프로그램과 함께 노들섬 전역에 빛과 자연이 어우러진 새로운 야간 경관을 선보입니다."
     }
+  },
+  "KOPrs9x47": {
+    "updtDtText": "2026.09.29",
+    "detail": {
+      "cid": "KOPrs9x47",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cl8f8q1",
+      "cate_depth": " 체험관광 > 기타체험",
+      "multi_lang_list": "ko:KOPrs9x47,en:ENPrs9x47,ja:JPPrs9x47,zh-CN:CNPrs9x47,zh-TW:TCPrs9x47",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60155&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60156&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60157&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60158&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60159&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "혜성미용실",
+      "sumry": "불에 달군 인두로 파마해주는 미용실",
+      "creat_dt_text": "2023.05.03",
+      "updt_dt_text": "2026.09.29",
+      "tag": [
+        "인두파마",
+        " 구로",
+        " 오류동",
+        "미장원",
+        "오래가게",
+        " 미용실"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2682-9359",
+        "cmmn_use_time": "08:00~19:40",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "business_days": "매일",
+        "closed_days": "첫째, 셋째 주 화요일 휴무"
+      },
+      "traffic": {
+        "adres": "서울 구로구 오류동 11-25",
+        "new_zip_code": "08269",
+        "new_adres": "서울 구로구 고척로6길 42 (오류동)",
+        "map_position_x": "126.841079964036",
+        "map_position_y": "37.4965819685833",
+        "subway_info": "지하철 1호선 오류동역 3번 출구,  473m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "전기 고데기가 아닌 불에 달군 인두로 머리를 마는 사장님의 미용 기술로 유명한 곳입니다. 오류동 골목에서 옛날 기술 그대로 40년간 미용실을 운영하는 사장님의 옛 기술에 익숙한 중장년층은 물론 젊은 층까지 단골로 줄을 설 정도입니다. 가게 내부에 진열된 오래된 미용기구부터 추억의 사탕 단지까지 옛 정서를 느낄 수 있는 아기자기한 소품을 구경하는 재미는 덤입니다."
+    }
+  },
+  "KOP029716": {
+    "updtDtText": "2026.09.29",
+    "detail": {
+      "cid": "KOP029716",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cl8f8q1",
+      "cate_depth": " 체험관광 > 기타체험",
+      "multi_lang_list": "ko:KOP029716,en:ENP029716,ja:JPP029716,zh-CN:CNP029716,zh-TW:TCP029716,ru:RUP029716,ms:MLP029716",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60363&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60364&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60365&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60366&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60367&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "성우이용원",
+      "sumry": "100여 년의 시간 동안 자리를 지켜온 추억의 이발소",
+      "creat_dt_text": "2019.06.04",
+      "updt_dt_text": "2026.09.29",
+      "tag": [
+        "남성전문",
+        " 바버샵",
+        " 공덕",
+        " 서울역",
+        " 청파동",
+        " 서울미래유산",
+        "오래가게",
+        " 이용원",
+        " 이발소"
+      ],
+      "extra": {
+        "cmmn_telno": "02-714-2968",
+        "cmmn_hmpg_url": "futureheritage.seoul.go.kr/web/investigate/aroundHeritageView.do?htId=171",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "09:00~18:00",
+        "cmmn_important": "남성 전문",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "business_days": "월요일~화요일, 목요일~일요일",
+        "closed_days": "수요일",
+        "usage_fee": "컷(조발) 18,000원, 염색 20,000원, 면도 15,000원"
+      },
+      "traffic": {
+        "adres": "서울 마포구 공덕동 7-30",
+        "new_zip_code": "04183",
+        "new_adres": "서울 마포구 효창원로97길 4-1",
+        "map_position_x": "126.963337206543",
+        "map_position_y": "37.5495594064023",
+        "subway_info": "지하철 5호선 애오개역 4번 출구,  927m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "성우이용원은 1927년경 개업해 3대째 가업을 이어 오는 서울에서 가장 오래된 이용원입니다. 100년에 가까운 시간 동안 같은 자리를 지켜온 이곳은 여전히 전통 방식의 이용문화를 간직하고 있습니다. 오로지 가위와 빗만 사용하여 각자의 머리 모양과 얼굴 형태에 가장 잘 어울리는 이발을 한다는 자부심이 있는 곳입니다. 성우이용원은 2019년에 태풍으로 인해 건물이 무너져 서울미래유산의 멸실과 훼손을 막고자 서울시의 지원 사업을 통해 현재의 모습으로 탈바꿈했습니다. • 이곳은 '서울미래유산'으로 선정된 곳입니다. 서울의 근·현대 문화유산 중에서 미래 세대에게 전달할 만한 가치가 있는 유무형의 자산인 서울미래유산을 오래가게 여행에서 만나보세요.(https://futureheritage.seoul.go.kr)"
+    }
   }
 }
