@@ -85257,7 +85257,7 @@
     }
   },
   "KOP038858": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.01",
     "detail": {
       "cid": "KOP038858",
       "lang_code_id": "ko",
@@ -85274,7 +85274,7 @@
       "post_sj": "가을단풍길(월드컵로)",
       "sumry": "난지천공원을 따라 쭉 펼쳐지는 월드컵로 가을단풍길",
       "creat_dt_text": "2021.09.15",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.01",
       "tag": [
         "가을단풍길",
         "월드컵로",
@@ -85289,7 +85289,7 @@
         "서울산책코스"
       ],
       "extra": {
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "F",
         "disabled_facility": []
       },
       "traffic": {
@@ -85307,7 +85307,7 @@
     }
   },
   "KOP038243": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.01",
     "detail": {
       "cid": "KOP038243",
       "lang_code_id": "ko",
@@ -85325,7 +85325,7 @@
       "post_sj": "서울생활사박물관",
       "sumry": "근현대 생활사 박물관으로 시민들의 기억들을 추억하고 교감할 수 있는 전시.",
       "creat_dt_text": "2021.07.27",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.01",
       "tag": [
         "서울",
         "서울박물관",
@@ -85343,10 +85343,10 @@
         "cmmn_hmpg_url": "https://museum.seoul.go.kr/sulm/index.do",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "09:00 ~ 18:00",
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "화요일~일요일",
-        "closed_days": "월요일"
+        "closed_days": "공휴일을 제외한 매주 월요일, 1월 1일"
       },
       "traffic": {
         "adres": "서울 노원구 공릉동 622",
@@ -85426,7 +85426,7 @@
     }
   },
   "KOP038092": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.01",
     "detail": {
       "cid": "KOP038092",
       "lang_code_id": "ko",
@@ -85444,7 +85444,7 @@
       "post_sj": "서울공예박물관 ",
       "sumry": "공예의 가치를 공유하며 공예의 미래를 여는 열쇠가 되기를 지향하는 박물관",
       "creat_dt_text": "2021.07.15",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.01",
       "tag": [
         "아이와함께",
         "박물관데이트",
@@ -85463,7 +85463,7 @@
         "cmmn_telno": "02-6450-7000",
         "cmmn_hmpg_url": "http://craftmuseum.seoul.go.kr",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
-        "cmmn_use_time": "10:00 ~ 18:00 (17:30 입장 마감)\r\n금요일은 21:00까지 야간개관합니다.",
+        "cmmn_use_time": "10:00 ~ 18:00 (17:30 입장 마감)\r\n2026.9.15.(화)~11.30.(월) 목요일 제외한 화~일 21:00까지 야간개관합니다.",
         "cmmn_important": "개인 자유관람. 단, 어린이박물관은 인터넷 사전예약 후 관람 가능\r\n아카이브실,  보이는수장고, 보존과학실은 평일(화~금)에만 운영",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
@@ -85488,7 +85488,7 @@
     }
   },
   "KOP038021": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.01",
     "detail": {
       "cid": "KOP038021",
       "lang_code_id": "ko",
@@ -85505,7 +85505,7 @@
       "post_sj": "국립항공박물관\t",
       "sumry": " 항공 분야 최초의 국립박물관으로서 다양한 전시와 체험관으로 구성",
       "creat_dt_text": "2021.07.12",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.01",
       "tag": [
         "김포-공항",
         "비행기",
@@ -85521,7 +85521,7 @@
         "cmmn_telno": "02-6940-3198(9)\t",
         "cmmn_hmpg_url": "https://www.aviation.or.kr/index.do\t",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "10:00 ~ 18:00  \r\n\r\n※ 1월 1일, 설·추석 당일 휴관\r\n(단, 월요일이 공휴일인 경우에는 월요일 당일 개관 후 다음날 평일이 휴관)",
+        "cmmn_use_time": "10:00 ~ 18:00  ",
         "cmmn_important": "체험관에 따라 탑승 제한사항이 있을 수 있으니 홈페이지 확인 필수, 블랙이글탑승체험의 경우 현장예약만 가능, 매시마다 도슨트 프로그램 가능, 체험예약 시 별도 전시 예약 없이 관람 가능\t",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
@@ -85532,7 +85532,7 @@
           "장애인 안내(휠체어 대여 및 기타)"
         ],
         "business_days": "화~일",
-        "closed_days": "월요일",
+        "closed_days": "월요일,  1월 1일, 설·추석 당일 휴관\r\n(단, 월요일이 공휴일인 경우에는 월요일 당일 개관 후 다음날 평일이 휴관)",
         "stroller_rent": "Y",
         "usage_fee": "전시관람: 무료 / 체험교육: 유료(2,000원~5,000원)\r\n우대요금 적용 대상: 어린이 및 청소년(19세까지), 국가유공자, 군경, 장애인, 경로우대자(65세 이상), 기초생활수급자 등(증빙서류 필참)\r\n블랙이글탑승체험: 일반 3,000원 / 우대 2,000원\r\n조종·관제체험: 일반 5,000원 / 우대 3,000원\r\n기내훈련체험: 일반 3,000원 / 우대 2,000원\r\n항공레포츠체험: 일반 5,000원 / 우대 3,000원\r\n어린이공항체험: 2,000원"
       },
@@ -85553,7 +85553,7 @@
     }
   },
   "KOP037583": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.01",
     "detail": {
       "cid": "KOP037583",
       "lang_code_id": "ko",
@@ -85571,7 +85571,7 @@
       "post_sj": "서울관광플라자 관광정보센터",
       "sumry": "서울의 모든 관광정보를 얻을 수 있는 공간. 한국어, 영어, 중국어, 일본어로 관광안내.",
       "creat_dt_text": "2021.05.11",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.01",
       "tag": [
         "관광정보센터",
         "종로",
@@ -109719,7 +109719,7 @@
     }
   },
   "KOP037176": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.01",
     "detail": {
       "cid": "KOP037176",
       "lang_code_id": "ko",
@@ -109737,20 +109737,19 @@
       "post_sj": "창경궁 대온실 ",
       "sumry": "창경궁 내부에 위치한 대한민국 최초의 대온실",
       "creat_dt_text": "2021.04.13",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.01",
       "tag": [
+        "창경궁데이트",
         "창경궁포토존",
         "창경궁",
         "창경궁대온실",
-        "서울가볼만한곳",
-        "창경궁데이트"
+        "서울가볼만한곳"
       ],
       "extra": {
         "cmmn_telno": "02-762-9515",
         "cmmn_hmpg_url": "http://cgg.cha.go.kr/agapp/main/index.do?siteCd=CGG",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
-        "cmmn_use_time": "09:00 ~ 20:45",
-        "cmmn_important": "동절기 창경궁 대온실 야간 내부 관람 출입통제 (25.11.29~26.2.28) 단, 대온실 내부 주간관람(09:00~18:00) 정상운영",
+        "cmmn_use_time": "09:00 ~ 21:00 (12월~2월 09:00 ~ 18:00 )",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [
           "장애인 안내(휠체어 대여 및 기타)"
@@ -120405,6 +120404,124 @@
         "safe_mng": "ul"
       },
       "post_desc": "성우이용원은 1927년경 개업해 3대째 가업을 이어 오는 서울에서 가장 오래된 이용원입니다. 100년에 가까운 시간 동안 같은 자리를 지켜온 이곳은 여전히 전통 방식의 이용문화를 간직하고 있습니다. 오로지 가위와 빗만 사용하여 각자의 머리 모양과 얼굴 형태에 가장 잘 어울리는 이발을 한다는 자부심이 있는 곳입니다. 성우이용원은 2019년에 태풍으로 인해 건물이 무너져 서울미래유산의 멸실과 훼손을 막고자 서울시의 지원 사업을 통해 현재의 모습으로 탈바꿈했습니다. • 이곳은 '서울미래유산'으로 선정된 곳입니다. 서울의 근·현대 문화유산 중에서 미래 세대에게 전달할 만한 가치가 있는 유무형의 자산인 서울미래유산을 오래가게 여행에서 만나보세요.(https://futureheritage.seoul.go.kr)"
+    }
+  },
+  "KOP5h63i2": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOP5h63i2",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP5h63i2",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82831&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82832&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "제5회(2026) 수비능이버섯축제",
+      "sumry": "경북 영양군",
+      "schdul_info_bgnde": "2026.10.09",
+      "schdul_info_endde": "2026.10.10",
+      "place": " 수비면 자작나무숲 주차장 일대, 죽파리 408 ",
+      "creat_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        " 수비능이버섯축제",
+        " 능이버섯",
+        "Subi Sarcodon Mushroom Festival",
+        "영양군"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "경북 영양군 수비면 죽파리 408",
+        "new_zip_code": "36526",
+        "new_adres": "경북 영양군 수비면 자작나무길 81 (영양 자작나무숲 힐링센터)",
+        "map_position_x": "129.223506759355",
+        "map_position_y": "36.7252032126649"
+      },
+      "post_desc": "수비면의 대표 임산물인 능이버섯을 비롯한 다양한 농 · 임특산물을 만나볼 수 있 으며 , 능이버섯을 활용한 먹거리와 체험 프로그램 등 관광객과 지역주민이 함께 즐길 수 있는 다양한 프로그램이 마련될 예정입니다 . 깊어가는 가을 , 자작나무숲의 아름다운 풍경과 함께 수비의 청정 자연과 특산물을 만나보시기 바랍니다 . 행사명 제5회(2026) 수비능이버섯축제 기간 2026. 10. 9.(금) ~ 10. 10.(토) 장소 수비면 자작나무숲 주차장 일대 , 죽파리 408 일원 홈페이지 https://www.yftf.kr/"
+    }
+  },
+  "KOPtuajl0": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOPtuajl0",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPtuajl0",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82828&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82830&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82829&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026년 의성 슈퍼푸드 마늘축제 & 스카이 디렌스 런 in 의성",
+      "sumry": "경상북도 의성군",
+      "schdul_info_bgnde": "2026.10.03",
+      "schdul_info_endde": "2026.10.05",
+      "place": "의성군 구봉공원 일원",
+      "creat_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        "2026년 의성 슈퍼푸드 마늘축제 ",
+        "  스카이 디렌스 런 in 의성",
+        " 의성",
+        " 축제"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "경북 의성군 의성읍 후죽리 775",
+        "new_zip_code": "37335",
+        "new_adres": "경북 의성군 의성읍 구봉공원자전거길 48 (후죽리)",
+        "map_position_x": "128.691908278455",
+        "map_position_y": "36.351763821941"
+      },
+      "post_desc": "의성마늘의 우수성과 의성을 알리는 지역특산품 축제이자 , 5km 에 장애물 10 종과 대드론 체험도 함께 즐길 수 있습니다 . 행사명 2026년 의성 슈퍼푸드 마늘축제 & 스카이 디렌스 런 in 의성 기간 2026. 10. 3.(토) ~ 10. 5.(월) 장소 성군 구봉공원 일원 홈페이지 http://www.garlicfestival.kr/ (의성 슈퍼푸드 마늘축제) 홈페이지 https://skydefencerun.co.kr/#course ( 스카이 디펜스런 in 의성 )"
+    }
+  },
+  "KOP8quif3": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOP8quif3",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP8quif3",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82703&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82703&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 김천김밥축제",
+      "sumry": "경상북도 김천시",
+      "schdul_info_bgnde": "2026.10.23",
+      "schdul_info_endde": "2026.10.25",
+      "place": "직지문화공원,사명대사공원, 친환경생태공원",
+      "creat_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        "2026 GIMCHEON GIMBAP FESTIVAL",
+        "김천김밥축제",
+        " 김밥 ",
+        " 김천"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "경북 김천시 대항면 운수리 36-5",
+        "new_zip_code": "39565",
+        "new_adres": "경북 김천시 대항면 직지사길 20 (운수리, 직지문화공원 관리실)",
+        "map_position_x": "128.015252596085",
+        "map_position_y": "36.1148577268638"
+      },
+      "post_desc": "김밥 한 줄의 설렘과 추억을 함께 나누는 가을 소풍 , 김천김밥축제로 오세요 ! 행사명 2026 김천김밥축제 기간 2026. 10. 23.(금). ~ 10. 25.(일) 장소 직지문화공원(경북 김천시 대항면 운수리 44) 사명대사공원(경북 김천시 대항면 운수리 94-3) 친환경생태공원(경북 김천시 대항면 직지사길 118-50) 홈페이지 https://gimbapcity.kr/main/main.html SNS https://www.instagram.com/gc_gimbapcity/"
     }
   }
 }

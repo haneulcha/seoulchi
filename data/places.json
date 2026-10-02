@@ -5168,7 +5168,7 @@
       "lat": 37.5800643947976,
       "lng": 126.880562828932,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77989&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "tags": [
         "가을단풍길",
         "월드컵로",
@@ -5197,7 +5197,7 @@
       "lng": 127.076936195632,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=38243&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
       "linkUrl": "https://museum.seoul.go.kr/sulm/index.do",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 6/7호선 태릉입구역 5번 출구,  320m",
       "tags": [
         "서울",
@@ -5213,7 +5213,7 @@
       ],
       "kind": "place",
       "useTime": "09:00 ~ 18:00",
-      "closedDays": "월요일",
+      "closedDays": "공휴일을 제외한 매주 월요일, 1월 1일",
       "hours": {
         "open": "09:00",
         "close": "18:00",
@@ -5288,14 +5288,14 @@
         "서울공예박물관"
       ],
       "kind": "place",
-      "useTime": "10:00 ~ 18:00 (17:30 입장 마감)\r\n금요일은 21:00까지 야간개관합니다.",
+      "useTime": "10:00 ~ 18:00 (17:30 입장 마감)\r\n2026.9.15.(화)~11.30.(월) 목요일 제외한 화~일 21:00까지 야간개관합니다.",
       "closedDays": "월요일 (공휴일인 경우 운영) , 1월 1일",
       "hours": {
         "open": "10:00",
         "close": "18:00",
         "closedWeekdays": [
           1,
-          5
+          4
         ]
       }
     },
@@ -5325,8 +5325,8 @@
         "국립박물관"
       ],
       "kind": "place",
-      "useTime": "10:00 ~ 18:00  \r\n\r\n※ 1월 1일, 설·추석 당일 휴관\r\n(단, 월요일이 공휴일인 경우에는 월요일 당일 개관 후 다음날 평일이 휴관)",
-      "closedDays": "월요일",
+      "useTime": "10:00 ~ 18:00",
+      "closedDays": "월요일,  1월 1일, 설·추석 당일 휴관\r\n(단, 월요일이 공휴일인 경우에는 월요일 당일 개관 후 다음날 평일이 휴관)",
       "hours": {
         "open": "10:00",
         "close": "18:00",
@@ -19362,18 +19362,18 @@
       "isFree": false,
       "subwayInfo": "지하철 4호선 혜화역 4번 출구,  779m",
       "tags": [
+        "창경궁데이트",
         "창경궁포토존",
         "창경궁",
         "창경궁대온실",
-        "서울가볼만한곳",
-        "창경궁데이트"
+        "서울가볼만한곳"
       ],
       "kind": "place",
-      "useTime": "09:00 ~ 20:45",
+      "useTime": "09:00 ~ 21:00 (12월~2월 09:00 ~ 18:00 )",
       "closedDays": "월요일",
       "hours": {
         "open": "09:00",
-        "close": "20:45",
+        "close": "21:00",
         "closedWeekdays": [
           1
         ]
