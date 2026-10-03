@@ -21703,7 +21703,7 @@
     }
   },
   "KOP037866": {
-    "updtDtText": "2026.05.28",
+    "updtDtText": "2026.10.02",
     "detail": {
       "cid": "KOP037866",
       "lang_code_id": "ko",
@@ -21719,7 +21719,7 @@
       "schdul_info_bgnde": "2021.08.25",
       "schdul_info_endde": "2021.08.28",
       "creat_dt_text": "2021.06.17",
-      "updt_dt_text": "2026.05.28",
+      "updt_dt_text": "2026.10.02",
       "tag": [
         "여름",
         "그래픽디자인",
@@ -84375,7 +84375,7 @@
     }
   },
   "KOP041681": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.02",
     "detail": {
       "cid": "KOP041681",
       "lang_code_id": "ko",
@@ -84393,7 +84393,7 @@
       "post_sj": "한국금융사박물관",
       "sumry": "신한은행에서 운영하는 한국 금융의 발전 모습의 박물관",
       "creat_dt_text": "2022.09.20",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.02",
       "tag": [
         "금융",
         "한국금융사박물관",
@@ -84411,7 +84411,7 @@
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "월요일~토요일",
-        "closed_days": "매주 일요일",
+        "closed_days": "일요일, 공휴일",
         "usage_fee": "무료"
       },
       "traffic": {
@@ -84486,7 +84486,7 @@
     }
   },
   "KOP041095": {
-    "updtDtText": "2026.04.28",
+    "updtDtText": "2026.10.02",
     "detail": {
       "cid": "KOP041095",
       "lang_code_id": "ko",
@@ -84504,7 +84504,7 @@
       "post_sj": "잠실대교",
       "sumry": "광진구 자양동과 송파구 잠실동 27번지 사이에 한강에 건설한 서울의 6번째 다리.",
       "creat_dt_text": "2022.07.01",
-      "updt_dt_text": "2026.04.28",
+      "updt_dt_text": "2026.10.02",
       "tag": [
         "한강",
         "잠실",
@@ -84598,7 +84598,7 @@
     }
   },
   "KOP040770": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.02",
     "detail": {
       "cid": "KOP040770",
       "lang_code_id": "ko",
@@ -84615,7 +84615,7 @@
       "post_sj": "국립기상박물관",
       "sumry": "조선시대부터 근현대까지 기상문화를 연구, 보존하는 기상과학역사 박물관",
       "creat_dt_text": "2022.05.11",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.02",
       "tag": [
         "서울기상관측소",
         "단풍",
@@ -84633,13 +84633,13 @@
         "cmmn_telno": "02-2181-0893",
         "cmmn_hmpg_url": "https://science.kma.go.kr/museum",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "10:00  - 18:00",
+        "cmmn_use_time": "10:00  - 18:00 (17:00 까지 입장)",
         "cmmn_important": "- 서울의 벚꽃 개화시기와 단풍 절정시기의 기준이 되는 계절관측목 관람하기\r\n- 현존하는 세계 유일의 측우기 관람하기\r\n- 영어 전시 해설 가능",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실",
           "장애인 전용 주차장",
           "접근가능",
+          "장애인화장실",
           "장애인 안내(휠체어 대여 및 기타)"
         ],
         "business_days": "화요일 - 일요일",
@@ -102741,7 +102741,7 @@
     }
   },
   "KOPg992ys": {
-    "updtDtText": "2026.04.23",
+    "updtDtText": "2026.10.02",
     "detail": {
       "cid": "KOPg992ys",
       "lang_code_id": "ko",
@@ -102759,7 +102759,7 @@
       "post_sj": "내 친구 서울 서울갤러리 (Seoul Gallery)",
       "sumry": "서울의 미래와 현재를 체험할 수 있는 복합문화공간",
       "creat_dt_text": "2026.04.09",
-      "updt_dt_text": "2026.04.23",
+      "updt_dt_text": "2026.10.02",
       "tag": [
         "내친구서울서울갤러리",
         "서울갤러리",
@@ -102773,7 +102773,7 @@
         "cmmn_telno": "02-6324-1400",
         "cmmn_hmpg_url": "www.seoul.go.kr/seoulgallery",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "3~10월 9~21시 / 11~2월 9~20시 / 법정공휴일 9~18시\r\n",
+        "cmmn_use_time": "월~목 09:00~19:00\r\n금, 토 : 09:00~21:00\r\n공휴일 : 09:00~18:00\r\n9.5.~11.1.까지 일요일 특별임시 운영 : 10:00~17:00",
         "cmmn_important": "[장애인 이용안내]\r\n서울광장에서 을지로입구역 방면 엘리베이터 이용\r\n안내데스크에서 휠체어 대여 및 점자 리플렛 수령 가능\r\n주차장: 9~21시 개방 / 10분당 1,000원 (평일 9~18시만 부과, 주말·공휴일 무료)\r\n\r\n* 서울시 '시청사 통통투어' 코스에 포함되어 있으며, 외국어 해설이 가능합니다.\r\n* 예약방법 및 일정은 https://news.seoul.go.kr/culture/archives/82890?tr_code=short를 참고하세요.\r\n\r\n1. 전 구역 금연\r\n2. 반려동물 출입 금지(안내견 제외)\r\n3. 공연 및 이벤트 정보는 홈페이지(www.seoul.go.kr/seoulgallery)와 인스타그램(@friends_seoulgallery)을 참고하세요.",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
@@ -114907,7 +114907,7 @@
     }
   },
   "KOP040795": {
-    "updtDtText": "2026.04.16",
+    "updtDtText": "2026.10.02",
     "detail": {
       "cid": "KOP040795",
       "lang_code_id": "ko",
@@ -114925,7 +114925,7 @@
       "post_sj": "용산공원 부분개방부지",
       "sumry": "과거 미군 장교숙소로 활용되던 부지로 조선시대 얼음을 저장하던 서빙고.",
       "creat_dt_text": "2022.05.20",
-      "updt_dt_text": "2026.04.16",
+      "updt_dt_text": "2026.10.02",
       "tag": [
         "용산공원",
         "용산공원부분개방기지",
@@ -114939,12 +114939,12 @@
         "cmmn_telno": "070-4224-1708",
         "cmmn_hmpg_url": "https://www.park.go.kr/front/lodging/introduce.do",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "내부시설 9:00 - 17:00 / 외부공간 9:00 - 18:00 (입장마감 17:00)",
+        "cmmn_use_time": "09:00 - 18:00 (입장마감 17:00)",
         "cmmn_important": "최대 300명까지만 동시 입장 가능하여 대기할 수 있습니다.",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "화 - 토",
-        "closed_days": "매주 월, 일 / 1월 1일 / 설날 및 추석 당일"
+        "closed_days": "매주 월 / 1월 1일 / 설날 및 추석 당일"
       },
       "traffic": {
         "adres": "서울 용산구 용산동6가 22-1",
@@ -120522,6 +120522,278 @@
         "map_position_y": "36.1148577268638"
       },
       "post_desc": "김밥 한 줄의 설렘과 추억을 함께 나누는 가을 소풍 , 김천김밥축제로 오세요 ! 행사명 2026 김천김밥축제 기간 2026. 10. 23.(금). ~ 10. 25.(일) 장소 직지문화공원(경북 김천시 대항면 운수리 44) 사명대사공원(경북 김천시 대항면 운수리 94-3) 친환경생태공원(경북 김천시 대항면 직지사길 118-50) 홈페이지 https://gimbapcity.kr/main/main.html SNS https://www.instagram.com/gc_gimbapcity/"
+    }
+  },
+  "KOP31i5bz": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOP31i5bz",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP31i5bz",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82839&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82840&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82841&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "제13회 칠곡낙동강평화축제",
+      "sumry": "경상북도 칠곡군",
+      "schdul_info_bgnde": "2026.10.15",
+      "schdul_info_endde": "2026.10.18",
+      "place": "경북 칠곡군 석적읍 중지리 552",
+      "creat_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        "제13회 칠곡낙동강평화축제. 칠곡"
+      ],
+      "extra": {
+        "cmmn_srvc_24h_at": "N",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "stroller_rent": "N"
+      },
+      "traffic": {
+        "adres": "경북 칠곡군 석적읍 중지리 산 49-6",
+        "new_zip_code": "39848",
+        "new_adres": "경북 칠곡군 석적읍 석적로 140 (중지리)",
+        "map_position_x": "128.401094270123",
+        "map_position_y": "36.0109821837613"
+      },
+      "post_desc": "칠곡낙동강평화축제는 한국전쟁 당시 최후의 방어선이었던 낙동강 전투의 역사적 의미를 기리고 , 호국 정신을 되새기기 위한 축제다 . 2026 년 열세번째로 개최하는 축제에서는 평화를 주제로 즐길 수 있는 공연 , 참여 체험 , 먹거리 프로그램을 마련했다 . 또한 ' 소년 , 소년병이 되다 ' 라는 슬로건 아래 어린 소년병들의 존재를 알리고 그들의 넋을 기리기 위한 프로그램을 함께 기획하여 축제의 역사적 , 평화적 메시지를 더욱 강화하였다 . 행사명 제13회 칠곡낙동강평화축제 기간 2026. 10. 15.( 목 ).~ 10. 18.( 일 ) 장소 칠곡보 생태공원 , 경북 칠곡군 석적읍 중지리 552 홈페이지 https://cnpf.kr/ SNS https://www.instagram.com/nakdongriver_peacefestival"
+    }
+  },
+  "KOPo2bt3b": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOPo2bt3b",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPo2bt3b",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82837&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82838&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "청도세계코미디아트페스티벌",
+      "sumry": "경상북도 청도군",
+      "schdul_info_bgnde": "2026.10.16",
+      "schdul_info_endde": "2026.10.18",
+      "place": "청도야외공연장 일원, 경북 청도군 화양읍 청려로 1846",
+      "creat_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        "청도세계코미디아트페스티벌",
+        " 청도군"
+      ],
+      "extra": {
+        "cmmn_srvc_24h_at": "N",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "stroller_rent": "N"
+      },
+      "traffic": {
+        "adres": "경북 청도군 화양읍 동천리 457",
+        "new_zip_code": "38333",
+        "new_adres": "경북 청도군 화양읍 청려로 1846 (동천리, 청도군 공공시설사업소)",
+        "map_position_x": "128.718693407243",
+        "map_position_y": "35.648352360285"
+      },
+      "post_desc": "청도의 가을을 물들이는 청도반시축제와 청도 세계코미디아트페스티벌이 함께 열립니다 . 반시의 달콤한 매력과 다채로운 체험 , 국내 유일 코미디 문화 인프라를 바탕으로 한 웃음 가득한 공연이 어우러진 축제에서 가족 · 친구 · 연인 모두에게 특별한 추억을 만들어보세요 ! 행사명 청도세계코미디아트페스티벌 기간 2026. 10. 16.( 금 ).~ 10. 18.( 일 ) 장소 청도야외공연장 일원 , 경북 청도군 화양읍 청려로 1846 홈페이지 http://xn--hq1bx54atmfwzcbqh.kr/main.asp SNS https://www.instagram.com/p/DdIxwBDzLgG/"
+    }
+  },
+  "KOP254qu4": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOP254qu4",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP254qu4",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82835&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82836&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 청도 반시축제",
+      "sumry": "경상북도 청도군",
+      "schdul_info_bgnde": "2026.10.16",
+      "schdul_info_endde": "2026.10.18",
+      "place": "청도야외공연장 일원, 경북 청도군 화양읍 청려로 1846",
+      "creat_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        "2026 Cheongdo Bansi Festival",
+        " 2026 청도 반시축제"
+      ],
+      "extra": {
+        "cmmn_srvc_24h_at": "N",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "stroller_rent": "N"
+      },
+      "traffic": {
+        "adres": "경북 청도군 화양읍 동천리 457",
+        "new_zip_code": "38333",
+        "new_adres": "경북 청도군 화양읍 청려로 1846 (동천리, 청도군 공공시설사업소)",
+        "map_position_x": "128.718693407243",
+        "map_position_y": "35.648352360285"
+      },
+      "post_desc": "청도의 가을을 물들이는 청도반시축제와 청도 세계코미디아트페스티벌이 함께 열립니다 . 반시의 달콤한 매력과 다채로운 체험 , 국내 유일 코미디 문화 인프라를 바탕으로 한 웃음 가득한 공연이 어우러진 축제에서 가족 · 친구 · 연인 모두에게 특별한 추억을 만들어보세요 ! 행사명 2026 청도 반시축제 기간 2026. 10. 16.( 금 ).~ 10. 18.( 일 ) 장소 청도야외공연장 일원 , 경북 청도군 화양읍 청려로 1846 홈페이지 https://xn — hq1bz1nqxfv2f5qg4nb.kr/ SNS https://www.instagram.com/cheongdobansi/"
+    }
+  },
+  "KOPqiem16": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOPqiem16",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPqiem16,en:ENPqiem16",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82819&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82821&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82822&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82823&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82824&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82825&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "스마트라이프위크 2026(Smart Life Week 2026)",
+      "sumry": "AI·로봇·모빌리티 등 미래도시를 만들어가는 기술과 서비스를 한자리에서 만나는 글로벌 행사",
+      "schdul_info_bgnde": "2026.10.06",
+      "schdul_info_endde": "2026.10.08",
+      "place": "코엑스(서울시 강남구 영동대로 513)",
+      "creat_dt_text": "2026.10.01",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        "전시",
+        "박람회",
+        "AI",
+        "휴머노이드",
+        "피지컬AI"
+      ],
+      "extra": {
+        "cmmn_hmpg_url": "https://slw.kr/kor/main.do",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "10월 6일(화) 10:00~18:00 / 10월 7일(수) 10:00~18:00 / 10월 8일(목) 10:00~16:30",
+        "cmmn_important": "외국어 해설 가능",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "usage_fee": "무료(사전등록·현장등록)"
+      },
+      "traffic": {
+        "adres": "서울 강남구 삼성동 159",
+        "new_zip_code": "06164",
+        "new_adres": "서울 강남구 영동대로 513 코엑스 전시컨벤션센터 1층",
+        "map_position_x": "127.059159043842",
+        "map_position_y": "37.5118239121138",
+        "subway_info": "지하철 9호선 봉은사역 7번출구, 265m"
+      },
+      "post_desc": "스마트라이프위크 2026은 'AI로 그리는 미래도시의 일상'을 주제로 AI와 로봇, 모빌리티, 스마트헬스케어 등 미래도시를 만들어가는 다양한 기술과 서비스를 한자리에서 선보입니다. 기업과 도시, 시민이 함께 참여해 AI가 변화시키는 일상의 모습을 직접 경험하고 미래의 가능성을 탐색할 수 있는 글로벌 행사입니다. 특히 AI와 로봇이 결합한 피지컬 AI, 미래 모빌리티, 스마트시티 등 도시의 혁신을 이끌 주요 기술과 서비스를 만나볼 수 있습니다. 국내외 기업과 도시, 전문가들이 참여해 최신 기술과 도시 혁신 사례를 공유하고, 새로운 비즈니스와 협력의 기회를 만들어갑니다. 전시와 컨퍼런스, 다양한 체험·교류 프로그램을 통해 기술이 실제 도시와 시민의 삶에 어떻게 연결되는지 보여줍니다. 스마트라이프위크 2026은 사람과 기술, 도시와 기업이 연결되어 더 나은 미래의 일상을 함께 그려가는 글로벌 플랫폼입니다."
+    }
+  },
+  "KOPe92tv3": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOPe92tv3",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPe92tv3,en:ENPe92tv3,ja:JPPe92tv3,zh-CN:CNPe92tv3,zh-TW:TCPe92tv3,ru:RUPe92tv3",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82336&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82338&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82333&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82334&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82335&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 서울 바비큐 페스티벌",
+      "sumry": "도심 속 캠핑장에서 즐길 수 있는 K-바비큐 체험",
+      "schdul_info_bgnde": "2026.10.24",
+      "schdul_info_endde": "2026.10.25",
+      "place": "난지캠핑장",
+      "creat_dt_text": "2026.09.28",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        "페스티벌",
+        "난지캠핑장",
+        "바비큐"
+      ],
+      "extra": {
+        "cmmn_telno": "070-8789-5600",
+        "cmmn_hmpg_url": "https://www.seoulbbqfesta.com/bbs7/",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
+        "cmmn_use_time": "12:00~21:00",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "접근가능"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 마포구 상암동 495-81",
+        "new_zip_code": "03900",
+        "new_adres": "서울 마포구 한강난지로 28 (상암동, 난지캠핑장)",
+        "map_position_x": "126.872592546411",
+        "map_position_y": "37.5701840497963",
+        "subway_info": "지하철 6호선/공항철도/경의중앙선 디지털미디어시티역 2번출구, 4.7km (셔틀이용 15분소요)\r\n지하철 2호선/6호선 합정역 1번출구, 마포 16번 마을버스 승차 후 망원한강공원 하차, 셔틀이용 (15분소요)"
+      },
+      "post_desc": "올가을, 서울에서 세계인의 입맛을 사로잡을 ‘K-바비큐’의 향연이 펼쳐진다. '치익-' 불판 위에서 맛있게 익어가는 소리, 한강 바람을 따라 퍼지는 고소한 바비큐향, K-BBQ와 도심 속 캠핑·피크닉을 결합한 글로벌 미식관광 축제 ‘서울 바비큐 페스티벌’을 오는 10월 24일(토)부터 25일(일)까지 2일간 난지캠핑장 일대에서 개최합니다. 나만의 바비큐를 즐길 수 있는 '셀프 BBQ존', 스타 셰프들의 화려한 바비큐 퍼포먼스를 즐길 수 있는 '바비큐 마스터즈', 서울 대표 맛집을 만나볼 수 있는 '바비큐 빌리지'가 여러분을 맞이합니다. 가격은 저렴하게! 바비큐를 위한 준비는 가볍게! 한우·한돈을 특가에 현장 구매하여 현장에 준비된 불판, 집게, 가위 등 조리도구를 이용하여 바비큐를 즐기실 수 있습니다. 특히, 망원시장의 구매영수증을 지참한 방문객에게는 고기 구매시 할인 혜택을 제공합니다. 이와 함께 신나는 공연이 펼쳐지는 ‘바비큐 스테이지’, 지역 우수 농·특산물을 만나볼 수 있는 ‘서로장터’, 도심 속 캠핑 분위기에서 쉬어갈 수 있는 ‘힐링존’ 등 다채로운 부대행사가 축제의 흥을 더해줄 것입니다. 가족, 친구, 연인과 불 앞에 둘러앉아 맛있는 음식과 이야기를 나누고, 서울의 가을을 오래 기억할 추억으로 채워보세요. 캠핑의 낭만과 바비큐의 즐거움이 만나는 곳, 2026 서울 바비큐 페스티벌입니다."
+    }
+  },
+  "KOPn5137y": {
+    "updtDtText": "2026.10.02",
+    "detail": {
+      "cid": "KOPn5137y",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPn5137y,en:ENPn5137y,ja:JPPn5137y,zh-CN:CNPn5137y,zh-TW:TCPn5137y,ru:RUPn5137y",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82339&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82341&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82342&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82343&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82344&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "종로구립 고희동미술관 재개관 6주년 기념전시 「만고상청: 군자의 품격」",
+      "sumry": "고희동의 한국화 뿐만 아니라 그가 당대 교유하던 다양한 서화가들의 사군자화, 산수도 그리고 합작도를 만나볼 수 있는 재개관 6주년 기념전시",
+      "schdul_info_bgnde": "2026.09.05",
+      "schdul_info_endde": "2026.12.27",
+      "place": "종로구립 고희동미술관",
+      "creat_dt_text": "2026.09.28",
+      "updt_dt_text": "2026.10.02",
+      "tag": [
+        "고희동미술관",
+        "만고상청",
+        "종로문화재단"
+      ],
+      "extra": {
+        "cmmn_telno": "02-741-8424",
+        "cmmn_hmpg_url": "https://www.jfac.or.kr/site/main/content/gohd01",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "10:00~18:00\r\n※ 17:30까지 입장 가능\r\n",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "closed_days": "※ 매주 월요일, 1월 1일, 설날 당일, 추석 당일\r\n월요일이 공휴일, 대체휴일인 경우 개관(화요일 휴관)"
+      },
+      "traffic": {
+        "adres": "서울 종로구 원서동 16",
+        "new_zip_code": "03051",
+        "new_adres": "서울 종로구 창덕궁5길 40 (원서동, 고희동 가옥)",
+        "map_position_x": "126.988884857967",
+        "map_position_y": "37.5831855099227",
+        "subway_info": "지하철 3호선 안국역 3번출구, 906m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "고희동미술관이 재개관 6주년을 기념하여 개최하는 전시 「만고상청: 군자의 품격」에서는 고희동의 한국화 뿐만 아니라 그가 당대 교유하던 다양한 서화가들의 사군자화, 산수도 그리고 합작도를 만나볼 수 있습니다. 그들이 애호하며 그 려온 사군자화 및 산수화는 단지 옛 문인화의 전통을 잇는데서 그치는 것이 아닌 세속의 풍파 속에서 이상적인 군자의 삶에 한걸음 더 가까워지기 위한 내면적 수양을 보여줍니다. 산벽시사의 일원, 서화협회 총무 등 활동을 시작으로 근대미술계의 중추로 자리매김한 고희동, 그의 가옥에서 다시금 뜻깊은 아회를 가지는 우리 근대서화가들의 작품을 관조하며 그들이 지향했던 군자적 삶의 아취를 느껴보시기 바랍니다."
     }
   }
 }
