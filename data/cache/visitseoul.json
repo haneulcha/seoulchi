@@ -111620,7 +111620,7 @@
     }
   },
   "KOP000072": {
-    "updtDtText": "2026.09.11",
+    "updtDtText": "2026.10.07",
     "detail": {
       "cid": "KOP000072",
       "lang_code_id": "ko",
@@ -111638,7 +111638,7 @@
       "post_sj": "경복궁",
       "sumry": "조선시대의 중심 궁궐로, 한국 전통 건축의 아름다움과 역사적 가치를 간직한 서울의 대표적인 문화유산",
       "creat_dt_text": "2015.12.29",
-      "updt_dt_text": "2026.09.11",
+      "updt_dt_text": "2026.10.07",
       "tag": [
         "한국역사적명소",
         "서울여행",
@@ -120799,6 +120799,308 @@
         "safe_mng": "ul"
       },
       "post_desc": "고희동미술관이 재개관 6주년을 기념하여 개최하는 전시 「만고상청: 군자의 품격」에서는 고희동의 한국화 뿐만 아니라 그가 당대 교유하던 다양한 서화가들의 사군자화, 산수도 그리고 합작도를 만나볼 수 있습니다. 그들이 애호하며 그 려온 사군자화 및 산수화는 단지 옛 문인화의 전통을 잇는데서 그치는 것이 아닌 세속의 풍파 속에서 이상적인 군자의 삶에 한걸음 더 가까워지기 위한 내면적 수양을 보여줍니다. 산벽시사의 일원, 서화협회 총무 등 활동을 시작으로 근대미술계의 중추로 자리매김한 고희동, 그의 가옥에서 다시금 뜻깊은 아회를 가지는 우리 근대서화가들의 작품을 관조하며 그들이 지향했던 군자적 삶의 아취를 느껴보시기 바랍니다."
+    }
+  },
+  "KOPk51ddr": {
+    "updtDtText": "2026.10.07",
+    "detail": {
+      "cid": "KOPk51ddr",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPk51ddr,en:ENPk51ddr,ja:JPPk51ddr,zh-CN:CNPk51ddr,zh-TW:TCPk51ddr,ru:RUPk51ddr",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82597&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82599&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "STARCH LIVE × AHN CONTENTS LaB",
+      "sumry": "충무로의 감각적인 공간 STARCH에서 펼쳐지는 특별한 신디사이저 전자음악 라이브 공연",
+      "schdul_info_bgnde": "2026.10.02",
+      "schdul_info_endde": "2026.10.02",
+      "place": "STARCH (스타치) 서울 중구 마른내로4길 25 1층",
+      "creat_dt_text": "2026.09.28",
+      "updt_dt_text": "2026.10.07",
+      "tag": [
+        "서울공연",
+        "서울여행",
+        "충무로",
+        "을지로",
+        "명동",
+        "전자음악",
+        "신디사이저",
+        "라이브공연",
+        "서울나이트라이프",
+        "이색데이트",
+        "서울문화체험",
+        "STARCH"
+      ],
+      "extra": {
+        "cmmn_telno": "070-5213-1458",
+        "cmmn_hmpg_url": "https://www.instagram.com/starch.seoul?igsh=MXRsYmVmYW5vdGY2aw%3D%3D&utm_source=qr",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "오후 6:00~오전 1:00",
+        "cmmn_important": "신디사이저 라이브 공연과 함께 음식과 음료를 즐길 수 있는 소규모 음악 공연. 공연 시작 전 여유롭게 도착하여 주문하는 것을 권장한다. 명동·을지로 인근에 위치해 있어 서울 도심 관광 일정과 함께 방문하기 좋다.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "공연은 무료이나 음료 및 식사는 따로 지불하셔야합니다. "
+      },
+      "traffic": {
+        "adres": "서울 중구 인현동1가 132-3",
+        "new_zip_code": "04556",
+        "new_adres": "서울 중구 마른내로4길 25 (인현동1가) 1층",
+        "map_position_x": "126.993671148762",
+        "map_position_y": "37.5631290856413",
+        "subway_info": "지하철 3호선 충무로역 7번출구, 300m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "STARCH LIVE × AHN CONTENTS LaB 충무로에서 만나는 특별한 금요일 밤, 신디사이저 전자음악 라이브 2026년 10월 2일 금요일 오후 8시, 서울 충무로에 위치한 STARCH에서 작곡가이자 사운드 디자이너 안성균의 신디사이저 전자음악 라이브 공연이 펼쳐집니다. 이번 공연은 일반적인 콘서트홀을 벗어나 소규모 펍에서 음악과 음식, 음료를 함께 즐길 수 있도록 기획된 라이브 공연입니다. 관객들은 아티스트와 가까운 거리에서 신디사이저가 만들어내는 다채로운 음색과 공간을 채우는 전자음, 리드미컬한 비트를 생생하게 경험할 수 있습니다. ■ 공연 및 이용 안내 공연은 오후 8시 정각에 시작하며, 1부 20분, 인터미션 15분, 2부 20분으로 구성되어 총 55분간 진행됩니다. 여유로운 관람을 위해 오후 7시 30분까지 도착하여 음식과 음료를 주문하는 것을 권장합니다. 공연 중에도 음식과 음료를 즐길 수 있으며, 추가 주문은 공연 시작 전, 인터미션 또는 공연 종료 후 가능합니다."
+    }
+  },
+  "KOP6njrb9": {
+    "updtDtText": "2026.10.07",
+    "detail": {
+      "cid": "KOP6njrb9",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP6njrb9,en:ENP6njrb9,ja:JPP6njrb9,zh-CN:CNP6njrb9,zh-TW:TCP6njrb9,ru:RUP6njrb9",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82584&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82586&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82587&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "사진전 <우리는 자연스러웠고 거침없었다 >",
+      "sumry": "와이아트갤러리 기획 사진전",
+      "schdul_info_bgnde": "2026.10.02",
+      "schdul_info_endde": "2026.10.13",
+      "place": "충무로 와이아트갤러리",
+      "creat_dt_text": "2026.09.28",
+      "updt_dt_text": "2026.10.07",
+      "tag": [
+        "사진전",
+        "와이아트갤러리",
+        "가볼만한전시",
+        "나무사진",
+        "우리는자연스러웠고거침없었다",
+        "전시"
+      ],
+      "extra": {
+        "cmmn_telno": "010-5260-8104",
+        "cmmn_hmpg_url": "https://blog.naver.com/gu5658/224407082112",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "평일 오전11시~ 오후7시/ 토.일 오전12시~ 6시/ 휴관일 없음",
+        "cmmn_important": "전시정보 및 관련 글을 QR 제작해 외국인들도 현장에서 작품과 전시 정보를 확인할 수 있음. 사진집 역시 영문 수록",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "엘리베이터"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 중구 충무로3가 57-8",
+        "new_zip_code": "04554",
+        "new_adres": "서울 중구 퇴계로27길 28 한영빌딩 지하1층 3호 와이아트갤러리",
+        "map_position_x": "126.991642957434",
+        "map_position_y": "37.5623817630809",
+        "subway_info": "지하철 3호선/4호선 충무로역 5번출구, 221m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "『우리는 자연스러웠고 거침없었다』 사진·글 노기씨 유독 어긋난 순간 앞에서 시선이 멈춘다. 온몸의 감각이 대상을 향해 반응하기 시작하면, 나는 금방이라도 사라져 버릴 것처럼 매혹되어 그것을 향해 셔터를 누른다. 얼마의 시간일까. 몰입의 순간이 끝나고 나면 지극히 개인적인, 나와 그것 사이의 흔적이 남는다. 촬영은 언제나 그런 식이었다. 나는 매번 다른 풍경 앞에 서 있었지만, 늘 같은 형태의 감각에 끌렸고, 그것을 의심하기도 전에 촬영은 순식간에 끝이 난다. 멀리 떠날수록 감각은 깨어났고, 나는 그 순간들을 수집했다. 이번 전시는 수많은 감응의 순간들 가운데 유독 나를 오래 서성거리게 만든 나무들의 기록을 골라 보여준다. 수많은 흔적들 중 골라낸, 이 불친절한 사진들 앞에서 당신의 감각 또한 깨어날 수 있다면, 그것으로 충분히 매혹적인 순간일 것이다."
+    }
+  },
+  "KOPevx16g": {
+    "updtDtText": "2026.10.07",
+    "detail": {
+      "cid": "KOPevx16g",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPevx16g,en:ENPevx16g,ja:JPPevx16g,zh-CN:CNPevx16g,zh-TW:TCPevx16g,ru:RUPevx16g",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82575&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82577&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "국립무용단 <더블빌:시나위>",
+      "sumry": "세대와 감각이 교차하는 시대의 춤판이 열린다!",
+      "schdul_info_bgnde": "2026.10.08",
+      "schdul_info_endde": "2026.10.11",
+      "place": "국립극장 해오름",
+      "creat_dt_text": "2026.09.28",
+      "updt_dt_text": "2026.10.07",
+      "tag": [
+        "국립무용단",
+        "국립극장",
+        "공연추천",
+        "Must-see",
+        "K-Performance",
+        "K-Dance",
+        "NATIONALDANCECOMPANYOFKOREA",
+        "NDCK",
+        "NTOK"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2280-4114",
+        "cmmn_hmpg_url": " https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&perfId=267170",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "국립극장 해오름 / 목 19:30,금토일 15:00",
+        "cmmn_important": "관람연령: 초등학생 이상",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "usage_fee": "VIP 70,000원, R 50,000원, S 30,000원, A 20,000원\r\n※ 상세 할인정보는 예매페이지 참고\r\n※ 경로(1961년 이전 출생자) 50% 할인, 외국인 할인(Foreigners Discount) 20%"
+      },
+      "traffic": {
+        "adres": "서울 중구 장충동2가 산 14-67",
+        "new_zip_code": "04621",
+        "new_adres": "서울 중구 장충단로 59 (장충동2가, 국립극장)",
+        "map_position_x": "126.999267349473",
+        "map_position_y": "37.5519949082942",
+        "subway_info": "지하철 3호선 동대입구역 6번출구, 870m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "2026년 10월, 세대와 감각이 교차하는 시대의 춤판이 열립니다. 하나의 시나위, 완벽히 다른 두 개의 무대! <묵향><향연> 등 전통을 현대적인 감각으로 재해석하며 한국춤의 가치를 확장해 온 국립무용단이 또 다른 새로운 시도로 이목을 집중시킵니다. 세대를 대표하는 두 안무가, 배정혜(Bae Jeong-hye)·배진호(Bae Jin-ho)와 함께 전통음악 '시나위'를 시대의 감각으로 담아낸 <더블빌:시나위>를 만나보세요! 배정혜는 깊은 호흡과 연륜이 강점인 국립무용단(NDCK) Ⅰ과 배진호는 날렵한 움직임과 에너지로 뭉친 국립무용단(NDCK) Ⅱ와 함께, 그룹별 특화된 움직임으로 한국춤의 영역을 확장합니다. 한 폭의 그림같은 우리춤의 짙은 향기 <살풀이 生> <Soul, 해바라기>, <춤 춘향> 등으로 한국 창작춤의 지평을 연 안무가 배정혜의 <살풀이 生>은 맺힌 것을 풀어내는 살풀이를 통해 생명의 고귀함을 그려냅니다. 몸에서 시작되는 작은 진동, 아리랑이 되다 <AHRA> 움직임을 해체하고 재해석하며 자신만의 장르를 구축해 온 안무가 배진호는 한국인의 집단적 정서를 축적해 온 '아리랑'에 담긴 희로애락을 오늘의 신체언어로 치환하는 <AHRA>를 선보입니다."
+    }
+  },
+  "KOP918qu3": {
+    "updtDtText": "2026.10.07",
+    "detail": {
+      "cid": "KOP918qu3",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP918qu3,en:ENP918qu3,ja:JPP918qu3,zh-CN:CNP918qu3,zh-TW:TCP918qu3,ru:RUP918qu3",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82436&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82438&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82439&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82440&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82441&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82442&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "서울일러스트레이션페어V.22",
+      "sumry": "2026 크리스마스는 서울일러스트레이션페어V.22와 함께!",
+      "schdul_info_bgnde": "2026.12.24",
+      "schdul_info_endde": "2026.12.27",
+      "place": "서울 코엑스 C홀",
+      "creat_dt_text": "2026.09.28",
+      "updt_dt_text": "2026.10.07",
+      "tag": [
+        "K일러스트레이션",
+        "K아티스트",
+        "Kartist",
+        "Killustration",
+        "Kart ",
+        "서일페22",
+        "서일페",
+        "서울일러스트레이션페어22",
+        "서울일러스트레이션페어",
+        "전시회",
+        "작가",
+        "아티스트",
+        "일러스트레이터",
+        "그래픽디자인",
+        "독립출판",
+        "그림책",
+        "애니메이션",
+        "캐릭터",
+        "회화",
+        "서울전시회",
+        "서울가볼만한곳"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2602-8602 / 02-6280-8604",
+        "cmmn_hmpg_url": "https://www.ocreo.kr/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "10:00 ~ 18:00 *입장 마감 : 전시 관람 종료 1시간 전",
+        "cmmn_important": "주제관 <마음의 밀도 : 도생하다> 진행!",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "usage_fee": "성인: 11,000원 청소년: 9,000원 (현재 얼리버드 진행 중, 한정수량 판매)"
+      },
+      "traffic": {
+        "adres": "서울 강남구 삼성동 159",
+        "new_zip_code": "06164",
+        "new_adres": "서울 강남구 영동대로 513 (삼성동, 코엑스)",
+        "map_position_x": "127.059159043842",
+        "map_position_y": "37.5118239121138",
+        "subway_info": "지하철 2호선 삼성역 6번출구, 573m\r\n지하철 9호선 봉은사역 7번출구, 333m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "매회 약 1,000여 부스 참가 및 800여 명 이상의 아티스트가 참가해 직접 부스를 운영하고 관람객들과 소통하는 국내 최대 규모의 일러스트레이션페어! 올 겨울 일러스트의 모든 것을 경험할 수 있는 전시 '서울일러스트레이션페어V.22'에서 만나요!"
+    }
+  },
+  "KOP92qfv0": {
+    "updtDtText": "2026.10.07",
+    "detail": {
+      "cid": "KOP92qfv0",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP92qfv0,en:ENP92qfv0,ja:JPP92qfv0,zh-CN:CNP92qfv0,zh-TW:TCP92qfv0,ru:RUP92qfv0",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82443&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82445&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "모두의 풍류 : 인왕산",
+      "sumry": "인왕산 수성동 계곡의 아름다운 자연을 배경으로 펼쳐지는 야외 국악 공연",
+      "schdul_info_bgnde": "2026.10.17",
+      "schdul_info_endde": "2026.10.17",
+      "place": "서울시 종로구 인왕산 수성동 계곡 입구 공연장",
+      "creat_dt_text": "2026.09.28",
+      "updt_dt_text": "2026.10.07",
+      "tag": [
+        "인왕산",
+        "수성동계곡",
+        "모두의풍류",
+        "국악공연",
+        "서울야외공연",
+        "가을나들이",
+        "종로구축제"
+      ],
+      "extra": {
+        "cmmn_telno": "010-3251-9070",
+        "cmmn_hmpg_url": "https://ep12.kr",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "16:00 ~ 17:30 (행사 당일)",
+        "cmmn_important": "외국어 해설제공 / 수성동 계곡을 배경으로 특별한 공연 감상 후 '갓'을 쓴 연주자와 인증샷 남기기",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "전석 30,000원"
+      },
+      "traffic": {
+        "adres": "서울 종로구 누상동 166-161",
+        "new_zip_code": "03038",
+        "new_adres": "서울 종로구 옥인길 71 일대 (수성동 계곡 입구)",
+        "map_position_x": "126.964920000066",
+        "map_position_y": "37.581742474709",
+        "subway_info": "지하철 3호선 경복궁역 2번출구, 약 1.2km (도보 약 20분 소요)\r\n마을버스 '종로09' 환승 후 수성동계곡 종점 하차"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "'모두의 풍류:인왕산'은 아름다운 산수를 자랑하는 수성동 계곡에서 진행되는 특별한 야외 음악회입니다. 전통 국악과 현대적 감각이 어우러진 다채로운 프로그램이 약 90분간 펼쳐집니다. 남녀노소 누구나 쉽게 즐길 수 있는 무대로 꾸며지며, 탁 트인 자연 속에서 일상의 스트레스를 잊고 힐링할 수 있는 시간을 선사합니다. 청명한 가을 하늘 아래, 자연과 음악이 하나 되는 특별한 경험을 놓치지 마세요."
     }
   }
 }
