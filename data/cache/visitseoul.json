@@ -121102,5 +121102,530 @@
       },
       "post_desc": "'모두의 풍류:인왕산'은 아름다운 산수를 자랑하는 수성동 계곡에서 진행되는 특별한 야외 음악회입니다. 전통 국악과 현대적 감각이 어우러진 다채로운 프로그램이 약 90분간 펼쳐집니다. 남녀노소 누구나 쉽게 즐길 수 있는 무대로 꾸며지며, 탁 트인 자연 속에서 일상의 스트레스를 잊고 힐링할 수 있는 시간을 선사합니다. 청명한 가을 하늘 아래, 자연과 음악이 하나 되는 특별한 경험을 놓치지 마세요."
     }
+  },
+  "KOPb6opgy": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOPb6opgy",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPb6opgy,en:ENPb6opgy,ja:JPPb6opgy,zh-CN:CNPb6opgy,zh-TW:TCPb6opgy,ru:RUPb6opgy",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82578&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82580&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82581&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82582&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82583&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": " 서울갤러리 가을맞이 특별행사 ",
+      "sumry": "서울갤러리 가을맞이 \"Pokémon GO\" 특별 이벤트",
+      "schdul_info_bgnde": "2026.09.18",
+      "schdul_info_endde": "2026.10.11",
+      "place": "서울시청 지하1층 서울갤러리",
+      "creat_dt_text": "2026.10.01",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "서울갤러리",
+        "서울시청",
+        "추석",
+        "이벤트"
+      ],
+      "extra": {
+        "cmmn_telno": "02-6324-1400",
+        "cmmn_hmpg_url": "https://www.seoul.go.kr/seoulgallery",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "서울갤러리 : (월~목) 09:00~19:00, (금~토) 09:00~21:00, (일) 10:00~17:00, (공휴일) 09:00~18:00\r\nPokémon GO : (월~토) 10:00~19:00, (일) 10:00~17:00, (공휴일) 10:00~18:00",
+        "cmmn_important": "주차장 협소, 대중교통 이용",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)",
+          "장애인화장실"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 중구 태평로1가 31",
+        "new_zip_code": "04524",
+        "new_adres": "서울 중구 세종대로 110 (태평로1가, 서울특별시청)  지하1, 2층",
+        "map_position_x": "126.977918351844",
+        "map_position_y": "37.566370776634",
+        "subway_info": "지하철 1호선/2호선 시청역 4번출구, 212m"
+      },
+      "post_desc": "서울갤러리 가을맞이 \"Pokémon GO\" 특별 이벤트 서울의 다채로운 변화를 담은 정책전시부터 남녀노소 누구나 함께 즐길 수 있는 이벤트, 특별 공연까지! 서울정책 갤러리 - 한강버스, 손목닥터9988 등 서울의 변화를 담은 5개 테마전시 서울공감 N행시 이벤트 - 제시 키워드로 나만의 N행시 남기기 문화공연 - 다채로운 장르로 누구나 함께 즐길 수 있는 상설 공연"
+    }
+  },
+  "KOP72abp2": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOP72abp2",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP72abp2,en:ENP72abp2,ja:JPP72abp2,zh-CN:CNP72abp2,zh-TW:TCP72abp2,ru:RUP72abp2",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82370&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82372&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82373&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82374&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82375&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82376&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "서울도시계획 대관람",
+      "sumry": "서울역사박물관 서울반세기종합전 , 서울도시기본계획 수립 60주년 기념",
+      "schdul_info_bgnde": "2026.08.14",
+      "schdul_info_endde": "2026.11.08",
+      "place": "서울역사박물관 기획전시실A",
+      "creat_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "서울",
+        "역사",
+        "건축",
+        "도시",
+        "도시계획",
+        "서울풍경",
+        "서울기록",
+        "도시의기억",
+        "서울의오늘",
+        "서울의미래",
+        "서울역사박물관",
+        "도시공간",
+        "서울이야기"
+      ],
+      "extra": {
+        "cmmn_telno": "02-724-0274",
+        "cmmn_hmpg_url": "https://museum.seoul.go.kr/www/board/NR_boardView.do?bbsCd=1002&q_exhSttus=next&seq=20260723145427523&sso=ok",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "화·수·금·토·일 09:00 ~ 21:00\r\n목요일 09:00 ~ 18:00\r\n※ 야간 개방 확대 운영 기간: 9. 15.(화) ~ 11. 30.(월)\r\n공휴일을 제외한 월요일 휴관",
+        "cmmn_important": "9. 15.(화)~11. 30.(월) 서울역사박물관을 밤 9시까지 만나보세요!\r\n화·수·금·토·일요일 09:00~21:00, 목요일 09:00~18:00 야간 개방을 확대 운영합니다. 선선한 가을밤, 박물관에서 서울의 역사와 문화를 여유롭게 즐겨보세요.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 종로구 신문로2가 2-1",
+        "new_zip_code": "03177",
+        "new_adres": "서울 종로구 새문안로 55 (신문로2가, 서울역사박물관)",
+        "map_position_x": "126.97107522045",
+        "map_position_y": "37.5704968494713",
+        "subway_info": "지하철 5호선 광화문역 7번출구, 553m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "모든 거대한 것들의 시작은 투박합니다. 여기, 서울시 최상위 도시계획의 효시이자 최초의 기록인 '1966년 서울시도시기본계획'이 있습니다. 제대로 된 참고 자료(Reference)도, 의지할만한 선례도 없던 시절이었습니다. 지금의 눈으로 보면 도면은 거칠고 내용은 턱없이 부족해 보일지 모릅니다. 하지만 그것은 황무지 위에서 도시의 뼈대를 세우기 위해 밤낮으로 고군분투했던 당대 행정가와 계획가들의 치열한 발버둥이었습니다. 도시의 계획과 계획에 의해 영향받은 도시계획의 역사는 단순히 도시 역사의 한 파편이 아닌, 우리가 발을 딛고 서 있는 '도시의 DNA'와 다름없습니다. 물론 당시의 노력과 결과물은 그 시대의 현황과 맥락에 대응한 것이기에, 현재와 미래가 풀어나가야 할 과제 및 해법과는 매우 다를 것입니다. 본 전시는 이 무모했던 최초의 계획들이 어떤 작동 원리를 거쳐 오늘날 우리의 일상이 되었는지, 그리고 서울이라는 거대한 유기체가 지난 수십 년간 어떤 연대기를 거쳐 성장해 왔는지 그 맥락을 담담하게 펼쳐 보입니다. 〈서울도시계획 대관람>은 바로 그 최초의 서투른 시작점을 복기하는 것에서 출발하여, 이곳을 찾는 관람자가 스스로에게 질문해 보고 도시 서울에 대한 방향성을 찾아보고자 합니다. \"2026년 우리는 어떤 미래 서울을 꿈꿔야 할까요?"
+    }
+  },
+  "KOP0mr395": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOP0mr395",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP0mr395,en:ENP0mr395,ja:JPP0mr395,zh-CN:CNP0mr395,zh-TW:TCP0mr395,ru:RUP0mr395",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82357&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82359&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82360&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82361&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82362&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "조선시대 목가구 이야기",
+      "sumry": "국내외 관람객의 문화적 흥미를 높이는 조선시대 목가구 및 공예품 전시",
+      "schdul_info_bgnde": "2026.03.01",
+      "schdul_info_endde": "2026.12.31",
+      "place": "북촌박물관",
+      "creat_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "북촌박물관",
+        "북촌",
+        "박물관",
+        "전시",
+        "목가구",
+        "고가구",
+        "서울",
+        "종로",
+        "나들이",
+        "볼거리",
+        "bukchonmuseum",
+        "bukchontraditionalmuseum",
+        "seoul",
+        "bukchon",
+        "museum"
+      ],
+      "extra": {
+        "cmmn_telno": "02-766-8402 / 02-763-8403",
+        "cmmn_hmpg_url": "https://blog.naver.com/bukchon_art",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "월, 화, 목, 금, 토 10:00~18:00 (일, 수 휴관 / 입장 마감: 17:30)",
+        "cmmn_important": "영어, 중국어 해설 가능",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "성인 3,000 / 청소년∙경로 2,000 / 미취학 무료 (외국인 동일)"
+      },
+      "traffic": {
+        "adres": "서울 종로구 가회동 170-4",
+        "new_zip_code": "03055",
+        "new_adres": "서울 종로구 북촌로 39, 북촌박물관",
+        "map_position_x": "126.984766984678",
+        "map_position_y": "37.5804323346915",
+        "subway_info": "지하철 3호선 안국역 2번출구, 396m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "'북촌박물관이 소장하고 있는 조선시대 목가구 및 공예품을 통해 국내외 관람객의 문화적 흥미를 높이고자 합니다. 목가구에 담긴 유교 문화와 문양의 의미, 좌식 생활문화를 조명함으로써 우리 전통문화의 격조와 정수를 널리 알리는 데 뜻을 두고 있습니다. - 사랑방: 유교적 생활 질서에 따라 형성된 남성 중심의 생활공간인 사랑방을 조명합니다. 경상·연상·고비·책함·사방탁자 등을 통해 선비의 학문과 독서 문화가 목가구에 어떻게 반영되었는지 살펴볼 수 있습니다. - 안방: 유교적 생활 질서 속에서 여성의 생활공간으로 자리한 안방의 문화를 소개합니다. 이층농·반닫이·반짇고리·빗접 등을 통해 의복과 생활용품의 보관, 바느질과 몸단장 등 일상생활과 밀접하게 연결된 조선시대 목가구의 쓰임을 이해할 수 있습니다. - 부엌: 온돌과 좌식 생활을 중심으로 형성된 조선시대의 식생활 문화를 살펴봅니다. 소반·찬장·뒤주·찬탁 등을 통해 음식의 조리와 저장, 상차림에 사용된 목가구의 기능과 당시 생활방식의 특징을 확인할 수 있습니다."
+    }
+  },
+  "KOP8ahbp7": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOP8ahbp7",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP8ahbp7,en:ENP8ahbp7,ja:JPP8ahbp7,zh-CN:CNP8ahbp7,zh-TW:TCP8ahbp7,ru:RUP8ahbp7",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82354&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82356&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "화염",
+      "sumry": "연극은 인간의 비극을 어떻게 기록하고 증언해야 하는가?",
+      "schdul_info_bgnde": "2026.11.14",
+      "schdul_info_endde": "2026.12.06",
+      "place": "서울문화재단 대학로극장 쿼드",
+      "creat_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "대학로극장쿼드",
+        "서울문화재단",
+        "공연",
+        "연극",
+        "대학로"
+      ],
+      "extra": {
+        "cmmn_telno": "1577-0369",
+        "cmmn_hmpg_url": "https://www.quad.or.kr/product/performance/1278",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "평일 19:30, 주말 15:00 *11/14(토) 18:00 공연 (월 공연없음)",
+        "cmmn_important": "자막 안경 무료 대여(외국인 및 청각장애인 대상)",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "usage_fee": "전석 50,000원\r\n조기예매할인 50% | 2026.10.1.(목)~10.7.(수), 7일간 기간 내 예매자\r\n재관람할인 30% | 대학로극장 쿼드 기획·제작 공연 유료 실물 티켓 소지자 (유료 실물 티켓에 한하여 1매당 할인 증빙 1매 가능)\r\n※ 재관람 할인 대상: 쿼드 제작·초이스·재연을부탁해·페스타·리커넥트·클래식 해당\r\n예술인할인 50% | 공연예술 분야 종사자 본인 (예술인패스, 명함, 예술활동증명 증빙자료 및 신분증 확인)\r\n청소년할인 30% | 2001년 이후 출생자 본인 (신분증 확인, 생년월일 미기재 학생증 불가)\r\n경로할인 30% | 1961년 이전 출생자 본인 (신분증 확인)\r\n장애인할인 50% | 동반 1인까지 (복지카드 확인)\r\n* 휠체어석은 대학로극장 쿼드 고객센터 1577-0369 문의\r\n국가유공자할인 50% | 본인만 (국가유공자증 확인)* 유족증 불가\r\n다둥이할인 30% | 다둥이 행복카드 소지자 포함 가족 전체 (본인 신분증, 다자녀 실물카드 또는 앱카드 확인) * 가족구성원 성명 미기재 경우 가족관계증명서 추가 확인\r\n외국인할인 20% | 외국인 동반 1인까지 (신분증 확인)\r\n중장기복무 제대군인 할인 20% | 본인만 (중장기복무 제대군인증 확인)\r\n서울시 정책 할인 20% | 본인만 (서울시민카드, 기후동행카드 또는 우수자원봉사자 인증카드 확인)\r\n단체할인 40% | 동일 회차 10인 이상 관람 시 (대학로극장 쿼드 고객센터 1577-0369 문의)"
+      },
+      "traffic": {
+        "adres": "서울 종로구 동숭동 1-5",
+        "new_zip_code": "03084",
+        "new_adres": "서울 종로구 동숭길 122 (동숭동, 서울문화재단 대학로)",
+        "map_position_x": "127.00371665858",
+        "map_position_y": "37.5836990003446",
+        "subway_info": "지하철 4호선 혜화역 1번출구, 200m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "쌍둥이 남매인 잔느와 시몽은 지난 5년 동안 침묵만 일관하다 돌아가신 어머니 나왈의 유언장을 확인하고 큰 혼란에 빠진다. 유언의 내용은 죽은 줄로만 알았던 아버지와 존재조차 몰랐던 형제를 찾아 자신이 남긴 편지를 전해달라는 것. 또한 자신의 장례에는 관과 비석도 없이 매장하라는 당부도 함께 담겨있었기 때문이다. 남매는 어머니의 흔적을 따라 떠나고, 베일에 싸여 있던 어머니의 과거에 점점 다가간다. 그리고 그 과거의 끝에서 남매는 어머니의 침묵에 관한 충격적인 진실을 마주한다."
+    }
+  },
+  "KOPcjgd3j": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOPcjgd3j",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPcjgd3j,en:ENPcjgd3j,ja:JPPcjgd3j,zh-CN:CNPcjgd3j,zh-TW:TCPcjgd3j,ru:RUPcjgd3j",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82351&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82353&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "혁명의 춤",
+      "sumry": "연극의 형식은 어디까지 자유로워질 수 있는가?",
+      "schdul_info_bgnde": "2026.10.28",
+      "schdul_info_endde": "2026.11.08",
+      "place": "서울문화재단 대학로극장 쿼드",
+      "creat_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "대학로극장쿼드",
+        "서울문화재단",
+        "공연",
+        "연극",
+        "대학로"
+      ],
+      "extra": {
+        "cmmn_telno": "1577-0369",
+        "cmmn_hmpg_url": "https://www.quad.or.kr/product/performance/1277",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "평일 19:30, 주말/공휴일 15:00 (월,화 공연없음)",
+        "cmmn_important": "자막 안경 무료 대여(외국인 및 청각장애인 대상)",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "usage_fee": "전석 50,000원\r\n조기예매할인 50% | 2026.9.17(목)~9.23(수), 7일간 기간 내 예매자\r\n재관람할인 30% | 대학로극장 쿼드 기획·제작 공연 유료 실물 티켓 소지자 (유료 실물 티켓에 한하여 1매당 할인 증빙 1매 가능)\r\n※ 재관람 할인 대상: 쿼드 제작·초이스·재연을부탁해·페스타·리커넥트·클래식 해당\r\n예술인할인 50% | 공연예술 분야 종사자 본인 (예술인패스, 명함, 예술활동증명 증빙자료 및 신분증 확인)\r\n청소년할인 30% | 2001년 이후 출생자 본인 (신분증 확인, 생년월일 미기재 학생증 불가)\r\n경로할인 30% | 1961년 이전 출생자 본인 (신분증 확인)\r\n장애인할인 50% | 동반 1인까지 (복지카드 확인)\r\n* 휠체어석은 대학로극장 쿼드 고객센터 1577-0369 반드시 문의\r\n국가유공자할인 50% | 본인만 (국가유공자증 확인)* 유족증 불가\r\n다둥이할인 30% | 다둥이 행복카드 소지자 포함 가족 전체 (본인 신분증, 다자녀 실물카드 또는 앱카드 확인) * 가족구성원 성명 미기재 경우 가족관계증명서 추가 확인\r\n외국인할인 20% | 외국인 동반 1인까지 (신분증 확인)\r\n중장기복무 제대군인 할인 20% | 본인만 (중장기복무 제대군인증 확인)\r\n서울시 정책 할인 20% | 본인만 (서울시민카드, 기후동행카드, 문화누리카드 또는 우수자원봉사자 인증카드 확인)\r\n단체할인 40% | 동일 회차 10인 이상 관람 시 (대학로극장 쿼드 고객센터 1577-0369 문의)"
+      },
+      "traffic": {
+        "adres": "서울 종로구 동숭동 1-5",
+        "new_zip_code": "03084",
+        "new_adres": "서울 종로구 동숭길 122 (동숭동, 서울문화재단 대학로)",
+        "map_position_x": "127.00371665858",
+        "map_position_y": "37.5836990003446",
+        "subway_info": "지하철 4호선 혜화역 1번출구, 200m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "<혁명의 춤>은 전통적인 연극의 일반적 서사 구조를 과감히 탈피하여, 독립된 8개의 장면들로 구성되어 있습니다. 각 장면은 혁명의 한복판에서 마주할 수 있는 파편적인 순간들을 조명할 뿐, 인과관계로 얽혀있지 않습니다. 그러나 무대 위에 집요하게 반복되는 대사와 소리, 오브제와 빛, 그리고 배우들의 정교한 움직임은 작품의 내밀한 구조를 수면 위로 끌어올립니다. 관객은 이러한 반복된 패턴을 통해 이야기 너머의 차원에서 장면들이 유기적으로 연결되어 있음을 감각하며, 연극의 지평이 확장되는 새로운 경험을 마주하게 됩니다. 이처럼 기존 연극의 틀을 벗어나 새로운 형식을 탐구해 온 <혁명의 춤>의 실험 정신은 이 작품이 탄생한 시대적 배경과도 맞닿아 있습니다. 1976년 뉴욕 소호에서 초연된 <혁명의 춤>은 당시 왕성하게 공연되던 실험극들 중 하나였습니다. 가난한 실험극들은 기존의 비싼 무대 대신 값싼 공간들을 무대로 삼았고, 이는 오늘날 블랙박스 극장의 시작으로 이어졌습니다. 그리고 꼭 50년이 지난 2026년, <혁명의 춤>은 서울에서 가장 화려한 블랙박스 극장인 대학로극장 쿼드에서 공연됩니다. 50년 전의 절박했던 실험 정신이 과연 이번 공연에도 살아 있을까?"
+    }
+  },
+  "KOPpa1son": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOPpa1son",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPpa1son,en:ENPpa1son,ja:JPPpa1son,zh-CN:CNPpa1son,zh-TW:TCPpa1son,ru:RUPpa1son",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82348&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82350&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "옥상 밭 고추는 왜",
+      "sumry": "무대화된 일상의 텍스트는 어떻게 우리 사회의 단절을 비추는가?",
+      "schdul_info_bgnde": "2026.09.19",
+      "schdul_info_endde": "2026.10.04",
+      "place": "서울문화재단 대학로극장 쿼드",
+      "creat_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "대학로극장쿼드",
+        "서울문화재단",
+        "공연",
+        "연극",
+        "대학로"
+      ],
+      "extra": {
+        "cmmn_telno": "1577-0369",
+        "cmmn_hmpg_url": "https://www.quad.or.kr/product/performance/1276",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "평일 19:30, 주말/공휴일 15:00 *매주 월요일 및 9/25 공연 없음",
+        "cmmn_important": "자막 안경 무료 대여(외국인 및 청각장애인 대상)",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "usage_fee": "전석 50,000원\r\n재관람할인 30% | 대학로극장 쿼드 기획·제작 공연 유료 실물 티켓 소지자 (유료 실물 티켓에 한하여 1매당 할인 증빙 1매 가능)\r\n※ 재관람 할인 대상: 쿼드 제작·초이스·재연을부탁해·페스타·리커넥트·클래식 해당\r\n예술인할인 50% | 공연예술 분야 종사자 본인 (예술인패스, 명함, 예술활동증명 증빙자료 및 신분증 확인)\r\n청소년할인 30% | 2001년 이후 출생자 본인 (신분증 확인, 생년월일 미기재 학생증 불가)\r\n경로할인 30% | 1961년 이전 출생자 본인 (신분증 확인)\r\n장애인할인 50% | 동반 1인까지 (복지카드 확인)\r\n* 휠체어석은 대학로극장 쿼드 고객센터 1577-0369 문의\r\n국가유공자할인 50% | 본인만 (국가유공자증 확인)* 유족증 불가\r\n다둥이할인 30% | 다둥이 행복카드 소지자 포함 가족 전체 (본인 신분증, 다자녀 실물카드 또는 앱카드 확인) * 가족구성원 성명 미기재 경우 가족관계증명서 추가 확인\r\n외국인할인 20% | 외국인 동반 1인까지 (신분증 확인)\r\n중장기복무 제대군인 할인 20% | 본인만 (중장기복무 제대군인증 확인)\r\n서울시 정책 할인 20% | 본인만 (서울시민카드, 기후동행카드 또는 우수자원봉사자 인증카드 확인)\r\n단체할인 40% | 동일 회차 10인 이상 관람 시 (대학로극장 쿼드 고객센터 1577-0369 문의)"
+      },
+      "traffic": {
+        "adres": "서울 종로구 동숭동 1-5",
+        "new_zip_code": "03084",
+        "new_adres": "서울 종로구 동숭길 122 (동숭동, 서울문화재단 대학로)",
+        "map_position_x": "127.00371665858",
+        "map_position_y": "37.5836990003446",
+        "subway_info": "지하철 4호선 혜화역 1번출구, 200m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "서울 변두리의 오래되고 낡은 다세대 주택. 저마다의 사연과 결핍을 품은 이웃들이 살아가고 있다. 뙤약볕이 내리쬐던 어느 여름날, 빌라 옥상의 작은 텃밭에서 소박하게 고추를 기르던 노인 ‘광자’의 고추밭에 고추가 모두 사라지는 사건이 발생한다. 고추를 몽땅 가져간 범인은 다름 아닌 같은 빌라에 사는 이웃 ‘현자’. 이웃사람들은 이를 가지고 저마다 말을 꺼내는데 특히 301호 ‘현태’의 눈에는 이 ‘고추 도난 사건’이 사소한 문제로 보이지 않는다. 이는 망가지고 있는 세상과 관계된 일이다. ‘현태’의 말에 가족은 물론 빌라 사람들 모두가 불편해하지만 단 한 사람, 303호 ‘동교’만이 알 수 없는 이유로 ‘현태’를 도와 행동하기 시작한다. 그깟 고추 때문에 시작된 이웃 간의 실랑이는 빌라 전체의 거대한 소동으로 번지기 시작한다."
+    }
+  },
+  "KOPwo0icq": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOPwo0icq",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPwo0icq,en:ENPwo0icq,ja:JPPwo0icq,zh-CN:CNPwo0icq,zh-TW:TCPwo0icq",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82345&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82347&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "서안화차",
+      "sumry": "연극은 인간 내면의 어디까지 파고들 수 있는가?",
+      "schdul_info_bgnde": "2026.12.16",
+      "schdul_info_endde": "2026.12.27",
+      "place": "서울문화재단 대학로극장 쿼드",
+      "creat_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "대학로극장쿼드",
+        "서울문화재단",
+        "공연",
+        "연극",
+        "대학로"
+      ],
+      "extra": {
+        "cmmn_telno": "1577-0369",
+        "cmmn_hmpg_url": "https://www.quad.or.kr/product/performance/1279",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "평일 19:30, 주말 15:00 (월 공연 없음)",
+        "cmmn_important": "자막 안경 무료 대여(외국인 및 청각장애인 대상)",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "usage_fee": "전석 50,000원\r\n조기예매할인 50% | 2026.10.15.(목)~10.21.(수), 7일간 기간 내 예매자\r\n재관람할인 30% | 대학로극장 쿼드 기획·제작 공연 유료 실물 티켓 소지자 (유료 실물 티켓에 한하여 1매당 할인 증빙 1매 가능)\r\n※ 재관람 할인 대상: 쿼드 제작·초이스·재연을부탁해·페스타·리커넥트·클래식 해당\r\n예술인할인 50% | 공연예술 분야 종사자 본인 (예술인패스, 명함, 예술활동증명 증빙자료 및 신분증 확인)\r\n청소년할인 30% | 2001년 이후 출생자 본인 (신분증 확인, 생년월일 미기재 학생증 불가)\r\n경로할인 30% | 1961년 이전 출생자 본인 (신분증 확인)\r\n장애인할인 50% | 동반 1인까지 (복지카드 확인)\r\n* 휠체어석은 대학로극장 쿼드 고객센터 1577-0369 문의\r\n국가유공자할인 50% | 본인만 (국가유공자증 확인)* 유족증 불가\r\n다둥이할인 30% | 다둥이 행복카드 소지자 포함 가족 전체 (본인 신분증, 다자녀 실물카드 또는 앱카드 확인) * 가족구성원 성명 미기재 경우 가족관계증명서 추가 확인\r\n외국인할인 20% | 외국인 동반 1인까지 (신분증 확인)\r\n중장기복무 제대군인 할인 20% | 본인만 (중장기복무 제대군인증 확인)\r\n서울시 정책 할인 20% | 본인만 (서울시민카드, 기후동행카드 또는 우수자원봉사자 인증카드 확인)\r\n단체할인 40% | 동일 회차 10인 이상 관람 시 (대학로극장 쿼드 고객센터 1577-0369 문의)"
+      },
+      "traffic": {
+        "adres": "서울 종로구 동숭동 1-5",
+        "new_zip_code": "03084",
+        "new_adres": "서울 종로구 동숭길 122 (동숭동, 서울문화재단 대학로)",
+        "map_position_x": "127.00371665858",
+        "map_position_y": "37.5836990003446",
+        "subway_info": "지하철 4호선 혜화역 1번출구, 200m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "중국 서안의 여산릉을 향해 달려가는 기차 안, 상곤은 곧 마주하게 될 진시황의 지하 궁전과 셀 수 없이 많은 병마용에 대한 기대로 가득 차 있다. 상곤이 유한한 삶 속에서 영원을 욕망했던 진시황의 모습과 자신의 삶에서 ‘한 번도 온전히 가져보지 못한 것’들에 대한 떠올릴 때, 기차는 어느덧 서안에 도착한다. 중국인 어머니를 둔 한국 사람, 한 번도 온전히 보답받지 못한 사랑을 가진 사람. 진시황의 불멸 욕망 앞에 선 상곤의 삶의 욕망은 무엇일까? 평생을 ‘주변’에서 살아 온 상곤이 가장 거대한 이야기 앞에 서서 자신을 본다. 그 거대한 욕망 앞에서 이제야 상곤 자신의 이야기를 들여다본다."
+    }
+  },
+  "KOP28aw8e": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOP28aw8e",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Ct9t6m8",
+      "cate_depth": " 문화관광  > 전시시설 > 미술관/화랑",
+      "multi_lang_list": "ko:KOP28aw8e,en:ENP28aw8e,ja:JPP28aw8e,zh-CN:CNP28aw8e,zh-TW:TCP28aw8e,ru:RUP28aw8e,ms:MLP28aw8e",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82321&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82322&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82323&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "서울시립 미술아카이브",
+      "sumry": "기록과 예술이 함께하는 국내 최초의 국공립 아카이브 전문 미술관",
+      "creat_dt_text": "2026.09.28",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "미술아카이브",
+        "문화예술",
+        "현대미술",
+        "서울전시",
+        "서울시립미술관"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2124-7400",
+        "cmmn_hmpg_url": "https://sema.seoul.go.kr/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "평일(화–금): 오전 10시–오후 8시\r\n토 · 일 · 공휴일: [하절기(3–10월)] 오전 10시–오후 7시, [동절기(11–2월)] 오전 10시–오후 6시",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "closed_days": "1월 1일 , 매주 월요일 (월요일이 공휴일인 경우 정상 개관)"
+      },
+      "traffic": {
+        "adres": "서울 종로구 평창동 148-16",
+        "new_zip_code": "03004",
+        "new_adres": "서울 종로구 평창문화로 101 (평창동)",
+        "map_position_x": "126.97190179486",
+        "map_position_y": "37.6078008399411",
+        "subway_info": "지하철 3호선 경복궁역 3번출구, 01116번 정거장에서 1020, 1711번 승차 후 벽산평창힐스아파트 정류장에서 하차"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "기록과 예술이 함께하는 국내 최초의 국공립 아카이브 전문 미술관입니다. 한국 현대미술의 발자취를 담은 기록과 자료를 수집·보존·연구하는 한편, 전시와 교육, 연구 프로그램을 통해 누구나 예술기록을 가까이에서 경험할 수 있는 열린 공간입니다. 레퍼런스 라이브러리에서는 국내외 미술도서를 열람할 수 있으며, 리서치랩에서는 원본 아카이브 자료를 직접 살펴볼 수 있습니다. 모음동, 배움동, 나눔동으로 이루어진 공간에서는 전시, 학술행사, 교육·공공 프로그램, 국제교류 등 다양한 활동이 펼쳐지며, 아카이브를 매개로 한 활동을 통해 사용자들과 관계를 맺고 새로운 예술의 틀을 마련합니다."
+    }
+  },
+  "KOP4kdda0": {
+    "updtDtText": "2026.10.08",
+    "detail": {
+      "cid": "KOP4kdda0",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cf1y9k1",
+      "cate_depth": " 체험관광 > 웰니스관광",
+      "multi_lang_list": "ko:KOP4kdda0,en:ENP4kdda0,ja:JPP4kdda0,zh-CN:CNP4kdda0,zh-TW:TCP4kdda0,ru:RUP4kdda0,ms:MLP4kdda0",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82600&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82601&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82602&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82603&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82604&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82605&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "AIRE SPA & AESTHETIC (아이레스파&에스테틱)",
+      "sumry": "1인, 2인이 이용 가능하며 프라이빗하고 편리하게 관리 받을 수 있는 예약제 웰니스 스파&에스테틱",
+      "creat_dt_text": "2026.10.01",
+      "updt_dt_text": "2026.10.08",
+      "tag": [
+        "강남 스파",
+        "프라이빗 스파",
+        "바디케어",
+        "에스테틱",
+        "커플케어",
+        "페이셜케어",
+        "대치동 스파",
+        "선릉역 스파",
+        "삼성역 스파"
+      ],
+      "extra": {
+        "cmmn_telno": "02-564-5455 / 010-2497-5455",
+        "cmmn_hmpg_url": "https://airespaseoul.com/",
+        "cmmn_hmpg_lang": "한국어,영어,일어",
+        "cmmn_important": "모든 관리는 예약제로 운영됩니다. 외국어 현장 응대 수준은 높지 않지만 번역기를 이용한 안내가 가능합니다.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "엘리베이터"
+        ],
+        "business_days": "매일",
+        "usage_fee": "바디케어: 60분 120,000원 / 90분 160,000원 / 120분 200,000원 / 150분 250,000원\r\n커플케어(2인): 90분 310,000원 / 120분 390,000원\r\n페이셜케어: 60분 120,000원~\r\n기타 프로그램은 공식 홈페이지 참조부탁드립니다."
+      },
+      "traffic": {
+        "adres": "서울 강남구 대치동 891-50",
+        "new_zip_code": "06194",
+        "new_adres": "서울 강남구 테헤란로78길 14-15 (대치동, 새솔빌딩) 2층",
+        "map_position_x": "127.054396808916",
+        "map_position_y": "37.5048663900862",
+        "subway_info": "지하철 2호선/수인분당선 선릉역 1번출구, 487m "
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "아이레스파는 서울 강남에 위치한 예약제 스파&에스테틱입니다. 1인 / 2인이 이용 가능한 관리실에는 샤워실까지 갖추어져 있어 프라이빗하고 편안하게 관리를 받을 수 있습니다. 바디케어, 커플케어, 페이셜 및 추가 관리 프로그램이 있습니다. 프로그램별 시간과 가격은 한국어·영어·일본어 홈페이지에서 확인할 수 있습니다. 외국어 현장 응대 수준은 높지 않지만 번역기를 이용한 안내가 가능합니다. 모든 관리사는 국가공인 피부관리 자격증을 소지한 전문가입니다. 편안한 공간에서 깊은 휴식을 경험해보세요."
+    }
   }
 }
