@@ -121051,16 +121051,20 @@
     }
   },
   "KOP92qfv0": {
-    "updtDtText": "2026.10.07",
+    "updtDtText": "2026.10.09",
     "detail": {
       "cid": "KOP92qfv0",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Cg1x6l1",
       "cate_depth": " 문화관광  > 전시시설",
       "multi_lang_list": "ko:KOP92qfv0,en:ENP92qfv0,ja:JPP92qfv0,zh-CN:CNP92qfv0,zh-TW:TCP92qfv0,ru:RUP92qfv0",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82443&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82443&fileTy=MEDIA&fileNo=3&thumbTy=M",
       "relate_img": [
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82445&fileTy=MEDIA&fileNo=1&thumbTy=M"
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82445&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82913&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82914&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82915&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82916&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
       "post_sj": "모두의 풍류 : 인왕산",
       "sumry": "인왕산 수성동 계곡의 아름다운 자연을 배경으로 펼쳐지는 야외 국악 공연",
@@ -121068,13 +121072,13 @@
       "schdul_info_endde": "2026.10.17",
       "place": "서울시 종로구 인왕산 수성동 계곡 입구 공연장",
       "creat_dt_text": "2026.09.28",
-      "updt_dt_text": "2026.10.07",
+      "updt_dt_text": "2026.10.09",
       "tag": [
-        "인왕산",
         "수성동계곡",
         "모두의풍류",
         "국악공연",
         "서울야외공연",
+        "인왕산",
         "가을나들이",
         "종로구축제"
       ],
