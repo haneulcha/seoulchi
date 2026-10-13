@@ -5885,9 +5885,16 @@
         " 훈민정음"
       ],
       "kind": "place",
-      "useTime": "월요일 - 일요일",
+      "useTime": "10:00 - 18:00",
       "closedDays": "* 새단장을 위해 2028년 하반기 까지 휴관\r\n\r\n1월 1일, 설날 당일, 추석 당일\r\n* 한글도서관 휴관일: 토요일, 일요일, 공휴일(한글날 제외)",
-      "hours": null
+      "hours": {
+        "open": "10:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          0,
+          6
+        ]
+      }
     },
     {
       "id": "vs-KOP035072",
@@ -9381,7 +9388,7 @@
       "address": "서울 중구 덕수궁길 61 (서소문동, 서울시립미술관)",
       "lat": 37.5641076011,
       "lng": 126.9736999947,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=1525&fileTy=POSTTHUMB&fileNo=4&thumbTy=M&postTy=P",
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=58302&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "linkUrl": "http://sema.seoul.go.kr",
       "isFree": true,
       "subwayInfo": "지하철 1 / 2호선 시청역 10번 출구,  264m",

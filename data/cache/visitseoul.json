@@ -86427,7 +86427,7 @@
     }
   },
   "KOP035405": {
-    "updtDtText": "2026.09.27",
+    "updtDtText": "2026.10.12",
     "detail": {
       "cid": "KOP035405",
       "lang_code_id": "ko",
@@ -86445,7 +86445,7 @@
       "post_sj": "국립한글박물관 ",
       "sumry": "한글과 한글문화 가치의 보존, 확산, 재창조를 위해 설립된 공간\t\r\n",
       "creat_dt_text": "2020.10.19",
-      "updt_dt_text": "2026.09.27",
+      "updt_dt_text": "2026.10.12",
       "tag": [
         "한글박물관",
         "세종대왕",
@@ -86457,17 +86457,17 @@
         "cmmn_telno": "02-2124-6200",
         "cmmn_hmpg_url": "https://www.hangeul.go.kr/main.do",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
-        "cmmn_use_time": "월요일 - 일요일 \r\n\r\n",
+        "cmmn_use_time": "10:00 - 18:00",
         "cmmn_important": "영어, 중국어, 일본어 해설 가능",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인 전용 주차장",
           "장애인화장실",
+          "장애인 전용 주차장",
           "접근가능",
           "엘리베이터",
           "장애인 안내(휠체어 대여 및 기타)"
         ],
-        "business_days": "10:00 - 18:00",
+        "business_days": "월요일 - 일요일 ",
         "closed_days": "* 새단장을 위해 2028년 하반기 까지 휴관\r\n\r\n1월 1일, 설날 당일, 추석 당일\r\n* 한글도서관 휴관일: 토요일, 일요일, 공휴일(한글날 제외)",
         "stroller_rent": "Y",
         "usage_fee": "무료\t"
@@ -92734,16 +92734,16 @@
     }
   },
   "KOP001525": {
-    "updtDtText": "2026.09.12",
+    "updtDtText": "2026.10.12",
     "detail": {
       "cid": "KOP001525",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Ct9t6m8",
       "cate_depth": " 문화관광  > 전시시설 > 미술관/화랑",
       "multi_lang_list": "ko:KOP001525,en:ENP001525,ja:JPP001525,zh-CN:CNP001525,zh-TW:TCP001525,ru:RUP001525,ms:MLP001525",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=1525&fileTy=POSTTHUMB&fileNo=4&thumbTy=M&postTy=P",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=58302&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "relate_img": [
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=31414&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=31414&fileTy=MEDIA&fileNo=2&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=31415&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=31416&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=31417&fileTy=MEDIA&fileNo=1&thumbTy=M",
@@ -92752,7 +92752,7 @@
       "post_sj": "서울시립미술관 (서소문본관)",
       "sumry": "현대미술을 중심으로 다양한 전시와 문화 프로그램을 제공하는 서울의 대표적인 공공 미술관",
       "creat_dt_text": "2016.01.08",
-      "updt_dt_text": "2026.09.12",
+      "updt_dt_text": "2026.10.12",
       "tag": [
         "예술",
         "갤러리",
