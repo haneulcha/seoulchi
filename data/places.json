@@ -1307,6 +1307,39 @@
       "hours": null
     },
     {
+      "id": "vs-KOP3uv61j",
+      "source": "visit-seoul",
+      "title": "대학로극장 쿼드",
+      "summary": "무대와 객석이라는 형식이나 장르에 갇히지 않고 다양하고 새로운 예술적 실험을 시도하는 블랙박스 극장",
+      "category": "공연시설",
+      "place": "대학로극장 쿼드",
+      "address": "서울 종로구 동숭길 122 (동숭동, 서울문화재단 대학로)",
+      "lat": 37.5836990003446,
+      "lng": 127.00371665858,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=81854&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "linkUrl": "https://www.quad.or.kr/Home/Main",
+      "isFree": false,
+      "subwayInfo": "지하철 4호선 혜화역 1번출구, 200m",
+      "tags": [
+        "대학로",
+        "공연장",
+        "블랙박스극장",
+        "공연",
+        "연극",
+        "컨템포러리"
+      ],
+      "kind": "place",
+      "useTime": "09:00~22:00",
+      "closedDays": "매주 월요일",
+      "hours": {
+        "open": "09:00",
+        "close": "22:00",
+        "closedWeekdays": [
+          1
+        ]
+      }
+    },
+    {
       "id": "vs-KOPex1iie",
       "source": "visit-seoul",
       "title": "파메서울",
@@ -10123,10 +10156,10 @@
     {
       "id": "vs-KOP011988",
       "source": "visit-seoul",
-      "title": "서초 여행자 지원센터",
-      "summary": "문화와 예술이 자연과 함께 어우러져 있는 강남관광안내소.",
+      "title": "서초 관광 안내센터",
+      "summary": "문화와 예술이 자연과 함께 어우러져 있는 관광안내센터",
       "category": "기타문화관광지",
-      "place": "서초 여행자 지원센터",
+      "place": "서초 관광 안내센터",
       "address": "서울특별시 서초구 서초동 1318-7",
       "lat": 37.49826590584779,
       "lng": 127.02684233154628,
@@ -10139,11 +10172,11 @@
         "의료관광",
         "강남역사거리",
         "관광정보",
-        "서초관광정보센터"
+        "서초관광안내센터"
       ],
       "kind": "place",
       "useTime": "10:00 ~ 19:00  \r\n ※ 운영시간은 상황에 따라 변동",
-      "closedDays": "연중무휴",
+      "closedDays": "연중무휴\r\n* 2026년 12월 말까지 임시휴관",
       "hours": {
         "open": "10:00",
         "close": "19:00",
@@ -14785,6 +14818,95 @@
       }
     },
     {
+      "id": "vs-KOPzy2tqe",
+      "source": "visit-seoul",
+      "title": "클로버베이킹 홍대 (Clover Baking Hongdae)",
+      "summary": "한국에서 유행하는 디저트를 초보자도 쉽고 재미있게 만들어 보는 홍대 실내 체험. 친구·연인과 함께 즐기는 예약제 소규모 디저트 클래스",
+      "category": "기타체험",
+      "place": "클로버베이킹 홍대 (Clover Baking Hongdae)",
+      "address": "서울 마포구 와우산로11길 28 (상수동) 3층",
+      "lat": 37.5487461619761,
+      "lng": 126.921418896132,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82887&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://cloverbaking.cada-official.chatgpt.site/",
+      "isFree": false,
+      "subwayInfo": "지하철 6호선 상수역 1번출구, 224m",
+      "tags": [
+        "홍대 놀거리",
+        "홍대 실내 체험",
+        "상수",
+        "서울 여행",
+        "디저트 만들기",
+        "베이킹",
+        "커플 체험"
+      ],
+      "kind": "place",
+      "useTime": "두바이 쫀득쿠키: 12:00 / 14:00 / 16:00 / 18:00\r\n깨먹는 하트 티라미수: 13:00 / 15:00 / 17:00 / 19:00\r\n한국 시간 기준. 예약제이며 실제 가능 회차는 운영자 확인 후 확정합니다.",
+      "closedDays": "휴무 및 예약 불가일은 매장에 사전 문의",
+      "hours": null
+    },
+    {
+      "id": "vs-KOPlwiwxv",
+      "source": "visit-seoul",
+      "title": "전통주갤러리",
+      "summary": "한국 전통주의 맛과 멋을 체험할 수 있는 전통주 소통 공간",
+      "category": "전통체험",
+      "place": "전통주갤러리",
+      "address": "서울 종로구 북촌로 18 (재동) 1층",
+      "lat": 37.5784106376538,
+      "lng": 126.985838684851,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82881&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://thesool.com/front/contents/M000000074/view.do",
+      "isFree": false,
+      "subwayInfo": "지하철 3호선 안국역 2번출구, 136m",
+      "tags": [
+        "북촌",
+        "전통주시음",
+        "전통주전시",
+        "이색전시회",
+        "전통주"
+      ],
+      "kind": "place",
+      "useTime": "10:00-19:00",
+      "closedDays": "매주 월요일",
+      "hours": {
+        "open": "10:00",
+        "close": "19:00",
+        "closedWeekdays": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "vs-KOP3iwfai",
+      "source": "visit-seoul",
+      "title": "비나이다 익선점",
+      "summary": "익선동에서 즐기는 전통과 최신 AI 기술의 문화 체험",
+      "category": "기타체험",
+      "place": "비나이다 익선점",
+      "address": "서울 종로구 돈화문로11다길 34 (익선동) 1층",
+      "lat": 37.5737703426598,
+      "lng": 126.990378247704,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82749&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.instagram.com/vinaida_official/",
+      "isFree": false,
+      "subwayInfo": "지하철 1호선/3호선/5호선 종로3가역 6번출구, 179m",
+      "tags": [
+        "AI운세",
+        "이색체험",
+        "부적",
+        "관상",
+        "익선동놀거리"
+      ],
+      "kind": "place",
+      "useTime": "10:00-22:00",
+      "hours": {
+        "open": "10:00",
+        "close": "22:00",
+        "closedWeekdays": []
+      }
+    },
+    {
       "id": "vs-KOP4kdda0",
       "source": "visit-seoul",
       "title": "AIRE SPA & AESTHETIC (아이레스파&에스테틱)",
@@ -18986,6 +19108,29 @@
       "kind": "place",
       "useTime": "※교육별 수강시간이 상이하므로 홈페이지 참조",
       "closedDays": "일요일·공휴일 휴관",
+      "hours": null
+    },
+    {
+      "id": "vs-KOP9rb5w8",
+      "source": "visit-seoul",
+      "title": "후암동 108계단",
+      "summary": "아픈 역사와 긴 세월 주민들의 흔적을 품어온 계단",
+      "category": "역사관광",
+      "place": "후암동 108계단",
+      "address": "서울 용산구 용산동2가 1-1342",
+      "lat": 37.5463202751264,
+      "lng": 126.982360574818,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82727&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "isFree": false,
+      "subwayInfo": "지하철 4호선 숙대입구역 3번출구, 943m",
+      "tags": [
+        "후암동108계단",
+        "해방촌",
+        "용산",
+        "해방촌모노레일",
+        "벽화"
+      ],
+      "kind": "place",
       "hours": null
     },
     {
