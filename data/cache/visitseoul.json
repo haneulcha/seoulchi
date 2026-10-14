@@ -104997,37 +104997,38 @@
     }
   },
   "KOP3wv0j4": {
-    "updtDtText": "2026.08.21",
+    "updtDtText": "2026.10.14",
     "detail": {
       "cid": "KOP3wv0j4",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Cl8f8q1",
       "cate_depth": " 체험관광 > 기타체험",
       "multi_lang_list": "ko:KOP3wv0j4,en:ENP3wv0j4,ja:JPP3wv0j4,zh-CN:CNP3wv0j4,zh-TW:TCP3wv0j4",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59614&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59614&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "relate_img": [
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59609&fileTy=MEDIA&fileNo=1&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59610&fileTy=MEDIA&fileNo=2&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59611&fileTy=MEDIA&fileNo=2&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59612&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59609&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59610&fileTy=MEDIA&fileNo=3&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59611&fileTy=MEDIA&fileNo=3&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59612&fileTy=MEDIA&fileNo=2&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59613&fileTy=MEDIA&fileNo=2&thumbTy=M"
       ],
-      "post_sj": "K-pop Recording HEMA studio",
+      "post_sj": "K-익스피리언스 HEMA 스튜디오",
       "sumry": "전문적인 시설과 1:1 디렉팅, 멋진 커버영상 제작 등 K-pop 체험",
       "creat_dt_text": "2023.05.18",
-      "updt_dt_text": "2026.08.21",
+      "updt_dt_text": "2026.10.14",
       "tag": [
-        "K-drama",
         "K-pop",
         " K-pop tour",
-        "K-pop recording"
+        "K-pop recording",
+        "K-drama",
+        " K-Experience"
       ],
       "extra": {
         "cmmn_telno": "070-7504-1415",
         "cmmn_hmpg_url": "http://www.hemastudio.com/",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "월요일 ~ 일요일 10:00 ~ 22:00 ",
-        "cmmn_important": "- 예약 당일 10분 전에 약속 장소에 도착해주세요.\r\n- 녹음하고싶은 노래는 미리 선정하고 연습해오시는 것이 좋습니다.\r\n- 주차장이 제공되지 않습니다.\r\n- 정해진 인원을 초과할 경우 문의 해주세요.\r\n- 기본 제공되는 영상 외 프리미엄 뮤직비디오를 원하실 경우 문의 해주세요.\r\n- 번역이 필요하시다면 미리 요청 해주세요.\r\n- 영문 홈페이지: http://kpopstudio.kr ",
+        "cmmn_important": "- 예약 당일 10분 전에 약속 장소에 도착해주세요.\r\n- 녹음하고싶은 노래는 미리 선정하고 연습해오시는 것이 좋습니다.\r\n- 주차장이 제공되지 않습니다.\r\n- 정해진 인원을 초과할 경우 문의 해주세요.\r\n- 기본 제공되는 영상 외 프리미엄 뮤직비디오를 원하실 경우 문의 해주세요.\r\n- 번역이 필요하시다면 미리 요청 해주세요.",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
       },
@@ -105044,7 +105045,7 @@
         "parking_fclty": "3",
         "safe_mng": "ul"
       },
-      "post_desc": "K-pop을 좋아하는 분들에게 서울 강남에 위치한 헤마스튜디오를 소개합니다. 헤마스튜디오에서는 외국인 관광객들이 좋아하는 K-pop 노래를 녹음하고 개인 뮤직비디오를 촬영할 수 있는 상품을 제공하고 있습니다. 1:1 담당 디렉터와 함께 녹음부터 커버 뮤직비디오 촬영까지 모든 과정을 진행할 수 있습니다.커버 녹음과 뮤직비디오 촬영이 끝난 후에는, 완성된 작품을 USB에 담아 지인이나 가족과 함께 공유할 수 있습니다. 또한, 유튜브, 틱톡같은 SNS에 업로드 하는 것도 가능합니다. 헤마스튜디오는 강남의 번화가에 위치해 있어, 지하철과 버스 등 대중교통을 통해 쉽게 찾아올 수 있습니다. 전문 시설과 디렉터, 멋진 커버영상 제작 등 K-pop 체험을 위한 모든 요소가 갖춰진 헤마스튜디오에서 자신만의 음악과 영상을 만들어 보세요!"
+      "post_desc": "K-pop을 좋아하는 분들에게 서울 강남에 위치한 K-Experience 를 소개합니다. K-Experience 에서는 외국인 관광객들이 좋아하는 K-pop 노래를 녹음하고 개인 뮤직비디오를 촬영할 수 있는 상품을 제공하고 있습니다. 1:1 담당 디렉터와 함께 녹음부터 커버 뮤직비디오 촬영까지 모든 과정을 진행할 수 있습니다.커버 녹음과 뮤직비디오 촬영이 끝난 후에는, 완성된 작품을 USB에 담아 지인이나 가족과 함께 공유할 수 있습니다. 또한, 유튜브, 틱톡같은 SNS에 업로드 하는 것도 가능합니다. K-Experience 는 강남의 번화가에 위치해 있어, 지하철과 버스 등 대중교통을 통해 쉽게 찾아올 수 있습니다. 전문 시설과 디렉터, 멋진 커버영상 제작 등 K-pop 체험을 위한 모든 요소가 갖춰진 K-Experience 에서 자신만의 음악과 영상을 만들어 보세요! 노래를 녹음하거나, 춤을 촬영하거나, 둘 다 해보세요. 우상급 영상을 직접 가지고 떠나세요."
     }
   },
   "KOP5dtalk": {

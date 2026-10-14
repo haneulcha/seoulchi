@@ -16696,22 +16696,23 @@
     {
       "id": "vs-KOP3wv0j4",
       "source": "visit-seoul",
-      "title": "K-pop Recording HEMA studio",
+      "title": "K-익스피리언스 HEMA 스튜디오",
       "summary": "전문적인 시설과 1:1 디렉팅, 멋진 커버영상 제작 등 K-pop 체험",
       "category": "기타체험",
-      "place": "K-pop Recording HEMA studio",
+      "place": "K-익스피리언스 HEMA 스튜디오",
       "address": "서울 강남구 학동로3길 27 (논현동, 메리디엠타워) 지하1층",
       "lat": 37.5133790226948,
       "lng": 127.021478873285,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59614&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59614&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "linkUrl": "http://www.hemastudio.com/",
       "isFree": false,
       "subwayInfo": "지하철 7호선/ 신분당선 논현역 9번 출구,  250m",
       "tags": [
-        "K-drama",
         "K-pop",
         " K-pop tour",
-        "K-pop recording"
+        "K-pop recording",
+        "K-drama",
+        " K-Experience"
       ],
       "kind": "place",
       "useTime": "월요일 ~ 일요일 10:00 ~ 22:00",
