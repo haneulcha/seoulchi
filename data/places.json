@@ -14818,6 +14818,45 @@
       }
     },
     {
+      "id": "vs-KOPp93yfa",
+      "source": "visit-seoul",
+      "title": "홈즈앤루팡 보드게임카페 종로점",
+      "summary": "익선동 한옥거리 가까이에 있는 프라이빗 룸형 보드게임카페",
+      "category": "기타체험",
+      "place": "홈즈앤루팡 보드게임카페 종로점",
+      "address": "서울 종로구 돈화문로11길 41 (낙원동, 보광빌딩)  3층 301, 302호",
+      "lat": 37.5723947705598,
+      "lng": 126.989077088986,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83189&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://sites.google.com/view/holmes-lupin-jongno",
+      "isFree": false,
+      "subwayInfo": "지하철 1호선/3호선/5호선 종로3가역 4번출구, 36m",
+      "tags": [
+        "보드게임카페",
+        "종로3가",
+        "익선동",
+        "종로",
+        "실내놀거리",
+        "실내데이트",
+        "이색체험",
+        "게임",
+        "닌텐도",
+        "프라이빗룸",
+        "비오는날",
+        "야간놀거리",
+        "한국전통놀이",
+        "보드게임"
+      ],
+      "kind": "place",
+      "useTime": "월~금 14:00~24:00 / 토·일 12:00~24:00",
+      "closedDays": "연중무휴 (운영시간 및 휴무는 매장 사정에 따라 변동될 수 있음)",
+      "hours": {
+        "open": "14:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
+    },
+    {
       "id": "vs-KOPzy2tqe",
       "source": "visit-seoul",
       "title": "클로버베이킹 홍대 (Clover Baking Hongdae)",
