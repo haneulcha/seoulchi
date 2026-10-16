@@ -3664,7 +3664,7 @@
       ],
       "kind": "place",
       "useTime": "11:00-18:00",
-      "closedDays": "일요일~월요일",
+      "closedDays": "일요일~월요일, 공휴일",
       "hours": {
         "open": "11:00",
         "close": "18:00",
@@ -3751,7 +3751,7 @@
       "address": "서울 강남구 강남대로158길 35 (신사동)",
       "lat": 37.5197495682315,
       "lng": 127.021480246749,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67531&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67531&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "linkUrl": "https://www.2gil29gallery.com/",
       "isFree": false,
       "subwayInfo": "지하철 3호선/ 신분당선  신사역 8번 출구,  460m",
@@ -3765,7 +3765,7 @@
       ],
       "kind": "place",
       "useTime": "10:00~18:00",
-      "closedDays": "일요일, 월요일 정기휴무\r\n9/16~18 추석 연휴 휴무",
+      "closedDays": "일요일, 월요일 정기휴무\r\n공휴일 휴무",
       "hours": {
         "open": "10:00",
         "close": "18:00",
@@ -3798,7 +3798,7 @@
       ],
       "kind": "place",
       "useTime": "화요일~토요일 10:00~18:00",
-      "closedDays": "일요일,월요일 정기휴무\r\n9/16~18 추석 연휴 휴무",
+      "closedDays": "일요일,월요일 정기휴무\r\n추석 연휴 휴무",
       "hours": {
         "open": "10:00",
         "close": "18:00",
@@ -4208,7 +4208,7 @@
       "lng": 127.07743706477,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=61376&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://science.seoul.go.kr/main",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철7호선 하계역 2번 출구,  1.1km",
       "tags": [
         "어린이",
@@ -4259,6 +4259,7 @@
       ],
       "kind": "place",
       "useTime": "일~목 10:30~22:00, 금~토 10:30~23:00",
+      "closedDays": "연중무휴",
       "hours": {
         "open": "10:30",
         "close": "22:00",
@@ -4476,7 +4477,7 @@
       ],
       "kind": "place",
       "useTime": "화요일 ~ 토요일 10:00 ~ 17:00",
-      "closedDays": "매주 일요일, 월요일 휴관",
+      "closedDays": "매주 일요일, 월요일, 공휴일 휴관",
       "hours": {
         "open": "10:00",
         "close": "17:00",
@@ -4507,7 +4508,7 @@
       ],
       "kind": "place",
       "useTime": "화~토요일 10:00 ~ 18:00\r\n전시준비로 휴관 : 기간(7.1. ~ 9. 3.)",
-      "closedDays": "매주 일, 월요일 휴관",
+      "closedDays": "매주 일, 월요일, 법정공휴일 휴관",
       "hours": {
         "open": "10:00",
         "close": "18:00",
@@ -12625,7 +12626,6 @@
       "isFree": true,
       "subwayInfo": "지하철 6호선 망원역 2번 출구,  1.5km",
       "tags": [
-        "홍대",
         "망원한강공원",
         "한강",
         "공원",
@@ -12634,7 +12634,8 @@
         "마포구청역",
         "합정역",
         "망원동",
-        " 망리단길"
+        " 망리단길",
+        "홍대"
       ],
       "kind": "place",
       "useTime": "24시간",
@@ -19303,7 +19304,7 @@
       "lat": 37.5731337998335,
       "lng": 126.994863544656,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=68939&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 5호선 종로3가역 7번 출구,  383m",
       "tags": [
         "서순라길",
@@ -19333,19 +19334,20 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 경복궁역 5번 출구,  1.1km",
       "tags": [
+        "집옥재",
         "경복궁",
         "광화문",
         "도서관",
-        "청와대",
-        "집옥재"
+        "청와대"
       ],
       "kind": "place",
       "useTime": "10:00 ~ 16:00",
-      "closedDays": "화요일 휴무",
+      "closedDays": "월요일, 화요일 휴무",
       "hours": {
         "open": "10:00",
         "close": "16:00",
         "closedWeekdays": [
+          1,
           2
         ]
       }
@@ -19361,7 +19363,7 @@
       "lat": 37.5759040910202,
       "lng": 126.976842133821,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67938&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 3호선 경복궁역 4번 출구,  430m",
       "tags": [
         "종로",
@@ -19391,8 +19393,8 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 안국역 3번 출구,  364m",
       "tags": [
-        "창덕궁후원",
         "정원",
+        "창덕궁후원",
         "창덕궁"
       ],
       "kind": "place",
@@ -19416,8 +19418,8 @@
       "category": "종교성지",
       "place": "석굴암",
       "address": "서울 종로구 옥인동 산3-14",
-      "lat": 37.5828407541691,
-      "lng": 126.964512817139,
+      "lat": 37.58460805063,
+      "lng": 126.96053396869,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67172&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "isFree": false,
       "subwayInfo": "지하철 3호선 경복궁역 2번 출구, 1.7KM",
@@ -19479,6 +19481,7 @@
       ],
       "kind": "place",
       "useTime": "업체별 상이",
+      "closedDays": "업체별 상이",
       "hours": null
     },
     {
@@ -19495,8 +19498,8 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 경복궁역 2번 출구,   619m",
       "tags": [
-        "가옥",
         "한옥",
+        "가옥",
         "서촌",
         "서촌한옥마을",
         "근현대건축"
@@ -23784,7 +23787,7 @@
       "lng": 126.97909071538469,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77161&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://www.sisul.or.kr/open_content/cheonggye/",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 1/2호선 시청역 4번 출구, 384m",
       "tags": [
         "종로",
@@ -23799,6 +23802,7 @@
       ],
       "kind": "place",
       "useTime": "상시개방",
+      "closedDays": "연중무휴",
       "hours": {
         "open": "00:00",
         "close": "24:00",

@@ -30,6 +30,10 @@
       "reason": ""
     },
     {
+      "id": "sc-126k7n9",
+      "reason": ""
+    },
+    {
       "id": "sc-l6ciwa",
       "reason": ""
     },
@@ -44,18 +48,14 @@
     {
       "id": "sc-1e1cxd5",
       "reason": ""
-    },
-    {
-      "id": "sc-mjv4pa",
-      "reason": ""
     }
   ],
   "places": [
+    "vs-KOP001159",
     "vs-KOP001306",
     "vs-KOP001399",
     "vs-KOP001525",
     "vs-KOP001562",
-    "vs-KOP001577",
-    "vs-KOP001596"
+    "vs-KOP001577"
   ]
 }

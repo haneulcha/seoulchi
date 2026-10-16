@@ -71023,7 +71023,7 @@
     }
   },
   "KOP20kefn": {
-    "updtDtText": "2026.08.28",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOP20kefn",
       "lang_code_id": "ko",
@@ -71044,7 +71044,7 @@
       "schdul_info_endde": "2026.12.31",
       "place": "청계천 광교 하단, 광교 갤러리 일대",
       "creat_dt_text": "2025.07.08",
-      "updt_dt_text": "2026.08.28",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "서울관광재단",
         "청계소울오션",
@@ -71055,13 +71055,15 @@
         "청계천"
       ],
       "extra": {
-        "cmmn_use_time": "매일 18:00-22:00 연중무휴 ※폭우시 임시 휴장\r\n*6~8월 운영시간: 19:00~22:00",
+        "cmmn_use_time": " 18:00-22:00 \r\n*6~8월 운영시간: 19:00~22:00",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
           "장애인화장실",
           "접근가능",
           "엘리베이터"
-        ]
+        ],
+        "business_days": "매일",
+        "closed_days": "연중무휴 ※폭우시 임시 휴장"
       },
       "traffic": {
         "adres": "서울 중구 남대문로1가 9 청계천광교갤러리",
@@ -75640,7 +75642,7 @@
     }
   },
   "KOPyz09up": {
-    "updtDtText": "2026.04.15",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPyz09up",
       "lang_code_id": "ko",
@@ -75658,7 +75660,7 @@
       "post_sj": "옥상정원 (The Roof)",
       "sumry": "서울 도심 속 열린 조망과 휴식을 즐길 수 있는 서울역과 서울로7017를 연결하는 장소.",
       "creat_dt_text": "2024.10.24",
-      "updt_dt_text": "2026.04.15",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "서울명소",
         "서울나들이",
@@ -75673,6 +75675,7 @@
         "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
+        "business_days": "매일",
         "closed_days": "연중무휴"
       },
       "traffic": {
@@ -76307,7 +76310,7 @@
     }
   },
   "KOPzcpf02": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPzcpf02",
       "lang_code_id": "ko",
@@ -76325,7 +76328,7 @@
       "post_sj": "삼세영",
       "sumry": " 과거, 현재, 미래를 아우르는 문화 예술 공간",
       "creat_dt_text": "2024.10.14",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "평창동전시",
         "건축",
@@ -76345,7 +76348,7 @@
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "화요일~토요일",
-        "closed_days": "일요일~월요일"
+        "closed_days": "일요일~월요일, 공휴일"
       },
       "traffic": {
         "adres": "서울 종로구 평창동 437-2",
@@ -77170,7 +77173,7 @@
     }
   },
   "KOP9q04ig": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOP9q04ig",
       "lang_code_id": "ko",
@@ -77187,7 +77190,7 @@
       "post_sj": "THEO 띠오",
       "sumry": "띠오 (THEO), 예술가들의 공존과 번영을 꿈꾸다.",
       "creat_dt_text": "2024.09.09",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "무료전시",
         "전시회",
@@ -77202,7 +77205,7 @@
         "cmmn_hmpg_url": "https://gallerytheo.com/",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "13:00~19:00",
-        "cmmn_important": "주차가 불가능하니 외부 주차장 이용해주세요!",
+        "cmmn_important": "주차가 불가능하니 외부 주차장 이용해주세요!\r\n토요일 관람은 사전 예약제로 운영됩니다.  ",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "business_days": "화요일~토요일",
@@ -77225,14 +77228,14 @@
     }
   },
   "KOPrisi5i": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPrisi5i",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Ct9t6m8",
       "cate_depth": " 문화관광  > 전시시설 > 미술관/화랑",
       "multi_lang_list": "ko:KOPrisi5i,en:ENPrisi5i,ja:JPPrisi5i,zh-CN:CNPrisi5i,zh-TW:TCPrisi5i,ru:RUPrisi5i,ms:MLPrisi5i",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67531&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67531&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67532&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67533&fileTy=MEDIA&fileNo=1&thumbTy=M",
@@ -77242,7 +77245,7 @@
       "post_sj": "이길이구 갤러리",
       "sumry": "가로수길에 위치한 이길이구 갤러리",
       "creat_dt_text": "2024.09.09",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "강남",
         "신사",
@@ -77260,7 +77263,7 @@
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "화요일~토요일",
-        "closed_days": "일요일, 월요일 정기휴무\r\n9/16~18 추석 연휴 휴무"
+        "closed_days": "일요일, 월요일 정기휴무\r\n공휴일 휴무"
       },
       "traffic": {
         "adres": "서울 강남구 신사동 519-22",
@@ -77279,7 +77282,7 @@
     }
   },
   "KOP72zzo1": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOP72zzo1",
       "lang_code_id": "ko",
@@ -77297,7 +77300,7 @@
       "post_sj": "아트사이드 갤러리",
       "sumry": "아트사이드 갤러리만의 색깔을 지닌 작품들로 전시를 볼 수 있는 곳",
       "creat_dt_text": "2024.09.09",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "미술관",
         "서촌",
@@ -77313,7 +77316,7 @@
         "cmmn_important": "자세한 사항은 홈페이지를 참고해주세요.",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
-        "closed_days": "일요일,월요일 정기휴무\r\n9/16~18 추석 연휴 휴무"
+        "closed_days": "일요일,월요일 정기휴무\r\n추석 연휴 휴무"
       },
       "traffic": {
         "adres": "서울 종로구 통의동 32",
@@ -78125,7 +78128,7 @@
     }
   },
   "KOPgrw5c5": {
-    "updtDtText": "2026.04.26",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPgrw5c5",
       "lang_code_id": "ko",
@@ -78140,7 +78143,7 @@
       "post_sj": "고터·세빛 관광안내소",
       "sumry": "국내외 관광객들의 편의 증진을 위해 마련된 고터·세빛 관광안내소 ",
       "creat_dt_text": "2024.07.29",
-      "updt_dt_text": "2026.04.26",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "고터·세빛 관광안내소",
         "관광안내소",
@@ -78154,7 +78157,8 @@
         "cmmn_use_time": "11:00 ~ 20:00",
         "cmmn_important": "서비스 언어: 영어, 중국어, 일본어",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": []
+        "disabled_facility": [],
+        "business_days": "매일\r\n"
       },
       "traffic": {
         "adres": "서울 서초구 반포동 1",
@@ -79087,7 +79091,7 @@
     }
   },
   "KOPtvunyc": {
-    "updtDtText": "2026.07.22",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPtvunyc",
       "lang_code_id": "ko",
@@ -79105,7 +79109,7 @@
       "post_sj": "현대카드 뮤직 라이브러리, 현대카드 바이닐앤플라스틱",
       "sumry": "장르별 바이닐과 전 세계 희귀음반을 갖춘 아날로그 감성의 복합문화공간",
       "creat_dt_text": "2024.06.10",
-      "updt_dt_text": "2026.07.22",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "이태원",
         "바이닐",
@@ -79118,7 +79122,7 @@
         "한남동"
       ],
       "extra": {
-        "cmmn_telno": "02-331-6300",
+        "cmmn_telno": "02-331-6300 / 02-2014-7800",
         "cmmn_hmpg_url": "https://dive.hyundaicard.com/web/musiclibrary/spaceMain.hdc",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "화요일~토요일 12:00~21:00 / 일요일, 공휴일 12:00~18:00 ",
@@ -79138,6 +79142,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "2",
         "safe_mng": "ul"
       },
       "post_desc": "현대카드 뮤직 라이브러리는 장르별로 선별한 1만여 장의 바이닐을 판매하는 공간이자 턴테이블과 CD플레이어 음악 재생기기가 전시되어 있어 원하는 바이닐을 직접 청음할 수 있습니다. 바이닐앤플라스틱은 LP 음반 매장으로, LP와 CD 등을 구매할 수 있으며 매장내 턴테이블과 CD플레이어 등 음악 재생 기기도 전시되어 있어 직접 체험이 가능합니다. 청음존 테이블 8대 운영하며, 주중 앨범 3장(30분), 주말 앨범(20분) 청음 가능하니 방문 일정에 참고하면 좋습니다."
@@ -79885,7 +79890,7 @@
     }
   },
   "KOPgcblme": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPgcblme",
       "lang_code_id": "ko",
@@ -79903,7 +79908,7 @@
       "post_sj": "중앙고등학교",
       "sumry": "종로구에 위치한 최초의 사립고등학교",
       "creat_dt_text": "2024.04.19",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "역사",
         "중앙고등학교",
@@ -79913,7 +79918,7 @@
       "extra": {
         "cmmn_telno": "02-742-1321",
         "cmmn_hmpg_url": "https://choongang.sen.hs.kr/index.do",
-        "cmmn_hmpg_lang": "한국어",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),러시아어",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
       },
@@ -80404,7 +80409,7 @@
     }
   },
   "KOP678cv8": {
-    "updtDtText": "2026.04.15",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOP678cv8",
       "lang_code_id": "ko",
@@ -80422,7 +80427,7 @@
       "post_sj": "옛시장실 재현 공간",
       "sumry": "역대 서울시장이 사용했던 집무공간으로 그 당시의 사무집기와 가구 등이 그대로 재현.",
       "creat_dt_text": "2024.04.05",
-      "updt_dt_text": "2026.04.15",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "통통투어",
         " 서울도서관",
@@ -80433,7 +80438,7 @@
       "extra": {
         "cmmn_telno": "02-2133-2970 ",
         "cmmn_hmpg_url": "https://lib.seoul.go.kr/rwww/html/ko/oldMayorRoom.jsp",
-        "cmmn_hmpg_lang": "한국어",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
         "cmmn_use_time": "매주 화요일~일요일, 09~18시(월요일 및 법정공휴일 휴관)\t",
         "cmmn_important": "서울의 역사와 기록이 머무는 옛시장실 재현공간은, 서울시 옛 청사의 시장실 및 접견실, 기획상황실 공간을 재현해 놓은 곳입니다.\r\n이 공간은 해방 이후부터 2008년 5월까지 60여 년 동안 역대 서울시장이 사용했던 집무공간입니다.\r\n역대 서울시장들은 집무실에서 중요한 업무를 처리하였으며, 접견실에서는 서울시를 찾는 외부인사들을 맞이하였습니다.\r\n기획상황실은 서울시정의 심장부로서, 시장과 서울시 공무원, 전문가, 시민이 다양한 의제에 대해 보고받고 심의ㆍ결정하던 곳입니다.\r\n본래 옛 청사 3층 동쪽 끝에 위치하고 있었으나, 현재는 비서실 공간으로 옮겨 재현해 놓았습니다.\r\n당시 사용했던 집무책상과 의자, 외부인사들에게 받았던 선물 등의 행정박물들도 보다 몰입감 있게 관람하실 수 있습니다. ",
         "trrsrt_use_chrge": "F",
@@ -81649,7 +81654,7 @@
     }
   },
   "KOPn1ua1r": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPn1ua1r",
       "lang_code_id": "ko",
@@ -81667,7 +81672,7 @@
       "post_sj": "서울시립과학관",
       "sumry": "청소년 대상 과학체험관으로 상설전시관 및 다양한 교육 프로그램 및 행사를 진행.",
       "creat_dt_text": "2023.09.13",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "어린이",
         "서울시립과학관",
@@ -81685,10 +81690,13 @@
         "cmmn_hmpg_url": "https://science.seoul.go.kr/main",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
         "cmmn_use_time": "화요일~금요일 09:30~17:30",
-        "trrsrt_use_chrge": "C",
-        "disabled_facility": [],
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
         "closed_days": "매주 월요일 휴관, 1월 1일, 설·추석 당일",
-        "usage_fee": "19세 이하(0세~19세) : 무료(티켓 없이 관람)\r\n성인(20세~64세) : 2,000원\r\n20인 이상 성인 단체 입장 시 : 1,000원\r\n\r\n＊관람료 면제 대상\r\n-6세 이하 및 65세 이상인자\r\n-「장애인복지법」 에 의한 장애인 및 동행 보호자 1명\r\n-국민기초생활보장수급자\r\n-다둥이 행복카드 소지자 및 그 가족\r\n-과학의 날(4.21.), 어린이 날(5.5.)\r\n-국가유공자와 그 유족 및 가족\r\n-국빈, 외교사절단 및 그 수행자\r\n-서울특별시명예시민증 수여받은자\r\n-병역명문가증 소지자\r\n-공무수행을 위하여 출입하는 자\r\n-20명 이상 단체의 인솔자(20명당 1명)"
+        "stroller_rent": "Y",
+        "usage_fee": "일부 체험 및 교육 프로그램은 유료로 운영됩니다."
       },
       "traffic": {
         "adres": "서울 노원구 하계동 21",
@@ -82802,7 +82810,7 @@
     }
   },
   "KOPowtoyc": {
-    "updtDtText": "2026.05.13",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPowtoyc",
       "lang_code_id": "ko",
@@ -82820,7 +82828,7 @@
       "post_sj": "서울스카이",
       "sumry": "국내 최고 높이의 롯데월드타워 가장 높은 곳에 위치한 서울스카이 전망대",
       "creat_dt_text": "2023.07.11",
-      "updt_dt_text": "2026.05.13",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "롯데월드타워전망대",
         "롯데월드몰",
@@ -82842,6 +82850,7 @@
           "엘리베이터",
           "장애인 안내(휠체어 대여 및 기타)"
         ],
+        "closed_days": "연중무휴",
         "usage_fee": "어른(만 13세 이상) 33,000원\r\n어린이(36개월~12세 이하) 29,000원\r\nFAST PASS(전 연령) 62,000원"
       },
       "traffic": {
@@ -82967,7 +82976,7 @@
     }
   },
   "KOPxj9byw": {
-    "updtDtText": "2026.04.16",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPxj9byw",
       "lang_code_id": "ko",
@@ -82985,7 +82994,7 @@
       "post_sj": "갤러리 지우헌",
       "sumry": "북촌한옥마을에 자리한 특별한 현대미술 갤러리. 2016서울우수한옥으로 선정된 공간.",
       "creat_dt_text": "2023.07.03",
-      "updt_dt_text": "2026.04.16",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "서울우수한옥",
         "북촌한옥마을",
@@ -83012,6 +83021,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "3",
         "safe_mng": "ul"
       },
       "post_desc": "갤러리 지우헌은 ㈜디자인하우스에서 운영하는 전시 공간으로 북촌한옥마을에 위치하고 있습니다. 한옥을 개조한 독특한 구조로 전통적인 미감과 현대적인 편의성을 두루 갖추고 있으며, 2016 서울우수한옥으로 선정되었을 만큼 뛰어난 건축미를 갖고 있습니다. 과거의 역사를 담고 있는 공간에서 현대미술을 조명하는 시공간적 특징을 가진 갤러리로서 동시대 미술의 흐름에 동참하며 국내·외 괄목할 만한 신진 작가 발굴을 도모합니다."
@@ -83392,7 +83402,7 @@
     }
   },
   "KOPx138ls": {
-    "updtDtText": "2026.09.29",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPx138ls",
       "lang_code_id": "ko",
@@ -83410,7 +83420,7 @@
       "post_sj": "거안",
       "sumry": "느티나무 전문 수제 원목가구",
       "creat_dt_text": "2023.05.04",
-      "updt_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "오래가게",
         "느티나무",
@@ -83421,7 +83431,7 @@
         "쌈지길"
       ],
       "extra": {
-        "cmmn_telno": "0507-1406-8815",
+        "cmmn_telno": "010-8585-0078",
         "cmmn_hmpg_url": "https://www.instagram.com/geoan_official/",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "11:00~18:00",
@@ -83868,7 +83878,7 @@
     }
   },
   "KOP042446": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOP042446",
       "lang_code_id": "ko",
@@ -83886,7 +83896,7 @@
       "post_sj": "김중업 건축문화의집",
       "sumry": "한국 전통 양식과 서양 주택의 조화, 김중업 건축문화의집",
       "creat_dt_text": "2022.12.08",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "김중업-건축문화의집",
         "서울미래유산",
@@ -83898,10 +83908,9 @@
       "extra": {
         "cmmn_telno": "02-6906-3136",
         "cmmn_use_time": "화요일 ~ 토요일 10:00 ~ 17:00",
-        "cmmn_important": "점심시간(12:00 ~ 13:00)에는 입장 불가  ",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "closed_days": "매주 일요일, 월요일 휴관"
+        "closed_days": "매주 일요일, 월요일, 공휴일 휴관"
       },
       "traffic": {
         "adres": "서울 성북구 장위동 230-49",
@@ -83919,7 +83928,7 @@
     }
   },
   "KOP042352": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOP042352",
       "lang_code_id": "ko",
@@ -83936,7 +83945,7 @@
       "post_sj": "최만린미술관",
       "sumry": "예술가의 공간에서 지역 사회를 위한 미술관인 최만린미술관",
       "creat_dt_text": "2022.11.29",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "최만린미술관"
       ],
@@ -83947,7 +83956,7 @@
         "cmmn_use_time": "화~토요일 10:00 ~ 18:00\r\n전시준비로 휴관 : 기간(7.1. ~ 9. 3.)",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "closed_days": "매주 일, 월요일 휴관"
+        "closed_days": "매주 일, 월요일, 법정공휴일 휴관"
       },
       "traffic": {
         "adres": "서울 성북구 정릉동 716-16",
@@ -83966,7 +83975,7 @@
     }
   },
   "KOP042350": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOP042350",
       "lang_code_id": "ko",
@@ -83984,7 +83993,7 @@
       "post_sj": "박노수미술관",
       "sumry": "80년 된 고택이 미술관으로 재탄생한, 박노수미술관",
       "creat_dt_text": "2022.11.29",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "박노수미술관"
       ],
@@ -83993,6 +84002,7 @@
         "cmmn_hmpg_url": "https://www.jfac.or.kr/site/main/content/parkns01",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "화요일 ~ 일요일 10:00 ~ 18:00",
+        "cmmn_important": "문화재보호 차원에서 신발을 벗고 입실",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
         "closed_days": "매주 월요일, 1월 1일, 설날, 추석 당일",
@@ -84072,7 +84082,7 @@
     }
   },
   "KOP042288": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOP042288",
       "lang_code_id": "ko",
@@ -84089,7 +84099,7 @@
       "post_sj": "그래픽",
       "sumry": "골목길을 장식하는 커다란 예술작품, 그래픽",
       "creat_dt_text": "2022.11.23",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "그래픽",
         "서점",
@@ -84106,7 +84116,9 @@
         "cmmn_use_time": "화요일 ~ 금요일 13:00~23:00\r\n토요일, 일요일 11:00~23:00  ",
         "cmmn_important": "만 19세 이상만 이용 가능!",
         "trrsrt_use_chrge": "C",
-        "disabled_facility": [],
+        "disabled_facility": [
+          "접근가능"
+        ],
         "closed_days": "매주 월요일 휴무",
         "usage_fee": "입장료 20,000원\r\n20:00시 이후 10,000원"
       },
@@ -98322,7 +98334,7 @@
     }
   },
   "KOP002841": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOP002841",
       "lang_code_id": "ko",
@@ -98340,9 +98352,8 @@
       "post_sj": "망원 한강공원",
       "sumry": "성산대교와 양화대교 사이 한강 북단에 만들어진 아름다운 전망과 역사유적이 많은 곳",
       "creat_dt_text": "2009.06.01",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.10.16",
       "tag": [
-        "홍대",
         "망원한강공원",
         "한강",
         "공원",
@@ -98351,7 +98362,8 @@
         "마포구청역",
         "합정역",
         "망원동",
-        " 망리단길"
+        " 망리단길",
+        "홍대"
       ],
       "extra": {
         "cmmn_telno": "02-3780-0601",
@@ -98361,10 +98373,7 @@
         "cmmn_important": "절두산순교기념관\r\n망원지구에서는 우리나라 천주교 역사를 알 수 있는 절두산순교기념관이 지척입니다. 예부터 한강변의 절경으로 유명한 장소. 1866년 병인양요가 일어났고 이후 병인박해로 이어져 무수한 천주교 신자들이 순교한 성지이기도 합니다. 머리가 잘린 산이라는 뜻의 절두산도 그렇게 생겨났습니다. 1966년 병인박해 100주기를 기념해 천주교에서 절두산순교기념관을 세웠습니다. 한국교회의 발자취를 한눈에 볼 수 있는 수많은 자료와 유물들이 전시되어 있습니다.",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능",
-          "장애인 안내(휠체어 대여 및 기타)"
+          "장애인화장실"
         ],
         "business_days": "매일",
         "closed_days": "연중무휴",
@@ -98383,6 +98392,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "성산대교와 양화대교 사이 한강 북단에 만들어진 망원지구는 아름다운 전망과 역사유적이 많은 곳입니다. 시야가 넓어 한가로이 사색에 잠기기 좋은 산책로와 휴식공간이 짜임새 있게 들어서 있으며 시민들이 운동을 할 수 있는 시설도 잘 갖추어져 있습니다. 널찍한 공간에 수영장, 축구장, 배구장, 농구장, 테니스장, 롤러스케이트장, 어린이 야구장 등 시민들이 다양하게 활용할 수 있도록 마련해 놓았습니다. 또한 3.1㎞의 자전거 도로가 있어 강바람을 맞으며 가족, 연인과 자전거를 탈 수도 있습니다. 윈드서핑, 수상스키 등 다양한 수상레저 활동이 이루어지고 있습니다. 망원지구의 또 다른 볼거리는 주변에 흩어져 있는 문화유적지입니다. 세종대왕이 자주 와서 경치를 즐겼다는 망원정, 우리나라 기독교 역사가 고스란히 배어 있는 절두산 성지 등이 망원지구 가까이에 있습니다."
@@ -109167,7 +109177,7 @@
     }
   },
   "KOP0wav1s": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOP0wav1s",
       "lang_code_id": "ko",
@@ -109185,7 +109195,7 @@
       "post_sj": "종묘돌담길",
       "sumry": "종묘 서쪽 담장을 따라 길게 뻗은 고즈넉한 돌담길",
       "creat_dt_text": "2024.11.11",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "서순라길",
         "종묘",
@@ -109198,7 +109208,7 @@
         "종묘돌담길"
       ],
       "extra": {
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "F",
         "disabled_facility": []
       },
       "traffic": {
@@ -109217,7 +109227,7 @@
     }
   },
   "KOPfk9nxi": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPfk9nxi",
       "lang_code_id": "ko",
@@ -109234,13 +109244,13 @@
       "post_sj": "경복궁 집옥재",
       "sumry": "경복궁 건청궁 서쪽에 위치한 전각으로 고종의 서재",
       "creat_dt_text": "2024.10.02",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.17",
       "tag": [
+        "집옥재",
         "경복궁",
         "광화문",
         "도서관",
-        "청와대",
-        "집옥재"
+        "청와대"
       ],
       "extra": {
         "cmmn_telno": "070-7795-4309",
@@ -109248,8 +109258,8 @@
         "cmmn_important": "경복궁 내부에 있어 경복궁을 통해 들어와야 합니다. (경복궁 입장티켓 발권 필요)",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "수요일~월요일",
-        "closed_days": "화요일 휴무"
+        "business_days": "수요일~일요일\r\n",
+        "closed_days": "월요일, 화요일 휴무"
       },
       "traffic": {
         "adres": "서울 종로구 세종로 1-1",
@@ -109267,7 +109277,7 @@
     }
   },
   "KOPldz98j": {
-    "updtDtText": "2026.05.04",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPldz98j",
       "lang_code_id": "ko",
@@ -109285,7 +109295,7 @@
       "post_sj": "경복궁 돌담길 ",
       "sumry": "경복궁을 둘러싸고 있는 돌담길 ",
       "creat_dt_text": "2024.10.02",
-      "updt_dt_text": "2026.05.04",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "종로",
         "경복궁돌담길",
@@ -109297,7 +109307,7 @@
         "경복궁"
       ],
       "extra": {
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "F",
         "disabled_facility": []
       },
       "traffic": {
@@ -109316,7 +109326,7 @@
     }
   },
   "KOPl8f5md": {
-    "updtDtText": "2026.09.09",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPl8f5md",
       "lang_code_id": "ko",
@@ -109334,10 +109344,10 @@
       "post_sj": "창덕궁 후원 ",
       "sumry": "창덕궁 내부에 위치한 조선 시대 궁궐의 정원 ",
       "creat_dt_text": "2024.10.02",
-      "updt_dt_text": "2026.09.09",
+      "updt_dt_text": "2026.10.17",
       "tag": [
-        "창덕궁후원",
         "정원",
+        "창덕궁후원",
         "창덕궁"
       ],
       "extra": {
@@ -109369,7 +109379,7 @@
     }
   },
   "KOPexzzw3": {
-    "updtDtText": "2026.04.11",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPexzzw3",
       "lang_code_id": "ko",
@@ -109387,7 +109397,7 @@
       "post_sj": "석굴암",
       "sumry": "인왕산 중턱, 치마바위 아래쪽에 자리해있는 석굴암",
       "creat_dt_text": "2024.08.21",
-      "updt_dt_text": "2026.04.11",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "인왕산",
         "사찰",
@@ -109402,10 +109412,10 @@
       },
       "traffic": {
         "adres": "서울 종로구 옥인동 183-1",
-        "new_zip_code": "03034",
+        "new_zip_code": "110035",
         "new_adres": "서울 종로구 옥인동 산3-14",
-        "map_position_x": "126.964512817139",
-        "map_position_y": "37.5828407541691",
+        "map_position_x": "126.96053396869",
+        "map_position_y": "37.58460805063",
         "subway_info": "지하철 3호선 경복궁역 2번 출구, 1.7KM"
       },
       "tourist": {
@@ -109416,7 +109426,7 @@
     }
   },
   "KOPkxi16h": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.17",
     "detail": {
       "cid": "KOPkxi16h",
       "lang_code_id": "ko",
@@ -109434,7 +109444,7 @@
       "post_sj": "경국사 ",
       "sumry": "성북구 정릉동 삼각산(북한산) 동쪽 기슭에 있는 절",
       "creat_dt_text": "2024.08.21",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.17",
       "tag": [
         "절",
         "경국사",
@@ -109446,7 +109456,7 @@
       "extra": {
         "cmmn_telno": "02-914-2828",
         "cmmn_hmpg_url": "https://www.templestay.com/fe/MI000000000000000062/temple/introView.do?templeIdTmp=Kyungguksa",
-        "cmmn_hmpg_lang": "한국어",
+        "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_important": "템플스테이에 관한 자세한 내용은 홈페이지를 참고해주시길 바랍니다. ",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
@@ -109467,7 +109477,7 @@
     }
   },
   "KOPjkm9y3": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPjkm9y3",
       "lang_code_id": "ko",
@@ -109484,7 +109494,7 @@
       "post_sj": "신아기념관",
       "sumry": "<신아일보>가 강제 폐간된 이후 창업주 장기봉과 <신아일보>를 기억하기 위한 기념관.",
       "creat_dt_text": "2024.07.18",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "신아기념관",
         "대한민국근현대사",
@@ -109498,7 +109508,8 @@
         "cmmn_use_time": "업체별 상이",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "업체별 상이"
+        "business_days": "업체별 상이",
+        "closed_days": "업체별 상이"
       },
       "traffic": {
         "adres": "서울 중구 정동 1-28",
@@ -109516,7 +109527,7 @@
     }
   },
   "KOPlpqd8k": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPlpqd8k",
       "lang_code_id": "ko",
@@ -109534,10 +109545,10 @@
       "post_sj": "청전이상범 가옥",
       "sumry": "누하동에 위치한 청전 이상범의 가옥",
       "creat_dt_text": "2024.05.16",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.16",
       "tag": [
-        "가옥",
         "한옥",
+        "가옥",
         "서촌",
         "서촌한옥마을",
         "근현대건축"
@@ -109565,7 +109576,7 @@
     }
   },
   "KOPcyd45f": {
-    "updtDtText": "2026.05.03",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPcyd45f",
       "lang_code_id": "ko",
@@ -109580,7 +109591,7 @@
       "post_sj": "장희빈 우물터",
       "sumry": "희빈장씨가 폐서인의 몸으로 이 곳 사가에 잠시 머물 때 마셨던 우물",
       "creat_dt_text": "2024.04.23",
-      "updt_dt_text": "2026.05.03",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "조선시대",
         "장희빈우물터",
@@ -114671,7 +114682,7 @@
     }
   },
   "KOPhyd9ee": {
-    "updtDtText": "2026.04.14",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOPhyd9ee",
       "lang_code_id": "ko",
@@ -114689,7 +114700,7 @@
       "post_sj": "서촌한옥마을",
       "sumry": "경복궁의 서쪽에 위치한 한옥마을",
       "creat_dt_text": "2023.07.18",
-      "updt_dt_text": "2026.04.14",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "한옥마을",
         "서촌한옥마을",
@@ -116942,7 +116953,7 @@
     }
   },
   "KOP000034": {
-    "updtDtText": "2026.09.10",
+    "updtDtText": "2026.10.16",
     "detail": {
       "cid": "KOP000034",
       "lang_code_id": "ko",
@@ -116960,7 +116971,7 @@
       "post_sj": "청계천",
       "sumry": "서울 도심을 가로지르는 역사적 하천으로, 산책로와 문화공간이 조성된 시민 휴식처",
       "creat_dt_text": "2015.12.22",
-      "updt_dt_text": "2026.09.10",
+      "updt_dt_text": "2026.10.16",
       "tag": [
         "종로",
         "서울축제",
@@ -116973,16 +116984,18 @@
         "을지로"
       ],
       "extra": {
-        "cmmn_telno": "02-2290-6114",
+        "cmmn_telno": "02-2290-7111",
         "cmmn_hmpg_url": "https://www.sisul.or.kr/open_content/cheonggye/ ",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "상시개방",
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "F",
         "disabled_facility": [
           "장애인화장실",
           "접근가능",
           "엘리베이터"
-        ]
+        ],
+        "business_days": "매일",
+        "closed_days": "연중무휴"
       },
       "traffic": {
         "zip_code": "110-110",
