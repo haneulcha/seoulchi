@@ -2173,7 +2173,7 @@
         "서울아트센터도암"
       ],
       "kind": "place",
-      "useTime": "화-토 10:00-18:00",
+      "useTime": "10:00-18:00",
       "closedDays": "일, 월, 공휴일 휴관",
       "hours": {
         "open": "10:00",
@@ -2193,7 +2193,7 @@
       "lng": 127.054890960564,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77422&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://www.khu.ac.kr/kor/user/main/view.do",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 1호선/경춘/경의중앙선 회기역 1번출구, 786m",
       "tags": [
         "서울캠퍼스",
@@ -2218,7 +2218,7 @@
       "lng": 127.093572178923,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77252&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://gil.seoul.go.kr/index.do",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 7호선 사가정역 4번출구, 2.4km",
       "tags": [
         "용마산 스카이워크",
@@ -2461,7 +2461,7 @@
       ],
       "kind": "place",
       "useTime": "11:00-18:00",
-      "closedDays": "매주 월요일",
+      "closedDays": "월요일 및 법정 공휴일 휴관",
       "hours": {
         "open": "11:00",
         "close": "18:00",
@@ -2494,7 +2494,7 @@
       ],
       "kind": "place",
       "useTime": "10:00-18:00",
-      "closedDays": "매주 월요일",
+      "closedDays": "월요일,  1월 1일, 설날/추석 전날 및 당일",
       "hours": {
         "open": "10:00",
         "close": "18:00",
@@ -2526,7 +2526,7 @@
       ],
       "kind": "place",
       "useTime": "11:00-20:00",
-      "closedDays": "매주 월요일",
+      "closedDays": "매주 월요일, 새해 첫날, 설, 추석, 성탄절",
       "hours": {
         "open": "11:00",
         "close": "20:00",
@@ -2547,7 +2547,7 @@
       "lng": 127.001133061453,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75511&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://www.pacegallery.com/",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 6호선 한강진역 1번출구, 185m",
       "tags": [
         "페이스갤러리",
@@ -2761,7 +2761,7 @@
         "전시"
       ],
       "kind": "place",
-      "useTime": "화-일 10:00-19:00\r\n(전시 입장 마감시간 18:30)",
+      "useTime": "10:00-19:00\r\n(전시 입장 마감시간 18:30)",
       "closedDays": "월요일",
       "hours": {
         "open": "10:00",
@@ -3072,13 +3072,14 @@
         "로봇체험"
       ],
       "kind": "place",
-      "useTime": "09:30-17:30",
-      "closedDays": "매주 월요일 \r\n신정 1월 1일, 설날/추석 당일\r\n월요일이 공휴일인 경우 익일 휴관",
+      "useTime": "09:30-17:30\r\n'26년 9월~12월, 매주 수요일 20시 까지 시범운영(1층만 개방)\r\n단, 9~11월 마지막 주 수요일은 '라임 콜로키움(전문가 강연)'운영일로 사전예약자에 한해 강연 진행되어 일반 관람은 제한됩니다.",
+      "closedDays": "매주 월요일 \r\n신정 1월 1일, 설날/추석 당일\r\n월요일이 공휴일인 경우 정상 운영 후, 다음 첫 평일 휴관",
       "hours": {
         "open": "09:30",
         "close": "17:30",
         "closedWeekdays": [
-          1
+          1,
+          3
         ]
       }
     },
@@ -3171,6 +3172,7 @@
       ],
       "kind": "place",
       "useTime": "05:00 ~ 24:00",
+      "closedDays": "없음",
       "hours": {
         "open": "05:00",
         "close": "24:00",
@@ -3291,7 +3293,7 @@
       ],
       "kind": "place",
       "useTime": "화 ~ 금 10:00 ~ 20:00\r\n토, 일, 공휴일 \r\n하절기(3-10월) 10:00 ~ 19:00\r\n동절기(11-2월) 10:00 ~ 18:00",
-      "closedDays": "1월 1일,  매주 월요일 휴관 * 월요일이 공휴일인 경우 정상 개관",
+      "closedDays": "1월 1일,  매주 월요일 휴관 * 월요일이 공휴일인 경우 정상 개관\r\n(단, 포토라이브러리는 매주 일, 월, 공휴일 휴관)",
       "hours": {
         "open": "10:00",
         "close": "20:00",
@@ -9187,8 +9189,6 @@
       "isFree": true,
       "subwayInfo": "지하철 5/9호선 올림픽공원역 4번 출구,  1100m",
       "tags": [
-        "올림픽공원나홀로나무",
-        "몽촌토성",
         "잠실올림픽공원",
         "올림픽공원",
         "서울산책하기좋은곳",
@@ -9197,7 +9197,9 @@
         "올림픽공원나들이",
         "서울데이트명소",
         "서울가을명소",
-        "서울나들이장소"
+        "서울나들이장소",
+        "올림픽공원나홀로나무",
+        "몽촌토성"
       ],
       "kind": "place",
       "useTime": "05:00~22:00 도보나 자전거 출입 (광장지역은 24:00) \r\n06:00~22:00 차량 출입\r\n※ 시설물 안전과 방문객의 신변보호를 위해 22시 이후에는 공원 안쪽으로의\r\n    출입을 금합니다.",
@@ -9237,7 +9239,13 @@
         " 문예회관"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "24시간",
+      "closedDays": "연중무휴",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOP001961",
@@ -9563,7 +9571,7 @@
       "lng": 126.7989506387034,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=76884&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://hangang.seoul.go.kr/www/contents/675.do?mid=482",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 5호선 방화역 1번 출구,  2km",
       "tags": [
         "공원",
@@ -9575,7 +9583,7 @@
         " 강서구주말나들이"
       ],
       "kind": "place",
-      "useTime": "참여인원, 신청방법, 진행프로그램 등 세부정보는 서울시공공서비스예약사이트를 참고해 주시길 바랍니다.\r\n*단체 및 개인 관찰 -자유롭게 이용 (일출 전,일몰 후에는 출입 제한)",
+      "closedDays": "연중무휴",
       "hours": null
     },
     {
@@ -9662,7 +9670,6 @@
       "isFree": true,
       "subwayInfo": "지하철 2/8호선 잠실역 2번 출구,  282m",
       "tags": [
-        "서울공원",
         "따릉이",
         "서울날씨",
         "국내여행지",
@@ -9675,7 +9682,8 @@
         "서울놀거리",
         "공원추천",
         "석촌호수산책",
-        "서울"
+        "서울",
+        "서울공원"
       ],
       "kind": "place",
       "useTime": "24시간",
@@ -9918,7 +9926,7 @@
       "lng": 126.90181888777212,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=68773&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "http://parks.seoul.go.kr/template/sub/seonyudo.do",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 9호선 선유도역 2번 출구,  782m",
       "tags": [
         "선유도역",
@@ -13218,6 +13226,7 @@
       ],
       "kind": "place",
       "useTime": "00:00 ~ 24:00",
+      "closedDays": "연중무",
       "hours": {
         "open": "00:00",
         "close": "24:00",
@@ -13261,12 +13270,11 @@
       "lat": 37.56315140899749,
       "lng": 126.89770700454116,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=67594&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/worldcuppark.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300022",
       "isFree": true,
       "subwayInfo": "지하철 6호선 월드컵경기장역 1번 출구,  565m\r\n지하철 6호선 마포구청역 8번 출구,  637m",
       "tags": [
-        "월드컵공원",
-        " 자연",
+        "자연",
         " 하늘공원",
         " 난지천공원",
         " 상암월드컵공원",
@@ -13276,14 +13284,15 @@
         " 공원",
         " 환경생태공원",
         " 서울공원데이트",
+        "월드컵공원",
         " 노을공원"
       ],
       "kind": "place",
-      "useTime": "평화의 공원, 난지천공원, 난지한강공원은 상시개방\r\n하늘공원, 노을공원은 일몰시간+2시간부터 공원 통제\r\n \r\n(매달 통제시간이 다르니 홈페이지에서 확인 바랍니다.)",
+      "useTime": "4월~9월: 06:00~22:00 / 10월~3월: 06:00~21:00",
       "closedDays": "연중무휴",
       "hours": {
-        "open": "00:00",
-        "close": "24:00",
+        "open": "06:00",
+        "close": "22:00",
         "closedWeekdays": []
       }
     },
@@ -13375,14 +13384,14 @@
       "isFree": true,
       "subwayInfo": "지하철 경의중앙선 양원역 2번 출구,  1.5km",
       "tags": [
-        "산책로",
-        " 망우리공원",
         " 망우산",
         "공원",
         " 망우리공원묘지",
         "역사",
         " 상봉역",
-        " 연보비"
+        " 연보비",
+        "산책로",
+        "망우리공원"
       ],
       "kind": "place",
       "useTime": "24시간",
@@ -13530,8 +13539,8 @@
         "분수",
         " 허준박물관",
         " 가양역",
-        " 한강",
         " 야경",
+        " 한강",
         " 동의보감",
         " 허준공원"
       ],
@@ -14169,6 +14178,7 @@
       ],
       "kind": "place",
       "useTime": "05:00 ~ 22:00\r\n10:00~17:00 (동물원 이용시간 /계절 및 날씨등에 따라 일부 변경될 수 있음.)",
+      "closedDays": "없음",
       "hours": {
         "open": "05:00",
         "close": "22:00",
@@ -14186,7 +14196,7 @@
       "lat": 37.54429758656194,
       "lng": 127.03962333207576,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72834&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "https://parks.seoul.go.kr/template/seoulforest/main.do",
+      "linkUrl": "https://parks.seoul.go.kr/mini/seoulforest/main.do",
       "isFree": true,
       "subwayInfo": "지하철 2호선 뚝섬역 8번 출구, 537m\r\n지하철 수인분당선 서울숲역 3,4번 출구, 242m",
       "tags": [
@@ -14202,7 +14212,7 @@
         "습지생태원"
       ],
       "kind": "place",
-      "useTime": "서울숲은 24시간 개방합니다.\r\n생태숲 : 05:30~21:30 (생태보전구역)\r\n곤충식물원 : 10:00~17:00 (매주 월 휴관) / 동절기(11~2월) 단축운영 11:00~16:00 (3시30분까지 입장가능, 매주 월 휴관) \r\n나비정원 : 10:00~17:00 (5~10월 운영, 매주 월 휴관)\r\n생태학습장 : 프로그램 운영 시 개장\r\n바닥분수 가동시간 : 5~10월 가동\r\n                              12:00, 13:00, 14:00, 15:00, 16:00, 17:00 / 30분씩 6회 가동              \r\n방문자센터 : 연중 무휴, 09:00~18:00\r\n                    휠체어, 유모차 대여: 최대 2시간 무료대여(※ 신분증 필요)\r\n커뮤니티센터 : 프로그램 및 전시 등의 운영시 개장",
+      "useTime": "서울숲은 24시간 개방합니다.\r\n생태숲 : 05:30~21:30 (생태보전구역)\r\n곤충식물원 : 10:00~17:00 (매주 월 휴관) / 동절기(11~2월) 단축운영 10:00~16:00 (마감 30분 까지 입장가능, 매주 월 휴관) \r\n나비정원 : 10:00~17:00 (5~10월 운영, 매주 월 휴관)\r\n생태학습장 : 프로그램 운영 시 개장\r\n바닥분수 가동시간 : 5~10월 가동\r\n                              12:00, 13:00, 14:00, 15:00, 16:00, 17:00 / 30분씩 6회 가동               \r\n방문자센터 : 연중 무휴, 09:00~18:00\r\n                    휠체어, 유모차 대여: 최대 2시간 무료대여(※ 신분증 필요)\r\n커뮤니티센터 : 프로그램 및 전시 등의 운영시 개장",
       "closedDays": "연중무휴",
       "hours": {
         "open": "05:30",
@@ -14547,7 +14557,7 @@
       "lng": 127.03078776480784,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=13793&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "isFree": true,
-      "subwayInfo": "지하철 경의중앙선 1번 출구,  668m",
+      "subwayInfo": "지하철 경의중앙선 응봉역 1번 출구,  668m",
       "tags": [
         "레저",
         "암벽등반",
@@ -14618,7 +14628,7 @@
       "lat": 37.571236,
       "lng": 126.988331,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=1579&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
-      "linkUrl": "http://parks.seoul.go.kr/parks/detailView.do?pIdx=60",
+      "linkUrl": "https://parks.seoul.go.kr/park/detailView.do?pIdx=60&tabTarget=1&key=2604070019",
       "isFree": true,
       "subwayInfo": "지하철 1/3/5호선 종로3가역 1번 출구,  249m\r\n지하철 1호선 종각역 3번 출구,  413m",
       "tags": [
@@ -14634,10 +14644,11 @@
         " 원각사지10층석탑"
       ],
       "kind": "place",
-      "useTime": "하절기 (3월~10월)        09:00 ~ 18:00\r\n동절기 (11월~2월)        09:00 ~17:00",
+      "useTime": "24시간 개방",
+      "closedDays": "없음",
       "hours": {
-        "open": "09:00",
-        "close": "18:00",
+        "open": "00:00",
+        "close": "24:00",
         "closedWeekdays": []
       }
     },
@@ -16172,7 +16183,7 @@
       "lat": 37.5348314193581,
       "lng": 126.987028473368,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72140&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 6호선 녹사평역 3번 출구,  56m",
       "tags": [
         "이태원클라쓰",
@@ -16193,12 +16204,12 @@
       "lat": 37.52817698971722,
       "lng": 126.96407109237853,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72136&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 4호선 신용산역 2번출구,  445m",
       "tags": [
-        "용산가볼만한곳",
         "서울사진스팟",
-        "야경맛집"
+        "야경맛집",
+        "용산가볼만한곳"
       ],
       "kind": "place",
       "hours": null
@@ -16273,7 +16284,7 @@
       ],
       "kind": "place",
       "useTime": "9:00 ~22:00",
-      "closedDays": "월",
+      "closedDays": "월, 법정공휴일",
       "hours": {
         "open": "09:00",
         "close": "22:00",
@@ -23698,15 +23709,13 @@
         " 국립산림과학원"
       ],
       "kind": "place",
-      "useTime": "자유관람 : 평일 10:00 - 17:00 / 주말 09:00 - 17:00  \r\n숲해설 : 3월~11월(화~금)-10:30, 13:30, 15:30",
-      "closedDays": "월요일 / 5월 1일 / 법정공휴일(단, 토요일 또는 일요일이 법정공휴일인 경우엔 휴무)",
+      "useTime": "자유관람 : 평일 10:00 - 17:00 / 주말 09:00 - 17:00  \r\n숲해설 : 3월~11월(화~일)-10:30, 13:30, 15:30",
+      "closedDays": "월요일 / 1월 1일 / 설 연휴, 추석 연휴",
       "hours": {
         "open": "10:00",
         "close": "17:00",
         "closedWeekdays": [
-          0,
-          1,
-          6
+          1
         ]
       }
     },
@@ -23730,6 +23739,7 @@
       ],
       "kind": "place",
       "useTime": "연중 24시간 개방",
+      "closedDays": "연중무휴",
       "hours": {
         "open": "00:00",
         "close": "24:00",
@@ -23768,10 +23778,10 @@
         "산행"
       ],
       "kind": "place",
-      "useTime": "9:00 ~ 18:00\r\n입장 마감\r\n- 하절기 16:00\r\n- 동절기 15:00",
+      "useTime": "동절기(12~2월): 04:00~16:00, 하절기(3~11월): 04:00~17:00",
       "hours": {
-        "open": "09:00",
-        "close": "18:00",
+        "open": "04:00",
+        "close": "16:00",
         "closedWeekdays": []
       }
     },
@@ -23790,7 +23800,6 @@
       "isFree": true,
       "subwayInfo": "지하철 1/2호선 시청역 4번 출구, 384m",
       "tags": [
-        "종로",
         "서울축제",
         "산책",
         "밤도깨비야시장",
@@ -23798,7 +23807,8 @@
         "서울야경",
         " 광화문",
         "동대문",
-        "을지로"
+        "을지로",
+        "종로"
       ],
       "kind": "place",
       "useTime": "상시개방",
