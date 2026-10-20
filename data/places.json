@@ -10701,10 +10701,9 @@
       "lat": 37.558882134,
       "lng": 126.9189143639,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=5503&fileTy=MEDIA&fileNo=3&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 6호선 상수역 1번 출구,  549m",
       "tags": [
-        "공원",
         " 홍대",
         " 놀이터",
         "문화생활복합공간",
@@ -10716,17 +10715,15 @@
         " 홍익어린이공원",
         " 문화",
         " 희망시장",
-        "홍대입구역"
+        "홍대입구역",
+        "공원"
       ],
       "kind": "place",
-      "useTime": "10:00~18:00",
-      "closedDays": "월요일",
+      "useTime": "그림동네창작센터 : 09:00~18:00\r\n그림동네공유화실 : 13:00~18:00",
       "hours": {
-        "open": "10:00",
+        "open": "09:00",
         "close": "18:00",
-        "closedWeekdays": [
-          1
-        ]
+        "closedWeekdays": []
       }
     },
     {
@@ -11009,13 +11006,8 @@
         "잠실"
       ],
       "kind": "place",
-      "useTime": "24시간",
       "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP006463",
@@ -11424,13 +11416,7 @@
         "자연"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP004924",
@@ -11443,7 +11429,7 @@
       "lat": 37.5274329674,
       "lng": 126.8300863198,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=40068&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/lakepark.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300017",
       "isFree": true,
       "subwayInfo": "지하철 2/5호선 까치산역 4번 출구,  653번 간선버스 탑승, 서서울호수공원 정류장,  149m",
       "tags": [
@@ -11475,7 +11461,7 @@
       "lat": 37.62161009012338,
       "lng": 127.04157563195348,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=20520&fileTy=MEDIA&fileNo=3&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/dreamforest.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300016",
       "isFree": false,
       "subwayInfo": "지하철 6호선 돌곶이역 3번 출구, 약 1.5km",
       "tags": [
@@ -12119,7 +12105,7 @@
       "lat": 37.5390677526,
       "lng": 127.1533298808,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74806&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/gildong",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300010",
       "isFree": true,
       "subwayInfo": "지하철 5호선 길동역 2번 출구,  1.4km",
       "tags": [
@@ -12132,7 +12118,7 @@
         "자연"
       ],
       "kind": "place",
-      "useTime": "09:00 - 18:00 (입장마감 16:00)",
+      "useTime": "09:00 - 18:00 (입장마감 16:00)\r\n* 동절기(11.15~3.15) 08:00~17:00(16:00 입장마감)",
       "closedDays": "월요일",
       "hours": {
         "open": "09:00",
@@ -12228,6 +12214,7 @@
       "isFree": true,
       "subwayInfo": "지하철 3/ 7/ 9호선 고속터미널역 8-1번 출구,  1.1km",
       "tags": [
+        "자연",
         "달빛광장",
         "밤도깨비야시장",
         " 달빛무지개분수",
@@ -12239,8 +12226,7 @@
         " 공원",
         " 반포대교",
         " 데이트코스",
-        " 반포한강공원",
-        "자연"
+        " 반포한강공원"
       ],
       "kind": "place",
       "useTime": "[달빛 무지개 분수 운영 시간]\r\n비수기 (3월 15일~5월, 10월)\r\n: ( 매일 회당 20분)12:00, 19:30, 20:00, 20:30, 21:00   \r\n성수기 (6월~9월)\r\n: (매일 각 회차 20분)  12:00, 19:30, 20:00, 20:30, 21:00​, 21:30\r\n\r\n*전력낭비예방을 위해 기상상황에 따라 분수 가동 중지",
@@ -23918,7 +23904,7 @@
       "lat": 37.45366792468938,
       "lng": 126.94948545124144,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=4399&fileTy=POSTTHUMB&fileNo=4&thumbTy=M&postTy=P",
-      "linkUrl": "http://www.gwanak.go.kr/site/gwanak/05/10503020100002016051205.jsp",
+      "linkUrl": "https://parks.seoul.go.kr/park/detailView.do?key=2604070019&pIdx=36",
       "isFree": true,
       "subwayInfo": "지하철 신림선 관악산역 1번 출구,  70m",
       "tags": [
@@ -23954,7 +23940,7 @@
       "lat": 37.5849001,
       "lng": 126.9578438,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72709&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 3호선 독립문역 3-1번 출구,  825m",
       "tags": [
         "종로여행",
