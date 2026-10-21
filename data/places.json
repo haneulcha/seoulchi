@@ -8095,7 +8095,7 @@
       "lat": 37.5703456074,
       "lng": 126.8950311952,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=23543&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/culturetank.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300014",
       "isFree": true,
       "subwayInfo": "지하철 6호선 월드컵경기장역(성산) 2번 출구,  790m",
       "tags": [
@@ -8678,13 +8678,8 @@
         "국내여행지"
       ],
       "kind": "place",
-      "useTime": "24시간",
       "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP016325",
@@ -8733,12 +8728,11 @@
       "lat": 37.5690797486,
       "lng": 126.8863170392,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=68309&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/worldcuppark.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300022",
       "isFree": false,
       "subwayInfo": "지하철 6호선 월드컵경기장역 1번 출구, 맹꽁이전동차 매표소까지  803m\r\n지하철 6호선 월드컵경기장역 1번 출구, 하늘공원까지  1.9km",
       "tags": [
-        "생태환경공원",
-        "  억새",
+        "억새",
         " 노을",
         " 억새축제",
         "데이트",
@@ -8748,13 +8742,14 @@
         " 야경",
         " 하늘공원",
         "노을공원",
+        "생태환경공원",
         " 난지천공원"
       ],
       "kind": "place",
-      "useTime": "매일 05:00~22:00  월마다 유동적\r\n※ 하늘공원은 서울시 야생동식물 보호구역으로 이용시민 안전과 시설물 보호를 위하여 야간이용 제한 (일몰시간에 따라 매달 통제시간이 달라지니 홈페이지에서 확인 부탁드립니다.)",
+      "useTime": "1~3월, 10~12월: 06:00~21:00\r\n4~9월: 06:00~22:00\r\n※ 하늘공원은 서울시 야생동식물 보호구역으로 이용시민 안전과 시설물 보호를 위하여 야간이용 제한 (일몰시간에 따라 매달 통제시간이 달라지니 홈페이지에서 확인 부탁드립니다.)",
       "hours": {
-        "open": "05:00",
-        "close": "22:00",
+        "open": "06:00",
+        "close": "21:00",
         "closedWeekdays": []
       }
     },
@@ -8804,11 +8799,10 @@
       "lat": 37.5805926127615,
       "lng": 127.006531505857,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17950&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/naksan.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300011",
       "isFree": true,
       "subwayInfo": "지하철 4호선 혜화역 2번 출구,  627m",
       "tags": [
-        "서울밤산책",
         "서울야경",
         "낙산공원",
         "서울의야경",
@@ -8821,7 +8815,8 @@
         "서울의밤",
         "혜화낙산공원야경",
         "서울데이트코스",
-        "서울"
+        "서울",
+        "서울밤산책"
       ],
       "kind": "place",
       "useTime": "24시간",
@@ -23402,7 +23397,7 @@
       ],
       "kind": "place",
       "useTime": "3~10월 09:30~18:00(17:00 입장 마감)  \r\n11~2월 09:30~17:00(16:00 입장 마감)",
-      "closedDays": "월요일",
+      "closedDays": "월요일 (월요일이 공휴일이면 다음 날 휴관)",
       "hours": {
         "open": "09:30",
         "close": "18:00",
@@ -23425,8 +23420,8 @@
       "isFree": true,
       "subwayInfo": "지하철 경의중앙선 망우역 1번출구, 270번 버스 승차 후 동부제일병원 하차, 망우묘지공원 관리사무소 15분 도보",
       "tags": [
-        " 중랑구",
         "산책",
+        " 중랑구",
         " 망우",
         " 자연",
         "망우산",
@@ -23457,7 +23452,6 @@
       "isFree": false,
       "subwayInfo": "지하철 9호선 선유도역 2번 출구,  782m",
       "tags": [
-        "여의도",
         " 선유도",
         " 양화한강공원",
         "양화대교",
@@ -23465,45 +23459,13 @@
         " 국회의사당",
         " 야경",
         " 선유도역",
-        " 선유도공원"
+        " 선유도공원",
+        "여의도"
       ],
       "kind": "place",
       "useTime": "06:00 ~ 24:00",
       "hours": {
         "open": "06:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
-    },
-    {
-      "id": "vs-KOP016326",
-      "source": "visit-seoul",
-      "title": "매봉산 야경",
-      "summary": "한강위로 은은히 비치는 대교와 가로등의 불빛, 화려한 강남 빌딩 숲을 볼 수 있는 곳",
-      "category": "자연경관(산)",
-      "place": "매봉산 야경",
-      "address": "서울 중구 신당동 산 51 매봉산공원",
-      "lat": 37.5457935621112,
-      "lng": 127.008630053057,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78220&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": true,
-      "subwayInfo": "지하철 6호선 버티고개역 3번 출구,  581m",
-      "tags": [
-        "한강진역",
-        " 옥수역",
-        "매봉산",
-        " 매봉산공원",
-        "버티고개역",
-        " 남산공원",
-        " 야경",
-        " 한강",
-        "쌈지공원"
-      ],
-      "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
         "close": "24:00",
         "closedWeekdays": []
       }
@@ -23519,7 +23481,7 @@
       "lat": 37.601975429062,
       "lng": 126.980551282647,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=16324&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 3호선 경복궁역 3번 출구, 7212, 7022, 1020 버스 탑승, 자하문고개.윤동주문학관 정류장 하차,  807m",
       "tags": [
         "북악산",
@@ -23608,7 +23570,12 @@
         "슈주"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "상시 개방",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOP015060",
@@ -23625,10 +23592,10 @@
       "isFree": true,
       "subwayInfo": "지하철 5호선 여의나루역 1번 출구,  245m",
       "tags": [
-        "도깨비야시장",
         " 크루즈",
         " 서울경치",
         "한강",
+        "도깨비야시장",
         " 한강공원",
         " 수영장",
         " 한강캠핑장",
@@ -23821,7 +23788,7 @@
       "lat": 37.52846816527813,
       "lng": 127.07628131028132,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72596&fileTy=MEDIA&fileNo=3&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 7호선 자양역 2번 출구,  192m",
       "tags": [
         "뚝섬유원지",

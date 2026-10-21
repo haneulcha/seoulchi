@@ -90455,7 +90455,7 @@
     }
   },
   "KOP023543": {
-    "updtDtText": "2026.07.06",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP023543",
       "lang_code_id": "ko",
@@ -90475,7 +90475,7 @@
       "post_sj": "문화비축기지",
       "sumry": " 폐산업시설인 마포석유비축기지를 재생하여 역사적 의미를 보존",
       "creat_dt_text": "2017.11.10",
-      "updt_dt_text": "2026.07.06",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "마포여행",
         " 문화비축기지",
@@ -90490,14 +90490,15 @@
       ],
       "extra": {
         "cmmn_telno": "02-376-8420",
-        "cmmn_hmpg_url": "http://parks.seoul.go.kr/template/sub/culturetank.do",
-        "cmmn_hmpg_lang": "한국어",
+        "cmmn_hmpg_url": "https://parks.seoul.go.kr/content.do?key=2604300014",
+        "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "공원-연중무휴 상시개방 / 탱크-10:00~18:00",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
           "장애인화장실",
           "장애인 전용 주차장",
           "접근가능",
+          "엘리베이터",
           "장애인 안내(휠체어 대여 및 기타)"
         ],
         "business_days": "공원- 연중무휴 상시개방 / 탱크-화요일~일요일",
@@ -90506,7 +90507,6 @@
         "usage_fee": "무료"
       },
       "traffic": {
-        "zip_code": "121-250",
         "adres": "서울 마포구 성산동 661",
         "new_zip_code": "03914",
         "new_adres": "서울 마포구 증산로 87 (성산동)",
@@ -90582,7 +90582,7 @@
     }
   },
   "KOP023466": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP023466",
       "lang_code_id": "ko",
@@ -90600,7 +90600,7 @@
       "post_sj": "서울함 공원",
       "sumry": "한강을 수변문화공간으로써 도시테마공원인 서울함 공원",
       "creat_dt_text": "2017.11.06",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "수변문화공원",
         "서울함",
@@ -90617,18 +90617,12 @@
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "하절기(3~10월) 평일 10:00~19:00, 주말 10:00~20:00\r\n동절기(11~2월) 평일 10:00~18:00, 주말 10:00~18:00\r\n (*입장 마감은 폐관30분 전까지)",
         "trrsrt_use_chrge": "C",
-        "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능",
-          "장애인 안내(휠체어 대여 및 기타)"
-        ],
+        "disabled_facility": [],
         "business_days": "화요일~일요일",
         "closed_days": "매주 월요일, 1월1일, 설날 및 추석 당일 ",
         "usage_fee": "어린이(만6~12세) : 1000원\r\n청소년(만13~18세), 군인 : 2000원\r\n어른(만19세 이상) : 3000원\r\n* 단체할인(20인 이상) : 30% 할인\r\n* 국가유공자, 장애인, 65세 이상 노인 등 감면대상자 : 입장료 50% 감면"
       },
       "traffic": {
-        "zip_code": "121-889",
         "adres": "서울 마포구 망원동 205-5",
         "new_zip_code": "03954",
         "new_adres": "서울 마포구 마포나루길 407 (망원동, 세븐일레븐)",
@@ -91438,7 +91432,7 @@
     }
   },
   "KOP016328": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP016328",
       "lang_code_id": "ko",
@@ -91455,7 +91449,7 @@
       "post_sj": "석촌호수 야경",
       "sumry": "도심 속 여유를 느낄 수 있는 서울 송파구의 명소로, 산책과 봄 벚꽃 명소로 유명",
       "creat_dt_text": "2016.03.14",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "요즘가볼만한곳",
         "서울데이트",
@@ -91475,14 +91469,8 @@
       ],
       "extra": {
         "cmmn_telno": "02-2147-2109",
-        "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [
-          "장애인 전용 주차장",
-          "접근가능",
-          "장애인 안내(휠체어 대여 및 기타)",
-          "장애인화장실"
-        ],
+        "disabled_facility": [],
         "business_days": "매일",
         "closed_days": "연중무휴",
         "usage_fee": "무료"
@@ -91564,7 +91552,7 @@
     }
   },
   "KOP016322": {
-    "updtDtText": "2026.07.06",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP016322",
       "lang_code_id": "ko",
@@ -91582,10 +91570,9 @@
       "post_sj": "하늘공원 야경",
       "sumry": "월드컵공원의 5개의 공원 중 하늘과 가장 가까이 맞닿아 있는 생태환경공원",
       "creat_dt_text": "2016.03.14",
-      "updt_dt_text": "2026.07.06",
+      "updt_dt_text": "2026.10.21",
       "tag": [
-        "생태환경공원",
-        "  억새",
+        "억새",
         " 노을",
         " 억새축제",
         "데이트",
@@ -91595,23 +91582,20 @@
         " 야경",
         " 하늘공원",
         "노을공원",
+        "생태환경공원",
         " 난지천공원"
       ],
       "extra": {
         "cmmn_telno": "02-300-5501",
-        "cmmn_hmpg_url": "http://parks.seoul.go.kr/template/sub/worldcuppark.do",
-        "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "매일 05:00~22:00  월마다 유동적\r\n※ 하늘공원은 서울시 야생동식물 보호구역으로 이용시민 안전과 시설물 보호를 위하여 야간이용 제한 (일몰시간에 따라 매달 통제시간이 달라지니 홈페이지에서 확인 부탁드립니다.)",
+        "cmmn_hmpg_url": "https://parks.seoul.go.kr/content.do?key=2604300022",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "1~3월, 10~12월: 06:00~21:00\r\n4~9월: 06:00~22:00\r\n※ 하늘공원은 서울시 야생동식물 보호구역으로 이용시민 안전과 시설물 보호를 위하여 야간이용 제한 (일몰시간에 따라 매달 통제시간이 달라지니 홈페이지에서 확인 부탁드립니다.)",
         "cmmn_important": "역에서 하늘공원까지 거리가 멀기 때문에 맹꽁이 전동차를 이용하시는 것을 추천드립니다.\r\n[맹꽁이 전동차 1노선 - 하늘공원행]\r\n일반 : 편도 2,000원 / 왕복 3,000원\r\n어린이(만 4세 ~ 12세) : 편도 1,500원 / 왕복 2,200원\r\n장애인 및 경로우대자(만 65세 이상) : 편도 1,500원 / 왕복 2,200원",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": [
-          "접근가능",
-          "장애인화장실"
-        ],
+        "disabled_facility": [],
         "business_days": "매일"
       },
       "traffic": {
-        "zip_code": "121-832",
         "adres": "서울 마포구 상암동 482",
         "new_zip_code": "03900",
         "new_adres": "서울 마포구 하늘공원로 95 (상암동, 탐방객안내소)",
@@ -91627,7 +91611,7 @@
     }
   },
   "KOP016321": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP016321",
       "lang_code_id": "ko",
@@ -91644,7 +91628,7 @@
       "post_sj": "남산서울타워 야경",
       "sumry": "남산서울타워에서 내려다보이는 야경은 서울을 대표하는 10대 한류 명소",
       "creat_dt_text": "2016.03.14",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "야경",
         " 남산",
@@ -91663,12 +91647,13 @@
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
         "cmmn_use_time": "평일 10:00-22:30\r\n주말 및 공휴일 10:00-23:00\r\n* 마감시간 30분 전까지 입장 가능\r\n* 레스토랑 운영시간은 매장마다 상이하므로 홈페이지 참고",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": [],
+        "disabled_facility": [
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
         "business_days": "월요일~일요일",
         "closed_days": "연중무휴"
       },
       "traffic": {
-        "zip_code": "140-022",
         "adres": "서울 용산구 용산동2가 산 1-3",
         "new_zip_code": "04340",
         "new_adres": "서울 용산구 남산공원길 105 (용산동2가, YTN서울타워)",
@@ -91684,7 +91669,7 @@
     }
   },
   "KOP016320": {
-    "updtDtText": "2026.07.06",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP016320",
       "lang_code_id": "ko",
@@ -91701,9 +91686,8 @@
       "post_sj": "낙산공원 야경",
       "sumry": "한양도성의 성벽선과 어우러지는 도심의 현재 모습을 조망할 수 있는 곳",
       "creat_dt_text": "2016.03.14",
-      "updt_dt_text": "2026.07.06",
+      "updt_dt_text": "2026.10.21",
       "tag": [
-        "서울밤산책",
         "서울야경",
         "낙산공원",
         "서울의야경",
@@ -91716,15 +91700,20 @@
         "서울의밤",
         "혜화낙산공원야경",
         "서울데이트코스",
-        "서울"
+        "서울",
+        "서울밤산책"
       ],
       "extra": {
-        "cmmn_telno": "02-743-7960",
-        "cmmn_hmpg_url": "http://parks.seoul.go.kr/template/sub/naksan.do",
-        "cmmn_hmpg_lang": "한국어",
+        "cmmn_telno": "02-743-7985",
+        "cmmn_hmpg_url": "https://parks.seoul.go.kr/content.do?key=2604300011",
+        "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [],
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "접근가능",
+          "장애인화장실"
+        ],
         "business_days": "매일"
       },
       "traffic": {
@@ -94399,7 +94388,7 @@
     }
   },
   "KOP012311": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP012311",
       "lang_code_id": "ko",
@@ -94417,7 +94406,7 @@
       "post_sj": "현대원서공원",
       "sumry": " 현대건설이 기업 이익의 사회 환원과 시민 휴식을 위한 녹지 공간 ",
       "creat_dt_text": "2015.02.01",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "북촌공원",
         " 광화문",
@@ -94429,12 +94418,10 @@
         " 종로"
       ],
       "extra": {
-        "cmmn_telno": "02-2148-2832",
+        "cmmn_telno": "02-731-0120",
         "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [
-          "접근가능"
-        ],
+        "disabled_facility": [],
         "business_days": "매일",
         "closed_days": "연중무휴"
       },
@@ -94516,7 +94503,7 @@
     }
   },
   "KOP012993": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP012993",
       "lang_code_id": "ko",
@@ -94534,7 +94521,7 @@
       "post_sj": "여의도 한강공원",
       "sumry": "봄에는 벚꽃축제, 여름에는 물놀이 등 다양한 즐길 거리와 아름다운 강변을 즐길 수 있는 공원",
       "creat_dt_text": "2015.02.01",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "여의도",
         "공원",
@@ -94547,21 +94534,18 @@
         "cmmn_telno": "02-3780-0561",
         "cmmn_hmpg_url": "https://hangang.seoul.go.kr/www/contents/669.do?mid=473",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),중국어(번체)",
-        "cmmn_use_time": "24시간\r\n\r\n",
+        "cmmn_use_time": "24시간\r\n",
         "cmmn_important": "여의도 한강공원은 전지역이 낚시 금지구역이다.",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능",
-          "장애인 안내(휠체어 대여 및 기타)"
+          "장애인화장실"
         ],
         "business_days": "매일",
         "closed_days": "연중무휴"
       },
       "traffic": {
         "adres": "서울 영등포구 여의도동 8",
-        "new_zip_code": "07231",
+        "new_zip_code": "07337",
         "new_adres": "서울 영등포구 여의동로 330 ",
         "new_adres2": "한강사업본부 여의도안내센터",
         "map_position_x": "126.916944",
@@ -94881,7 +94865,7 @@
     }
   },
   "KOP011234": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP011234",
       "lang_code_id": "ko",
@@ -94896,7 +94880,7 @@
       "post_sj": "마포대교 바람의 길 & 서울색공원 ",
       "sumry": " 한강과 서울의 경치를 감상할 수 있는 전망대 기능의 대형조형물",
       "creat_dt_text": "2013.12.12",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "한강",
         "조형물",
@@ -94912,17 +94896,11 @@
         "cmmn_telno": "02-3780-0561 (한강사업본부)",
         "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능",
-          "장애인 안내(휠체어 대여 및 기타)"
-        ],
+        "disabled_facility": [],
         "business_days": "매일",
         "closed_days": "연중무휴\r\n\r\n"
       },
       "traffic": {
-        "zip_code": "150-010",
         "adres": "서울 영등포구 여의도동 8",
         "adres2": "마포대교",
         "new_zip_code": "07337",
@@ -94933,6 +94911,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "여의도 랜드마크 중 하나인 바람의 길은 한강과 서울의 경치를 감상할 수 있는 전망대 기능의 대형조형물입니다. 서울색공원은 서울을 대표하는 색을 주제로 조성된 시민공원으로 서울색 조형물과 디자인 그래픽이 설치되어 있습니다. 바람의 길과 서울색공원 모두 마포대교 남단에 있습니다."
@@ -116113,7 +116092,7 @@
     }
   },
   "KOP027688": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP027688",
       "lang_code_id": "ko",
@@ -116136,7 +116115,7 @@
       "post_sj": "서래섬",
       "sumry": "서래섬은 동작대교와 반포대교 사이에 있는 작은 인공 섬",
       "creat_dt_text": "2018.12.05",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "서울여행지추천",
         "반포한강공원",
@@ -116157,13 +116136,15 @@
         "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "접근가능"
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "장애인 안내(휠체어 대여 및 기타)"
         ],
         "business_days": "매일",
         "closed_days": "연중무휴"
       },
       "traffic": {
-        "zip_code": "137-040",
         "adres": "서울 서초구 반포동 115-5",
         "new_zip_code": "06500",
         "new_adres": "서울 서초구 신반포로11길 40 (반포동, 한강공원 반포 안내센터)",
@@ -116179,7 +116160,7 @@
     }
   },
   "KOP027397": {
-    "updtDtText": "2026.09.10",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP027397",
       "lang_code_id": "ko",
@@ -116197,7 +116178,7 @@
       "post_sj": "서울식물원",
       "sumry": " 공원과 식물원이 유기적으로 결합한 서울 최초 도시형 식물원",
       "creat_dt_text": "2018.11.14",
-      "updt_dt_text": "2026.09.10",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "서울나들이",
         "서울시원한곳",
@@ -116216,16 +116197,18 @@
       "extra": {
         "cmmn_telno": "02-2104-9716",
         "cmmn_hmpg_url": "botanicpark.seoul.go.kr",
-        "cmmn_hmpg_lang": "한국어,영어,일어, 중국어",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
         "cmmn_use_time": "3~10월 09:30~18:00(17:00 입장 마감)  \r\n11~2월 09:30~17:00(16:00 입장 마감)",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [
           "장애인화장실",
+          "장애인 전용 주차장",
           "접근가능",
-          "엘리베이터"
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
         ],
         "business_days": "화요일~일요일 \r\n공원(열린숲, 호수원, 습지원) 연중무휴",
-        "closed_days": "월요일",
+        "closed_days": "월요일 (월요일이 공휴일이면 다음 날 휴관)",
         "usage_fee": "성인(만 19세 이상 만 65세 미만) 5,000원\r\n청소년(만 13세 이상 만 18세 이하) 3,000원\r\n어린이(만 6세 이상 12세 이하) 2,000원\r\n단체(30인 이상) 30% 할인\r\n만 6세 미만, 만 65세 이상 무료"
       },
       "traffic": {
@@ -116244,7 +116227,7 @@
     }
   },
   "KOP027296": {
-    "updtDtText": "2026.07.10",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP027296",
       "lang_code_id": "ko",
@@ -116262,10 +116245,10 @@
       "post_sj": "망우산 사색의 길",
       "sumry": "망우산 사색의 길은 망우산을 따라 걷는 중랑 둘레길의 한 구간",
       "creat_dt_text": "2018.11.06",
-      "updt_dt_text": "2026.07.10",
+      "updt_dt_text": "2026.10.21",
       "tag": [
-        " 중랑구",
         "산책",
+        " 중랑구",
         " 망우",
         " 자연",
         "망우산",
@@ -116279,16 +116262,13 @@
         "disabled_facility": [
           "장애인화장실",
           "장애인 전용 주차장",
-          "접근가능",
-          "엘리베이터",
-          "장애인 안내(휠체어 대여 및 기타)"
+          "접근가능"
         ],
         "business_days": "매일",
         "closed_days": "연중무휴",
         "usage_fee": "무료"
       },
       "traffic": {
-        "zip_code": "131-800",
         "adres": "서울 중랑구 망우동 산 57-1",
         "new_zip_code": "02178",
         "new_adres": "서울 중랑구 망우로 570 (망우묘지관리사무소)",
@@ -116304,7 +116284,7 @@
     }
   },
   "KOP016327": {
-    "updtDtText": "2026.08.18",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP016327",
       "lang_code_id": "ko",
@@ -116321,9 +116301,8 @@
       "post_sj": "선유도 야경",
       "sumry": " 양화대교와 성산대교 사이에 위치한 공원으로 야경때문에 인기.",
       "creat_dt_text": "2016.03.14",
-      "updt_dt_text": "2026.08.18",
+      "updt_dt_text": "2026.10.21",
       "tag": [
-        "여의도",
         " 선유도",
         " 양화한강공원",
         "양화대교",
@@ -116331,11 +116310,13 @@
         " 국회의사당",
         " 야경",
         " 선유도역",
-        " 선유도공원"
+        " 선유도공원",
+        "여의도"
       ],
       "extra": {
-        "cmmn_telno": "02-2631-9368",
+        "cmmn_telno": "02-2631-9367",
         "cmmn_hmpg_url": "https://parks.seoul.go.kr/content.do?key=2604300019",
+        "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "06:00 ~ 24:00 ",
         "cmmn_important": "선유도 \r\n물봉선과 쇠뜨기, 수련, 검정말 등 각종 수생 식물 1만여 본이 심어져 있습니다. 특히 시간의 정원은 세로 41미터, 깊이 5미터 규모의 침전지 2개를 활용한 것으로 이곳이 한때 수원지였음을 보여줍니다. 118종의 수목과 풀, 꽃을 여러 개의 작은 정원에 나눠 심어 사계절을 느낄 수 있도록 꾸며놓았습니다. 구조물의 칙칙한 색깔과 거친 표면, 불규칙한 선이 각종 식물들과 절묘하게 어울려 마치 시간이 정지된 듯한 느낌을 줍니다.",
         "trrsrt_use_chrge": "N",
@@ -116343,7 +116324,6 @@
         "business_days": "매일"
       },
       "traffic": {
-        "zip_code": "150-040",
         "adres": "서울 영등포구 당산동 1",
         "new_zip_code": "07200",
         "new_adres": "서울 영등포구 선유로 343 (당산동, 선유도공원)",
@@ -116417,7 +116397,7 @@
     }
   },
   "KOP016324": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP016324",
       "lang_code_id": "ko",
@@ -116434,7 +116414,7 @@
       "post_sj": "북악산 야경",
       "sumry": "서울시내 야경 데이트 명소로 주목받는 팔각정",
       "creat_dt_text": "2016.03.14",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "북악산",
         "서울나들이",
@@ -116450,9 +116430,9 @@
         "북악산등산코스"
       ],
       "extra": {
-        "cmmn_telno": "02-765-0297",
+        "cmmn_telno": "02-779-9870~1",
         "cmmn_use_time": "24시간",
-        "trrsrt_use_chrge": "F",
+        "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "매일",
         "closed_days": "연중무휴"
@@ -116473,7 +116453,7 @@
     }
   },
   "KOP015873": {
-    "updtDtText": "2026.08.24",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP015873",
       "lang_code_id": "ko",
@@ -116491,7 +116471,7 @@
       "post_sj": "서울 둘레길 코스 안내",
       "sumry": "야외 활동을 준비하는 시민들을 위해 서울 둘레길 프로그램 운영 일정을 소개한다. ",
       "creat_dt_text": "2016.03.03",
-      "updt_dt_text": "2026.08.24",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "안양천",
         "걷기여행",
@@ -116528,11 +116508,11 @@
         "guidance_service": "ul",
         "safe_mng": "ul"
       },
-      "post_desc": "국내 대표 트레킹길! 서울둘레길 소개 서울을 한 바퀴 휘감는 총 연장 156.5km의 서울둘레길은 총 21개 코스로 서울의 역사, 문화, 자연생태 등을 스토리로 엮어 국내외 탐방객들이 느끼고, 배우고, 체험할 수 있도록 조성한 도보길입니다. 둘레길 곳곳에 휴게시설 neighborhood 북카페, 쉼터를 만들어 시민들이 자연스럽게 휴식을 취할 수 있게 했고, 전통 깊은 사찰과 유적지를 연결해 서울의 역사와 문화, 자연생태를 곳곳에서 체험할 수 있도록 조성하였습니다. 대중교통으로도 접근하기 쉬우며 코스별 이용시간을 2~4시간으로(5~10㎞)로 설정하여 누구나 안전하고 편안하게 이용할 수 있습니다. 서울둘레길에는 우체통을 재활용한 총 28개의 스탬프시설이 있으며, 스탬프에는 서울둘레길에서 만나는 역사, 문화, 자연생태의 모습이 담겨있습니다. 28개의 스탬프를 모두 찍은 분에게는(스탬프북 또는 앱 가능) 서울둘레길 완주인증서를 발급해 드리고 있습니다. 서울 둘레길 행사 및 정보에 관한 사항은 서울두드림길 홈페이지 에서 알아볼 수 있으며, 보다 자세한 사항은 서울둘레길 안내센터(02-779-7902~4, 09:00~18:00)로 문의하시면 됩니다. 서울 둘레길 코스에 대해 자주 묻는 질문 서울둘레길은 몇 개의 코스로 이루어져 있나요? 서울둘레길은 21개 코스로 이루어져 있습니다. 코스별 거리와 소요시간, 난이도 등 자세한 사항은 아래 홈페이지에서 확인할 수 있습니다. 서울 둘레길 코스 정보 알아보기 서울 둘레길 안내지도와 스탬프북은 어디서 받을 수 있나요? 총 5곳의 배부처에서 안내지도와 스탬프북을 받을 수 있습니다. (2026년 기준) • 창포원 안내센터 (02-779-7902~4) • 매헌시민의숲 안내센터 (070-4465-7905) • 서울시청 시민청 (02-739-7733) • 아차산 공원관리사무소 (02-450-1655) • 관악산 공원관리사무소 (02-879-6552) 서울 둘레길 완주인증서는 어디서 발급받을 수 있나요? 서울 둘레길 완주인증서는 서울둘레길 '창포원 안내센터'와 '매헌시민의숲 안내센터'에서 발급받을 수 있습니다. (2026년 기준)"
+      "post_desc": "국내 대표 트레킹길! 서울둘레길 소개 서울을 한 바퀴 휘감는 총 연장 156.5km의 서울둘레길은 총 21개 코스로 서울의 역사, 문화, 자연생태 등을 스토리로 엮어 국내외 탐방객들이 느끼고, 배우고, 체험할 수 있도록 조성한 도보길입니다. 둘레길 곳곳에 휴게시설 neighborhood 북카페, 쉼터를 만들어 시민들이 자연스럽게 휴식을 취할 수 있게 했고, 전통 깊은 사찰과 유적지를 연결해 서울의 역사와 문화, 자연생태를 곳곳에서 체험할 수 있도록 조성하였습니다. 대중교통으로도 접근하기 쉬우며 코스별 이용시간을 2~4시간으로(5~10㎞)로 설정하여 누구나 안전하고 편안하게 이용할 수 있습니다. 서울둘레길에는 우체통을 재활용한 총 28개의 스탬프시설이 있으며, 스탬프에는 서울둘레길에서 만나는 역사, 문화, 자연생태의 모습이 담겨있습니다. 28개의 스탬프를 모두 찍은 분에게는(스탬프북 또는 앱 가능) 서울둘레길 완주인증서를 발급해 드리고 있습니다. 서울 둘레길 행사 및 정보에 관한 사항은 서울두드림길 홈페이지 에서 알아볼 수 있으며, 보다 자세한 사항은 서울둘레길 안내센터(02-779-7902~4, 09:00~18:00)로 문의하시면 됩니다. 서울 둘레길 코스에 대해 자주 묻는 질문 서울둘레길은 몇 개의 코스로 이루어져 있나요? 서울둘레길은 21개 코스로 이루어져 있습니다. 코스별 거리와 소요시간, 난이도 등 자세한 사항은 아래 홈페이지에서 확인할 수 있습니다. 서울 둘레길 코스 정보 알아보기 서울 둘레길 안내지도와 스탬프북은 어디서 받을 수 있나요? 총 4곳의 배부처에서 안내지도와 스탬프북을 받을 수 있습니다. (2026년 기준) • 창포원 안내센터 (02-779-7902~4) • 매헌시민의숲 안내센터 (070-4465-7905) • 서울시청 시민청 (02-739-7733) (운영종료) • 아차산 공원관리사무소 (02-450-1655) • 관악산 공원관리사무소 (02-879-6552) 서울 둘레길 완주인증서는 어디서 발급받을 수 있나요? 서울 둘레길 완주인증서는 서울둘레길 '창포원 안내센터'와 '매헌시민의숲 안내센터'에서 발급받을 수 있습니다. (2026년 기준)"
     }
   },
   "KOP015765": {
-    "updtDtText": "2026.08.18",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP015765",
       "lang_code_id": "ko",
@@ -116552,7 +116532,7 @@
       "post_sj": "용양봉저정공원",
       "sumry": " 63빌딩부터 한강대교와 북한산, 멀리 남산타워까지 한눈에 조망",
       "creat_dt_text": "2016.02.24",
-      "updt_dt_text": "2026.08.18",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "한류",
         "jyj",
@@ -116570,13 +116550,14 @@
         "슈주"
       ],
       "extra": {
+        "cmmn_use_time": "상시 개방",
         "cmmn_important": "인근의 노량진 근린공원과 헷갈리기 쉽습니다. 초행길에는 용양봉저정공원으로 향하는 길을 찾기 어려울 수 있으니 지도 앱을 이용해 가는 것을 추천합니다. 숨겨진 불꽃축제 명당중 하나입니다.",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
         "usage_fee": "무료"
       },
       "traffic": {
-        "zip_code": "156060",
+        "zip_code": "06908",
         "adres": "서울특별시 동작구 본동 산3-9",
         "adres2": "용양봉저정공원",
         "map_position_x": "126.9578133",
@@ -116591,7 +116572,7 @@
     }
   },
   "KOP015060": {
-    "updtDtText": "2026.09.10",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP015060",
       "lang_code_id": "ko",
@@ -116609,12 +116590,12 @@
       "post_sj": "한강",
       "sumry": "서울을 남과 북으로 나눈며 강변 양쪽으로 공원이나 여러 휴양시설이 다양함",
       "creat_dt_text": "2016.01.25",
-      "updt_dt_text": "2026.09.10",
+      "updt_dt_text": "2026.10.21",
       "tag": [
-        "도깨비야시장",
         " 크루즈",
         " 서울경치",
         "한강",
+        "도깨비야시장",
         " 한강공원",
         " 수영장",
         " 한강캠핑장",
@@ -116627,16 +116608,12 @@
         "cmmn_use_time": "24시간",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능",
-          "장애인 안내(휠체어 대여 및 기타)"
+          "장애인화장실"
         ],
         "business_days": "매일",
         "closed_days": "연중무휴"
       },
       "traffic": {
-        "zip_code": "150-010",
         "adres": "서울 영등포구 여의도동 2",
         "new_zip_code": "07243",
         "new_adres": "서울 영등포구 여의공원로 68",
@@ -116935,7 +116912,7 @@
     }
   },
   "KOP011395": {
-    "updtDtText": "2026.07.06",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP011395",
       "lang_code_id": "ko",
@@ -116953,7 +116930,7 @@
       "post_sj": "뚝섬유원지",
       "sumry": "뚝섬의 한강 변 일대에 조성된 시민공원으로 각종 편의시설이 구비",
       "creat_dt_text": "2014.01.17",
-      "updt_dt_text": "2026.07.06",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "뚝섬유원지",
         " 데이트코스",
@@ -116969,13 +116946,9 @@
       "extra": {
         "cmmn_telno": "02-3780-0521",
         "cmmn_use_time": "24시간 상시개방",
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능",
-          "엘리베이터",
-          "장애인 안내(휠체어 대여 및 기타)"
+          "장애인화장실"
         ],
         "business_days": "매일"
       },
@@ -122060,7 +122033,7 @@
     }
   },
   "KOP3iwfai": {
-    "updtDtText": "2026.10.13",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP3iwfai",
       "lang_code_id": "ko",
@@ -122076,7 +122049,7 @@
       "post_sj": "비나이다 익선점",
       "sumry": "익선동에서 즐기는 전통과 최신 AI 기술의 문화 체험",
       "creat_dt_text": "2026.10.08",
-      "updt_dt_text": "2026.10.13",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "AI운세",
         "이색체험",
@@ -122110,7 +122083,7 @@
     }
   },
   "KOP9rb5w8": {
-    "updtDtText": "2026.10.13",
+    "updtDtText": "2026.10.21",
     "detail": {
       "cid": "KOP9rb5w8",
       "lang_code_id": "ko",
@@ -122127,7 +122100,7 @@
       "post_sj": "후암동 108계단",
       "sumry": "아픈 역사와 긴 세월 주민들의 흔적을 품어온 계단",
       "creat_dt_text": "2026.10.08",
-      "updt_dt_text": "2026.10.13",
+      "updt_dt_text": "2026.10.21",
       "tag": [
         "후암동108계단",
         "해방촌",
@@ -122545,6 +122518,540 @@
         "safe_mng": "ul"
       },
       "post_desc": "홈즈앤루팡 종로점은 종로3가역과 익선동 한옥거리 가까이에 있는 프라이빗 룸형 보드게임카페입니다. 개별룸에서 친구·연인·가족끼리 편하게 다양한 보드게임을 즐길 수 있으며, 일부 룸에서는 닌텐도 게임과 OTT 콘텐츠도 이용할 수 있습니다. 게임 설명을 확인할 수 있는 전용 태블릿이 마련되어 있어 보드게임이 익숙하지 않은 방문객도 쉽게 게임을 시작할 수 있습니다. 바둑·화투·공기·윷놀이 등 한국에서 오랫동안 즐겨온 놀이도 직접 체험할 수 있습니다. 익선동과 인사동에서 한국의 전통적인 풍경을 둘러본 뒤, 실제 한국의 놀이문화를 경험해보는 색다른 코스로 연결하기 좋습니다. 음료와 간단한 식사 메뉴도 주문할 수 있으며 실내 공간이라 비나 더위·추위의 영향을 적게 받습니다. 자정까지 운영해 익선동·종묘·인사동 관광이나 저녁 식사 후 방문할 수 있는 종로의 야간 실내 놀거리로도 좋습니다."
+    }
+  },
+  "KOPe5whhh": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOPe5whhh",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPe5whhh,en:ENPe5whhh,ja:JPPe5whhh,zh-CN:CNPe5whhh,zh-TW:TCPe5whhh,ru:RUPe5whhh",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83127&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83129&fileTy=MEDIA&fileNo=2&thumbTy=M"
+      ],
+      "post_sj": "2026 풍납시장 야시장",
+      "sumry": "먹거리장터와 트로트·버스킹 공연, 체험 부스가 어우러진 풍납전통시장의 가을 야시장",
+      "schdul_info_bgnde": "2026.10.17",
+      "schdul_info_endde": "2026.10.17",
+      "place": "풍납전통시장 일대",
+      "creat_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "풍납시장",
+        "풍납시장야시장",
+        "풍납도깨비시장",
+        "야시장",
+        "송파축제",
+        "전통시장",
+        "먹거리장터",
+        "버스킹"
+      ],
+      "extra": {
+        "cmmn_telno": "02-472-2050",
+        "cmmn_hmpg_url": "https://blog.naver.com/happysongpa/224440399704",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "13:00 - 21:00",
+        "cmmn_important": "시장에서 1만 원 이상 구매한 영수증을 제출하면 생맥주 1잔 또는 음료를 받을 수 있습니다.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "무료 (먹거리 개별 구매)"
+      },
+      "traffic": {
+        "adres": "서울 송파구 풍납동 79-3",
+        "new_zip_code": "05512",
+        "new_adres": "서울 송파구 바람드리길 37-1 풍납전통시장 일대",
+        "map_position_x": "127.120134455658",
+        "map_position_y": "37.5374991652534",
+        "subway_info": "지하철 5호선/8호선 천호역 10번출구, 362m"
+      },
+      "post_desc": "1960년 문을 연 '도깨비시장' 풍납전통시장에서 가을 야시장이 열립니다. 시장 상인들이 운영하는 먹거리장터와 푸드트럭에서 다양한 음식을 맛보고, 트로트·디제잉·버스킹 공연과 주민 노래자랑도 즐길 수 있습니다. 인생네컷, 비눗방울존, 타로, 핸드폰 그립톡 만들기 등 체험 프로그램도 마련됩니다. 시장에서 1만 원 이상 구매한 영수증을 제출하면 생맥주 1잔 또는 음료를 받을 수 있습니다. 행사에 앞서 10월 15일(목)~16일(금) 오후 1시부터는 시장에서 4만 원 이상 구매하면 온누리상품권 1만 원을 돌려주는 페이백 행사도 진행합니다(소진 시 종료)."
+    }
+  },
+  "KOPp62hf5": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOPp62hf5",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPp62hf5,en:ENPp62hf5,ja:JPPp62hf5,zh-CN:CNPp62hf5,zh-TW:TCPp62hf5,ru:RUPp62hf5",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83133&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83135&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 석촌시장 수제맥주 페스티벌",
+      "sumry": "국내 브루어리의 수제맥주와 푸드트럭, 라이브 공연이 함께하는 석촌시장의 가을 거리축제",
+      "schdul_info_bgnde": "2026.10.17",
+      "schdul_info_endde": "2026.10.18",
+      "place": "석촌시장 일대",
+      "creat_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "석촌시장",
+        "수제맥주",
+        "수제맥주페스티벌",
+        "맥주축제",
+        "송파축제",
+        "푸드트럭",
+        "야간축제",
+        "라이브공연"
+      ],
+      "extra": {
+        "cmmn_hmpg_url": "https://blog.naver.com/happysongpa/224440399704",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "15:00 - 21:00",
+        "cmmn_important": "주류는 만 19세 이상만 구매할 수 있으니 신분증을 지참하고, 음주 후에는 대중교통을 이용하세요.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "무료 입장 (맥주·먹거리 개별 구매)"
+      },
+      "traffic": {
+        "adres": "서울 송파구 석촌동 274",
+        "new_zip_code": "05696",
+        "new_adres": "서울 송파구 가락로12길 5 석촌시장 일대",
+        "map_position_x": "127.105449129898",
+        "map_position_y": "37.4998996555011",
+        "subway_info": "지하철 8호선/9호선 석촌역 6번출구, 734m"
+      },
+      "post_desc": "송파의 대표 야간 거리축제인 석촌시장 수제맥주 페스티벌이 올해도 열립니다. 국내 여러 브루어리의 수제맥주와 푸드트럭 먹거리를 즐기며 재즈·댄스·팝 라이브 공연과 주민 노래자랑을 함께 즐길 수 있습니다. '오늘만 특가쇼'와 아이들을 위한 '여기저기 키즈카페' 등 이벤트도 마련됩니다. 석촌시장 상인회가 주최하고 송파구와 서울특별시가 후원하며, 음주 후에는 운전하지 말고 대중교통을 이용해 주세요."
+    }
+  },
+  "KOPvnc8g3": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOPvnc8g3",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPvnc8g3,en:ENPvnc8g3,ja:JPPvnc8g3,zh-CN:CNPvnc8g3,zh-TW:TCPvnc8g3",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83130&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83132&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "야간 빛 축제 : 제31회 강동선사문화축제 ",
+      "sumry": "제31회 강동선사문화축제 기간, 서울 암사동 유적의 탐방로와 박물관을 빛과 미디어아트로 물들이는 야간 축제",
+      "schdul_info_bgnde": "2026.10.16",
+      "schdul_info_endde": "2026.10.18",
+      "place": "서울 암사동 유적 일대",
+      "creat_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "야간빛축제",
+        "강동선사문화축제",
+        "암사동유적",
+        "미디어파사드",
+        "미디어아트",
+        "나이트워크",
+        "강동구축제",
+        "무료축제"
+      ],
+      "extra": {
+        "cmmn_telno": "02-3425-5247 (강동구 문화예술과)",
+        "cmmn_hmpg_url": "https://www.gdsunsa.com",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "18:00 - 22:00",
+        "cmmn_important": "해가 진 뒤 유적지 탐방로를 따라 걸으며 선사시대 이야기를 담은 빛 연출과 박물관 외벽 미디어아트 공연을 함께 즐겨 보세요.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 강동구 암사동 139-2",
+        "new_zip_code": "05239",
+        "new_adres": "서울 강동구 올림픽로 875 (암사동, 서울 암사동 유적)",
+        "map_position_x": "127.130833358875",
+        "map_position_y": "37.5598523707759",
+        "subway_info": "지하철 8호선 암사역사공원역 3번출구, 688m"
+      },
+      "post_desc": "제31회 강동선사문화축제 기간 동안 서울 암사동 유적에서 야간 빛 축제와 미디어 파사드가 펼쳐집니다. 유적지 탐방로를 따라 선사시대의 네 가지 이야기를 빛으로 풀어낸 몰입형 나이트 워크가 조성되고, 박물관 외벽에 투사되는 미디어 영상과 배우들의 현장 퍼포먼스가 어우러진 미디어아트 공연도 선보입니다. '서울의 시작, 암사'를 주제로 열리는 강동선사문화축제는 6000년 전 신석기시대 유적인 서울 암사동 유적을 무대로 한 역사문화축제로, 문화체육관광부 '2026~2027 예비축제'에 서울 지역 축제로는 유일하게 선정됐습니다. 낮에는 선사 바비큐, 신석기 고고학 체험스쿨 등 체험 프로그램과 공연이 이어지고, 개막일에는 드론쇼, 마지막 날에는 불꽃쇼가 펼쳐집니다."
+    }
+  },
+  "KOP61tdfp": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOP61tdfp",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP61tdfp,en:ENP61tdfp,ja:JPP61tdfp,zh-CN:CNP61tdfp,zh-TW:TCP61tdfp,ru:RUP61tdfp",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83093&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83095&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83096&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83097&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83098&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83099&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "K-한복 퍼레이드 시리즈 / K-Hanbok Parade Series",
+      "sumry": "전통 의복을 현대적인 감각으로 재해석한 특별한 공연",
+      "schdul_info_bgnde": "2026.09.12",
+      "schdul_info_endde": "2026.11.01",
+      "place": "더현대 서울 1층",
+      "creat_dt_text": "2026.10.20",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "서울",
+        "여의도",
+        "서울",
+        "쇼핑",
+        "전통",
+        "체험",
+        "한복",
+        "포토스팟",
+        "더현대"
+      ],
+      "extra": {
+        "cmmn_telno": "02-1588-3650",
+        "cmmn_hmpg_url": "https://litt.ly/thehyundaiseoul_global",
+        "cmmn_hmpg_lang": "영어,일어,중국어(간체)",
+        "cmmn_use_time": "월~목: 10:30~20:00 / 금~일 및 공휴일: 10:30~20:30",
+        "cmmn_important": "[ 조선의 오트 쿠튀르, 현대를 걷다 ]\r\nㆍ09.12 – 10.04, 매주 토·일 \r\n[ 한글의 옷, 현대를 걷다 ]\r\nㆍ10.9(금) & 10.10(토)\r\n[ 황금왕국 신라, 현대를 걷다 ]\r\nㆍ10.17 – 11.01, 매주 토·일",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인화장실",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 영등포구 여의도동 22",
+        "new_zip_code": "07335",
+        "new_adres": "서울 영등포구 여의대로 108 더현대 서울",
+        "map_position_x": "126.929108448093",
+        "map_position_y": "37.5252014942155",
+        "subway_info": "지하철 5호선/9호선 여의도역 3번출구, 500m (지하 무빙워크로 연결)"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "K-한복 퍼레이드 시리즈 전통 의복을 현대적인 감각으로 재해석한 특별한 공연을 만나보세요. 더현대 서울 1층 순회 공연 9.12(토) – 11.1(일), 매주 토·일 오후 3시 / 4시 ※ 10.11(일) 공연은 진행되지 않으며, 10.9(금) 한글날 특별공연으로 대체됩니다. [ 조선의 오트 쿠튀르, 현대를 걷다 ] ㆍ09.12 – 10.04, 매주 토·일 [ 한글의 옷, 현대를 걷다 ] ㆍ10.9(금) & 10.10(토) [ 황금왕국 신라, 현대를 걷다 ] ㆍ10.17 – 11.01, 매주 토·일 퍼레이드 관람 후 포토 이벤트에도 참여해 보세요."
+    }
+  },
+  "KOP3pa1em": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOP3pa1em",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP3pa1em,en:ENP3pa1em,ja:JPP3pa1em,zh-CN:CNP3pa1em,zh-TW:TCP3pa1em,ru:RUP3pa1em",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83136&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83138&fileTy=MEDIA&fileNo=2&thumbTy=M"
+      ],
+      "post_sj": "월드뮤직콘서트 〈Plastic Island〉",
+      "sumry": "폐플라스틱으로 만든 악기와 세계 민속악기로 지구를 노래하는 월드뮤직 그룹 반디의 콘서트",
+      "schdul_info_bgnde": "2026.10.23",
+      "schdul_info_endde": "2026.10.24",
+      "place": "호원아트홀",
+      "creat_dt_text": "2026.10.19",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "반디",
+        "플라스틱아일랜드",
+        "월드뮤직",
+        "환경콘서트",
+        "업사이클링악기",
+        "공연봄날",
+        "가족공연",
+        "무료공연"
+      ],
+      "extra": {
+        "cmmn_telno": "02-542-2695",
+        "cmmn_hmpg_url": "https://www.springday.or.kr/niabbs5/inc.php?inc=sub2-2_list_img_in2&cat=%EC%9D%8C%EC%95%85&k_gubun2=2&kkno=1c9ac0159c94d8d0cbedc973445af2da&gubun2=",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "10.23.(금) 19:30 / 10.24.(토) 14:00 (약 60분)",
+        "cmmn_important": "청소년 증빙자료를 꼭 지참하세요. 청소년을 동반하지 않으면 입장이 제한될 수 있으며, 티켓은 공연 1시간 전부터 매표소에서 교환합니다.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "무료 (네이버 예약, 1계정 최대 5석)"
+      },
+      "traffic": {
+        "adres": "서울 강동구 성내동 435-9",
+        "new_zip_code": "05406",
+        "new_adres": "서울 강동구 성안로 30 호원아트홀",
+        "map_position_x": "127.130305009671",
+        "map_position_y": "37.5262902042304",
+        "subway_info": "지하철 5호선 둔촌동역 3번출구, 724m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "태평양을 떠도는 거대한 플라스틱 쓰레기 섬에서 영감을 받은 월드뮤직 콘서트 〈Plastic Island〉입니다. 월드뮤직 그룹 반디가 직접 모은 폐플라스틱으로 만든 악기를 국악기, 세계 민속악기와 함께 연주하며 자연과 회복, 지구를 위한 작은 실천의 메시지를 전합니다. 관객이 함께 리듬을 만드는 참여형 공연으로, 공연 시간은 약 60분입니다. 2016년 결성한 반디는 대금·세계 관악기의 이경구, 월드 퍼커션의 유병욱, 기타·작곡의 조영덕으로 이루어진 트리오입니다. 서울시 청소년 공연 관람 사업 '공연봄날'의 공식 선정작으로, 청소년(8~19세)과 청소년을 동반한 가족이 관람할 수 있습니다."
+    }
+  },
+  "KOPnny5pl": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOPnny5pl",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPnny5pl,en:ENPnny5pl,ja:JPPnny5pl,zh-CN:CNPnny5pl,zh-TW:TCPnny5pl,ru:RUPnny5pl",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83124&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83126&fileTy=MEDIA&fileNo=2&thumbTy=M"
+      ],
+      "post_sj": "옴니버스 인형극 〈음마갱깽 인형극장〉",
+      "sumry": "덜미인형이 장단에 맞춰 춤추고 사물놀이를 연주하는 3막 옴니버스 전통 인형극",
+      "schdul_info_bgnde": "2026.10.30",
+      "schdul_info_endde": "2026.10.31",
+      "place": "KT&G 상상마당 대치아트홀",
+      "creat_dt_text": "2026.10.19",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "음마갱깽",
+        "인형극",
+        "전통인형극",
+        "전통연희",
+        "사물놀이",
+        "공연봄날",
+        "가족공연",
+        "무료공연"
+      ],
+      "extra": {
+        "cmmn_telno": "02-542-2695",
+        "cmmn_hmpg_url": "https://www.springday.or.kr/niabbs5/inc.php?inc=sub2-2_list_img_in2&cat=%EC%A0%84%ED%86%B5%EC%98%88%EC%88%A0&k_gubun2=2&kkno=6c4b761a28b734fe93831e3fb400ce87&gubun2=",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "10.30.(금) 19:30 / 10.31.(토) 14:00 (약 60분)",
+        "cmmn_important": "청소년 증빙자료를 꼭 지참하세요. 청소년을 동반하지 않으면 입장이 제한될 수 있으며, 티켓은 공연 1시간 전부터 매표소에서 교환합니다.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "무료 (공연봄날 누리집 사전 신청, 1계정 최대 5석)"
+      },
+      "traffic": {
+        "adres": "서울 강남구 대치동 1002",
+        "new_zip_code": "06176",
+        "new_adres": "서울 강남구 영동대로 416 KT&G타워 3층",
+        "map_position_x": "127.065326637295",
+        "map_position_y": "37.5065841136869",
+        "subway_info": "지하철 2호선 삼성역 2번출구, 336m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "연희공방 음마갱깽이 전통연희를 바탕으로 사물놀이·버나 등 전통예술을 현대적으로 재창작한 3막 옴니버스 인형극을 선보입니다. 덜미인형이 장단에 맞춰 춤추고 사물놀이를 연주하며, 전통연희를 전공한 예인들의 라이브 연주가 더해집니다. 박첨지·이시미·꼭두 등 전통 인형극의 대표 캐릭터가 등장하는 관객 참여형 공연으로, 올해는 강태공 인형과 변검술사 인형이 새로 합류했습니다. [구성] 1막 '어디 내 손주?' / 2막 '이시미거리' / 3막 '인형 사물놀이' 서울시 청소년 공연 관람 사업 '공연봄날'의 공식 선정작으로, 청소년(8~19세)과 청소년을 동반한 가족이 관람할 수 있습니다."
+    }
+  },
+  "KOPcxyopz": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOPcxyopz",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPcxyopz,en:ENPcxyopz,ja:JPPcxyopz,zh-CN:CNPcxyopz,zh-TW:TCPcxyopz,ru:RUPcxyopz",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83118&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83120&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "제35회 전국무용제 본선경연",
+      "sumry": "17개 시·도 대표 무용단이 창작 무대로 겨루는 국내 최대 지역 무용축제의 본선 경연",
+      "schdul_info_bgnde": "2026.10.06",
+      "schdul_info_endde": "2026.10.22",
+      "place": "나루아트센터 대공연장",
+      "creat_dt_text": "2026.10.16",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "전국무용제",
+        "무용공연",
+        "무용경연",
+        "한국무용",
+        "현대무용",
+        "발레",
+        "나루아트센터",
+        "무료공연"
+      ],
+      "extra": {
+        "cmmn_telno": "02-744-8066 (대한무용협회)",
+        "cmmn_hmpg_url": "https://dancecountry.koreadanceassociation.org",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "평일 19:30 / 주말 19:00",
+        "cmmn_important": "회차마다 출연하는 지역 대표 무용단이 다르니, 보고 싶은 지역의 경연 날짜를 확인하고 예약하세요.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "무료 (네이버 예약 선착순, 취학아동 이상 관람)"
+      },
+      "traffic": {
+        "adres": "서울 광진구 자양동 227-344",
+        "new_zip_code": "05065",
+        "new_adres": "서울 광진구 능동로 76 나루아트센터",
+        "map_position_x": "127.070576040786",
+        "map_position_y": "37.5375706269359",
+        "subway_info": "지하철 2호선/7호선 건대입구역 5번출구, 265m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "35회 만에 처음으로 서울에서 열리는 제35회 전국무용제의 본선 경연이 나루아트센터 대공연장에서 펼쳐집니다. 전국 17개 광역시·도 예선을 거친 대표 무용단이 한국무용·현대무용·발레를 아우르는 창작 작품으로 창작성·예술성·완성도를 겨룹니다. 1992년 '춤의 해'에 시작된 전국무용제는 국내 최대 규모의 지역 무용축제이며, 시상식과 폐막식은 10월 23일(금) 국립극장 달오름극장에서 열립니다. [경연 일정] 10.6.(화) 강원·전남 10.8.(목) 서울·광주 10.10.(토) 경남·제주 10.12.(월) 충남·대구 10.14.(수) 경북·세종 10.16.(금) 부산·울산 10.18.(일) 인천·대전 10.20.(화) 전북·충북 10.22.(목) 경기"
+    }
+  },
+  "KOP7vcc8b": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOP7vcc8b",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP7vcc8b,en:ENP7vcc8b,ja:JPP7vcc8b,zh-CN:CNP7vcc8b,zh-TW:TCP7vcc8b,ru:RUP7vcc8b",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83115&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83117&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "청소년을 위한 공명 콘서트 〈기린자리〉",
+      "sumry": "세계 민속악기와 국악기가 어우러지는 창작국악그룹 공명의 청소년 콘서트",
+      "schdul_info_bgnde": "2026.10.28",
+      "schdul_info_endde": "2026.10.28",
+      "place": "서강대학교 메리홀 대극장",
+      "creat_dt_text": "2026.10.16",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "기린자리",
+        "공명",
+        "국악콘서트",
+        "창작국악",
+        "공연봄날",
+        "청소년공연",
+        "서강대메리홀",
+        "무료공연"
+      ],
+      "extra": {
+        "cmmn_telno": "02-542-2695",
+        "cmmn_hmpg_url": "https://www.springday.or.kr/niabbs5/inc.php?inc=sub2-2_list_img_in2&cat=%EC%A0%84%ED%86%B5%EC%98%88%EC%88%A0&k_gubun2=2&kkno=140f6969d5213fd0ece03148e62e461e&gubun2=",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "19:30 (약 60분)",
+        "cmmn_important": "청소년 증빙자료를 꼭 지참하세요. 청소년을 동반하지 않으면 입장이 제한될 수 있으며, 티켓은 공연 1시간 전부터 매표소에서 교환합니다.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "무료 (공연봄날 누리집 사전 신청, 1계정 최대 5석)"
+      },
+      "traffic": {
+        "adres": "서울 마포구 신수동 1-1",
+        "new_zip_code": "04107",
+        "new_adres": "서울 마포구 백범로 35 (신수동, 서강대학교) 메리홀",
+        "map_position_x": "126.942979960696",
+        "map_position_y": "37.5514649610226",
+        "subway_info": "지하철 경의중앙선 서강대역 1번출구, 572m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "창작국악그룹 공명이 대표 공연을 청소년 눈높이에 맞춰 다시 꾸민 〈기린자리〉를 선보입니다. 세계 민속악기와 창작악기를 국악 음정에 맞게 개량해 전통악기와 함께 연주하고, 춤과 관객 참여 무대까지 어우러진 약 60분의 공연입니다. '기린자리', '연어이야기', '해바라기', 북청사자놀이를 모티브로 한 '흥', '아리랑' 등 9곡으로 구성됩니다. 1997년 데뷔한 공명은 대나무 악기 '공명'을 직접 고안한 그룹으로, 60여 개국에서 200회 이상 공연했습니다. 서울시 청소년 공연 관람 사업 '공연봄날'의 공식 선정작으로, 청소년(8~19세)과 청소년을 동반한 가족이 관람할 수 있습니다."
+    }
+  },
+  "KOPb8u9ni": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOPb8u9ni",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPb8u9ni,en:ENPb8u9ni,ja:JPPb8u9ni,zh-CN:CNPb8u9ni,zh-TW:TCPb8u9ni,ru:RUPb8u9ni",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83112&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83114&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "11월 외국어 전시해설 ",
+      "sumry": "다양한 문화적 배경을 가진 관람객을 위해 천경자 컬렉션《영혼을 울리는 바람을 향하여》을 대상으로 외국어 전시해설 프로그램 운영",
+      "schdul_info_bgnde": "2026.11.10",
+      "schdul_info_endde": "2026.11.25",
+      "place": "서울시립미술관 서소문본관 ",
+      "creat_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "서울시립미술관",
+        "도슨트",
+        "전시",
+        "미술관",
+        "천경자",
+        "외국어전시해설"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2124-8973, 8826",
+        "cmmn_hmpg_url": "https://sema.seoul.go.kr/kr/whatson/education/detail?exNo=0&acadmyEeNo=1593364&evtNo=0&glolangType=KOR",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "11월 10일 (화) 3pm - 영어\r\n11월 11일 (수) 3pm  - 프랑스어\r\n11월 12일 (목) 3pm  - 중국어\r\n11월 13일 (금) 3pm - 일본어\r\n11월 20일 (금) 6pm - 인도네시아어\r\n11월 25일 (수) 1pm  - 일본어",
+        "cmmn_important": "소요시간 : 30-40분\r\n모이는 장소 : 서울시립미술관 서소문본관 2층 천경자 상설전 전시장 앞\r\n※ 작품의 저작권 보호를 위해 전시장 내 작품 촬영은 불가하며 원활한 전시해설 진행을 위해 내용의 녹취가 제한됩니다.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "접근가능"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 중구 서소문동 37",
+        "new_zip_code": "04515",
+        "new_adres": "서울 중구 덕수궁길 61 (서소문동, 서울시립미술관)",
+        "map_position_x": "126.973699316136",
+        "map_position_y": "37.5641060692766",
+        "subway_info": "지하철 1호선/2호선 시청역 10번출구, 261m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "서울시립미술관은 다양한 문화적 배경을 가진 관람객을 위해 천경자 컬렉션《영혼을 울리는 바람을 향하여》을 대상으로 외국어 전시해설 프로그램을 운영합니다. 천경자의 작품 안에 담긴 작가의 삶과 예술세계를 각 언어별 전시해설을 통해 만나보시기 바랍니다. 외국인 관람객 여러분의 많은 관심과 참여 바랍니다."
+    }
+  },
+  "KOPw43vf1": {
+    "updtDtText": "2026.10.21",
+    "detail": {
+      "cid": "KOPw43vf1",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPw43vf1,en:ENPw43vf1,ja:JPPw43vf1,zh-CN:CNPw43vf1,zh-TW:TCPw43vf1,ru:RUPw43vf1",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83121&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83123&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "[공연봄날X서울어텀페스타] 공연봄날 페스티벌 DAY2",
+      "sumry": "서울어린이대공원 숲속의 무대에서 서커스·발레·국악 공연을 하루 종일 즐기는 무료 야외 페스티벌",
+      "schdul_info_bgnde": "2026.10.17",
+      "schdul_info_endde": "2026.10.17",
+      "place": "서울어린이대공원 숲속의 무대",
+      "creat_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.21",
+      "tag": [
+        "공연봄날",
+        "서울어텀페스타",
+        "공연봄날페스티벌",
+        "야외공연",
+        "서울어린이대공원",
+        "서커스",
+        "발레",
+        "무료공연"
+      ],
+      "extra": {
+        "cmmn_telno": "02-542-2695",
+        "cmmn_hmpg_url": "https://www.springday.or.kr",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "12:00부터 (마지막 공연 17:30)",
+        "cmmn_important": "사전예약(10월 15일 18시 마감)을 하면 굿즈를 받을 수 있고, 예약하지 않아도 현장에서 선착순으로 자유롭게 관람할 수 있습니다.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 광진구 능동 18",
+        "new_zip_code": "04991",
+        "new_adres": "서울 광진구 능동로 216 (능동, 어린이대공원)",
+        "map_position_x": "127.078770241307",
+        "map_position_y": "37.5520117940291",
+        "subway_info": "지하철 7호선 어린이대공원역 1번출구, 520m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "실내 극장에서 만나던 '공연봄날'이 서울어텀페스타와 함께 가을 야외 페스티벌로 찾아옵니다. 서울어린이대공원 숲속의 무대에서 서커스, 발레, 전통연희 등 다양한 장르의 공연을 무료로 즐길 수 있습니다. '공연봄날'은 서울시가 청소년의 공연 관람을 지원하는 사업입니다. [프로그램] 12:00 공연봄날 예술 워크숍 〈원데이 오픈 클래스: 무용 편〉 14:00 축하공연 – 리수스 콰르텟과 클라우디아 김 (현악 사중주·반도네온) 15:00 휠러스 – 차이니즈 폴 서커스 드라마 〈U's again(젊음 다시)〉 15:50 리틀엔젤스예술단 〈HARMONY(하모니)〉 16:40 오름새 – 밴드 사운드와 전통연희가 어우러진 〈FIT: 연희의 새물결〉 17:30 와이즈 발레단 – 발레·마임 참여형 공연 〈발레로, 세계로〉"
     }
   }
 }
