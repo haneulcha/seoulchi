@@ -65,48 +65,6 @@
       }
     },
     {
-      "id": "vs-KOP038489",
-      "source": "visit-seoul",
-      "title": "자수, 꽃이 피다",
-      "summary": "여인들의 마음을 담은 문양의 의미와 자수 기법을 소개하는 전시",
-      "category": "전시회",
-      "place": "자수, 꽃이 피다",
-      "address": "서울 종로구 율곡로3길 4 (안국동, 서울공예박물관)",
-      "lat": 37.5766481740232,
-      "lng": 126.983533363501,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=38489&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "linkUrl": "https://craftmuseum.seoul.go.kr/exhibit/plan/view/31",
-      "isFree": false,
-      "subwayInfo": "지하철 3호선 안국역 1번 출구,  136m",
-      "tags": [
-        "서울전시추천",
-        "전시회데이트",
-        "서울볼거리",
-        "서울",
-        "자수꽃이피다",
-        "서울실내놀거리",
-        "공예역사",
-        "자수전시",
-        "비오는날",
-        "박물관데이트",
-        "서울공예박물관",
-        "서울실내데이트추천",
-        "직물공예",
-        "서울상설전시"
-      ],
-      "kind": "place",
-      "useTime": "10:00 ~ 18:00 (17:30 입장 마감)\r\n금요일은 21:00까지 야간개관합니다.",
-      "closedDays": "월요일",
-      "hours": {
-        "open": "10:00",
-        "close": "18:00",
-        "closedWeekdays": [
-          1,
-          5
-        ]
-      }
-    },
-    {
       "id": "vs-KOP038487",
       "source": "visit-seoul",
       "title": "장인, 세상을 이롭게 하다",
@@ -5946,16 +5904,16 @@
       "isFree": true,
       "subwayInfo": "지하철 6호선 월드컵경기장역 4번 출구,  696m",
       "tags": [
-        "난지천공원",
         "월드컵공원",
-        "상암"
+        "상암",
+        "난지천공원"
       ],
       "kind": "place",
-      "useTime": "24시간",
+      "useTime": "1~3월, 10~12월:06:00~21:00\r\n4~9월::06:00~22:00",
       "closedDays": "연중무휴",
       "hours": {
-        "open": "00:00",
-        "close": "24:00",
+        "open": "06:00",
+        "close": "21:00",
         "closedWeekdays": []
       }
     },
@@ -6832,7 +6790,7 @@
       "lat": 37.5812122452058,
       "lng": 127.067594333995,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=29459&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 1호선/경의중앙선  청량리역 4번 출구, 2230 지선 버스 탑승, 배봉초등학교.전농우성아파트 정류장, 703m",
       "tags": [
         "아이와함께",
@@ -6851,13 +6809,7 @@
         "서울산책길"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP029458",
@@ -6937,7 +6889,7 @@
       "lat": 37.534830968963725,
       "lng": 126.98702937858346,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=29239&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 6호선 녹사평역,  115m",
       "tags": [
         "지하예술정원",
@@ -6948,8 +6900,6 @@
         "이태원"
       ],
       "kind": "place",
-      "useTime": "05:30~ 익일 01:00",
-      "closedDays": "연중무휴",
       "hours": null
     },
     {
@@ -7041,15 +6991,15 @@
       "isFree": true,
       "subwayInfo": "지하철 7호선 어린이대공원역 2번 출구,  994m",
       "tags": [
-        "에티켓",
-        " 반려견놀이터",
+        "반려견놀이터",
         " 동물원",
         "  반려견",
         " 어린이대공원역",
         " 놀이터",
         " 어린이대공원",
         " 애완동물",
-        " 광진구"
+        " 광진구",
+        "에티켓"
       ],
       "kind": "place",
       "useTime": "00:00 - 24:00 (동절기 12월~다음해 2월 휴장)",
@@ -7126,7 +7076,7 @@
       "lat": 37.5756034804899,
       "lng": 126.967833124699,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75387&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/parks/detailView.do?pIdx=106",
+      "linkUrl": "https://parks.seoul.go.kr/park/detailView.do?pIdx=106&key=2604070019",
       "isFree": true,
       "subwayInfo": "지하철 3호선 경복궁역 1번 출구,  337m",
       "tags": [
@@ -7188,14 +7138,14 @@
       "lat": 37.5723261902,
       "lng": 126.8818882942,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72613&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://parks.seoul.go.kr/template/sub/worldcuppark.do",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300022",
       "isFree": true,
       "subwayInfo": "지하철 6호선 월드컵경기장역 1번 출구,  맹꽁이전동차 매표소까지 약 803m \r\n지하철 6호선 월드컵경기장역 1번 출구,  3.3km",
       "tags": [
-        "상암노을공원",
         "아이들과가볼만한곳",
         "노을공원",
         "서울산책",
+        "상암노을공원",
         "서울캠핑장",
         "서울가볼만한곳",
         "노을공원캠핑장",
@@ -22964,7 +22914,7 @@
       "lat": 37.572269120979904,
       "lng": 126.80599997709584,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=32823&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 5호선 개화산역 2번 출구,  186 m",
       "tags": [
         "등린이를위한",
@@ -22981,13 +22931,7 @@
         "등린이코스"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP031922",
@@ -23031,7 +22975,7 @@
       "lat": 37.64228890356848,
       "lng": 126.95248442825088,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=29802&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 3호선 구파발역 2번 출구,  7211 지선버스 탑승, 하나고.삼천사.진관사입구 정류장,  1.7km",
       "tags": [
         "계곡",
@@ -23045,8 +22989,7 @@
         " 국립공원"
       ],
       "kind": "place",
-      "useTime": "P029802\r\n\r\n\r\n\r\nP029802\r\n\r\n\r\n\r\n\r\nP029802\r\n\r\n\r\n\r\n08:00~17:00",
-      "closedDays": "연중무휴",
+      "useTime": "P029802\r\n\r\n\r\n\r\n\r\nP029802\r\n\r\n\r\n\r\n08:00~17:00",
       "hours": {
         "open": "08:00",
         "close": "17:00",
@@ -23064,7 +23007,7 @@
       "lat": 37.637857107751806,
       "lng": 126.94651416798752,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=29800&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 3호선 구파발역 2번 출구, 7211번 버스 탑승 후 하나고,삼천사,진관사입구,  1.4km",
       "tags": [
         "풍경",
@@ -23078,13 +23021,7 @@
         " 진관사계곡"
       ],
       "kind": "place",
-      "useTime": "08:00~17:00",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "08:00",
-        "close": "17:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP029798",
@@ -23115,7 +23052,6 @@
         "도심속힐링"
       ],
       "kind": "place",
-      "useTime": "일출 전 2시간~일몰 후 2시간",
       "hours": null
     },
     {
@@ -23129,7 +23065,7 @@
       "lat": 37.601391112117774,
       "lng": 126.96195490976278,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=29797&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 3호선 경복궁역 3번 출구,  1711, 7018, 7016 지선버스 탑승, 자하문터널입구.석파정 정류장 하차,  514m",
       "tags": [
         "도롱뇽",
@@ -23142,13 +23078,7 @@
         " 종로구"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP029796",
@@ -23161,7 +23091,7 @@
       "lat": 37.48196969424573,
       "lng": 126.82366788952712,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=29796&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "linkUrl": "http://parks.seoul.go.kr/pureun",
+      "linkUrl": "https://botanicpark.seoul.go.kr/front/arboretum/arboretum.do",
       "isFree": true,
       "subwayInfo": "지하철 1호선 역곡역 1번 출구, 역곡역 남부 정류장  6615 지선버스 탑승, 푸른수목원 정류장 하차,  187m",
       "tags": [
@@ -23283,13 +23213,8 @@
         "산해맞이공원"
       ],
       "kind": "place",
-      "useTime": "상시개방",
       "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP027689",
@@ -23321,13 +23246,8 @@
         "서울풍경"
       ],
       "kind": "place",
-      "useTime": "00:00~24:00",
       "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP027688",
