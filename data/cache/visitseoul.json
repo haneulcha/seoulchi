@@ -84197,7 +84197,7 @@
     }
   },
   "KOP042078": {
-    "updtDtText": "2026.10.04",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOP042078",
       "lang_code_id": "ko",
@@ -84209,10 +84209,10 @@
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=36629&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=36630&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
-      "post_sj": "인천국제공항 제 1터미널 서울관광정보센터 (서편)",
+      "post_sj": "인천국제공항 제 1터미널 서울관광정보센터",
       "sumry": "인천국제공항 서편에 위치한 인천국제공항 서울관광정보센터",
       "creat_dt_text": "2022.10.27",
-      "updt_dt_text": "2026.10.04",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "제1터미널",
         "서편",
@@ -84220,20 +84220,20 @@
         "관광정보센터"
       ],
       "extra": {
-        "cmmn_telno": "02-743-3272",
+        "cmmn_telno": "032-743-3269, 3270, 3272",
         "cmmn_hmpg_url": "https://www.sta.or.kr/",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "07:00~22:00 (식사 시간: 11:00~12:00, 17:00~18:00)",
+        "cmmn_use_time": "09:00~18:00",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "closed_days": "연중무휴"
       },
       "traffic": {
         "adres": "인천광역시 중구 운서동 2840 인천공항",
-        "adres2": "1층 입국장 10번출구",
+        "adres2": "1층 입국장 10번 출구 앞",
         "new_zip_code": "22382",
         "new_adres": "인천광역시 중구 공항로 272 (운서동) 인천국제공항 제1여객터미널",
-        "new_adres2": "1층 입국장 10번 출구",
+        "new_adres2": "1층 입국장 10번 출구 앞",
         "map_position_x": "126.452346738588",
         "map_position_y": "37.4476109663729",
         "subway_info": "지하철 공항철도 인천공항1터미널역  1번출구,  284m"
@@ -121825,7 +121825,7 @@
     }
   },
   "KOP3uv61j": {
-    "updtDtText": "2026.10.13",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOP3uv61j",
       "lang_code_id": "ko",
@@ -121842,7 +121842,7 @@
       "post_sj": "대학로극장 쿼드",
       "sumry": "무대와 객석이라는 형식이나 장르에 갇히지 않고 다양하고 새로운 예술적 실험을 시도하는 블랙박스 극장",
       "creat_dt_text": "2026.09.04",
-      "updt_dt_text": "2026.10.13",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "대학로",
         "공연장",
@@ -121885,7 +121885,7 @@
     }
   },
   "KOPzy2tqe": {
-    "updtDtText": "2026.10.20",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPzy2tqe",
       "lang_code_id": "ko",
@@ -121901,7 +121901,7 @@
       "post_sj": "클로버베이킹 홍대 (Clover Baking Hongdae)",
       "sumry": "한국에서 유행하는 디저트를 초보자도 쉽고 재미있게 만들어 보는 홍대 실내 체험. 친구·연인과 함께 즐기는 예약제 소규모 디저트 클래스",
       "creat_dt_text": "2026.10.12",
-      "updt_dt_text": "2026.10.20",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "홍대 놀거리",
         "홍대 실내 체험",
@@ -121939,7 +121939,7 @@
     }
   },
   "KOPlwiwxv": {
-    "updtDtText": "2026.10.13",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPlwiwxv",
       "lang_code_id": "ko",
@@ -121957,7 +121957,7 @@
       "post_sj": "전통주갤러리",
       "sumry": "한국 전통주의 맛과 멋을 체험할 수 있는 전통주 소통 공간",
       "creat_dt_text": "2026.10.12",
-      "updt_dt_text": "2026.10.13",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "북촌",
         "전통주시음",
@@ -122087,7 +122087,7 @@
     }
   },
   "KOPsambbq": {
-    "updtDtText": "2026.10.15",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPsambbq",
       "lang_code_id": "ko",
@@ -122104,11 +122104,11 @@
       "schdul_info_endde": "2026.11.01",
       "place": "낙원악기상가 전층",
       "creat_dt_text": "2026.10.13",
-      "updt_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.23",
       "tag": [
-        "기타쇼낙원2026",
         "낙원악기상가",
         "낙원상가",
+        "기타쇼낙원2026",
         "종로구",
         "서울행사",
         "서울축제",
@@ -122152,7 +122152,7 @@
     }
   },
   "KOP3rjagy": {
-    "updtDtText": "2026.10.15",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOP3rjagy",
       "lang_code_id": "ko",
@@ -122172,16 +122172,16 @@
       "schdul_info_endde": "2026.11.14",
       "place": "남산공원 일대",
       "creat_dt_text": "2026.10.13",
-      "updt_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.23",
       "tag": [
+        "남산나이트페스티벌",
         "서울축제",
         "피크닉",
         "산책",
         "파티",
         "남산공원",
         "N서울타워",
-        "백범광장",
-        "남산나이트페스티벌"
+        "백범광장"
       ],
       "extra": {
         "cmmn_telno": "070-5226-0759",
@@ -122202,7 +122202,7 @@
     }
   },
   "KOPm6ixio": {
-    "updtDtText": "2026.10.15",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPm6ixio",
       "lang_code_id": "ko",
@@ -122219,7 +122219,7 @@
       "schdul_info_endde": "2026.11.01",
       "place": "서울올림픽공원 테니스장",
       "creat_dt_text": "2026.10.12",
-      "updt_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "서울",
         "올림픽공원",
@@ -122317,7 +122317,7 @@
     }
   },
   "KOP1okmkw": {
-    "updtDtText": "2026.10.15",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOP1okmkw",
       "lang_code_id": "ko",
@@ -122334,7 +122334,7 @@
       "schdul_info_endde": "2026.10.17",
       "place": "스페이스톤(마포구 토정로 43-2)",
       "creat_dt_text": "2026.10.13",
-      "updt_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "조각",
         "도조",
@@ -122368,7 +122368,7 @@
     }
   },
   "KOPqjhy9c": {
-    "updtDtText": "2026.10.15",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPqjhy9c",
       "lang_code_id": "ko",
@@ -122385,7 +122385,7 @@
       "schdul_info_endde": "2026.10.24",
       "place": "서울시립미술관 서소문본관 ",
       "creat_dt_text": "2026.10.13",
-      "updt_dt_text": "2026.10.15",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "서울시립미술관",
         "외국어전시해설",
@@ -122480,7 +122480,7 @@
     }
   },
   "KOPe5whhh": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPe5whhh",
       "lang_code_id": "ko",
@@ -122497,7 +122497,7 @@
       "schdul_info_endde": "2026.10.17",
       "place": "풍납전통시장 일대",
       "creat_dt_text": "2026.10.15",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "풍납시장",
         "풍납시장야시장",
@@ -122530,7 +122530,7 @@
     }
   },
   "KOPp62hf5": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPp62hf5",
       "lang_code_id": "ko",
@@ -122547,7 +122547,7 @@
       "schdul_info_endde": "2026.10.18",
       "place": "석촌시장 일대",
       "creat_dt_text": "2026.10.15",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "석촌시장",
         "수제맥주",
@@ -122579,7 +122579,7 @@
     }
   },
   "KOPvnc8g3": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPvnc8g3",
       "lang_code_id": "ko",
@@ -122596,7 +122596,7 @@
       "schdul_info_endde": "2026.10.18",
       "place": "서울 암사동 유적 일대",
       "creat_dt_text": "2026.10.15",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "야간빛축제",
         "강동선사문화축제",
@@ -122628,7 +122628,7 @@
     }
   },
   "KOP61tdfp": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOP61tdfp",
       "lang_code_id": "ko",
@@ -122649,7 +122649,7 @@
       "schdul_info_endde": "2026.11.01",
       "place": "더현대 서울 1층",
       "creat_dt_text": "2026.10.20",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "서울",
         "여의도",
@@ -122669,10 +122669,10 @@
         "cmmn_important": "[ 조선의 오트 쿠튀르, 현대를 걷다 ]\r\nㆍ09.12 – 10.04, 매주 토·일 \r\n[ 한글의 옷, 현대를 걷다 ]\r\nㆍ10.9(금) & 10.10(토)\r\n[ 황금왕국 신라, 현대를 걷다 ]\r\nㆍ10.17 – 11.01, 매주 토·일",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
+          "장애인화장실",
           "장애인 전용 주차장",
           "접근가능",
           "엘리베이터",
-          "장애인화장실",
           "장애인 안내(휠체어 대여 및 기타)"
         ]
       },
@@ -122692,7 +122692,7 @@
     }
   },
   "KOP3pa1em": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOP3pa1em",
       "lang_code_id": "ko",
@@ -122709,16 +122709,16 @@
       "schdul_info_endde": "2026.10.24",
       "place": "호원아트홀",
       "creat_dt_text": "2026.10.19",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
-        "반디",
         "플라스틱아일랜드",
         "월드뮤직",
         "환경콘서트",
         "업사이클링악기",
         "공연봄날",
         "가족공연",
-        "무료공연"
+        "무료공연",
+        "반디"
       ],
       "extra": {
         "cmmn_telno": "02-542-2695",
@@ -122746,7 +122746,7 @@
     }
   },
   "KOPnny5pl": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPnny5pl",
       "lang_code_id": "ko",
@@ -122763,7 +122763,7 @@
       "schdul_info_endde": "2026.10.31",
       "place": "KT&G 상상마당 대치아트홀",
       "creat_dt_text": "2026.10.19",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "음마갱깽",
         "인형극",
@@ -122800,7 +122800,7 @@
     }
   },
   "KOPcxyopz": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPcxyopz",
       "lang_code_id": "ko",
@@ -122817,7 +122817,7 @@
       "schdul_info_endde": "2026.10.22",
       "place": "나루아트센터 대공연장",
       "creat_dt_text": "2026.10.16",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "전국무용제",
         "무용공연",
@@ -122854,7 +122854,7 @@
     }
   },
   "KOP7vcc8b": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOP7vcc8b",
       "lang_code_id": "ko",
@@ -122871,7 +122871,7 @@
       "schdul_info_endde": "2026.10.28",
       "place": "서강대학교 메리홀 대극장",
       "creat_dt_text": "2026.10.16",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "기린자리",
         "공명",
@@ -122908,7 +122908,7 @@
     }
   },
   "KOPb8u9ni": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPb8u9ni",
       "lang_code_id": "ko",
@@ -122925,7 +122925,7 @@
       "schdul_info_endde": "2026.11.25",
       "place": "서울시립미술관 서소문본관 ",
       "creat_dt_text": "2026.10.15",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "서울시립미술관",
         "도슨트",
@@ -122961,7 +122961,7 @@
     }
   },
   "KOPw43vf1": {
-    "updtDtText": "2026.10.21",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPw43vf1",
       "lang_code_id": "ko",
@@ -122978,7 +122978,7 @@
       "schdul_info_endde": "2026.10.17",
       "place": "서울어린이대공원 숲속의 무대",
       "creat_dt_text": "2026.10.15",
-      "updt_dt_text": "2026.10.21",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "공연봄날",
         "서울어텀페스타",
@@ -123014,7 +123014,7 @@
     }
   },
   "KOPaf3k2n": {
-    "updtDtText": "2026.10.22",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPaf3k2n",
       "lang_code_id": "ko",
@@ -123035,7 +123035,7 @@
       "schdul_info_endde": "2026.11.08",
       "place": "서울시립 북서울미술관",
       "creat_dt_text": "2026.10.21",
-      "updt_dt_text": "2026.10.22",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "서울시립미술관",
         "북서울미술관",
@@ -123080,7 +123080,7 @@
     }
   },
   "KOP4a39dr": {
-    "updtDtText": "2026.10.22",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOP4a39dr",
       "lang_code_id": "ko",
@@ -123098,14 +123098,14 @@
       "schdul_info_endde": "2026.11.07",
       "place": "한국영상자료원",
       "creat_dt_text": "2026.10.20",
-      "updt_dt_text": "2026.10.22",
+      "updt_dt_text": "2026.10.23",
       "tag": [
-        "인도영화제",
-        "인도영화"
+        "인도영화",
+        "인도영화제"
       ],
       "extra": {
         "cmmn_telno": "02-3153-2075",
-        "cmmn_hmpg_url": " www.koreafilm.or.kr",
+        "cmmn_hmpg_url": "https://www.koreafilm.or.kr",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "프로그램별 상이",
         "trrsrt_use_chrge": "F",
@@ -123123,7 +123123,7 @@
     }
   },
   "KOPzgviuw": {
-    "updtDtText": "2026.10.22",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPzgviuw",
       "lang_code_id": "ko",
@@ -123140,7 +123140,7 @@
       "schdul_info_endde": "2026.11.04",
       "place": "봉은사 및 필경재 등 강남구 일대",
       "creat_dt_text": "2026.10.20",
-      "updt_dt_text": "2026.10.22",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "서울웰니스트래블위크",
         "SWTW",
@@ -123172,7 +123172,7 @@
     }
   },
   "KOPiau197": {
-    "updtDtText": "2026.10.22",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPiau197",
       "lang_code_id": "ko",
@@ -123193,7 +123193,7 @@
       "schdul_info_endde": "2026.12.06",
       "place": "아르코미술관 제1, 2전시실 ",
       "creat_dt_text": "2026.10.21",
-      "updt_dt_text": "2026.10.22",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "대학로",
         "꿈밭극장",
@@ -123229,7 +123229,7 @@
     }
   },
   "KOPvuf6za": {
-    "updtDtText": "2026.10.22",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPvuf6za",
       "lang_code_id": "ko",
@@ -123248,7 +123248,7 @@
       "schdul_info_endde": "2026.11.08",
       "place": "국립극장 달오름",
       "creat_dt_text": "2026.10.20",
-      "updt_dt_text": "2026.10.22",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "국립무용단",
         "국립극장",
@@ -123292,7 +123292,7 @@
     }
   },
   "KOPexbs54": {
-    "updtDtText": "2026.10.22",
+    "updtDtText": "2026.10.23",
     "detail": {
       "cid": "KOPexbs54",
       "lang_code_id": "ko",
@@ -123310,7 +123310,7 @@
       "schdul_info_endde": "2026.11.04",
       "place": "서울돈화문국악당 공연장",
       "creat_dt_text": "2026.10.20",
-      "updt_dt_text": "2026.10.22",
+      "updt_dt_text": "2026.10.23",
       "tag": [
         "서울돈화문국악당",
         "경제시조",
@@ -123345,6 +123345,68 @@
         "safe_mng": "ul"
       },
       "post_desc": "국가무형유산 가사 이수자 문현이 12가사 완창 시리즈의 일환으로 선보이는 개인 독창 공연으로, 4가사의 절반창과 경제시조를 통해 전통 가사의 깊이와 아름다움을 조명합니다."
+    }
+  },
+  "KOPq79in8": {
+    "updtDtText": "2026.10.23",
+    "detail": {
+      "cid": "KOPq79in8",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPq79in8",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83359&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83361&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83362&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83363&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83364&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83365&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "에퀴녹스: 추분_춘분",
+      "sumry": "디자인과 공예의 경계를 넘나들며 우리 공예문화의 지평을 넓혀 온 장응복의 작업 세계를 조명하는 전시",
+      "schdul_info_bgnde": "2026.09.22",
+      "schdul_info_endde": "2027.03.07",
+      "place": "서울공예박물관 전시1동 3층 기획전시실",
+      "creat_dt_text": "2026.10.23",
+      "updt_dt_text": "2026.10.23",
+      "tag": [
+        "서울공예박물관",
+        "무료전시",
+        "서울전시",
+        "에퀴녹스:추분_춘분",
+        "현대공예",
+        "장응복"
+      ],
+      "extra": {
+        "cmmn_telno": "02-6450-7000",
+        "cmmn_hmpg_url": "https://craftmuseum.seoul.go.kr/exhibit/plan/view/194",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "화~일 10:00~18:00 ",
+        "cmmn_important": "사전예약 없이 개인 자유관람\r\n아카이브실, 보이는수장고, 보존과학실은 평일(화~금)에만 운영",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "closed_days": "월 휴관 "
+      },
+      "traffic": {
+        "adres": "서울 종로구 안국동 175-112",
+        "new_zip_code": "03061",
+        "new_adres": "서울 종로구 율곡로3길 4 (안국동, 서울공예박물관)",
+        "map_position_x": "126.983261339115",
+        "map_position_y": "37.576611194995",
+        "subway_info": "지하철 3호선 안국역 1번출구, 137m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "서울공예박물관은 디자인과 공예의 경계를 넘나들며 우리 공예문화의 지평을 넓혀 온 장응복의 작업 세계를 조명하는 《에퀴녹스: 추분_춘분》전을 개최합니다. 장응복은 규방공예와 민예에서 발견한 미감을 현대적인 무늬로 되살리고, 이를 직물과 가구, 생활 공간으로 확장해 왔습니다. 또한 장인과 디자이너, 서로 다른 재료와 기술을 연결하고 조율하며 오늘의 삶 속에서 공예가 새롭게 쓰이고 향유하는 방식을 모색해 왔습니다. 그에게 작업은 하나의 결과물을 만드는 일이 아니라, 각각의 고유함을 살려 새로운 관계와 질서를 만들어 가는 과정입니다."
     }
   }
 }
