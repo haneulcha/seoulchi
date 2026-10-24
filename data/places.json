@@ -5715,26 +5715,20 @@
       "lat": 37.5505019913233,
       "lng": 127.05231217144,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=40057&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 2호선 용답역 2번 출구,  355m",
       "tags": [
-        "데이트코스",
-        "성수가볼만한곳",
         "은행단풍길",
         "서울산책코스",
         "서울데이트길",
+        "데이트코스",
         "살곳이길",
         "성수동데이트",
-        "성수동산책길"
+        "성수동산책길",
+        "성수가볼만한곳"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP036947",
@@ -5776,7 +5770,7 @@
       "lat": 37.6244509765399,
       "lng": 127.093089721731,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77191&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 6호선 화랑대역 4번 출구,  857m",
       "tags": [
         "경춘선숲길",
@@ -5808,17 +5802,17 @@
       "isFree": true,
       "subwayInfo": "지하철 6호선 마포구청역 8번 출구,  2.2km",
       "tags": [
-        "자전거길",
         "산책로",
         "마포구",
-        "메타세쿼이아숲길"
+        "메타세쿼이아숲길",
+        "자전거길"
       ],
       "kind": "place",
-      "useTime": "24시간",
+      "useTime": "1~3월, 10~12월:06:00~21:00\r\n4~9월:06:00~22:00",
       "closedDays": "연중무휴",
       "hours": {
-        "open": "00:00",
-        "close": "24:00",
+        "open": "06:00",
+        "close": "21:00",
         "closedWeekdays": []
       }
     },
