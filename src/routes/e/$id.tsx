@@ -53,6 +53,12 @@ function Detail() {
   const { item, today } = Route.useLoaderData()
   // 요금: fee 원문이 있으면 그쪽(할인 안내가 들어 있다), 없고 무료면 '무료'
   const fee = item.fee ?? (item.isFree ? '무료' : undefined)
+  // 카카오맵 외부 딥링크 — SDK 키·번들이 없어 스펙 13장이 지도를 미룬 근거에 해당하지 않는다
+  const name = item.kind === 'event' ? item.place : item.title
+  const directions =
+    item.lat !== undefined && item.lng !== undefined
+      ? `https://map.kakao.com/link/to/${encodeURIComponent(name)},${item.lat},${item.lng}`
+      : undefined
 
   return (
     /*
@@ -103,16 +109,30 @@ function Detail() {
             )}
           </dl>
 
-          {/* 모바일에서는 엄지로 누르는 전폭 버튼, md 이상에서는 내용에 맞춘 폭 */}
-          {item.linkUrl && (
-            <a
-              href={item.linkUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-8 block rounded-lg bg-ink px-6 py-3 text-center font-medium text-surface md:inline-block"
-            >
-              원문 보기
-            </a>
+          {/* 모바일에서는 엄지로 누르는 전폭 버튼(세로로 쌓음), md 이상에서는 내용에 맞춘 폭으로 나란히 */}
+          {(item.linkUrl || directions) && (
+            <div className="mt-8 flex flex-col gap-3 md:flex-row">
+              {item.linkUrl && (
+                <a
+                  href={item.linkUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg bg-ink px-6 py-3 text-center font-medium text-surface"
+                >
+                  원문 보기
+                </a>
+              )}
+              {directions && (
+                <a
+                  href={directions}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg border border-neutral-border px-6 py-3 text-center font-medium text-ink"
+                >
+                  길찾기
+                </a>
+              )}
+            </div>
           )}
         </div>
       </div>
