@@ -1,8 +1,11 @@
 import { Link } from '@tanstack/react-router'
+import type { ReactNode } from 'react'
 import { ItemImage } from '~/components/ItemImage'
-import { formatDateRange } from '~/lib/dates'
+import { OpenNowBadge } from '~/components/OpenNowBadge'
+import { cardFacts, splitTitle, type CardFacts } from '~/lib/card-facts'
 import type { HomeEntry } from '~/lib/home'
-import type { EventItem, PlaceItem } from '~/types/item'
+import { districtFromAddress } from '~/pipeline/select-catalog'
+import type { PlaceItem } from '~/types/item'
 
 /**
  * 행사 이미지는 거의 전부 세로 포스터다 — 실측한 원본 비율이 0.67~0.71에 몰려 있다.
@@ -11,20 +14,41 @@ import type { EventItem, PlaceItem } from '~/types/item'
  */
 const POSTER = 'aspect-[3/4]'
 
-/** 요금 한 조각. fee 원문 우선(할인 안내가 들어 있다), 없고 무료면 '무료', 둘 다 없으면 생략 — 상세(Task 9)와 같은 규칙 */
-function Fee({ item }: { item: EventItem }) {
-  const fee = item.fee ?? (item.isFree ? '무료' : undefined)
-  if (!fee) return null
-  return <span className="text-success-text"> · {fee}</span>
+/** 제목 맨 앞 대괄호 기관명은 제목 아래 작은 줄로 내린다(PRODUCT.md 안티레퍼런스 1번) */
+export function CardTitle({ title, className }: { title: string; className: string }) {
+  const t = splitTitle(title)
+  return (
+    <>
+      <h3 className={className}>{t.title}</h3>
+      {t.org && <p className="truncate text-xs text-ink-subtle">{t.org}</p>}
+    </>
+  )
 }
 
-/** 장소 · 기간 · 요금 한 줄. 카드 종류가 달라도 같은 순서로 읽히게 한다 */
-function MetaLine({ item, today, className }: { item: EventItem; today: string; className: string }) {
+/**
+ * 카드 5종 공통의 사실 두 줄. 고정 줄(어디 · 거리 · 시간)은 늘 같은 자리에 있고,
+ * 조건부 줄(가격 · 남은 기간)은 조각이 없으면 통째로 접는다. badge는 시간 뒤에 붙는다(지금 열림).
+ */
+export function FactLines({
+  facts, badge, className = 'text-sm',
+}: { facts: CardFacts; badge?: ReactNode; className?: string }) {
+  const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
   return (
-    <p className={className}>
-      {item.place} · {formatDateRange(item.startDate, item.endDate, today)}
-      <Fee item={item} />
-    </p>
+    <>
+      <p className={`mt-1 truncate text-ink-muted ${className}`}>
+        {fixed}
+        {badge}
+      </p>
+      {(facts.price || facts.deadline) && (
+        <p className={`truncate text-ink-muted ${className}`}>
+          {facts.price && (
+            <span className={facts.price === '무료' ? 'text-success-text' : undefined}>{facts.price}</span>
+          )}
+          {facts.price && facts.deadline && ' · '}
+          {facts.deadline}
+        </p>
+      )}
+    </>
   )
 }
 
@@ -56,8 +80,8 @@ export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: str
       />
       {/* 제목·메타는 붙이고(mt-1) 코멘트는 떼어 놓는다(mt-2) — 코멘트는 사실이 아니라 목소리다 */}
       <div className="min-w-0 md:mt-3">
-        <h3 className="font-bold md:text-lg">{e.title}</h3>
-        <MetaLine item={e} today={today} className="mt-1 text-sm text-ink-muted" />
+        <CardTitle title={e.title} className="font-bold md:text-lg" />
+        <FactLines facts={cardFacts(e, { today })} />
         {/* 코멘트는 있을 때만 — 운영 배치(rule)는 reason이 빈 문자열이다. 빈 자리를 남기지 않는다 */}
         {entry.reason !== '' && <p className="mt-2 text-sm text-ink">{entry.reason}</p>}
       </div>
@@ -80,8 +104,8 @@ export function CompactEventRow({ entry, today }: { entry: HomeEntry; today: str
   const e = entry.item
   return (
     <Link to="/e/$id" params={{ id: e.id }} className="block border-t border-neutral-border py-3">
-      <h3 className="line-clamp-2 font-medium">{e.title}</h3>
-      <MetaLine item={e} today={today} className="mt-1 truncate text-sm text-ink-muted" />
+      <CardTitle title={e.title} className="line-clamp-2 font-medium" />
+      <FactLines facts={cardFacts(e, { today })} />
       {entry.reason !== '' && <p className="truncate text-sm text-ink-subtle">{entry.reason}</p>}
     </Link>
   )
@@ -103,8 +127,13 @@ export function PlaceCard({ place }: { place: PlaceItem }) {
         className="aspect-[4/3] w-full rounded-lg object-cover"
       />
       {/* 좁은 칸에서 한 줄 truncate면 "의학박물관 (구 대한…"이 된다. 두 줄까지 허용한다 */}
-      <h3 className="mt-2 line-clamp-2 text-sm font-medium">{place.title}</h3>
-      {place.subwayInfo && <p className="truncate text-xs text-ink-subtle">{place.subwayInfo}</p>}
+      <CardTitle title={place.title} className="mt-2 line-clamp-2 text-sm font-medium" />
+      {/* 장소 원본은 place === title이고 district가 없다 — 주소에서 파생하지 않으면 제목이 한 번 더 찍힌다 */}
+      <FactLines
+        facts={cardFacts({ ...place, district: place.district ?? districtFromAddress(place.address) }, {})}
+        badge={<OpenNowBadge hours={place.hours ?? null} />}
+        className="text-xs"
+      />
     </Link>
   )
 }
