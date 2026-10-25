@@ -18,6 +18,7 @@ export interface SeoulCultureRow {
   LAT?: string
   IS_FREE?: string
   HMPG_ADDR?: string
+  PRO_TIME?: string
   [key: string]: unknown
 }
 
@@ -104,6 +105,7 @@ export class SeoulCultureSource implements EventSource<SeoulCultureRow, SeoulCul
         linkUrl: row.HMPG_ADDR?.trim() || row.ORG_LINK?.trim() || undefined,
         isFree: row.IS_FREE?.trim() === '무료',
         fee: row.USE_FEE?.trim() || undefined,
+        time: row.PRO_TIME?.trim() || undefined,
         startDate,
         endDate,
       })

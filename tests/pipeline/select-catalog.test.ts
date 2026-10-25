@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { buildCatalogIndex, districtFromAddress, selectCatalog } from '~/pipeline/select-catalog'
+import { districtFromAddress } from '~/lib/district'
+import { buildCatalogIndex, selectCatalog } from '~/pipeline/select-catalog'
 import { catalogIndexSchema } from '~/types/files'
 import type { EventItem, PlaceItem } from '~/types/item'
 
@@ -85,8 +86,9 @@ function fullEvent(): EventItem {
     category: '전시/미술', place: '시립미술관', district: '중구',
     startDate: '2026-09-03', endDate: '2026-11-30',
     lat: 37.56, lng: 126.97, isFree: true, imageUrl: 'https://example.com/p.jpg',
+    time: '10:00~18:00', fee: '무료',
     // 슬림에서 빠져야 하는 필드들
-    address: '서울 중구 덕수궁길 61', linkUrl: 'https://example.com', fee: '무료',
+    address: '서울 중구 덕수궁길 61', linkUrl: 'https://example.com',
     summary: '요약', subwayInfo: '시청역',
   }
 }
@@ -121,6 +123,7 @@ describe('buildCatalogIndex', () => {
       id: 'sc-full', kind: 'event', title: '전시', group: '전시', district: '중구',
       place: '시립미술관', lat: 37.56, lng: 126.97, isFree: true,
       imageUrl: 'https://example.com/p.jpg', startDate: '2026-09-03', endDate: '2026-11-30',
+      time: '10:00~18:00', fee: '무료',
     })
     // 상세 전용 필드는 슬림에 없다 — payload 61KB가 200KB가 되는 것을 막는 결정(스펙 2장)
     expect(item).not.toHaveProperty('address')

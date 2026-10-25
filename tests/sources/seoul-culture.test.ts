@@ -60,6 +60,12 @@ describe('SeoulCultureSource.normalize', () => {
     expect(item!.lng).toBeUndefined()
   })
 
+  it('PRO_TIME 원문을 time으로 옮기고, 비어 있으면 생략한다', () => {
+    expect(source.normalize([{ ...row, PRO_TIME: ' 10:00~18:00 ' }])[0]).toMatchObject({ time: '10:00~18:00' })
+    expect(source.normalize([{ ...row, PRO_TIME: '' }])[0]).toMatchObject({ time: undefined })
+    expect(source.normalize([realRow])[0]).toMatchObject({ time: '19:30' })
+  })
+
   it('날짜가 없는 행은 버린다', () => {
     expect(source.normalize([{ ...row, STRTDATE: '', END_DATE: '' }])).toHaveLength(0)
   })

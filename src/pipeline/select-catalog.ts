@@ -1,5 +1,6 @@
 import { addDays } from '~/lib/dates'
 import { categoryGroup } from '~/lib/category'
+import { districtFromAddress } from '~/lib/district'
 import type { CatalogIndexFile, CatalogIndexItem } from '~/types/files'
 import type { EventItem, PlaceItem } from '~/types/item'
 
@@ -48,25 +49,6 @@ export function selectCatalog(
   return { events: selected, places, horizonEnd, anomalies }
 }
 
-/** 서울 25개 자치구. 하드코딩이 안전한 드문 경우 — 행정구역은 데이터보다 느리게 바뀐다 */
-const SEOUL_DISTRICTS = [
-  '강남구', '강동구', '강북구', '강서구', '관악구', '광진구', '구로구', '금천구',
-  '노원구', '도봉구', '동대문구', '동작구', '마포구', '서대문구', '서초구', '성동구',
-  '성북구', '송파구', '양천구', '영등포구', '용산구', '은평구', '종로구', '중구', '중랑구',
-] as const
-
-const DISTRICT_RE = new RegExp(SEOUL_DISTRICTS.join('|'))
-
-/**
- * 주소에서 자치구를 파생한다. 장소 원본에는 district가 0/733이지만
- * address가 714/733에 있고 705건에서 자치구가 뽑힌다(2026-08-31 실측).
- * places.json은 건드리지 않는다 — 슬림 투영 시점에만 쓰는 파생값이다.
- * 실패 시 undefined — 좌표 규칙과 같은 태도(없으면 필드 생략).
- */
-export function districtFromAddress(address?: string): string | undefined {
-  return address ? DISTRICT_RE.exec(address)?.[0] : undefined
-}
-
 /**
  * 슬림 투영(스펙 5장). 필드가 없으면 키 자체를 만들지 않는다 —
  * JSON.stringify의 undefined 탈락에 기대지 않고 여기서 생략을 보장한다.
@@ -84,6 +66,8 @@ export function buildCatalogIndex(sel: CatalogSelection, generatedAt: string): C
       ...(e.isFree !== undefined && { isFree: e.isFree }),
       ...(e.imageUrl !== undefined && { imageUrl: e.imageUrl }),
       startDate: e.startDate, endDate: e.endDate,
+      ...(e.time !== undefined && { time: e.time }),
+      ...(e.fee !== undefined && { fee: e.fee }),
     }
   })
 

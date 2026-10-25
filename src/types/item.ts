@@ -31,6 +31,8 @@ export const eventItemSchema = baseItemSchema.extend({
   kind: z.literal('event'),
   startDate: isoDateSchema,
   endDate: isoDateSchema,
+  /** 진행 시간 원문(PRO_TIME). 형식이 제각각이라 파싱하지 않는다 — useTime과 같은 규칙 */
+  time: z.string().optional(),
 })
 
 /** 0=일요일 ... 6=토요일 */

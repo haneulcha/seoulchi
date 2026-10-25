@@ -1,12 +1,12 @@
 import { Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useState, type ReactNode } from 'react'
+import { CardTitle, FactLines } from '~/components/cards'
 import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
-import {
-  FILTER_LABELS, formatDistance, type RelaxSuggestion, type TimelineGroup,
-} from '~/lib/browse-filter'
+import { FILTER_LABELS, type RelaxSuggestion, type TimelineGroup } from '~/lib/browse-filter'
 import { CHIP_GROUPS, type BrowseSearch } from '~/lib/browse-search'
-import { formatUpdatedAt, relativeDateLabel } from '~/lib/dates'
+import { cardFacts } from '~/lib/card-facts'
+import { formatUpdatedAt } from '~/lib/dates'
 import type {
   CatalogEventIndexItem, CatalogIndexFile, CatalogPlaceIndexItem,
 } from '~/types/files'
@@ -15,20 +15,13 @@ import type {
 const md = (iso: string) => `${Number(iso.slice(5, 7))}/${Number(iso.slice(8, 10))}`
 
 /**
- * 탐색 행사 행. 메타 한 줄은 자치구 · (거리) · (무료) · 상대 날짜 —
- * 스케치의 "성동 · 1.2km · 무료 · 오늘까지" 순서다. 값이 없는 조각은 접는다.
+ * 탐색 행사 행. 사실 두 줄은 카드 5종 공통(FactLines) — 홈과 같은 순서로 읽힌다.
  * ItemImage의 category에는 그룹을 넘긴다(슬림 항목에 원시 카테고리가 없다) —
  * 같은 그룹은 같은 폴백 색이므로 결정론은 유지된다.
  */
 export function BrowseEventRow({
   item, today, km,
 }: { item: CatalogEventIndexItem; today: string; km?: number }) {
-  const pieces = [
-    item.district,
-    km !== undefined ? formatDistance(km) : undefined,
-    item.isFree ? '무료' : undefined,
-    relativeDateLabel(item.startDate, item.endDate, today),
-  ].filter(Boolean)
   return (
     <Link to="/e/$id" params={{ id: item.id }} className="flex gap-3 border-t border-neutral-border py-3">
       <ItemImage
@@ -36,8 +29,8 @@ export function BrowseEventRow({
         className="aspect-[3/4] w-14 shrink-0 self-start rounded object-cover"
       />
       <div className="min-w-0">
-        <h3 className="line-clamp-2 font-medium">{item.title}</h3>
-        <p className="mt-0.5 truncate text-sm text-ink-muted">{pieces.join(' · ')}</p>
+        <CardTitle title={item.title} className="line-clamp-2 font-medium" />
+        <FactLines facts={cardFacts(item, { today, km })} />
       </div>
     </Link>
   )
@@ -51,11 +44,6 @@ export function BrowseEventRow({
 export function BrowsePlaceRow({
   item, km, hoursUnknownNote = false,
 }: { item: CatalogPlaceIndexItem; km?: number; hoursUnknownNote?: boolean }) {
-  const pieces = [
-    item.district,
-    km !== undefined ? formatDistance(km) : undefined,
-    item.isFree ? '무료' : undefined,
-  ].filter(Boolean)
   return (
     <Link to="/e/$id" params={{ id: item.id }} className="flex gap-3 border-t border-neutral-border py-3">
       <ItemImage
@@ -63,14 +51,18 @@ export function BrowsePlaceRow({
         className="aspect-[4/3] w-20 shrink-0 self-start rounded object-cover"
       />
       <div className="min-w-0">
-        <h3 className="line-clamp-2 font-medium">{item.title}</h3>
-        <p className="mt-0.5 truncate text-sm text-ink-muted">
-          {pieces.join(' · ')}
-          <OpenNowBadge hours={item.hours ?? null} />
-          {hoursUnknownNote && !item.hours && (
-            <span className="ml-2 text-xs text-ink-subtle">영업시간 미상</span>
-          )}
-        </p>
+        <CardTitle title={item.title} className="line-clamp-2 font-medium" />
+        <FactLines
+          facts={cardFacts(item, { km })}
+          badge={
+            <>
+              <OpenNowBadge hours={item.hours ?? null} />
+              {hoursUnknownNote && !item.hours && (
+                <span className="ml-2 text-xs text-ink-subtle">영업시간 미상</span>
+              )}
+            </>
+          }
+        />
       </div>
     </Link>
   )

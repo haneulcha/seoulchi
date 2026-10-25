@@ -49,6 +49,7 @@ export const catalogIndexItemSchema = z.discriminatedUnion('kind', [
     lat: z.number().min(-90).max(90).optional(), lng: z.number().min(-180).max(180).optional(),
     isFree: z.boolean().optional(), imageUrl: z.string().optional(),
     startDate: isoDateSchema, endDate: isoDateSchema,
+    time: z.string().optional(), fee: z.string().optional(),
   }),
   z.object({
     id: z.string(), kind: z.literal('place'), title: z.string().min(1),

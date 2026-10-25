@@ -70,6 +70,8 @@ export function relativeDateLabel(startDate: string, endDate: string, today: str
       const sat = addDays(today, 6 - wd)
       if (startDate === sat && endDate === addDays(sat, 1)) return '토·일'
     }
+    // 하루짜리에 '시작'을 붙이면 기간이 있는 것처럼 읽힌다 — 그날 하루로 말한다
+    if (startDate === endDate) return formatDay(startDate)
     return `${formatMonthDay(startDate)} 시작`
   }
   if (endDate === today) return '오늘까지'

@@ -46,10 +46,13 @@ function Home() {
         <p className="mt-1 text-xs text-ink-subtle">{data.updatedLabel}</p>
       </header>
 
-      {/* 3개라 md 이상에서 3단이 딱 한 줄로 떨어진다. 고아 칸이 없고 셋을 한 세트로 읽게 한다 */}
+      {/*
+        모바일은 가로로 넘기는 선반 — 화면 끝까지 흘러야 다음 카드가 보여 넘길 수 있다는 게 읽힌다(-mx로 PAGE 여백을 상쇄).
+        md 이상은 3단이 딱 한 줄로 떨어진다. 고아 칸이 없고 셋을 한 세트로 읽게 한다
+      */}
       <section>
         <h2 className="text-lg font-bold">이번 주 추천</h2>
-        <div className="mt-4 grid gap-6 md:grid-cols-3">
+        <div className="-mx-4 mt-4 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 sm:-mx-6 sm:scroll-px-6 sm:px-6 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0">
           {big.map((entry) => (
             <EventPosterCard key={entry.item.id} entry={entry} today={data.today} />
           ))}

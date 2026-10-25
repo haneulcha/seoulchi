@@ -82,6 +82,10 @@ describe('relativeDateLabel', () => {
     expect(relativeDateLabel('2026-09-03', '2026-11-30', TODAY)).toBe('9/3 시작')
   })
 
+  it('하루짜리 미래 행사는 시작이 아니라 그날로 말한다', () => {
+    expect(relativeDateLabel('2026-09-04', '2026-09-04', TODAY)).toBe('9/4(금)')
+  })
+
   it('다가오는 주말에 딱 맞으면 토·일', () => {
     expect(relativeDateLabel('2026-09-05', '2026-09-06', TODAY)).toBe('토·일')
   })
