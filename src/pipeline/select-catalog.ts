@@ -84,6 +84,8 @@ export function buildCatalogIndex(sel: CatalogSelection, generatedAt: string): C
       ...(e.isFree !== undefined && { isFree: e.isFree }),
       ...(e.imageUrl !== undefined && { imageUrl: e.imageUrl }),
       startDate: e.startDate, endDate: e.endDate,
+      ...(e.time !== undefined && { time: e.time }),
+      ...(e.fee !== undefined && { fee: e.fee }),
     }
   })
 
