@@ -90,6 +90,7 @@ function Detail() {
             {item.kind === 'event' && (
               <Fact label="기간" value={formatDateRange(item.startDate, item.endDate, today)} />
             )}
+            {item.kind === 'event' && <Fact label="시간" value={item.time} />}
             {item.kind === 'event' && (
               <Fact
                 label="장소"

@@ -42,7 +42,11 @@ export function cardFacts(
   if (item.kind === 'place') {
     // 장소 원본은 place === title이다 — 자치구가 없을 때 place로 메우면 제목이 한 번 더 찍힌다
     facts.where = district
-    if (item.hours) facts.time = `${item.hours.open}~${item.hours.close}`
+    // 파서는 '상시개방'을 00:00~24:00으로 읽는다(api-findings) — 사람 말로 되돌린다
+    if (item.hours) {
+      const { open, close } = item.hours
+      facts.time = open === '00:00' && close === '24:00' ? '24시간' : `${open}~${close}`
+    }
     return facts
   }
   facts.where = district ?? item.place

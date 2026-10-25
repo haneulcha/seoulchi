@@ -57,6 +57,8 @@ describe('cardFacts', () => {
     expect(cardFacts({ ...place, hours: { open: '05:00', close: '22:00', closedWeekdays: [] } }, {}).time)
       .toBe('05:00~22:00')
     expect(cardFacts({ ...place, hours: null }, {}).time).toBeUndefined()
+    expect(cardFacts({ ...place, hours: { open: '00:00', close: '24:00', closedWeekdays: [] } }, {}).time)
+      .toBe('24시간')
   })
 })
 
