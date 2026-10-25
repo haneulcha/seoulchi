@@ -1,5 +1,6 @@
 import { formatDistance } from '~/lib/browse-filter'
 import { addDays, relativeDateLabel } from '~/lib/dates'
+import { districtFromAddress } from '~/lib/district'
 import type { ParsedHours } from '~/types/item'
 
 /**
@@ -17,6 +18,7 @@ export type CardFacts = {
 /** EventItem·PlaceItem·카탈로그 슬림 항목이 모두 들어맞는 최소 모양 */
 export type CardFactsInput = {
   district?: string
+  address?: string
   place?: string
   isFree?: boolean
   fee?: string
@@ -32,15 +34,18 @@ export function cardFacts(
   item: CardFactsInput,
   { today, km }: { today?: string; km?: number },
 ): CardFacts {
+  const district = item.district ?? districtFromAddress(item.address)
   const facts: CardFacts = {
-    where: item.district ?? item.place,
     distance: km !== undefined ? formatDistance(km) : undefined,
     price: item.isFree ? '무료' : item.fee,
   }
   if (item.kind === 'place') {
+    // 장소 원본은 place === title이다 — 자치구가 없을 때 place로 메우면 제목이 한 번 더 찍힌다
+    facts.where = district
     if (item.hours) facts.time = `${item.hours.open}~${item.hours.close}`
     return facts
   }
+  facts.where = district ?? item.place
   facts.time = item.time
   // 오래 진행되는 행사의 'M/D까지'는 결정에 쓸모가 없다 — 곧 끝나거나 아직 시작 전일 때만 말한다
   if (today && (item.startDate > today || item.endDate <= addDays(today, DEADLINE_WINDOW_DAYS))) {

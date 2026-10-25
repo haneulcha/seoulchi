@@ -4,7 +4,6 @@ import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
 import { cardFacts, splitTitle, type CardFacts } from '~/lib/card-facts'
 import type { HomeEntry } from '~/lib/home'
-import { districtFromAddress } from '~/pipeline/select-catalog'
 import type { PlaceItem } from '~/types/item'
 
 /**
@@ -128,9 +127,8 @@ export function PlaceCard({ place }: { place: PlaceItem }) {
       />
       {/* 좁은 칸에서 한 줄 truncate면 "의학박물관 (구 대한…"이 된다. 두 줄까지 허용한다 */}
       <CardTitle title={place.title} className="mt-2 line-clamp-2 text-sm font-medium" />
-      {/* 장소 원본은 place === title이고 district가 없다 — 주소에서 파생하지 않으면 제목이 한 번 더 찍힌다 */}
       <FactLines
-        facts={cardFacts({ ...place, district: place.district ?? districtFromAddress(place.address) }, {})}
+        facts={cardFacts(place, {})}
         badge={<OpenNowBadge hours={place.hours ?? null} />}
         className="text-xs"
       />

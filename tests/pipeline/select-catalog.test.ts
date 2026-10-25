@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { buildCatalogIndex, districtFromAddress, selectCatalog } from '~/pipeline/select-catalog'
+import { districtFromAddress } from '~/lib/district'
+import { buildCatalogIndex, selectCatalog } from '~/pipeline/select-catalog'
 import { catalogIndexSchema } from '~/types/files'
 import type { EventItem, PlaceItem } from '~/types/item'
 

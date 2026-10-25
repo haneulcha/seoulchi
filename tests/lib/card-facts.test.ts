@@ -19,6 +19,14 @@ describe('cardFacts', () => {
     expect(cardFacts({ ...event, district: undefined }, { today: TODAY }).where).toBe('시립미술관')
   })
 
+  it('자치구가 없으면 주소에서 뽑고, 장소는 장소명(=제목)으로 메우지 않는다', () => {
+    const place = { kind: 'place' as const, place: '서울숲', title: '서울숲' }
+    expect(cardFacts({ ...place, address: '서울 성동구 뚝섬로 273' }, {}).where).toBe('성동구')
+    expect(cardFacts(place, {}).where).toBeUndefined()
+    expect(cardFacts({ ...event, district: undefined, address: '서울 중구 덕수궁길 61' }, { today: TODAY }).where)
+      .toBe('중구')
+  })
+
   it('km를 모르면 거리를 생략한다', () => {
     expect(cardFacts(event, { today: TODAY }).distance).toBeUndefined()
   })
