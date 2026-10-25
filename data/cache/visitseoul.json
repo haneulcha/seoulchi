@@ -85749,7 +85749,7 @@
     }
   },
   "KOP037160": {
-    "updtDtText": "2026.05.07",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP037160",
       "lang_code_id": "ko",
@@ -85767,7 +85767,7 @@
       "post_sj": "경의선 숲길",
       "sumry": "도심속의 녹지, 주민들의 산책로",
       "creat_dt_text": "2021.04.12",
-      "updt_dt_text": "2026.05.07",
+      "updt_dt_text": "2026.10.25",
       "tag": [
         "숲길",
         "서울놀거리",
@@ -85786,6 +85786,9 @@
         "나들이"
       ],
       "extra": {
+        "cmmn_telno": "02-719-8830",
+        "cmmn_hmpg_url": "https://parks.seoul.go.kr/content.do?key=2604300008",
+        "cmmn_hmpg_lang": "한국어,영어",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
       },
@@ -85849,7 +85852,7 @@
     }
   },
   "KOP037130": {
-    "updtDtText": "2026.09.27",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP037130",
       "lang_code_id": "ko",
@@ -85867,7 +85870,7 @@
       "post_sj": "일자산허브천문공원",
       "sumry": "24시간 이용 가능한 천문대가 있는 허브 공원",
       "creat_dt_text": "2021.04.08",
-      "updt_dt_text": "2026.09.27",
+      "updt_dt_text": "2026.10.25",
       "tag": [
         "서울가볼만한곳",
         "서울걷기좋은길",
@@ -85887,7 +85890,10 @@
         "cmmn_hmpg_lang": "한국어",
         "cmmn_important": "매년 7월부터 9월까지는 허브천문공원 내 작은 천문대에서 아이들을 대상으로 천문관측 프로그램도 운영되고 있습니다.",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [],
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "접근가능"
+        ],
         "usage_fee": "무료"
       },
       "traffic": {
@@ -85957,7 +85963,7 @@
     }
   },
   "KOP037010": {
-    "updtDtText": "2026.04.27",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP037010",
       "lang_code_id": "ko",
@@ -85975,7 +85981,7 @@
       "post_sj": "광진숲나루",
       "sumry": "천호대로 터널 상부에 위치한 근린공원",
       "creat_dt_text": "2021.02.09",
-      "updt_dt_text": "2026.04.27",
+      "updt_dt_text": "2026.10.25",
       "tag": [
         "서울드라이브",
         "근린공원",
@@ -85989,6 +85995,7 @@
         "disabled_facility": []
       },
       "traffic": {
+        "zip_code": "04982",
         "adres": "서울 광진구 광장동 401-14",
         "new_zip_code": "04982",
         "new_adres": "서울 광진구 천호대로 760 (광장동, 광진숲나루 전망대 개방화장실)",
@@ -86060,7 +86067,7 @@
     }
   },
   "KOP036989": {
-    "updtDtText": "2026.07.10",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP036989",
       "lang_code_id": "ko",
@@ -86078,7 +86085,7 @@
       "post_sj": "서초문화예술공원",
       "sumry": "플라타너스 숲이 예쁜 양재시민의 숲 제 3구역 공원",
       "creat_dt_text": "2021.02.08",
-      "updt_dt_text": "2026.07.10",
+      "updt_dt_text": "2026.10.25",
       "tag": [
         "서울공원",
         "서울단풍명소",
@@ -86093,17 +86100,11 @@
         "숲체험"
       ],
       "extra": {
-        "cmmn_telno": "02-2155-6864",
+        "cmmn_telno": "02-2155-6865",
         "cmmn_hmpg_url": "https://www.seocho.go.kr/site/seocho/04/10405010200002015070703.jsp",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(번체)",
-        "cmmn_use_time": "24시간",
-        "trrsrt_use_chrge": "F",
-        "disabled_facility": [
-          "접근가능",
-          "장애인화장실"
-        ],
-        "business_days": "매일",
-        "closed_days": "연중무휴"
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
       },
       "traffic": {
         "adres": "서울 서초구 양재동 200",
@@ -86121,7 +86122,7 @@
     }
   },
   "KOP036973": {
-    "updtDtText": "2026.05.07",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP036973",
       "lang_code_id": "ko",
@@ -86139,7 +86140,7 @@
       "post_sj": "서순라길",
       "sumry": "종묘를 순찰하는 순라청 근처 길.",
       "creat_dt_text": "2021.02.05",
-      "updt_dt_text": "2026.05.07",
+      "updt_dt_text": "2026.10.25",
       "tag": [
         "산책하기좋은곳",
         "단풍명소",
@@ -114970,7 +114971,7 @@
     }
   },
   "KOP038786": {
-    "updtDtText": "2026.05.11",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP038786",
       "lang_code_id": "ko",
@@ -114987,7 +114988,7 @@
       "post_sj": "응봉산 야경",
       "sumry": "반짝이는 서울 도심 야경을 즐길 수 있는 곳",
       "creat_dt_text": "2021.09.14",
-      "updt_dt_text": "2026.05.11",
+      "updt_dt_text": "2026.10.25",
       "tag": [
         "서울야경",
         "서울여행",
@@ -115006,7 +115007,9 @@
         "cmmn_telno": "02-2286-6061",
         "cmmn_use_time": "00:00 ~ 24:00",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [],
+        "disabled_facility": [
+          "장애인화장실"
+        ],
         "business_days": "매일",
         "closed_days": "연중무휴",
         "usage_fee": "무료"
@@ -115027,7 +115030,7 @@
     }
   },
   "KOP038785": {
-    "updtDtText": "2026.07.10",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP038785",
       "lang_code_id": "ko",
@@ -115045,9 +115048,8 @@
       "post_sj": "응봉산 팔각정 ",
       "sumry": "서울시 성동구 금호동의 응봉산 정상 근처에 위치한 팔각정은 서울의 모습을 내려다 볼 수 있는 명소",
       "creat_dt_text": "2021.09.14",
-      "updt_dt_text": "2026.07.10",
+      "updt_dt_text": "2026.10.25",
       "tag": [
-        "응봉산팔각정",
         "서울야경산책길",
         "서울여행",
         "서울야경명소",
@@ -115056,6 +115058,7 @@
         "응봉산",
         "서울야경",
         "서울산책길",
+        "응봉산팔각정",
         "서울야경맛집",
         "남산타워",
         "서울아름다운야경명소",
@@ -115066,9 +115069,7 @@
         "cmmn_use_time": "00:00 ~ 24:00",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능"
+          "장애인화장실"
         ],
         "business_days": "매일",
         "closed_days": "연중무휴",
@@ -115143,7 +115144,7 @@
     }
   },
   "KOP037952": {
-    "updtDtText": "2026.08.18",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP037952",
       "lang_code_id": "ko",
@@ -115159,7 +115160,7 @@
       "post_sj": "수성동계곡",
       "sumry": "겸재 정선의 '장동팔경첩' 수성동 그림으로 등장하는 아름다운 계곡.",
       "creat_dt_text": "2021.06.25",
-      "updt_dt_text": "2026.08.18",
+      "updt_dt_text": "2026.10.25",
       "tag": [
         "서울",
         "도심속힐링",
@@ -115175,10 +115176,11 @@
       ],
       "extra": {
         "cmmn_telno": "02-2148-2844",
-        "cmmn_use_time": "24시간, 연중무휴",
+        "cmmn_use_time": "24시간",
         "cmmn_important": "이용요금 무료",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": []
+        "disabled_facility": [],
+        "closed_days": "연중무휴"
       },
       "traffic": {
         "adres": "서울 종로구 옥인동 185-3",
@@ -115197,7 +115199,7 @@
     }
   },
   "KOP037532": {
-    "updtDtText": "2026.07.10",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP037532",
       "lang_code_id": "ko",
@@ -115215,9 +115217,8 @@
       "post_sj": "지양산",
       "sumry": " 856m 길이의 무장애 숲길로 유명하며 데크로 이루어진 넓은 오솔길",
       "creat_dt_text": "2021.05.06",
-      "updt_dt_text": "2026.07.10",
+      "updt_dt_text": "2026.10.25",
       "tag": [
-        "숲길",
         " 지양산",
         " 도심속숲길",
         " 지양산트레킹",
@@ -115225,19 +115226,13 @@
         " 서울산",
         " 서울걷기",
         "산림욕",
-        " 서울둘레길"
+        " 서울둘레길",
+        "숲길"
       ],
       "extra": {
-        "cmmn_telno": "02-2620-3579",
-        "cmmn_use_time": "24시간",
-        "trrsrt_use_chrge": "F",
-        "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장",
-          "접근가능"
-        ],
-        "business_days": "매일",
-        "closed_days": "연중무휴\r\n\r\n"
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "closed_days": "\r\n\r\n"
       },
       "traffic": {
         "adres": "서울 양천구 신월동 ",
@@ -115256,7 +115251,7 @@
     }
   },
   "KOP037529": {
-    "updtDtText": "2026.07.10",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP037529",
       "lang_code_id": "ko",
@@ -115274,9 +115269,9 @@
       "post_sj": "백련산",
       "sumry": "백련산은 북한산과 인왕산 등 주변 산들에 비해 완만한 경사",
       "creat_dt_text": "2021.05.06",
-      "updt_dt_text": "2026.07.10",
+      "updt_dt_text": "2026.10.25",
       "tag": [
-        " 서울등산",
+        "서울등산",
         " 서울도심속자연",
         " 산책로",
         "자연",
@@ -115286,13 +115281,8 @@
         " 등산하기좋은곳"
       ],
       "extra": {
-        "cmmn_use_time": "24시간",
-        "trrsrt_use_chrge": "F",
-        "disabled_facility": [
-          "접근가능"
-        ],
-        "business_days": "매일",
-        "closed_days": "연중무휴"
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
       },
       "traffic": {
         "adres": "서울 서대문구 홍은동",
@@ -115311,7 +115301,7 @@
     }
   },
   "KOP037364": {
-    "updtDtText": "2026.07.10",
+    "updtDtText": "2026.10.25",
     "detail": {
       "cid": "KOP037364",
       "lang_code_id": "ko",
@@ -115329,7 +115319,7 @@
       "post_sj": "안산",
       "sumry": "서울 서대문에 있는 295.5 미터 산",
       "creat_dt_text": "2021.04.26",
-      "updt_dt_text": "2026.07.10",
+      "updt_dt_text": "2026.10.25",
       "tag": [
         "서울등산로",
         "둘레길",
@@ -115338,14 +115328,10 @@
       ],
       "extra": {
         "cmmn_telno": "02-330-1395",
-        "cmmn_use_time": "24시간",
-        "trrsrt_use_chrge": "F",
+        "trrsrt_use_chrge": "N",
         "disabled_facility": [
-          "장애인화장실",
           "접근가능"
-        ],
-        "business_days": "매일",
-        "closed_days": "연중무휴"
+        ]
       },
       "traffic": {
         "adres": "서울 서대문구 봉원동 산 2-1",

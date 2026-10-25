@@ -5471,6 +5471,7 @@
       "lat": 37.5602505563245,
       "lng": 126.923765612231,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72516&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "linkUrl": "https://parks.seoul.go.kr/content.do?key=2604300008",
       "isFree": false,
       "subwayInfo": "지하철 2호선/공항철도/경의중앙선 홍대입구역 3번 출구,  447m",
       "tags": [
@@ -5651,7 +5652,7 @@
       "lng": 127.032021588149,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=36989&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
       "linkUrl": "https://www.seocho.go.kr/site/seocho/04/10405010200002015070703.jsp",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 신분당선 양재시민의숲역 5번 출구,  681m",
       "tags": [
         "서울공원",
@@ -5667,13 +5668,7 @@
         "숲체험"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP036973",
@@ -22720,7 +22715,6 @@
       "isFree": true,
       "subwayInfo": "지하철 경의중앙선 응봉역 1번 출구,  886m",
       "tags": [
-        "응봉산팔각정",
         "서울야경산책길",
         "서울여행",
         "서울야경명소",
@@ -22729,6 +22723,7 @@
         "응봉산",
         "서울야경",
         "서울산책길",
+        "응봉산팔각정",
         "서울야경맛집",
         "남산타워",
         "서울아름다운야경명소",
@@ -22770,7 +22765,8 @@
         "여름갈만한곳"
       ],
       "kind": "place",
-      "useTime": "24시간, 연중무휴",
+      "useTime": "24시간",
+      "closedDays": "연중무휴",
       "hours": {
         "open": "00:00",
         "close": "24:00",
@@ -22788,10 +22784,9 @@
       "lat": 37.5227881535717,
       "lng": 126.830544711371,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75920&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 2호선 신정네거리역,  98번 버스 탑승. 신정이펜하우스1단지아파트 정류장 하차,  332m",
       "tags": [
-        "숲길",
         " 지양산",
         " 도심속숲길",
         " 지양산트레킹",
@@ -22799,16 +22794,11 @@
         " 서울산",
         " 서울걷기",
         "산림욕",
-        " 서울둘레길"
+        " 서울둘레길",
+        "숲길"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP037529",
@@ -22821,10 +22811,10 @@
       "lat": 37.5879716337408,
       "lng": 126.930167823978,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75793&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 3호선 홍제역 3번 출구, 서대문14 마을버스 탑승,  삼성그린빌 정류장,  294m",
       "tags": [
-        " 서울등산",
+        "서울등산",
         " 서울도심속자연",
         " 산책로",
         "자연",
@@ -22834,13 +22824,7 @@
         " 등산하기좋은곳"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP037364",
@@ -22853,7 +22837,7 @@
       "lat": 37.5731210996215,
       "lng": 126.945975707826,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=37364&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 3호선 무악재역 4번 출구,  633m",
       "tags": [
         "서울등산로",
@@ -22862,13 +22846,7 @@
         "안산"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP035307",
