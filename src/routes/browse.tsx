@@ -111,14 +111,14 @@ function Browse() {
   }, [search.near])
 
   return (
-    <main className={`${PAGE} py-6 md:py-10`}>
+    <main className={`${PAGE} py-page`}>
       {state.status === 'ready' && (
         <header>
           {/* 범위 줄이 탭마다 다르다 — 탐색에서 '이번 주'가 거짓말이 되지 않게(스펙 7장) */}
-          <p className="text-sm text-ink-subtle">
+          <p className="text-body text-ink-subtle">
             {formatWeekRange({ start: state.today, end: state.index.horizonEnd })}
           </p>
-          <p className="mt-1 text-xs text-ink-subtle">{formatUpdatedAt(state.index.generatedAt)}</p>
+          <p className="mt-050 text-caption text-ink-subtle">{formatUpdatedAt(state.index.generatedAt)}</p>
         </header>
       )}
 
@@ -192,7 +192,7 @@ function BrowseResults({
   // 가까운 순: 시간 축이 사라지고 행사·장소가 거리 하나로 선다(스펙 7장)
   if (search.near === true && geo.status === 'ok') {
     return (
-      <section className="mt-6">
+      <section className="mt-300">
         {sortByDistance(filtered, geo.origin).map(({ item, km }) =>
           item.kind === 'event' ? (
             <BrowseEventRow key={item.id} item={item} today={today} km={km} />
@@ -214,7 +214,7 @@ function BrowseResults({
   return (
     <>
       {search.near === true && geo.status === 'waiting' && (
-        <p className="mt-4 text-sm text-ink-subtle">위치 확인 중…</p>
+        <p className="mt-200 text-body text-ink-subtle">위치 확인 중…</p>
       )}
       {groups.map((g) => (
         <TimelineSection key={g.key} group={g} today={today}
@@ -224,12 +224,12 @@ function BrowseResults({
       ))}
       {/* 장소는 시간 축에 놓지 않는다 — 시작일이 없다(스펙 7장, AGENTS.md) */}
       {places.length > 0 && (
-        <section className="mt-10">
+        <section className="mt-section">
           <div className="flex items-baseline justify-between">
-            <h2 className="text-lg font-bold">언제든 갈 수 있는 곳</h2>
-            <span className="text-sm text-ink-muted">{places.length}건</span>
+            <h2 className="text-title-section">언제든 갈 수 있는 곳</h2>
+            <span className="text-body text-ink-muted">{places.length}건</span>
           </div>
-          <div className="mt-3">
+          <div className="mt-150">
             {places.map((p) => (
               <BrowsePlaceRow key={p.id} item={p} hoursUnknownNote={search.open === true} />
             ))}

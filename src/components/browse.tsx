@@ -23,13 +23,13 @@ export function BrowseEventRow({
   item, today, km,
 }: { item: CatalogEventIndexItem; today: string; km?: number }) {
   return (
-    <Link to="/e/$id" params={{ id: item.id }} className="flex gap-3 border-t border-neutral-border py-3">
+    <Link to="/e/$id" params={{ id: item.id }} className="flex gap-150 border-t border-neutral-border py-150">
       <ItemImage
         src={item.imageUrl} alt="" category={item.group}
-        className="aspect-[3/4] w-14 shrink-0 self-start rounded object-cover"
+        className="aspect-[3/4] w-14 shrink-0 self-start rounded-050 object-cover"
       />
       <div className="min-w-0">
-        <CardTitle title={item.title} className="line-clamp-2 font-medium" />
+        <CardTitle title={item.title} className="line-clamp-2 text-title-card" />
         <FactLines facts={cardFacts(item, { today, km })} />
       </div>
     </Link>
@@ -45,20 +45,20 @@ export function BrowsePlaceRow({
   item, km, hoursUnknownNote = false,
 }: { item: CatalogPlaceIndexItem; km?: number; hoursUnknownNote?: boolean }) {
   return (
-    <Link to="/e/$id" params={{ id: item.id }} className="flex gap-3 border-t border-neutral-border py-3">
+    <Link to="/e/$id" params={{ id: item.id }} className="flex gap-150 border-t border-neutral-border py-150">
       <ItemImage
         src={item.imageUrl} alt="" category={item.group}
-        className="aspect-[4/3] w-20 shrink-0 self-start rounded object-cover"
+        className="aspect-[4/3] w-20 shrink-0 self-start rounded-050 object-cover"
       />
       <div className="min-w-0">
-        <CardTitle title={item.title} className="line-clamp-2 font-medium" />
+        <CardTitle title={item.title} className="line-clamp-2 text-title-card" />
         <FactLines
           facts={cardFacts(item, { km })}
           badge={
             <>
               <OpenNowBadge hours={item.hours ?? null} />
               {hoursUnknownNote && !item.hours && (
-                <span className="ml-2 text-xs text-ink-subtle">영업시간 미상</span>
+                <span className="ml-100 text-caption text-ink-subtle">영업시간 미상</span>
               )}
             </>
           }
@@ -84,17 +84,17 @@ export function TimelineSection({
   if (group.items.length === 0) return null
   const header = (
     <>
-      <h2 className="text-lg font-bold">
+      <h2 className="text-title-section">
         {group.label}
-        <span className="ml-2 text-sm font-normal text-ink-subtle">{md(group.start)}–{md(group.end)}</span>
+        <span className="ml-100 text-body text-ink-subtle">{md(group.start)}–{md(group.end)}</span>
       </h2>
-      <span className="text-sm text-ink-muted">
-        {group.items.length}건{collapsible && <span className="ml-1">{expanded ? '⌄' : '›'}</span>}
+      <span className="text-body text-ink-muted">
+        {group.items.length}건{collapsible && <span className="ml-050">{expanded ? '⌄' : '›'}</span>}
       </span>
     </>
   )
   return (
-    <section className="mt-8">
+    <section className="mt-section">
       {collapsible ? (
         <button type="button" onClick={onToggle} aria-expanded={expanded}
           className="flex w-full items-baseline justify-between text-left">
@@ -104,7 +104,7 @@ export function TimelineSection({
         <div className="flex items-baseline justify-between">{header}</div>
       )}
       {expanded && (
-        <div className="mt-3">
+        <div className="mt-150">
           {group.items.map((item) => (
             <BrowseEventRow key={item.id} item={item} today={today} />
           ))}
@@ -117,13 +117,13 @@ export function TimelineSection({
 /** 목록 스켈레톤. 껍데기(세그먼트·칩)는 SSG라 즉시 뜨고 목록만 이걸 본다(스펙 8장) */
 export function CatalogSkeleton() {
   return (
-    <div aria-hidden className="mt-8 space-y-4">
+    <div aria-hidden className="mt-400 space-y-200">
       {Array.from({ length: 6 }, (_, i) => (
-        <div key={i} className="flex gap-3">
-          <div className="aspect-[3/4] w-14 animate-pulse rounded bg-neutral-subtle-bg" />
-          <div className="flex-1 space-y-2 py-1">
-            <div className="h-4 w-2/3 animate-pulse rounded bg-neutral-subtle-bg" />
-            <div className="h-3 w-1/3 animate-pulse rounded bg-neutral-subtle-bg" />
+        <div key={i} className="flex gap-150">
+          <div className="aspect-[3/4] w-14 animate-pulse rounded-050 bg-neutral-subtle-bg" />
+          <div className="flex-1 space-y-100 py-050">
+            <div className="h-4 w-2/3 animate-pulse rounded-050 bg-neutral-subtle-bg" />
+            <div className="h-3 w-1/3 animate-pulse rounded-050 bg-neutral-subtle-bg" />
           </div>
         </div>
       ))}
@@ -134,11 +134,11 @@ export function CatalogSkeleton() {
 /** fetch 실패의 명시적 표면. 빈 목록으로 위장하지 않는다(스펙 8장, 크리틱 휴리스틱 9) */
 export function CatalogError({ message, onRetry }: { message: string; onRetry: () => void }) {
   return (
-    <div className="mt-8 rounded-lg border border-error-border bg-error-subtle-bg p-4">
-      <p className="font-medium text-error-text-strong">목록을 불러오지 못했습니다</p>
-      <p className="mt-1 text-sm text-error-text">{message}</p>
+    <div className="mt-400 rounded-100 border border-error-border bg-error-subtle-bg p-200">
+      <p className="text-title-card text-error-text-strong">목록을 불러오지 못했습니다</p>
+      <p className="mt-050 text-body text-error-text">{message}</p>
       <button type="button" onClick={onRetry}
-        className="mt-3 rounded-lg bg-ink px-4 py-2 text-sm font-medium text-surface">
+        className="mt-150 rounded-100 bg-ink px-200 py-100 text-label text-surface">
         다시 시도
       </button>
     </div>
@@ -158,12 +158,12 @@ export function CatalogError({ message, onRetry }: { message: string; onRetry: (
  */
 export function StaleCatalog({ index }: { index: CatalogIndexFile }) {
   return (
-    <div className="mt-8 rounded-lg border border-warning-border bg-warning-subtle-bg p-4">
-      <p className="font-medium text-warning-text-strong">목록이 오래됐습니다</p>
-      <p className="mt-1 text-sm text-warning-text">
+    <div className="mt-400 rounded-100 border border-warning-border bg-warning-subtle-bg p-200">
+      <p className="text-title-card text-warning-text-strong">목록이 오래됐습니다</p>
+      <p className="mt-050 text-body text-warning-text">
         이 카탈로그는 {index.horizonEnd}까지를 담고 있고 오늘은 그 뒤입니다.
       </p>
-      <p className="mt-1 text-xs text-warning-text">{formatUpdatedAt(index.generatedAt)}</p>
+      <p className="mt-050 text-caption text-warning-text">{formatUpdatedAt(index.generatedAt)}</p>
     </div>
   )
 }
@@ -174,8 +174,8 @@ function Chip({
   return (
     <button
       type="button" onClick={onClick} aria-pressed={active}
-      className={`shrink-0 rounded-full px-3 py-1.5 text-sm ${
-        active ? 'bg-ink font-medium text-surface' : 'border border-neutral-border text-ink-muted'
+      className={`shrink-0 rounded-full px-150 py-075 text-label ${
+        active ? 'bg-ink text-surface' : 'border border-neutral-border text-ink-muted'
       }`}
     >
       {children}
@@ -217,8 +217,8 @@ export function BrowseControls({
   const shown: BrowseSearch = hydrated ? search : {}
 
   return (
-    <div className="mt-4 space-y-2">
-      <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="카테고리">
+    <div className="mt-200 space-y-100">
+      <div className="flex gap-100 overflow-x-auto pb-050" role="group" aria-label="카테고리">
         <Chip active={shown.group === undefined} onClick={() => patch({ group: undefined })}>전체</Chip>
         {CHIP_GROUPS.map((g) => (
           <Chip key={g} active={shown.group === g}
@@ -227,7 +227,7 @@ export function BrowseControls({
           </Chip>
         ))}
       </div>
-      <div className="flex flex-wrap items-center gap-2" role="group" aria-label="정렬과 필터">
+      <div className="flex flex-wrap items-center gap-100" role="group" aria-label="정렬과 필터">
         {/*
           권한 거부(nearDisabledReason)면 active를 false로 그린다 — 목록은
           실제로 거리순이 아니므로(geo.status === 'ok'가 아님) 칩이 그 사실을
@@ -251,7 +251,7 @@ export function BrowseControls({
           value={shown.district ?? ''}
           onChange={(e) => patch({ district: e.target.value === '' ? undefined : e.target.value })}
           aria-label="자치구"
-          className="rounded-full border border-neutral-border bg-surface px-3 py-1.5 text-sm text-ink-muted"
+          className="rounded-full border border-neutral-border bg-surface px-150 py-075 text-label text-ink-muted"
         >
           <option value="">자치구 전체</option>
           {districts.map((d) => (
@@ -260,7 +260,7 @@ export function BrowseControls({
         </select>
       </div>
       {nearDisabledReason !== undefined && (
-        <p className="text-sm text-warning-text">{nearDisabledReason}</p>
+        <p className="text-body text-warning-text">{nearDisabledReason}</p>
       )}
     </div>
   )
@@ -274,10 +274,10 @@ export function EmptyResult({
   suggestions, search,
 }: { suggestions: RelaxSuggestion[]; search: BrowseSearch }) {
   return (
-    <div className="mt-12 py-8 text-center">
-      <p className="font-medium">조건에 맞는 게 없습니다</p>
+    <div className="mt-600 py-400 text-center">
+      <p className="text-title-card">조건에 맞는 게 없습니다</p>
       {suggestions.length > 0 ? (
-        <ul className="mt-4 space-y-2 text-sm">
+        <ul className="mt-200 space-y-100 text-body">
           {suggestions.map((s) => (
             <li key={s.filter}>
               <Link to="/browse" search={{ ...search, [s.filter]: undefined }}
@@ -288,7 +288,7 @@ export function EmptyResult({
           ))}
         </ul>
       ) : (
-        <p className="mt-2 text-sm text-ink-subtle">모든 필터를 풀어도 결과가 없습니다</p>
+        <p className="mt-100 text-body text-ink-subtle">모든 필터를 풀어도 결과가 없습니다</p>
       )}
     </div>
   )
