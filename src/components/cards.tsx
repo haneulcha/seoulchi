@@ -26,7 +26,8 @@ function CardTitle({ title, className }: { title: string; className: string }) {
 
 /**
  * 모든 카드 공통의 사실 두 줄. 고정 줄(어디 · 거리 · 시간)은 늘 같은 자리에 있고,
- * 조건부 줄(가격 · 남은 기간)은 조각이 없으면 통째로 접는다. badge는 시간 뒤에 붙는다(지금 열림).
+ * 조건부 줄(지금 열림 · 가격 · 남은 기간)은 조각이 없으면 통째로 접는다.
+ * 배지는 조건부 줄 맨 앞에 둔다 — 고정 줄 끝에 붙이면 장소 2열 칸에서 시간 뒤로 밀려 잘렸다.
  */
 function FactLines({
   facts, badge,
@@ -34,12 +35,10 @@ function FactLines({
   const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
   return (
     <>
-      <p className="mt-050 truncate text-body text-ink-muted">
-        {fixed}
-        {badge}
-      </p>
-      {(facts.price || facts.deadline) && (
+      <p className="mt-050 truncate text-body text-ink-muted">{fixed}</p>
+      {(badge || facts.price || facts.deadline) && (
         <p className="truncate text-body text-ink-muted">
+          {badge}
           {facts.price && (
             <span className={facts.price === '무료' ? 'text-success-text' : undefined}>{facts.price}</span>
           )}
