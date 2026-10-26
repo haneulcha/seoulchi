@@ -3,6 +3,7 @@ import { useEffect, useState, type ReactNode } from 'react'
 import { CardTitle, FactLines } from '~/components/cards'
 import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
+import { button, Callout, chip } from '~/components/ui'
 import { FILTER_LABELS, type RelaxSuggestion, type TimelineGroup } from '~/lib/browse-filter'
 import { CHIP_GROUPS, type BrowseSearch } from '~/lib/browse-search'
 import { cardFacts } from '~/lib/card-facts'
@@ -134,14 +135,12 @@ export function CatalogSkeleton() {
 /** fetch 실패의 명시적 표면. 빈 목록으로 위장하지 않는다(스펙 8장, 크리틱 휴리스틱 9) */
 export function CatalogError({ message, onRetry }: { message: string; onRetry: () => void }) {
   return (
-    <div className="mt-400 rounded-100 border border-error-border bg-error-subtle-bg p-200">
-      <p className="text-title-card text-error-text-strong">목록을 불러오지 못했습니다</p>
-      <p className="mt-050 text-body text-error-text">{message}</p>
-      <button type="button" onClick={onRetry}
-        className="mt-150 rounded-100 bg-ink px-200 py-100 text-label text-surface">
+    <Callout tone="error" title="목록을 불러오지 못했습니다">
+      <p>{message}</p>
+      <button type="button" onClick={onRetry} className={`mt-150 ${button('solid', 'sm')}`}>
         다시 시도
       </button>
-    </div>
+    </Callout>
   )
 }
 
@@ -158,13 +157,10 @@ export function CatalogError({ message, onRetry }: { message: string; onRetry: (
  */
 export function StaleCatalog({ index }: { index: CatalogIndexFile }) {
   return (
-    <div className="mt-400 rounded-100 border border-warning-border bg-warning-subtle-bg p-200">
-      <p className="text-title-card text-warning-text-strong">목록이 오래됐습니다</p>
-      <p className="mt-050 text-body text-warning-text">
-        이 카탈로그는 {index.horizonEnd}까지를 담고 있고 오늘은 그 뒤입니다.
-      </p>
-      <p className="mt-050 text-caption text-warning-text">{formatUpdatedAt(index.generatedAt)}</p>
-    </div>
+    <Callout tone="warning" title="목록이 오래됐습니다">
+      <p>이 카탈로그는 {index.horizonEnd}까지를 담고 있고 오늘은 그 뒤입니다.</p>
+      <p className="text-caption">{formatUpdatedAt(index.generatedAt)}</p>
+    </Callout>
   )
 }
 
@@ -174,9 +170,7 @@ function Chip({
   return (
     <button
       type="button" onClick={onClick} aria-pressed={active}
-      className={`shrink-0 rounded-full px-150 py-075 text-label ${
-        active ? 'bg-ink text-surface' : 'border border-neutral-border text-ink-muted'
-      }`}
+      className={chip(active)}
     >
       {children}
     </button>
@@ -251,7 +245,7 @@ export function BrowseControls({
           value={shown.district ?? ''}
           onChange={(e) => patch({ district: e.target.value === '' ? undefined : e.target.value })}
           aria-label="자치구"
-          className="rounded-full border border-neutral-border bg-surface px-150 py-075 text-label text-ink-muted"
+          className={chip()}
         >
           <option value="">자치구 전체</option>
           {districts.map((d) => (
