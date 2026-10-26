@@ -46,7 +46,7 @@ export function ThemeToggle() {
       type="button"
       onClick={cycle}
       // 라벨이 비어 있는 첫 렌더에도 폭이 잡히도록 w를 고정한다(가장 긴 라벨 '시스템'·'라이트' 기준)
-      className="w-20 rounded-full border border-neutral-border px-3 py-1.5 text-xs text-ink-muted"
+      className="w-20 rounded-full border border-neutral-border px-150 py-075 text-caption text-ink-muted"
       aria-label={theme ? `테마: ${label}. 누르면 다음 테마로 바뀝니다` : '테마 전환'}
     >
       {label}

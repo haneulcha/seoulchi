@@ -19,7 +19,7 @@ export function CardTitle({ title, className }: { title: string; className: stri
   return (
     <>
       <h3 className={className}>{t.title}</h3>
-      {t.org && <p className="truncate text-xs text-ink-subtle">{t.org}</p>}
+      {t.org && <p className="truncate text-caption text-ink-subtle">{t.org}</p>}
     </>
   )
 }
@@ -29,17 +29,17 @@ export function CardTitle({ title, className }: { title: string; className: stri
  * 조건부 줄(가격 · 남은 기간)은 조각이 없으면 통째로 접는다. badge는 시간 뒤에 붙는다(지금 열림).
  */
 export function FactLines({
-  facts, badge, className = 'text-sm',
-}: { facts: CardFacts; badge?: ReactNode; className?: string }) {
+  facts, badge,
+}: { facts: CardFacts; badge?: ReactNode }) {
   const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
   return (
     <>
-      <p className={`mt-1 truncate text-ink-muted ${className}`}>
+      <p className="mt-050 truncate text-body text-ink-muted">
         {fixed}
         {badge}
       </p>
       {(facts.price || facts.deadline) && (
-        <p className={`truncate text-ink-muted ${className}`}>
+        <p className="truncate text-body text-ink-muted">
           {facts.price && (
             <span className={facts.price === '무료' ? 'text-success-text' : undefined}>{facts.price}</span>
           )}
@@ -67,14 +67,14 @@ export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: str
         src={e.imageUrl}
         alt=""
         category={e.category}
-        className={`${POSTER} w-full rounded-xl object-cover`}
+        className={`${POSTER} w-full rounded-150 object-cover`}
       />
-      {/* 제목·메타는 붙이고(mt-1) 코멘트는 떼어 놓는다(mt-2) — 코멘트는 사실이 아니라 목소리다 */}
-      <div className="mt-3 min-w-0">
-        <CardTitle title={e.title} className="font-bold md:text-lg" />
+      {/* 제목·메타는 붙이고(mt-050) 코멘트는 떼어 놓는다(mt-100) — 코멘트는 사실이 아니라 목소리다 */}
+      <div className="mt-150 min-w-0">
+        <CardTitle title={e.title} className="text-title-card" />
         <FactLines facts={cardFacts(e, { today })} />
         {/* 코멘트는 있을 때만 — 운영 배치(rule)는 reason이 빈 문자열이다. 빈 자리를 남기지 않는다 */}
-        {entry.reason !== '' && <p className="mt-2 text-sm text-ink">{entry.reason}</p>}
+        {entry.reason !== '' && <p className="mt-100 text-body text-ink-subtle">{entry.reason}</p>}
       </div>
     </Link>
   )
@@ -89,17 +89,17 @@ export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: str
 export function CompactEventRow({ entry, today }: { entry: HomeEntry; today: string }) {
   const e = entry.item
   return (
-    <Link to="/e/$id" params={{ id: e.id }} className="flex gap-3 border-t border-neutral-border py-3">
+    <Link to="/e/$id" params={{ id: e.id }} className="flex gap-150 border-t border-neutral-border py-150">
       <ItemImage
         src={e.imageUrl}
         alt=""
         category={e.category}
-        className={`${POSTER} w-14 shrink-0 self-start rounded object-cover`}
+        className={`${POSTER} w-14 shrink-0 self-start rounded-050 object-cover`}
       />
       <div className="min-w-0">
-        <CardTitle title={e.title} className="line-clamp-2 font-medium" />
+        <CardTitle title={e.title} className="line-clamp-2 text-title-card" />
         <FactLines facts={cardFacts(e, { today })} />
-        {entry.reason !== '' && <p className="truncate text-sm text-ink-subtle">{entry.reason}</p>}
+        {entry.reason !== '' && <p className="truncate text-body text-ink-subtle">{entry.reason}</p>}
       </div>
     </Link>
   )
@@ -118,14 +118,13 @@ export function PlaceCard({ place }: { place: PlaceItem }) {
         src={place.imageUrl}
         alt=""
         category={place.category}
-        className="aspect-[4/3] w-full rounded-lg object-cover"
+        className="aspect-[4/3] w-full rounded-100 object-cover"
       />
       {/* 좁은 칸에서 한 줄 truncate면 "의학박물관 (구 대한…"이 된다. 두 줄까지 허용한다 */}
-      <CardTitle title={place.title} className="mt-2 line-clamp-2 text-sm font-medium" />
+      <CardTitle title={place.title} className="mt-100 line-clamp-2 text-title-card" />
       <FactLines
         facts={cardFacts(place, {})}
         badge={<OpenNowBadge hours={place.hours ?? null} />}
-        className="text-xs"
       />
     </Link>
   )

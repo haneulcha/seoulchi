@@ -40,10 +40,10 @@ function Home() {
   const rest = data.entries.slice(3)
 
   return (
-    <main className={`${PAGE} py-6 md:py-10`}>
-      <header className="mb-6 md:mb-10">
-        <p className="text-sm text-ink-subtle">{data.weekRangeLabel}</p>
-        <p className="mt-1 text-xs text-ink-subtle">{data.updatedLabel}</p>
+    <main className={`${PAGE} py-page`}>
+      <header className="mb-page">
+        <p className="text-body text-ink-subtle">{data.weekRangeLabel}</p>
+        <p className="mt-050 text-caption text-ink-subtle">{data.updatedLabel}</p>
       </header>
 
       {/*
@@ -51,8 +51,8 @@ function Home() {
         md 이상은 3단이 딱 한 줄로 떨어진다. 고아 칸이 없고 셋을 한 세트로 읽게 한다
       */}
       <section>
-        <h2 className="text-lg font-bold">이번 주 추천</h2>
-        <div className="-mx-4 mt-4 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 sm:-mx-6 sm:scroll-px-6 sm:px-6 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0">
+        <h2 className="text-title-section">이번 주 추천</h2>
+        <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter md:mx-0 md:grid md:grid-cols-3 md:overflow-visible md:px-0">
           {big.map((entry) => (
             <EventPosterCard key={entry.item.id} entry={entry} today={data.today} />
           ))}
@@ -65,10 +65,10 @@ function Home() {
         min(300px,100%)인 이유: 그냥 300px로 두면 320px 기기(안쪽 288px)에서
         트랙이 300px으로 고정돼 12px 넘친다. 실측으로 확인했다.
       */}
-      <section className="mt-10 md:mt-14">
-        <h2 className="text-lg font-bold">이번 주에 더 있는 것</h2>
+      <section className="mt-section">
+        <h2 className="text-title-section">이번 주에 더 있는 것</h2>
         {/* 행마다 border-t가 붙으므로 세로 간격은 행이 스스로 갖는다(gap-y 없음) */}
-        <div className="mt-4 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-x-6">
+        <div className="mt-150 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-x-gutter">
           {rest.map((entry) => (
             <CompactEventRow key={entry.item.id} entry={entry} today={data.today} />
           ))}
@@ -76,9 +76,9 @@ function Home() {
       </section>
 
       {/* 6개라 2·3·6으로만 나눠떨어진다. lg에서 한 줄 선반이 되면 행사 영역과 무게가 안 겹친다 */}
-      <section className="mt-12 md:mt-16">
-        <h2 className="text-lg font-bold">언제 가도 좋은 곳</h2>
-        <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+      <section className="mt-section">
+        <h2 className="text-title-section">언제 가도 좋은 곳</h2>
+        <div className="mt-150 grid grid-cols-2 gap-gutter sm:grid-cols-3 lg:grid-cols-6">
           {data.places.map((place) => (
             <PlaceCard key={place.id} place={place} />
           ))}

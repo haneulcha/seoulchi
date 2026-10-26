@@ -71,22 +71,22 @@ function Detail() {
      * 아래 2단 그리드 덕이다 — 1024 안쪽 960에서 7fr 칸이 약 541px이다.
      * 단이 갈라지는 시점(md=768)이 상한이 걸리는 시점(1024)보다 앞서므로 1단에서는 넓어지지 않는다.
      */
-    <main className={`${PAGE} py-6 md:py-10`}>
-      <div className="md:grid md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:items-start md:gap-8">
+    <main className={`${PAGE} py-page`}>
+      <div className="md:grid md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:items-start md:gap-gutter">
         <ItemImage
           src={item.imageUrl}
           alt=""
           category={item.category}
-          className="aspect-video w-full rounded-xl object-cover"
+          className="aspect-video w-full rounded-150 object-cover"
         />
         <div className="min-w-0">
-          <h2 className="mt-4 text-2xl font-bold md:mt-0 md:text-3xl">{item.title}</h2>
-          <p className="mt-1 text-sm text-ink-subtle">
+          <h2 className="mt-200 text-title-page md:mt-0">{item.title}</h2>
+          <p className="mt-050 text-body text-ink-subtle">
             {item.category}
             {item.district ? ` · ${item.district}` : ''}
           </p>
 
-          <dl className="mt-6 space-y-3">
+          <dl className="mt-300 space-y-150">
             {item.kind === 'event' && (
               <Fact label="기간" value={formatDateRange(item.startDate, item.endDate, today)} />
             )}
@@ -112,13 +112,13 @@ function Detail() {
 
           {/* 모바일에서는 엄지로 누르는 전폭 버튼(세로로 쌓음), md 이상에서는 내용에 맞춘 폭으로 나란히 */}
           {(item.linkUrl || directions) && (
-            <div className="mt-8 flex flex-col gap-3 md:flex-row">
+            <div className="mt-400 flex flex-col gap-150 md:flex-row">
               {item.linkUrl && (
                 <a
                   href={item.linkUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-lg bg-ink px-6 py-3 text-center font-medium text-surface"
+                  className="rounded-100 bg-ink px-300 py-150 text-center text-label text-surface"
                 >
                   원문 보기
                 </a>
@@ -128,7 +128,7 @@ function Detail() {
                   href={directions}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-lg border border-neutral-border px-6 py-3 text-center font-medium text-ink"
+                  className="rounded-100 border border-neutral-border px-300 py-150 text-center text-label text-ink"
                 >
                   길찾기
                 </a>
@@ -145,7 +145,7 @@ function Detail() {
 function Fact({ label, value, badge }: { label: string; value?: string; badge?: ReactNode }) {
   if (!value) return null
   return (
-    <div className="flex gap-3 text-sm">
+    <div className="flex gap-150 text-body">
       <dt className="w-14 shrink-0 text-ink-subtle">{label}</dt>
       <dd className="min-w-0 whitespace-pre-line">
         {value}

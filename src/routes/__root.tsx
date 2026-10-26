@@ -39,14 +39,14 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
          * 범위 줄은 탭마다 달라서 여기 없다 — 각 라우트가 자기 범위 줄을 그린다.
          * 상세에서도 이 헤더가 보이므로 '돌아갈 길 없음'(크리틱 P1)이 사라진다.
          */}
-        <header className={`${PAGE} pt-4`}>
+        <header className={`${PAGE} pt-200`}>
           <div className="flex items-start justify-between">
-            <h1 className="text-2xl font-bold md:text-3xl">
+            <h1 className="text-title-page">
               <Link to="/">이번 주 서울</Link>
             </h1>
             <ThemeToggle />
           </div>
-          <nav aria-label="화면 전환" className="mt-3 flex gap-6 border-b border-neutral-border">
+          <nav aria-label="화면 전환" className="mt-150 flex gap-300 border-b border-neutral-border">
             <TabLink to="/" label="추천" />
             <TabLink to="/browse" label="탐색" />
           </nav>
@@ -68,7 +68,7 @@ function TabLink({ to, label }: { to: '/' | '/browse'; label: string }) {
     <Link
       to={to}
       activeOptions={{ exact: to === '/' }}
-      className="-mb-px border-b-2 border-transparent pb-2 text-ink-muted [&.active]:border-ink [&.active]:font-bold [&.active]:text-ink"
+      className="-mb-px border-b-2 border-transparent pb-100 text-label text-ink-muted [&.active]:border-ink [&.active]:text-ink"
     >
       {label}
     </Link>
@@ -78,10 +78,10 @@ function TabLink({ to, label }: { to: '/' | '/browse'; label: string }) {
 /** 링크되지 않은 id는 페이지를 만들지 않는다(스펙 10-5). 그 id로 들어오면 여기로 온다 */
 function NotFound() {
   return (
-    <main className={`${PAGE} py-16 text-center`}>
+    <main className={`${PAGE} py-800 text-center`}>
       {/* 루트 헤더가 shell의 h1을 갖는다 — 이건 그 안의 콘텐츠라 h2다. h1로 되돌리지 말 것 */}
-      <h2 className="text-xl font-bold">없는 페이지입니다</h2>
-      <Link to="/" className="mt-6 inline-block underline">홈으로</Link>
+      <h2 className="text-title-page">없는 페이지입니다</h2>
+      <Link to="/" className="mt-300 inline-block underline">홈으로</Link>
     </main>
   )
 }
