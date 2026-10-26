@@ -5,6 +5,7 @@ import type { ReactNode } from 'react'
 import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
 import { PAGE } from '~/components/page'
+import { button } from '~/components/ui'
 import { loadCatalog, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { formatDateRange } from '~/lib/dates'
 import { kstToday } from '~/lib/week'
@@ -118,7 +119,7 @@ function Detail() {
                   href={item.linkUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-100 bg-ink px-300 py-150 text-center text-label text-surface"
+                  className={button('solid')}
                 >
                   원문 보기
                 </a>
@@ -128,7 +129,7 @@ function Detail() {
                   href={directions}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-100 border border-neutral-border px-300 py-150 text-center text-label text-ink"
+                  className={button('outline')}
                 >
                   길찾기
                 </a>

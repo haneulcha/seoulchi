@@ -19,6 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
   (17/40, P0 2건). 다음에 무엇을 고칠지의 근거입니다.
 
 DESIGN.md는 색·간격·글자·모서리를 다룹니다. 간격·글자·모서리 토큰은 `src/styles/foundation.css`에 있습니다.
+버튼·칩·콜아웃은 `src/components/ui.tsx`에 있습니다. 화면에서 새로 만들지 말고 가져다 씁니다.
 
 Tailwind 기본 팔레트는 꺼져 있습니다(`src/styles/theme.css`의 `--color-*: initial`).
 `text-gray-500` 같은 시스템 밖 클래스는 컴파일되지 않습니다 — 역할 토큰을 쓰세요.
