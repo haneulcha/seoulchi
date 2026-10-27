@@ -26,6 +26,7 @@ PR #13(`ListRow`)과 #14(배지 줄)가 main에 머지돼 있어야 한다. 이 
 
 ## Review Focus
 
+0. 쉬는 요일을 잘못 읽어 여는 행사를 숨기는 경우. 빈 결과는 null로 바꾸고, 휴관 마디와 여는 마디가 한 문장에 섞인 문구를 표에 넣었다. → Task 2.
 1. 토요일·일요일에 "이번 주말" 탭. 토요일이면 토·일, 일요일이면 일요일 하루. 주중이면 다가오는 토·일. → Task 2 테스트.
 2. 추천이 전부 만료됐거나 주말까지 시작하지 않는 주. 선반이 통째로 사라지고 빈 제목이 남지 않는다. → Task 2(`pickShelf` 0개), Task 4(선반 조건부 렌더).
 3. 옛 링크 `/?group=전시`, `/browse?group=공원·자연`. 던지지 않고 필터 없음으로 복구한다. → Task 1, Task 4 스키마 테스트.
@@ -97,10 +98,12 @@ git commit -m "feat: 카테고리를 목적 4그룹으로 바꾼다"
 
 ---
 
-### Task 2: 날짜 탭·정렬·추천 선반 규칙
+### Task 2: 날짜 탭·쉬는 요일·정렬·추천 선반 규칙
 
 **Files:**
 - Create: `src/lib/today.ts`
+- Create: `src/lib/event-days.ts`
+- Test: `tests/lib/event-days.test.ts`
 - Modify: `src/lib/home.ts`(`pickHomeItems` 삭제, `HomeEntry`는 남긴다)
 - Test: `tests/lib/today.test.ts`, `tests/lib/home.test.ts`(삭제하거나 `HomeEntry`만 쓰면 지운다)
 
@@ -109,11 +112,40 @@ git commit -m "feat: 카테고리를 목적 4그룹으로 바꾼다"
 - Produces:
   - `type DayTab = 'today' | 'tomorrow' | 'weekend'`
   - `dayRange(tab: DayTab, today: string): { start: string; end: string }`
-  - `eventsOn(items: CatalogEventIndexItem[], range: { start: string; end: string }): CatalogEventIndexItem[]` 기간이 범위와 하루라도 겹치는 것(`startDate <= end && endDate >= start`).
+  - `eventOpenWeekdays(time?: string): number[] | null` (`event-days.ts`). 시간 문구에서 여는 요일(0=일…6=토, 오름차순)을 읽는다. 못 읽으면 `null`. 결과가 빈 배열이면 `null`로 바꾼다(아래 규칙 4).
+  - `eventsOn(items: CatalogEventIndexItem[], range: { start: string; end: string }): CatalogEventIndexItem[]` 범위 안의 날 중 하루라도 "기간 안이고(`startDate <= 날 <= endDate`) 그 요일에 연다(`eventOpenWeekdays`가 null이거나 그 요일을 포함)"인 날이 있는 것. 범위는 최대 이틀이라 날마다 확인하면 된다.
   - `sortByDeadline(items: CatalogEventIndexItem[]): CatalogEventIndexItem[]` `endDate` 오름차순, 같으면 `id`. 원본을 바꾸지 않는다. (스펙의 "사진 있는 것 먼저"는 뺐다. 2026-10-27 실측 오늘 행사 262건 전부 `imageUrl`이 있어 순서를 바꾸지 못한다.)
   - `pickShelf(picks: HomeEntry[], today: string, count = 3): HomeEntry[]` 이번 주말 끝까지 하루도 겹치지 않는 것(`endDate < today` 또는 `startDate > dayRange('weekend', today).end`)을 먼저 빼고 앞에서 `count`개.
 
+`eventOpenWeekdays` 규칙(2026-10-28 실데이터 시안에서 나온 것. 시안 `wd.py`는 버렸다):
+1. 요일 글자(`일월화수목금토`)는 앞에 숫자·한글이 없고 뒤에 한글이 없을 때만(`요일`은 허용) 요일로 본다. `공휴일`의 일, `6월`의 월, `매일`·`종일`의 일을 잡지 않기 위해서다.
+2. `화-일`, `화~목`, `화요일-일요일`은 범위(일요일을 넘어 돈다). `평일`·`주중`은 월~금, `주말`은 토·일.
+3. 날짜에 붙은 요일(`11.3(화)`, `29(일)`, `2026.10.26(월)`)은 지운다. 그날 하루의 표기지 반복 요일이 아니다.
+4. 문구를 `/`, 줄바꿈, `※`, `*`, 괄호로 나눈 마디 중 `휴관|휴무|휴장`이 있는 마디는 그 앞의 요일을 쉬는 요일로, 나머지 마디의 요일은 여는 요일로 모은다. 여는 요일이 없으면 7일 전체에서 쉬는 요일을 뺀다. 결과가 비면 `null`(잘못 읽어 행사를 통째로 숨기는 것보다 남기는 편이 낫다).
+5. 요일이 하나도 없으면 `null`.
+격주·둘째 주 같은 주기는 매주로 읽힌다. 남기는 쪽 오류라 받아들인다.
+
 - [ ] **Step 1: 실패하는 테스트**
+
+`tests/lib/event-days.test.ts`는 실제 문구 표로 쓴다(`it.each`):
+
+| time | 기대 |
+|---|---|
+| `화-일 10:00~18:00 / 월요일 휴관` | `[0,2,3,4,5,6]` |
+| `11:00 ~ 18:00, 월요일 휴관` | `[0,2,3,4,5,6]` |
+| `12:00~18:00(일,월 휴관)` | `[2,3,4,5,6]` |
+| `매주 (토) 14:00~17:00 / 공연발표 29(일) 10:00~17:00` | `[6]` |
+| `매주 화요일 10:00, 14:00 (11.3(화)는 단체 예약으로 예약 불가)` | `[2]` |
+| `월,수,목 19:30 / 금 15:00, 19:30 / 토,일 15:00` | `[0,1,3,4,5,6]` |
+| `평일 14:00~20:00 / 주말 12:00~20:00 ※월요일 휴관` | `[0,2,3,4,5,6]` |
+| `10:00~18:00, 일요일 및 공휴일 휴관` | `[1,2,3,4,5,6]` |
+| `매주 주말 및 공휴일 15:00 (6월~8월 제외)` | `[0,6]` |
+| `10:00~18:00` | `null` |
+| `종일` | `null` |
+| `수-일 12:00~19:00, 매주 월·화 휴관` | `[0,3,4,5,6]` 또는 `null` (빈 배열만 아니면 된다) |
+| `undefined` | `null` |
+
+`today.test.ts`의 `eventsOn`에 추가: `time: '화-일 10:00~18:00 / 월요일 휴관'`인 진행 중 행사는 월요일 범위에서 빠지고 화요일 범위에서 남는다. 이번 주말 범위에서 `time: '매주 (토) 14:00'`은 남고 `time: '월-금 10:00~17:00'`은 빠진다. `time`을 못 읽는 행사는 남는다.
 
 테스트 파일 안의 도우미: `ev(id, startDate, endDate)`는 최소 필드의 `CatalogEventIndexItem`, `pick(id, startDate, endDate)`는 `reason: ''`인 `HomeEntry`(`tests/lib/home.test.ts`의 `ev`와 같은 모양의 `EventItem`).
 
@@ -155,13 +187,17 @@ it('pickShelf: 남는 게 없으면 빈 배열', () => {
 })
 ```
 
-- [ ] **Step 2: `npx vitest run tests/lib/today.test.ts` 실패 확인**
-- [ ] **Step 3: `src/lib/today.ts` 구현, `home.ts`의 `pickHomeItems`와 그 테스트 삭제**
+- [ ] **Step 2: `npx vitest run tests/lib/today.test.ts tests/lib/event-days.test.ts` 실패 확인**
+- [ ] **Step 3: `src/lib/event-days.ts`, `src/lib/today.ts` 구현, `home.ts`의 `pickHomeItems`와 그 테스트 삭제**
 
 `pickHomeItems`의 다른 호출처는 `src/routes/index.tsx`뿐이고 Task 4가 바꾼다. 이 태스크에서는 `index.tsx`가 임시로 `pickShelf`를 부르게 해 빌드를 유지한다. `resolve.ts` 주석의 "부족분은 pickHomeItems가 채운다" 문장은 지운다.
 
 - [ ] **Step 4: `npm test && npm run typecheck` 통과**
-- [ ] **Step 5: 커밋** `feat: 날짜 탭과 추천 선반 규칙`
+- [ ] **Step 5: 실데이터 확인**
+
+일회성 tsx로 `data/index.json`의 진행 중 행사 전부에 `eventOpenWeekdays`를 돌려 `읽음 n / time 있음 m`과 빈 배열 0건을 출력하고, 쉬는 요일이 있다고 읽힌 문구 20개를 눈으로 본다. 2026-10-28 시안은 229건 중 130건을 읽었다. 크게 다르면 규칙을 고친다. 스크립트는 커밋하지 않는다.
+
+- [ ] **Step 6: 커밋** `feat: 날짜 탭·쉬는 요일·추천 선반 규칙`
 
 ---
 
