@@ -1,6 +1,41 @@
 {
-  "horizonEnd": "2026-12-21",
+  "horizonEnd": "2026-12-22",
   "items": [
+    {
+      "id": "sc-qm5xwe",
+      "source": "seoul-culture",
+      "title": "2026 카즈미 타테이시 트리오 내한공연-지브리, 재즈를 만나다-(서울)",
+      "category": "콘서트",
+      "district": "영등포구",
+      "place": "영등포아트홀",
+      "lat": 37.5260087284496,
+      "lng": 126.900109255921,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ae89ba10b5c64459b3e2fe3942048f84&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158691&menuNo=200008",
+      "isFree": false,
+      "fee": "VIP석 88,000원 / R석 77,000원 / S석 66,000원",
+      "kind": "event",
+      "startDate": "2026-12-22",
+      "endDate": "2026-12-22",
+      "time": "19:30"
+    },
+    {
+      "id": "sc-y1nh5e",
+      "source": "seoul-culture",
+      "title": "[서초문화재단] 2026서리풀 어울림 콘서트 [바이올리니스트 김지선의 Dia:logue-graph]",
+      "category": "클래식",
+      "district": "서초구",
+      "place": "반포심산아트홀",
+      "lat": 37.49904352601313,
+      "lng": 126.99165409240258,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=3cebf2bf4be847429ff8faac5d1ecf43&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159930&menuNo=200008",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-12-22",
+      "endDate": "2026-12-22",
+      "time": "화 19:30"
+    },
     {
       "id": "sc-1038ugz",
       "source": "seoul-culture",
@@ -16,7 +51,8 @@
       "fee": "이용료 1,000원 (스케이트화·안전장비 대여 포함)",
       "kind": "event",
       "startDate": "2026-12-18",
-      "endDate": "2027-02-09"
+      "endDate": "2027-02-09",
+      "time": "10:00~21:30 (금,토 ~24:30)"
     },
     {
       "id": "sc-1e43i78",
@@ -33,24 +69,8 @@
       "fee": "전석 50,000원",
       "kind": "event",
       "startDate": "2026-12-16",
-      "endDate": "2026-12-27"
-    },
-    {
-      "id": "sc-1jl15c7",
-      "source": "seoul-culture",
-      "title": "아이와 함께 듣는 겨울의 클래식 동화 [비발디에서 디즈니까지]",
-      "category": "클래식",
-      "district": "송파구",
-      "place": "롯데콘서트홀",
-      "lat": 37.5137519612953,
-      "lng": 127.104446890835,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=67ed167112894a1db296ff11f2370bdd&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159888&menuNo=200008",
-      "isFree": false,
-      "fee": "전석 35,000원",
-      "kind": "event",
-      "startDate": "2026-12-05",
-      "endDate": "2026-12-05"
+      "endDate": "2026-12-27",
+      "time": "평일 19:30, 주말 15:00 (월 공연 없음)"
     },
     {
       "id": "sc-pv7fh3",
@@ -70,7 +90,26 @@
       ],
       "kind": "event",
       "startDate": "2026-12-05",
-      "endDate": "2026-12-05"
+      "endDate": "2026-12-05",
+      "time": "토 15:00"
+    },
+    {
+      "id": "sc-1jl15c7",
+      "source": "seoul-culture",
+      "title": "아이와 함께 듣는 겨울의 클래식 동화 [비발디에서 디즈니까지]",
+      "category": "클래식",
+      "district": "송파구",
+      "place": "롯데콘서트홀",
+      "lat": 37.5137519612953,
+      "lng": 127.104446890835,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=67ed167112894a1db296ff11f2370bdd&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159888&menuNo=200008",
+      "isFree": false,
+      "fee": "전석 35,000원",
+      "kind": "event",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "time": "토요일 11:30"
     },
     {
       "id": "sc-101zuye",
@@ -87,7 +126,8 @@
       "fee": "전석 40,000원",
       "kind": "event",
       "startDate": "2026-12-04",
-      "endDate": "2026-12-05"
+      "endDate": "2026-12-05",
+      "time": "12.04.(금) 19:30 / 12.05.(토) 15:00"
     },
     {
       "id": "sc-lwhrov",
@@ -104,7 +144,8 @@
       "fee": "전석무료",
       "kind": "event",
       "startDate": "2026-12-01",
-      "endDate": "2026-12-01"
+      "endDate": "2026-12-01",
+      "time": "화 10:00, 14:00"
     },
     {
       "id": "sc-1nswz84",
@@ -121,7 +162,8 @@
       "fee": "전석 2만원(균일가)",
       "kind": "event",
       "startDate": "2026-11-29",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "(일) 16:00"
     },
     {
       "id": "sc-ey8dbb",
@@ -137,24 +179,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-27",
-      "endDate": "2026-11-29"
-    },
-    {
-      "id": "sc-lwv8hu",
-      "source": "seoul-culture",
-      "title": "DK x SDF 국제 컨퍼런스",
-      "category": "전시/미술",
-      "district": "강남구",
-      "place": "코엑스 401호 컨퍼런스룸",
-      "lat": 37.5118239121138,
-      "lng": 127.059159043842,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a857851cf140413a8c2ff47e256cd53c&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159857&menuNo=200009",
-      "isFree": false,
-      "fee": "정가 220,000원, 얼리버드 170,000원(10월 한 달간), 단체 170,000원",
-      "kind": "event",
-      "startDate": "2026-11-26",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-29",
+      "time": "10:00 ~ 19:00"
     },
     {
       "id": "sc-155tlkh",
@@ -171,7 +197,26 @@
       "fee": "전석 30,000원 (강북구민 50%할인 등)",
       "kind": "event",
       "startDate": "2026-11-26",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "19:30"
+    },
+    {
+      "id": "sc-lwv8hu",
+      "source": "seoul-culture",
+      "title": "DK x SDF 국제 컨퍼런스",
+      "category": "전시/미술",
+      "district": "강남구",
+      "place": "코엑스 401호 컨퍼런스룸",
+      "lat": 37.5118239121138,
+      "lng": 127.059159043842,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a857851cf140413a8c2ff47e256cd53c&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159857&menuNo=200009",
+      "isFree": false,
+      "fee": "정가 220,000원, 얼리버드 170,000원(10월 한 달간), 단체 170,000원",
+      "kind": "event",
+      "startDate": "2026-11-26",
+      "endDate": "2026-11-26",
+      "time": "10:00~17:40"
     },
     {
       "id": "sc-1s1pbc9",
@@ -188,7 +233,8 @@
       "fee": "티켓별 상이",
       "kind": "event",
       "startDate": "2026-11-25",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "10:30~17:00"
     },
     {
       "id": "sc-13u619z",
@@ -205,7 +251,8 @@
       "fee": "R석 2만원 S석 1만5천원",
       "kind": "event",
       "startDate": "2026-11-25",
-      "endDate": "2026-11-25"
+      "endDate": "2026-11-25",
+      "time": "수 19:30"
     },
     {
       "id": "sc-kzwxjd",
@@ -222,7 +269,8 @@
       "fee": "전석 20,000원",
       "kind": "event",
       "startDate": "2026-11-25",
-      "endDate": "2026-11-25"
+      "endDate": "2026-11-25",
+      "time": "11:00"
     },
     {
       "id": "sc-1enmiur",
@@ -241,24 +289,8 @@
       ],
       "kind": "event",
       "startDate": "2026-11-22",
-      "endDate": "2026-11-22"
-    },
-    {
-      "id": "sc-98qdi4",
-      "source": "seoul-culture",
-      "title": "[용산역사박물관] 월간청음회_11월 청음회",
-      "category": "클래식",
-      "district": "용산구",
-      "place": "용산역사박물관 로비",
-      "lat": 37.5256680404431,
-      "lng": 126.965769395985,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=812f9185fbcc4a94bf2a81cd35ac7961&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159904&menuNo=200008",
-      "isFree": true,
-      "fee": "무료",
-      "kind": "event",
-      "startDate": "2026-11-21",
-      "endDate": "2026-11-21"
+      "endDate": "2026-11-22",
+      "time": "[6~7세] 10:30, [8~9세] 11:30"
     },
     {
       "id": "sc-1w1upju",
@@ -275,7 +307,44 @@
       "fee": "전석 30,000원",
       "kind": "event",
       "startDate": "2026-11-21",
-      "endDate": "2026-11-21"
+      "endDate": "2026-11-21",
+      "time": "토 17:00"
+    },
+    {
+      "id": "sc-lo7igy",
+      "source": "seoul-culture",
+      "title": "[살롱클래식] 트리오 폰테스 - 낭만의 여정",
+      "category": "클래식",
+      "district": "서초구",
+      "place": "라율아트홀",
+      "lat": 37.4824452369632,
+      "lng": 127.012614908746,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d28538e2c89144ed9fe04475f199be5f&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159974&menuNo=200008",
+      "isFree": false,
+      "fee": "전석 30,000원",
+      "kind": "event",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "time": "17:00~18:00"
+    },
+    {
+      "id": "sc-98qdi4",
+      "source": "seoul-culture",
+      "title": "[용산역사박물관] 월간청음회_11월 청음회",
+      "category": "클래식",
+      "district": "용산구",
+      "place": "용산역사박물관 로비",
+      "lat": 37.5256680404431,
+      "lng": 126.965769395985,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=812f9185fbcc4a94bf2a81cd35ac7961&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159904&menuNo=200008",
+      "isFree": true,
+      "fee": "무료",
+      "kind": "event",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "time": "매월 셋째주 토요일 15:00"
     },
     {
       "id": "sc-1j3q9m1",
@@ -292,7 +361,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-11-21",
-      "endDate": "2026-11-21"
+      "endDate": "2026-11-21",
+      "time": "19:00~21:00"
     },
     {
       "id": "sc-1yqc1q3",
@@ -309,7 +379,26 @@
       "fee": "전석 15,000원",
       "kind": "event",
       "startDate": "2026-11-20",
-      "endDate": "2026-11-21"
+      "endDate": "2026-11-21",
+      "time": "11:11"
+    },
+    {
+      "id": "sc-huh8ul",
+      "source": "seoul-culture",
+      "title": "[세종문화회관] 26 세종시즌 [트리플 빌 올 포 한스 판 마넨]",
+      "category": "무용",
+      "district": "종로구",
+      "place": "세종문화회관 세종M씨어터",
+      "lat": 37.57260128068914,
+      "lng": 126.97577534746529,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9712757418a045ffb96ea5c984571524&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159986&menuNo=200008",
+      "isFree": false,
+      "fee": "R석 70,000원 S석 50,000원",
+      "kind": "event",
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-22",
+      "time": "11.19(목) 19:30 / 11.20(금) 19:30 / 11.21(토) 14:00, 18:00 / 11.22(일) 14:00"
     },
     {
       "id": "sc-1cl4t3d",
@@ -325,23 +414,26 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-19",
-      "endDate": "2026-11-19"
+      "endDate": "2026-11-19",
+      "time": "14:00~16:00"
     },
     {
-      "id": "sc-xi5lfg",
+      "id": "sc-7ynsz4",
       "source": "seoul-culture",
-      "title": "[3기] 서울아트책보고 북클럽 X 현대문학 : 네 번째 시간 『백조와 박쥐』 읽기 / 한이 소설가 · 편집자",
-      "category": "교육/체험",
-      "district": "구로구",
-      "place": "서울아트책보고 워크숍룸",
-      "lat": 37.4982125677913,
-      "lng": 126.867088741096,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a3bc19c6357a4767a027031cfcc1774f&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159833&menuNo=200011",
-      "isFree": true,
+      "title": "[살롱클래식] 예 트리오 - Moonlight Across Time",
+      "category": "클래식",
+      "district": "서초구",
+      "place": "라율아트홀",
+      "lat": 37.4824452369632,
+      "lng": 127.012614908746,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=df4385ee851f448dbe4bdbbdc2d3eb57&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159972&menuNo=200008",
+      "isFree": false,
+      "fee": "30,000원",
       "kind": "event",
-      "startDate": "2026-11-17",
-      "endDate": "2026-11-17"
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "time": "19:30~20:30"
     },
     {
       "id": "sc-1xth0vk",
@@ -358,7 +450,8 @@
       "fee": "R석 2만원 S석 1만5천원",
       "kind": "event",
       "startDate": "2026-11-17",
-      "endDate": "2026-11-17"
+      "endDate": "2026-11-17",
+      "time": "화 19:30"
     },
     {
       "id": "sc-u2txlz",
@@ -374,7 +467,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-17",
-      "endDate": "2026-11-17"
+      "endDate": "2026-11-17",
+      "time": "1400~18:00"
+    },
+    {
+      "id": "sc-xi5lfg",
+      "source": "seoul-culture",
+      "title": "[3기] 서울아트책보고 북클럽 X 현대문학 : 네 번째 시간 『백조와 박쥐』 읽기 / 한이 소설가 · 편집자",
+      "category": "교육/체험",
+      "district": "구로구",
+      "place": "서울아트책보고 워크숍룸",
+      "lat": 37.4982125677913,
+      "lng": 126.867088741096,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a3bc19c6357a4767a027031cfcc1774f&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159833&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "time": "19:00~20:30"
     },
     {
       "id": "sc-1f2xan5",
@@ -391,7 +502,8 @@
       "fee": "VIP석(스페셜티켓) 300,000원 R석 110,000원 S석 99,000원",
       "kind": "event",
       "startDate": "2026-11-15",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "19:00~20:30"
     },
     {
       "id": "sc-134600a",
@@ -408,7 +520,8 @@
       "fee": "전석 50,000원",
       "kind": "event",
       "startDate": "2026-11-14",
-      "endDate": "2026-12-06"
+      "endDate": "2026-12-06",
+      "time": "평일 19:30, 주말 15:00 *11.14(토) 18:00 공연 (월 공연없음)"
     },
     {
       "id": "sc-8v5qgy",
@@ -425,7 +538,8 @@
       "fee": "전석 40,000원",
       "kind": "event",
       "startDate": "2026-11-14",
-      "endDate": "2026-11-14"
+      "endDate": "2026-11-14",
+      "time": "15:00 / 18:00"
     },
     {
       "id": "sc-12odfs6",
@@ -442,7 +556,44 @@
       "fee": "1층석 66,000원",
       "kind": "event",
       "startDate": "2026-11-13",
-      "endDate": "2026-11-22"
+      "endDate": "2026-11-22",
+      "time": "(화-금) 19:30 / (토) 15:00, 19:00 / (일) 15:00"
+    },
+    {
+      "id": "sc-1s94njh",
+      "source": "seoul-culture",
+      "title": "[세종문화회관] CHANGMO : MONOLITH",
+      "category": "콘서트",
+      "district": "종로구",
+      "place": "세종문화회관 세종대극장",
+      "lat": 37.57260128068914,
+      "lng": 126.97577534746529,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1bac4afa535a4746be25de2bd43bc6ae&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159984&menuNo=200008",
+      "isFree": false,
+      "fee": "R석 139,000원 S석 99,000원",
+      "kind": "event",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-15",
+      "time": "11.13(금)-14(토) 19:30, 11.15(일) 17:00"
+    },
+    {
+      "id": "sc-15zj0v1",
+      "source": "seoul-culture",
+      "title": "hnei(이석희) 작곡발표회 [비누, 비노, 배누, 비눌, 비널 그리고 사분]",
+      "category": "클래식",
+      "district": "강남구",
+      "place": "플랫폼엘 플랫폼 라이브 (B2) (서울 강남구 언주로133길 11)",
+      "lat": 37.51616471154578,
+      "lng": 127.0342339545498,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1e8b09c80e184f759f1850e9f000cea0&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159973&menuNo=200008",
+      "isFree": false,
+      "fee": "전석 30,000원 / 1차 예매 20,000원 / 2차 예매 25,000원 / 예술인패스 25,000원",
+      "kind": "event",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-14",
+      "time": "11.13.(금) 19:30 / 11.14.(토) 14:00"
     },
     {
       "id": "sc-1ogdh2j",
@@ -458,7 +609,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-13",
-      "endDate": "2026-11-13"
+      "endDate": "2026-11-13",
+      "time": "19:00~21:00"
+    },
+    {
+      "id": "sc-u81kb",
+      "source": "seoul-culture",
+      "title": "[서울시립교향악단] 2026 서울시향 행복한 음악회, 함께! II",
+      "category": "클래식",
+      "district": "서초구",
+      "place": "예술의전당 IBK기업은행챔버홀",
+      "lat": 37.4802401962069,
+      "lng": 127.014215239186,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=36080658b4d245ffb90b1a881a91b864&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159980&menuNo=200008",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "time": "19:30"
     },
     {
       "id": "sc-1a3o8ef",
@@ -474,23 +643,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-13",
-      "endDate": "2026-11-13"
+      "endDate": "2026-11-13",
+      "time": "15:00~16:30"
     },
     {
-      "id": "sc-emj5hf",
+      "id": "sc-14vm8hx",
       "source": "seoul-culture",
-      "title": "[마포구립서강도서관] 11월/도서관초대석 (김영찬 작가) [가르치지 않을 용기]",
-      "category": "교육/체험",
-      "district": "마포구",
-      "place": "마포구립서강도서관 4층 어린이자료실",
-      "lat": 37.5477347268018,
-      "lng": 126.932061794829,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=2689dab5d01c49cfbaccc98305a4fdb8&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159909&menuNo=200011",
+      "title": "[서울시립교향악단] 2026 SPO Day",
+      "category": "클래식",
+      "district": "종로구",
+      "place": "세종문화회관 체임버홀",
+      "lat": 37.57260128068914,
+      "lng": 126.97577534746529,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=263c56dcb917492889869dee145cd978&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159981&menuNo=200008",
       "isFree": true,
       "kind": "event",
-      "startDate": "2026-11-12",
-      "endDate": "2026-11-12"
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "time": "19:30"
     },
     {
       "id": "sc-1jvod9o",
@@ -506,24 +677,42 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-12",
-      "endDate": "2026-11-12"
+      "endDate": "2026-11-12",
+      "time": "10:00~11:00 (1부 강연), 11:00~12:30 (2부 토크콘서트)"
     },
     {
-      "id": "sc-1oujw5f",
+      "id": "sc-emj5hf",
       "source": "seoul-culture",
-      "title": "[강북문화재단] 마티네 콘서트 [From Italy to Spain]",
-      "category": "클래식",
-      "district": "강북구",
-      "place": "강북문화예술회관 강북진달래홀",
-      "lat": 37.6409897866256,
-      "lng": 127.013878144422,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a85ee5a8b56148629f7cb6c6da82650b&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159891&menuNo=200008",
-      "isFree": false,
-      "fee": "전석 2만원",
+      "title": "[마포구립서강도서관] 11월/도서관초대석 (김영찬 작가) [가르치지 않을 용기]",
+      "category": "교육/체험",
+      "district": "마포구",
+      "place": "마포구립서강도서관 4층 어린이자료실",
+      "lat": 37.5477347268018,
+      "lng": 126.932061794829,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=2689dab5d01c49cfbaccc98305a4fdb8&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159909&menuNo=200011",
+      "isFree": true,
       "kind": "event",
-      "startDate": "2026-11-11",
-      "endDate": "2026-11-11"
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "time": "19:00~20:30"
+    },
+    {
+      "id": "sc-cbqkb",
+      "source": "seoul-culture",
+      "title": "[구산동도서관마을] 개관 11주년 기념 북토크 [사랑과 결함] 예소연 저자와의 만남",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구산동도서관마을 3층 힐링캠프",
+      "lat": 37.6101785198664,
+      "lng": 126.9126891869,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=47c7969a1f8e4ed39b204e050f8f9267&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159962&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "time": "19:30~21:00"
     },
     {
       "id": "sc-1ed9kjr",
@@ -539,7 +728,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-11",
-      "endDate": "2026-11-11"
+      "endDate": "2026-11-11",
+      "time": "19:00"
     },
     {
       "id": "sc-vt3bxd",
@@ -556,23 +746,43 @@
       "fee": "R석 2만원 S석 1만5천원",
       "kind": "event",
       "startDate": "2026-11-11",
-      "endDate": "2026-11-11"
+      "endDate": "2026-11-11",
+      "time": "수 19:30"
     },
     {
-      "id": "sc-1qnlkn8",
+      "id": "sc-1oujw5f",
       "source": "seoul-culture",
-      "title": "[서울시립교향악단] 2026 서울시향 우리동네 실내악 - 서울여자대학교",
+      "title": "[강북문화재단] 마티네 콘서트 [From Italy to Spain]",
       "category": "클래식",
-      "district": "노원구",
-      "place": "서울여자대학교 대강당",
-      "lat": 37.62751380753103,
-      "lng": 127.09040228908175,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=056d8d0b927c451da5f137f3c5ed9b97&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159957&menuNo=200008",
+      "district": "강북구",
+      "place": "강북문화예술회관 강북진달래홀",
+      "lat": 37.6409897866256,
+      "lng": 127.013878144422,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a85ee5a8b56148629f7cb6c6da82650b&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159891&menuNo=200008",
+      "isFree": false,
+      "fee": "전석 2만원",
+      "kind": "event",
+      "startDate": "2026-11-11",
+      "endDate": "2026-11-11",
+      "time": "수 11:00"
+    },
+    {
+      "id": "sc-9qlzmz",
+      "source": "seoul-culture",
+      "title": "2026 서울시민 생활음악 심포니 페스티벌 [음악으로 사람을 잇다]",
+      "category": "클래식",
+      "district": "서대문구",
+      "place": "서대문문화체육회관 대극장",
+      "lat": 37.5807597279754,
+      "lng": 126.931557440644,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=73578388e8bf4663862ae442d631169b&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159970&menuNo=200008",
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-10",
-      "endDate": "2026-11-10"
+      "endDate": "2026-11-12",
+      "time": "11.10.(화) 18:30, 11.11.(수) 19:30, 11.12.(목) 19:30"
     },
     {
       "id": "sc-rmqnw4",
@@ -589,7 +799,43 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-11-10",
-      "endDate": "2026-11-10"
+      "endDate": "2026-11-10",
+      "time": "(화) 18:30"
+    },
+    {
+      "id": "sc-1qnlkn8",
+      "source": "seoul-culture",
+      "title": "[서울시립교향악단] 2026 서울시향 우리동네 실내악 - 서울여자대학교",
+      "category": "클래식",
+      "district": "노원구",
+      "place": "서울여자대학교 대강당",
+      "lat": 37.62751380753103,
+      "lng": 127.09040228908175,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=056d8d0b927c451da5f137f3c5ed9b97&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159957&menuNo=200008",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "time": "18:00"
+    },
+    {
+      "id": "sc-kz8q54",
+      "source": "seoul-culture",
+      "title": "[세종문화회관] 2026 누구나 클래식 with 대전시립교향악단",
+      "category": "클래식",
+      "district": "종로구",
+      "place": "[세종문화회관 세종대극장",
+      "lat": 37.57260128068914,
+      "lng": 126.97577534746529,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4b369d3c0a7240d0b6c85e30cc843df3&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159983&menuNo=200008",
+      "isFree": false,
+      "fee": "관람료 선택제 1,000원 3,000원 5,000원 10,000원",
+      "kind": "event",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-10",
+      "time": "19:30"
     },
     {
       "id": "sc-uoaj9r",
@@ -606,7 +852,8 @@
       "fee": "R석 50,000원, S석 30,000원 (학생 50%)",
       "kind": "event",
       "startDate": "2026-11-08",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "14:00"
     },
     {
       "id": "sc-myuy5a",
@@ -622,7 +869,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-07",
-      "endDate": "2026-11-28"
+      "endDate": "2026-11-28",
+      "time": "매주 토요일 11:00~11:45"
     },
     {
       "id": "sc-1wnpzjm",
@@ -639,7 +887,8 @@
       "fee": "*본 공연은 무료공연이나, 1인 10,000원의 예약금이 있습니다. 예약금은 참여 여부와 관계없이 공연 종료 후 전액 환불되며, 결제 취소 및 환불은 일괄 진행됩니다.",
       "kind": "event",
       "startDate": "2026-11-07",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "평일 19:30 / 토 15:00, 19:00 / 일 14:00, 18:00 ※11.15(일)은 14:00 1회 공연만 진행"
     },
     {
       "id": "sc-wl01q7",
@@ -656,23 +905,8 @@
       "fee": "무료 방문",
       "kind": "event",
       "startDate": "2026-11-07",
-      "endDate": "2026-11-08"
-    },
-    {
-      "id": "sc-t6i7nv",
-      "source": "seoul-culture",
-      "title": "제27회 은평구 청강정철호 국악제",
-      "category": "국악",
-      "district": "은평구",
-      "place": "서울 은평문화예술회관 공연장, 대회의실",
-      "lat": 37.6036996869964,
-      "lng": 126.927901672834,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=7d5217e041254187adeff6612749e622&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159861&menuNo=200008",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-11-07",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "주말 12:00~19:00"
     },
     {
       "id": "sc-1xnjwbp",
@@ -689,23 +923,25 @@
       "fee": "R석: 7만원 S석: 5민원",
       "kind": "event",
       "startDate": "2026-11-07",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "16:00"
     },
     {
-      "id": "sc-qtclo3",
+      "id": "sc-t6i7nv",
       "source": "seoul-culture",
-      "title": "[구산동도서관마을] 은평 월간 다문화 미등록 [이주아동 이야기 은유 작가님과 함께하는 북토크]",
-      "category": "교육/체험",
+      "title": "제27회 은평구 청강정철호 국악제",
+      "category": "국악",
       "district": "은평구",
-      "place": "구산동도서관마을 3층 힐링캠프",
-      "lat": 37.6101785198664,
-      "lng": 126.9126891869,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=76c0984ef279466c893600ca77c26127&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159843&menuNo=200011",
+      "place": "서울 은평문화예술회관 공연장, 대회의실",
+      "lat": 37.6036996869964,
+      "lng": 126.927901672834,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=7d5217e041254187adeff6612749e622&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159861&menuNo=200008",
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-07",
-      "endDate": "2026-11-07"
+      "endDate": "2026-11-08",
+      "time": "11월7일(토) 9:00~18:00 / 11월8일(일) 9:00~18:00"
     },
     {
       "id": "sc-vkdo8y",
@@ -721,7 +957,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-07",
-      "endDate": "2026-11-07"
+      "endDate": "2026-11-07",
+      "time": "12:30~16:30"
     },
     {
       "id": "sc-ad9xkv",
@@ -738,7 +975,43 @@
       "fee": "전석 10,000원(학생 50%, 예술인패스 30%, 사전예매 10% 할인)",
       "kind": "event",
       "startDate": "2026-11-07",
-      "endDate": "2026-11-07"
+      "endDate": "2026-11-07",
+      "time": "토 17:00"
+    },
+    {
+      "id": "sc-qtclo3",
+      "source": "seoul-culture",
+      "title": "[구산동도서관마을] 은평 월간 다문화 미등록 [이주아동 이야기 은유 작가님과 함께하는 북토크]",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구산동도서관마을 3층 힐링캠프",
+      "lat": 37.6101785198664,
+      "lng": 126.9126891869,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=76c0984ef279466c893600ca77c26127&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159843&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "time": "14:00~16:00"
+    },
+    {
+      "id": "sc-f2fnnr",
+      "source": "seoul-culture",
+      "title": "국제 프리스타일 축구 월드 챔피언쉽 [2026 KILL THAT BALL: SEOUL]",
+      "category": "기타",
+      "district": "강남구",
+      "place": "1-2일차 신도림 오페라 하우스 / 3일차 강남 씨스퀘어",
+      "lat": 37.5038047972699,
+      "lng": 127.066592014355,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=23cfa4f9faca4628b28250e2aa2fa53d&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159963&menuNo=200013",
+      "isFree": false,
+      "fee": "참가비: 30,000원 / 관람 1-2일차: 무료, 3일차: 10,000원",
+      "kind": "event",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-08",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-t8q1fq",
@@ -754,7 +1027,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-06",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "11.6(금) 12:00~19:00, 11.7(토) 10:00~18:00, 11.8(일) 10:00~18:00"
     },
     {
       "id": "sc-wtcoo5",
@@ -771,23 +1045,8 @@
       "fee": "R 40,000원 S 30,000원",
       "kind": "event",
       "startDate": "2026-11-06",
-      "endDate": "2026-11-08"
-    },
-    {
-      "id": "sc-1s2fmht",
-      "source": "seoul-culture",
-      "title": "[서울시립교향악단] 2026 서울시향 우리동네 실내악 - 양천문화회관",
-      "category": "클래식",
-      "district": "양천구",
-      "place": "양천문화회관 대극장",
-      "lat": 37.5165209333904,
-      "lng": 126.863340014538,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5fe835f4cf4e40668754590a9723e037&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159955&menuNo=200008",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-11-06",
-      "endDate": "2026-11-06"
+      "endDate": "2026-11-08",
+      "time": "금 19:30 토·일 15:00"
     },
     {
       "id": "sc-sqygvg",
@@ -803,7 +1062,42 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-06",
-      "endDate": "2026-11-06"
+      "endDate": "2026-11-06",
+      "time": "17:00~18:00"
+    },
+    {
+      "id": "sc-1s2fmht",
+      "source": "seoul-culture",
+      "title": "[서울시립교향악단] 2026 서울시향 우리동네 실내악 - 양천문화회관",
+      "category": "클래식",
+      "district": "양천구",
+      "place": "양천문화회관 대극장",
+      "lat": 37.5165209333904,
+      "lng": 126.863340014538,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5fe835f4cf4e40668754590a9723e037&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159955&menuNo=200008",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "time": "19:30"
+    },
+    {
+      "id": "sc-1wn6kj5",
+      "source": "seoul-culture",
+      "title": "[서울시립 서서울미술관] 2026 서서울미술관 뉴미디어 신진작가전 《탈피하지 못하는 뱀은》",
+      "category": "전시/미술",
+      "district": "금천구",
+      "place": "서울시립 서서울미술관 1층 제3전시실",
+      "lat": 37.4580752536422,
+      "lng": 126.894935931812,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=2217108ab60e445ea23979343e606c7a&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159988&menuNo=200009",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-05",
+      "endDate": "2027-02-28",
+      "time": "평일 10:00~19:00 / 주말(하절기) 10:00~19:00, (동절기) 10:00~18:00"
     },
     {
       "id": "sc-dlyu3s",
@@ -819,7 +1113,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-05",
-      "endDate": "2026-11-12"
+      "endDate": "2026-11-12",
+      "time": "매주 목요일, 14:00~16:00"
+    },
+    {
+      "id": "sc-1rzzjr0",
+      "source": "seoul-culture",
+      "title": "명지대학교 영상애니메이션디자인전공 제 25회 졸업전시회 [PUZZLE]",
+      "category": "전시/미술",
+      "district": "서초구",
+      "place": "모나코스페이스 지하 1층 메인홀",
+      "lat": 37.497327112113695,
+      "lng": 127.02451695583956,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=7a7a2d549b7e42bc9d8f1a986872a377&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159966&menuNo=200009",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-09",
+      "time": "11:00 ~ 20:00"
     },
     {
       "id": "sc-klykpt",
@@ -835,7 +1147,26 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-05",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "12:00~19:00"
+    },
+    {
+      "id": "sc-9f36bo",
+      "source": "seoul-culture",
+      "title": "[세종문화회관] 26 세종시즌 [라보엠]",
+      "category": "뮤지컬/오페라",
+      "district": "종로구",
+      "place": "세종문화회관 세종대극장",
+      "lat": 37.57260128068914,
+      "lng": 126.97577534746529,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=6f97de9680d04d6b8b8ef10d9cad60e7&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159982&menuNo=200008",
+      "isFree": false,
+      "fee": "VIP석 150,000원 R석 120,000원 S석 100,000원 A석 80,000원 B석 50,000원",
+      "kind": "event",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-08",
+      "time": "11.05(목) 19:30, 11.06(금) 19:30, 11.07(토) 17:00, 11.08(일) 17:00"
     },
     {
       "id": "sc-fe6xql",
@@ -852,23 +1183,8 @@
       "fee": "전석 2만원 (할인율 상세 페이지 참고)",
       "kind": "event",
       "startDate": "2026-11-05",
-      "endDate": "2026-11-07"
-    },
-    {
-      "id": "sc-hke25t",
-      "source": "seoul-culture",
-      "title": "[구산동도서관마을] 『니체 초인 수업』 강용수 저자와의 만남",
-      "category": "교육/체험",
-      "district": "은평구",
-      "place": "구산동도서관마을 3층 힐링캠프",
-      "lat": 37.6101785198664,
-      "lng": 126.9126891869,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=596b45a1a89c4446af7eccb539db51df&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159944&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-11-05",
-      "endDate": "2026-11-05"
+      "endDate": "2026-11-07",
+      "time": "목 19:30/ 금 10:30, 19:30 / 토 15:00"
     },
     {
       "id": "sc-1bwjyl1",
@@ -884,7 +1200,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-05",
-      "endDate": "2026-11-05"
+      "endDate": "2026-11-05",
+      "time": "19:30"
+    },
+    {
+      "id": "sc-hke25t",
+      "source": "seoul-culture",
+      "title": "[구산동도서관마을] 『니체 초인 수업』 강용수 저자와의 만남",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구산동도서관마을 3층 힐링캠프",
+      "lat": 37.6101785198664,
+      "lng": 126.9126891869,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=596b45a1a89c4446af7eccb539db51df&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159944&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-05",
+      "time": "19:30~21:00"
     },
     {
       "id": "sc-ys2s0v",
@@ -900,7 +1234,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-05",
-      "endDate": "2026-11-05"
+      "endDate": "2026-11-05",
+      "time": "19:30~ (90분)"
     },
     {
       "id": "sc-1i4449b",
@@ -916,7 +1251,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-05",
-      "endDate": "2026-11-05"
+      "endDate": "2026-11-05",
+      "time": "15:00~16:40"
     },
     {
       "id": "sc-3nh64w",
@@ -933,7 +1269,8 @@
       "fee": "전석30,000원(예술인/재관람 50% 할인)",
       "kind": "event",
       "startDate": "2026-11-05",
-      "endDate": "2026-11-05"
+      "endDate": "2026-11-05",
+      "time": "19:30"
     },
     {
       "id": "sc-1dzuetw",
@@ -949,7 +1286,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-04",
-      "endDate": "2026-11-27"
+      "endDate": "2026-11-27",
+      "time": "매주 수, 목, 금 10:00~12:00"
     },
     {
       "id": "sc-1s0k9ma",
@@ -966,7 +1304,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-11-04",
-      "endDate": "2026-11-25"
+      "endDate": "2026-11-25",
+      "time": "매주 수요일 19:00~21:00"
     },
     {
       "id": "sc-154e7wk",
@@ -982,23 +1321,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-04",
-      "endDate": "2026-11-25"
-    },
-    {
-      "id": "sc-1fsfu4p",
-      "source": "seoul-culture",
-      "title": "[동작문화재단] 2026 상도어울마당 아트홀 개관 3주년 기획 프로그램 [상도 놀이터]",
-      "category": "교육/체험",
-      "district": "동작구",
-      "place": "상도어울마당 아트홀",
-      "lat": 37.4992554654409,
-      "lng": 126.940372169449,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5ec24d40a8a24d4c844a0189dcd7496e&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159914&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-11-04",
-      "endDate": "2026-11-18"
+      "endDate": "2026-11-25",
+      "time": "10:00~11:30"
     },
     {
       "id": "sc-jwva05",
@@ -1014,23 +1338,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-04",
-      "endDate": "2026-11-18"
+      "endDate": "2026-11-18",
+      "time": "16:00~17:00"
     },
     {
-      "id": "sc-1582d36",
+      "id": "sc-1fsfu4p",
       "source": "seoul-culture",
-      "title": "[서초문화재단] 2026서리풀 어울림 콘서트 [피아니스트 양지우의 with IN&OUT II]",
-      "category": "콘서트",
-      "district": "서초구",
-      "place": "반포심산아트홀",
-      "lat": 37.49904352601313,
-      "lng": 126.99165409240258,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=476c9134e434496093eb6a774363c096&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159929&menuNo=200008",
+      "title": "[동작문화재단] 2026 상도어울마당 아트홀 개관 3주년 기획 프로그램 [상도 놀이터]",
+      "category": "교육/체험",
+      "district": "동작구",
+      "place": "상도어울마당 아트홀",
+      "lat": 37.4992554654409,
+      "lng": 126.940372169449,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5ec24d40a8a24d4c844a0189dcd7496e&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159914&menuNo=200011",
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-04",
-      "endDate": "2026-11-04"
+      "endDate": "2026-11-18",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-1uyw6h7",
@@ -1047,7 +1373,25 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-11-04",
-      "endDate": "2026-11-04"
+      "endDate": "2026-11-04",
+      "time": "수 19:30"
+    },
+    {
+      "id": "sc-1582d36",
+      "source": "seoul-culture",
+      "title": "[서초문화재단] 2026서리풀 어울림 콘서트 [피아니스트 양지우의 with IN&OUT II]",
+      "category": "콘서트",
+      "district": "서초구",
+      "place": "반포심산아트홀",
+      "lat": 37.49904352601313,
+      "lng": 126.99165409240258,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=476c9134e434496093eb6a774363c096&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159929&menuNo=200008",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-04",
+      "endDate": "2026-11-04",
+      "time": "수 19:30"
     },
     {
       "id": "sc-iwu0yj",
@@ -1064,7 +1408,8 @@
       "fee": "프로그램별 상이 (상세 내용 참조)",
       "kind": "event",
       "startDate": "2026-11-03",
-      "endDate": "2026-11-27"
+      "endDate": "2026-11-27",
+      "time": "프로그램별 상이 (상세 내용 참조)"
     },
     {
       "id": "sc-1aeseu4",
@@ -1080,23 +1425,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-03",
-      "endDate": "2026-11-07"
-    },
-    {
-      "id": "sc-5gub2l",
-      "source": "seoul-culture",
-      "title": "[3기] 서울아트책보고 북클럽 X 현대문학 : 세 번째 시간 『매스커레이드 호텔』 읽기 / 한이 소설가 · 편집자",
-      "category": "교육/체험",
-      "district": "구로구",
-      "place": "서울아트책보고 워크숍룸",
-      "lat": 37.4982125677913,
-      "lng": 126.867088741096,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9d38a6a441da464da03f06191856ea41&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159831&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-11-03",
-      "endDate": "2026-11-03"
+      "endDate": "2026-11-07",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-1j1940u",
@@ -1113,7 +1443,25 @@
       "fee": "전석무료",
       "kind": "event",
       "startDate": "2026-11-03",
-      "endDate": "2026-11-03"
+      "endDate": "2026-11-03",
+      "time": "화 10:00,14:00"
+    },
+    {
+      "id": "sc-5gub2l",
+      "source": "seoul-culture",
+      "title": "[3기] 서울아트책보고 북클럽 X 현대문학 : 세 번째 시간 『매스커레이드 호텔』 읽기 / 한이 소설가 · 편집자",
+      "category": "교육/체험",
+      "district": "구로구",
+      "place": "서울아트책보고 워크숍룸",
+      "lat": 37.4982125677913,
+      "lng": 126.867088741096,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9d38a6a441da464da03f06191856ea41&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159831&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "time": "19:00~20:30"
     },
     {
       "id": "sc-1qadrmr",
@@ -1129,7 +1477,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-02",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "11:00~19:00, 목요일 21:00까지 연장"
     },
     {
       "id": "sc-14fdelf",
@@ -1145,7 +1494,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-02",
-      "endDate": "2026-11-06"
+      "endDate": "2026-11-06",
+      "time": "공연별 상이"
     },
     {
       "id": "sc-vmb2m8",
@@ -1161,7 +1511,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-02",
-      "endDate": "2026-11-02"
+      "endDate": "2026-11-02",
+      "time": "19:30"
+    },
+    {
+      "id": "sc-1eya2sj",
+      "source": "seoul-culture",
+      "title": "[구산동도서관마을] 구산동도서관마을 개관 11주년 기념 행사",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구산동도서관마을 3층 힐링캠프",
+      "lat": 37.6101785198664,
+      "lng": 126.9126891869,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=40c01f4c93254ed8acb7d7a8aeac11d7&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159971&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-30",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-1debx5r",
@@ -1181,7 +1549,8 @@
       ],
       "kind": "event",
       "startDate": "2026-11-01",
-      "endDate": "2026-11-30"
+      "endDate": "2026-11-30",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-131vxnv",
@@ -1198,39 +1567,8 @@
       "fee": "150,000원",
       "kind": "event",
       "startDate": "2026-11-01",
-      "endDate": "2026-11-07"
-    },
-    {
-      "id": "sc-1pn08g",
-      "source": "seoul-culture",
-      "title": "2026 시 읽는 서울지하철",
-      "category": "축제-문화/예술",
-      "district": "중구",
-      "place": "시청역 & 서울지하철 2호선(51.4km, 50개역, 87분)  (거점역 : 시청역-상왕십리역-강변역-역삼역-서울대역-문래-신촌역)",
-      "lat": 37.566370776634,
-      "lng": 126.977918351844,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=3ff6fcbedb2a4fb79927129daf4a7ad1&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159779&menuNo=200010",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-11-01",
-      "endDate": "2026-11-01"
-    },
-    {
-      "id": "sc-36n73w",
-      "source": "seoul-culture",
-      "title": "2026 이북5도민어울림한마당축제",
-      "category": "축제-문화/예술",
-      "district": "노원구",
-      "place": "석계문화공원",
-      "lat": 37.6153310057181,
-      "lng": 127.064140071899,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ff6a828eb4e4434ebd0280c282121986&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159662&menuNo=200010",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-11-01",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-07",
+      "time": "10:30~13:00 또는 14:30~17:00"
     },
     {
       "id": "sc-sngrg8",
@@ -1246,7 +1584,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-11-01",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "17:00~19:00"
     },
     {
       "id": "sc-1ui152m",
@@ -1263,7 +1602,42 @@
       "fee": "전석무료",
       "kind": "event",
       "startDate": "2026-11-01",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "17:00"
+    },
+    {
+      "id": "sc-1pn08g",
+      "source": "seoul-culture",
+      "title": "2026 시 읽는 서울지하철",
+      "category": "축제-문화/예술",
+      "district": "중구",
+      "place": "시청역 & 서울지하철 2호선(51.4km, 50개역, 87분)  (거점역 : 시청역-상왕십리역-강변역-역삼역-서울대역-문래-신촌역)",
+      "lat": 37.566370776634,
+      "lng": 126.977918351844,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=3ff6fcbedb2a4fb79927129daf4a7ad1&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159779&menuNo=200010",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "time": "12:00~14:00"
+    },
+    {
+      "id": "sc-36n73w",
+      "source": "seoul-culture",
+      "title": "2026 이북5도민어울림한마당축제",
+      "category": "축제-문화/예술",
+      "district": "노원구",
+      "place": "석계문화공원",
+      "lat": 37.6153310057181,
+      "lng": 127.064140071899,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ff6a828eb4e4434ebd0280c282121986&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159662&menuNo=200010",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "time": "13:00~18:00"
     },
     {
       "id": "sc-mzcn65",
@@ -1280,7 +1654,8 @@
       "fee": "15,000원",
       "kind": "event",
       "startDate": "2026-10-31",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "매주 토,일 10:30~12:00 / 14:00~15:30"
     },
     {
       "id": "sc-ytox9v",
@@ -1297,7 +1672,8 @@
       "fee": "VIP석 7만원 R석 6만원 S석 4만원",
       "kind": "event",
       "startDate": "2026-10-31",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "15:00"
     },
     {
       "id": "sc-bir9ti",
@@ -1313,24 +1689,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-31",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-46asyh",
-      "source": "seoul-culture",
-      "title": "서초심포니오케스트라13주년 정기연주회 [Andante Catabile]",
-      "category": "클래식",
-      "district": "강남구",
-      "place": "광림아트센터 장천홀",
-      "lat": 37.5242621122375,
-      "lng": 127.026542808066,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d6d394cccb724097b671dd9fcbe389e9&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159748&menuNo=200008",
-      "isFree": false,
-      "fee": "전석 10,000원",
-      "kind": "event",
-      "startDate": "2026-10-31",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "12:00~17:00"
     },
     {
       "id": "sc-190bknw",
@@ -1347,7 +1707,26 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-31",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "14:00~16:00"
+    },
+    {
+      "id": "sc-46asyh",
+      "source": "seoul-culture",
+      "title": "서초심포니오케스트라13주년 정기연주회 [Andante Catabile]",
+      "category": "클래식",
+      "district": "강남구",
+      "place": "광림아트센터 장천홀",
+      "lat": 37.5242621122375,
+      "lng": 127.026542808066,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d6d394cccb724097b671dd9fcbe389e9&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159748&menuNo=200008",
+      "isFree": false,
+      "fee": "전석 10,000원",
+      "kind": "event",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "time": "17:00~19:00"
     },
     {
       "id": "sc-1l0w5af",
@@ -1363,7 +1742,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-31",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "13:00~21:00"
     },
     {
       "id": "sc-atgcn5",
@@ -1380,41 +1760,26 @@
       "fee": "전석 30,000원",
       "kind": "event",
       "startDate": "2026-10-31",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "17:00~18:00"
     },
     {
-      "id": "sc-1tvf2q7",
+      "id": "sc-trw4",
       "source": "seoul-culture",
-      "title": "[서초문화재단] 서리풀 오페라 파노라마 [Belcanto Collage] 로시니&도니제티",
-      "category": "뮤지컬/오페라",
-      "district": "서초구",
-      "place": "반포심산아트홀",
-      "lat": 37.49904352601313,
-      "lng": 126.99165409240258,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c84b67c9736948e08519b671ca3a366b&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159938&menuNo=200008",
-      "isFree": false,
-      "fee": "R석 : 2만원 S석 : 1만5천원",
-      "kind": "event",
-      "startDate": "2026-10-30",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-1ic78bw",
-      "source": "seoul-culture",
-      "title": "2026 정동야행(夜行)",
-      "category": "축제-전통/역사",
+      "title": "유별남 사진전 [兪  ;  그러하다]",
+      "category": "전시/미술",
       "district": "중구",
-      "place": "중구 덕수궁 주변 정동일대",
-      "lat": 37.56506235497958,
-      "lng": 126.97654180724513,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c866c77b7aa54ad497ac8caf725360fc&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159663&menuNo=200010",
+      "place": "와이아트 갤러리",
+      "lat": 37.5623817630809,
+      "lng": 126.991642957434,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=357b933606d648e3a3984af8c3ca68fd&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159956&menuNo=200009",
       "isFree": true,
-      "fee": "체험프로그램 중 일부 유료",
+      "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-30",
-      "endDate": "2026-10-31"
+      "endDate": "2026-11-12",
+      "time": "평일 11:00~19:00 / 토 12:00~18:00 / 심야갤러리 11.5.(목) 22:00까지"
     },
     {
       "id": "sc-bt94aw",
@@ -1431,7 +1796,26 @@
       "fee": "전석 20,000원",
       "kind": "event",
       "startDate": "2026-10-30",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "금 19:30 / 토 11:00, 14:00"
+    },
+    {
+      "id": "sc-1ic78bw",
+      "source": "seoul-culture",
+      "title": "2026 정동야행(夜行)",
+      "category": "축제-전통/역사",
+      "district": "중구",
+      "place": "중구 덕수궁 주변 정동일대",
+      "lat": 37.56506235497958,
+      "lng": 126.97654180724513,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c866c77b7aa54ad497ac8caf725360fc&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159663&menuNo=200010",
+      "isFree": true,
+      "fee": "체험프로그램 중 일부 유료",
+      "kind": "event",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-31",
+      "time": "10. 30.(금) 18:00~22:00 / 10. 31.(토) 14:00~22:00"
     },
     {
       "id": "sc-1rz2el1",
@@ -1448,23 +1832,43 @@
       "fee": "기본 이용 무료 (먹거리 및 일부 판매 품목은 개별 구매)",
       "kind": "event",
       "startDate": "2026-10-30",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "16:00~21:00"
     },
     {
-      "id": "sc-17ouohy",
+      "id": "sc-1tvf2q7",
       "source": "seoul-culture",
-      "title": "[서울책보고] 10월 모여보고",
+      "title": "[서초문화재단] 서리풀 오페라 파노라마 [Belcanto Collage] 로시니&도니제티",
+      "category": "뮤지컬/오페라",
+      "district": "서초구",
+      "place": "반포심산아트홀",
+      "lat": 37.49904352601313,
+      "lng": 126.99165409240258,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c84b67c9736948e08519b671ca3a366b&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159938&menuNo=200008",
+      "isFree": false,
+      "fee": "R석 : 2만원 S석 : 1만5천원",
+      "kind": "event",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-31",
+      "time": "금 19:30, 토 15:00"
+    },
+    {
+      "id": "sc-hu24qp",
+      "source": "seoul-culture",
+      "title": "[영등포문화재단] 페이퍼 바이닐 제작 워크숍 [Noise Collecting: LP로 재생하는 기억]",
       "category": "교육/체험",
-      "district": "송파구",
-      "place": "서울책보고",
-      "lat": 37.52202784263066,
-      "lng": 127.1038467712633,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c126f3527663460daa8eec27b990f529&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159923&menuNo=200011",
+      "district": "영등포구",
+      "place": "YDP창의예술교육센터 작작랩",
+      "lat": 37.5377136039448,
+      "lng": 126.895802789396,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=50fc01de61414130b3543cacfd8de34d&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159850&menuNo=200011",
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-30",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "19:00~21:00"
     },
     {
       "id": "sc-1eksvdm",
@@ -1481,40 +1885,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-30",
-      "endDate": "2026-10-30"
-    },
-    {
-      "id": "sc-1lwhuge",
-      "source": "seoul-culture",
-      "title": "[한성백제박물관] KBS국악관현악단과 함께하는 박물관 달빛 음악회",
-      "category": "국악",
-      "district": "송파구",
-      "place": "한성백제박물관 로비",
-      "lat": 37.51543881335773,
-      "lng": 127.12088940368128,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c174f400bc7e4ee99bdd678c9832ea8e&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159238&menuNo=200008",
-      "isFree": true,
-      "fee": "무료",
-      "kind": "event",
-      "startDate": "2026-10-30",
-      "endDate": "2026-10-30"
-    },
-    {
-      "id": "sc-hu24qp",
-      "source": "seoul-culture",
-      "title": "[영등포문화재단] 페이퍼 바이닐 제작 워크숍 [Noise Collecting: LP로 재생하는 기억]",
-      "category": "교육/체험",
-      "district": "영등포구",
-      "place": "YDP창의예술교육센터 작작랩",
-      "lat": 37.5377136039448,
-      "lng": 126.895802789396,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=50fc01de61414130b3543cacfd8de34d&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159850&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-30",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "19:00~20:00"
     },
     {
       "id": "sc-o47icq",
@@ -1531,7 +1903,43 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-30",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "금요일 19:00~20:30"
+    },
+    {
+      "id": "sc-17ouohy",
+      "source": "seoul-culture",
+      "title": "[서울책보고] 10월 모여보고",
+      "category": "교육/체험",
+      "district": "송파구",
+      "place": "서울책보고",
+      "lat": 37.52202784263066,
+      "lng": 127.1038467712633,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c126f3527663460daa8eec27b990f529&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159923&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "time": "18:00~20:00"
+    },
+    {
+      "id": "sc-1lwhuge",
+      "source": "seoul-culture",
+      "title": "[한성백제박물관] KBS국악관현악단과 함께하는 박물관 달빛 음악회",
+      "category": "국악",
+      "district": "송파구",
+      "place": "한성백제박물관 로비",
+      "lat": 37.51543881335773,
+      "lng": 127.12088940368128,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c174f400bc7e4ee99bdd678c9832ea8e&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159238&menuNo=200008",
+      "isFree": true,
+      "fee": "무료",
+      "kind": "event",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30",
+      "time": "19:00~20:00"
     },
     {
       "id": "sc-1tx2mwe",
@@ -1548,7 +1956,8 @@
       "fee": "정가 30,000원",
       "kind": "event",
       "startDate": "2026-10-29",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "평일 19:30, 주말 15:00"
     },
     {
       "id": "sc-n4zmjb",
@@ -1565,56 +1974,42 @@
       "fee": "전석 50,000원(자유석)",
       "kind": "event",
       "startDate": "2026-10-29",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "26.10.29 19:30 / 26.10.31 16:00"
     },
     {
-      "id": "sc-129lno",
+      "id": "sc-bej6ol",
       "source": "seoul-culture",
-      "title": "수림뉴웨이브 2026 - 이화영 [化寧; 편안하게 되리라]",
-      "category": "국악",
-      "district": "동대문구",
-      "place": "수림문화재단 김희수SPACE1",
-      "lat": 37.590705971349955,
-      "lng": 127.04281951646153,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=651ec592dee6467a8c4bc8279d6d1bc3&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159707&menuNo=200008",
-      "isFree": false,
-      "fee": "전석30,000원(예술인/재관람 50% 할인)",
-      "kind": "event",
-      "startDate": "2026-10-29",
-      "endDate": "2026-10-29"
-    },
-    {
-      "id": "sc-1j2285z",
-      "source": "seoul-culture",
-      "title": "[종로구청] 서울예고와 함께하는 [재밌는 클래식 여행] 종로구민 음악회",
-      "category": "클래식",
-      "district": "종로구",
-      "place": "서울아트센터 도암홀",
-      "lat": 37.60603328383823,
-      "lng": 126.96904312496109,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=666341f43d874d2da12980c5abce678e&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159939&menuNo=200008",
+      "title": "2026 빛남만남 (빛나는 남대문 악세사리와의 만남)",
+      "category": "기타",
+      "district": "중구",
+      "place": "남대문시장 아케이드(회현역 5번출구)",
+      "lat": 37.5590596666081,
+      "lng": 126.97757927544619,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=2751f87a17cb4e5f9e9ac51eac31c891&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159964&menuNo=200013",
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-29",
-      "endDate": "2026-10-29"
+      "endDate": "2026-10-30",
+      "time": "10:00~15:00"
     },
     {
-      "id": "sc-vlmm9h",
+      "id": "sc-fucli5",
       "source": "seoul-culture",
-      "title": "[서울역사박물관]  제6회 서울역사박물관 배리어프리영화관 [화이트 버드]",
-      "category": "영화",
-      "district": "종로구",
-      "place": "서울역사박물관 1층 야주개홀(강당)",
-      "lat": 37.570507525011855,
-      "lng": 126.97052372473162,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=93ffe5b20e2d4616a2d002305d374c56&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159916&menuNo=200013",
+      "title": "[구립증산도서관] 점자 촉각책 제작 봉사 프로그램 [손끝으로 읽는 세상]",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구립증산도서관 1층 문화교육실",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=48e92d41429747138b4aec9d233af00f&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159977&menuNo=200011",
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-29",
-      "endDate": "2026-10-29"
+      "endDate": "2026-10-29",
+      "time": "10:00~12:00"
     },
     {
       "id": "sc-iay8b0",
@@ -1631,7 +2026,77 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-29",
-      "endDate": "2026-10-29"
+      "endDate": "2026-10-29",
+      "time": "15:00~16:00"
+    },
+    {
+      "id": "sc-vlmm9h",
+      "source": "seoul-culture",
+      "title": "[서울역사박물관]  제6회 서울역사박물관 배리어프리영화관 [화이트 버드]",
+      "category": "영화",
+      "district": "종로구",
+      "place": "서울역사박물관 1층 야주개홀(강당)",
+      "lat": 37.570507525011855,
+      "lng": 126.97052372473162,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=93ffe5b20e2d4616a2d002305d374c56&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159916&menuNo=200013",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "time": "14:00~16:00"
+    },
+    {
+      "id": "sc-1j2285z",
+      "source": "seoul-culture",
+      "title": "[종로구청] 서울예고와 함께하는 [재밌는 클래식 여행] 종로구민 음악회",
+      "category": "클래식",
+      "district": "종로구",
+      "place": "서울아트센터 도암홀",
+      "lat": 37.60603328383823,
+      "lng": 126.96904312496109,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=666341f43d874d2da12980c5abce678e&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159939&menuNo=200008",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "time": "19:00~20:30"
+    },
+    {
+      "id": "sc-129lno",
+      "source": "seoul-culture",
+      "title": "수림뉴웨이브 2026 - 이화영 [化寧; 편안하게 되리라]",
+      "category": "국악",
+      "district": "동대문구",
+      "place": "수림문화재단 김희수SPACE1",
+      "lat": 37.590705971349955,
+      "lng": 127.04281951646153,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=651ec592dee6467a8c4bc8279d6d1bc3&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159707&menuNo=200008",
+      "isFree": false,
+      "fee": "전석30,000원(예술인/재관람 50% 할인)",
+      "kind": "event",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-29",
+      "time": "19:30"
+    },
+    {
+      "id": "sc-1x4gn5e",
+      "source": "seoul-culture",
+      "title": "[서울시립 사진미술관] 포토 디스커버리 프로젝트 《기계적 시선: 접촉하여 보기》",
+      "category": "전시/미술",
+      "district": "도봉구",
+      "place": "서울시립 사진미술관 1층 로비",
+      "lat": 37.6555150225578,
+      "lng": 127.048947814686,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ac8e6722ff864f1c8f84cee71a3248fd&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159987&menuNo=200009",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-12-20",
+      "time": "화-금 10:00~20:00 토·일·공휴일 10:00~18:00 (상세 관람시간 홈페이지 참조)"
     },
     {
       "id": "sc-g1u6ol",
@@ -1648,7 +2113,8 @@
       "fee": "없음",
       "kind": "event",
       "startDate": "2026-10-28",
-      "endDate": "2026-11-11"
+      "endDate": "2026-11-11",
+      "time": "매주 수요일 10:30~12:00"
     },
     {
       "id": "sc-kdli77",
@@ -1665,7 +2131,8 @@
       "fee": "전석 50,000원",
       "kind": "event",
       "startDate": "2026-10-28",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "평일 19:30, 주말.공휴일 15:00 (월,화 공연없음)"
     },
     {
       "id": "sc-eype67",
@@ -1681,7 +2148,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-28",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "12:00~19:00"
     },
     {
       "id": "sc-tku7hu",
@@ -1697,122 +2165,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-28",
-      "endDate": "2026-10-30"
-    },
-    {
-      "id": "sc-31f6b0",
-      "source": "seoul-culture",
-      "title": "[마포문화재단] 제11회 M 클래식 축제 [뮤라벨 콘서트]",
-      "category": "클래식",
-      "district": "마포구",
-      "place": "마포아트센터 플레이맥",
-      "lat": 37.54987259578174,
-      "lng": 126.9455874749264,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d0069ec8a15440cf83bea9a06775367a&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158566&menuNo=200008",
-      "isFree": false,
-      "fee": "전석 20,000원",
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-1nzo4mt",
-      "source": "seoul-culture",
-      "title": "[구립증산도서관] 개관 시간 연장 지원 사업 [책이랑 뚝딱! 공방] 10월",
-      "category": "교육/체험",
-      "district": "은평구",
-      "place": "구립증산도서관 3층 어린이열람실",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a89b0a3c641740138981056c05787b32&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159936&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-ijfiw7",
-      "source": "seoul-culture",
-      "title": "[구립증산도서관] 10월 책 읽어주는 사서 [수요일은 책이랑 쑥쑥]",
-      "category": "교육/체험",
-      "district": "은평구",
-      "place": "구립증산도서관 3층 가족열람실",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1249bd01b87e471e88a7f9c4e8a847ae&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159935&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-1xkfsku",
-      "source": "seoul-culture",
-      "title": "제30회 작곡가의방 [조윤제]",
-      "category": "교육/체험",
-      "district": "종로구",
-      "place": "서울예술인지원센터 세미나룸",
-      "lat": 37.5836990003446,
-      "lng": 127.00371665858,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=cda0a6a496bc4d34b6e8aedf7cc55cd6&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159863&menuNo=200011",
-      "isFree": true,
-      "fee": "0원",
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-qpdzpp",
-      "source": "seoul-culture",
-      "title": "[마포문화재단] M 마티네 [2026 MAC 모닝 콘서트 ＃8]",
-      "category": "클래식",
-      "district": "마포구",
-      "place": "마포아트센터 아트홀맥",
-      "lat": 37.54987259578174,
-      "lng": 126.9455874749264,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=8660b2c6515b4b4091296c895c238a2d&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159853&menuNo=200008",
-      "isFree": false,
-      "fee": "전석 20,000원",
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-17fr8ur",
-      "source": "seoul-culture",
-      "title": "[서울로봇인공지능과학관] 강연/라임 콜로키엄 [2026년 제7회_AI와 함께 만드는, 맞춤형 로봇]",
-      "category": "교육/체험",
-      "district": "도봉구",
-      "place": "서울로봇인공지능과학관 1층 로비",
-      "lat": 37.6555838047766,
-      "lng": 127.049506212905,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c494ef63de6b47c2a928bcb233e9940b&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159844&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-8ke6jb",
-      "source": "seoul-culture",
-      "title": "2026 Art Agora Festival",
-      "category": "축제-문화/예술",
-      "district": "양천구",
-      "place": "서울 양천구 목동서로 225, 대한민국예술인센터 1층 체험존, 2층 아트홀",
-      "lat": 37.5270754105611,
-      "lng": 126.870745963571,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a09519a1c42d400ebc9ba3879f2f1ff5&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159820&menuNo=200010",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-30",
+      "time": "10.28 10:00 ~ 10.30 12:30"
     },
     {
       "id": "sc-15o55a6",
@@ -1829,91 +2183,43 @@
       "fee": "R석 120,000원 / S석 90,000원 / A석 60,000원 / B석 30,000원",
       "kind": "event",
       "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "19:30"
     },
     {
-      "id": "sc-1q2e3k3",
+      "id": "sc-31f6b0",
       "source": "seoul-culture",
-      "title": "[서초문화재단] 2026 서리풀 재즈페스타 [Golden October]",
-      "category": "콘서트",
-      "district": "서초구",
-      "place": "반포심산아트홀",
-      "lat": 37.49904352601313,
-      "lng": 126.99165409240258,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ca4c2741d2d04886adb40e7452f135e2&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159771&menuNo=200008",
+      "title": "[마포문화재단] 제11회 M 클래식 축제 [뮤라벨 콘서트]",
+      "category": "클래식",
+      "district": "마포구",
+      "place": "마포아트센터 플레이맥",
+      "lat": 37.54987259578174,
+      "lng": 126.9455874749264,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=d0069ec8a15440cf83bea9a06775367a&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158566&menuNo=200008",
       "isFree": false,
-      "fee": "R석 2만원 S석 1만5천원",
+      "fee": "전석 20,000원",
       "kind": "event",
       "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "(수) 19:30"
     },
     {
-      "id": "sc-1n65nuy",
+      "id": "sc-17fr8ur",
       "source": "seoul-culture",
-      "title": "[대우재단 시민강좌] 생명에게서 찾은 첨단기술의 비밀",
+      "title": "[서울로봇인공지능과학관] 강연/라임 콜로키엄 [2026년 제7회_AI와 함께 만드는, 맞춤형 로봇]",
       "category": "교육/체험",
-      "district": "종로구",
-      "place": "대우재단빌딩 5층, 대우학술라운지",
-      "lat": 37.5792139403308,
-      "lng": 126.973229731453,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=dd668c79e1ed48c3b6550e3303ba7add&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159752&menuNo=200011",
-      "isFree": false,
-      "fee": "10,000원",
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-1khets6",
-      "source": "seoul-culture",
-      "title": "빛과 여백사이 ENTRE… lumiere & vide",
-      "category": "클래식",
-      "district": "용산구",
-      "place": "일신홀",
-      "lat": 37.537167036107,
-      "lng": 127.005516646173,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=96f76df76815463a91b4044d0f2db692&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159741&menuNo=200008",
-      "isFree": false,
-      "fee": "전석 3만원(학생할인30%)",
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-otcfxc",
-      "source": "seoul-culture",
-      "title": "제10회 2026 서울 문화원 엑스포",
-      "category": "축제-문화/예술",
-      "district": "종로구",
-      "place": "광화문광장 놀이마당",
-      "lat": 37.5718478584908,
-      "lng": 126.976168275947,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b70ad25db1cb43469c652f69f235982a&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159730&menuNo=200010",
+      "district": "도봉구",
+      "place": "서울로봇인공지능과학관 1층 로비",
+      "lat": 37.6555838047766,
+      "lng": 127.049506212905,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=c494ef63de6b47c2a928bcb233e9940b&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159844&menuNo=200011",
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
-    },
-    {
-      "id": "sc-yd72he",
-      "source": "seoul-culture",
-      "title": "[서울시립교향악단] 2026 서울시향 뮤지엄 콘서트 ① ②",
-      "category": "클래식",
-      "district": "송파구",
-      "place": "한성백제박물관 로비",
-      "lat": 37.51543881335773,
-      "lng": 127.12088940368128,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5704137417e8424981d54c4d656fc18e&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159646&menuNo=200008",
-      "isFree": true,
-      "fee": "무료",
-      "kind": "event",
-      "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "18:30~20:30"
     },
     {
       "id": "sc-2olwz3",
@@ -1930,40 +2236,184 @@
       "fee": "전석 15,000원",
       "kind": "event",
       "startDate": "2026-10-28",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "수요일 11:00"
     },
     {
-      "id": "sc-1yby927",
+      "id": "sc-qpdzpp",
       "source": "seoul-culture",
-      "title": "2026 명원박물관 TEAGARDEN FESTIVAL [명원 마티네 가을]",
-      "category": "클래식",
-      "district": "성북구",
-      "place": "명원박물관 성곡헌 상설전시실",
-      "lat": 37.61106261291357,
-      "lng": 127.00012175190037,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=7a60d7ae8d7942569554820f716db70b&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159915&menuNo=200008",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-27",
-      "endDate": "2026-10-27"
-    },
-    {
-      "id": "sc-4v3v0h",
-      "source": "seoul-culture",
-      "title": "[서울시립교향악단] 2026 서울시향 우리동네 실내악 - 마포중앙도서관",
+      "title": "[마포문화재단] M 마티네 [2026 MAC 모닝 콘서트 ＃8]",
       "category": "클래식",
       "district": "마포구",
-      "place": "마포중앙도서관 마중홀",
-      "lat": 37.5637954434775,
-      "lng": 126.908201874198,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ce8d055ed4554ea49c1fec7ada4a4393&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159639&menuNo=200008",
+      "place": "마포아트센터 아트홀맥",
+      "lat": 37.54987259578174,
+      "lng": 126.9455874749264,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=8660b2c6515b4b4091296c895c238a2d&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159853&menuNo=200008",
+      "isFree": false,
+      "fee": "전석 20,000원",
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "11:00"
+    },
+    {
+      "id": "sc-otcfxc",
+      "source": "seoul-culture",
+      "title": "제10회 2026 서울 문화원 엑스포",
+      "category": "축제-문화/예술",
+      "district": "종로구",
+      "place": "광화문광장 놀이마당",
+      "lat": 37.5718478584908,
+      "lng": 126.976168275947,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b70ad25db1cb43469c652f69f235982a&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159730&menuNo=200010",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "12:00~17:30"
+    },
+    {
+      "id": "sc-1xkfsku",
+      "source": "seoul-culture",
+      "title": "제30회 작곡가의방 [조윤제]",
+      "category": "교육/체험",
+      "district": "종로구",
+      "place": "서울예술인지원센터 세미나룸",
+      "lat": 37.5836990003446,
+      "lng": 127.00371665858,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=cda0a6a496bc4d34b6e8aedf7cc55cd6&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159863&menuNo=200011",
+      "isFree": true,
+      "fee": "0원",
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "17:00~19:00"
+    },
+    {
+      "id": "sc-1khets6",
+      "source": "seoul-culture",
+      "title": "빛과 여백사이 ENTRE… lumiere & vide",
+      "category": "클래식",
+      "district": "용산구",
+      "place": "일신홀",
+      "lat": 37.537167036107,
+      "lng": 127.005516646173,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=96f76df76815463a91b4044d0f2db692&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159741&menuNo=200008",
+      "isFree": false,
+      "fee": "전석 3만원(학생할인30%)",
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "19:30~21:10"
+    },
+    {
+      "id": "sc-8ke6jb",
+      "source": "seoul-culture",
+      "title": "2026 Art Agora Festival",
+      "category": "축제-문화/예술",
+      "district": "양천구",
+      "place": "서울 양천구 목동서로 225, 대한민국예술인센터 1층 체험존, 2층 아트홀",
+      "lat": 37.5270754105611,
+      "lng": 126.870745963571,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a09519a1c42d400ebc9ba3879f2f1ff5&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159820&menuNo=200010",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "16:00~18:00"
+    },
+    {
+      "id": "sc-yd72he",
+      "source": "seoul-culture",
+      "title": "[서울시립교향악단] 2026 서울시향 뮤지엄 콘서트 ① ②",
+      "category": "클래식",
+      "district": "송파구",
+      "place": "한성백제박물관 로비",
+      "lat": 37.51543881335773,
+      "lng": 127.12088940368128,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5704137417e8424981d54c4d656fc18e&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159646&menuNo=200008",
       "isFree": true,
       "fee": "무료",
       "kind": "event",
-      "startDate": "2026-10-27",
-      "endDate": "2026-10-27"
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "1회 12:00~13:00 / 2회 19:00~20:00 (회차별 공연 프로그램 상이)"
+    },
+    {
+      "id": "sc-1n65nuy",
+      "source": "seoul-culture",
+      "title": "[대우재단 시민강좌] 생명에게서 찾은 첨단기술의 비밀",
+      "category": "교육/체험",
+      "district": "종로구",
+      "place": "대우재단빌딩 5층, 대우학술라운지",
+      "lat": 37.5792139403308,
+      "lng": 126.973229731453,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=dd668c79e1ed48c3b6550e3303ba7add&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159752&menuNo=200011",
+      "isFree": false,
+      "fee": "10,000원",
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "14:00 ~ 15:30"
+    },
+    {
+      "id": "sc-1nzo4mt",
+      "source": "seoul-culture",
+      "title": "[구립증산도서관] 개관 시간 연장 지원 사업 [책이랑 뚝딱! 공방] 10월",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구립증산도서관 3층 어린이열람실",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a89b0a3c641740138981056c05787b32&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159936&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "18:00~20:00"
+    },
+    {
+      "id": "sc-1q2e3k3",
+      "source": "seoul-culture",
+      "title": "[서초문화재단] 2026 서리풀 재즈페스타 [Golden October]",
+      "category": "콘서트",
+      "district": "서초구",
+      "place": "반포심산아트홀",
+      "lat": 37.49904352601313,
+      "lng": 126.99165409240258,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ca4c2741d2d04886adb40e7452f135e2&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159771&menuNo=200008",
+      "isFree": false,
+      "fee": "R석 2만원 S석 1만5천원",
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "수 19:30"
+    },
+    {
+      "id": "sc-ijfiw7",
+      "source": "seoul-culture",
+      "title": "[구립증산도서관] 10월 책 읽어주는 사서 [수요일은 책이랑 쑥쑥]",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구립증산도서관 3층 가족열람실",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=1249bd01b87e471e88a7f9c4e8a847ae&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159935&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-28",
+      "time": "16:00~17:00"
     },
     {
       "id": "sc-1tu8xko",
@@ -1980,7 +2430,43 @@
       "fee": "전석 20,000원",
       "kind": "event",
       "startDate": "2026-10-27",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "(화) 19:30"
+    },
+    {
+      "id": "sc-4v3v0h",
+      "source": "seoul-culture",
+      "title": "[서울시립교향악단] 2026 서울시향 우리동네 실내악 - 마포중앙도서관",
+      "category": "클래식",
+      "district": "마포구",
+      "place": "마포중앙도서관 마중홀",
+      "lat": 37.5637954434775,
+      "lng": 126.908201874198,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=ce8d055ed4554ea49c1fec7ada4a4393&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159639&menuNo=200008",
+      "isFree": true,
+      "fee": "무료",
+      "kind": "event",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "time": "19:00~20:00"
+    },
+    {
+      "id": "sc-1yby927",
+      "source": "seoul-culture",
+      "title": "2026 명원박물관 TEAGARDEN FESTIVAL [명원 마티네 가을]",
+      "category": "클래식",
+      "district": "성북구",
+      "place": "명원박물관 성곡헌 상설전시실",
+      "lat": 37.61106261291357,
+      "lng": 127.00012175190037,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=7a60d7ae8d7942569554820f716db70b&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159915&menuNo=200008",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "time": "12:00~13:00"
     },
     {
       "id": "sc-11rexjp",
@@ -1997,7 +2483,8 @@
       "fee": "R석 60,000원 S석 50,000원 A석 40,000원",
       "kind": "event",
       "startDate": "2026-10-26",
-      "endDate": "2026-11-14"
+      "endDate": "2026-11-14",
+      "time": "월,수,목 19:30 / 금 15:00, 19:30 / 토,일 15:00"
     },
     {
       "id": "sc-13btxrp",
@@ -2013,7 +2500,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-26",
-      "endDate": "2026-11-02"
+      "endDate": "2026-11-02",
+      "time": "2026.10.26(월). 11.2.(월) 13:00 · 16:00"
     },
     {
       "id": "sc-1vvaf3l",
@@ -2030,7 +2518,8 @@
       "fee": "20,000원",
       "kind": "event",
       "startDate": "2026-10-26",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "1회차 11:00~12:00, 2회차 14:00~15:00, 3회차 16:00~17:00"
     },
     {
       "id": "sc-5pl2d5",
@@ -2047,7 +2536,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-24",
-      "endDate": "2026-12-13"
+      "endDate": "2026-12-13",
+      "time": "연중무휴"
     },
     {
       "id": "sc-pt8xlm",
@@ -2064,7 +2554,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-24",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "매주 (토) 14:00~17:00 / 공연발표 29(일) 10:00~17:00"
     },
     {
       "id": "sc-13o6hyx",
@@ -2080,7 +2571,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-24",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "13:00~18:00 / 월, 화 휴관"
     },
     {
       "id": "sc-1fbz9ke",
@@ -2096,7 +2588,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-23",
-      "endDate": "2026-11-07"
+      "endDate": "2026-11-07",
+      "time": "10.23. 19:00 / 11.7. 13:00"
     },
     {
       "id": "sc-1bq1zq9",
@@ -2113,7 +2606,8 @@
       "fee": "전석3만원 (성동구민 1만5천원)",
       "kind": "event",
       "startDate": "2026-10-23",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "19:30"
     },
     {
       "id": "sc-30eavb",
@@ -2129,7 +2623,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-23",
-      "endDate": "2026-10-29"
+      "endDate": "2026-10-29",
+      "time": "12:00~18:00 (예정)"
     },
     {
       "id": "sc-q4qm5a",
@@ -2145,7 +2640,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-21",
-      "endDate": "2027-02-21"
+      "endDate": "2027-02-21",
+      "time": "화-목 10:00~20:00 / 금 10:00~21:00 *상세 시간은 홈페이지 참고"
     },
     {
       "id": "sc-1ynnxdy",
@@ -2161,40 +2657,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-21",
-      "endDate": "2026-11-22"
-    },
-    {
-      "id": "sc-vhp28i",
-      "source": "seoul-culture",
-      "title": "[미림아트갤러리] 소소화 제1회 회원전 [그려진 시간들]",
-      "category": "전시/미술",
-      "district": "종로구",
-      "place": "미림아트갤러리 (종로구 인사동길 11-1 미림아트 3F)",
-      "lat": 37.571852756212,
-      "lng": 126.986681102308,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=170290281ac34829aee45bbd811900ea&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159907&menuNo=200009",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-21",
-      "endDate": "2026-10-26"
-    },
-    {
-      "id": "sc-yjayu8",
-      "source": "seoul-culture",
-      "title": "2026 아트한,우리展 [각자의 지금]",
-      "category": "전시/미술",
-      "district": "강남구",
-      "place": "유나이티드 갤러리",
-      "lat": 37.5035654348927,
-      "lng": 127.028039529728,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0d474cfb6f1341e09c8b866ef8bacb49&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159825&menuNo=200009",
-      "isFree": true,
-      "fee": "무료",
-      "kind": "event",
-      "startDate": "2026-10-21",
-      "endDate": "2026-10-26"
+      "endDate": "2026-11-22",
+      "time": "주중 9:00~18:00 / 주말 9:00~17:00"
     },
     {
       "id": "sc-19zqgt1",
@@ -2210,7 +2674,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-20",
-      "endDate": "2029-08-31"
+      "endDate": "2029-08-31",
+      "time": "상설운영"
     },
     {
       "id": "sc-bbyswn",
@@ -2227,7 +2692,8 @@
       "fee": "강좌당 5000원",
       "kind": "event",
       "startDate": "2026-10-20",
-      "endDate": "2026-11-22"
+      "endDate": "2026-11-22",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-10wrc0g",
@@ -2243,7 +2709,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-20",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "10:00~18:00, 일요일 및 공휴일 휴관"
     },
     {
       "id": "sc-11hp252",
@@ -2260,7 +2727,26 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-19",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "10:00~12:00 / 14:00~16:00 코스별 운영일시 상이"
+    },
+    {
+      "id": "sc-3xzn8y",
+      "source": "seoul-culture",
+      "title": "한불수교 140주년 [기념에서 풍경으로 From Monument to Landscape]",
+      "category": "전시/미술",
+      "district": "송파구",
+      "place": "소마미술관",
+      "lat": 37.516920655117,
+      "lng": 127.118166964751,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=5c44547e21374678b30b5a5886f40c57&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159976&menuNo=200009",
+      "isFree": false,
+      "fee": "3,000~5,000원",
+      "kind": "event",
+      "startDate": "2026-10-17",
+      "endDate": "2027-02-14",
+      "time": "화-일요일 10:00~18:00"
     },
     {
       "id": "sc-q0xdl3",
@@ -2277,7 +2763,8 @@
       "fee": "성인 5,000원, 청소년 4,000원, 어린이 3,000원 / *단체(20명이상)할인: 50%",
       "kind": "event",
       "startDate": "2026-10-17",
-      "endDate": "2027-02-14"
+      "endDate": "2027-02-14",
+      "time": "화-일요일 10:00~18:00 / 월요일 휴관"
     },
     {
       "id": "sc-42sms0",
@@ -2293,7 +2780,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-17",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "10:00~13:00, 매주 토,일요일"
     },
     {
       "id": "sc-16o69bu",
@@ -2309,7 +2797,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-17",
-      "endDate": "2026-11-14"
+      "endDate": "2026-11-14",
+      "time": "매주 토요일 14:00~16:00 (*11/7(토) 휴강)"
     },
     {
       "id": "sc-17ck8xa",
@@ -2325,7 +2814,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-17",
-      "endDate": "2026-11-14"
+      "endDate": "2026-11-14",
+      "time": "2기 : 매주 토요일 15:00~18:00, 3기 : 매주 목요일 19:00~22:00"
     },
     {
       "id": "sc-zrxxsl",
@@ -2342,7 +2832,8 @@
       "fee": "무료관람",
       "kind": "event",
       "startDate": "2026-10-17",
-      "endDate": "2026-11-04"
+      "endDate": "2026-11-04",
+      "time": "화-일 11:00~22:00 (월요일, 공휴일 휴관)"
     },
     {
       "id": "sc-q0jmek",
@@ -2359,7 +2850,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-16",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "매일 17:30~22:00"
     },
     {
       "id": "sc-qyxzzx",
@@ -2376,7 +2868,25 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-15",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "10:00~18:00 | 관람 마감 17:30 | 매주 월요일 휴관"
+    },
+    {
+      "id": "sc-12i6f3k",
+      "source": "seoul-culture",
+      "title": "[갤러리 그라프] 잠시, 다른 것이 되는 (Becoming Otherwise) 이진희, 무아리, 풀림",
+      "category": "전시/미술",
+      "district": "강남구",
+      "place": "갤러리 그라프 전시실",
+      "lat": 37.5234788204389,
+      "lng": 127.046743383017,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=bb8f2e8d55af4dd59366566f8a5f2811&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159714&menuNo=200009",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-15",
+      "endDate": "2026-11-28",
+      "time": "화-토 11:00~19:00 (일, 월 휴무)"
     },
     {
       "id": "sc-11vgzfi",
@@ -2393,23 +2903,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-15",
-      "endDate": "2026-11-28"
-    },
-    {
-      "id": "sc-12i6f3k",
-      "source": "seoul-culture",
-      "title": "[갤러리 그라프] 잠시, 다른 것이 되는 (Becoming Otherwise) 이진희, 무아리, 풀림",
-      "category": "전시/미술",
-      "district": "강남구",
-      "place": "갤러리 그라프 전시실",
-      "lat": 37.5234788204389,
-      "lng": 127.046743383017,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=bb8f2e8d55af4dd59366566f8a5f2811&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159714&menuNo=200009",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-15",
-      "endDate": "2026-11-28"
+      "endDate": "2026-11-28",
+      "time": "9:00~18:00 / 일요일 및 법정 공휴일, 별도 재단이 공지한 날 휴관"
     },
     {
       "id": "sc-j5foz1",
@@ -2425,7 +2920,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-15",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "16:30~18:30"
     },
     {
       "id": "sc-1csqiou",
@@ -2441,7 +2937,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-15",
-      "endDate": "2026-11-10"
+      "endDate": "2026-11-10",
+      "time": "12:00~18:00(일,월 휴관)"
     },
     {
       "id": "sc-cemerr",
@@ -2458,7 +2955,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-15",
-      "endDate": "2026-11-05"
+      "endDate": "2026-11-05",
+      "time": "10:00~18:00, 일,월 휴관"
     },
     {
       "id": "sc-13ec3lb",
@@ -2477,7 +2975,8 @@
       ],
       "kind": "event",
       "startDate": "2026-10-15",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "1회차 9:30~10:30, 2회차 10:40~11:40"
     },
     {
       "id": "sc-13bfg9v",
@@ -2494,7 +2993,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-15",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "평일 11:00~19:00 / 토,일 12:00~18:00"
     },
     {
       "id": "sc-116xfde",
@@ -2510,7 +3010,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-14",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "수요일 19:00~21:00, 토요일 14:00~17:00"
     },
     {
       "id": "sc-1avute",
@@ -2526,7 +3027,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-14",
-      "endDate": "2026-11-11"
+      "endDate": "2026-11-11",
+      "time": "19:00~20:30"
     },
     {
       "id": "sc-bqvb9h",
@@ -2543,7 +3045,8 @@
       "fee": "4,000원 (교육프로그램의 경우 입장료 포함 12,000원)",
       "kind": "event",
       "startDate": "2026-10-14",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "18:30~21:00 (10.14, 28, 수)"
     },
     {
       "id": "sc-s81ux8",
@@ -2560,7 +3063,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-13",
-      "endDate": "2026-11-22"
+      "endDate": "2026-11-22",
+      "time": "화-일 10:00~18:00 매주 월요일, 개교기념일(10/15) 휴관"
     },
     {
       "id": "sc-2aorq8",
@@ -2577,7 +3081,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-10-13",
-      "endDate": "2026-11-04"
+      "endDate": "2026-11-04",
+      "time": "평일 14:00~20:00 / 주말 12:00~20:00 ※월요일 휴관"
     },
     {
       "id": "sc-1uykhqn",
@@ -2593,7 +3098,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-13",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "화-일요일 12:00~19:00"
     },
     {
       "id": "sc-x56e4s",
@@ -2609,7 +3115,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-13",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "화-토 10:00~21:00, 일 10:00~18:00 (월요일, 공휴일 휴관)"
     },
     {
       "id": "sc-1hw404b",
@@ -2625,7 +3132,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-12",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "10:00~18:00 (일요일 및 공휴일 휴관)"
     },
     {
       "id": "sc-1rw70mt",
@@ -2641,7 +3149,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-12",
-      "endDate": "2026-11-02"
+      "endDate": "2026-11-02",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-flzl49",
@@ -2657,7 +3166,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-10",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "토, 일 11:00~17:00"
     },
     {
       "id": "sc-16lavrz",
@@ -2673,7 +3183,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-10",
-      "endDate": "2026-11-07"
+      "endDate": "2026-11-07",
+      "time": "10:00~12:00"
     },
     {
       "id": "sc-3mwshr",
@@ -2690,7 +3201,25 @@
       "fee": "8,000원 / *단체(20명이상) 할인: 50%",
       "kind": "event",
       "startDate": "2026-10-09",
-      "endDate": "2027-05-30"
+      "endDate": "2027-05-30",
+      "time": "화요일-일요일 10:00~18:00 / 월요일 휴관"
+    },
+    {
+      "id": "sc-1n9602n",
+      "source": "seoul-culture",
+      "title": "[소슬금 갤러리] 이한 개인전 《CONATIUM ― 나로서, 계속》",
+      "category": "전시/미술",
+      "district": "용산구",
+      "place": "소슬금 갤러리 (서울시 용산구 신흥로20길 17 1층)",
+      "lat": 37.5463950137629,
+      "lng": 126.98462160059339,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=199a22b3df904f96a192634ce3f4bafa&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159722&menuNo=200009",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-09",
+      "endDate": "2026-11-08",
+      "time": "수-일 12:00~19:00, 매주 월·화 휴관"
     },
     {
       "id": "sc-1aucrhg",
@@ -2707,23 +3236,8 @@
       "fee": "없음",
       "kind": "event",
       "startDate": "2026-10-09",
-      "endDate": "2026-11-08"
-    },
-    {
-      "id": "sc-1n9602n",
-      "source": "seoul-culture",
-      "title": "[소슬금 갤러리] 이한 개인전 《CONATIUM ― 나로서, 계속》",
-      "category": "전시/미술",
-      "district": "용산구",
-      "place": "소슬금 갤러리 (서울시 용산구 신흥로20길 17 1층)",
-      "lat": 37.5463950137629,
-      "lng": 126.98462160059339,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=199a22b3df904f96a192634ce3f4bafa&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159722&menuNo=200009",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-09",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "11:00 ~ 18:00"
     },
     {
       "id": "sc-1jfhzh4",
@@ -2739,23 +3253,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-08",
-      "endDate": "2026-11-12"
-    },
-    {
-      "id": "sc-11dxhu2",
-      "source": "seoul-culture",
-      "title": "[高山 이규탁 도예전] 이규탁 기획초대전",
-      "category": "전시/미술",
-      "district": "광진구",
-      "place": "세종뮤지엄갤러리 1관",
-      "lat": 37.5516093089619,
-      "lng": 127.07318364213,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=187e5f9fb769487e931abf87888b4100&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159848&menuNo=200009",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-26"
+      "endDate": "2026-11-12",
+      "time": "목요일 14:00~16:00"
     },
     {
       "id": "sc-ufd6ch",
@@ -2771,7 +3270,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-07",
-      "endDate": "2026-12-06"
+      "endDate": "2026-12-06",
+      "time": "10:00~19:00"
     },
     {
       "id": "sc-7s7oam",
@@ -2788,7 +3288,8 @@
       "fee": "각 회차별 5,000원",
       "kind": "event",
       "startDate": "2026-10-07",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "18:30~20:00, 10월 매주 수요일"
     },
     {
       "id": "sc-119ffpo",
@@ -2805,7 +3306,8 @@
       "fee": "무료(입장료 4,000원 별도)",
       "kind": "event",
       "startDate": "2026-10-06",
-      "endDate": "2026-11-27"
+      "endDate": "2026-11-27",
+      "time": "11:00, 16:00, 화-금, 평일"
     },
     {
       "id": "sc-z94m4z",
@@ -2825,7 +3327,8 @@
       ],
       "kind": "event",
       "startDate": "2026-10-06",
-      "endDate": "2026-11-24"
+      "endDate": "2026-11-24",
+      "time": "매주 화요일 10:00, 14:00 (11.3(화)는 단체 예약으로 예약 불가)"
     },
     {
       "id": "sc-9c6x3k",
@@ -2841,7 +3344,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-06",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "주중 9:00~22:00 / 주말 09:00~18:00"
     },
     {
       "id": "sc-eddd4r",
@@ -2858,7 +3362,8 @@
       "fee": "0원",
       "kind": "event",
       "startDate": "2026-10-04",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "월-일요일 12:00~19:00"
     },
     {
       "id": "sc-290wfl",
@@ -2875,7 +3380,8 @@
       "fee": "0원",
       "kind": "event",
       "startDate": "2026-10-04",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "화-일요일 12:00~18:00"
     },
     {
       "id": "sc-1xo2ph5",
@@ -2891,7 +3397,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-03",
-      "endDate": "2026-11-28"
+      "endDate": "2026-11-28",
+      "time": "9:00~18:00 / 일, 월 및 한글날 휴무"
     },
     {
       "id": "sc-za7ig8",
@@ -2907,27 +3414,29 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-02",
-      "endDate": "2026-11-11"
+      "endDate": "2026-11-11",
+      "time": "13:00~15:00"
     },
     {
-      "id": "sc-1l7dytv",
+      "id": "sc-thuui6",
       "source": "seoul-culture",
       "title": "[종로문화재단] 2026 종로 가족공연축제",
-      "category": "축제-문화/예술",
+      "category": "연극",
       "district": "종로구",
       "place": "종로 아이들극장",
       "lat": 37.59029701704756,
       "lng": 126.99830160838778,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=af1eb198b871463498f6095b5d942f0d&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159642&menuNo=200010",
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=85a183a5841a44d080d1a37c95929324&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159213&menuNo=200008",
       "isFree": false,
       "fee": "전석 20,000원",
       "mergedFrom": [
-        "sc-thuui6"
+        "sc-1l7dytv"
       ],
       "kind": "event",
       "startDate": "2026-10-02",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "금 19:30 토 13:00, 16:00 일 13:00, 16:00"
     },
     {
       "id": "sc-1yb0e7h",
@@ -2944,7 +3453,8 @@
       "fee": "프로그램별 상이 (상세 내용 참조)",
       "kind": "event",
       "startDate": "2026-10-02",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "프로그램별 상이 (상세 내용 참조)"
     },
     {
       "id": "sc-vua5po",
@@ -2961,40 +3471,8 @@
       "fee": "성인 1천원, 학생 500원",
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2027-03-28"
-    },
-    {
-      "id": "sc-wxkp64",
-      "source": "seoul-culture",
-      "title": "[곰달래도서관] 2026년 4분기 정규강좌 안내",
-      "category": "교육/체험",
-      "district": "강서구",
-      "place": "곰달래도서관 5층 문화강좌실 및 Zoom",
-      "lat": 37.5290599728442,
-      "lng": 126.848898178399,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0cd599cefece45e6a5489bd1206f4761&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159471&menuNo=200011",
-      "isFree": false,
-      "fee": "상세정보 참조",
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-12-31"
-    },
-    {
-      "id": "sc-11rfe2j",
-      "source": "seoul-culture",
-      "title": "[마포구립서강도서관] 4분기/어린이갤러리 [단어수집가]",
-      "category": "전시/미술",
-      "district": "마포구",
-      "place": "마포구립서강도서관 4층 어린이자료실",
-      "lat": 37.5477347268018,
-      "lng": 126.932061794829,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4812e8fcf8f64cbe8765b4d2fe8ebf3c&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159701&menuNo=200009",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-12-31"
+      "endDate": "2027-03-28",
+      "time": "10:00~18:00"
     },
     {
       "id": "sc-gn9vlf",
@@ -3011,7 +3489,43 @@
       "fee": "프로그램별 상이",
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "프로그램별 상이"
+    },
+    {
+      "id": "sc-wxkp64",
+      "source": "seoul-culture",
+      "title": "[곰달래도서관] 2026년 4분기 정규강좌 안내",
+      "category": "교육/체험",
+      "district": "강서구",
+      "place": "곰달래도서관 5층 문화강좌실 및 Zoom",
+      "lat": 37.5290599728442,
+      "lng": 126.848898178399,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=0cd599cefece45e6a5489bd1206f4761&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159471&menuNo=200011",
+      "isFree": false,
+      "fee": "상세정보 참조",
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-12-31",
+      "time": "프로그램별 상이"
+    },
+    {
+      "id": "sc-11rfe2j",
+      "source": "seoul-culture",
+      "title": "[마포구립서강도서관] 4분기/어린이갤러리 [단어수집가]",
+      "category": "전시/미술",
+      "district": "마포구",
+      "place": "마포구립서강도서관 4층 어린이자료실",
+      "lat": 37.5477347268018,
+      "lng": 126.932061794829,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4812e8fcf8f64cbe8765b4d2fe8ebf3c&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159701&menuNo=200009",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-12-31",
+      "time": "9:00 ~ 18:00"
     },
     {
       "id": "sc-30d8h4",
@@ -3028,7 +3542,8 @@
       "fee": "없음(전액지원)",
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "매주 목요일 14:00~17:00"
     },
     {
       "id": "sc-1z09j8h",
@@ -3045,7 +3560,8 @@
       "fee": "25,000",
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "매주 목요일 19:00~20:30"
     },
     {
       "id": "sc-1pziatk",
@@ -3061,7 +3577,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "11:00 ~ 18:00, 월요일 휴관"
+    },
+    {
+      "id": "sc-1xrlg36",
+      "source": "seoul-culture",
+      "title": "DDP 버스킹 10월 공연 일정 안내",
+      "category": "콘서트",
+      "district": "중구",
+      "place": "DDP 어울림광장, 팔거리",
+      "lat": 37.56735731522952,
+      "lng": 127.00977973484339,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=94dd866736ba4747abf6b6757a20984d&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159921&menuNo=200008",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "time": "12:00, 14:00, 16:00"
     },
     {
       "id": "sc-t1uika",
@@ -3077,7 +3611,82 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "9:00~20:00"
+    },
+    {
+      "id": "sc-1qludx3",
+      "source": "seoul-culture",
+      "title": "[마포구립서강도서관] 10월/어린이메이킹 [해봄아 노올자! 해봄맘껏Time]",
+      "category": "교육/체험",
+      "district": "마포구",
+      "place": "마포구립서강도서관 4층 어린이자료실 해봄",
+      "lat": 37.5477347268018,
+      "lng": 126.932061794829,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9803d6e4d180464cb3f71f951e57d307&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159616&menuNo=200011",
+      "isFree": true,
+      "mergedFrom": [
+        "sc-nsxrys"
+      ],
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "time": "매주 목·금·토요일 15:00~17:00"
+    },
+    {
+      "id": "sc-1g4kci9",
+      "source": "seoul-culture",
+      "title": "[구립증산도서관] 10월 북인사이트 : 책의 세계를 열다",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구립증산도서관 종합자료실 앞",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b3e9e68a265f4ec780cf6e7adf59dbd1&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159691&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "time": "도서관 개관시간 내"
+    },
+    {
+      "id": "sc-29egxj",
+      "source": "seoul-culture",
+      "title": "[구립증산도서관] 2026년 10월 자녀교육 특성화 온라인 북큐레이션 [부모의 한 장이 아이의 한 걸음으로] 아이 마음 읽기",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구립증산도서관 홈페이지",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=cd8e15ffe9704f06848b846949377ed2&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159699&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "time": "온라인 북큐레이션"
+    },
+    {
+      "id": "sc-lxttri",
+      "source": "seoul-culture",
+      "title": "[마포구립서강도서관] 10월 문화프로그램 안내",
+      "category": "교육/체험",
+      "district": "마포구",
+      "place": "마포구립서강도서관",
+      "lat": 37.5477347268018,
+      "lng": 126.932061794829,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=98d74c64277e4088b3721565ce9df9dc&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159797&menuNo=200011",
+      "isFree": true,
+      "mergedFrom": [
+        "sc-xwcsx9"
+      ],
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-yuo3zo",
@@ -3093,39 +3702,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-112ct5z",
-      "source": "seoul-culture",
-      "title": "[구립증산도서관] 온라인 북큐레이션 [어른이를 위한 그림책] 10월 : 힘든 날을 부탁해",
-      "category": "교육/체험",
-      "district": "은평구",
-      "place": "3층 가족열람실",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=dff8217b2f6440069bbad57af56a26fd&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159751&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-1m6tsdn",
-      "source": "seoul-culture",
-      "title": "[구립증산도서관] 가족열람실 10월 북큐레이션 [같이 떠나자, 예술의 세계로]",
-      "category": "교육/체험",
-      "district": "은평구",
-      "place": "구립증산도서관 3층 가족열람실",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a87eae61ee7f437eacbe478b79f7406d&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159753&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-1qstrvv",
@@ -3145,93 +3723,8 @@
       ],
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-1g4kci9",
-      "source": "seoul-culture",
-      "title": "[구립증산도서관] 10월 북인사이트 : 책의 세계를 열다",
-      "category": "교육/체험",
-      "district": "은평구",
-      "place": "구립증산도서관 종합자료실 앞",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b3e9e68a265f4ec780cf6e7adf59dbd1&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159691&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-1xrlg36",
-      "source": "seoul-culture",
-      "title": "DDP 버스킹 10월 공연 일정 안내",
-      "category": "콘서트",
-      "district": "중구",
-      "place": "DDP 어울림광장, 팔거리",
-      "lat": 37.56735731522952,
-      "lng": 127.00977973484339,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=94dd866736ba4747abf6b6757a20984d&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159921&menuNo=200008",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-29egxj",
-      "source": "seoul-culture",
-      "title": "[구립증산도서관] 2026년 10월 자녀교육 특성화 온라인 북큐레이션 [부모의 한 장이 아이의 한 걸음으로] 아이 마음 읽기",
-      "category": "교육/체험",
-      "district": "은평구",
-      "place": "구립증산도서관 홈페이지",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=cd8e15ffe9704f06848b846949377ed2&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159699&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-lxttri",
-      "source": "seoul-culture",
-      "title": "[마포구립서강도서관] 10월 문화프로그램 안내",
-      "category": "교육/체험",
-      "district": "마포구",
-      "place": "마포구립서강도서관",
-      "lat": 37.5477347268018,
-      "lng": 126.932061794829,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=98d74c64277e4088b3721565ce9df9dc&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159797&menuNo=200011",
-      "isFree": true,
-      "mergedFrom": [
-        "sc-xwcsx9"
-      ],
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
-    },
-    {
-      "id": "sc-1qludx3",
-      "source": "seoul-culture",
-      "title": "[마포구립서강도서관] 10월/어린이메이킹 [해봄아 노올자! 해봄맘껏Time]",
-      "category": "교육/체험",
-      "district": "마포구",
-      "place": "마포구립서강도서관 4층 어린이자료실 해봄",
-      "lat": 37.5477347268018,
-      "lng": 126.932061794829,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=9803d6e4d180464cb3f71f951e57d307&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159616&menuNo=200011",
-      "isFree": true,
-      "mergedFrom": [
-        "sc-nsxrys"
-      ],
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-1fno33y",
@@ -3247,7 +3740,42 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "화-토, 오전10:00~18:00 (일, 월, 공휴일 휴관)"
+    },
+    {
+      "id": "sc-1m6tsdn",
+      "source": "seoul-culture",
+      "title": "[구립증산도서관] 가족열람실 10월 북큐레이션 [같이 떠나자, 예술의 세계로]",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "구립증산도서관 3층 가족열람실",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=a87eae61ee7f437eacbe478b79f7406d&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159753&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "time": "9:00~18:00"
+    },
+    {
+      "id": "sc-112ct5z",
+      "source": "seoul-culture",
+      "title": "[구립증산도서관] 온라인 북큐레이션 [어른이를 위한 그림책] 10월 : 힘든 날을 부탁해",
+      "category": "교육/체험",
+      "district": "은평구",
+      "place": "3층 가족열람실",
+      "lat": 37.5828094398328,
+      "lng": 126.907671330325,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=dff8217b2f6440069bbad57af56a26fd&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159751&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "time": "9:00~22:00"
     },
     {
       "id": "sc-15np085",
@@ -3263,7 +3791,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "9:00 ~ 18:00"
     },
     {
       "id": "sc-a49hol",
@@ -3280,7 +3809,8 @@
       "fee": "0원",
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "월-일요일 0:00~24:00"
     },
     {
       "id": "sc-37hxhh",
@@ -3297,7 +3827,8 @@
       "fee": "20,000원",
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-29"
+      "endDate": "2026-10-29",
+      "time": "10.1. 20:00 / 10.15. 20:00 / 10.29. 20:00 (이상 3회)"
     },
     {
       "id": "sc-ebycqk",
@@ -3313,23 +3844,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-10-01",
-      "endDate": "2026-10-29"
-    },
-    {
-      "id": "sc-1txcqsb",
-      "source": "seoul-culture",
-      "title": "[구립증산도서관] 책 따라 걷는 도서관 - 10월 원화 전시 [대단한 참외씨]",
-      "category": "전시/미술",
-      "district": "은평구",
-      "place": "구립증산도서관 1층 로비 및 3층 어린이열람실",
-      "lat": 37.5828094398328,
-      "lng": 126.907671330325,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=4541266b437040c99b26d9e399159f9b&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159750&menuNo=200009",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-10-01",
-      "endDate": "2026-10-26"
+      "endDate": "2026-10-29",
+      "time": "10:00~18:00 (평일, 주말 동일) 매주 금요일 21:00까지"
     },
     {
       "id": "sc-1acfq35",
@@ -3349,7 +3865,8 @@
       ],
       "kind": "event",
       "startDate": "2026-09-30",
-      "endDate": "2026-11-18"
+      "endDate": "2026-11-18",
+      "time": "15:00~17:00"
     },
     {
       "id": "sc-h1ep0m",
@@ -3366,7 +3883,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-22",
-      "endDate": "2027-03-07"
+      "endDate": "2027-03-07",
+      "time": "화-일 10:00~18:00 ※ 월 휴관, 9.15.(화)부터 화,수,금,토,일 21:00까지"
     },
     {
       "id": "sc-1wldha",
@@ -3383,7 +3901,8 @@
       "fee": "무료(입장료 4,000원 별도)",
       "kind": "event",
       "startDate": "2026-09-22",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "10:00~17:00, 매일 ※매주 월요일 휴관"
     },
     {
       "id": "sc-ojb7ti",
@@ -3399,7 +3918,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-22",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "매주 화요일 10:30~12:30"
     },
     {
       "id": "sc-1jw59yo",
@@ -3416,7 +3936,8 @@
       "fee": "티켓별 상이(DDP 상세정 참고)",
       "kind": "event",
       "startDate": "2026-09-19",
-      "endDate": "2027-02-21"
+      "endDate": "2027-02-21",
+      "time": "10:00~20:00"
     },
     {
       "id": "sc-1n8d0ww",
@@ -3433,7 +3954,8 @@
       "fee": "5회: 5만원 (재료비 별도 안내 예정)",
       "kind": "event",
       "startDate": "2026-09-19",
-      "endDate": "2026-11-21"
+      "endDate": "2026-11-21",
+      "time": "격주 토요일 15:30~17:30"
     },
     {
       "id": "sc-cg5b1y",
@@ -3450,7 +3972,8 @@
       "fee": "각 공연 / 축제별 상이",
       "kind": "event",
       "startDate": "2026-09-18",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "각 공연 / 축제별 상이"
     },
     {
       "id": "sc-wguxk8",
@@ -3466,7 +3989,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-18",
-      "endDate": "2026-11-25"
+      "endDate": "2026-11-25",
+      "time": "14:00~16:00"
     },
     {
       "id": "sc-1f1tc9y",
@@ -3482,7 +4006,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-18",
-      "endDate": "2026-11-14"
+      "endDate": "2026-11-14",
+      "time": "화-토, 10:00~19:00 (일-월/ 공휴일 휴관)"
     },
     {
       "id": "sc-5if2rh",
@@ -3498,7 +4023,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-18",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "18:00~19:30 (90분)"
     },
     {
       "id": "sc-1r10l52",
@@ -3514,7 +4040,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-17",
-      "endDate": "2026-12-19"
+      "endDate": "2026-12-19",
+      "time": "월-토요일 10:00~16:00"
     },
     {
       "id": "sc-pde43y",
@@ -3530,7 +4057,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-17",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "10시-18시 (종료 30분 전 입장마감)"
     },
     {
       "id": "sc-19wzn0f",
@@ -3547,7 +4075,8 @@
       "fee": "1회 30,000원",
       "kind": "event",
       "startDate": "2026-09-15",
-      "endDate": "2026-11-17"
+      "endDate": "2026-11-17",
+      "time": "14:00~15:00"
     },
     {
       "id": "sc-1y400wl",
@@ -3564,7 +4093,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-12",
-      "endDate": "2026-12-05"
+      "endDate": "2026-12-05",
+      "time": "매주 토요일 10:00~13:00, 야간 16:00!17:00"
     },
     {
       "id": "sc-14e3da2",
@@ -3580,7 +4110,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-12",
-      "endDate": "2026-12-05"
+      "endDate": "2026-12-05",
+      "time": "1회차 13:30~15:30/ 2회차 15:40~17:40"
     },
     {
       "id": "sc-af1dn4",
@@ -3597,7 +4128,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-11",
-      "endDate": "2026-11-22"
+      "endDate": "2026-11-22",
+      "time": "화-일 10:00~18:00 (매주 월요일, 추석 당일(9/25), 개교기념일(10/15) 휴관)"
     },
     {
       "id": "sc-jdv9tw",
@@ -3614,7 +4146,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-10",
-      "endDate": "2026-11-27"
+      "endDate": "2026-11-27",
+      "time": "월-금 10:30~18:30"
     },
     {
       "id": "sc-145i00a",
@@ -3630,7 +4163,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-10",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "10:00~17:30, 매주 월요일 및 추석 당일 휴관"
     },
     {
       "id": "sc-es1zg3",
@@ -3647,7 +4181,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-09",
-      "endDate": "2026-11-07"
+      "endDate": "2026-11-07",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-qvkwph",
@@ -3663,7 +4198,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-09",
-      "endDate": "2026-11-04"
+      "endDate": "2026-11-04",
+      "time": "매주 수요일 19:00~21:00"
     },
     {
       "id": "sc-lzm6y7",
@@ -3680,7 +4216,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-09",
-      "endDate": "2026-10-29"
+      "endDate": "2026-10-29",
+      "time": "10:00~20:00 / 9.25 추석 휴무"
     },
     {
       "id": "sc-1gmcs7t",
@@ -3696,7 +4233,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-08",
-      "endDate": "2026-12-14"
+      "endDate": "2026-12-14",
+      "time": "10:00~18:00"
     },
     {
       "id": "sc-umixd4",
@@ -3713,7 +4251,8 @@
       "fee": "일부 프로그램 유료",
       "kind": "event",
       "startDate": "2026-09-08",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "상설 18:00~21:00 / 자율관람 19:00~20:00 / 사전예약 18:30~21:00"
     },
     {
       "id": "sc-6edfwf",
@@ -3729,7 +4268,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-08",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "9:30~22:00"
     },
     {
       "id": "sc-1vzp28h",
@@ -3746,7 +4286,8 @@
       "fee": "일반 26,000원 / 스페셜 50,000원",
       "kind": "event",
       "startDate": "2026-09-04",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "1회차: 11:00(영문), 2회차: 13:00(국문), 3회차: 16:00(한국어)"
     },
     {
       "id": "sc-11v02wc",
@@ -3763,7 +4304,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-04",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "(주간) 11:00~18:00 (야간) 16:00~22:00 (매주 금-일 / 10월 중 주간운영 전환)"
     },
     {
       "id": "sc-145cxzk",
@@ -3779,7 +4321,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-03",
-      "endDate": "2027-05-16"
+      "endDate": "2027-05-16",
+      "time": "매주 화-일 | (1회차) 10:30~12:00, (2회차)14:00~15:30"
     },
     {
       "id": "sc-1ai30ji",
@@ -3796,7 +4339,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-02",
-      "endDate": "2027-07-03"
+      "endDate": "2027-07-03",
+      "time": "화-토 10:00-17:30 ※ 일·월요일, 공휴일 휴무"
     },
     {
       "id": "sc-7ar4ls",
@@ -3812,7 +4356,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-02",
-      "endDate": "2026-12-30"
+      "endDate": "2026-12-30",
+      "time": "매주 수요일 20:00 까지 (9,10,11월 마지막주 수요일은 전문가 강연으로 대체)"
     },
     {
       "id": "sc-2i7rev",
@@ -3829,7 +4374,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-02",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "9.2.~16.(매주 수) 10:00~13:00 │10.7.~28.(매주 수) 10:00~13:00"
     },
     {
       "id": "sc-1ktd7jp",
@@ -3845,7 +4391,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-02",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "매주 수요일 10:00~12:00 (2시간)"
     },
     {
       "id": "sc-12eqpfu",
@@ -3861,7 +4408,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-01",
-      "endDate": "2026-12-27"
+      "endDate": "2026-12-27",
+      "time": "10:00~19:00"
     },
     {
       "id": "sc-1r6h476",
@@ -3877,7 +4425,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-01",
-      "endDate": "2026-11-30"
+      "endDate": "2026-11-30",
+      "time": "매일 19:00~23:00"
     },
     {
       "id": "sc-57f26v",
@@ -3893,7 +4442,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-01",
-      "endDate": "2026-11-11"
+      "endDate": "2026-11-11",
+      "time": "13:00 ~ 17:00"
     },
     {
       "id": "sc-1io2bv",
@@ -3909,7 +4459,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-09-01",
-      "endDate": "2026-11-10"
+      "endDate": "2026-11-10",
+      "time": "10:00 ~ 11:40"
     },
     {
       "id": "sc-8rc3w6",
@@ -3926,7 +4477,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-09-01",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "매주 목요일, 19:00~20:00"
     },
     {
       "id": "sc-174e6ni",
@@ -3943,7 +4495,8 @@
       "fee": "0원",
       "kind": "event",
       "startDate": "2026-09-01",
-      "endDate": "2026-10-28"
+      "endDate": "2026-10-28",
+      "time": "화-토요일 12:00~18:00"
     },
     {
       "id": "sc-1ez0sn8",
@@ -3960,7 +4513,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-08-29",
-      "endDate": "2026-11-30"
+      "endDate": "2026-11-30",
+      "time": "[전시] 상시운영 [프로그램] 토 16:00~21:00, 일 14:00~21:00, 월-금 17:00~21:00"
     },
     {
       "id": "sc-1grs7u2",
@@ -3977,7 +4531,8 @@
       "fee": "1,000원(1인당)",
       "kind": "event",
       "startDate": "2026-08-29",
-      "endDate": "2026-11-28"
+      "endDate": "2026-11-28",
+      "time": "매달 마지막 주 토요일 14:00 ~ 16:00"
     },
     {
       "id": "sc-8akqla",
@@ -3993,7 +4548,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-28",
-      "endDate": "2026-12-05"
+      "endDate": "2026-12-05",
+      "time": "매주 화-일요일 9-10월 20:00~22:00, 11-12월 19:00~21:00 (과학관 휴관일 제외)"
     },
     {
       "id": "sc-1pnp4va",
@@ -4009,7 +4565,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-28",
-      "endDate": "2026-11-20"
+      "endDate": "2026-11-20",
+      "time": "A반 13:00~15:00, B반 15:00~17:00"
     },
     {
       "id": "sc-2mqlix",
@@ -4025,7 +4582,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-27",
-      "endDate": "2027-06-20"
+      "endDate": "2027-06-20",
+      "time": "평일 10:00~20:00 / 주말(하절기) 10:00~19:00 (동절기) 10:00~18:00"
     },
     {
       "id": "sc-1vwkz5h",
@@ -4041,7 +4599,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-27",
-      "endDate": "2027-02-14"
+      "endDate": "2027-02-14",
+      "time": "평일 10:00 ~ 20:00 / 주말(하절기) 10:00 ~ 19:00 (동절기) 10:00 ~ 18:00"
     },
     {
       "id": "sc-1o0wkg",
@@ -4058,7 +4617,8 @@
       "fee": "전석30,000원(예술인/재관람 50% 할인)",
       "kind": "event",
       "startDate": "2026-08-27",
-      "endDate": "2026-11-05"
+      "endDate": "2026-11-05",
+      "time": "매주 목요일 19:30"
     },
     {
       "id": "sc-82fsy8",
@@ -4074,7 +4634,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-26",
-      "endDate": "2026-11-25"
+      "endDate": "2026-11-25",
+      "time": "매월 마지막주 수요일 14:30~15:30 / 16:00~17:00"
     },
     {
       "id": "sc-1sygpu6",
@@ -4090,7 +4651,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-25",
-      "endDate": "2027-05-16"
+      "endDate": "2027-05-16",
+      "time": "10:00~17:00 (화-일)"
     },
     {
       "id": "sc-1utlana",
@@ -4107,7 +4669,8 @@
       "fee": "전액 무료",
       "kind": "event",
       "startDate": "2026-08-24",
-      "endDate": "2026-11-09"
+      "endDate": "2026-11-09",
+      "time": "10:00 ~ 12:00, 매주 월요일 (단, 회차별 상이)"
     },
     {
       "id": "sc-1kwdkoo",
@@ -4123,7 +4686,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-24",
-      "endDate": "2026-11-09"
+      "endDate": "2026-11-09",
+      "time": "14:00 ~ 17:00 (매주 월요일, 총 10회차)"
     },
     {
       "id": "sc-1cw5m5b",
@@ -4139,7 +4703,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-20",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "화-금 10:00~20:00 토.일.공휴일 10:00~19:00"
     },
     {
       "id": "sc-xnftrx",
@@ -4156,7 +4721,8 @@
       "fee": "재료비 : 프로그램별 상이",
       "kind": "event",
       "startDate": "2026-08-19",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-1b5o7t2",
@@ -4173,7 +4739,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-08-14",
-      "endDate": "2026-11-08"
+      "endDate": "2026-11-08",
+      "time": "화 - 일요일 9:00~18:00 ※ 월 휴관(공휴일 개관), 금 21:00 까지 야간개관"
     },
     {
       "id": "sc-qq1yin",
@@ -4189,7 +4756,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-13",
-      "endDate": "2026-11-05"
+      "endDate": "2026-11-05",
+      "time": "14:00 ~ 17:00"
     },
     {
       "id": "sc-mp42vu",
@@ -4205,7 +4773,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-11",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "프로그램 별 상이"
     },
     {
       "id": "sc-c1518f",
@@ -4221,7 +4790,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-11",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "매주 화요일 10:00~12:00"
     },
     {
       "id": "sc-1shsbfs",
@@ -4237,7 +4807,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-07",
-      "endDate": "2026-12-18"
+      "endDate": "2026-12-18",
+      "time": "매주 금요일 15:30-17:30"
     },
     {
       "id": "sc-1gcmehc",
@@ -4253,7 +4824,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-07",
-      "endDate": "2026-11-27"
+      "endDate": "2026-11-27",
+      "time": "매주 금요일 14:00~17:00, 총 15회차 (9.25, 10.9 휴강)"
     },
     {
       "id": "sc-5av306",
@@ -4270,7 +4842,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-08-07",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "매주 (화) 13:00 ~ 16:00 [총12회]"
     },
     {
       "id": "sc-1c3gcq9",
@@ -4286,7 +4859,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-06",
-      "endDate": "2026-10-29"
+      "endDate": "2026-10-29",
+      "time": "매주 목요일 10:00~12:00"
     },
     {
       "id": "sc-1yhytaq",
@@ -4302,7 +4876,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-04",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "추후 공지"
     },
     {
       "id": "sc-uzears",
@@ -4318,7 +4893,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-03",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "도서관 운영시간 내"
     },
     {
       "id": "sc-uliiht",
@@ -4335,7 +4911,8 @@
       "fee": "강좌별 상이",
       "kind": "event",
       "startDate": "2026-08-01",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "프로그램 별 상이"
     },
     {
       "id": "sc-1s3716a",
@@ -4351,23 +4928,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-08-01",
-      "endDate": "2026-11-21"
-    },
-    {
-      "id": "sc-1i9hry2",
-      "source": "seoul-culture",
-      "title": "[광진문화재단] 2026 생활밀착형 문화예술교육 지원사업 [가가호호(家家好好)] - 광진",
-      "category": "교육/체험",
-      "district": "광진구",
-      "place": "광진생활문화센터 5F",
-      "lat": 37.5375706269359,
-      "lng": 127.070576040786,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=32b51532623942c58edee6f7c82549de&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158986&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-08-01",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-21",
+      "time": "매주 토요일 17:00, 22:00"
     },
     {
       "id": "sc-17z5t79",
@@ -4384,7 +4946,25 @@
       "fee": "VIP석 160,000원┃R석 130,000원 S석 100,000원┃A석 70,000원",
       "kind": "event",
       "startDate": "2026-08-01",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "화·수·목 19:30┃금 14:30, 19:30 토 14:00, 19:00┃일 15:00(월 공연 없음)"
+    },
+    {
+      "id": "sc-1i9hry2",
+      "source": "seoul-culture",
+      "title": "[광진문화재단] 2026 생활밀착형 문화예술교육 지원사업 [가가호호(家家好好)] - 광진",
+      "category": "교육/체험",
+      "district": "광진구",
+      "place": "광진생활문화센터 5F",
+      "lat": 37.5375706269359,
+      "lng": 127.070576040786,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=32b51532623942c58edee6f7c82549de&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158986&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-08-01",
+      "endDate": "2026-11-01",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-1vsswuq",
@@ -4400,7 +4980,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-07-29",
-      "endDate": "2026-12-12"
+      "endDate": "2026-12-12",
+      "time": "수요일 19:00 또는 토요일 14:00 (프로그램별 상이)"
     },
     {
       "id": "sc-1k7w3v6",
@@ -4416,7 +4997,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-07-29",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "평일(화-금) 10:00~20:00 / 토.일.공휴일 10:00~18:00"
     },
     {
       "id": "sc-1i383t7",
@@ -4432,7 +5014,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-07-22",
-      "endDate": "2026-11-14"
+      "endDate": "2026-11-14",
+      "time": "매주 수요일 19:30"
     },
     {
       "id": "sc-1512j7o",
@@ -4449,7 +5032,8 @@
       "fee": "0",
       "kind": "event",
       "startDate": "2026-07-18",
-      "endDate": "2026-12-09"
+      "endDate": "2026-12-09",
+      "time": "둘째주 수요일 19:00 또는 셋째주 토요일 14:00(프로그램 별 상이)"
     },
     {
       "id": "sc-1n9t58f",
@@ -4465,7 +5049,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-07-18",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "상세 시간내용 참조"
     },
     {
       "id": "sc-zdfqeu",
@@ -4481,7 +5066,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-07-16",
-      "endDate": "2026-10-29"
+      "endDate": "2026-10-29",
+      "time": "매주 목요일 19:00 ~ 21:00"
     },
     {
       "id": "sc-1321r7p",
@@ -4498,7 +5084,8 @@
       "fee": "프리뷰예매 1인당 15,000원",
       "kind": "event",
       "startDate": "2026-07-15",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "화,목 15:00, 17:30 수,금 17:00, 19:30 \t토 13:30, 15:30, 17:30 일 14:00, 16:00"
     },
     {
       "id": "sc-1x4ydzy",
@@ -4515,7 +5102,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-07-15",
-      "endDate": "2026-12-16"
+      "endDate": "2026-12-16",
+      "time": "둘째주 수요일 19:00 또는 셋째주 토요일 14:00(프로그램 별 상이)"
     },
     {
       "id": "sc-1qphl5a",
@@ -4531,7 +5119,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-07-08",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "매주 토요일 14:00 ~ 17:00"
     },
     {
       "id": "sc-11r9k31",
@@ -4548,7 +5137,8 @@
       "fee": "무료(입장료 4,000원 별도)",
       "kind": "event",
       "startDate": "2026-07-04",
-      "endDate": "2027-12-31"
+      "endDate": "2027-12-31",
+      "time": "10:00~17:00, 매일 ※매주 월요일 휴관"
     },
     {
       "id": "sc-1xc47vr",
@@ -4564,7 +5154,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-07-01",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "10:00 / 11:00 / 12:00 / 14:30 / 15:30 / 16:30"
     },
     {
       "id": "sc-1pjfd1l",
@@ -4580,7 +5171,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-06-26",
-      "endDate": "2027-03-07"
+      "endDate": "2027-03-07",
+      "time": "9:00 ~ 18:00 (입장마감 : 17:30)"
     },
     {
       "id": "sc-gc2nma",
@@ -4596,7 +5188,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-06-25",
-      "endDate": "2027-04-11"
+      "endDate": "2027-04-11",
+      "time": "화-목 10:00~20:00, 금 10:00~21:00 주말 및 공휴일 10:00~19:00(상세 시간 홈페이지 참조)"
     },
     {
       "id": "sc-1hhic29",
@@ -4612,7 +5205,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-06-24",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-7xuxc5",
@@ -4629,7 +5223,8 @@
       "fee": "입장료 별도",
       "kind": "event",
       "startDate": "2026-06-23",
-      "endDate": "2027-05-16"
+      "endDate": "2027-05-16",
+      "time": "평시 9:30~18:00(17:00 입장 마감) 동절기 9:30~17:00(16:00 입장 마감)"
     },
     {
       "id": "sc-1xbv0rh",
@@ -4645,7 +5240,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-06-18",
-      "endDate": "2027-05-30"
+      "endDate": "2027-05-30",
+      "time": "9:00 ~ 18:00 화 - 일요일(입장 마감 17:30)"
     },
     {
       "id": "sc-1qxeo8x",
@@ -4661,7 +5257,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-06-15",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "각 강의별 소요시간 120분"
     },
     {
       "id": "sc-9b8qmm",
@@ -4677,7 +5274,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-06-11",
-      "endDate": "2027-05-16"
+      "endDate": "2027-05-16",
+      "time": "화-목 10:00~20:00, 금 10:00~21:00 주말 및 공휴일 10:00~19:00(상세 시간 홈페이지 참조)"
     },
     {
       "id": "sc-110ejc1",
@@ -4694,7 +5292,8 @@
       "fee": "일반 7000원 / 단체관람(10인 이상) 5000원",
       "kind": "event",
       "startDate": "2026-06-11",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-vsnvth",
@@ -4711,7 +5310,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-06-10",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "매주 수 13:00~15:30"
     },
     {
       "id": "sc-15colpg",
@@ -4727,7 +5327,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-06-09",
-      "endDate": "2026-11-19"
+      "endDate": "2026-11-19",
+      "time": "매주 화, 목요일 13:00~17:00"
     },
     {
       "id": "sc-1ofe8tv",
@@ -4744,7 +5345,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-06-08",
-      "endDate": "2026-11-30"
+      "endDate": "2026-11-30",
+      "time": "월 - 금요일, 10:00 ~ 17:00"
     },
     {
       "id": "sc-1tygka5",
@@ -4760,7 +5362,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-06-04",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "09:00 ~ 18:00 (화요일 휴관)"
     },
     {
       "id": "sc-85ntnk",
@@ -4777,7 +5380,8 @@
       "fee": "프로그램별 상이",
       "kind": "event",
       "startDate": "2026-06-04",
-      "endDate": "2026-12-23"
+      "endDate": "2026-12-23",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-m1jdmu",
@@ -4793,7 +5397,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-18",
-      "endDate": "2026-11-14"
+      "endDate": "2026-11-14",
+      "time": "화 - 토 10:00 ~ 18:00 (입장마감 17:30)"
     },
     {
       "id": "sc-1t78ugc",
@@ -4809,7 +5414,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-15",
-      "endDate": "2027-03-31"
+      "endDate": "2027-03-31",
+      "time": "화-일 10:00~18:00"
     },
     {
       "id": "sc-er8al9",
@@ -4826,7 +5432,8 @@
       "fee": "어른: 3,000원, 청소년: 1,800원, 어린이: 1,200원",
       "kind": "event",
       "startDate": "2026-05-15",
-      "endDate": "2026-12-06"
+      "endDate": "2026-12-06",
+      "time": "매주 화 - 일 10:00~18:00 (17:30까지 입장가능)"
     },
     {
       "id": "sc-1t042bs",
@@ -4842,7 +5449,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-11",
-      "endDate": "2026-11-30"
+      "endDate": "2026-11-30",
+      "time": "9:00 ~ 18:00 사이 참여 가능"
     },
     {
       "id": "sc-sbho0t",
@@ -4858,7 +5466,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-07",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "10:00~18:00, 일요일 및 공휴일 휴관"
     },
     {
       "id": "sc-16p6ua6",
@@ -4874,7 +5483,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-06",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "18:00 ~ 19:30"
     },
     {
       "id": "sc-ofeero",
@@ -4890,7 +5500,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-04",
-      "endDate": "2026-12-30"
+      "endDate": "2026-12-30",
+      "time": "월-금 10:00~17:00 / 주말, 공휴일 휴관"
     },
     {
       "id": "sc-z5wyit",
@@ -4906,7 +5517,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-01",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "공연별 상이"
     },
     {
       "id": "sc-10jlosm",
@@ -4922,7 +5534,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-01",
-      "endDate": "2026-11-30"
+      "endDate": "2026-11-30",
+      "time": "프로그램 별 상이"
     },
     {
       "id": "sc-1mt1xib",
@@ -4938,7 +5551,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-05-01",
-      "endDate": "2026-10-27"
+      "endDate": "2026-10-27",
+      "time": "12:00 ~ 19:00"
     },
     {
       "id": "sc-1vfjon7",
@@ -4955,7 +5569,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-04-28",
-      "endDate": "2027-08-29"
+      "endDate": "2027-08-29",
+      "time": "화 - 일 10:00~18:00 ※월요일 휴관, 금요일 21:00 까지 야간개관"
     },
     {
       "id": "sc-50fz92",
@@ -4972,7 +5587,8 @@
       "fee": "무료(입장료 4,000원 별도)",
       "kind": "event",
       "startDate": "2026-04-28",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "10:00~18:00, 매일 ※매주 월요일 휴관"
     },
     {
       "id": "sc-1pv99la",
@@ -4988,7 +5604,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-27",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "전시 기간 내 상시 운영"
     },
     {
       "id": "sc-t8f22x",
@@ -5005,7 +5622,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-04-26",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "프로그램별 상이"
     },
     {
       "id": "sc-1kv1ijh",
@@ -5022,7 +5640,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-04-24",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "기간 중 4회, 금요일, 14:00~16:00(자세한 일정은 홈페이지 참조)"
     },
     {
       "id": "sc-ucjerp",
@@ -5038,7 +5657,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-23",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "매월 2,4주차 목요일 19:00 ~ 20:00"
     },
     {
       "id": "sc-jo7nfb",
@@ -5055,7 +5675,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-04-23",
-      "endDate": "2026-11-01"
+      "endDate": "2026-11-01",
+      "time": "매주 금-일, (주간)11:00~18:00 (야간)16:00~22:00 (5월중 야간운영 전환, 미운영:7월,8월)"
     },
     {
       "id": "sc-y0heks",
@@ -5071,23 +5692,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-20",
-      "endDate": "2026-11-15"
-    },
-    {
-      "id": "sc-zemet3",
-      "source": "seoul-culture",
-      "title": "[서울백제어린이박물관] 2026 문화로 야금야금 연계 [백제왕성 달빛 캠프]",
-      "category": "교육/체험",
-      "district": "송파구",
-      "place": "서울백제어린이박물관 주변 잔디밭",
-      "lat": 37.523991,
-      "lng": 127.124412,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b84561d0b3fd44259a86fa9a1e88050a&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158804&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-04-17",
-      "endDate": "2026-11-27"
+      "endDate": "2026-11-15",
+      "time": "오전 10:00~12:00, 오후 14:00~16:00 (1일 2회)"
     },
     {
       "id": "sc-17s3b5h",
@@ -5103,7 +5709,25 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-17",
-      "endDate": "2026-11-27"
+      "endDate": "2026-11-27",
+      "time": "4-11(월) 매주 금요일 17:30~20:00 / 8월 7일 19:00 ~ 20:00"
+    },
+    {
+      "id": "sc-zemet3",
+      "source": "seoul-culture",
+      "title": "[서울백제어린이박물관] 2026 문화로 야금야금 연계 [백제왕성 달빛 캠프]",
+      "category": "교육/체험",
+      "district": "송파구",
+      "place": "서울백제어린이박물관 주변 잔디밭",
+      "lat": 37.523991,
+      "lng": 127.124412,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=b84561d0b3fd44259a86fa9a1e88050a&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=158804&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-04-17",
+      "endDate": "2026-11-27",
+      "time": "17:30 ~ 20:00"
     },
     {
       "id": "sc-1i2ke5l",
@@ -5119,7 +5743,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-16",
-      "endDate": "2026-11-22"
+      "endDate": "2026-11-22",
+      "time": "화-목 10:00~20:00 / 금 10:00~21:00 *상세 시간은 홈페이지 참고"
     },
     {
       "id": "sc-nubjis",
@@ -5135,7 +5760,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-11",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "*개막 4.11(토), 11:00~12:00, 14:00~15:00"
     },
     {
       "id": "sc-1fi5zoz",
@@ -5151,7 +5777,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-07",
-      "endDate": "2026-12-29"
+      "endDate": "2026-12-29",
+      "time": "매주 화요일 11:00~12:00 / 14:00~15:00"
     },
     {
       "id": "sc-19s07gf",
@@ -5167,7 +5794,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-04",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "장소별 상이"
     },
     {
       "id": "sc-10cu5sh",
@@ -5183,7 +5811,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-02",
-      "endDate": "2027-05-30"
+      "endDate": "2027-05-30",
+      "time": "평일(화-금) 10:00~20:00, 주말 및 공휴일 10:00~19:00(상세 관람시간 홈페이지 참조)"
     },
     {
       "id": "sc-zw9s16",
@@ -5199,7 +5828,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-02",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "10:00~12:00"
     },
     {
       "id": "sc-15j54c0",
@@ -5218,23 +5848,8 @@
       ],
       "kind": "event",
       "startDate": "2026-04-02",
-      "endDate": "2026-11-01"
-    },
-    {
-      "id": "sc-137sbwk",
-      "source": "seoul-culture",
-      "title": "[서울역사박물관] 2026년 [느낌있는 박물관] 중·고등학교 특수학급 기관 모집",
-      "category": "교육/체험",
-      "district": "종로구",
-      "place": "서울역사박물관",
-      "lat": 37.570507525011855,
-      "lng": 126.97052372473162,
-      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=f76ba86eca1b43ff935a895f5017bcfd&thumb=Y",
-      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156940&menuNo=200011",
-      "isFree": true,
-      "kind": "event",
-      "startDate": "2026-04-01",
-      "endDate": "2026-12-31"
+      "endDate": "2026-11-01",
+      "time": "16:00 ~ 21:00 예정"
     },
     {
       "id": "sc-o76vrr",
@@ -5251,7 +5866,25 @@
       "fee": "강좌 당 40만원",
       "kind": "event",
       "startDate": "2026-04-01",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "목요일 18:00~20:00, 토요일 10:00~12:00"
+    },
+    {
+      "id": "sc-137sbwk",
+      "source": "seoul-culture",
+      "title": "[서울역사박물관] 2026년 [느낌있는 박물관] 중·고등학교 특수학급 기관 모집",
+      "category": "교육/체험",
+      "district": "종로구",
+      "place": "서울역사박물관",
+      "lat": 37.570507525011855,
+      "lng": 126.97052372473162,
+      "imageUrl": "https://culture.seoul.go.kr/cmmn/file/getImage.do?atchFileId=f76ba86eca1b43ff935a895f5017bcfd&thumb=Y",
+      "linkUrl": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156940&menuNo=200011",
+      "isFree": true,
+      "kind": "event",
+      "startDate": "2026-04-01",
+      "endDate": "2026-12-31",
+      "time": "수요일·목요일 10:00~12:00 / 14:00~16:00"
     },
     {
       "id": "sc-1w56hrs",
@@ -5268,7 +5901,8 @@
       "fee": "강좌 당 40만원",
       "kind": "event",
       "startDate": "2026-04-01",
-      "endDate": "2026-12-06"
+      "endDate": "2026-12-06",
+      "time": "토요일 10:00~12:00"
     },
     {
       "id": "sc-1250u1",
@@ -5285,7 +5919,8 @@
       "fee": "강좌 당 25만원",
       "kind": "event",
       "startDate": "2026-04-01",
-      "endDate": "2026-12-04"
+      "endDate": "2026-12-04",
+      "time": "수-금 10:00~11:40 / 14:00~15:40"
     },
     {
       "id": "sc-zeelo2",
@@ -5301,7 +5936,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-04-01",
-      "endDate": "2026-12-02"
+      "endDate": "2026-12-02",
+      "time": "10:00~12:00"
     },
     {
       "id": "sc-1f4m27v",
@@ -5318,7 +5954,8 @@
       "fee": "경복궁 입장료 별도",
       "kind": "event",
       "startDate": "2026-04-01",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "10:00 ~ 16:00"
     },
     {
       "id": "sc-1924thj",
@@ -5335,7 +5972,8 @@
       "fee": "경복궁 입장료 별도",
       "kind": "event",
       "startDate": "2026-04-01",
-      "endDate": "2026-10-30"
+      "endDate": "2026-10-30",
+      "time": "1일 2회(10:00, 14:00), 회당 약 70분"
     },
     {
       "id": "sc-185n74i",
@@ -5352,7 +5990,8 @@
       "fee": "1,534,500원 (부가세 포함) * 부가서비스 선택 시 추가 비용 발생",
       "kind": "event",
       "startDate": "2026-03-28",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "주말 (토, 일) 11:00 / 13:00 / 15:00"
     },
     {
       "id": "sc-71yunf",
@@ -5368,7 +6007,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-03-28",
-      "endDate": "2026-10-31"
+      "endDate": "2026-10-31",
+      "time": "10:00 ~ 11:40"
     },
     {
       "id": "sc-ctajps",
@@ -5384,7 +6024,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-03-27",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "[2-11월] 화-일 10:00~20:00 / [3-10월] 화-금 10:00~21:00 / 주말·공휴일 10:00 -22:00"
     },
     {
       "id": "sc-in4rql",
@@ -5400,7 +6041,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-03-24",
-      "endDate": "2026-12-11"
+      "endDate": "2026-12-11",
+      "time": "2시간(조정 가능)"
     },
     {
       "id": "sc-1q8yo1d",
@@ -5417,7 +6059,8 @@
       "fee": "10만원 (4주단위)",
       "kind": "event",
       "startDate": "2026-03-08",
-      "endDate": "2027-01-31"
+      "endDate": "2027-01-31",
+      "time": "매주 일요일 14:00 ~ 15:30"
     },
     {
       "id": "sc-m6f3bi",
@@ -5433,7 +6076,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-03-07",
-      "endDate": "2026-12-05"
+      "endDate": "2026-12-05",
+      "time": "프로그램 별 상이"
     },
     {
       "id": "sc-1tmipq3",
@@ -5452,7 +6096,8 @@
       ],
       "kind": "event",
       "startDate": "2026-03-06",
-      "endDate": "2026-12-04"
+      "endDate": "2026-12-04",
+      "time": "9:00, 10:00, 11:00"
     },
     {
       "id": "sc-1yyyfvs",
@@ -5469,7 +6114,8 @@
       "fee": "경복궁 입장료 별도",
       "kind": "event",
       "startDate": "2026-03-01",
-      "endDate": "2026-11-29"
+      "endDate": "2026-11-29",
+      "time": "매주 주말 및 공휴일 15:00 (6월~8월 제외)"
     },
     {
       "id": "sc-1xaowob",
@@ -5486,7 +6132,8 @@
       "fee": "80,000원 (VAT 포함) 공연 및 식사 포함",
       "kind": "event",
       "startDate": "2026-02-25",
-      "endDate": "2026-12-30"
+      "endDate": "2026-12-30",
+      "time": "매주 수요일 18:30 ~ 20:35 (18:30 식사 / 19:30 공연)"
     },
     {
       "id": "sc-1wsrdem",
@@ -5502,7 +6149,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-02-09",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "시간 협의"
     },
     {
       "id": "sc-bagizn",
@@ -5522,7 +6170,8 @@
       ],
       "kind": "event",
       "startDate": "2026-02-04",
-      "endDate": "2026-11-26"
+      "endDate": "2026-11-26",
+      "time": "2 - 7월, 9 - 11월 중 매주 수요일 10:00, 목요일 14:00"
     },
     {
       "id": "sc-6t74z7",
@@ -5538,7 +6187,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-01-22",
-      "endDate": "2026-12-24"
+      "endDate": "2026-12-24",
+      "time": "9:00 ~ 18:00"
     },
     {
       "id": "sc-1fc5rcw",
@@ -5554,7 +6204,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2026-01-09",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "18:00 ~ 22:00, 매 정각마다"
     },
     {
       "id": "sc-k619yv",
@@ -5571,7 +6222,8 @@
       "fee": "일반 10,000원 / 국가유공자, 군인, 장애인 8,000원 / 어린이, 청소년 단체 5,000원",
       "kind": "event",
       "startDate": "2026-01-02",
-      "endDate": "2027-12-31"
+      "endDate": "2027-12-31",
+      "time": "1회차:10:30(한국어) / 2회차:14:30(영어) / 3회차:16:00(한국어)"
     },
     {
       "id": "sc-1kwvgf",
@@ -5588,7 +6240,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-01-02",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "매주 화, 목, 토 10:00, 14:00 (※매주 일요일 휴관)"
     },
     {
       "id": "sc-j87n2a",
@@ -5605,7 +6258,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-01-02",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "매주 월-토 10:00~18:00 ※ 상설체험 (※매주 일요일 휴관)"
     },
     {
       "id": "sc-1il62mw",
@@ -5622,7 +6276,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2026-01-02",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "매주 월-토요일 10:00~18:00 (※매주 일요일 휴관)"
     },
     {
       "id": "sc-1r0ezsg",
@@ -5638,7 +6293,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2025-12-22",
-      "endDate": "2026-11-30"
+      "endDate": "2026-11-30",
+      "time": "상시모집 ※ 단, 예산 소진시 마감"
     },
     {
       "id": "sc-1yci0yc",
@@ -5655,7 +6311,8 @@
       "fee": "입장료 별도",
       "kind": "event",
       "startDate": "2025-11-15",
-      "endDate": "2026-11-15"
+      "endDate": "2026-11-15",
+      "time": "10:00 ~ 18:00 (입장 마감 : 오후 5시)"
     },
     {
       "id": "sc-j8903y",
@@ -5672,7 +6329,8 @@
       "fee": "무료 (입장료 4,000원 별도)",
       "kind": "event",
       "startDate": "2025-11-11",
-      "endDate": "2026-11-11"
+      "endDate": "2026-11-11",
+      "time": "화-일 10:00~18:00 ※매주 월 휴관, 입장마감17시"
     },
     {
       "id": "sc-7i6akh",
@@ -5688,7 +6346,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2025-11-07",
-      "endDate": "2026-12-31"
+      "endDate": "2026-12-31",
+      "time": "제한 없음"
     },
     {
       "id": "sc-nhts8l",
@@ -5705,7 +6364,8 @@
       "fee": "무료",
       "kind": "event",
       "startDate": "2025-10-23",
-      "endDate": "2028-08-31"
+      "endDate": "2028-08-31",
+      "time": "화-일요일 10:00~17:00 ※ 월요일, 1월 1일, 설날과 추석 당일 휴관"
     },
     {
       "id": "sc-m1eikm",
@@ -5722,7 +6382,8 @@
       "fee": "관람료: 성인 3,000원 / 청소년 1,800원 / 어린이 1,200원",
       "kind": "event",
       "startDate": "2025-09-19",
-      "endDate": "2026-12-06"
+      "endDate": "2026-12-06",
+      "time": "매주 화-일 10:00~18:00 (17:30까지 입장가능)"
     },
     {
       "id": "sc-1brimg1",
@@ -5738,7 +6399,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2025-04-23",
-      "endDate": "2027-04-22"
+      "endDate": "2027-04-22",
+      "time": "매일 06:00~24:00"
     },
     {
       "id": "sc-1oney36",
@@ -5754,7 +6416,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2023-06-15",
-      "endDate": "2027-05-30"
+      "endDate": "2027-05-30",
+      "time": "월, 화, 목, 금, 일요일 10:00~18:00 수, 토요일 10:00~21:00"
     },
     {
       "id": "sc-pisssm",
@@ -5769,7 +6432,8 @@
       "isFree": true,
       "kind": "event",
       "startDate": "2021-11-17",
-      "endDate": "2026-11-16"
+      "endDate": "2026-11-16",
+      "time": "종일"
     },
     {
       "id": "vs-KOPaf3k2n",

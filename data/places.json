@@ -2188,12 +2188,7 @@
         "무장애길"
       ],
       "kind": "place",
-      "useTime": "24시간 상시 개방",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP3o0027",
@@ -4032,12 +4027,12 @@
       "isFree": true,
       "subwayInfo": "지하철 6호선 화랑대역 4번 출구,  878m",
       "tags": [
-        "정원",
         "힐링",
         "문화공간",
         "화랑대역",
         "불빛정원",
-        "산책"
+        "산책",
+        "정원"
       ],
       "kind": "place",
       "useTime": "일몰 전 30분 ~ 오후 10시",
@@ -5053,7 +5048,7 @@
       "lat": 37.5451826970622,
       "lng": 126.960221399119,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=48468&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 경의중앙/ 6호선 효창공원앞역 1번 출구,  717m",
       "tags": [
         "서울역사적명소",
@@ -5087,9 +5082,10 @@
       "lat": 37.4889626332054,
       "lng": 127.000050317476,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75388&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 7호선 내방역 8번 출구,  977m",
       "tags": [
+        "서리풀길",
         "서울도심속산책로",
         "산책코스",
         "서울데이트장소",
@@ -5100,17 +5096,10 @@
         "무장애산책길",
         "서리풀공원",
         "서울벚꽃",
-        "서리풀길",
         "강남산책로"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP039311",
@@ -5151,10 +5140,11 @@
       "lat": 37.564133892331,
       "lng": 126.89244828144,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78085&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://animal.seoul.go.kr/animalplay",
+      "linkUrl": "https://news.seoul.go.kr/env/animal-protection/pet-playground",
       "isFree": true,
       "subwayInfo": "지하철 6호선 월드컵경기장역 1번 출구,  771m",
       "tags": [
+        "반려견놀이터",
         "서울산책길",
         "반려견과함께",
         "강아지놀이터",
@@ -5164,18 +5154,15 @@
         "월드컵공원반려견놀이터",
         "강아지와함께",
         "반려견산책장소",
-        "월드컵공원반려견",
-        "반려견놀이터"
+        "월드컵공원반려견"
       ],
       "kind": "place",
       "useTime": "24시간",
-      "closedDays": "월요일",
+      "closedDays": "연중무휴",
       "hours": {
         "open": "00:00",
         "close": "24:00",
-        "closedWeekdays": [
-          1
-        ]
+        "closedWeekdays": []
       }
     },
     {
@@ -9228,7 +9215,7 @@
       "lat": 37.49040891592444,
       "lng": 126.91795719416524,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75701&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": false,
+      "isFree": true,
       "subwayInfo": "지하철 신림선  보라매병원역 1번 출구,  451m",
       "tags": [
         "서울암벽등반",
@@ -9240,11 +9227,11 @@
         "보라매역"
       ],
       "kind": "place",
-      "useTime": "10:00~22:00",
+      "useTime": "주중(09:30~21:30), 주말(09:30~20:30)",
       "closedDays": "월요일 정기휴무",
       "hours": {
-        "open": "10:00",
-        "close": "22:00",
+        "open": "09:30",
+        "close": "21:30",
         "closedWeekdays": [
           1
         ]
@@ -9310,15 +9297,8 @@
         " 풍류"
       ],
       "kind": "place",
-      "useTime": "10:00~19:00",
-      "closedDays": "월요일",
-      "hours": {
-        "open": "10:00",
-        "close": "19:00",
-        "closedWeekdays": [
-          1
-        ]
-      }
+      "useTime": "공연마다 다릅니다.",
+      "hours": null
     },
     {
       "id": "vs-KOP001562",
@@ -9441,7 +9421,6 @@
       "isFree": false,
       "subwayInfo": "지하철 4호선 대공원역 2번 출구,  1.4km",
       "tags": [
-        "과천",
         " 눈썰매장",
         "벚꽃축제",
         " 테마파크",
@@ -9450,7 +9429,8 @@
         " 캐릭터플라워페스티벌",
         "야간개장",
         " 서울랜드",
-        "동물원"
+        "동물원",
+        "과천"
       ],
       "kind": "place",
       "useTime": "수 10:00-21:00\r\n목 10:00-21:00\r\n금 10:00-22:00\r\n토 09:30 - 22:00 \r\n일 09:30 - 22:00\r\n월 10:00 - 21:00\r\n화 10:00 - 21:00\r\n\r\n* 자세한 운영시간 및 입장제한은 홈페이지 참고 바랍니다.\r\n* 티켓판매와 입장은 공원 폐장 30분 전까지만 가능",
@@ -9841,7 +9821,7 @@
       ],
       "kind": "place",
       "useTime": "11:00 - 20:00",
-      "closedDays": "명절",
+      "closedDays": "연중무휴",
       "hours": {
         "open": "11:00",
         "close": "20:00",
@@ -9897,10 +9877,10 @@
       "isFree": false,
       "subwayInfo": "지하철 9호선 봉은사역 7번 출구, 13m",
       "tags": [
+        "서울실내가볼만한곳",
         "서울데이트",
         "서울코엑스",
         "가족나들이",
-        "서울실내가볼만한곳",
         "서울아쿠아리움",
         "아이들을위한",
         "서울",
@@ -11751,8 +11731,13 @@
         " 서울카지노"
       ],
       "kind": "place",
+      "useTime": "24시간",
       "closedDays": "연중무휴",
-      "hours": null
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
     },
     {
       "id": "vs-KOP001899",
@@ -11802,17 +11787,17 @@
       "isFree": true,
       "subwayInfo": "지하철 5/7호선 군자역 6번 출구,  880m \r\n지하철 7호선 어린이대공원역 1번 출구,  330m",
       "tags": [
-        "서울아이들과가볼만한곳",
         " 서울능동",
         "무료안전교육",
         " 서울시민안전체험관",
         " 광진구",
         " 체험관",
         "서울시민광나루안전체험관",
+        "서울아이들과가볼만한곳",
         " 안전"
       ],
       "kind": "place",
-      "useTime": "평일, 공휴일 09:00 ~ 17:00",
+      "useTime": "09:00 ~ 17:00",
       "closedDays": "월요일\r\n신정\r\n설날, 추석 당일",
       "hours": {
         "open": "09:00",
@@ -11837,7 +11822,7 @@
       "isFree": false,
       "subwayInfo": "지하철 9호선 국회의사당역 1번 출구,  810m\r\n지하철 5호선 여의나루역 2번 출구,  1.5km",
       "tags": [
-        " 여의도",
+        "여의도",
         " 레저",
         "여의도한강공원수영장",
         " 야외수영장",
@@ -13248,13 +13233,11 @@
         " 상암동"
       ],
       "kind": "place",
-      "useTime": "09:00 ~ 18:00 (매주 월요일 / 명절 연휴 / 근로자의 날(5.1.) / 경기행사일 관람시간 제한)\r\n*월드컵몰의 경우 각 매장별로 차이가 있음",
+      "useTime": "09:00 ~ 17:00 (경기행사일 관람시간 제한)\r\n*월드컵몰의 경우 각 매장별로 차이가 있음",
       "hours": {
         "open": "09:00",
-        "close": "18:00",
-        "closedWeekdays": [
-          1
-        ]
+        "close": "17:00",
+        "closedWeekdays": []
       }
     },
     {
@@ -13649,8 +13632,7 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 경복궁역 4번 출구, 268m",
       "tags": [
-        "전시",
-        " 문화재단",
+        "문화재단",
         " 문화공간",
         " 아름지기재단",
         " 전통문화",
@@ -13660,6 +13642,7 @@
         " 문화유산",
         " 경복궁역",
         "아름지기전시",
+        "전시",
         " 한국문화",
         " 전통공예품"
       ],
@@ -13754,8 +13737,8 @@
       "isFree": false,
       "subwayInfo": "지하철 5호선 오목교 3번 출구,  845m",
       "tags": [
-        "목동스케이트장",
         "목동야구장",
+        "목동스케이트장",
         "오목교역",
         " 목동아이스링크",
         "레저",
@@ -18229,14 +18212,14 @@
       "isFree": false,
       "subwayInfo": "지하철 1/6호선 동묘앞역 2번 출구,   247m",
       "tags": [
-        "천연염색",
         "쪽염색",
         "염색",
         "체험",
         "하늘물빛",
         "공방",
         "전통문화체험",
-        "오래가게"
+        "오래가게",
+        "천연염색"
       ],
       "kind": "place",
       "useTime": "월요일~금요일 10:00~17:00\r\n토요일 10:00~14:00",
@@ -18310,7 +18293,7 @@
       ],
       "kind": "place",
       "useTime": "10:00 ~ 17:00",
-      "closedDays": "월요일",
+      "closedDays": "월요일 , 신정, 설날, 추석",
       "hours": {
         "open": "10:00",
         "close": "17:00",
@@ -19001,6 +18984,7 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 안국역 3번 출구,  951m",
       "tags": [
+        "수라간",
         " 궁중음식",
         " 전통음식",
         " 궁중음식연구원",
@@ -19009,13 +18993,11 @@
         "문화",
         " 전통전승",
         " 전통음식강좌",
-        "수라간",
         " 궁중음식강좌",
         " 연구원"
       ],
       "kind": "place",
-      "useTime": "AM 10:00 ~ PM 01:00 (오전반)\r\nPM 02:00 ~ PM 05:00 (오후반)\r\n\r\n강좌별로 이용시간이 다름",
-      "closedDays": "토요일~일요일",
+      "useTime": "강좌별로 이용시간이 다름",
       "hours": null
     },
     {
@@ -22141,7 +22123,7 @@
       "lng": 126.982158117042,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77247&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://gil.seoul.go.kr/index.do",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 4호선 회현역 4번출구, 1.1km\r\n지하철 1호선/4호선/공항철도/경의중앙선 서울역 10번출구, 1.2km",
       "tags": [
         "남산 하늘숲길",
@@ -22154,12 +22136,7 @@
         "남산N서울타워"
       ],
       "kind": "place",
-      "useTime": "24시간 상시 개방",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOPda1e2c",
@@ -22209,7 +22186,7 @@
       ],
       "kind": "place",
       "useTime": "화~금, 일 09:00-18:00 \r\n토 09:00-21:00",
-      "closedDays": "매주 월요일 *월요일이 공휴일이면 운영 후 익일휴관",
+      "closedDays": "매주 월요일 *월요일이 공휴일이면 운영 후 익일휴관\r\n1월 1일, 설·추석 당일",
       "hours": {
         "open": "09:00",
         "close": "18:00",
@@ -22229,7 +22206,7 @@
       "lat": 37.6488401729925,
       "lng": 127.038521294371,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74029&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 4호선 쌍문역 1번출구, 619m",
       "tags": [
         "초안산근린공원",
@@ -22240,12 +22217,7 @@
         "도봉구근린공원"
       ],
       "kind": "place",
-      "useTime": "상시 개방",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP9jn7zj",
@@ -22259,7 +22231,7 @@
       "lng": 126.990759396185,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=73186&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://gil.seoul.go.kr/index.do",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 4호선 회현역 4번출구, 2.6km",
       "tags": [
         "남산",
@@ -22311,7 +22283,7 @@
       "lat": 37.5482672051658,
       "lng": 127.02955431092,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=68479&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 경의중앙선 응봉역 1번 출구,  886m",
       "tags": [
         "응봉산",
@@ -22319,13 +22291,7 @@
         "서울산"
       ],
       "kind": "place",
-      "useTime": "24시간 운영",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP0l726f",
@@ -22338,7 +22304,7 @@
       "lat": 37.5430117794769,
       "lng": 126.931437281016,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=66667&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "밤섬 공원에서 조망 시 : 지하철 6호선 광흥창역 4번 출구,  722m\r\n여의도 한강공원에서 조망 시 :지하철  5호선 여의나루역 2번 출구,  700m",
       "tags": [
         "생태계",
@@ -22349,13 +22315,7 @@
         "한강"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOPi8pv19",
@@ -22368,7 +22328,7 @@
       "lat": 37.6241834023016,
       "lng": 127.092951529405,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=65113&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 6호선 화랑대역 4번 출구,  686m",
       "tags": [
         "경춘선숲길",
@@ -22377,13 +22337,7 @@
         "공릉동"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP2xzi3t",
@@ -22424,7 +22378,7 @@
       "lat": 37.5440624236901,
       "lng": 126.9196985212,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=64805&fileTy=MEDIA&fileNo=3&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 6호선 상수역 4번 출구,  703m",
       "tags": [
         "상수역",
@@ -22432,13 +22386,7 @@
         "한강공원"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOPhyd9ee",
@@ -22531,7 +22479,7 @@
       "lat": 37.4497364237237,
       "lng": 127.053979397359,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=59320&fileTy=MEDIA&fileNo=2&thumbTy=M",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 신분당선 청계산입구역 1번 출구,  399m",
       "tags": [
         "청계산 수변공원",
@@ -22539,13 +22487,7 @@
         "공원"
       ],
       "kind": "place",
-      "useTime": "24시간",
-      "closedDays": "연중무휴",
-      "hours": {
-        "open": "00:00",
-        "close": "24:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP042170",
