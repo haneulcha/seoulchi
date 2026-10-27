@@ -110,10 +110,12 @@ git commit -m "feat: 카테고리를 목적 4그룹으로 바꾼다"
   - `type DayTab = 'today' | 'tomorrow' | 'weekend'`
   - `dayRange(tab: DayTab, today: string): { start: string; end: string }`
   - `eventsOn(items: CatalogEventIndexItem[], range: { start: string; end: string }): CatalogEventIndexItem[]` 기간이 범위와 하루라도 겹치는 것(`startDate <= end && endDate >= start`).
-  - `sortByDeadline(items: CatalogEventIndexItem[]): CatalogEventIndexItem[]` `endDate` 오름차순, 같으면 `imageUrl` 있는 것 먼저, 그다음 `id`. 원본을 바꾸지 않는다.
+  - `sortByDeadline(items: CatalogEventIndexItem[]): CatalogEventIndexItem[]` `endDate` 오름차순, 같으면 `id`. 원본을 바꾸지 않는다. (스펙의 "사진 있는 것 먼저"는 뺐다. 2026-10-27 실측 오늘 행사 262건 전부 `imageUrl`이 있어 순서를 바꾸지 못한다.)
   - `pickShelf(picks: HomeEntry[], today: string, count = 3): HomeEntry[]` 이번 주말 끝까지 하루도 겹치지 않는 것(`endDate < today` 또는 `startDate > dayRange('weekend', today).end`)을 먼저 빼고 앞에서 `count`개.
 
 - [ ] **Step 1: 실패하는 테스트**
+
+테스트 파일 안의 도우미: `ev(id, startDate, endDate)`는 최소 필드의 `CatalogEventIndexItem`, `pick(id, startDate, endDate)`는 `reason: ''`인 `HomeEntry`(`tests/lib/home.test.ts`의 `ev`와 같은 모양의 `EventItem`).
 
 ```ts
 // 2026-10-28 수, 10-31 토, 11-01 일
@@ -128,12 +130,29 @@ it('토요일이면 토·일, 일요일이면 일요일 하루', () => {
   expect(dayRange('weekend', '2026-10-31')).toEqual({ start: '2026-10-31', end: '2026-11-01' })
   expect(dayRange('weekend', '2026-11-01')).toEqual({ start: '2026-11-01', end: '2026-11-01' })
 })
-it('eventsOn은 하루라도 겹치면 남긴다', () => { /* 범위 전 끝남·범위 후 시작은 빠지고, 걸친 것·안에 든 것은 남는다 */ })
-it('sortByDeadline: 종료일 → 사진 있는 것 → id', () => { /* 같은 endDate에서 imageUrl 있는 항목이 앞 */ })
-it('pickShelf: 만료·주말 뒤 시작을 먼저 빼고 3개', () => {
-  // 5개 중 앞 2개가 만료 → 3·4·5번째가 나온다(빼고 나서 자른다)
+it('eventsOn은 하루라도 겹치면 남긴다', () => {
+  const r = { start: '2026-10-31', end: '2026-11-01' }
+  const ids = eventsOn([
+    ev('끝남', '2026-10-01', '2026-10-30'), ev('나중', '2026-11-02', '2026-11-30'),
+    ev('걸침', '2026-10-01', '2026-10-31'), ev('안', '2026-11-01', '2026-11-01'),
+  ], r).map((e) => e.id)
+  expect(ids).toEqual(['걸침', '안'])
 })
-it('pickShelf: 남는 게 없으면 빈 배열', () => {})
+it('sortByDeadline: 종료일 → id, 원본 불변', () => {
+  const input = [ev('b', '2026-10-01', '2026-11-05'), ev('c', '2026-10-01', '2026-10-30'), ev('a', '2026-10-01', '2026-11-05')]
+  expect(sortByDeadline(input).map((e) => e.id)).toEqual(['c', 'a', 'b'])
+  expect(input.map((e) => e.id)).toEqual(['b', 'c', 'a'])
+})
+it('pickShelf: 만료·주말 뒤 시작을 먼저 빼고 3개', () => {
+  // today 2026-10-28(수), 주말 끝 11-01
+  const picks = [pick('만료', '2026-10-01', '2026-10-27'), pick('먼', '2026-11-02', '2026-11-30'),
+    pick('a', '2026-10-01', '2026-11-30'), pick('b', '2026-11-01', '2026-11-01'),
+    pick('c', '2026-10-28', '2026-10-28'), pick('d', '2026-10-01', '2026-12-01')]
+  expect(pickShelf(picks, '2026-10-28').map((p) => p.item.id)).toEqual(['a', 'b', 'c'])
+})
+it('pickShelf: 남는 게 없으면 빈 배열', () => {
+  expect(pickShelf([pick('만료', '2026-10-01', '2026-10-27')], '2026-10-28')).toEqual([])
+})
 ```
 
 - [ ] **Step 2: `npx vitest run tests/lib/today.test.ts` 실패 확인**
@@ -182,16 +201,17 @@ it('pickShelf: 남는 게 없으면 빈 배열', () => {})
 - Test: `tests/lib/home-search.test.ts`
 
 **Interfaces:**
-- Consumes: Task 1 `CHIP_GROUPS` 옆에 둘 홈 칩, Task 2 전부, Task 3 `useCatalog`, `useGeo`, `Chip`, `BrowseEventRow`(#13 이후), `sortByDistance`, `isCatalogStale`, `StaleCatalog`, `CatalogError`, `CatalogSkeleton`, `EventPosterCard`, `chip()`.
+- Consumes: Task 1 `CategoryGroup`, Task 2 전부, Task 3 `useCatalog`, `useGeo`, `Chip`, `BrowseEventRow`(#13 이후), `sortByDistance`, `isCatalogStale`, `StaleCatalog`, `CatalogError`, `CatalogSkeleton`, `EventPosterCard`, `chip()`.
 - Produces:
   - `HOME_GROUPS = ['보러 가기', '해보러 가기', '놀러 가기'] as const`
   - `homeSearchSchema` = `{ day?: 'tomorrow' | 'weekend', group?: HOME_GROUPS, district?: string, near?: true }`. 잘못된 값은 `.catch(undefined)`. `day` 없음이 오늘이다.
 
 화면(위에서 아래, 스펙 4장):
 1. 헤더(지금의 갱신 시각 줄은 남긴다. 주 범위 줄은 뺀다).
-2. 추천 선반. 로더가 `pickShelf(resolved.picks, today)`를 돌려준다(빌드 타임 오늘). 0개면 `<section>` 자체를 그리지 않는다. 제목은 `추천`.
+2. 추천 선반. 로더는 `pickShelf(resolved.picks, 빌드 today, 3)`보다 넉넉하게 살아 있는 picks를 돌려주고(`pickShelf(..., Infinity)`), 화면이 브라우저 today로 `pickShelf(..., 3)`을 한 번 더 부른다. 배포는 매일 06:30 KST라 자정~06:30 사이에는 빌드 today가 하루 늦다. 프리렌더 첫 그림은 빌드 today 기준이고 마운트 후 다시 그린다(`BrowseControls`의 hydrated와 같은 방식). 0개면 `<section>` 자체를 그리지 않는다. 제목은 `추천`.
 3. `HomeControls`. 날짜 탭 3개(`Chip`, 단일 선택, 활성은 색으로), 목적 칩 3개(`전체` 포함), 내 주변 칩, 자치구 select. `BrowseControls`의 하이드레이션 우회(`hydrated`/`shown`)와 같은 방식을 쓴다. 이유 주석은 "BrowseControls와 같은 이유"로 한 줄만.
 4. 목록. `useCatalog()`의 행사(`kind === 'event'`)를 그룹·자치구로 거르고(`applyFilters` 재사용, 장소는 미리 뺀다), `eventsOn(dayRange(day, 브라우저 today))`, 선반 id 제외, 그다음 near가 켜지고 위치가 있으면 `sortByDistance`, 아니면 `sortByDeadline`. 위에 `N건`. 행은 `BrowseEventRow`.
+카탈로그 상태별로 탐색과 같게 그린다: 로딩은 `CatalogSkeleton`, 실패는 `CatalogError`(다시 시도), `isCatalogStale`이면 `StaleCatalog`. 선반과 컨트롤은 카탈로그와 무관하게 먼저 뜬다.
 5. 0건이면 `HomeEmpty`: "조건에 맞는 행사가 없습니다" + 켜진 필터(목적·자치구)마다 그것을 푼 링크. 날짜가 오늘이 아니면 "오늘 보기" 링크.
 
 - [ ] **Step 1: `home-search.test.ts`**
