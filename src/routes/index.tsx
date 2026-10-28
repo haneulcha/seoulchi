@@ -4,7 +4,7 @@ import { staticFunctionMiddleware } from '@tanstack/start-static-server-function
 import { BrowseEventRow, CatalogError, CatalogSkeleton, StaleCatalog } from '~/components/browse'
 import { EventPosterCard } from '~/components/cards'
 import { useCatalog, useGeo, type GeoState } from '~/components/catalog-hooks'
-import { DAY_LABELS, HomeControls, HomeEmpty } from '~/components/home'
+import { DAY_LABELS, HomeControls, HomeEmpty, HomePager } from '~/components/home'
 import { PAGE } from '~/components/page'
 import { loadCurated, loadMeta, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
@@ -93,7 +93,7 @@ function Home() {
   )
 }
 
-const UNFILTERED_LIMIT = 10
+const PAGE_SIZE = 10
 
 function DayList({
   index, today, now, search, geo, shelfIds,
@@ -116,13 +116,14 @@ function DayList({
     search.near === true && geo.status === 'ok'
       ? (sortByDistance(list, geo.origin) as Array<{ item: CatalogEventIndexItem; km?: number }>)
       : sortByDeadline(list).map((item) => ({ item }))
-  // 아무것도 안 좁혔으면 앞 일부만 — 끝까지 훑기 전에 필터로 좁히게 한다(스펙 4장 "필터 먼저")
+  const pages = Math.ceil(sorted.length / PAGE_SIZE)
+  const page = Math.min(search.page ?? 1, pages) // 조건이 바뀌어 페이지가 줄었으면 마지막 페이지
+  const rows = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+  // 아무것도 안 좁혔으면 첫 페이지에서 필터로 좁히라고 권한다(스펙 4장 "필터 먼저")
   const narrowed = search.group !== undefined || search.district !== undefined || search.near === true
-  const rows = narrowed ? sorted : sorted.slice(0, UNFILTERED_LIMIT)
-  const hidden = sorted.length - rows.length
 
   return (
-    <section className="mt-section">
+    <section id="list" className="mt-section scroll-mt-200">
       <div className="flex items-baseline justify-between">
         <h2 className="text-title-section">{DAY_LABELS[day]}</h2>
         <span className="text-body text-ink-muted">{list.length}건</span>
@@ -135,12 +136,13 @@ function DayList({
           <BrowseEventRow key={item.id} item={item} today={today} km={km} />
         ))}
       </div>
-      {hidden > 0 && (
+      {!narrowed && page === 1 && pages > 1 && (
         <p className="border-t border-neutral-border pt-200 text-center text-body text-ink-muted">
-          {hidden}건이 더 있어요.{' '}
+          {sorted.length - rows.length}건이 더 있어요.{' '}
           <a href="#filters" className="underline">목적이나 지역을 고르면 좁혀집니다</a>
         </p>
       )}
+      {pages > 1 && <HomePager search={search} page={page} pages={pages} />}
     </section>
   )
 }

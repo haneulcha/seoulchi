@@ -1,7 +1,7 @@
 import { Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { chip, Chip } from '~/components/ui'
-import { HOME_GROUPS, type HomeSearch } from '~/lib/home-search'
+import { HOME_GROUPS, pageNumbers, type HomeSearch } from '~/lib/home-search'
 import type { DayTab } from '~/lib/today'
 
 export const DAY_LABELS: Record<DayTab, string> = { today: '오늘', tomorrow: '내일', weekend: '이번 주말' }
@@ -11,7 +11,8 @@ export function HomeControls({
   search, districts, nearDisabledReason,
 }: { search: HomeSearch; districts: string[]; nearDisabledReason?: string }) {
   const navigate = useNavigate()
-  const patch = (p: Partial<HomeSearch>) => void navigate({ to: '/', search: { ...search, ...p } })
+  // 조건이 바뀌면 다른 목록이다 — 1페이지로 돌아간다
+  const patch = (p: Partial<HomeSearch>) => void navigate({ to: '/', search: { ...search, page: undefined, ...p } })
 
   // BrowseControls와 같은 이유: 프리렌더는 쿼리를 모른 채 굳으므로 첫 렌더는 필터 없음으로 그린다
   const [hydrated, setHydrated] = useState(false)
@@ -82,5 +83,30 @@ export function HomeEmpty({ search }: { search: HomeSearch }) {
         </ul>
       )}
     </div>
+  )
+}
+
+/** 번호 페이지. 링크라 새로고침·뒤로가기가 되고, 넘기면 목록 머리(#list)로 간다 */
+export function HomePager({ search, page, pages }: { search: HomeSearch; page: number; pages: number }) {
+  const to = (n: number) => ({ ...search, page: n === 1 ? undefined : n })
+  return (
+    <nav aria-label="페이지" className="mt-200 flex flex-wrap items-center justify-center gap-100">
+      {page > 1 && (
+        <Link to="/" search={to(page - 1)} hash="list" aria-label="이전 페이지" className={chip()}>‹</Link>
+      )}
+      {pageNumbers(page, pages).map((n, i) =>
+        n === '…' ? (
+          <span key={`gap-${i}`} className="text-body text-ink-subtle">…</span>
+        ) : (
+          <Link key={n} to="/" search={to(n)} hash="list" aria-current={n === page ? 'page' : undefined}
+            className={chip(n === page)}>
+            {n}
+          </Link>
+        ),
+      )}
+      {page < pages && (
+        <Link to="/" search={to(page + 1)} hash="list" aria-label="다음 페이지" className={chip()}>›</Link>
+      )}
+    </nav>
   )
 }

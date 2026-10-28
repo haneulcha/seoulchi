@@ -9,6 +9,23 @@ export const homeSearchSchema = z.object({
   group: z.enum(HOME_GROUPS).optional().catch(undefined),
   district: z.string().min(1).optional().catch(undefined),
   near: z.literal(true).optional().catch(undefined),
+  page: z.number().int().min(2).optional().catch(undefined),
 })
 
 export type HomeSearch = z.infer<typeof homeSearchSchema>
+
+/** 번호 줄: 처음·끝·현재와 그 양옆. 한 칸 빈 곳은 번호로, 두 칸 이상은 줄임표로 메운다 */
+export function pageNumbers(current: number, total: number): Array<number | '…'> {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1)
+  const keep = [...new Set([1, current - 1, current, current + 1, total])]
+    .filter((n) => n >= 1 && n <= total)
+    .sort((a, b) => a - b)
+  const out: Array<number | '…'> = []
+  for (const n of keep) {
+    const prev = out.at(-1)
+    if (typeof prev === 'number' && n - prev === 2) out.push(n - 1)
+    else if (typeof prev === 'number' && n - prev > 2) out.push('…')
+    out.push(n)
+  }
+  return out
+}
