@@ -59,19 +59,19 @@ function FactLines({
 export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: string }) {
   const e = entry.item
   return (
-    <Link to="/e/$id" params={{ id: e.id }} className="block w-[62%] shrink-0 snap-start md:w-auto">
+    <Link to="/e/$id" params={{ id: e.id }} className="block w-36 shrink-0 snap-start md:w-44">
       <ItemImage
         src={e.imageUrl}
         alt=""
         category={e.category}
-        className={`${POSTER} w-full rounded-150 object-cover`}
+        className={`${POSTER} w-full rounded-100 object-cover`}
       />
       {/* 제목·메타는 붙이고(mt-050) 코멘트는 떼어 놓는다(mt-100) — 코멘트는 사실이 아니라 목소리다 */}
-      <div className="mt-150 min-w-0">
-        <CardTitle title={e.title} className="text-title-card" />
+      <div className="mt-100 min-w-0">
+        <CardTitle title={e.title} className="line-clamp-2 text-title-card" />
         <FactLines facts={cardFacts(e, { today })} />
         {/* 코멘트는 있을 때만 — 운영 배치(rule)는 reason이 빈 문자열이다. 빈 자리를 남기지 않는다 */}
-        {entry.reason !== '' && <p className="mt-100 text-body text-ink-subtle">{entry.reason}</p>}
+        {entry.reason !== '' && <p className="mt-100 line-clamp-2 text-body text-ink-subtle">{entry.reason}</p>}
       </div>
     </Link>
   )

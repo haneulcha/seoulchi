@@ -56,13 +56,13 @@ function Home() {
       </header>
 
       {/*
-        모바일은 가로로 넘기는 선반 — 화면 끝까지 흘러야 다음 카드가 보여 넘길 수 있다는 게 읽힌다(-mx로 PAGE 여백을 상쇄).
-        md 이상은 3단이 딱 한 줄로 떨어진다. 고아 칸이 없고 셋을 한 세트로 읽게 한다
+        가로로 넘기는 작은 선반 — 모바일 첫 화면에 필터까지 들어와야 한다(스펙 4장 "필터 먼저").
+        화면 끝까지 흘러야 다음 카드가 보여 넘길 수 있다는 게 읽힌다(-mx로 PAGE 여백을 상쇄)
       */}
       {shelf.length > 0 && (
         <section>
           <h2 className="text-title-section">추천</h2>
-          <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter md:mx-0 md:grid md:grid-cols-3 md:overflow-visible md:px-0">
+          <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter md:mx-0 md:px-0">
             {shelf.map((entry) => (
               <EventPosterCard key={entry.item.id} entry={entry} today={today} />
             ))}
@@ -93,6 +93,8 @@ function Home() {
   )
 }
 
+const UNFILTERED_LIMIT = 10
+
 function DayList({
   index, today, now, search, geo, shelfIds,
 }: {
@@ -110,10 +112,14 @@ function DayList({
 
   if (list.length === 0) return <HomeEmpty search={search} />
 
-  const rows: Array<{ item: CatalogEventIndexItem; km?: number }> =
+  const sorted: Array<{ item: CatalogEventIndexItem; km?: number }> =
     search.near === true && geo.status === 'ok'
       ? (sortByDistance(list, geo.origin) as Array<{ item: CatalogEventIndexItem; km?: number }>)
       : sortByDeadline(list).map((item) => ({ item }))
+  // 아무것도 안 좁혔으면 앞 일부만 — 끝까지 훑기 전에 필터로 좁히게 한다(스펙 4장 "필터 먼저")
+  const narrowed = search.group !== undefined || search.district !== undefined || search.near === true
+  const rows = narrowed ? sorted : sorted.slice(0, UNFILTERED_LIMIT)
+  const hidden = sorted.length - rows.length
 
   return (
     <section className="mt-section">
@@ -129,6 +135,12 @@ function DayList({
           <BrowseEventRow key={item.id} item={item} today={today} km={km} />
         ))}
       </div>
+      {hidden > 0 && (
+        <p className="border-t border-neutral-border pt-200 text-center text-body text-ink-muted">
+          {hidden}건이 더 있어요.{' '}
+          <a href="#filters" className="underline">목적이나 지역을 고르면 좁혀집니다</a>
+        </p>
+      )}
     </section>
   )
 }

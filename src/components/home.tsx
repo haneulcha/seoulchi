@@ -19,7 +19,7 @@ export function HomeControls({
   const shown: HomeSearch = hydrated ? search : {}
 
   return (
-    <div className="mt-section space-y-100">
+    <div id="filters" className="mt-section scroll-mt-200 space-y-100">
       <div className="flex gap-100" role="group" aria-label="날짜">
         {(['today', 'tomorrow', 'weekend'] as const).map((d) => (
           <Chip key={d} active={(shown.day ?? 'today') === d}
