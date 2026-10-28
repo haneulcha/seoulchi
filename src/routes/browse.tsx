@@ -1,41 +1,21 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { useEffect, useState } from 'react'
-import indexUrl from '../../data/index.json?url'
+import { useState } from 'react'
 import {
   BrowseControls, BrowseEventRow, BrowsePlaceRow, CatalogError, CatalogSkeleton,
   EmptyResult, StaleCatalog, TimelineSection,
 } from '~/components/browse'
+import { useCatalog, useGeo, type GeoState } from '~/components/catalog-hooks'
 import { PAGE } from '~/components/page'
 import {
   applyFilters, groupByTimeline, isCatalogStale, relaxSuggestions, sortByDistance,
 } from '~/lib/browse-filter'
 import { browseSearchSchema, toBrowseFilters, type BrowseSearch } from '~/lib/browse-search'
 import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
-import type { LatLng } from '~/lib/geo'
-import { kstToday } from '~/lib/week'
 import {
-  catalogIndexSchema,
   type CatalogEventIndexItem,
   type CatalogIndexFile,
   type CatalogPlaceIndexItem,
 } from '~/types/files'
-
-/**
- * 껍데기는 SSG, 목록만 클라이언트 fetch(스펙 8장). 홈과 달리 서버 함수를 쓰지 않는
- * 이유: 서버 함수 loader면 인덱스 240KB가 프리렌더 HTML에 통째로 박힌다.
- * ?url 임포트라 에셋 URL에 base가 자동으로 붙는다 — static-fn-base가 손으로 풀던
- * 문제(스펙 10장)를 vite가 대신 푼다. (확인 결과 #3, 계획 문서 참고)
- */
-type CatalogState =
-  | { status: 'loading' }
-  | { status: 'error'; message: string }
-  | { status: 'ready'; index: CatalogIndexFile; today: string; now: Date }
-
-type GeoState =
-  | { status: 'idle' }
-  | { status: 'waiting' }
-  | { status: 'ok'; origin: LatLng }
-  | { status: 'denied' }
 
 export const Route = createFileRoute('/browse')({
   // 확인 목록 #4: zod v4는 Standard Schema라 스키마를 그대로 넘긴다.
@@ -46,69 +26,10 @@ export const Route = createFileRoute('/browse')({
 
 function Browse() {
   const search = Route.useSearch()
-  const [state, setState] = useState<CatalogState>({ status: 'loading' })
-  const [attempt, setAttempt] = useState(0)
+  const { state, retry } = useCatalog()
   /** 접힌 월 그룹의 토글. URL에 넣지 않는다 — 필터가 아니라 목록 안 이동이다 */
   const [openMonths, setOpenMonths] = useState<ReadonlySet<string>>(new Set())
-  const [geo, setGeo] = useState<GeoState>({ status: 'idle' })
-
-  useEffect(() => {
-    let cancelled = false
-    setState({ status: 'loading' })
-    fetch(indexUrl)
-      .then(async (res) => {
-        if (!res.ok) throw new Error(`인덱스를 받지 못했습니다 (HTTP ${res.status})`)
-        const parsed = catalogIndexSchema.safeParse(await res.json())
-        if (!parsed.success) {
-          throw new Error('인덱스가 스키마와 다릅니다 — 배치와 앱 버전이 어긋났을 수 있습니다')
-        }
-        if (cancelled) return
-        const now = new Date() // 브라우저 경계 — 여기서 한 번만. 이후 계산은 전부 이 값을 받는다
-        setState({ status: 'ready', index: parsed.data, today: kstToday(now), now })
-      })
-      .catch((err: unknown) => {
-        if (!cancelled) {
-          // 빈 목록으로 위장하지 않는다 — 명시적 에러 + 재시도(스펙 8장)
-          setState({ status: 'error', message: err instanceof Error ? err.message : String(err) })
-        }
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [attempt])
-
-  /**
-   * 위치는 near가 켜졌을 때만 묻는다 — 안 쓰는 권한을 미리 조르지 않는다.
-   * cancelled 가드는 위 카탈로그 fetch effect와 같은 패턴: near를 켰다가 응답 전에
-   * 끄면 effect가 재실행되고 geo가 idle로 리셋되는데, 그 뒤에 도착하는 늦은 콜백이
-   * (거부하지 않았는데도) geo를 denied/ok로 덮어써서는 안 된다 — 화면이 사실이 아닌
-   * 걸 말하게 된다(PRODUCT.md).
-   */
-  useEffect(() => {
-    if (search.near !== true) {
-      setGeo({ status: 'idle' })
-      return
-    }
-    if (!('geolocation' in navigator)) {
-      setGeo({ status: 'denied' })
-      return
-    }
-    let cancelled = false
-    setGeo({ status: 'waiting' })
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        if (!cancelled) {
-          setGeo({ status: 'ok', origin: { lat: pos.coords.latitude, lng: pos.coords.longitude } })
-        }
-      },
-      () => {
-        if (!cancelled) setGeo({ status: 'denied' })
-      },
-    )
-    return () => {
-      cancelled = true
-    }
-  }, [search.near])
+  const geo = useGeo(search.near === true)
 
   return (
     <main className={`${PAGE} py-page`}>
@@ -138,7 +59,7 @@ function Browse() {
 
       {state.status === 'loading' && <CatalogSkeleton />}
       {state.status === 'error' && (
-        <CatalogError message={state.message} onRetry={() => setAttempt((n) => n + 1)} />
+        <CatalogError message={state.message} onRetry={retry} />
       )}
       {state.status === 'ready' &&
         // 2층 방어의 두 번째 층(사용자 룰링) — groupByTimeline(6a7198f)은

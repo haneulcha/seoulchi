@@ -2,7 +2,7 @@ import { Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useState, type ReactNode } from 'react'
 import { ListRow } from '~/components/cards'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
-import { button, Callout, chip } from '~/components/ui'
+import { button, Callout, chip, Chip } from '~/components/ui'
 import { FILTER_LABELS, type RelaxSuggestion, type TimelineGroup } from '~/lib/browse-filter'
 import { CHIP_GROUPS, type BrowseSearch } from '~/lib/browse-search'
 import { cardFacts } from '~/lib/card-facts'
@@ -145,19 +145,6 @@ export function StaleCatalog({ index }: { index: CatalogIndexFile }) {
       <p>이 카탈로그는 {index.horizonEnd}까지를 담고 있고 오늘은 그 뒤입니다.</p>
       <p className="text-caption">{formatUpdatedAt(index.generatedAt)}</p>
     </Callout>
-  )
-}
-
-function Chip({
-  active, onClick, children,
-}: { active: boolean; onClick: () => void; children: ReactNode }) {
-  return (
-    <button
-      type="button" onClick={onClick} aria-pressed={active}
-      className={chip(active)}
-    >
-      {children}
-    </button>
   )
 }
 

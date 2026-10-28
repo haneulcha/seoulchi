@@ -21,6 +21,19 @@ export function chip(active = false) {
   }`
 }
 
+export function Chip({
+  active, onClick, children,
+}: { active: boolean; onClick: () => void; children: ReactNode }) {
+  return (
+    <button
+      type="button" onClick={onClick} aria-pressed={active}
+      className={chip(active)}
+    >
+      {children}
+    </button>
+  )
+}
+
 const CALLOUT_TONE = {
   error: { box: 'border-error-border bg-error-subtle-bg', title: 'text-error-text-strong', body: 'text-error-text' },
   warning: { box: 'border-warning-border bg-warning-subtle-bg', title: 'text-warning-text-strong', body: 'text-warning-text' },
