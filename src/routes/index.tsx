@@ -1,13 +1,19 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import { staticFunctionMiddleware } from '@tanstack/start-static-server-functions'
-import { CompactEventRow, EventPosterCard, PlaceCard } from '~/components/cards'
+import { BrowseEventRow, CatalogError, CatalogSkeleton, StaleCatalog } from '~/components/browse'
+import { EventPosterCard } from '~/components/cards'
+import { useCatalog, useGeo, type GeoState } from '~/components/catalog-hooks'
+import { DAY_LABELS, HomeControls, HomeEmpty } from '~/components/home'
 import { PAGE } from '~/components/page'
-import { loadCurated, loadMeta, loadPlaces, loadWeek } from '~/data/load'
+import { loadCurated, loadMeta, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
-import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
-import { pickHomeItems } from '~/lib/home'
-import { kstToday, weekRange } from '~/lib/week'
+import { applyFilters, districtsOf, isCatalogStale, sortByDistance } from '~/lib/browse-filter'
+import { formatUpdatedAt } from '~/lib/dates'
+import { homeSearchSchema, type HomeSearch } from '~/lib/home-search'
+import { dayRange, eventsOn, pickShelf, sortByDeadline } from '~/lib/today'
+import { kstToday } from '~/lib/week'
+import type { CatalogEventIndexItem, CatalogIndexFile } from '~/types/files'
 
 /** 빌드 타임에 한 번 실행. 여기가 new Date()를 부르는 유일한 서버 경계다 */
 const getHomeData = createServerFn({ method: 'GET' })
@@ -16,74 +22,125 @@ const getHomeData = createServerFn({ method: 'GET' })
     const meta = loadMeta() // 현재 주차는 meta.weekKey — isoWeekKey(new Date()) 금지 (없는 파일을 읽게 된다)
     const week = loadWeek(meta.weekKey)
     const curated = loadCurated(meta.weekKey)
-    const places = loadPlaces()
-    const resolved = resolveCurated(curated, week.items, places.items)
+    const resolved = resolveCurated(curated, week.items, [])
     const today = kstToday(new Date()) // 오늘 = 빌드 시각의 KST 날짜. 배치 커밋 → 재배포 때 갱신된다
 
     return {
-      weekRangeLabel: formatWeekRange(weekRange(meta.weekKey)),
       updatedLabel: formatUpdatedAt(meta.updatedAt),
       today,
-      entries: pickHomeItems({ events: week.items, picks: resolved.picks, today }),
-      places: resolved.places,
+      // 배포는 06:30 KST라 자정~06:30에는 빌드 today가 하루 늦다 — 넉넉히 넘기고 화면이 브라우저 today로 다시 고른다
+      shelf: pickShelf(resolved.picks, today, Infinity),
     }
   })
 
 export const Route = createFileRoute('/')({
+  validateSearch: homeSearchSchema,
   loader: () => getHomeData(),
   component: Home,
 })
 
 function Home() {
   const data = Route.useLoaderData()
-  const big = data.entries.slice(0, 3)
-  const rest = data.entries.slice(3)
+  const search = Route.useSearch()
+  const { state, retry } = useCatalog()
+  const geo = useGeo(search.near === true)
+
+  // 프리렌더 첫 그림은 빌드 today, 카탈로그가 준비되면 브라우저 today(useCatalog)로 다시 그린다
+  const today = state.status === 'ready' ? state.today : data.today
+  const shelf = pickShelf(data.shelf, today, 3)
 
   return (
     <main className={`${PAGE} py-page`}>
       <header className="mb-page">
-        <p className="text-body text-ink-subtle">{data.weekRangeLabel}</p>
-        <p className="mt-050 text-caption text-ink-subtle">{data.updatedLabel}</p>
+        <p className="text-caption text-ink-subtle">{data.updatedLabel}</p>
       </header>
 
       {/*
-        모바일은 가로로 넘기는 선반 — 화면 끝까지 흘러야 다음 카드가 보여 넘길 수 있다는 게 읽힌다(-mx로 PAGE 여백을 상쇄).
-        md 이상은 3단이 딱 한 줄로 떨어진다. 고아 칸이 없고 셋을 한 세트로 읽게 한다
+        가로로 넘기는 작은 선반 — 모바일 첫 화면에 필터까지 들어와야 한다(스펙 4장 "필터 먼저").
+        화면 끝까지 흘러야 다음 카드가 보여 넘길 수 있다는 게 읽힌다(-mx로 PAGE 여백을 상쇄)
       */}
-      <section>
-        <h2 className="text-title-section">이번 주 추천</h2>
-        <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter md:mx-0 md:grid md:grid-cols-3 md:overflow-visible md:px-0">
-          {big.map((entry) => (
-            <EventPosterCard key={entry.item.id} entry={entry} today={data.today} />
-          ))}
-        </div>
-      </section>
+      {shelf.length > 0 && (
+        <section>
+          <h2 className="text-title-section">추천</h2>
+          <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter md:mx-0 md:px-0">
+            {shelf.map((entry) => (
+              <EventPosterCard key={entry.item.id} entry={entry} today={today} />
+            ))}
+          </div>
+        </section>
+      )}
 
-      {/*
-        열 수를 브레이크포인트가 아니라 콘텐츠가 정한다 — 컴팩트 행은 300px 밑으로 내려가면
-        제목이 잘려서 읽을 게 없어진다. auto-fit이면 폭에 따라 1 → 2 → 3열로 알아서 간다.
-        min(300px,100%)인 이유: 그냥 300px로 두면 320px 기기(안쪽 288px)에서
-        트랙이 300px으로 고정돼 12px 넘친다. 실측으로 확인했다.
-      */}
-      <section className="mt-section">
-        <h2 className="text-title-section">이번 주에 더 있는 것</h2>
-        {/* 행마다 border-t가 붙으므로 세로 간격은 행이 스스로 갖는다(gap-y 없음) */}
-        <div className="mt-150 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-x-gutter">
-          {rest.map((entry) => (
-            <CompactEventRow key={entry.item.id} entry={entry} today={data.today} />
-          ))}
-        </div>
-      </section>
+      <HomeControls
+        search={search}
+        districts={state.status === 'ready' ? districtsOf(state.index.items.filter((i) => i.kind === 'event')) : []}
+        nearDisabledReason={
+          search.near === true && geo.status === 'denied'
+            ? '위치 권한이 없어 내 주변 순을 쓸 수 없습니다 — 자치구로 좁혀 보세요'
+            : undefined
+        }
+      />
 
-      {/* 6개라 2·3·6으로만 나눠떨어진다. lg에서 한 줄 선반이 되면 행사 영역과 무게가 안 겹친다 */}
-      <section className="mt-section">
-        <h2 className="text-title-section">언제 가도 좋은 곳</h2>
-        <div className="mt-150 grid grid-cols-2 gap-gutter sm:grid-cols-3 lg:grid-cols-6">
-          {data.places.map((place) => (
-            <PlaceCard key={place.id} place={place} />
-          ))}
-        </div>
-      </section>
+      {state.status === 'loading' && <CatalogSkeleton />}
+      {state.status === 'error' && <CatalogError message={state.message} onRetry={retry} />}
+      {state.status === 'ready' &&
+        (isCatalogStale(state.index.horizonEnd, state.today) ? (
+          <StaleCatalog index={state.index} />
+        ) : (
+          <DayList index={state.index} today={state.today} now={state.now} search={search} geo={geo}
+            shelfIds={new Set(shelf.map((e) => e.item.id))} />
+        ))}
     </main>
+  )
+}
+
+const UNFILTERED_LIMIT = 10
+
+function DayList({
+  index, today, now, search, geo, shelfIds,
+}: {
+  index: CatalogIndexFile
+  today: string
+  now: Date
+  search: HomeSearch
+  geo: GeoState
+  shelfIds: ReadonlySet<string>
+}) {
+  const day = search.day ?? 'today'
+  const events = applyFilters(index.items, { group: search.group, district: search.district }, now)
+    .filter((i): i is CatalogEventIndexItem => i.kind === 'event')
+  const list = eventsOn(events, dayRange(day, today)).filter((i) => !shelfIds.has(i.id))
+
+  if (list.length === 0) return <HomeEmpty search={search} />
+
+  const sorted: Array<{ item: CatalogEventIndexItem; km?: number }> =
+    search.near === true && geo.status === 'ok'
+      ? (sortByDistance(list, geo.origin) as Array<{ item: CatalogEventIndexItem; km?: number }>)
+      : sortByDeadline(list).map((item) => ({ item }))
+  // 아무것도 안 좁혔으면 앞 일부만 — 끝까지 훑기 전에 필터로 좁히게 한다(스펙 4장 "필터 먼저")
+  const narrowed = search.group !== undefined || search.district !== undefined || search.near === true
+  const rows = narrowed ? sorted : sorted.slice(0, UNFILTERED_LIMIT)
+  const hidden = sorted.length - rows.length
+
+  return (
+    <section className="mt-section">
+      <div className="flex items-baseline justify-between">
+        <h2 className="text-title-section">{DAY_LABELS[day]}</h2>
+        <span className="text-body text-ink-muted">{list.length}건</span>
+      </div>
+      {search.near === true && geo.status === 'waiting' && (
+        <p className="mt-100 text-body text-ink-subtle">위치 확인 중…</p>
+      )}
+      <div className="mt-150">
+        {rows.map(({ item, km }) => (
+          <BrowseEventRow key={item.id} item={item} today={today} km={km} />
+        ))}
+      </div>
+      {hidden > 0 && (
+        <p className="border-t border-neutral-border pt-200 text-center text-body text-ink-muted">
+          {hidden}건이 더 있어요.{' '}
+          <a href="#filters" className="underline">목적이나 지역을 고르면 좁혀집니다</a>
+        </p>
+      )}
+    </section>
   )
 }

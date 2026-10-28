@@ -1,10 +1,8 @@
 import { Link } from '@tanstack/react-router'
 import type { ReactNode } from 'react'
 import { ItemImage } from '~/components/ItemImage'
-import { OpenNowBadge } from '~/components/OpenNowBadge'
 import { cardFacts, splitTitle, type CardFacts } from '~/lib/card-facts'
 import type { HomeEntry } from '~/lib/home'
-import type { PlaceItem } from '~/types/item'
 
 /**
  * 행사 이미지는 거의 전부 세로 포스터다 — 실측한 원본 비율이 0.67~0.71에 몰려 있다.
@@ -61,39 +59,38 @@ function FactLines({
 export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: string }) {
   const e = entry.item
   return (
-    <Link to="/e/$id" params={{ id: e.id }} className="block w-[62%] shrink-0 snap-start md:w-auto">
+    <Link to="/e/$id" params={{ id: e.id }} className="block w-36 shrink-0 snap-start md:w-44">
       <ItemImage
         src={e.imageUrl}
         alt=""
         category={e.category}
-        className={`${POSTER} w-full rounded-150 object-cover`}
+        className={`${POSTER} w-full rounded-100 object-cover`}
       />
       {/* 제목·메타는 붙이고(mt-050) 코멘트는 떼어 놓는다(mt-100) — 코멘트는 사실이 아니라 목소리다 */}
-      <div className="mt-150 min-w-0">
-        <CardTitle title={e.title} className="text-title-card" />
+      <div className="mt-100 min-w-0">
+        <CardTitle title={e.title} className="line-clamp-2 text-title-card" />
         <FactLines facts={cardFacts(e, { today })} />
         {/* 코멘트는 있을 때만 — 운영 배치(rule)는 reason이 빈 문자열이다. 빈 자리를 남기지 않는다 */}
-        {entry.reason !== '' && <p className="mt-100 text-body text-ink-subtle">{entry.reason}</p>}
+        {entry.reason !== '' && <p className="mt-100 line-clamp-2 text-body text-ink-subtle">{entry.reason}</p>}
       </div>
     </Link>
   )
 }
 
 /**
- * 목록 행 — 홈의 나머지 9개와 탐색의 행사·장소 행이 모두 이 모양이다. 썸네일 비율만 다르다.
+ * 목록 행 — 홈의 그날 목록과 탐색의 행사·장소 행이 모두 이 모양이다. 썸네일 비율만 다르다.
  *
  * 한때 64px 1:1 썸네일을 뺐다 — 세로 포스터를 정사각으로 자른 조각은 알아볼 수 없었다.
  * 3/4로 담으면 크롭이 약 5%라 작아도 포스터로 읽힌다(탐색에서 확인). 장소 사진은 가로형이라 4/3.
  */
 export function ListRow({
-  id, image, title, facts, badge, note,
+  id, image, title, facts, badge,
 }: {
   id: string
   image: { src?: string; category: string; shape: 'poster' | 'photo' }
   title: string
   facts: CardFacts
   badge?: ReactNode
-  note?: string
 }) {
   return (
     <Link to="/e/$id" params={{ id }} className="flex gap-150 border-t border-neutral-border py-150">
@@ -106,41 +103,7 @@ export function ListRow({
       <div className="min-w-0">
         <CardTitle title={title} className="line-clamp-2 text-title-card" />
         <FactLines facts={facts} badge={badge} />
-        {note && <p className="truncate text-body text-ink-subtle">{note}</p>}
       </div>
-    </Link>
-  )
-}
-
-export function CompactEventRow({ entry, today }: { entry: HomeEntry; today: string }) {
-  const e = entry.item
-  return (
-    <ListRow id={e.id} image={{ src: e.imageUrl, category: e.category, shape: 'poster' }}
-      title={e.title} facts={cardFacts(e, { today })} note={entry.reason} />
-  )
-}
-
-/**
- * 언제 가도 좋은 곳 — place 6개 그리드용.
- *
- * 포스터와 같은 논리를 사진에 적용한다. 장소 사진은 6장 중 5장이 1.36 가로형이라
- * 4/3(1.333)에 담으면 크롭이 2%다. 정사각은 26%(최악 43%)를 잘라내고 있었다.
- */
-export function PlaceCard({ place }: { place: PlaceItem }) {
-  return (
-    <Link to="/e/$id" params={{ id: place.id }} className="block">
-      <ItemImage
-        src={place.imageUrl}
-        alt=""
-        category={place.category}
-        className="aspect-[4/3] w-full rounded-100 object-cover"
-      />
-      {/* 좁은 칸에서 한 줄 truncate면 "의학박물관 (구 대한…"이 된다. 두 줄까지 허용한다 */}
-      <CardTitle title={place.title} className="mt-100 line-clamp-2 text-title-card" />
-      <FactLines
-        facts={cardFacts(place, {})}
-        badge={<OpenNowBadge hours={place.hours ?? null} />}
-      />
     </Link>
   )
 }

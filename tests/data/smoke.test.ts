@@ -1,8 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import { loadCatalog, loadCurated, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
-import { pickHomeItems } from '~/lib/home'
+import { dayRange, eventsOn, pickShelf } from '~/lib/today'
 import { kstToday } from '~/lib/week'
+import type { CatalogEventIndexItem } from '~/types/files'
 
 /**
  * 커밋된 data/*.json 실물로 홈의 데이터 경로 전체를 통과시킨다.
@@ -26,11 +27,10 @@ describe('실데이터 스모크: 홈이 요구하는 18개 id가 전부 해석�
     expect(resolved.places).toHaveLength(6)
   })
 
-  it('홈 12자리가 채워지고 전부 이미지가 있다', () => {
+  it('추천 선반의 카드는 전부 이미지가 있다', () => {
     const today = kstToday(new Date())
-    const home = pickHomeItems({ events: week.items, picks: resolved.picks, today })
-    expect(home).toHaveLength(12)
-    // 카드 12장이 초라해지지 않는지 — 실측상 event 이미지 보유율 100%
+    const home = pickShelf(resolved.picks, today)
+    // 실측상 event 이미지 보유율 100%
     for (const { item } of home) expect(item.imageUrl).toBeTruthy()
   })
 
@@ -62,6 +62,12 @@ describe('실데이터 스모크: 탐색 카탈로그', () => {
     for (const item of index.items) {
       if (item.kind === 'place') expect(ids.has(item.id), item.id).toBe(true)
     }
+  })
+
+  it('인덱스를 만든 날의 오늘 탭이 비지 않는다 — 홈 목록의 전제', () => {
+    const events = index.items.filter((i): i is CatalogEventIndexItem => i.kind === 'event')
+    const today = kstToday(new Date(index.generatedAt))
+    expect(eventsOn(events, dayRange('today', today)).length).toBeGreaterThan(0)
   })
 
   it('horizonEnd가 인덱스와 카탈로그에서 일치한다', () => {
