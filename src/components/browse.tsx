@@ -45,7 +45,7 @@ export function BrowsePlaceRow({
         <>
           <OpenNowBadge hours={item.hours ?? null} />
           {hoursUnknownNote && !item.hours && (
-            <span className="ml-100 text-caption text-ink-subtle">영업시간 미상</span>
+            <span className="mr-100 text-caption text-ink-subtle">영업시간 미상</span>
           )}
         </>
       }
