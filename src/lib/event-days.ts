@@ -5,8 +5,12 @@ const ALL_DAYS = [0, 1, 2, 3, 4, 5, 6]
 const DAY_RE = /(?<![0-9가-힣])([일월화수목금토])(?:요일|(?![가-힣]))/g
 // 11.3(화)·10.30.(금)·29일(일)은 그날 하루의 표기지 반복 요일이 아니다
 const DATED_DAY_RE = /(\d일?\.?)\s*\(\s*[일월화수목금토](?:요일)?\s*\)/g
+// 일 2회는 횟수지 일요일이 아니다. 토,일 2회의 일은 남긴다
+const PER_DAY_RE = /(?<![,·]\s*)일\s*\d+\s*회/g
 const SEGMENT_RE = /[/\n※*()]/
 const CLOSED_RE = /휴관|휴무|휴장/
+// 목요일 21:00까지 연장처럼 매일 여는 시간의 예외로만 요일을 말하는 마디
+const EXCEPTION_RE = /연장|야간|\d\s*까지/
 
 function daysIn(text: string): number[] {
   const days: number[] = []
@@ -17,7 +21,7 @@ function daysIn(text: string): number[] {
     const day = DAY_CHARS.indexOf(m[1]!)
     const prev = matches[i - 1]
     const gap = prev ? text.slice(prev.index + prev[0].length, m.index) : ''
-    if (prev && /^\s*[-~～–]\s*$/.test(gap)) {
+    if (prev && /^\s*(?:[-~～–]|부터)\s*$/.test(gap)) {
       // 화-일처럼 일요일을 넘어 도는 범위. 시작 요일은 이미 들어가 있다
       for (let d = (DAY_CHARS.indexOf(prev[1]!) + 1) % 7; d !== day; d = (d + 1) % 7) days.push(d)
     }
@@ -35,14 +39,11 @@ export function eventOpenWeekdays(time?: string): number[] | null {
   if (!time) return null
   const open = new Set<number>()
   const closed = new Set<number>()
-  for (const segment of time.replace(DATED_DAY_RE, '$1').split(SEGMENT_RE)) {
+  for (const segment of time.replace(DATED_DAY_RE, '$1').replace(PER_DAY_RE, '').split(SEGMENT_RE)) {
     const hit = CLOSED_RE.exec(segment)
-    if (hit) {
-      for (const d of daysIn(segment.slice(0, hit.index))) closed.add(d)
-      for (const d of daysIn(segment.slice(hit.index + hit[0].length))) open.add(d)
-    } else {
-      for (const d of daysIn(segment)) open.add(d)
-    }
+    // 휴관 뒤의 요일(휴관일: 매주 월요일)은 읽지 않는다
+    if (hit) for (const d of daysIn(segment.slice(0, hit.index))) closed.add(d)
+    else if (!EXCEPTION_RE.test(segment)) for (const d of daysIn(segment)) open.add(d)
   }
   if (open.size === 0 && closed.size === 0) return null
   const result = (open.size > 0 ? [...open] : ALL_DAYS).filter((d) => !closed.has(d)).sort((a, b) => a - b)
