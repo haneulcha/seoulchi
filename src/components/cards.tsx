@@ -14,7 +14,7 @@ import type { PlaceItem } from '~/types/item'
 const POSTER = 'aspect-[3/4]'
 
 /** 제목 맨 앞 대괄호 기관명은 제목 아래 작은 줄로 내린다(PRODUCT.md 안티레퍼런스 1번) */
-export function CardTitle({ title, className }: { title: string; className: string }) {
+function CardTitle({ title, className }: { title: string; className: string }) {
   const t = splitTitle(title)
   return (
     <>
@@ -25,10 +25,10 @@ export function CardTitle({ title, className }: { title: string; className: stri
 }
 
 /**
- * 카드 5종 공통의 사실 두 줄. 고정 줄(어디 · 거리 · 시간)은 늘 같은 자리에 있고,
+ * 모든 카드 공통의 사실 두 줄. 고정 줄(어디 · 거리 · 시간)은 늘 같은 자리에 있고,
  * 조건부 줄(가격 · 남은 기간)은 조각이 없으면 통째로 접는다. badge는 시간 뒤에 붙는다(지금 열림).
  */
-export function FactLines({
+function FactLines({
   facts, badge,
 }: { facts: CardFacts; badge?: ReactNode }) {
   const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
@@ -81,27 +81,43 @@ export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: str
 }
 
 /**
- * 나머지 9개 — 작은 포스터 썸네일이 붙은 목록 행. 탐색 행사 행과 같은 모양이다.
+ * 목록 행 — 홈의 나머지 9개와 탐색의 행사·장소 행이 모두 이 모양이다. 썸네일 비율만 다르다.
  *
  * 한때 64px 1:1 썸네일을 뺐다 — 세로 포스터를 정사각으로 자른 조각은 알아볼 수 없었다.
- * 3/4로 담으면 크롭이 약 5%라 작아도 포스터로 읽힌다(탐색에서 확인).
+ * 3/4로 담으면 크롭이 약 5%라 작아도 포스터로 읽힌다(탐색에서 확인). 장소 사진은 가로형이라 4/3.
  */
+export function ListRow({
+  id, image, title, facts, badge, note,
+}: {
+  id: string
+  image: { src?: string; category: string; shape: 'poster' | 'photo' }
+  title: string
+  facts: CardFacts
+  badge?: ReactNode
+  note?: string
+}) {
+  return (
+    <Link to="/e/$id" params={{ id }} className="flex gap-150 border-t border-neutral-border py-150">
+      <ItemImage
+        src={image.src}
+        alt=""
+        category={image.category}
+        className={`${image.shape === 'poster' ? `${POSTER} w-14` : 'aspect-[4/3] w-20'} shrink-0 self-start rounded-050 object-cover`}
+      />
+      <div className="min-w-0">
+        <CardTitle title={title} className="line-clamp-2 text-title-card" />
+        <FactLines facts={facts} badge={badge} />
+        {note && <p className="truncate text-body text-ink-subtle">{note}</p>}
+      </div>
+    </Link>
+  )
+}
+
 export function CompactEventRow({ entry, today }: { entry: HomeEntry; today: string }) {
   const e = entry.item
   return (
-    <Link to="/e/$id" params={{ id: e.id }} className="flex gap-150 border-t border-neutral-border py-150">
-      <ItemImage
-        src={e.imageUrl}
-        alt=""
-        category={e.category}
-        className={`${POSTER} w-14 shrink-0 self-start rounded-050 object-cover`}
-      />
-      <div className="min-w-0">
-        <CardTitle title={e.title} className="line-clamp-2 text-title-card" />
-        <FactLines facts={cardFacts(e, { today })} />
-        {entry.reason !== '' && <p className="truncate text-body text-ink-subtle">{entry.reason}</p>}
-      </div>
-    </Link>
+    <ListRow id={e.id} image={{ src: e.imageUrl, category: e.category, shape: 'poster' }}
+      title={e.title} facts={cardFacts(e, { today })} note={entry.reason} />
   )
 }
 

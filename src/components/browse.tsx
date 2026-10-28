@@ -1,7 +1,6 @@
 import { Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useState, type ReactNode } from 'react'
-import { CardTitle, FactLines } from '~/components/cards'
-import { ItemImage } from '~/components/ItemImage'
+import { ListRow } from '~/components/cards'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
 import { button, Callout, chip } from '~/components/ui'
 import { FILTER_LABELS, type RelaxSuggestion, type TimelineGroup } from '~/lib/browse-filter'
@@ -16,24 +15,15 @@ import type {
 const md = (iso: string) => `${Number(iso.slice(5, 7))}/${Number(iso.slice(8, 10))}`
 
 /**
- * 탐색 행사 행. 사실 두 줄은 카드 5종 공통(FactLines) — 홈과 같은 순서로 읽힌다.
- * ItemImage의 category에는 그룹을 넘긴다(슬림 항목에 원시 카테고리가 없다) —
+ * 탐색 행사 행. ItemImage의 category에는 그룹을 넘긴다(슬림 항목에 원시 카테고리가 없다) —
  * 같은 그룹은 같은 폴백 색이므로 결정론은 유지된다.
  */
 export function BrowseEventRow({
   item, today, km,
 }: { item: CatalogEventIndexItem; today: string; km?: number }) {
   return (
-    <Link to="/e/$id" params={{ id: item.id }} className="flex gap-150 border-t border-neutral-border py-150">
-      <ItemImage
-        src={item.imageUrl} alt="" category={item.group}
-        className="aspect-[3/4] w-14 shrink-0 self-start rounded-050 object-cover"
-      />
-      <div className="min-w-0">
-        <CardTitle title={item.title} className="line-clamp-2 text-title-card" />
-        <FactLines facts={cardFacts(item, { today, km })} />
-      </div>
-    </Link>
+    <ListRow id={item.id} image={{ src: item.imageUrl, category: item.group, shape: 'poster' }}
+      title={item.title} facts={cardFacts(item, { today, km })} />
   )
 }
 
@@ -46,26 +36,20 @@ export function BrowsePlaceRow({
   item, km, hoursUnknownNote = false,
 }: { item: CatalogPlaceIndexItem; km?: number; hoursUnknownNote?: boolean }) {
   return (
-    <Link to="/e/$id" params={{ id: item.id }} className="flex gap-150 border-t border-neutral-border py-150">
-      <ItemImage
-        src={item.imageUrl} alt="" category={item.group}
-        className="aspect-[4/3] w-20 shrink-0 self-start rounded-050 object-cover"
-      />
-      <div className="min-w-0">
-        <CardTitle title={item.title} className="line-clamp-2 text-title-card" />
-        <FactLines
-          facts={cardFacts(item, { km })}
-          badge={
-            <>
-              <OpenNowBadge hours={item.hours ?? null} />
-              {hoursUnknownNote && !item.hours && (
-                <span className="ml-100 text-caption text-ink-subtle">영업시간 미상</span>
-              )}
-            </>
-          }
-        />
-      </div>
-    </Link>
+    <ListRow
+      id={item.id}
+      image={{ src: item.imageUrl, category: item.group, shape: 'photo' }}
+      title={item.title}
+      facts={cardFacts(item, { km })}
+      badge={
+        <>
+          <OpenNowBadge hours={item.hours ?? null} />
+          {hoursUnknownNote && !item.hours && (
+            <span className="ml-100 text-caption text-ink-subtle">영업시간 미상</span>
+          )}
+        </>
+      }
+    />
   )
 }
 
