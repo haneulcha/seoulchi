@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { loadCatalog, loadCurated, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
-import { pickHomeItems } from '~/lib/home'
+import { pickShelf } from '~/lib/today'
 import { kstToday } from '~/lib/week'
 
 /**
@@ -26,11 +26,10 @@ describe('실데이터 스모크: 홈이 요구하는 18개 id가 전부 해석�
     expect(resolved.places).toHaveLength(6)
   })
 
-  it('홈 12자리가 채워지고 전부 이미지가 있다', () => {
+  it('추천 선반의 카드는 전부 이미지가 있다', () => {
     const today = kstToday(new Date())
-    const home = pickHomeItems({ events: week.items, picks: resolved.picks, today })
-    expect(home).toHaveLength(12)
-    // 카드 12장이 초라해지지 않는지 — 실측상 event 이미지 보유율 100%
+    const home = pickShelf(resolved.picks, today)
+    // 실측상 event 이미지 보유율 100%
     for (const { item } of home) expect(item.imageUrl).toBeTruthy()
   })
 

@@ -6,7 +6,7 @@ import { PAGE } from '~/components/page'
 import { loadCurated, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
 import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
-import { pickHomeItems } from '~/lib/home'
+import { pickShelf } from '~/lib/today'
 import { kstToday, weekRange } from '~/lib/week'
 
 /** 빌드 타임에 한 번 실행. 여기가 new Date()를 부르는 유일한 서버 경계다 */
@@ -24,7 +24,7 @@ const getHomeData = createServerFn({ method: 'GET' })
       weekRangeLabel: formatWeekRange(weekRange(meta.weekKey)),
       updatedLabel: formatUpdatedAt(meta.updatedAt),
       today,
-      entries: pickHomeItems({ events: week.items, picks: resolved.picks, today }),
+      entries: pickShelf(resolved.picks, today),
       places: resolved.places,
     }
   })

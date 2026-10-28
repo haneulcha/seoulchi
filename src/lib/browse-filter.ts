@@ -120,7 +120,7 @@ export function groupByTimeline(
     g.items.push(e)
   }
 
-  // 그룹 안 정렬: 유효 시작일 → 종료일(마감 임박순) → id. 홈 pickHomeItems와 같은 결정론
+  // 그룹 안 정렬: 유효 시작일 → 종료일(마감 임박순) → id. 결정론
   for (const g of groups) {
     g.items.sort(
       (a, b) =>
