@@ -1,8 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import { loadCatalog, loadCurated, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
-import { pickShelf } from '~/lib/today'
+import { dayRange, eventsOn, pickShelf } from '~/lib/today'
 import { kstToday } from '~/lib/week'
+import type { CatalogEventIndexItem } from '~/types/files'
 
 /**
  * 커밋된 data/*.json 실물로 홈의 데이터 경로 전체를 통과시킨다.
@@ -61,6 +62,12 @@ describe('실데이터 스모크: 탐색 카탈로그', () => {
     for (const item of index.items) {
       if (item.kind === 'place') expect(ids.has(item.id), item.id).toBe(true)
     }
+  })
+
+  it('인덱스를 만든 날의 오늘 탭이 비지 않는다 — 홈 목록의 전제', () => {
+    const events = index.items.filter((i): i is CatalogEventIndexItem => i.kind === 'event')
+    const today = kstToday(new Date(index.generatedAt))
+    expect(eventsOn(events, dayRange('today', today)).length).toBeGreaterThan(0)
   })
 
   it('horizonEnd가 인덱스와 카탈로그에서 일치한다', () => {

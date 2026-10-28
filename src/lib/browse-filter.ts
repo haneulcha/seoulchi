@@ -2,7 +2,7 @@ import type { CategoryGroup } from '~/lib/category'
 import { addDays, weekdayOf } from '~/lib/dates'
 import { haversineKm, type LatLng } from '~/lib/geo'
 import { isOpenNow } from '~/lib/open-now'
-import type { CatalogEventIndexItem, CatalogIndexItem } from '~/types/files'
+import type { CatalogEventIndexItem, CatalogIndexFile, CatalogIndexItem } from '~/types/files'
 
 export interface BrowseFilters {
   /** undefined = 전체. '기타'는 칩에 없지만 전체에는 있다(스펙 7장) */
@@ -19,6 +19,12 @@ export interface BrowseFilters {
  * hours 미상 207건은 남긴다 — 버리면 화면이 '안 열려 있다'고 거짓말한다(스펙 8장).
  * 행사는 건드리지 않는다: Event와 Place는 시간 의미가 다르다(AGENTS.md).
  */
+/** 자치구 셀렉트 옵션은 하드코딩하지 않고 데이터에서 도출한다 — 이번 주 없는 구는 목록에도 없다 */
+export function districtsOf(index: CatalogIndexFile): string[] {
+  return [...new Set(index.items.map((i) => i.district).filter((d): d is string => d !== undefined))]
+    .sort((a, b) => a.localeCompare(b, 'ko'))
+}
+
 export function applyFilters(
   items: CatalogIndexItem[],
   filters: BrowseFilters,

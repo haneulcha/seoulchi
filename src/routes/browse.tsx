@@ -7,7 +7,7 @@ import {
 import { useCatalog, useGeo, type GeoState } from '~/components/catalog-hooks'
 import { PAGE } from '~/components/page'
 import {
-  applyFilters, groupByTimeline, isCatalogStale, relaxSuggestions, sortByDistance,
+  applyFilters, districtsOf, groupByTimeline, isCatalogStale, relaxSuggestions, sortByDistance,
 } from '~/lib/browse-filter'
 import { browseSearchSchema, toBrowseFilters, type BrowseSearch } from '~/lib/browse-search'
 import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
@@ -84,12 +84,6 @@ function Browse() {
         ))}
     </main>
   )
-}
-
-/** 자치구 셀렉트 옵션은 하드코딩하지 않고 데이터에서 도출한다 — 이번 주 없는 구는 목록에도 없다 */
-function districtsOf(index: CatalogIndexFile): string[] {
-  return [...new Set(index.items.map((i) => i.district).filter((d): d is string => d !== undefined))]
-    .sort((a, b) => a.localeCompare(b, 'ko'))
 }
 
 function BrowseResults({

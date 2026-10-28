@@ -1,0 +1,86 @@
+import { Link, useNavigate } from '@tanstack/react-router'
+import { useEffect, useState } from 'react'
+import { chip, Chip } from '~/components/ui'
+import { HOME_GROUPS, type HomeSearch } from '~/lib/home-search'
+import type { DayTab } from '~/lib/today'
+
+export const DAY_LABELS: Record<DayTab, string> = { today: '오늘', tomorrow: '내일', weekend: '이번 주말' }
+
+/** 날짜 탭 · 목적 칩 · 내 주변 · 자치구. 모든 변경이 navigate(push)라 뒤로가기가 되돌린다 */
+export function HomeControls({
+  search, districts, nearDisabledReason,
+}: { search: HomeSearch; districts: string[]; nearDisabledReason?: string }) {
+  const navigate = useNavigate()
+  const patch = (p: Partial<HomeSearch>) => void navigate({ to: '/', search: { ...search, ...p } })
+
+  // BrowseControls와 같은 이유: 프리렌더는 쿼리를 모른 채 굳으므로 첫 렌더는 필터 없음으로 그린다
+  const [hydrated, setHydrated] = useState(false)
+  useEffect(() => setHydrated(true), [])
+  const shown: HomeSearch = hydrated ? search : {}
+
+  return (
+    <div className="mt-section space-y-100">
+      <div className="flex gap-100" role="group" aria-label="날짜">
+        {(['today', 'tomorrow', 'weekend'] as const).map((d) => (
+          <Chip key={d} active={(shown.day ?? 'today') === d}
+            onClick={() => patch({ day: d === 'today' ? undefined : d })}>
+            {DAY_LABELS[d]}
+          </Chip>
+        ))}
+      </div>
+      <div className="flex gap-100 overflow-x-auto pb-050" role="group" aria-label="목적">
+        <Chip active={shown.group === undefined} onClick={() => patch({ group: undefined })}>전체</Chip>
+        {HOME_GROUPS.map((g) => (
+          <Chip key={g} active={shown.group === g}
+            onClick={() => patch({ group: search.group === g ? undefined : g })}>
+            {g}
+          </Chip>
+        ))}
+      </div>
+      <div className="flex flex-wrap items-center gap-100" role="group" aria-label="지역">
+        {/* 권한 거부면 꺼진 모양 — 목록이 실제로 거리순이 아니다(BrowseControls와 같다) */}
+        <Chip active={shown.near === true && nearDisabledReason === undefined}
+          onClick={() => patch({ near: search.near ? undefined : true })}>
+          ⊙ 내 주변
+        </Chip>
+        <select
+          value={shown.district ?? ''}
+          onChange={(e) => patch({ district: e.target.value === '' ? undefined : e.target.value })}
+          aria-label="자치구"
+          className={chip()}
+        >
+          <option value="">자치구 전체</option>
+          {districts.map((d) => (
+            <option key={d} value={d}>{d}</option>
+          ))}
+        </select>
+      </div>
+      {nearDisabledReason !== undefined && (
+        <p className="text-body text-warning-text">{nearDisabledReason}</p>
+      )}
+    </div>
+  )
+}
+
+/** 0건의 응답: 켜진 필터마다 그것을 푼 링크. 날짜가 오늘이 아니면 오늘로 돌아가는 링크 */
+export function HomeEmpty({ search }: { search: HomeSearch }) {
+  const links: Array<{ key: string; label: string; to: HomeSearch }> = []
+  if (search.group) links.push({ key: 'group', label: `'${search.group}' 풀기`, to: { ...search, group: undefined } })
+  if (search.district) links.push({ key: 'district', label: `'${search.district}' 풀기`, to: { ...search, district: undefined } })
+  if (search.day) links.push({ key: 'day', label: '오늘 보기', to: { ...search, day: undefined } })
+
+  return (
+    <div className="mt-600 py-400 text-center">
+      <p className="text-title-card">조건에 맞는 행사가 없습니다</p>
+      {links.length > 0 && (
+        <ul className="mt-200 space-y-100 text-body">
+          {links.map((l) => (
+            <li key={l.key}>
+              <Link to="/" search={l.to} className="text-ink-muted underline">{l.label}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}

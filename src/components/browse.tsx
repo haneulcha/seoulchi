@@ -1,5 +1,5 @@
 import { Link, useNavigate } from '@tanstack/react-router'
-import { useEffect, useState, type ReactNode } from 'react'
+import { useEffect, useState } from 'react'
 import { ListRow } from '~/components/cards'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
 import { button, Callout, chip, Chip } from '~/components/ui'
