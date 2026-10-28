@@ -27,7 +27,7 @@ vi.mock('~/pipeline/select-catalog', async (importOriginal) => {
         items: [
           ...real.items,
           {
-            id: 'sc-유령', kind: 'event' as const, title: '유령 행사', group: '전시' as const,
+            id: 'sc-유령', kind: 'event' as const, title: '유령 행사', group: '보러 가기' as const,
             place: '어딘가', startDate: '2026-08-10', endDate: '2026-08-16',
           },
         ],

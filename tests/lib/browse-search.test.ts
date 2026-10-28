@@ -4,7 +4,7 @@ import { browseSearchSchema, CHIP_GROUPS, toBrowseFilters } from '~/lib/browse-s
 describe('browseSearchSchema', () => {
   it('유효한 조합을 그대로 통과시킨다 (왕복)', () => {
     const search = {
-      group: '공연' as const, district: '마포구', free: true as const, open: true as const, near: true as const,
+      group: '보러 가기' as const, district: '마포구', free: true as const, open: true as const, near: true as const,
     }
     expect(browseSearchSchema.parse(search)).toEqual(search)
   })
@@ -15,6 +15,10 @@ describe('browseSearchSchema', () => {
 
   it('잘못된 group은 던지지 않고 버린다 — 손으로 고친 URL이 화면을 깨면 안 된다', () => {
     expect(browseSearchSchema.parse({ group: '없는그룹' })).toEqual({})
+  })
+
+  it('옛 그룹 이름 링크는 필터 없음으로 복구된다', () => {
+    expect(browseSearchSchema.parse({ group: '공원·자연' })).toEqual({ group: undefined })
   })
 
   it('기타는 칩 밖이므로 group 값으로도 받지 않는다', () => {
@@ -36,8 +40,8 @@ describe('browseSearchSchema', () => {
 describe('toBrowseFilters', () => {
   it('search를 BrowseFilters로 옮긴다 — near는 필터가 아니라 정렬이라 빠진다', () => {
     expect(
-      toBrowseFilters({ group: '전시', district: '중구', free: true, open: true, near: true }),
-    ).toEqual({ group: '전시', district: '중구', free: true, open: true })
+      toBrowseFilters({ group: '보러 가기', district: '중구', free: true, open: true, near: true }),
+    ).toEqual({ group: '보러 가기', district: '중구', free: true, open: true })
   })
 
   it('빈 search는 빈 필터다', () => {

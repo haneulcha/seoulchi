@@ -120,7 +120,7 @@ describe('buildCatalogIndex', () => {
   it('행사 항목은 목록·필터에 필요한 필드만 담고 group을 계산한다', () => {
     const [item] = build([fullEvent()], []).items
     expect(item).toEqual({
-      id: 'sc-full', kind: 'event', title: '전시', group: '전시', district: '중구',
+      id: 'sc-full', kind: 'event', title: '전시', group: '보러 가기', district: '중구',
       place: '시립미술관', lat: 37.56, lng: 126.97, isFree: true,
       imageUrl: 'https://example.com/p.jpg', startDate: '2026-09-03', endDate: '2026-11-30',
       time: '10:00~18:00', fee: '무료',
@@ -134,7 +134,7 @@ describe('buildCatalogIndex', () => {
   it('장소 항목은 자치구를 주소에서 파생하고 hours를 담는다', () => {
     const [item] = build([], [fullPlace()]).items
     expect(item).toEqual({
-      id: 'vs-full', kind: 'place', title: '서울숲', group: '공원·자연', district: '성동구',
+      id: 'vs-full', kind: 'place', title: '서울숲', group: '걸으러 가기', district: '성동구',
       lat: 37.54, lng: 127.04, isFree: true, imageUrl: 'https://example.com/s.jpg',
       hours: { open: '05:00', close: '22:00', closedWeekdays: [] },
     })

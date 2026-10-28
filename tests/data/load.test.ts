@@ -59,7 +59,7 @@ describe('data 로더', () => {
         generatedAt: '2026-08-31T00:00:00.000Z',
         horizonEnd: '2026-10-26',
         items: [{
-          id: 'sc-1', kind: 'event', title: '행사', group: '전시',
+          id: 'sc-1', kind: 'event', title: '행사', group: '보러 가기',
           place: '어딘가', startDate: '2026-08-17', endDate: '2026-08-23',
         }],
       }),

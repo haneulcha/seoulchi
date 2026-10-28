@@ -11,19 +11,19 @@ const NOW = new Date('2026-09-01T05:00:00Z')
 
 function evIdx(id: string, over: Partial<CatalogEventIndexItem> = {}): CatalogEventIndexItem {
   return {
-    id, kind: 'event', title: `행사 ${id}`, group: '전시', place: '어딘가',
+    id, kind: 'event', title: `행사 ${id}`, group: '보러 가기', place: '어딘가',
     startDate: '2026-08-01', endDate: '2026-09-30', ...over,
   }
 }
 
 function plIdx(id: string, over: Partial<CatalogPlaceIndexItem> = {}): CatalogPlaceIndexItem {
-  return { id, kind: 'place', title: `장소 ${id}`, group: '공원·자연', ...over }
+  return { id, kind: 'place', title: `장소 ${id}`, group: '걸으러 가기', ...over }
 }
 
 describe('applyFilters', () => {
   it('그룹 필터 — 단일 선택', () => {
-    const items: CatalogIndexItem[] = [evIdx('sc-전시'), evIdx('sc-공연', { group: '공연' })]
-    expect(applyFilters(items, { group: '공연' }, NOW).map((i) => i.id)).toEqual(['sc-공연'])
+    const items: CatalogIndexItem[] = [evIdx('sc-전시'), evIdx('sc-공연', { group: '놀러 가기' })]
+    expect(applyFilters(items, { group: '놀러 가기' }, NOW).map((i) => i.id)).toEqual(['sc-공연'])
   })
 
   it('자치구 필터 — district가 없는 항목은 매치되지 않는다', () => {
@@ -60,12 +60,12 @@ describe('applyFilters', () => {
 
   it('필터 조합은 AND다', () => {
     const items: CatalogIndexItem[] = [
-      evIdx('sc-a', { group: '공연', district: '마포구', isFree: true }),
-      evIdx('sc-b', { group: '공연', district: '마포구', isFree: false }),
-      evIdx('sc-c', { group: '공연', district: '중구', isFree: true }),
+      evIdx('sc-a', { group: '놀러 가기', district: '마포구', isFree: true }),
+      evIdx('sc-b', { group: '놀러 가기', district: '마포구', isFree: false }),
+      evIdx('sc-c', { group: '놀러 가기', district: '중구', isFree: true }),
     ]
     expect(
-      applyFilters(items, { group: '공연', district: '마포구', free: true }, NOW).map((i) => i.id),
+      applyFilters(items, { group: '놀러 가기', district: '마포구', free: true }, NOW).map((i) => i.id),
     ).toEqual(['sc-a'])
   })
 
@@ -193,10 +193,10 @@ describe('sortByDistance', () => {
 describe('relaxSuggestions', () => {
   it('0건일 때 어떤 필터를 풀면 몇 건이 나오는지 계산한다 (스펙 8장)', () => {
     const items: CatalogIndexItem[] = [
-      evIdx('sc-a', { group: '공연', district: '마포구', isFree: false }),
-      evIdx('sc-b', { group: '전시', district: '중구', isFree: true }),
+      evIdx('sc-a', { group: '놀러 가기', district: '마포구', isFree: false }),
+      evIdx('sc-b', { group: '보러 가기', district: '중구', isFree: true }),
     ]
-    const filters = { group: '공연' as const, district: '중구', free: true }
+    const filters = { group: '놀러 가기' as const, district: '중구', free: true }
     expect(applyFilters(items, filters, NOW)).toHaveLength(0)
     const out = relaxSuggestions(items, filters, NOW)
     // group을 풀면 sc-b가 1건. district·free를 풀어도 0건이라 제안에 없다
@@ -210,11 +210,11 @@ describe('relaxSuggestions', () => {
 
   it('여러 제안은 건수 내림차순', () => {
     const items: CatalogIndexItem[] = [
-      evIdx('sc-1', { group: '공연', isFree: false }),
-      evIdx('sc-2', { group: '공연', isFree: false }),
-      evIdx('sc-3', { group: '전시', isFree: true }),
+      evIdx('sc-1', { group: '놀러 가기', isFree: false }),
+      evIdx('sc-2', { group: '놀러 가기', isFree: false }),
+      evIdx('sc-3', { group: '보러 가기', isFree: true }),
     ]
-    const out2 = relaxSuggestions(items, { group: '공연' as const, free: true }, NOW)
+    const out2 = relaxSuggestions(items, { group: '놀러 가기' as const, free: true }, NOW)
     expect(out2).toEqual([
       { filter: 'free', count: 2 },  // free를 풀면 공연 2건
       { filter: 'group', count: 1 }, // group을 풀면 무료 1건
