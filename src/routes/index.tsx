@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import { staticFunctionMiddleware } from '@tanstack/start-static-server-functions'
-import { useEffect, useState } from 'react'
 import { BrowseEventRow, CatalogError, CatalogSkeleton, StaleCatalog } from '~/components/browse'
 import { EventPosterCard } from '~/components/cards'
 import { useCatalog, useGeo, type GeoState } from '~/components/catalog-hooks'
@@ -46,9 +45,8 @@ function Home() {
   const { state, retry } = useCatalog()
   const geo = useGeo(search.near === true)
 
-  // 프리렌더 첫 그림은 빌드 today, 마운트 후 브라우저 today로 다시 그린다
-  const [today, setToday] = useState(data.today)
-  useEffect(() => setToday(kstToday(new Date())), [])
+  // 프리렌더 첫 그림은 빌드 today, 카탈로그가 준비되면 브라우저 today(useCatalog)로 다시 그린다
+  const today = state.status === 'ready' ? state.today : data.today
   const shelf = pickShelf(data.shelf, today, 3)
 
   return (
@@ -74,7 +72,7 @@ function Home() {
 
       <HomeControls
         search={search}
-        districts={state.status === 'ready' ? districtsOf(state.index) : []}
+        districts={state.status === 'ready' ? districtsOf(state.index.items.filter((i) => i.kind === 'event')) : []}
         nearDisabledReason={
           search.near === true && geo.status === 'denied'
             ? '위치 권한이 없어 내 주변 순을 쓸 수 없습니다 — 자치구로 좁혀 보세요'

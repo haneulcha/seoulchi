@@ -19,12 +19,6 @@ export interface BrowseFilters {
  * hours 미상 207건은 남긴다 — 버리면 화면이 '안 열려 있다'고 거짓말한다(스펙 8장).
  * 행사는 건드리지 않는다: Event와 Place는 시간 의미가 다르다(AGENTS.md).
  */
-/** 자치구 셀렉트 옵션은 하드코딩하지 않고 데이터에서 도출한다 — 이번 주 없는 구는 목록에도 없다 */
-export function districtsOf(index: CatalogIndexFile): string[] {
-  return [...new Set(index.items.map((i) => i.district).filter((d): d is string => d !== undefined))]
-    .sort((a, b) => a.localeCompare(b, 'ko'))
-}
-
 export function applyFilters(
   items: CatalogIndexItem[],
   filters: BrowseFilters,
@@ -39,6 +33,12 @@ export function applyFilters(
     }
     return true
   })
+}
+
+/** 자치구 셀렉트 옵션은 하드코딩하지 않고 데이터에서 도출한다 — 이번 주 없는 구는 목록에도 없다 */
+export function districtsOf(items: CatalogIndexItem[]): string[] {
+  return [...new Set(items.map((i) => i.district).filter((d): d is string => d !== undefined))]
+    .sort((a, b) => a.localeCompare(b, 'ko'))
 }
 
 export interface TimelineGroup {

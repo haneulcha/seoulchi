@@ -46,7 +46,7 @@ function Browse() {
       {/* 컨트롤은 데이터 없이도 뜬다(자치구 목록만 데이터 의존) — 껍데기 즉시성(스펙 8장) */}
       <BrowseControls
         search={search}
-        districts={state.status === 'ready' ? districtsOf(state.index) : []}
+        districts={state.status === 'ready' ? districtsOf(state.index.items) : []}
         nearDisabledReason={
           // near가 꺼져 있으면 geo.status가 어떤 값이든(레이스로 뒤늦게 denied가
           // 와도) 사유를 보이지 않는다 — 꺼진 필터에 대한 실패 사유는 존재하지
