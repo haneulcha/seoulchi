@@ -94577,7 +94577,7 @@
     }
   },
   "KOP011622": {
-    "updtDtText": "2026.09.10",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011622",
       "lang_code_id": "ko",
@@ -94594,7 +94594,7 @@
       "post_sj": "서울에너지드림센터",
       "sumry": "국내 최초 에너지 자립형 친환경 건축물. 전시와  체험이 가능",
       "creat_dt_text": "2014.03.04",
-      "updt_dt_text": "2026.09.10",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "에코투어",
         " 서울에너지드림센터",
@@ -94612,15 +94612,15 @@
         "cmmn_use_time": "09:30 - 17:30",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
-          "장애인화장실",
           "장애인 전용 주차장",
+          "장애인화장실",
+          "접근가능",
           "엘리베이터"
         ],
         "business_days": "화요일~일요일",
         "closed_days": "월요일, 1월 1일, 명절연휴, 개관기념일 (12월 12일)\r\n"
       },
       "traffic": {
-        "zip_code": "121-835",
         "adres": "서울 마포구 상암동 1535-3",
         "adres2": "1535-3",
         "new_zip_code": "03901",
@@ -94631,6 +94631,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "2",
         "safe_mng": "ul"
       },
       "post_desc": "서울에너지드림센터는 국내 최초 에너지 자립형 친환경 건축물로, 전시와 함께 에코투어나 간단한 게임들, 에너지 런닝맨, 태양광 자동차 만들기 등의 체험이 가능합니다. 하루에 4번 전시장 해설이 있고, 최대 인원은 30명입니다. 입장료는 무료이나 일부 체험들은 별도의 체험료가 존재합니다."
@@ -94701,7 +94702,7 @@
     }
   },
   "KOP011524": {
-    "updtDtText": "2026.07.15",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011524",
       "lang_code_id": "ko",
@@ -94719,7 +94720,7 @@
       "post_sj": "롤링홀",
       "sumry": "홍대에 위치한 공연시설, 다양한 장르의 음악이 공연",
       "creat_dt_text": "2014.01.15",
-      "updt_dt_text": "2026.07.15",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "롤링홀",
         " 라이브공연",
@@ -94755,13 +94756,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "2",
         "safe_mng": "ul"
       },
       "post_desc": "롤링홀은 홍대에 위치한 공연시설로, 국내외 유명 뮤지션들부터 언더그라운드 뮤지션과 인디 뮤지션까지 다양한 장르의 음악이 공연되고 있습니다. 무대와 객석의 거리가 가까우며, 홍대 라이브 클럽의 분위기를 한층 더 업그레이드된 시설 속에서 즐길 수 있습니다."
     }
   },
   "KOP011037": {
-    "updtDtText": "2026.07.06",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011037",
       "lang_code_id": "ko",
@@ -94779,7 +94781,7 @@
       "post_sj": "광진교 8번가",
       "sumry": "광진교 8번가는 전 세계에 단 3개밖에 건축되지 않은 교각 하부 전망대 ",
       "creat_dt_text": "2013.12.12",
-      "updt_dt_text": "2026.07.06",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "광진교8번가",
         "서울데이트코스",
@@ -94795,10 +94797,7 @@
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "3월, 11월 12:00-18:00\r\n4월~10월 12:00-20:00",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [
-          "접근가능",
-          "엘리베이터"
-        ],
+        "disabled_facility": [],
         "business_days": "3월~11월",
         "closed_days": "월요일, 설•추석 당일\r\n12월~2월 미운영\r\n"
       },
@@ -94811,6 +94810,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "2",
         "safe_mng": "ul"
       },
       "post_desc": "광진교 8번가는 전 세계에 단 3개밖에 건축되지 않은 교각 하부 전망대 중 하나입니다. 한강 다리 중 도보로 접근할 수 있게 조성된 광진교 아래 공간에서 아름다운 한강의 절경을 바라보며 공연과 전시, 주중 운영되는 북카페, 문화강좌나 교습 등 다양한 콘텐츠를 즐길 수 있습니다."
@@ -99005,7 +99005,7 @@
     }
   },
   "KOP011186": {
-    "updtDtText": "2026.07.21",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011186",
       "lang_code_id": "ko",
@@ -99023,7 +99023,7 @@
       "post_sj": "아리랑 영화의 거리",
       "sumry": "아리랑 영화의 거리(돈암동 아리랑고개)는 우리나라 최초의 영화<아리랑>의 촬영지",
       "creat_dt_text": "2009.05.27",
-      "updt_dt_text": "2026.07.21",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "성신여대입구",
         " 관광지",
@@ -99039,14 +99039,13 @@
         " 정릉"
       ],
       "extra": {
-        "cmmn_telno": "02-2241-2656",
+        "cmmn_telno": "120",
         "cmmn_use_time": "상시 개방",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "closed_days": "연중무휴"
       },
       "traffic": {
-        "zip_code": "136-037",
         "adres": "서울 성북구 돈암동 ~ 정릉동",
         "adres2": "일대",
         "new_zip_code": "02827",
@@ -107590,7 +107589,7 @@
     }
   },
   "KOP012323": {
-    "updtDtText": "2026.07.14",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP012323",
       "lang_code_id": "ko",
@@ -107606,7 +107605,7 @@
       "post_sj": "롤링코리아",
       "sumry": "롤링코리아는 홍대 근처에 위치한 한국어학원",
       "creat_dt_text": "2015.02.01",
-      "updt_dt_text": "2026.07.14",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "홍대",
         "보컬",
@@ -107622,7 +107621,7 @@
         "cmmn_telno": "02-322-1515",
         "cmmn_hmpg_url": "https://www.rollingkorea.com/en/",
         "cmmn_hmpg_lang": "영어, 일본어",
-        "cmmn_use_time": "09:00~17:30",
+        "cmmn_use_time": "08:30~17:30",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "월~금",
@@ -107645,7 +107644,7 @@
     }
   },
   "KOP012592": {
-    "updtDtText": "2026.07.17",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP012592",
       "lang_code_id": "ko",
@@ -107661,7 +107660,7 @@
       "post_sj": "사단법인 전통문화원",
       "sumry": "외국인들에게 한국의 다양한 생활 풍속과 전통 문화를 소개하고, 직접 체험",
       "creat_dt_text": "2015.02.01",
-      "updt_dt_text": "2026.07.17",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "전통문화체험",
         "체험",
@@ -107683,7 +107682,6 @@
         "closed_days": "주말 및 공휴일 상담 휴무"
       },
       "traffic": {
-        "zip_code": "110-043",
         "adres": "서울 종로구 통인동 101",
         "new_zip_code": "03036",
         "new_adres": "서울 종로구 자하문로13길 4-9 (통인동)",
@@ -107756,7 +107754,7 @@
     }
   },
   "KOP011369": {
-    "updtDtText": "2026.05.05",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011369",
       "lang_code_id": "ko",
@@ -107774,7 +107772,7 @@
       "post_sj": "KBS홀",
       "sumry": "KBS를 대표하는 수많은 TV 프로그램들을 제작하고 구성하는 방송사",
       "creat_dt_text": "2013.12.24",
-      "updt_dt_text": "2026.05.05",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "한국방송공사",
         "KBS",
@@ -107783,14 +107781,13 @@
         "방송국"
       ],
       "extra": {
-        "cmmn_telno": "02-781-1000",
+        "cmmn_telno": "02-781-2273",
         "cmmn_hmpg_url": "http://www.kbs.co.kr/",
-        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),중국어(번체),러시아어,인도네시아어, 태국어, 베트남어, 아라비아 말, 프랑스어, 스페인어, 독일어, 포르투갈어",
+        "cmmn_hmpg_lang": "한국어",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
       },
       "traffic": {
-        "zip_code": "150-790",
         "adres": "서울 영등포구 여의도동 18 (KBS 신관) / 여의도동 46 (KBS별관)",
         "new_zip_code": "07235",
         "new_adres": "서울 영등포구 여의공원로 13 (KBS 신관) / 여의대방로 359 (KBS별관)",
@@ -107807,7 +107804,7 @@
     }
   },
   "KOP011180": {
-    "updtDtText": "2026.05.05",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011180",
       "lang_code_id": "ko",
@@ -107826,7 +107823,7 @@
       "post_sj": "서울마리나 클럽 & 요트",
       "sumry": " 낭만적인 요트승선과 환상적인 선상파티, 감동적인 웨딩과 피로연 ",
       "creat_dt_text": "2013.12.12",
-      "updt_dt_text": "2026.05.05",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "한강야경",
         "마리나요트",
@@ -107843,16 +107840,13 @@
         " 웨딩"
       ],
       "extra": {
-        "cmmn_telno": "02-3780-8411",
+        "cmmn_telno": "02-2088-4015",
         "cmmn_hmpg_url": "https://www.seoulmarina.club",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "매일 10:00 - 22:00",
         "trrsrt_use_chrge": "C",
-        "disabled_facility": [],
-        "business_days": "월요일 ~ 일요일"
+        "disabled_facility": []
       },
       "traffic": {
-        "zip_code": "150-010",
         "adres": "서울 영등포구 여의도동 81-8",
         "adres2": "81번지",
         "new_zip_code": "07231",
@@ -107870,7 +107864,7 @@
     }
   },
   "KOP011169": {
-    "updtDtText": "2026.05.05",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011169",
       "lang_code_id": "ko",
@@ -107888,7 +107882,7 @@
       "post_sj": "YG 엔터테인먼트",
       "sumry": "세계적인 K-팝 아티스트들을 배출한 대한민국의 대표적인 종합 엔터테인먼트 회사",
       "creat_dt_text": "2013.12.12",
-      "updt_dt_text": "2026.05.05",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "위너",
         " 양현석",
@@ -107904,13 +107898,13 @@
         "기획사"
       ],
       "extra": {
+        "cmmn_telno": "02-3142-1104",
         "cmmn_hmpg_url": "http://www.ygfamily.com",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
       },
       "traffic": {
-        "zip_code": "121-886",
         "adres": "서울 마포구 합정동 397-6",
         "new_zip_code": "04028",
         "new_adres": "서울 마포구 희우정로1길 7",
@@ -107926,7 +107920,7 @@
     }
   },
   "KOP010883": {
-    "updtDtText": "2026.07.20",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP010883",
       "lang_code_id": "ko",
@@ -107941,7 +107935,7 @@
       "post_sj": "스파더엘",
       "sumry": "스파 뿐만 아니라 자신에게 필요한 안정감을 주는 컬러로 컬러 테라피를 받을 수 있는 곳",
       "creat_dt_text": "2013.12.11",
-      "updt_dt_text": "2026.07.20",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "스파더엘",
         "피로해소",
@@ -107961,7 +107955,7 @@
         "cmmn_telno": "0507-1438-3950",
         "cmmn_hmpg_url": "http://www.spa-the-el.com",
         "cmmn_hmpg_lang": "한국어,영어",
-        "cmmn_use_time": "평일 11:00 ~ 21:00\r\n토요일 11:00 ~ 19:00",
+        "cmmn_use_time": "평일 11:00 ~ 21:00/토요일 11:00 ~ 19:00/점심시간 13:00~14:00",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "월요일 ~ 토요일",
@@ -107983,7 +107977,7 @@
     }
   },
   "KOP010289": {
-    "updtDtText": "2026.07.14",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP010289",
       "lang_code_id": "ko",
@@ -108001,7 +107995,7 @@
       "post_sj": "나무엑터스",
       "sumry": "나무엑터스 엔터테인먼트는 연기자 전문 연예 기획사로 2004년에 설립",
       "creat_dt_text": "2013.12.11",
-      "updt_dt_text": "2026.07.14",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "소속사",
         "연예인",
@@ -108025,6 +108019,7 @@
         "disabled_facility": []
       },
       "traffic": {
+        "zip_code": "06071",
         "adres": "서울 강남구 청담동 54-3",
         "new_zip_code": "06071",
         "new_adres": "서울 강남구 도산대로102길 17 (청담동)",
@@ -108040,7 +108035,7 @@
     }
   },
   "KOP011359": {
-    "updtDtText": "2026.07.21",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011359",
       "lang_code_id": "ko",
@@ -108055,7 +108050,7 @@
       "post_sj": "씨제스사옥",
       "sumry": "씨제스 엔터테인먼트는 최민식, 설경구, 송일국, 류준열 등의 배우들과 여러 아티스트들을 보유",
       "creat_dt_text": "2013.12.11",
-      "updt_dt_text": "2026.07.21",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "최민식",
         " 연예인",
@@ -108083,6 +108078,7 @@
         "disabled_facility": []
       },
       "traffic": {
+        "zip_code": "06222",
         "adres": "서울 강남구 역삼동 722-8",
         "new_zip_code": "06222",
         "new_adres": "서울 강남구 테헤란로38길 40-12 (역삼동)",
@@ -108099,7 +108095,7 @@
     }
   },
   "KOP011314": {
-    "updtDtText": "2026.05.12",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011314",
       "lang_code_id": "ko",
@@ -108115,7 +108111,7 @@
       "post_sj": "FNC 사옥",
       "sumry": "FNC 엔터테인먼트는 FT아일랜드, CNBLUE 등 국내 유명 아티스트의 소속사",
       "creat_dt_text": "2013.12.11",
-      "updt_dt_text": "2026.05.12",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "CNBLUE",
         " FT아일랜드",
@@ -108140,7 +108136,6 @@
         "disabled_facility": []
       },
       "traffic": {
-        "zip_code": "135-955",
         "adres": "서울 강남구 청담동 111",
         "adres2": "111<br>FNC아카데미(오디션) : 서울시 강남구 대치동 1001-16번지 106빌딩 2F",
         "new_zip_code": "06012",
@@ -108157,7 +108152,7 @@
     }
   },
   "KOP011250": {
-    "updtDtText": "2026.05.05",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP011250",
       "lang_code_id": "ko",
@@ -108173,7 +108168,7 @@
       "post_sj": "JYP엔터테인먼트",
       "sumry": "글로벌 시장에서 활약하는 K-팝 아티스트들을 꾸준히 배출해온 국내 대표 음악 기획사",
       "creat_dt_text": "2013.12.11",
-      "updt_dt_text": "2026.05.05",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "트와이스",
         "있지",
@@ -108198,7 +108193,6 @@
         "disabled_facility": []
       },
       "traffic": {
-        "zip_code": "134-847",
         "adres": "서울 강동구 성내동 448-9",
         "new_zip_code": "05407",
         "new_adres": "서울 강동구 강동대로 205 (성내동, JYP Center)",
@@ -108214,7 +108208,7 @@
     }
   },
   "KOP006491": {
-    "updtDtText": "2026.07.22",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP006491",
       "lang_code_id": "ko",
@@ -108232,7 +108226,7 @@
       "post_sj": "한국문화의집 코우스(KOUS)",
       "sumry": " 한국 전통문화를 다양한 체험 및 교육프로그램을 통해 국내·외 관광객에게 소개",
       "creat_dt_text": "2011.12.11",
-      "updt_dt_text": "2026.07.22",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "공예건축학교",
         " 전통문화체험관",
@@ -108249,13 +108243,13 @@
       "extra": {
         "cmmn_telno": "02-3011-1731",
         "cmmn_hmpg_url": "https://www.chf.or.kr/cms/content/view/422",
+        "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "프로그램에 따라 다름",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "closed_days": "프로그램에 따라 다름"
       },
       "traffic": {
-        "zip_code": "135-280",
         "adres": "서울 강남구 대치동 944-22",
         "new_zip_code": "06180",
         "new_adres": "서울특별시 강남구 테헤란로92길 12-9  (대치동)",
@@ -108501,7 +108495,7 @@
     }
   },
   "KOP009746": {
-    "updtDtText": "2026.07.20",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP009746",
       "lang_code_id": "ko",
@@ -108517,17 +108511,17 @@
       "post_sj": "스파레이",
       "sumry": "전통 동유럽풍 헝가리식 사우나를 지향하는 스파레이는 여성전용 24시 불한증막",
       "creat_dt_text": "2009.06.03",
-      "updt_dt_text": "2026.07.20",
+      "updt_dt_text": "2026.10.28",
       "tag": [
-        "건강",
-        " 24시사우나",
+        "24시사우나",
         " 신사역사우나",
         " 잠원동",
-        "서초사우나",
         " 여성전용사우나",
+        "서초사우나",
         " 전통사우나",
         " 노천탕",
         " 웰빙",
+        "건강",
         " 피부미용",
         " 찜질방",
         "스파레이",
@@ -108546,7 +108540,6 @@
         "usage_fee": "입장료 22,000원"
       },
       "traffic": {
-        "zip_code": "137-902",
         "adres": "서울 서초구 잠원동 8-22",
         "adres2": "8-22 크레신 빌딩",
         "new_zip_code": "06524",
@@ -108557,13 +108550,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "전통 동유럽풍 헝가리식 사우나를 지향하는 스파레이는 여성전용 24시 불한증막입니다. 서해안에서 매일 공수해오는 풍부한 미네랄 물로 해수탕을 데우고 최고급 연수기를 거친다고 합니다. 가운은 천연 면섬유 재질이며 아름다운 그릇을 전시하는 공간과 야외 테라스 등 차별화된 요소로 입소문이 자자합다."
     }
   },
   "KOP009576": {
-    "updtDtText": "2026.05.12",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOP009576",
       "lang_code_id": "ko",
@@ -108581,7 +108575,7 @@
       "post_sj": "강변스파랜드 (Riverside Spa Land)",
       "sumry": "강변 스파랜드는 동서울터미널 및 강변역 인근에서는 최대 규모의 찜질방",
       "creat_dt_text": "2009.05.27",
-      "updt_dt_text": "2026.05.12",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "강변스파랜드",
         "서울찜질방",
@@ -108604,7 +108598,6 @@
         "usage_fee": "사우나 주간 – 대인 13,000원 / 소인(7세이하) 9,000원\r\n찜질방 주간 – 대인 15,000원 / 소인(7세이하) 11,000원\r\n찜질방 야간 – 대인 17,000원 / 소인(7세이하) 13,000원"
       },
       "traffic": {
-        "zip_code": "143-831",
         "adres": "서울 광진구 구의동 ",
         "adres2": "593-15",
         "new_zip_code": "05049",
@@ -120213,7 +120206,7 @@
     }
   },
   "KOPtuajl0": {
-    "updtDtText": "2026.10.02",
+    "updtDtText": "2026.10.28",
     "detail": {
       "cid": "KOPtuajl0",
       "lang_code_id": "ko",
@@ -120231,7 +120224,7 @@
       "schdul_info_endde": "2026.10.05",
       "place": "의성군 구봉공원 일원",
       "creat_dt_text": "2026.10.02",
-      "updt_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.10.28",
       "tag": [
         "2026년 의성 슈퍼푸드 마늘축제 ",
         "  스카이 디렌스 런 in 의성",
@@ -120249,7 +120242,7 @@
         "map_position_x": "128.691908278455",
         "map_position_y": "36.351763821941"
       },
-      "post_desc": "의성마늘의 우수성과 의성을 알리는 지역특산품 축제이자 , 5km 에 장애물 10 종과 대드론 체험도 함께 즐길 수 있습니다 . 행사명 2026년 의성 슈퍼푸드 마늘축제 & 스카이 디렌스 런 in 의성 기간 2026. 10. 3.(토) ~ 10. 5.(월) 장소 성군 구봉공원 일원 홈페이지 http://www.garlicfestival.kr/ (의성 슈퍼푸드 마늘축제) 홈페이지 https://skydefencerun.co.kr/#course ( 스카이 디펜스런 in 의성 )"
+      "post_desc": "의성마늘의 우수성과 의성을 알리는 지역특산품 축제이자 , 5km 에 장애물 10 종과 대드론 체험도 함께 즐길 수 있습니다 . 행사명 2026년 의성 슈퍼푸드 마늘축제 & 스카이 디렌스 런 in 의성 기간 2026. 10. 3.(토) ~ 10. 5.(월) 장소 성군 구봉공원 일원 홈페이지 ht tp://www.garlicfestival.kr/ (의성 슈 퍼푸드 마늘축제) 홈페이지 https://skydefencerun.co.kr/#course ( 스카이 디펜스런 in 의성 )"
     }
   },
   "KOP8quif3": {
