@@ -105,7 +105,7 @@ export function CatalogSkeleton() {
     <div aria-hidden className="mt-400 space-y-200">
       {Array.from({ length: 6 }, (_, i) => (
         <div key={i} className="flex gap-150">
-          <div className="aspect-[3/4] w-14 animate-pulse rounded-050 bg-neutral-subtle-bg" />
+          <div className="aspect-[2/3] w-20 animate-pulse rounded-050 bg-neutral-subtle-bg" />
           <div className="flex-1 space-y-100 py-050">
             <div className="h-4 w-2/3 animate-pulse rounded-050 bg-neutral-subtle-bg" />
             <div className="h-3 w-1/3 animate-pulse rounded-050 bg-neutral-subtle-bg" />

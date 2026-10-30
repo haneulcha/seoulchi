@@ -22,7 +22,15 @@ export const Route = createRootRoute({
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { title: '서울치 — 이번 주 서울' },
     ],
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [
+      // 다이내믹 서브셋: 화면에 쓰인 글자 범위의 조각만 받는다 — 한글 전체(수 MB)를 받지 않는다
+      { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossOrigin: 'anonymous' },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css',
+      },
+      { rel: 'stylesheet', href: appCss },
+    ],
     // <head>에서 동기로 돈다. 번들(Scripts)은 body 끝이라 여기 오면 이미 늦다 —
     // 정적 HTML의 <html>에 클래스가 없어서 다크 사용자가 흰 화면을 한 번 보게 된다
     scripts: [{ children: THEME_INIT_SCRIPT }],

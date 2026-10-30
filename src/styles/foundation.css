@@ -22,6 +22,9 @@
   --spacing-section: var(--spacing-500);
   --spacing-page: var(--spacing-300);
 
+  /* Pretendard는 __root.tsx가 다이내믹 서브셋으로 불러온다. 못 받으면 시스템 고딕으로 */
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+
   --text-*: initial;
   --font-weight-*: initial;
   --text-title-page: 1.5rem;
