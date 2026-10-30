@@ -79,7 +79,7 @@ function Detail() {
           alt=""
           category={item.category}
           // 행사 이미지는 세로 포스터, 장소는 가로 사진이다(cards.tsx와 같은 비율). 16:9는 포스터를 잘랐다
-          className={`${item.kind === 'event' ? 'aspect-[3/4] w-2/3 md:w-full' : 'aspect-[4/3] w-full'} rounded-150 object-cover`}
+          className={`${item.kind === 'event' ? 'aspect-[2/3] w-2/3 md:w-full' : 'aspect-[4/3] w-full'} rounded-150 object-cover`}
         />
         <div className="min-w-0">
           <h2 className="mt-200 text-title-section md:mt-0">{item.title}</h2>
