@@ -33,9 +33,9 @@ function FactLines({
   const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
   return (
     <>
-      <p className="mt-050 truncate text-body text-ink-muted">{fixed}</p>
+      <p className="mt-100 truncate text-caption text-ink-muted">{fixed}</p>
       {(badge || facts.price || facts.deadline) && (
-        <p className="truncate text-body text-ink-muted">
+        <p className="truncate text-caption text-ink-muted">
           {badge}
           {facts.price && (
             <span className={facts.price === '무료' ? 'text-success-text' : undefined}>{facts.price}</span>
@@ -59,16 +59,15 @@ function FactLines({
 export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: string }) {
   const e = entry.item
   return (
-    <Link to="/e/$id" params={{ id: e.id }} className="block w-36 shrink-0 snap-start md:w-44">
+    <Link to="/e/$id" params={{ id: e.id }} className="block w-40 shrink-0 snap-start md:w-48">
       <ItemImage
         src={e.imageUrl}
         alt=""
         category={e.category}
         className={`${POSTER} w-full rounded-100 object-cover`}
       />
-      {/* 제목·메타는 붙이고(mt-050) 코멘트는 떼어 놓는다(mt-100) — 코멘트는 사실이 아니라 목소리다 */}
       <div className="mt-100 min-w-0">
-        <CardTitle title={e.title} className="line-clamp-2 text-title-card" />
+        <CardTitle title={e.title} className="line-clamp-2 text-title-row" />
         <FactLines facts={cardFacts(e, { today })} />
         {/* 코멘트는 있을 때만 — 운영 배치(rule)는 reason이 빈 문자열이다. 빈 자리를 남기지 않는다 */}
         {entry.reason !== '' && <p className="mt-100 line-clamp-2 text-body text-ink-subtle">{entry.reason}</p>}
@@ -98,10 +97,10 @@ export function ListRow({
         src={image.src}
         alt=""
         category={image.category}
-        className={`${image.shape === 'poster' ? `${POSTER} w-14` : 'aspect-[4/3] w-20'} shrink-0 self-start rounded-050 object-cover`}
+        className={`${image.shape === 'poster' ? `${POSTER} w-20` : 'aspect-[4/3] w-28'} shrink-0 self-start rounded-050 object-cover`}
       />
       <div className="min-w-0">
-        <CardTitle title={title} className="line-clamp-2 text-title-card" />
+        <CardTitle title={title} className="line-clamp-2 text-title-row" />
         <FactLines facts={facts} badge={badge} />
       </div>
     </Link>

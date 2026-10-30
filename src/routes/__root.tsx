@@ -1,11 +1,21 @@
 import { createRootRoute, HeadContent, Link, Scripts } from '@tanstack/react-router'
+import { createServerFn } from '@tanstack/react-start'
+import { staticFunctionMiddleware } from '@tanstack/start-static-server-functions'
 import type { ReactNode } from 'react'
 import { ThemeToggle } from '~/components/ThemeToggle'
 import { PAGE } from '~/components/page'
+import { loadMeta } from '~/data/load'
+import { formatUpdatedAt } from '~/lib/dates'
 import { THEME_INIT_SCRIPT } from '~/lib/theme'
 import appCss from '~/styles/app.css?url'
 
+/** 빌드 타임에 한 번. 갱신 시각은 모든 화면 공통이라 헤더가 진다 */
+const getUpdatedLabel = createServerFn({ method: 'GET' })
+  .middleware([staticFunctionMiddleware])
+  .handler(() => formatUpdatedAt(loadMeta().updatedAt))
+
 export const Route = createRootRoute({
+  loader: () => getUpdatedLabel(),
   head: () => ({
     meta: [
       { charSet: 'utf-8' },
@@ -22,6 +32,7 @@ export const Route = createRootRoute({
 })
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
+  const updatedLabel = Route.useLoaderData()
   return (
     /*
      * <head>의 THEME_INIT_SCRIPT가 하이드레이션 전에 여기에 .dark를 붙인다.
@@ -41,9 +52,12 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
          */}
         <header className={`${PAGE} pt-200`}>
           <div className="flex items-start justify-between">
-            <h1 className="text-title-page">
-              <Link to="/">이번 주 서울</Link>
-            </h1>
+            <div className="flex items-baseline gap-150">
+              <h1 className="text-title-page">
+                <Link to="/">이번 주 서울</Link>
+              </h1>
+              <p className="text-caption text-ink-subtle">{updatedLabel}</p>
+            </div>
             <ThemeToggle />
           </div>
           <nav aria-label="화면 전환" className="mt-150 flex gap-300 border-b border-neutral-border">

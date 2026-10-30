@@ -9,7 +9,6 @@ import { PAGE } from '~/components/page'
 import { loadCurated, loadMeta, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
 import { applyFilters, districtsOf, isCatalogStale, sortByDistance } from '~/lib/browse-filter'
-import { formatUpdatedAt } from '~/lib/dates'
 import { homeSearchSchema, type HomeSearch } from '~/lib/home-search'
 import { dayRange, eventsOn, pickShelf, sortByDeadline } from '~/lib/today'
 import { kstToday } from '~/lib/week'
@@ -26,7 +25,6 @@ const getHomeData = createServerFn({ method: 'GET' })
     const today = kstToday(new Date()) // 오늘 = 빌드 시각의 KST 날짜. 배치 커밋 → 재배포 때 갱신된다
 
     return {
-      updatedLabel: formatUpdatedAt(meta.updatedAt),
       today,
       // 배포는 06:30 KST라 자정~06:30에는 빌드 today가 하루 늦다 — 넉넉히 넘기고 화면이 브라우저 today로 다시 고른다
       shelf: pickShelf(resolved.picks, today, Infinity),
@@ -43,7 +41,8 @@ function Home() {
   const data = Route.useLoaderData()
   const search = Route.useSearch()
   const { state, retry } = useCatalog()
-  const geo = useGeo(search.near === true)
+  const near = search.near !== false
+  const geo = useGeo(near)
 
   // 프리렌더 첫 그림은 빌드 today, 카탈로그가 준비되면 브라우저 today(useCatalog)로 다시 그린다
   const today = state.status === 'ready' ? state.today : data.today
@@ -51,10 +50,6 @@ function Home() {
 
   return (
     <main className={`${PAGE} py-page`}>
-      <header className="mb-page">
-        <p className="text-caption text-ink-subtle">{data.updatedLabel}</p>
-      </header>
-
       {/*
         가로로 넘기는 작은 선반 — 모바일 첫 화면에 필터까지 들어와야 한다(스펙 4장 "필터 먼저").
         화면 끝까지 흘러야 다음 카드가 보여 넘길 수 있다는 게 읽힌다(-mx로 PAGE 여백을 상쇄)
@@ -62,7 +57,7 @@ function Home() {
       {shelf.length > 0 && (
         <section>
           <h2 className="text-title-section">추천</h2>
-          <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter md:mx-0 md:px-0">
+          <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter [scrollbar-width:none] md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden">
             {shelf.map((entry) => (
               <EventPosterCard key={entry.item.id} entry={entry} today={today} />
             ))}
@@ -74,8 +69,8 @@ function Home() {
         search={search}
         districts={state.status === 'ready' ? districtsOf(state.index.items.filter((i) => i.kind === 'event')) : []}
         nearDisabledReason={
-          search.near === true && geo.status === 'denied'
-            ? '위치 권한이 없어 내 주변 순을 쓸 수 없습니다 — 자치구로 좁혀 보세요'
+          near && geo.status === 'denied'
+            ? '위치를 확인하지 못해 내 주변 순을 쓸 수 없습니다 — 자치구로 좁혀 보세요'
             : undefined
         }
       />
@@ -106,6 +101,7 @@ function DayList({
   shelfIds: ReadonlySet<string>
 }) {
   const day = search.day ?? 'today'
+  const near = search.near !== false
   const events = applyFilters(index.items, { group: search.group, district: search.district }, now)
     .filter((i): i is CatalogEventIndexItem => i.kind === 'event')
   const list = eventsOn(events, dayRange(day, today)).filter((i) => !shelfIds.has(i.id))
@@ -113,14 +109,13 @@ function DayList({
   if (list.length === 0) return <HomeEmpty search={search} />
 
   const sorted: Array<{ item: CatalogEventIndexItem; km?: number }> =
-    search.near === true && geo.status === 'ok'
+    near && geo.status === 'ok'
       ? (sortByDistance(list, geo.origin) as Array<{ item: CatalogEventIndexItem; km?: number }>)
       : sortByDeadline(list).map((item) => ({ item }))
   const pages = Math.ceil(sorted.length / PAGE_SIZE)
   const page = Math.min(search.page ?? 1, pages) // 조건이 바뀌어 페이지가 줄었으면 마지막 페이지
   const rows = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
   // 아무것도 안 좁혔으면 첫 페이지에서 필터로 좁히라고 권한다(스펙 4장 "필터 먼저")
-  const narrowed = search.group !== undefined || search.district !== undefined || search.near === true
 
   return (
     <section id="list" className="mt-section scroll-mt-200">
@@ -128,7 +123,7 @@ function DayList({
         <h2 className="text-title-section">{DAY_LABELS[day]}</h2>
         <span className="text-body text-ink-muted">{list.length}건</span>
       </div>
-      {search.near === true && geo.status === 'waiting' && (
+      {near && geo.status === 'waiting' && (
         <p className="mt-100 text-body text-ink-subtle">위치 확인 중…</p>
       )}
       <div className="mt-150">
@@ -136,12 +131,6 @@ function DayList({
           <BrowseEventRow key={item.id} item={item} today={today} km={km} />
         ))}
       </div>
-      {!narrowed && page === 1 && pages > 1 && (
-        <p className="border-t border-neutral-border pt-200 text-center text-body text-ink-muted">
-          {sorted.length - rows.length}건이 더 있어요.{' '}
-          <a href="#filters" className="underline">목적이나 지역을 고르면 좁혀집니다</a>
-        </p>
-      )}
       {pages > 1 && <HomePager search={search} page={page} pages={pages} />}
     </section>
   )

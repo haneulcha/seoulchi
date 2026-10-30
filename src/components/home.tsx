@@ -1,6 +1,6 @@
 import { Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
-import { chip, Chip } from '~/components/ui'
+import { chip, Chip, ChipSelect } from '~/components/ui'
 import { HOME_GROUPS, pageNumbers, type HomeSearch } from '~/lib/home-search'
 import type { DayTab } from '~/lib/today'
 
@@ -40,21 +40,17 @@ export function HomeControls({
       </div>
       <div className="flex flex-wrap items-center gap-100" role="group" aria-label="지역">
         {/* 권한 거부면 꺼진 모양 — 목록이 실제로 거리순이 아니다(BrowseControls와 같다) */}
-        <Chip active={shown.near === true && nearDisabledReason === undefined}
-          onClick={() => patch({ near: search.near ? undefined : true })}>
+        <Chip active={shown.near !== false && nearDisabledReason === undefined}
+          onClick={() => patch({ near: search.near === false ? undefined : false })}>
           ⊙ 내 주변
         </Chip>
-        <select
-          value={shown.district ?? ''}
-          onChange={(e) => patch({ district: e.target.value === '' ? undefined : e.target.value })}
-          aria-label="자치구"
-          className={chip()}
-        >
+        <ChipSelect value={shown.district ?? ''} label="자치구"
+          onChange={(v) => patch({ district: v === '' ? undefined : v })}>
           <option value="">자치구 전체</option>
           {districts.map((d) => (
             <option key={d} value={d}>{d}</option>
           ))}
-        </select>
+        </ChipSelect>
       </div>
       {nearDisabledReason !== undefined && (
         <p className="text-body text-warning-text">{nearDisabledReason}</p>
