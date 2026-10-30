@@ -33,6 +33,9 @@
   --text-title-card: 1rem;
   --text-title-card--line-height: 1.5rem;
   --text-title-card--font-weight: 500;
+  --text-title-row: 0.875rem;
+  --text-title-row--line-height: 1.25rem;
+  --text-title-row--font-weight: 500;
   --text-body: 0.875rem;
   --text-body--line-height: 1.375rem;
   --text-body--font-weight: 400;
