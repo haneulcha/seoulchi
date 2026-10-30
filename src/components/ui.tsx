@@ -34,6 +34,30 @@ export function Chip({
   )
 }
 
+/**
+ * 칩 모양의 select. 기본 화살표는 브라우저가 테두리 곡선에 붙여 그려서 끄고,
+ * 왼쪽 여백(150)과 같은 간격에 글자색을 따르는 화살표를 직접 둔다(다크 모드에서도 맞는다)
+ */
+export function ChipSelect({
+  value, onChange, label, children,
+}: { value: string; onChange: (value: string) => void; label: string; children: ReactNode }) {
+  return (
+    <span className="relative inline-flex shrink-0 text-ink-muted">
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        aria-label={label}
+        className={`${chip()} appearance-none pr-400`}
+      >
+        {children}
+      </select>
+      <svg aria-hidden viewBox="0 0 12 12" className="pointer-events-none absolute top-1/2 right-150 h-3 w-3 -translate-y-1/2">
+        <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </span>
+  )
+}
+
 const CALLOUT_TONE = {
   error: { box: 'border-error-border bg-error-subtle-bg', title: 'text-error-text-strong', body: 'text-error-text' },
   warning: { box: 'border-warning-border bg-warning-subtle-bg', title: 'text-warning-text-strong', body: 'text-warning-text' },

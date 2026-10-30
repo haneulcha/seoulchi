@@ -10,7 +10,7 @@ import {
   applyFilters, districtsOf, groupByTimeline, isCatalogStale, relaxSuggestions, sortByDistance,
 } from '~/lib/browse-filter'
 import { browseSearchSchema, toBrowseFilters, type BrowseSearch } from '~/lib/browse-search'
-import { formatUpdatedAt, formatWeekRange } from '~/lib/dates'
+import { formatWeekRange } from '~/lib/dates'
 import {
   type CatalogEventIndexItem,
   type CatalogIndexFile,
@@ -39,7 +39,6 @@ function Browse() {
           <p className="text-body text-ink-subtle">
             {formatWeekRange({ start: state.today, end: state.index.horizonEnd })}
           </p>
-          <p className="mt-050 text-caption text-ink-subtle">{formatUpdatedAt(state.index.generatedAt)}</p>
         </header>
       )}
 

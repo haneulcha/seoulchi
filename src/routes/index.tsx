@@ -9,7 +9,6 @@ import { PAGE } from '~/components/page'
 import { loadCurated, loadMeta, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
 import { applyFilters, districtsOf, isCatalogStale, sortByDistance } from '~/lib/browse-filter'
-import { formatUpdatedAt } from '~/lib/dates'
 import { homeSearchSchema, type HomeSearch } from '~/lib/home-search'
 import { dayRange, eventsOn, pickShelf, sortByDeadline } from '~/lib/today'
 import { kstToday } from '~/lib/week'
@@ -26,7 +25,6 @@ const getHomeData = createServerFn({ method: 'GET' })
     const today = kstToday(new Date()) // 오늘 = 빌드 시각의 KST 날짜. 배치 커밋 → 재배포 때 갱신된다
 
     return {
-      updatedLabel: formatUpdatedAt(meta.updatedAt),
       today,
       // 배포는 06:30 KST라 자정~06:30에는 빌드 today가 하루 늦다 — 넉넉히 넘기고 화면이 브라우저 today로 다시 고른다
       shelf: pickShelf(resolved.picks, today, Infinity),
@@ -52,10 +50,6 @@ function Home() {
 
   return (
     <main className={`${PAGE} py-page`}>
-      <header className="mb-page">
-        <p className="text-caption text-ink-subtle">{data.updatedLabel}</p>
-      </header>
-
       {/*
         가로로 넘기는 작은 선반 — 모바일 첫 화면에 필터까지 들어와야 한다(스펙 4장 "필터 먼저").
         화면 끝까지 흘러야 다음 카드가 보여 넘길 수 있다는 게 읽힌다(-mx로 PAGE 여백을 상쇄)
@@ -122,8 +116,6 @@ function DayList({
   const page = Math.min(search.page ?? 1, pages) // 조건이 바뀌어 페이지가 줄었으면 마지막 페이지
   const rows = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
   // 아무것도 안 좁혔으면 첫 페이지에서 필터로 좁히라고 권한다(스펙 4장 "필터 먼저")
-  // 내 주변은 순서만 바꾸고 건수를 줄이지 않는다 — 좁힌 것으로 치지 않는다
-  const narrowed = search.group !== undefined || search.district !== undefined
 
   return (
     <section id="list" className="mt-section scroll-mt-200">
@@ -139,12 +131,6 @@ function DayList({
           <BrowseEventRow key={item.id} item={item} today={today} km={km} />
         ))}
       </div>
-      {!narrowed && page === 1 && pages > 1 && (
-        <p className="border-t border-neutral-border pt-200 text-center text-body text-ink-muted">
-          {sorted.length - rows.length}건이 더 있어요.{' '}
-          <a href="#filters" className="underline">목적이나 지역을 고르면 좁혀집니다</a>
-        </p>
-      )}
       {pages > 1 && <HomePager search={search} page={page} pages={pages} />}
     </section>
   )

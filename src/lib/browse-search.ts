@@ -5,7 +5,7 @@ import type { BrowseFilters } from '~/lib/browse-filter'
  * 카테고리 칩 4개. '기타'(13건)는 칩 한 자리 값을 못 해서 뺀다 —
  * 숨기는 게 아니라 '전체'에 그대로 있다(스펙 7장).
  */
-export const CHIP_GROUPS = ['보러 가기', '해보러 가기', '걸으러 가기', '놀러 가기'] as const
+export const CHIP_GROUPS = ['보러 가기', '체험하기', '걸으러 가기', '놀러 가기'] as const
 
 /**
  * 필터 상태 = URL search params. 이유는 공유가 아니라 뒤로가기다(스펙 7장).
