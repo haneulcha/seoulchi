@@ -83,6 +83,8 @@ export function useGeo(near: boolean): GeoState {
       () => {
         if (!cancelled) setGeo({ status: 'denied' })
       },
+      // 기본 timeout은 무한대다 — OS 위치 서비스가 꺼져 있으면 권한을 허용해도 응답이 오지 않아 '확인 중'에 멈춘다
+      { timeout: 10_000, maximumAge: 600_000 },
     )
     return () => {
       cancelled = true

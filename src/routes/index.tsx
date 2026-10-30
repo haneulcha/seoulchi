@@ -76,7 +76,7 @@ function Home() {
         districts={state.status === 'ready' ? districtsOf(state.index.items.filter((i) => i.kind === 'event')) : []}
         nearDisabledReason={
           near && geo.status === 'denied'
-            ? '위치 권한이 없어 내 주변 순을 쓸 수 없습니다 — 자치구로 좁혀 보세요'
+            ? '위치를 확인하지 못해 내 주변 순을 쓸 수 없습니다 — 자치구로 좁혀 보세요'
             : undefined
         }
       />
