@@ -40,8 +40,8 @@ export function HomeControls({
       </div>
       <div className="flex flex-wrap items-center gap-100" role="group" aria-label="지역">
         {/* 권한 거부면 꺼진 모양 — 목록이 실제로 거리순이 아니다(BrowseControls와 같다) */}
-        <Chip active={shown.near === true && nearDisabledReason === undefined}
-          onClick={() => patch({ near: search.near ? undefined : true })}>
+        <Chip active={shown.near !== false && nearDisabledReason === undefined}
+          onClick={() => patch({ near: search.near === false ? undefined : false })}>
           ⊙ 내 주변
         </Chip>
         <select

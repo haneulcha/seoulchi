@@ -43,7 +43,8 @@ function Home() {
   const data = Route.useLoaderData()
   const search = Route.useSearch()
   const { state, retry } = useCatalog()
-  const geo = useGeo(search.near === true)
+  const near = search.near !== false
+  const geo = useGeo(near)
 
   // 프리렌더 첫 그림은 빌드 today, 카탈로그가 준비되면 브라우저 today(useCatalog)로 다시 그린다
   const today = state.status === 'ready' ? state.today : data.today
@@ -74,7 +75,7 @@ function Home() {
         search={search}
         districts={state.status === 'ready' ? districtsOf(state.index.items.filter((i) => i.kind === 'event')) : []}
         nearDisabledReason={
-          search.near === true && geo.status === 'denied'
+          near && geo.status === 'denied'
             ? '위치 권한이 없어 내 주변 순을 쓸 수 없습니다 — 자치구로 좁혀 보세요'
             : undefined
         }
@@ -106,6 +107,7 @@ function DayList({
   shelfIds: ReadonlySet<string>
 }) {
   const day = search.day ?? 'today'
+  const near = search.near !== false
   const events = applyFilters(index.items, { group: search.group, district: search.district }, now)
     .filter((i): i is CatalogEventIndexItem => i.kind === 'event')
   const list = eventsOn(events, dayRange(day, today)).filter((i) => !shelfIds.has(i.id))
@@ -113,14 +115,15 @@ function DayList({
   if (list.length === 0) return <HomeEmpty search={search} />
 
   const sorted: Array<{ item: CatalogEventIndexItem; km?: number }> =
-    search.near === true && geo.status === 'ok'
+    near && geo.status === 'ok'
       ? (sortByDistance(list, geo.origin) as Array<{ item: CatalogEventIndexItem; km?: number }>)
       : sortByDeadline(list).map((item) => ({ item }))
   const pages = Math.ceil(sorted.length / PAGE_SIZE)
   const page = Math.min(search.page ?? 1, pages) // 조건이 바뀌어 페이지가 줄었으면 마지막 페이지
   const rows = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
   // 아무것도 안 좁혔으면 첫 페이지에서 필터로 좁히라고 권한다(스펙 4장 "필터 먼저")
-  const narrowed = search.group !== undefined || search.district !== undefined || search.near === true
+  // 내 주변은 순서만 바꾸고 건수를 줄이지 않는다 — 좁힌 것으로 치지 않는다
+  const narrowed = search.group !== undefined || search.district !== undefined
 
   return (
     <section id="list" className="mt-section scroll-mt-200">
@@ -128,7 +131,7 @@ function DayList({
         <h2 className="text-title-section">{DAY_LABELS[day]}</h2>
         <span className="text-body text-ink-muted">{list.length}건</span>
       </div>
-      {search.near === true && geo.status === 'waiting' && (
+      {near && geo.status === 'waiting' && (
         <p className="mt-100 text-body text-ink-subtle">위치 확인 중…</p>
       )}
       <div className="mt-150">

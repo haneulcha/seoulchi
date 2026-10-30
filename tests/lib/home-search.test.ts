@@ -18,6 +18,11 @@ describe('homeSearchSchema', () => {
     expect(homeSearchSchema.parse({ group: '걸으러 가기' }).group).toBeUndefined()
   })
 
+  it('내 주변은 기본으로 켜져 있어 끈 것(false)만 남긴다', () => {
+    expect(homeSearchSchema.parse({ near: false }).near).toBe(false)
+    expect(homeSearchSchema.parse({ near: true }).near).toBeUndefined()
+  })
+
   it('page는 2 이상의 정수만 남긴다 — 1페이지는 URL에 쓰지 않는다', () => {
     expect(homeSearchSchema.parse({ page: 3 }).page).toBe(3)
     expect(homeSearchSchema.parse({ page: 1 }).page).toBeUndefined()
