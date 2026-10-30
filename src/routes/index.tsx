@@ -57,7 +57,7 @@ function Home() {
       {shelf.length > 0 && (
         <section>
           <h2 className="text-title-section">추천</h2>
-          <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter md:mx-0 md:px-0">
+          <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter [scrollbar-width:none] md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden">
             {shelf.map((entry) => (
               <EventPosterCard key={entry.item.id} entry={entry} today={today} />
             ))}

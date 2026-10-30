@@ -28,14 +28,14 @@ function CardTitle({ title, className }: { title: string; className: string }) {
  * 배지는 조건부 줄 맨 앞에 둔다 — 고정 줄 끝에 붙이면 장소 2열 칸에서 시간 뒤로 밀려 잘렸다.
  */
 function FactLines({
-  facts, badge, size = 'text-body',
-}: { facts: CardFacts; badge?: ReactNode; size?: 'text-body' | 'text-caption' }) {
+  facts, badge,
+}: { facts: CardFacts; badge?: ReactNode }) {
   const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
   return (
     <>
-      <p className={`mt-050 truncate ${size} text-ink-muted`}>{fixed}</p>
+      <p className="mt-100 truncate text-caption text-ink-muted">{fixed}</p>
       {(badge || facts.price || facts.deadline) && (
-        <p className={`truncate ${size} text-ink-muted`}>
+        <p className="truncate text-caption text-ink-muted">
           {badge}
           {facts.price && (
             <span className={facts.price === '무료' ? 'text-success-text' : undefined}>{facts.price}</span>
@@ -66,10 +66,9 @@ export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: str
         category={e.category}
         className={`${POSTER} w-full rounded-100 object-cover`}
       />
-      {/* 제목·메타는 붙이고(mt-050) 코멘트는 떼어 놓는다(mt-100) — 코멘트는 사실이 아니라 목소리다 */}
       <div className="mt-100 min-w-0">
         <CardTitle title={e.title} className="line-clamp-2 text-title-row" />
-        <FactLines facts={cardFacts(e, { today })} size="text-caption" />
+        <FactLines facts={cardFacts(e, { today })} />
         {/* 코멘트는 있을 때만 — 운영 배치(rule)는 reason이 빈 문자열이다. 빈 자리를 남기지 않는다 */}
         {entry.reason !== '' && <p className="mt-100 line-clamp-2 text-body text-ink-subtle">{entry.reason}</p>}
       </div>
@@ -102,7 +101,7 @@ export function ListRow({
       />
       <div className="min-w-0">
         <CardTitle title={title} className="line-clamp-2 text-title-row" />
-        <FactLines facts={facts} badge={badge} size="text-caption" />
+        <FactLines facts={facts} badge={badge} />
       </div>
     </Link>
   )
