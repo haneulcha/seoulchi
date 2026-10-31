@@ -1239,6 +1239,40 @@
       }
     },
     {
+      "id": "vs-KOPifucgz",
+      "source": "visit-seoul",
+      "title": "서울우리소리박물관",
+      "summary": "국내 첫 민요 전문 박물관, 서울우리소리박물관은 ‘민요의 땅’ 대한민국의 우리소리를 누구나 편안하게 즐길 수 있는 휴식공간",
+      "category": "박물관",
+      "place": "서울우리소리박물관",
+      "address": "서울 종로구 율곡로 96 (와룡동, 서울우리소리박물관)",
+      "lat": 37.577157928122,
+      "lng": 126.989622047178,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83341&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://museum.seoul.go.kr/sekm",
+      "isFree": true,
+      "subwayInfo": "지하철 3호선 안국역 4번출구, 323m",
+      "tags": [
+        "민요",
+        "박물관",
+        "우리소리",
+        "전통",
+        "문화",
+        "소리",
+        "음악"
+      ],
+      "kind": "place",
+      "useTime": "9:00 ~ 18:00 (입장 마감 17:30)",
+      "closedDays": "매주 월요일",
+      "hours": {
+        "open": "09:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          1
+        ]
+      }
+    },
+    {
       "id": "vs-KOP28aw8e",
       "source": "visit-seoul",
       "title": "서울시립 미술아카이브",
@@ -3233,8 +3267,8 @@
       "isFree": true,
       "subwayInfo": "지하철 1/4호선 창동역 1번 출구 264m",
       "tags": [
-        "창동역",
         "서울시립사진미술관",
+        "창동역",
         "미술관",
         "서울전시",
         "사진",
@@ -3246,7 +3280,7 @@
       ],
       "kind": "place",
       "useTime": "화 ~ 금 10:00 ~ 20:00\r\n토, 일, 공휴일 \r\n하절기(3-10월) 10:00 ~ 19:00\r\n동절기(11-2월) 10:00 ~ 18:00",
-      "closedDays": "1월 1일,  매주 월요일 휴관 * 월요일이 공휴일인 경우 정상 개관\r\n(단, 포토라이브러리는 매주 일, 월, 공휴일 휴관)\r\n\r\n※ 내부 공사로 인해 10/19-10/27 휴관",
+      "closedDays": "1월 1일,  매주 월요일 휴관 * 월요일이 공휴일인 경우 정상 개관\r\n(단, 포토라이브러리는 매주 일, 월, 공휴일 휴관)",
       "hours": {
         "open": "10:00",
         "close": "20:00",
@@ -3768,17 +3802,17 @@
     {
       "id": "vs-KOPgrw5c5",
       "source": "visit-seoul",
-      "title": "고터·세빛 관광안내소",
+      "title": "고터·세빛 관광안내센터",
       "summary": "국내외 관광객들의 편의 증진을 위해 마련된 고터·세빛 관광안내소",
       "category": "문화관광",
-      "place": "고터·세빛 관광안내소",
+      "place": "고터·세빛 관광안내센터",
       "address": "서울 서초구 반포대로 333 공공보행통로 내(G2출구~반포한강공원)",
       "lat": 37.506961,
       "lng": 126.99982,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=66713&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://www.sta.or.kr/",
       "isFree": true,
-      "subwayInfo": "지하철 3/7/9호선 고속미널역 고투몰 G2출구",
+      "subwayInfo": "지하철 3호선/7호선/9호선 고속터미널역 고투몰 G2출구",
       "tags": [
         "고터·세빛 관광안내소",
         "관광안내소",
@@ -4607,9 +4641,9 @@
       "summary": "인천국제공항 서편에 위치한 인천국제공항 서울관광정보센터",
       "category": "문화관광",
       "place": "인천국제공항 제 1터미널 서울관광정보센터",
-      "address": "인천광역시 중구 공항로 272 (운서동) 인천국제공항 제1여객터미널",
-      "lat": 37.4476109663729,
-      "lng": 126.452346738588,
+      "address": "인천 영종구 공항로 272 (운서동, 인천공항)",
+      "lat": 37.458350533174,
+      "lng": 126.42769952089,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=42078&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
       "linkUrl": "https://www.sta.or.kr/",
       "isFree": false,
@@ -7143,10 +7177,10 @@
     {
       "id": "vs-KOP027231",
       "source": "visit-seoul",
-      "title": "신촌역사 관광안내소",
+      "title": "신촌관광안내센터",
       "summary": "여행객들에게 여행 정보, 통역, 예약, 관광홍보물, 편의시설을 제공",
       "category": "문화관광",
-      "place": "신촌역사 관광안내소",
+      "place": "신촌관광안내센터",
       "address": "서울 서대문구 신촌역로 30 (신촌동, 신촌민자역사)",
       "lat": 37.5598257497,
       "lng": 126.9423868649,
@@ -7443,10 +7477,10 @@
       "isFree": false,
       "subwayInfo": "지하철 1/ 7호선 도봉산역 1-1번 출구, 20m",
       "tags": [
-        "도봉산역",
         "군사시설",
         "문화예술프로그램",
         "평화문화진지",
+        "도봉산역",
         "문화창작공간",
         "대전차방호시설",
         "공간재생사업",
@@ -7618,19 +7652,19 @@
       "summary": "인천공항 제2여객터미널에 위치한 관광정보센터로 2018년 1월 18일에 개관",
       "category": "문화관광",
       "place": "인천공항 제2여객터미널 관광정보센터",
-      "address": "인천광역시 중구 제2터미널대로 444 (운서동)",
-      "lat": 37.4686409554406,
-      "lng": 126.43378033879,
+      "address": "인천 영종구 제2터미널대로 446 (운서동)",
+      "lat": 37.4692488244219,
+      "lng": 126.43320918812,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=24807&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
       "linkUrl": "https://www.sta.or.kr/",
       "isFree": false,
       "subwayInfo": "지하철 공항철도 인천공항2터미널역,  205m",
       "tags": [
-        "인천공항-제2여객터미널-관광정보센터",
         "인천공항2터미널역",
         "인천공항",
         "관광정보센터",
-        "제2여객터미널"
+        "제2여객터미널",
+        "인천공항-제2여객터미널-관광정보센터"
       ],
       "kind": "place",
       "useTime": "07:00~22:00",
@@ -7674,10 +7708,10 @@
         " 서울놀거리"
       ],
       "kind": "place",
-      "useTime": "주중/주말 09:00~22:00",
+      "useTime": "주중 : 14:00~21:00/주말,공휴일 : 14:00~22:00",
       "hours": {
-        "open": "09:00",
-        "close": "22:00",
+        "open": "14:00",
+        "close": "21:00",
         "closedWeekdays": []
       }
     },
@@ -7726,6 +7760,7 @@
       "isFree": false,
       "subwayInfo": "지하철1/2호선 시청역 1번 출구,  500m",
       "tags": [
+        "콘서트",
         " 시청역",
         " 광화문",
         "행사",
@@ -7736,8 +7771,7 @@
         " 덕수궁",
         "정동길",
         " 덕수궁돌담길",
-        " 정동극장",
-        "콘서트"
+        " 정동극장"
       ],
       "kind": "place",
       "hours": null
@@ -7790,15 +7824,15 @@
       "isFree": false,
       "subwayInfo": "지하철 7호선 어린이대공원역 6번 출구,  280m",
       "tags": [
-        "어린이대공원역",
-        "세종대학교",
         "아차산",
         "전시장",
         "광진구",
         "어린이대공원",
         "세종대컨벤션센터",
+        "공연장",
         "회의실",
-        "공연장"
+        "세종대학교",
+        "어린이대공원역"
       ],
       "kind": "place",
       "hours": null
@@ -8131,14 +8165,14 @@
       "isFree": true,
       "subwayInfo": "지하철 1호선/4호선 동대문역 3번 출구,  220m\r\n지하철1호선/6호선 동묘앞역 8번 출구, 205m",
       "tags": [
-        "동묘앞역",
         " 동대문역",
         "백남준기념관",
         " 동대문",
         "백남준",
         "창신동",
         "예술",
-        " 종로"
+        " 종로",
+        "동묘앞역"
       ],
       "kind": "place",
       "useTime": "10:00~19:00 (관람종료 30분 전까지 입장)",
@@ -8178,13 +8212,11 @@
       ],
       "kind": "place",
       "useTime": "10:00~17:00",
-      "closedDays": "매주 월요일 , 공휴일",
+      "closedDays": "매주 월~수 , 공휴일",
       "hours": {
         "open": "10:00",
         "close": "17:00",
-        "closedWeekdays": [
-          1
-        ]
+        "closedWeekdays": []
       }
     },
     {
@@ -8215,7 +8247,7 @@
         " 빅뱅"
       ],
       "kind": "place",
-      "useTime": "평일 10:00~01:00\r\n주말 10:00~02:00",
+      "useTime": "평일 10:00~01:00 (락볼링장 18:00~01:00)\r\n주말 10:00~02:00 (락볼링장 15:00~02:00)",
       "hours": {
         "open": "10:00",
         "close": "01:00",
@@ -10153,20 +10185,20 @@
       "summary": "인천국제공항 동편에 위치한 인천국제공항 서울관광정보센터",
       "category": "문화관광",
       "place": "인천국제공항 제 1터미널 서울관광정보센터 (동편)",
-      "address": "인천광역시 중구 공항로 272 (운서동) 인천국제공항 제1여객터미널",
-      "lat": 37.4476109663729,
-      "lng": 126.452346738588,
+      "address": "인천 영종구 공항로 272 (운서동, 인천공항)",
+      "lat": 37.458350533174,
+      "lng": 126.42769952089,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=11864&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
       "linkUrl": "https://www.sta.or.kr/",
       "isFree": false,
       "subwayInfo": "지하철 공항철도 인천국제공항역 1번 출구,  279m",
       "tags": [
-        "관광정보센터",
         "공항",
         "안내소",
         " 안내",
         "관광안내소",
         "여행",
+        "관광정보센터",
         "인천국제공항",
         "인천국제공항서울관광정보센터",
         "서울관광정보센터"
@@ -14742,6 +14774,35 @@
       }
     },
     {
+      "id": "vs-KOP9i4l1b",
+      "source": "visit-seoul",
+      "title": "ANA DANCE(아나 댄스) — 홍대 K-pop 댄스 원데이 클래스",
+      "summary": "홍대에서 외국인 여행객을 위해 영어로 진행하는 90분 K-pop 댄스 원데이 클래스",
+      "category": "기타체험",
+      "place": "ANA DANCE(아나 댄스) — 홍대 K-pop 댄스 원데이 클래스",
+      "address": "서울 마포구 와우산로29길 39 (서교동) 지하 1층",
+      "lat": 37.5554150714616,
+      "lng": 126.927756048794,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83347&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://anadanceclass.com",
+      "isFree": false,
+      "subwayInfo": "지하철 2호선/경의중앙/공항철도 홍대입구역 8번출구, 438m",
+      "tags": [
+        "K-pop 댄스",
+        "케이팝 댄스 클래스",
+        "원데이 클래스",
+        "홍대",
+        "외국인 체험",
+        "한류 체험",
+        "K-pop dance class",
+        "Hongdae"
+      ],
+      "kind": "place",
+      "useTime": "11:00 · 13:00 · 15:00 (1회 90분, 예약제)",
+      "closedDays": "일요일",
+      "hours": null
+    },
+    {
       "id": "vs-KOPp93yfa",
       "source": "visit-seoul",
       "title": "홈즈앤루팡 보드게임카페 종로점",
@@ -16728,38 +16789,6 @@
       }
     },
     {
-      "id": "vs-KOPrs9x47",
-      "source": "visit-seoul",
-      "title": "혜성미용실",
-      "summary": "불에 달군 인두로 파마해주는 미용실",
-      "category": "기타체험",
-      "place": "혜성미용실",
-      "address": "서울 구로구 고척로6길 42 (오류동)",
-      "lat": 37.4965819685833,
-      "lng": 126.841079964036,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=60155&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "isFree": false,
-      "subwayInfo": "지하철 1호선 오류동역 3번 출구,  473m",
-      "tags": [
-        "인두파마",
-        " 구로",
-        " 오류동",
-        "미장원",
-        "오래가게",
-        " 미용실"
-      ],
-      "kind": "place",
-      "useTime": "08:00~19:40",
-      "closedDays": "첫째, 셋째 주 화요일 휴무",
-      "hours": {
-        "open": "08:00",
-        "close": "19:40",
-        "closedWeekdays": [
-          2
-        ]
-      }
-    },
-    {
       "id": "vs-KOP56qewe",
       "source": "visit-seoul",
       "title": "설화철물",
@@ -17413,13 +17442,13 @@
       "isFree": false,
       "subwayInfo": "지하철 1/3/5호선 종로 3가역 8번 출구,  54m",
       "tags": [
-        "옥공예",
         " 종로",
         " 전통",
         "오래가게",
         " 공방",
         " 종로5",
-        " 종로귀금속거리"
+        " 종로귀금속거리",
+        "옥공예"
       ],
       "kind": "place",
       "useTime": "월요일~금요일 10:30~18:30",
@@ -17514,9 +17543,10 @@
       "lat": 37.5474533629,
       "lng": 126.9505937902,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=23571&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
-      "isFree": true,
+      "isFree": false,
       "subwayInfo": "지하철 5/6호선/경의중앙선/공항철도 공덕역 2번 출구,  348m",
       "tags": [
+        "서울새명소",
         " 창업",
         " 창업허브",
         " 스타트업",
@@ -17527,8 +17557,7 @@
         " 강연",
         " 공덕",
         " 서울시",
-        " 서울여행",
-        "서울새명소"
+        " 서울여행"
       ],
       "kind": "place",
       "useTime": "09:00~18:00",
@@ -17663,8 +17692,7 @@
       "isFree": false,
       "subwayInfo": "지하철 1/3/5호선 종로3가역 7번 출구,  300m",
       "tags": [
-        "전통한옥",
-        " 서울주얼리센터2관",
+        "서울주얼리센터2관",
         " 한옥",
         " 주얼리",
         " 종묘",
@@ -17672,7 +17700,8 @@
         " 스페이스42",
         " 돈화문",
         " 종로3가역",
-        "주얼리복합문화공간"
+        "주얼리복합문화공간",
+        "전통한옥"
       ],
       "kind": "place",
       "useTime": "11:00 - 19:00",
@@ -17701,14 +17730,14 @@
       "isFree": false,
       "subwayInfo": "지하철 1/3/5호선 종로3가역 5번 출구,  260m",
       "tags": [
-        "해치",
-        "체험",
-        "인사동길",
-        "종로3가역",
         "다이나믹-메이즈",
         "오락",
         "서울여행",
-        "종각역"
+        "종각역",
+        "해치",
+        "체험",
+        "인사동길",
+        "종로3가역"
       ],
       "kind": "place",
       "useTime": "10:00 - 18:00 (입장마감 17:00)",
@@ -17775,12 +17804,12 @@
       "isFree": false,
       "subwayInfo": "지하철6호선 마포구청역 3번 출구, 1.2km",
       "tags": [
+        "김택상명인",
         " 막걸리",
         " 체험",
         "술",
         " 공방",
         " 전통주",
-        "김택상명인",
         " 시음",
         "삼해주",
         " 삼해소주공방",
@@ -17829,11 +17858,11 @@
         " 전통문화체험"
       ],
       "kind": "place",
-      "useTime": "09:00 ~ 18:00",
+      "useTime": "평일 09:00 ~ 19:00\r\n주말 09:00 ~ 18:00",
       "closedDays": "1월 1일, 설/추석연휴 휴관",
       "hours": {
         "open": "09:00",
-        "close": "18:00",
+        "close": "19:00",
         "closedWeekdays": []
       }
     },
@@ -17909,10 +17938,10 @@
         "전통문화"
       ],
       "kind": "place",
-      "useTime": "11:00 ~ 17:00 KST",
+      "useTime": "10:00 ~ 17:00 KST",
       "closedDays": "월요일 휴무",
       "hours": {
-        "open": "11:00",
+        "open": "10:00",
         "close": "17:00",
         "closedWeekdays": [
           1
@@ -17974,7 +18003,7 @@
         "오래가게"
       ],
       "kind": "place",
-      "useTime": "10:00~18:00",
+      "useTime": "10:00~18:00\r\n동절기 11월~2월 : 10:00~17:00",
       "closedDays": "월요일",
       "hours": {
         "open": "10:00",
@@ -18075,20 +18104,12 @@
         "한지",
         " 안국역",
         "심화숙한지공방",
-        "서울여행",
         " 북촌한옥마을",
-        " 심화숙"
+        " 심화숙",
+        "서울여행"
       ],
       "kind": "place",
-      "useTime": "10:00 ~ 17:00",
-      "closedDays": "월요일·명절 당일 휴무",
-      "hours": {
-        "open": "10:00",
-        "close": "17:00",
-        "closedWeekdays": [
-          1
-        ]
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP015855",
@@ -18146,6 +18167,7 @@
       "subwayInfo": "지하철 7호선 청담역 12번 출구,  200m",
       "tags": [
         "청담동",
+        "관리",
         "케어",
         "뷰티",
         "에스테틱",
@@ -18155,7 +18177,6 @@
         "한류스타",
         "체형관리",
         "아로마",
-        "관리",
         "피부관리",
         "피부",
         "휴식"
@@ -18200,12 +18221,7 @@
         "한류"
       ],
       "kind": "place",
-      "useTime": "10:00 ~ 21:00",
-      "hours": {
-        "open": "10:00",
-        "close": "21:00",
-        "closedWeekdays": []
-      }
+      "hours": null
     },
     {
       "id": "vs-KOP002052",
