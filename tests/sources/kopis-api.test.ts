@@ -30,6 +30,9 @@ describe('parseKopisResponse', () => {
     expect(() => parseKopisResponse(400, fx('blocked.html'))).toThrow(KopisBlockedError)
     expect(() => parseKopisResponse(200, fx('blocked.html'))).toThrow(KopisBlockedError)
   })
+  it('returncode 없는 비정상 상태는 빈 결과가 아니라 오류다', () => {
+    expect(() => parseKopisResponse(502, '<?xml version="1.0"?><error>bad gateway</error>')).toThrow(KopisApiError)
+  })
 })
 
 describe('xmlField', () => {

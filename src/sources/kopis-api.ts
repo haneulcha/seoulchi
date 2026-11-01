@@ -45,6 +45,7 @@ export function parseKopisResponse(status: number, body: string): string[] {
   const code = xmlField(body, 'returncode')
   if (code === '04') return []
   if (code) throw new KopisApiError(code, xmlField(body, 'errmsg') ?? `KOPIS 오류 ${code}`)
+  if (status < 200 || status >= 300) throw new KopisApiError(`http-${status}`, `KOPIS HTTP ${status}`)
   return body.match(/<db>[\s\S]*?<\/db>/g) ?? []
 }
 
