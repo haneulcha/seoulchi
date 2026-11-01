@@ -32,13 +32,13 @@ function enrich(base: Item, other: Item): Item {
 const MIN_CONTAINED_LEN = 4
 const SAME_VENUE_KM = 0.5
 
-/** 표기가 달라도 같은 행사인지: 기간 겹침 + 500m 이내 + 한쪽 제목이 다른 쪽에 포함(짧은 쪽 4자 이상). */
+/** 표기가 다른 소스끼리 같은 행사인지: 기간 겹침 + 500m 이내 + 한쪽 제목이 다른 쪽에 포함(짧은 쪽 4자 이상). */
 export function findMatch(item: Item, known: Item[]): Item | undefined {
   if (item.kind !== 'event' || item.lat == null || item.lng == null) return undefined
   const a = normalizeForCompare(item.title)
   // ponytail: 행사 수 × 기존 수 선형 탐색, 소스가 늘어 느려지면 기간·격자로 blocking
   return known.find((k) => {
-    if (k.kind !== 'event' || k.lat == null || k.lng == null) return false
+    if (k.source === item.source || k.kind !== 'event' || k.lat == null || k.lng == null) return false
     if (!(item.startDate <= k.endDate && k.startDate <= item.endDate)) return false
     if (haversineKm({ lat: item.lat!, lng: item.lng! }, { lat: k.lat, lng: k.lng }) > SAME_VENUE_KM) return false
     const b = normalizeForCompare(k.title)

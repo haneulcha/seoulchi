@@ -146,6 +146,11 @@ describe('mergeItems 퍼지 병합', () => {
     expect(mergeItems([[a], [b]])).toHaveLength(2)
   })
 
+  it('같은 소스끼리는 포함 관계로 합치지 않는다', () => {
+    const encore = { ...sc, id: 'sc-2', title: `${sc.title} 앵콜` }
+    expect(mergeItems([[sc, encore]])).toHaveLength(2)
+  })
+
   it('기존 정확 키 병합은 그대로', () => {
     expect(mergeItems([[scEvent], [vsEvent]])).toHaveLength(1)
   })
