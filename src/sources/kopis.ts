@@ -138,7 +138,10 @@ export class KopisSource implements EventSource<KopisListRow, KopisDetail> {
   async fetchList(): Promise<KopisListRow[]> {
     const seen = new Map((await this.listAll()).map((r) => [r.mt20id, r]))
     if (this.cache.lastRun) {
-      this.changed = new Set((await this.listAll({ afterdate: this.cache.lastRun })).map((r) => r.mt20id))
+      // afterdate 경계가 포함인지 모른다 — 하루 앞부터 받는다
+      const r = this.cache.lastRun
+      const afterdate = compact(addDays(`${r.slice(0, 4)}-${r.slice(4, 6)}-${r.slice(6)}`, -1))
+      this.changed = new Set((await this.listAll({ afterdate })).map((row) => row.mt20id))
     }
     this.stats.listed = seen.size
     return [...seen.values()]
@@ -162,6 +165,7 @@ export class KopisSource implements EventSource<KopisListRow, KopisDetail> {
     const { details, venues } = this.cache
     let fetched = 0
     let blocked = false
+    let stale = false
 
     for (const row of rows) {
       const id = row.mt20id
@@ -171,7 +175,7 @@ export class KopisSource implements EventSource<KopisListRow, KopisDetail> {
           if (detail) {
             details[id] = detail
             fetched++
-          }
+          } else if (this.changed.has(id)) stale = true
         }
         const mt10id = details[id]?.mt10id
         if (mt10id && !venues[mt10id]) {
@@ -186,13 +190,13 @@ export class KopisSource implements EventSource<KopisListRow, KopisDetail> {
       }
     }
 
-    // 차단으로 다시 못 받은 변경분은 캐시 구본으로 내보낸다 — 빠지는 것보다 낫다. lastRun을 안 옮기므로 다음 실행이 다시 받는다
+    // 차단·실패로 다시 못 받은 변경분은 캐시 구본으로 내보낸다 — 빠지는 것보다 낫다. lastRun을 안 옮기므로 다음 실행이 다시 받는다
     const out = rows.flatMap((r) => details[r.mt20id] ?? [])
     this.stats = { listed: this.stats.listed, fetched, missing: rows.length - out.length, blocked }
     console.error(
       `[kopis] 목록 ${this.stats.listed} / 상세 호출 ${fetched} / 상세 없음 ${this.stats.missing} / 차단 ${blocked ? '예' : '아니오'}`,
     )
-    if (!blocked) this.cache.lastRun = compact(this.today)
+    if (!blocked && !stale) this.cache.lastRun = compact(this.today)
     return out
   }
 

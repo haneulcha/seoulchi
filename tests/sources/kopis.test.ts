@@ -114,7 +114,7 @@ describe('hydrate', () => {
     const rows = await source.fetchList()
     const details = await source.hydrate(rows, {})
     expect(calls.filter((c) => c.path.startsWith('pblprfr/')).map((c) => c.path)).toEqual(['pblprfr/B', 'pblprfr/C'])
-    expect(calls.find((c) => c.params.afterdate)?.params.afterdate).toBe('20261031')
+    expect(calls.find((c) => c.params.afterdate)?.params.afterdate).toBe('20261030') // 경계를 모르니 하루 앞부터
     expect(details.map((d) => d.mt20id)).toEqual(['A', 'B', 'C'])
   })
 
@@ -154,6 +154,19 @@ describe('hydrate', () => {
     const source = new KopisSource(client, cache, TODAY, HORIZON)
     await source.hydrate(await source.fetchList(), {})
     expect(cache.lastRun).toBe('20261101')
+  })
+
+  it('변경분 재조회가 실패하면 캐시 구본을 내보내고 lastRun은 그대로 둔다', async () => {
+    const cache: KopisCache = { lastRun: '20261031', details: { A: cachedDetail('A') }, venues: { 'FC-A': {} } }
+    const { client } = fakeClient((path, p) => {
+      if (path === 'pblprfr') return p.cpage === 1 ? [listBlock('A')] : []
+      return ['<db><mt20id>A</mt20id></db>'] // prfnm 없음
+    })
+    const source = new KopisSource(client, cache, TODAY, HORIZON)
+    const details = await source.hydrate(await source.fetchList(), {})
+    expect(details).toEqual([cachedDetail('A')])
+    expect(source.stats.blocked).toBe(false)
+    expect(cache.lastRun).toBe('20261031')
   })
 
   it('시설은 캐시에 없을 때만 부른다', async () => {
