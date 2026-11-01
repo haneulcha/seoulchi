@@ -85,7 +85,7 @@ Plan 1이 먼저였던 이유: Task 14에서 측정한 데이터 파일 크기�
 서버 런타임도 DB도 두지 않습니다.
 
 ```
-서울시 문화행사 API + 비짓서울 API
+서울시 문화행사 API + 비짓서울 API + KOPIS 공연 API
         ↓  배치 (하루 1회: 로컬 → GitHub Actions)
    fetch → hydrate → normalize → merge → 컷오프 → emit
         ↓

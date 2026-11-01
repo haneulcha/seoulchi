@@ -18,7 +18,7 @@ export interface EmitPayload {
   places: PlaceItem[]
   cache: DetailCache
   sourceCounts: Record<string, number>
-  /** score 뒤의 선택 경로(스펙 4장) — 8주 카탈로그. 주간 events와 겹치지만 다른 창이다 */
+  /** 컷오프 뒤의 선택 경로(스펙 4장) — 8주 카탈로그. 주간 events와 겹치지만 다른 창이다 */
   catalog: CatalogSelection
   /** 6그룹에 매핑 안 된 원시 카테고리 — meta로 보고된다 */
   unmappedCategories: string[]

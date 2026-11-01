@@ -32,6 +32,7 @@ npm run batch -- 2026-W33    # 특정 주차 (지난 주차는 거절됨)
 |---|---|
 | `SEOUL_API_KEY` | 서울열린데이터광장 인증키 ([발급](https://data.seoul.go.kr)) |
 | `VISITSEOUL_API_KEY` | 비짓서울 API 키 ([발급](https://api.visitseoul.net)) |
+| `KOPIS_API_KEY` | KOPIS 공연예술통합전산망 서비스키 ([발급](https://www.kopis.or.kr)) |
 | `VISITSEOUL_CATEGORIES` | 수집 대상 카테고리 (쉼표 구분). 확정 목록은 `docs/api-findings.md` |
 
 ## 산출물
@@ -42,6 +43,7 @@ npm run batch -- 2026-W33    # 특정 주차 (지난 주차는 거절됨)
 | `data/places.json` | "언제 가도 좋은 곳" 후보 (주에 묶이지 않음) |
 | `data/meta.json` | 갱신 시각, 소스별 건수 |
 | `data/cache/visitseoul.json` | 상세 응답 캐시. 변경분만 다시 받기 위한 것 |
+| `data/cache/kopis.json` | KOPIS 상세·시설 캐시와 `lastRun`. 변경분만 다시 받기 위한 것 |
 
 ## 배치
 
@@ -49,7 +51,7 @@ npm run batch -- 2026-W33    # 특정 주차 (지난 주차는 거절됨)
 
 레포 Settings → Secrets and variables → Actions에 등록해야 합니다:
 
-- Secrets: `SEOUL_API_KEY`, `VISITSEOUL_API_KEY`
+- Secrets: `SEOUL_API_KEY`, `VISITSEOUL_API_KEY`, `KOPIS_API_KEY`
 - Variables: `VISITSEOUL_CATEGORIES`
 
 ## 개발
