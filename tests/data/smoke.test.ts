@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { loadCatalog, loadCurated, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { resolveCurated } from '~/data/resolve'
-import { dayRange, eventsOn, pickShelf } from '~/lib/today'
+import { pickShelf } from '~/lib/shelf'
+import { dayRange, eventsOn } from '~/lib/today'
 import { kstToday } from '~/lib/week'
 import type { CatalogEventIndexItem } from '~/types/files'
 
@@ -27,13 +28,6 @@ describe('실데이터 스모크: 홈이 요구하는 18개 id가 전부 해석�
     expect(resolved.places).toHaveLength(6)
   })
 
-  it('추천 선반의 카드는 전부 이미지가 있다', () => {
-    const today = kstToday(new Date())
-    const home = pickShelf(resolved.picks, today)
-    // 실측상 event 이미지 보유율 100%
-    for (const { item } of home) expect(item.imageUrl).toBeTruthy()
-  })
-
   it('place 6개 카드가 전부 이미지가 있다 — 배치의 자격 필터(스펙 10-1)가 지켜졌다', () => {
     for (const p of resolved.places) expect(p.imageUrl).toBeTruthy()
   })
@@ -55,6 +49,13 @@ describe('실데이터 스모크: 탐색 카탈로그', () => {
     for (const item of index.items) {
       if (item.kind === 'event') expect(ids.has(item.id), item.id).toBe(true)
     }
+  })
+
+  it('추천 선반이 3장이고 전부 이미지가 있다', () => {
+    const events = index.items.filter((i): i is CatalogEventIndexItem => i.kind === 'event')
+    const shelf = pickShelf(events, kstToday(new Date(index.generatedAt)))
+    expect(shelf).toHaveLength(3)
+    for (const item of shelf) expect(item.imageUrl, item.id).toBeTruthy()
   })
 
   it('인덱스의 장소 id가 전부 places.json에서 해석된다', () => {

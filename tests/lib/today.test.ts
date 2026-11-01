@@ -1,26 +1,9 @@
 import { describe, expect, it } from 'vitest'
-import { dayRange, eventsOn, pickShelf, sortByDeadline } from '~/lib/today'
-import type { HomeEntry } from '~/lib/home'
+import { dayRange, eventsOn, sortByDeadline } from '~/lib/today'
 import type { CatalogEventIndexItem } from '~/types/files'
 
 function ev(id: string, startDate: string, endDate: string, time?: string): CatalogEventIndexItem {
   return { id, kind: 'event', title: `행사 ${id}`, group: '보러 가기', place: '어딘가', startDate, endDate, time }
-}
-
-function pick(id: string, startDate: string, endDate: string): HomeEntry {
-  return {
-    item: {
-      id,
-      source: 'seoul-culture',
-      kind: 'event',
-      title: `행사 ${id}`,
-      category: '전시/미술',
-      place: '어딘가',
-      startDate,
-      endDate,
-    },
-    reason: '',
-  }
 }
 
 // 2026-10-28 수, 10-31 토, 11-01 일
@@ -71,18 +54,5 @@ describe('sortByDeadline', () => {
     const input = [ev('b', '2026-10-01', '2026-11-05'), ev('c', '2026-10-01', '2026-10-30'), ev('a', '2026-10-01', '2026-11-05')]
     expect(sortByDeadline(input).map((e) => e.id)).toEqual(['c', 'a', 'b'])
     expect(input.map((e) => e.id)).toEqual(['b', 'c', 'a'])
-  })
-})
-
-describe('pickShelf', () => {
-  it('만료·주말 뒤 시작을 먼저 빼고 3개', () => {
-    // today 2026-10-28(수), 주말 끝 11-01
-    const picks = [pick('만료', '2026-10-01', '2026-10-27'), pick('먼', '2026-11-02', '2026-11-30'),
-      pick('a', '2026-10-01', '2026-11-30'), pick('b', '2026-11-01', '2026-11-01'),
-      pick('c', '2026-10-28', '2026-10-28'), pick('d', '2026-10-01', '2026-12-01')]
-    expect(pickShelf(picks, '2026-10-28').map((p) => p.item.id)).toEqual(['a', 'b', 'c'])
-  })
-  it('남는 게 없으면 빈 배열', () => {
-    expect(pickShelf([pick('만료', '2026-10-01', '2026-10-27')], '2026-10-28')).toEqual([])
   })
 })

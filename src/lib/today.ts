@@ -1,6 +1,5 @@
 import { addDays, weekdayOf } from '~/lib/dates'
 import { eventOpenWeekdays } from '~/lib/event-days'
-import type { HomeEntry } from '~/lib/home'
 import type { CatalogEventIndexItem } from '~/types/files'
 
 export type DayTab = 'today' | 'tomorrow' | 'weekend'
@@ -35,10 +34,4 @@ export function eventsOn(
 /** 곧 끝나는 순. 같으면 id — 결정론 */
 export function sortByDeadline(items: CatalogEventIndexItem[]): CatalogEventIndexItem[] {
   return [...items].sort((a, b) => a.endDate.localeCompare(b.endDate) || a.id.localeCompare(b.id))
-}
-
-/** 추천 선반. 이번 주말까지 하루도 갈 수 없는 추천을 먼저 빼고 앞에서 count개. 요일은 보지 않는다 */
-export function pickShelf(picks: HomeEntry[], today: string, count = 3): HomeEntry[] {
-  const weekendEnd = dayRange('weekend', today).end
-  return picks.filter(({ item }) => item.endDate >= today && item.startDate <= weekendEnd).slice(0, count)
 }
