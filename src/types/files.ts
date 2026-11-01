@@ -50,6 +50,8 @@ export const catalogIndexItemSchema = z.discriminatedUnion('kind', [
     isFree: z.boolean().optional(), imageUrl: z.string().optional(),
     startDate: isoDateSchema, endDate: isoDateSchema,
     time: z.string().optional(), fee: z.string().optional(),
+    minPrice: z.number().int().min(0).optional(),
+    localVenue: z.literal(true).optional(), openRun: z.literal(true).optional(),
   }),
   z.object({
     id: z.string(), kind: z.literal('place'), title: z.string().min(1),

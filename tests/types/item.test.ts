@@ -60,3 +60,13 @@ describe('itemSchema (판별 유니온)', () => {
     expect(() => itemSchema.parse({ ...validEvent, kind: 'venue' })).toThrow()
   })
 })
+
+describe('KOPIS 스키마 확장', () => {
+  const kp = { ...validEvent, id: 'kp-PF304841', source: 'kopis' as const, openRun: true, localVenue: true }
+  it('kp- id와 source kopis, openRun·localVenue를 통과시킨다', () => {
+    expect(eventItemSchema.parse(kp)).toMatchObject({ openRun: true, localVenue: true })
+  })
+  it('kx- id는 거절한다', () => {
+    expect(eventItemSchema.safeParse({ ...kp, id: 'kx-1' }).success).toBe(false)
+  })
+})

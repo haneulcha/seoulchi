@@ -1,9 +1,9 @@
 import { z } from 'zod'
 
-export const sourceNameSchema = z.enum(['seoul-culture', 'visit-seoul'])
+export const sourceNameSchema = z.enum(['seoul-culture', 'visit-seoul', 'kopis'])
 
 /** 상세 라우트 /e/$id에 인코딩 없이 들어가야 하므로 URL-safe 문자만 허용 */
-const idSchema = z.string().regex(/^(sc|vs)-[A-Za-z0-9_-]+$/, 'id는 sc- 또는 vs- 접두사와 URL-safe 문자만 허용')
+const idSchema = z.string().regex(/^(sc|vs|kp)-[A-Za-z0-9_-]+$/, 'id는 sc-, vs-, kp- 접두사와 URL-safe 문자만 허용')
 const isoDateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, '날짜는 YYYY-MM-DD 형식')
 
 export const baseItemSchema = z.object({
@@ -33,6 +33,8 @@ export const eventItemSchema = baseItemSchema.extend({
   endDate: isoDateSchema,
   /** 진행 시간 원문(PRO_TIME). 형식이 제각각이라 파싱하지 않는다 — useTime과 같은 규칙 */
   time: z.string().optional(),
+  openRun: z.boolean().optional(),
+  localVenue: z.boolean().optional(),
 })
 
 /** 0=일요일 ... 6=토요일 */
