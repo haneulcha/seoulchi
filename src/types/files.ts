@@ -31,6 +31,15 @@ export const metaSchema = z.object({
   anomalies: z.number().int().optional(),
   /** 6그룹에 매핑되지 않아 '기타'로 노출 중인 원시 카테고리. 비어 있는 게 정상 */
   unmappedCategories: z.array(z.string()).optional(),
+  /** KOPIS 수집 통계. blocked면 이번 실행에 공연이 빠졌다는 뜻이다 */
+  kopis: z
+    .object({
+      listed: z.number().int(),
+      fetched: z.number().int(),
+      missing: z.number().int(),
+      blocked: z.boolean(),
+    })
+    .optional(),
 })
 
 const isoDateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/)

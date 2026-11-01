@@ -2,6 +2,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import type { CuratedEntry } from '~/pipeline/curate'
 import { buildCatalogIndex, type CatalogSelection } from '~/pipeline/select-catalog'
+import type { KopisStats } from '~/sources/kopis'
 import type { DetailCache } from '~/sources/types'
 import { type EventItem, type PlaceItem } from '~/types/item'
 import {
@@ -26,6 +27,7 @@ export interface EmitPayload {
   catalog: CatalogSelection
   /** 6그룹에 매핑 안 된 원시 카테고리 — meta로 보고된다 */
   unmappedCategories: string[]
+  kopis?: KopisStats
 }
 
 async function writeJson(path: string, data: unknown): Promise<void> {
@@ -100,6 +102,7 @@ export async function emit(
     counts: { events: weekly.items.length, places: places.items.length },
     anomalies: payload.catalog.anomalies.length,
     unmappedCategories: payload.unmappedCategories,
+    kopis: payload.kopis,
   })
 
   // 여기까지 왔으면 전부 유효하다. 이제 쓴다.

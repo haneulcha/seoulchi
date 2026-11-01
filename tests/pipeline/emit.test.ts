@@ -184,6 +184,12 @@ describe('emit: 탐색 카탈로그', () => {
     })
   })
 
+  it('KOPIS 통계를 meta에 그대로 싣는다', async () => {
+    const kopis = { listed: 297, fetched: 3, missing: 0, blocked: false }
+    await emit({ ...basePayload, kopis }, { dataDir: dir, now: NOW })
+    expect(await readJson('meta.json')).toMatchObject({ kopis })
+  })
+
   it('카탈로그에 스키마 위반이 있으면 어떤 파일도 쓰지 않는다', async () => {
     const bad = {
       ...basePayload,

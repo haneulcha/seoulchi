@@ -43,6 +43,7 @@ jobs:
         env:
           SEOUL_API_KEY: ${{ secrets.SEOUL_API_KEY }}
           VISITSEOUL_API_KEY: ${{ secrets.VISITSEOUL_API_KEY }}
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
           VISITSEOUL_CATEGORIES: ${{ vars.VISITSEOUL_CATEGORIES }}
           # 러너에서는 Ollama가 돌지 않는다. 스펙 9-2의 예정된 경로다.
           LLM_PROVIDER: rule
