@@ -32,13 +32,15 @@ export function shelfBonusKm(item: CatalogEventIndexItem, today: string): number
 
 const byId = (a: CatalogEventIndexItem, b: CatalogEventIndexItem) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)
 
-/** 같은 장소는 먼저 나온 1장만 남기고 count장까지 */
+/** 같은 장소(이름이 같거나 좌표가 소수 셋째 자리, 약 100m까지 같음)는 먼저 나온 1장만 남기고 count장까지 */
 function takeDistinctPlaces(sorted: CatalogEventIndexItem[], count: number): CatalogEventIndexItem[] {
   const seen = new Set<string>()
   const out: CatalogEventIndexItem[] = []
   for (const it of sorted) {
-    if (seen.has(it.place)) continue
-    seen.add(it.place)
+    const keys = [it.place]
+    if (it.lat !== undefined && it.lng !== undefined) keys.push(`@${it.lat.toFixed(3)},${it.lng.toFixed(3)}`)
+    if (keys.some((k) => seen.has(k))) continue
+    for (const k of keys) seen.add(k)
     out.push(it)
     if (out.length === count) break
   }
@@ -53,7 +55,7 @@ export function pickShelf(
 ): CatalogEventIndexItem[] {
   const end = dayRange('weekend', today).end
   const bonus = new Map<CatalogEventIndexItem, number>()
-  const pool = items.filter((it) => it.endDate >= today && it.startDate <= end)
+  const pool = items.filter((it) => it.imageUrl && it.endDate >= today && it.startDate <= end) // 선반은 포스터 카드다
   for (const it of pool) bonus.set(it, shelfBonusKm(it, today))
   const b = (it: CatalogEventIndexItem) => bonus.get(it) ?? 0
 

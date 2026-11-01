@@ -5,7 +5,7 @@ import type { CatalogEventIndexItem } from '~/types/files'
 const today = '2026-11-04'
 let n = 0
 const ev = (o: Partial<CatalogEventIndexItem> = {}): CatalogEventIndexItem => ({
-  id: `e${++n}`, kind: 'event', title: 't', group: 'culture', place: `p${n}`,
+  id: `e${++n}`, kind: 'event', title: 't', group: 'culture', place: `p${n}`, imageUrl: 'https://img/x.jpg',
   startDate: '2026-09-01', endDate: '2026-12-31', ...o,
 }) as CatalogEventIndexItem
 const origin = { lat: 37.5, lng: 127 }
@@ -43,6 +43,17 @@ describe('pickShelf', () => {
     const b = ev({ ...at(2), place: 'X' })
     expect(pickShelf([b, a], today, origin)).toEqual([a])
   })
+  it('좌표가 소수 셋째 자리까지 같으면 장소 이름이 달라도 1장', () => {
+    const a = ev({ lat: 37.58, lng: 126.83, place: '서울식물원' })
+    const b = ev({ lat: 37.5801, lng: 126.8302, place: '서울식물원 온실' })
+    expect(pickShelf([a, b], today, origin)).toHaveLength(1)
+  })
+  it('포스터 없는 행사는 빠진다', () => {
+    const noImage = ev({ ...at(1), imageUrl: undefined })
+    const withImage = ev({ ...at(2) })
+    expect(pickShelf([noImage, withImage], today, origin)).toEqual([withImage])
+    expect(pickShelf([ev({ district: ZONES[0]!.districts[0], imageUrl: undefined })], today)).toEqual([])
+  })
   it('좌표 없는 행사는 뒤로', () => {
     const none = ev({ minPrice: 0 })
     const near = ev({ ...at(9) })
@@ -63,11 +74,12 @@ describe('pickShelf', () => {
     expect(pickShelf([ev({}), ev({ district: '없는구' })], today)).toEqual([])
   })
   it('날짜가 바뀌면 결과가 바뀐다 — 같은 날은 같다', () => {
-    const a = ev({ ...at(1), endDate: '2026-11-05' })
-    const b = ev({ ...at(1.2), startDate: '2026-11-06', endDate: '2026-11-30' })
+    // 두 행사 모두 두 날짜에 후보로 남고, 신선도 가산점만 뒤집힌다
+    const a = ev({ ...at(1), startDate: '2026-11-04', endDate: '2026-11-30' })
+    const b = ev({ ...at(1.2), endDate: '2026-11-09' })
     const items = [a, b]
     expect(pickShelf(items, today, origin)).toEqual(pickShelf(items, today, origin))
-    expect(pickShelf(items, today, origin)[0]).toBe(a)
-    expect(pickShelf(items, '2026-11-06', origin)[0]).toBe(b)
+    expect(pickShelf(items, today, origin)).toEqual([a, b])
+    expect(pickShelf(items, '2026-11-08', origin)).toEqual([b, a])
   })
 })

@@ -35,10 +35,11 @@ describe('실데이터 스모크: 탐색 카탈로그', () => {
     }
   })
 
-  it('추천 선반이 3장이고 전부 이미지가 있다', () => {
+  it('추천 선반이 1~3장이고 전부 이미지가 있다', () => {
     const events = index.items.filter((i): i is CatalogEventIndexItem => i.kind === 'event')
     const shelf = pickShelf(events, kstToday(new Date(index.generatedAt)))
-    expect(shelf).toHaveLength(3)
+    expect(shelf.length).toBeGreaterThanOrEqual(1)
+    expect(shelf.length).toBeLessThanOrEqual(3)
     for (const item of shelf) expect(item.imageUrl, item.id).toBeTruthy()
   })
 
