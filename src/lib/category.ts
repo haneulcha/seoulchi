@@ -45,8 +45,7 @@ const GROUP_BY_RAW: Record<string, CategoryGroup> = {
 
 /**
  * 미매핑은 던지지 않고 '기타'를 반환한다.
- * LLM_PROVIDER 규칙("알 수 없으면 던짐")과 다르게 가는 이유: 오타는 사람 실수라
- * 즉시 깨뜨리는 게 맞지만, 서울시가 새 분류를 추가하는 건 정상 운영이고
+ * 서울시가 새 분류를 추가하는 건 정상 운영이고
  * 그때마다 배치가 죽으면 안 된다. 대신 unmappedCategories로 수집해
  * stderr 경고 + meta.json.unmappedCategories로 보고한다(실패를 숨기지 않음).
  */

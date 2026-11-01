@@ -14,10 +14,6 @@
   `github-actions[bot]`이 `data/`를 커밋한 이력이 **8건**입니다(가장 최근 2026-08-29,
   `git log --author=github-actions -- data/`로 2026-09-01 재확인 가능). Actions Secrets는
   이미 등록돼 정상 작동 중입니다.
-- **커밋된 `data/`는 이제 규칙 기반(`rule`)입니다 — "로컬 Ollama로 만들었다"는 서술은 낡았습니다.**
-  `data/meta.json`의 `llmProvider`가 **`"rule"`**입니다(2026-09-01 실측). 이 문서가 예고했던
-  "Actions 이관 = provider 전환"이 이미 일어났다는 뜻입니다. `curated`의 `reason`은 빈
-  문자열이고, "코멘트는 한국어로 달려 있다"고 가정하면 안 됩니다.
 - **산출 데이터(2026-09-01 실측)**: `data/meta.json` — `weekKey` **`2026-W35`**,
   행사 **272**건 · 장소 **733**건, `anomalies` 3건, `unmappedCategories` 0건.
   탐색용 슬림 인덱스 `data/index.json` **975항목**(행사 242 + 장소 733,
@@ -50,8 +46,7 @@
   환경에는 `.env.local`이 **없습니다**(2026-09-01 `find . -maxdepth 1 -name ".env*"`
   확인 — `.env.example`만 있음). 실제 `SEOUL_API_KEY`·`VISITSEOUL_API_KEY`는 GitHub
   저장소의 **Actions Secrets**에만 등록돼 있고, `.github/workflows/batch.yml`이
-  `secrets.SEOUL_API_KEY` / `secrets.VISITSEOUL_API_KEY`로 주입합니다(`LLM_PROVIDER=rule`도
-  같은 워크플로에 하드코딩). 로컬에서 배치를 돌리려면 `.env.local`을 **직접 만들어
+  `secrets.SEOUL_API_KEY` / `secrets.VISITSEOUL_API_KEY`로 주입합니다. 로컬에서 배치를 돌리려면 `.env.local`을 **직접 만들어
   채워야** 하고, 이미 채워진 로컬 키가 있다고 가정하고 계획을 세우면 안 됩니다.
 
 문서는 넷입니다:
@@ -76,7 +71,7 @@ Plan 1이 먼저였던 이유: Task 14에서 측정한 데이터 파일 크기�
 - **탐색 = 8주 인덱스(`data/index.json`) + 클라이언트 필터.** 주 단위 슬라이스는
   탐색과 맞지 않기 때문입니다 — 주간 파일은 주마다 약 80%가 같은 행사이고
   (W35의 272건 중 217건이 2주 전 W33에도 있던 행사, 3주 합집합은 384건, 2026-08-31 실측),
-  미래 시작 행사는 0건입니다(`score`가 주 단위로 자르므로). 인덱스는 목록·필터용
+  미래 시작 행사는 0건입니다(`run.ts`의 컷오프가 주 단위로 자르므로). 인덱스는 목록·필터용
   슬림 투영이고, 전체 필드는 `data/catalog.json`(빌드 타임 전용, 상세 SSG의 원천)이 갖습니다.
 - **현재 산출은 8주가 아니라 축소판입니다.** `data/index.json` 975항목(행사 242 + 장소 733,
   455KB raw / 60.7KB gzip), `data/catalog.json` 242항목 전체 필드(184KB raw / 34.0KB gzip).
@@ -92,7 +87,7 @@ Plan 1이 먼저였던 이유: Task 14에서 측정한 데이터 파일 크기�
 ```
 서울시 문화행사 API + 비짓서울 API
         ↓  배치 (하루 1회: 로컬 → GitHub Actions)
-   fetch → hydrate → normalize → merge → score → curate(LLM) → emit
+   fetch → hydrate → normalize → merge → 컷오프 → emit
         ↓
    data/*.json  (git 커밋 → 자동 재배포)
         ↓
@@ -122,10 +117,6 @@ Plan 1이 먼저였던 이유: Task 14에서 측정한 데이터 파일 크기�
 `place`는 행사에서 이어지는 들를 곳으로 쓰이고(스펙 8장, 별도 설계), 장소 전체 목록은 탐색 탭에 있습니다.
 `place`는 주에 묶이지 않으므로 주간 파일이 아니라 `data/places.json`에 따로 씁니다.
 
-**LLM은 어댑터 뒤에 있습니다.** Ollama(로컬) ↔ 규칙만 사용을 `LLM_PROVIDER`로 전환합니다.
-**Ollama는 GitHub Actions 러너에서 돌지 않으므로, Actions 이관 시점이 곧 provider 전환 시점입니다.**
-이건 결함이 아니라 예정된 경로입니다.
-
 ## 이 프로젝트의 규칙
 
 지키지 않으면 조용히 깨지는 것들입니다.
@@ -138,9 +129,7 @@ Plan 1이 먼저였던 이유: Task 14에서 측정한 데이터 파일 크기�
 | `today`는 순수 함수에 **인자로 넘김**. 내부에서 `new Date()` 금지 | 테스트가 실행 날짜에 따라 깨짐 |
 | 좌표가 없으면 필드를 **생략**. `0`으로 채우지 않음 | (0,0)은 아프리카 앞바다 |
 | `emit`은 **전부 검증한 뒤에** 쓰기 시작 | 조용히 빈 화면이 나가는 것보다 배치가 깨지는 게 나음 |
-| LLM이 고른 id 중 후보에 없는 것은 버리고 규칙 상위로 채움 | 환각 방어 2겹. 화면이 절대 비지 않음 |
 | 영업시간 파싱 실패 시 `null` + 원문 노출 | 실패를 숨기지 않음. 사용자가 직접 판단할 수 있게 |
-| 알 수 없는 `LLM_PROVIDER`는 던짐 | 오타를 폴백으로 삼키면 코멘트가 왜 비었는지 알 수 없음 |
 | `src/data/load.ts`·`src/types/files.ts`와 그 전이 의존(`src/types/item.ts`, `src/lib/category.ts`)은 `~` 별칭 대신 **상대 경로 import**를 유지 | `vite.config.ts`가 프리렌더 목록을 만들려고 `loadIndex`를 직접 import하는데, vite는 자기 config를 로드할 때 tsconfig paths를 풀지 않음. 별칭을 넣으면 빌드가 config 로드 시점에 깨짐. 이 네 파일 중 하나라도 별칭을 쓰면 체인 전체가 끊김 |
 
 ## 명령어

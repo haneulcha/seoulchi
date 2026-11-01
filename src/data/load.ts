@@ -7,13 +7,11 @@ import { resolve } from 'node:path'
 import {
   catalogEventsSchema,
   catalogIndexSchema,
-  curatedFileSchema,
   metaSchema,
   placesFileSchema,
   weeklyEventsSchema,
   type CatalogEventsFile,
   type CatalogIndexFile,
-  type CuratedFile,
   type MetaFile,
   type PlacesFile,
   type WeeklyEventsFile,
@@ -40,10 +38,6 @@ export function loadWeek(weekKey: string, dataDir = 'data'): WeeklyEventsFile {
 
 export function loadPlaces(dataDir = 'data'): PlacesFile {
   return placesFileSchema.parse(readJson(dataDir, 'places.json'))
-}
-
-export function loadCurated(weekKey: string, dataDir = 'data'): CuratedFile {
-  return curatedFileSchema.parse(readJson(dataDir, 'curated', `${weekKey}.json`))
 }
 
 export function loadCatalog(dataDir = 'data'): CatalogEventsFile {

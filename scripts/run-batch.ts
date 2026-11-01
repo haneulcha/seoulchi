@@ -2,7 +2,6 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname } from 'node:path'
 import { addDays } from '~/lib/dates'
 import { isoWeekKey, kstToday } from '~/lib/week'
-import { createProvider } from '~/llm/index'
 import { emit } from '~/pipeline/emit'
 import { runPipeline } from '~/pipeline/run'
 import { createKopisClient } from '~/sources/kopis-api'
@@ -64,8 +63,6 @@ console.log(`대상 주차: ${weekKey} (오늘 ${today} 이후만 수집)\n`)
 
 const cache = await loadCache<DetailCache>(CACHE_PATH, {})
 const kopisCache = await loadCache<KopisCache>(KOPIS_CACHE_PATH, { details: {}, venues: {} })
-const provider = createProvider()
-console.log(`LLM provider: ${provider.name}\n`)
 
 /**
  * 초회 hydrate는 25분 넘게 걸린다(2,199건 × 레이트 리밋 간격).
@@ -94,7 +91,6 @@ try {
       new VisitSeoulSource(requireEnv('VISITSEOUL_API_KEY'), VISIT_SEOUL_CATEGORIES),
       kopis,
     ],
-    provider,
     weekKey,
     today,
     cache,
@@ -114,6 +110,4 @@ await emit(payload)
 await saveCache(KOPIS_CACHE_PATH, kopisCache)
 
 console.log(`
-완료. ${payload.providerName}로 선별.
-  이벤트 ${payload.events.length}건 → 선별 ${payload.curated.length}건
-  장소 ${payload.places.length}건 → 노출 ${payload.curatedPlaces.length}건`)
+완료. 이벤트 ${payload.events.length}건, 장소 ${payload.places.length}건`)

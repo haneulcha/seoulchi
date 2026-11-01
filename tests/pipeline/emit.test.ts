@@ -59,9 +59,6 @@ const basePayload = {
   weekKey: '2026-W33',
   events: [event],
   places: [place],
-  curated: [{ id: 'sc-a', reason: '무료 전시' }],
-  curatedPlaces: ['vs-b'],
-  providerName: 'ollama',
   cache: {},
   sourceCounts: { 'seoul-culture': 1, 'visit-seoul': 1 },
   catalog: {
@@ -93,20 +90,10 @@ describe('emit', () => {
     expect((await readJson('places.json')).items[0].id).toBe('vs-b')
   })
 
-  it('큐레이션 파일에 선별과 장소를 함께 쓴다', async () => {
-    await emit(basePayload, { dataDir: dir, now: new Date('2026-08-13T00:00:00Z') })
-    expect(await readJson('curated/2026-W33.json')).toMatchObject({
-      weekKey: '2026-W33',
-      picks: [{ id: 'sc-a', reason: '무료 전시' }],
-      places: ['vs-b'],
-    })
-  })
-
-  it('meta에 갱신 시각과 provider를 쓴다', async () => {
+  it('meta에 갱신 시각과 소스별 건수를 쓴다', async () => {
     await emit(basePayload, { dataDir: dir, now: new Date('2026-08-13T00:00:00Z') })
     expect(await readJson('meta.json')).toMatchObject({
       updatedAt: '2026-08-13T00:00:00.000Z',
-      llmProvider: 'ollama',
       sourceCounts: { 'seoul-culture': 1 },
     })
   })
@@ -128,32 +115,6 @@ describe('emit', () => {
       emit(bad, { dataDir: dir, now: new Date('2026-08-13T00:00:00Z') }),
     ).rejects.toThrow()
     await expect(readJson('events/2026-W33.json')).rejects.toThrow()
-  })
-
-  it('큐레이션 id가 이벤트 목록에 없으면 던진다', async () => {
-    const bad = { ...basePayload, curated: [{ id: 'sc-없음', reason: 'x' }] }
-    await expect(
-      emit(bad, { dataDir: dir, now: new Date('2026-08-13T00:00:00Z') }),
-    ).rejects.toThrow(/큐레이션/)
-  })
-
-  it('선정된 장소 id가 places에 없으면 던진다', async () => {
-    const bad = { ...basePayload, curatedPlaces: ['vs-없음'] }
-    await expect(
-      emit(bad, { dataDir: dir, now: new Date('2026-08-13T00:00:00Z') }),
-    ).rejects.toThrow(/장소/)
-  })
-
-  it('참조 무결성 위반이면 어떤 파일도 쓰지 않는다', async () => {
-    // 검증은 전부 통과했더라도 참조가 깨지면 한 글자도 쓰면 안 된다.
-    // 앞의 스키마 테스트는 events만 확인하므로 places.json/meta.json까지 본다.
-    const bad = { ...basePayload, curated: [{ id: 'sc-없음', reason: 'x' }] }
-    await expect(
-      emit(bad, { dataDir: dir, now: new Date('2026-08-13T00:00:00Z') }),
-    ).rejects.toThrow()
-    for (const f of ['events/2026-W33.json', 'places.json', 'curated/2026-W33.json', 'meta.json']) {
-      await expect(readJson(f)).rejects.toThrow()
-    }
   })
 })
 

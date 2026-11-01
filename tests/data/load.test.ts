@@ -2,7 +2,7 @@ import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
-import { loadCatalog, loadCurated, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
+import { loadCatalog, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 
 const validEvent = {
   id: 'sc-1',
@@ -26,7 +26,6 @@ const validPlace = {
 
 const validMeta = {
   updatedAt: '2026-08-14T10:59:22.232Z',
-  llmProvider: 'rule',
   sourceCounts: { 'seoul-culture': 1 },
   weekKey: '2026-W34',
   counts: { events: 1, places: 1 },
@@ -38,17 +37,12 @@ describe('data 로더', () => {
   beforeEach(async () => {
     dir = await mkdtemp(join(tmpdir(), 'seoulchi-load-'))
     await mkdir(join(dir, 'events'), { recursive: true })
-    await mkdir(join(dir, 'curated'), { recursive: true })
     await writeFile(join(dir, 'meta.json'), JSON.stringify(validMeta))
     await writeFile(
       join(dir, 'events', '2026-W34.json'),
       JSON.stringify({ weekKey: '2026-W34', items: [validEvent] }),
     )
     await writeFile(join(dir, 'places.json'), JSON.stringify({ items: [validPlace] }))
-    await writeFile(
-      join(dir, 'curated', '2026-W34.json'),
-      JSON.stringify({ weekKey: '2026-W34', picks: [{ id: 'sc-1', reason: '' }], places: ['vs-KOP1'] }),
-    )
     await writeFile(
       join(dir, 'catalog.json'),
       JSON.stringify({ horizonEnd: '2026-10-26', items: [validEvent] }),
@@ -82,12 +76,6 @@ describe('data 로더', () => {
 
   it('loadPlaces가 places.json을 읽는다', () => {
     expect(loadPlaces(dir).items[0]!.kind).toBe('place')
-  })
-
-  it('loadCurated가 큐레이션 파일을 읽는다', () => {
-    const curated = loadCurated('2026-W34', dir)
-    expect(curated.picks).toHaveLength(1)
-    expect(curated.places).toEqual(['vs-KOP1'])
   })
 
   it('스키마가 어긋나면 던진다 — 조용히 이상한 화면을 만들지 않는다', async () => {

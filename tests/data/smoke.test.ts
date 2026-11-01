@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { loadCatalog, loadCurated, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
-import { resolveCurated } from '~/data/resolve'
+import { loadCatalog, loadIndex, loadMeta, loadPlaces, loadWeek } from '~/data/load'
 import { pickShelf } from '~/lib/shelf'
 import { dayRange, eventsOn } from '~/lib/today'
 import { kstToday } from '~/lib/week'
@@ -11,25 +10,10 @@ import type { CatalogEventIndexItem } from '~/types/files'
  * 의도적으로 오늘 날짜에 묶여 있다 — 빌드가 그렇게 하기 때문.
  * 배치가 멈춰 데이터가 묵으면 여기가 깨진다. 그게 정확한 신호다.
  */
-describe('실데이터 스모크: 홈이 요구하는 18개 id가 전부 해석된다', () => {
-  const meta = loadMeta()
-  const week = loadWeek(meta.weekKey)
-  const curated = loadCurated(meta.weekKey)
-  const places = loadPlaces()
-  const resolved = resolveCurated(curated, week.items, places.items)
-
+describe('실데이터 스모크: 주간 파일', () => {
   it('주간 파일의 weekKey가 meta와 일치한다', () => {
-    expect(week.weekKey).toBe(meta.weekKey)
-    expect(curated.weekKey).toBe(meta.weekKey)
-  })
-
-  it('curated places 6개가 전부 places.json에서 해석된다', () => {
-    expect(curated.places).toHaveLength(6)
-    expect(resolved.places).toHaveLength(6)
-  })
-
-  it('place 6개 카드가 전부 이미지가 있다 — 배치의 자격 필터(스펙 10-1)가 지켜졌다', () => {
-    for (const p of resolved.places) expect(p.imageUrl).toBeTruthy()
+    const meta = loadMeta()
+    expect(loadWeek(meta.weekKey).weekKey).toBe(meta.weekKey)
   })
 })
 
