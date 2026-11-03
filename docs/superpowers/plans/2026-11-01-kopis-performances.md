@@ -36,6 +36,7 @@
 - **`minPrice`는 인덱스 투영에서 파생한다.** 스펙은 공통 스키마 필드로 적었지만, `district`처럼 `buildCatalogIndex`에서 `isFree ? 0 : parseMinPrice(fee)`로 만들면 소스 코드를 건드리지 않고 같은 값이 인덱스에 실린다. `localVenue`와 `openRun`은 KOPIS 시설·목록에만 있는 정보라 `EventItem` 선택 필드로 둔다(`openRun`은 신선도 규칙 때문에 추가).
 - **KOPIS 캐시는 소스가 직접 들고 있다.** `DetailCache`는 비짓서울 모양이라 섞지 않는다. `hydrate`의 `cache` 인자는 무시하고, 생성자로 받은 `KopisCache`를 제자리에서 갱신한다. 저장은 `run-batch.ts`가 한다.
 - **`lastRun`은 차단 없이 끝난 실행에서만 오늘로 옮긴다.** 막힌 실행이 옮기면 그날 `afterdate`로 잡힌 변경분을 다음 실행이 놓친다.
+- **목록 차단은 던지지 않는다(2026-11-03 사용자 결정, Task 4 테스트를 뒤집음).** 초기 적재 때 막힌 동안 목록도 막혔다. 캐시에서 지평 안 공연을 내보내고 단건은 부르지 않는다. 차단이 아닌 목록 오류는 그대로 던진다.
 
 ## Review Focus
 

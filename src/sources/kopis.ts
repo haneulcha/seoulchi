@@ -114,6 +114,7 @@ export class KopisSource implements EventSource<KopisListRow, KopisDetail> {
   readonly name = 'kopis'
   stats: KopisStats = { listed: 0, fetched: 0, missing: 0, blocked: false }
   private changed = new Set<string>()
+  private listBlocked = false
 
   constructor(
     private readonly client: KopisClient,
@@ -122,7 +123,7 @@ export class KopisSource implements EventSource<KopisListRow, KopisDetail> {
     private readonly horizonEnd: string,
   ) {}
 
-  /** 목록 호출의 차단·오류·필드 변경은 그대로 던진다 — 키 만료와 파라미터 오류가 여기서 드러난다 */
+  /** 목록 호출의 오류·필드 변경은 그대로 던진다 — 키 만료와 파라미터 오류가 여기서 드러난다. 차단만 fetchList가 받는다 */
   private async listAll(extra: Record<string, string> = {}): Promise<KopisListRow[]> {
     const rows: KopisListRow[] = []
     for (const window of listWindows(this.today, this.horizonEnd)) {
@@ -135,13 +136,31 @@ export class KopisSource implements EventSource<KopisListRow, KopisDetail> {
     return rows
   }
 
+  /** 목록이 차단되면 KOPIS만 건너뛴다 — 배치를 멈추면 서울시·비짓서울 갱신까지 멈춘다. 단건도 부르지 않는다 */
+  private onListBlocked(error: unknown): void {
+    if (!(error instanceof KopisBlockedError)) throw error
+    console.warn(`[kopis] 목록 차단 — 캐시로 내보낸다: ${String(error)}`)
+    this.listBlocked = true
+  }
+
   async fetchList(): Promise<KopisListRow[]> {
-    const seen = new Map((await this.listAll()).map((r) => [r.mt20id, r]))
-    if (this.cache.lastRun) {
+    let rows: KopisListRow[]
+    try {
+      rows = await this.listAll()
+    } catch (error) {
+      this.onListBlocked(error)
+      rows = Object.values(this.cache.details).filter((d) => toIso(d.prfpdto) >= this.today && toIso(d.prfpdfrom) <= this.horizonEnd)
+    }
+    const seen = new Map(rows.map((r) => [r.mt20id, r]))
+    if (this.cache.lastRun && !this.listBlocked) {
       // afterdate 경계가 포함인지 모른다 — 하루 앞부터 받는다
       const r = this.cache.lastRun
       const afterdate = compact(addDays(`${r.slice(0, 4)}-${r.slice(4, 6)}-${r.slice(6)}`, -1))
-      this.changed = new Set((await this.listAll({ afterdate })).map((row) => row.mt20id))
+      try {
+        this.changed = new Set((await this.listAll({ afterdate })).map((row) => row.mt20id))
+      } catch (error) {
+        this.onListBlocked(error)
+      }
     }
     this.stats.listed = seen.size
     return [...seen.values()]
@@ -164,10 +183,10 @@ export class KopisSource implements EventSource<KopisListRow, KopisDetail> {
   async hydrate(rows: KopisListRow[], _cache: DetailCache): Promise<KopisDetail[]> {
     const { details, venues } = this.cache
     let fetched = 0
-    let blocked = false
+    let blocked = this.listBlocked
     let stale = false
 
-    for (const row of rows) {
+    for (const row of blocked ? [] : rows) {
       const id = row.mt20id
       try {
         if (!details[id] || this.changed.has(id)) {

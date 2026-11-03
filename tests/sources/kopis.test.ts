@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { KopisBlockedError, parseKopisResponse, type KopisClient } from '~/sources/kopis-api'
+import { KopisApiError, KopisBlockedError, parseKopisResponse, type KopisClient } from '~/sources/kopis-api'
 import { KopisSource, listWindows, type KopisCache, type KopisDetail } from '~/sources/kopis'
 import { eventItemSchema } from '~/types/item'
 
@@ -82,11 +82,39 @@ describe('fetchList', () => {
     expect(rows).toHaveLength(103)
   })
 
-  it('목록 차단·오류는 던진다', async () => {
-    const { client } = fakeClient(() => {
-      throw new KopisBlockedError(200)
+  it('목록이 차단되면 캐시에서 지평 안 공연을 내보내고, 단건은 부르지 않고, lastRun은 그대로 둔다', async () => {
+    const ended = { ...cachedDetail('Z'), prfpdfrom: '2026.10.01', prfpdto: '2026.10.20' }
+    const cache: KopisCache = { lastRun: '20261031', details: { A: cachedDetail('A'), Z: ended }, venues: {} }
+    const { client, calls } = fakeClient(() => {
+      throw new KopisBlockedError(400)
     })
-    await expect(new KopisSource(client, emptyCache(), TODAY, HORIZON).fetchList()).rejects.toThrow(KopisBlockedError)
+    const source = new KopisSource(client, cache, TODAY, HORIZON)
+    const details = await source.hydrate(await source.fetchList(), {})
+    expect(details.map((d) => d.mt20id)).toEqual(['A'])
+    expect(calls).toHaveLength(1)
+    expect(source.stats).toEqual({ listed: 1, fetched: 0, missing: 0, blocked: true })
+    expect(cache.lastRun).toBe('20261031')
+  })
+
+  it('afterdate 목록만 차단되면 전체 목록은 쓰고 단건은 부르지 않는다', async () => {
+    const cache: KopisCache = { lastRun: '20261031', details: { A: cachedDetail('A') }, venues: { 'FC-A': {} } }
+    const { client, calls } = fakeClient((path, p) => {
+      if (p.afterdate) throw new KopisBlockedError(400)
+      return p.cpage === 1 ? ['A', 'B'].map(listBlock) : []
+    })
+    const source = new KopisSource(client, cache, TODAY, HORIZON)
+    const details = await source.hydrate(await source.fetchList(), {})
+    expect(details.map((d) => d.mt20id)).toEqual(['A'])
+    expect(calls.some((c) => c.path !== 'pblprfr')).toBe(false)
+    expect(source.stats).toMatchObject({ listed: 2, missing: 1, blocked: true })
+    expect(cache.lastRun).toBe('20261031')
+  })
+
+  it('차단이 아닌 목록 오류는 던진다 — 키 만료가 여기서 드러난다', async () => {
+    const { client } = fakeClient(() => {
+      throw new KopisApiError('02', '키 미등록')
+    })
+    await expect(new KopisSource(client, emptyCache(), TODAY, HORIZON).fetchList()).rejects.toThrow(KopisApiError)
   })
 
   it('목록 필드가 바뀌면 던진다', async () => {
