@@ -50,9 +50,16 @@ describe('eventsOn', () => {
 })
 
 describe('sortByDeadline', () => {
-  it('종료일 → id, 원본 불변', () => {
+  it('종료일 순, 원본 불변', () => {
     const input = [ev('b', '2026-10-01', '2026-11-05'), ev('c', '2026-10-01', '2026-10-30'), ev('a', '2026-10-01', '2026-11-05')]
-    expect(sortByDeadline(input).map((e) => e.id)).toEqual(['c', 'a', 'b'])
+    expect(sortByDeadline(input)[0]!.id).toBe('c')
     expect(input.map((e) => e.id)).toEqual(['b', 'c', 'a'])
+  })
+
+  it('종료일이 같으면 입력 순서와 무관하게 같은 순서이고, 한 출처가 앞을 독차지하지 않는다', () => {
+    const same = [...Array(10)].flatMap((_, i) => [ev(`kp-PF30${i}`, '2026-10-01', '2026-11-05'), ev(`sc-x${i}q`, '2026-10-01', '2026-11-05')])
+    const sorted = sortByDeadline(same).map((e) => e.id)
+    expect(sortByDeadline([...same].reverse()).map((e) => e.id)).toEqual(sorted)
+    expect(new Set(sorted.slice(0, 10).map((id) => id.slice(0, 2))).size).toBe(2)
   })
 })

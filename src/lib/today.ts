@@ -31,7 +31,16 @@ export function eventsOn(
   })
 }
 
-/** 곧 끝나는 순. 같으면 id — 결정론 */
+/** id 해시(FNV-1a + murmur3 마무리 섞기). id 문자열 순은 접두어(kp- < sc- < vs-) 때문에 한 출처를 통째로 앞에 세운다 */
+function idHash(id: string): number {
+  let h = 0x811c9dc5
+  for (let i = 0; i < id.length; i++) h = Math.imul(h ^ id.charCodeAt(i), 0x01000193)
+  h = Math.imul(h ^ (h >>> 16), 0x85ebca6b)
+  h = Math.imul(h ^ (h >>> 13), 0xc2b2ae35)
+  return (h ^ (h >>> 16)) >>> 0
+}
+
+/** 곧 끝나는 순. 같으면 id 해시 — 결정론이면서 출처가 섞인다 */
 export function sortByDeadline(items: CatalogEventIndexItem[]): CatalogEventIndexItem[] {
-  return [...items].sort((a, b) => a.endDate.localeCompare(b.endDate) || a.id.localeCompare(b.id))
+  return [...items].sort((a, b) => a.endDate.localeCompare(b.endDate) || idHash(a.id) - idHash(b.id))
 }
