@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest'
 import { runPipeline } from '~/pipeline/run'
-import { RuleOnlyProvider } from '~/llm/rule-only'
 import type { EventSource } from '~/sources/types'
 import type { Item } from '~/types/item'
 
@@ -42,12 +41,9 @@ describe('runPipeline', () => {
       fakeSource('seoul-culture', [scEvent, outOfWeek, endedEarlyThisWeek]),
       fakeSource('visit-seoul', [vsPlace]),
     ],
-    provider: new RuleOnlyProvider(),
     weekKey: '2026-W33',
     today: '2026-08-13',
     cache: {},
-    curatedCount: 12,
-    placeCount: 6,
   }
 
   it('이번 주 이벤트만 events에 담는다', async () => {
@@ -70,26 +66,11 @@ describe('runPipeline', () => {
     expect(out.places.map((p) => p.id)).toEqual(['vs-b'])
   })
 
-  it('큐레이션 id가 events 안에 있다', async () => {
-    const out = await runPipeline(opts)
-    const eventIds = new Set(out.events.map((e) => e.id))
-    for (const pick of out.curated) expect(eventIds.has(pick.id)).toBe(true)
-  })
-
-  it('선정된 장소 id가 places 안에 있다', async () => {
-    const out = await runPipeline(opts)
-    const placeIds = new Set(out.places.map((p) => p.id))
-    for (const id of out.curatedPlaces) expect(placeIds.has(id)).toBe(true)
-  })
-
   it('소스별 건수를 센다', async () => {
     const out = await runPipeline(opts)
     expect(out.sourceCounts).toMatchObject({ 'seoul-culture': 3, 'visit-seoul': 1 })
   })
 
-  it('provider 이름을 담는다', async () => {
-    expect((await runPipeline(opts)).providerName).toBe('rule')
-  })
 })
 
 /** 주간 창(W33) 밖이지만 8주 지평(today 08-13 기준 ~10-08) 안의 미래 행사 */
@@ -111,12 +92,9 @@ describe('runPipeline: 탐색 카탈로그', () => {
       fakeSource('seoul-culture', [scEvent, outOfWeek, endedEarlyThisWeek, futureEvent, farFuture]),
       fakeSource('visit-seoul', [vsPlace]),
     ],
-    provider: new RuleOnlyProvider(),
     weekKey: '2026-W33',
     today: '2026-08-13',
     cache: {},
-    curatedCount: 12,
-    placeCount: 6,
   }
 
   it('카탈로그는 주간 창 밖의 미래 행사를 담는다 — 주간 events에는 없다', async () => {

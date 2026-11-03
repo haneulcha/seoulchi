@@ -1,6 +1,5 @@
 import { addDays, weekdayOf } from '~/lib/dates'
 import { eventOpenWeekdays } from '~/lib/event-days'
-import type { HomeEntry } from '~/lib/home'
 import type { CatalogEventIndexItem } from '~/types/files'
 
 export type DayTab = 'today' | 'tomorrow' | 'weekend'
@@ -32,13 +31,16 @@ export function eventsOn(
   })
 }
 
-/** 곧 끝나는 순. 같으면 id — 결정론 */
-export function sortByDeadline(items: CatalogEventIndexItem[]): CatalogEventIndexItem[] {
-  return [...items].sort((a, b) => a.endDate.localeCompare(b.endDate) || a.id.localeCompare(b.id))
+/** id 해시(FNV-1a + murmur3 마무리 섞기). id 문자열 순은 접두어(kp- < sc- < vs-) 때문에 한 출처를 통째로 앞에 세운다 */
+function idHash(id: string): number {
+  let h = 0x811c9dc5
+  for (let i = 0; i < id.length; i++) h = Math.imul(h ^ id.charCodeAt(i), 0x01000193)
+  h = Math.imul(h ^ (h >>> 16), 0x85ebca6b)
+  h = Math.imul(h ^ (h >>> 13), 0xc2b2ae35)
+  return (h ^ (h >>> 16)) >>> 0
 }
 
-/** 추천 선반. 이번 주말까지 하루도 갈 수 없는 추천을 먼저 빼고 앞에서 count개. 요일은 보지 않는다 */
-export function pickShelf(picks: HomeEntry[], today: string, count = 3): HomeEntry[] {
-  const weekendEnd = dayRange('weekend', today).end
-  return picks.filter(({ item }) => item.endDate >= today && item.startDate <= weekendEnd).slice(0, count)
+/** 곧 끝나는 순. 같으면 id 해시 — 결정론이면서 출처가 섞인다 */
+export function sortByDeadline(items: CatalogEventIndexItem[]): CatalogEventIndexItem[] {
+  return [...items].sort((a, b) => a.endDate.localeCompare(b.endDate) || idHash(a.id) - idHash(b.id))
 }

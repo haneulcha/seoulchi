@@ -16,9 +16,7 @@ import { loadIndex } from './src/data/load'
  * 항목은 `{ path }` 객체 배열이다(문자열 배열이 아님).
  *
  * crawlLinks는 유지한다 — 같은 큐에 병행되는 두 번째 시드다(prerender.js:57, :97-107).
- * 실측(2026-08-30 스냅샷): 홈이 실제로 링크하는 id는 이 명시 목록의 부분집합이었다 —
- * pickHomeItems(src/lib/home.ts)가 curated pick을 `endDate >= today`로 한 번 더 거르므로,
- * 카탈로그에서 같은 기준으로 빠진 id는 홈에도 나타나지 않는다(크롤이 추가로 주울 게 없었다).
+ * 홈 선반은 인덱스(src/lib/shelf.ts)에서 고르므로 홈이 링크하는 id는 이 명시 목록의 부분집합이다.
  * 그래도 유지하는 이유는 방어선이다: 데이터 스냅샷이 바뀌어 홈이 인덱스 밖 id를 링크하게 되면
  * (예: 필터 기준이 어긋나는 미래 변경) crawlLinks 없이는 그 자리가 그대로 404가 되고
  * failOnError 빌드가 깨진다 — 링크 대상은 항상 페이지가 있어야 한다는 불변식의 안전망이다.
@@ -92,7 +90,7 @@ export default defineConfig({
       prerender: {
         enabled: true,
         // 명시 목록(pages)과 병행되는 두 번째 시드. 홈이 링크하지만 인덱스에는
-        // 없는 id(이상치·필터링된 curated)를 여기서 잡는다 — 링크가 전혀 없는 id는
+        // 없는 id(이상치)를 여기서 잡는다 — 링크가 전혀 없는 id는
         // 여전히 크롤되지 않으므로 자동으로 404다
         crawlLinks: true,
         // 상세 한 페이지가 깨졌는데 조용히 넘어가면 배포 후에야 안다. 빌드에서 깨뜨린다

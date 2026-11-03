@@ -123,7 +123,7 @@ describe('buildCatalogIndex', () => {
       id: 'sc-full', kind: 'event', title: '전시', group: '보러 가기', district: '중구',
       place: '시립미술관', lat: 37.56, lng: 126.97, isFree: true,
       imageUrl: 'https://example.com/p.jpg', startDate: '2026-09-03', endDate: '2026-11-30',
-      time: '10:00~18:00', fee: '무료',
+      time: '10:00~18:00', fee: '무료', minPrice: 0,
     })
     // 상세 전용 필드는 슬림에 없다 — payload 61KB가 200KB가 되는 것을 막는 결정(스펙 2장)
     expect(item).not.toHaveProperty('address')
@@ -165,5 +165,21 @@ describe('buildCatalogIndex', () => {
     const noDistrict: EventItem = { ...fullEvent(), district: undefined, address: '서울 성동구 뚝섬로 273' }
     const [item] = build([noDistrict], []).items
     expect(item).toHaveProperty('district', '성동구')
+  })
+})
+
+describe('buildCatalogIndex KOPIS 필드', () => {
+  const index = (extra: Partial<EventItem>) =>
+    buildCatalogIndex(selectCatalog([{ ...ev('sc-1', '2026-08-31', '2026-09-02'), ...extra }], [], TODAY), 'g').items[0]!
+  it('minPrice: 무료 0, fee 파싱, 없으면 키 없음', () => {
+    expect(index({ isFree: true })).toMatchObject({ minPrice: 0 })
+    expect(index({ fee: '전석 50,000원' })).toMatchObject({ minPrice: 50000 })
+    expect('minPrice' in index({})).toBe(false)
+  })
+  it('localVenue·openRun은 true만 담는다', () => {
+    expect(index({ localVenue: true, openRun: true })).toMatchObject({ localVenue: true, openRun: true })
+    const off = index({ localVenue: false })
+    expect('localVenue' in off).toBe(false)
+    expect('openRun' in off).toBe(false)
   })
 })

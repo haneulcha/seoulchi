@@ -1,9 +1,11 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname } from 'node:path'
+import { addDays } from '~/lib/dates'
 import { isoWeekKey, kstToday } from '~/lib/week'
-import { createProvider } from '~/llm/index'
 import { emit } from '~/pipeline/emit'
 import { runPipeline } from '~/pipeline/run'
+import { createKopisClient } from '~/sources/kopis-api'
+import { type KopisCache, KopisSource } from '~/sources/kopis'
 import { SeoulCultureSource } from '~/sources/seoul-culture'
 import type { DetailCache } from '~/sources/types'
 import { VisitSeoulSource } from '~/sources/visit-seoul'
@@ -18,21 +20,22 @@ function requireEnv(name: string): string {
 }
 
 const CACHE_PATH = 'data/cache/visitseoul.json'
+const KOPIS_CACHE_PATH = 'data/cache/kopis.json'
 /** 중간 저장 주기. 죽었을 때 잃는 양의 상한이다. */
 const CACHE_SAVE_INTERVAL_MS = 30_000
 
-async function loadCache(path: string): Promise<DetailCache> {
+async function loadCache<T extends object>(path: string, empty: T): Promise<T> {
   try {
-    const cache = JSON.parse(await readFile(path, 'utf8')) as DetailCache
+    const cache = JSON.parse(await readFile(path, 'utf8')) as T
     console.log(`캐시 ${Object.keys(cache).length}건 로드`)
     return cache
   } catch {
     console.log('캐시 없음 — 처음부터 수집합니다')
-    return {}
+    return empty
   }
 }
 
-async function saveCache(path: string, cache: DetailCache): Promise<void> {
+async function saveCache(path: string, cache: object): Promise<void> {
   try {
     await mkdir(dirname(path), { recursive: true })
     // emit과 같은 pretty 형식으로 쓴다. 형식이 엇갈리면 실패한 실행이 compact를 남기고
@@ -58,9 +61,8 @@ if (weekKey < isoWeekKey(now)) {
 
 console.log(`대상 주차: ${weekKey} (오늘 ${today} 이후만 수집)\n`)
 
-const cache = await loadCache(CACHE_PATH)
-const provider = createProvider()
-console.log(`LLM provider: ${provider.name}\n`)
+const cache = await loadCache<DetailCache>(CACHE_PATH, {})
+const kopisCache = await loadCache<KopisCache>(KOPIS_CACHE_PATH, { details: {}, venues: {} })
 
 /**
  * 초회 hydrate는 25분 넘게 걸린다(2,199건 × 레이트 리밋 간격).
@@ -70,7 +72,16 @@ console.log(`LLM provider: ${provider.name}\n`)
  */
 const cacheSaver = setInterval(() => {
   void saveCache(CACHE_PATH, cache)
+  void saveCache(KOPIS_CACHE_PATH, kopisCache)
 }, CACHE_SAVE_INTERVAL_MS)
+
+// 카탈로그 창(select-catalog 기본 8주)과 같은 끝
+const kopis = new KopisSource(
+  createKopisClient(requireEnv('KOPIS_API_KEY')),
+  kopisCache,
+  today,
+  addDays(today, 8 * 7),
+)
 
 let payload
 try {
@@ -78,8 +89,8 @@ try {
     sources: [
       new SeoulCultureSource(requireEnv('SEOUL_API_KEY')),
       new VisitSeoulSource(requireEnv('VISITSEOUL_API_KEY'), VISIT_SEOUL_CATEGORIES),
+      kopis,
     ],
-    provider,
     weekKey,
     today,
     cache,
@@ -88,14 +99,15 @@ try {
   clearInterval(cacheSaver)
   // 죽더라도 여기까지 받아둔 상세는 남긴다. 다음 실행이 이어받는다.
   await saveCache(CACHE_PATH, cache)
+  await saveCache(KOPIS_CACHE_PATH, kopisCache)
   console.error(`\n실패. 수집한 상세 ${Object.keys(cache).length}건은 캐시에 남겼습니다.`)
   throw error
 }
 clearInterval(cacheSaver)
 
+payload.kopis = kopis.stats
 await emit(payload)
+await saveCache(KOPIS_CACHE_PATH, kopisCache)
 
 console.log(`
-완료. ${payload.providerName}로 선별.
-  이벤트 ${payload.events.length}건 → 선별 ${payload.curated.length}건
-  장소 ${payload.places.length}건 → 노출 ${payload.curatedPlaces.length}건`)
+완료. 이벤트 ${payload.events.length}건, 장소 ${payload.places.length}건`)

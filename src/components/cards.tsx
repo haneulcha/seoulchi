@@ -2,7 +2,7 @@ import { Link } from '@tanstack/react-router'
 import type { ReactNode } from 'react'
 import { ItemImage } from '~/components/ItemImage'
 import { cardFacts, splitTitle, type CardFacts } from '~/lib/card-facts'
-import type { HomeEntry } from '~/lib/home'
+import type { CatalogEventIndexItem } from '~/types/files'
 
 /**
  * 행사 이미지는 거의 전부 세로 포스터다 — 실측한 원본 비율이 0.67~0.71에 몰려 있다.
@@ -56,21 +56,18 @@ function FactLines({
  * 예전 모바일 구조(96px 포스터 + 텍스트 가로 행)는 아래 목록 행에 썸네일이 돌아오면서 크기만 다른
  * 같은 모양이 됐다. 위계는 크기가 아니라 **모양**(선반 대 목록)으로 만든다.
  */
-export function EventPosterCard({ entry, today }: { entry: HomeEntry; today: string }) {
-  const e = entry.item
+export function EventPosterCard({ item: e, today }: { item: CatalogEventIndexItem; today: string }) {
   return (
     <Link to="/e/$id" params={{ id: e.id }} className="block w-40 shrink-0 snap-start md:w-48">
       <ItemImage
         src={e.imageUrl}
         alt=""
-        category={e.category}
+        category={e.group}
         className={`${POSTER} w-full rounded-100 object-cover`}
       />
       <div className="mt-100 min-w-0">
         <CardTitle title={e.title} className="line-clamp-2 text-title-row" />
         <FactLines facts={cardFacts(e, { today })} />
-        {/* 코멘트는 있을 때만 — 운영 배치(rule)는 reason이 빈 문자열이다. 빈 자리를 남기지 않는다 */}
-        {entry.reason !== '' && <p className="mt-100 line-clamp-2 text-body text-ink-subtle">{entry.reason}</p>}
       </div>
     </Link>
   )

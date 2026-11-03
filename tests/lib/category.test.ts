@@ -81,3 +81,13 @@ describe('unmappedCategories', () => {
     expect(unmappedCategories([{ category: '도시공원' }])).toEqual([])
   })
 })
+
+describe('KOPIS 장르', () => {
+  it.each(['연극', '뮤지컬', '대중음악', '서양음악(클래식)', '한국음악(국악)', '복합', '무용(서양/한국무용)', '서커스/마술', '대중무용'])(
+    '%s는 보러 가기',
+    (g) => {
+      expect(categoryGroup(g)).toBe('보러 가기')
+      expect(isKnownCategory(g)).toBe(true)
+    },
+  )
+})

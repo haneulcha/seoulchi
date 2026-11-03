@@ -15,15 +15,8 @@ export const placesFileSchema = z.object({
   items: z.array(placeItemSchema),
 })
 
-export const curatedFileSchema = z.object({
-  weekKey: weekKeySchema,
-  picks: z.array(z.object({ id: z.string(), reason: z.string() })),
-  places: z.array(z.string()),
-})
-
 export const metaSchema = z.object({
   updatedAt: z.string(),
-  llmProvider: z.string(),
   sourceCounts: z.record(z.string(), z.number()),
   weekKey: weekKeySchema,
   counts: z.object({ events: z.number(), places: z.number() }),
@@ -31,6 +24,15 @@ export const metaSchema = z.object({
   anomalies: z.number().int().optional(),
   /** 6그룹에 매핑되지 않아 '기타'로 노출 중인 원시 카테고리. 비어 있는 게 정상 */
   unmappedCategories: z.array(z.string()).optional(),
+  /** KOPIS 수집 통계. blocked면 이번 실행에 공연이 빠졌다는 뜻이다 */
+  kopis: z
+    .object({
+      listed: z.number().int(),
+      fetched: z.number().int(),
+      missing: z.number().int(),
+      blocked: z.boolean(),
+    })
+    .optional(),
 })
 
 const isoDateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/)
@@ -50,6 +52,8 @@ export const catalogIndexItemSchema = z.discriminatedUnion('kind', [
     isFree: z.boolean().optional(), imageUrl: z.string().optional(),
     startDate: isoDateSchema, endDate: isoDateSchema,
     time: z.string().optional(), fee: z.string().optional(),
+    minPrice: z.number().int().min(0).optional(),
+    localVenue: z.literal(true).optional(), openRun: z.literal(true).optional(),
   }),
   z.object({
     id: z.string(), kind: z.literal('place'), title: z.string().min(1),
@@ -74,7 +78,6 @@ export const catalogEventsSchema = z.object({
 
 export type WeeklyEventsFile = z.infer<typeof weeklyEventsSchema>
 export type PlacesFile = z.infer<typeof placesFileSchema>
-export type CuratedFile = z.infer<typeof curatedFileSchema>
 export type MetaFile = z.infer<typeof metaSchema>
 export type CatalogIndexFile = z.infer<typeof catalogIndexSchema>
 export type CatalogIndexItem = z.infer<typeof catalogIndexItemSchema>

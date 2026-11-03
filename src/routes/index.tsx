@@ -6,11 +6,11 @@ import { EventPosterCard } from '~/components/cards'
 import { useCatalog, useGeo, type GeoState } from '~/components/catalog-hooks'
 import { DAY_LABELS, HomeControls, HomeEmpty, HomePager } from '~/components/home'
 import { PAGE } from '~/components/page'
-import { loadCurated, loadMeta, loadWeek } from '~/data/load'
-import { resolveCurated } from '~/data/resolve'
+import { loadIndex } from '~/data/load'
 import { applyFilters, districtsOf, isCatalogStale, sortByDistance } from '~/lib/browse-filter'
 import { homeSearchSchema, type HomeSearch } from '~/lib/home-search'
-import { dayRange, eventsOn, pickShelf, sortByDeadline } from '~/lib/today'
+import { pickShelf } from '~/lib/shelf'
+import { dayRange, eventsOn, sortByDeadline } from '~/lib/today'
 import { kstToday } from '~/lib/week'
 import type { CatalogEventIndexItem, CatalogIndexFile } from '~/types/files'
 
@@ -18,17 +18,10 @@ import type { CatalogEventIndexItem, CatalogIndexFile } from '~/types/files'
 const getHomeData = createServerFn({ method: 'GET' })
   .middleware([staticFunctionMiddleware])
   .handler(() => {
-    const meta = loadMeta() // 현재 주차는 meta.weekKey — isoWeekKey(new Date()) 금지 (없는 파일을 읽게 된다)
-    const week = loadWeek(meta.weekKey)
-    const curated = loadCurated(meta.weekKey)
-    const resolved = resolveCurated(curated, week.items, [])
+    const events = loadIndex().items.filter((i): i is CatalogEventIndexItem => i.kind === 'event')
     const today = kstToday(new Date()) // 오늘 = 빌드 시각의 KST 날짜. 배치 커밋 → 재배포 때 갱신된다
-
-    return {
-      today,
-      // 배포는 06:30 KST라 자정~06:30에는 빌드 today가 하루 늦다 — 넉넉히 넘기고 화면이 브라우저 today로 다시 고른다
-      shelf: pickShelf(resolved.picks, today, Infinity),
-    }
+    // 위치 없는 첫 그림. 화면이 카탈로그를 받으면 브라우저 today와 위치로 다시 고른다
+    return { today, shelf: pickShelf(events, today) }
   })
 
 export const Route = createFileRoute('/')({
@@ -46,7 +39,14 @@ function Home() {
 
   // 프리렌더 첫 그림은 빌드 today, 카탈로그가 준비되면 브라우저 today(useCatalog)로 다시 그린다
   const today = state.status === 'ready' ? state.today : data.today
-  const shelf = pickShelf(data.shelf, today, 3)
+  const shelf =
+    state.status === 'ready'
+      ? pickShelf(
+          state.index.items.filter((i): i is CatalogEventIndexItem => i.kind === 'event'),
+          state.today,
+          near && geo.status === 'ok' ? geo.origin : undefined,
+        )
+      : data.shelf
 
   return (
     <main className={`${PAGE} py-page`}>
@@ -58,8 +58,8 @@ function Home() {
         <section>
           <h2 className="text-title-section">추천</h2>
           <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter [scrollbar-width:none] md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden">
-            {shelf.map((entry) => (
-              <EventPosterCard key={entry.item.id} entry={entry} today={today} />
+            {shelf.map((item) => (
+              <EventPosterCard key={item.id} item={item} today={today} />
             ))}
           </div>
         </section>
@@ -82,7 +82,7 @@ function Home() {
           <StaleCatalog index={state.index} />
         ) : (
           <DayList index={state.index} today={state.today} now={state.now} search={search} geo={geo}
-            shelfIds={new Set(shelf.map((e) => e.item.id))} />
+            shelfIds={new Set(shelf.map((e) => e.id))} />
         ))}
     </main>
   )

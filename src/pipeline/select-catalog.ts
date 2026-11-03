@@ -1,6 +1,7 @@
 import { addDays } from '~/lib/dates'
 import { categoryGroup } from '~/lib/category'
 import { districtFromAddress } from '~/lib/district'
+import { parseMinPrice } from '~/lib/price'
 import type { CatalogIndexFile, CatalogIndexItem } from '~/types/files'
 import type { EventItem, PlaceItem } from '~/types/item'
 
@@ -58,6 +59,7 @@ export function buildCatalogIndex(sel: CatalogSelection, generatedAt: string): C
   const events = sel.events.map((e): CatalogIndexItem => {
     // 행사도 장소와 같은 모양으로 파생한다 — 원본 district가 비면 address에서 뽑는다
     const district = e.district ?? districtFromAddress(e.address)
+    const minPrice = e.isFree ? 0 : parseMinPrice(e.fee)
     return {
       id: e.id, kind: 'event', title: e.title, group: categoryGroup(e.category),
       ...(district !== undefined && { district }),
@@ -68,6 +70,9 @@ export function buildCatalogIndex(sel: CatalogSelection, generatedAt: string): C
       startDate: e.startDate, endDate: e.endDate,
       ...(e.time !== undefined && { time: e.time }),
       ...(e.fee !== undefined && { fee: e.fee }),
+      ...(minPrice !== undefined && { minPrice }),
+      ...(e.localVenue && { localVenue: true as const }),
+      ...(e.openRun && { openRun: true as const }),
     }
   })
 

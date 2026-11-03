@@ -93,3 +93,71 @@ describe('mergeItems', () => {
     expect(mergeItems([[scEvent, { ...scEvent, id: 'sc-dup' }]])).toHaveLength(1)
   })
 })
+
+describe('mergeItems 퍼지 병합', () => {
+  const sc: EventItem = {
+    ...scEvent,
+    id: 'sc-1',
+    title: '숨비소리, 해녀들의 노래',
+    place: '서초문화예술회관',
+    lat: 37.4836,
+    lng: 127.0327,
+    startDate: '2026-10-30',
+    endDate: '2026-11-02',
+  }
+  const kp: EventItem = {
+    ...sc,
+    id: 'kp-PF1',
+    source: 'kopis',
+    title: '[서초문화재단] 2026 서울어텀페스타 선정작 [숨비소리, 해녀들의 노래]',
+    place: '서초문화예술회관 (아트홀)',
+    lat: 37.4837,
+    lng: 127.0329,
+    startDate: '2026-11-01',
+    endDate: '2026-11-01',
+    time: '토 19:30',
+  }
+
+  it('제목 포함·기간 겹침·500m 이내면 같은 행사다 — 앞 그룹 id가 남고 빈 필드만 채운다', () => {
+    const [m, ...rest] = mergeItems([[sc], [kp]])
+    expect(rest).toHaveLength(0)
+    expect(m!.id).toBe('sc-1')
+    expect(m!.mergedFrom).toEqual(['kp-PF1'])
+  })
+
+  it('기간이 안 겹치면 다른 행사', () => {
+    const late = { ...kp, startDate: '2026-11-03', endDate: '2026-11-03' }
+    expect(mergeItems([[sc], [late]])).toHaveLength(2)
+  })
+
+  it('0.5km 넘게 떨어지면 다른 행사', () => {
+    const far = { ...kp, lat: 37.4936 }
+    expect(mergeItems([[sc], [far]])).toHaveLength(2)
+  })
+
+  it('좌표가 한쪽이라도 없으면 포함 관계로 합치지 않는다', () => {
+    const { lat: _lat, lng: _lng, ...noGeo } = kp
+    expect(mergeItems([[sc], [noGeo]])).toHaveLength(2)
+  })
+
+  it('짧은 제목은 포함 관계로 합치지 않는다', () => {
+    const a = { ...sc, id: 'a', title: '콘서트' }
+    const b = { ...kp, id: 'b', title: '가을 콘서트' }
+    expect(mergeItems([[a], [b]])).toHaveLength(2)
+  })
+
+  it('맨 앞 [기관명]을 떼고 제목이 같으면 짧아도 같은 행사다', () => {
+    const a = { ...sc, id: 'sc-3', title: '[세종문화회관] 에너미' }
+    const b = { ...kp, id: 'kp-PF2', title: '에너미' }
+    expect(mergeItems([[a], [b]])).toHaveLength(1)
+  })
+
+  it('같은 소스끼리는 포함 관계로 합치지 않는다', () => {
+    const encore = { ...sc, id: 'sc-2', title: `${sc.title} 앵콜` }
+    expect(mergeItems([[sc, encore]])).toHaveLength(2)
+  })
+
+  it('기존 정확 키 병합은 그대로', () => {
+    expect(mergeItems([[scEvent], [vsEvent]])).toHaveLength(1)
+  })
+})

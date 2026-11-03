@@ -32,10 +32,8 @@ npm run batch -- 2026-W33    # 특정 주차 (지난 주차는 거절됨)
 |---|---|
 | `SEOUL_API_KEY` | 서울열린데이터광장 인증키 ([발급](https://data.seoul.go.kr)) |
 | `VISITSEOUL_API_KEY` | 비짓서울 API 키 ([발급](https://api.visitseoul.net)) |
+| `KOPIS_API_KEY` | KOPIS 공연예술통합전산망 서비스키 ([발급](https://www.kopis.or.kr)) |
 | `VISITSEOUL_CATEGORIES` | 수집 대상 카테고리 (쉼표 구분). 확정 목록은 `docs/api-findings.md` |
-| `LLM_PROVIDER` | `ollama` (로컬) \| `rule` (Actions). 그 외 값은 던집니다 |
-| `OLLAMA_HOST` | 기본 `http://localhost:11434` |
-| `OLLAMA_MODEL` | 기본 `qwen3:30b` |
 
 ## 산출물
 
@@ -43,21 +41,17 @@ npm run batch -- 2026-W33    # 특정 주차 (지난 주차는 거절됨)
 |---|---|
 | `data/events/YYYY-Www.json` | 그 주에 열리는 행사 |
 | `data/places.json` | "언제 가도 좋은 곳" 후보 (주에 묶이지 않음) |
-| `data/curated/YYYY-Www.json` | 선별 12건 + 노출 장소 6곳 |
-| `data/meta.json` | 갱신 시각, 사용된 provider, 소스별 건수 |
+| `data/meta.json` | 갱신 시각, 소스별 건수 |
 | `data/cache/visitseoul.json` | 상세 응답 캐시. 변경분만 다시 받기 위한 것 |
+| `data/cache/kopis.json` | KOPIS 상세·시설 캐시와 `lastRun`. 변경분만 다시 받기 위한 것 |
 
 ## 배치
 
 매일 KST 06:00에 GitHub Actions가 돌며 `data/`를 갱신 커밋합니다.
 
-**Actions 러너에서는 Ollama가 돌지 않으므로 `LLM_PROVIDER=rule`로 동작합니다.**
-규칙 상위 12건이 그대로 선별되고 **한 줄 코멘트는 빈 문자열이 됩니다.**
-코멘트가 필요해지면 `AnthropicProvider`를 추가합니다(스펙 9-2).
-
 레포 Settings → Secrets and variables → Actions에 등록해야 합니다:
 
-- Secrets: `SEOUL_API_KEY`, `VISITSEOUL_API_KEY`
+- Secrets: `SEOUL_API_KEY`, `VISITSEOUL_API_KEY`, `KOPIS_API_KEY`
 - Variables: `VISITSEOUL_CATEGORIES`
 
 ## 개발
