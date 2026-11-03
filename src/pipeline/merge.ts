@@ -32,18 +32,21 @@ function enrich(base: Item, other: Item): Item {
 const MIN_CONTAINED_LEN = 4
 const SAME_VENUE_KM = 0.5
 
-/** 표기가 다른 소스끼리 같은 행사인지: 기간 겹침 + 500m 이내 + 한쪽 제목이 다른 쪽에 포함(짧은 쪽 4자 이상). */
+/** 맨 앞 [기관명]을 뗀 비교용 제목 — '[세종문화회관] 에너미'와 KOPIS '에너미'가 같아진다 */
+const matchTitle = (title: string) => normalizeForCompare(title.replace(/^\[[^\]]*\]\s*/, ''))
+
+/** 표기가 다른 소스끼리 같은 행사인지: 기간 겹침 + 500m 이내 + 제목이 같거나 한쪽이 다른 쪽에 포함(짧은 쪽 4자 이상). */
 export function findMatch(item: Item, known: Item[]): Item | undefined {
   if (item.kind !== 'event' || item.lat == null || item.lng == null) return undefined
-  const a = normalizeForCompare(item.title)
+  const a = matchTitle(item.title)
   // ponytail: 행사 수 × 기존 수 선형 탐색, 소스가 늘어 느려지면 기간·격자로 blocking
   return known.find((k) => {
     if (k.source === item.source || k.kind !== 'event' || k.lat == null || k.lng == null) return false
     if (!(item.startDate <= k.endDate && k.startDate <= item.endDate)) return false
     if (haversineKm({ lat: item.lat!, lng: item.lng! }, { lat: k.lat, lng: k.lng }) > SAME_VENUE_KM) return false
-    const b = normalizeForCompare(k.title)
+    const b = matchTitle(k.title)
     const [short, long] = a.length <= b.length ? [a, b] : [b, a]
-    return short.length >= MIN_CONTAINED_LEN && long.includes(short)
+    return short !== '' && (short === long || (short.length >= MIN_CONTAINED_LEN && long.includes(short)))
   })
 }
 

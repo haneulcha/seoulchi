@@ -146,6 +146,12 @@ describe('mergeItems 퍼지 병합', () => {
     expect(mergeItems([[a], [b]])).toHaveLength(2)
   })
 
+  it('맨 앞 [기관명]을 떼고 제목이 같으면 짧아도 같은 행사다', () => {
+    const a = { ...sc, id: 'sc-3', title: '[세종문화회관] 에너미' }
+    const b = { ...kp, id: 'kp-PF2', title: '에너미' }
+    expect(mergeItems([[a], [b]])).toHaveLength(1)
+  })
+
   it('같은 소스끼리는 포함 관계로 합치지 않는다', () => {
     const encore = { ...sc, id: 'sc-2', title: `${sc.title} 앵콜` }
     expect(mergeItems([[sc, encore]])).toHaveLength(2)
