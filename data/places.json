@@ -1239,6 +1239,73 @@
       }
     },
     {
+      "id": "vs-KOPgcq5pt",
+      "source": "visit-seoul",
+      "title": "써저리",
+      "summary": "시기마다 국내외 작가의 기획전이 열리는 청담동의 무료 현대미술 전시 공간",
+      "category": "기타전시시설",
+      "place": "써저리",
+      "address": "서울 강남구 도산대로57길 6 (청담동) 지하2층",
+      "lat": 37.5240693579614,
+      "lng": 127.041631137979,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83396&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.stephaniekimgallery.com/surgery-seoul",
+      "isFree": true,
+      "subwayInfo": "지하철 수인분당선 압구정로데오역 4번출구, 392m",
+      "tags": [
+        "써저리",
+        "SURGERY",
+        "청담동갤러리",
+        "현대미술",
+        "무료전시",
+        "청담동",
+        "강남",
+        "서울전시"
+      ],
+      "kind": "place",
+      "useTime": "12:00~18:00 (예약제)",
+      "hours": {
+        "open": "12:00",
+        "close": "18:00",
+        "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOPhpotfh",
+      "source": "visit-seoul",
+      "title": "박서보미술관",
+      "summary": "단색화 거장 박서보의 자택 겸 작업실 곁에 문을 연 연희동 골목 속 미술관",
+      "category": "박물관",
+      "place": "박서보미술관",
+      "address": "서울 서대문구 연희로24길 9-54 (연희동)",
+      "lat": 37.5718119760327,
+      "lng": 126.935600689093,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83366&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://parkseobomuseum.org/",
+      "isFree": false,
+      "subwayInfo": "지하철 2호선/경의중앙/공항철도 홍대입구역 4번출구, 1.9km",
+      "tags": [
+        "박서보미술관",
+        "박서보",
+        "단색화",
+        "묘법",
+        "연희동",
+        "연희동미술관",
+        "서대문구",
+        "연희동산책"
+      ],
+      "kind": "place",
+      "useTime": "11:00~18:00 (입장 마감 17:30)",
+      "closedDays": "매주 월요일",
+      "hours": {
+        "open": "11:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          1
+        ]
+      }
+    },
+    {
       "id": "vs-KOPifucgz",
       "source": "visit-seoul",
       "title": "서울우리소리박물관",
@@ -4429,11 +4496,11 @@
       "isFree": true,
       "subwayInfo": "지하철2/ 4/ 5호선  동대문역사문화공원역 1번 출구,  25m",
       "tags": [
-        "DDP",
         "뷰티",
         " 패션",
         "전시",
-        " 비더비"
+        " 비더비",
+        "DDP"
       ],
       "kind": "place",
       "useTime": "12:00 ~ 20:00",
@@ -14769,6 +14836,141 @@
       }
     },
     {
+      "id": "vs-KOPl3n834",
+      "source": "visit-seoul",
+      "title": "역(Yeok)",
+      "summary": "버려질 뻔한 자투리 천으로 옷과 소품을 만드는 부암동 업사이클링 봉제 공방",
+      "category": "공예체험",
+      "place": "역(Yeok)",
+      "address": "서울 종로구 창의문로 136 (부암동)",
+      "lat": 37.5927746538404,
+      "lng": 126.96544134109,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83426&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "http://instagram.com/buam_station",
+      "isFree": false,
+      "subwayInfo": "지하철 3호선 경복궁역 3번출구 앞 정류장에서 버스 1020·7022·7212번 승차, 부암동주민센터 하차, 30m",
+      "tags": [
+        "역",
+        "Yeok",
+        "업사이클링",
+        "봉제클래스",
+        "원데이클래스",
+        "친환경",
+        "부암동",
+        "종로구"
+      ],
+      "kind": "place",
+      "useTime": "12:00~19:00",
+      "closedDays": "매주 월·화·수요일",
+      "hours": {
+        "open": "12:00",
+        "close": "19:00",
+        "closedWeekdays": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "vs-KOPk7wokj",
+      "source": "visit-seoul",
+      "title": "식물작업실 송하",
+      "summary": "60년 된 건물 속에서 분재와 식물을 만나고 직접 배워 보는 부암동 식물작업실",
+      "category": "기타체험",
+      "place": "식물작업실 송하",
+      "address": "서울 종로구 창의문로 149-5 (부암동) 1층",
+      "lat": 37.5928869411329,
+      "lng": 126.963426927011,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83420&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "http://www.songha.info",
+      "isFree": false,
+      "subwayInfo": "지하철 3호선 홍제역 2번출구에서 버스 7018번 승차, 자하문터널입구·석파정 정류장 하차, 319m",
+      "tags": [
+        "식물작업실송하",
+        "송하",
+        "분재",
+        "분재클래스",
+        "식물샵",
+        "부암동",
+        "종로구",
+        "부암동산책"
+      ],
+      "kind": "place",
+      "useTime": "14:00~19:00 (영업일 외에는 예약제)",
+      "closedDays": "월, 화, 목, 금 (예약 시 방문 가능)",
+      "hours": {
+        "open": "14:00",
+        "close": "19:00",
+        "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOPu0f2tx",
+      "source": "visit-seoul",
+      "title": "넋 에스테틱",
+      "summary": "한옥의 정취를 담은 개별 룸에서 한국식 힐링 케어를 받는 신논현역 앞 에스테틱",
+      "category": "웰니스관광",
+      "place": "넋 에스테틱",
+      "address": "서울 강남구 강남대로110길 6 (역삼동)",
+      "lat": 37.5040392297245,
+      "lng": 127.025447892521,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83414&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://neokaesthetic.imweb.me/",
+      "isFree": false,
+      "subwayInfo": "지하철 9호선/신분당선 신논현역 5번출구, 61m",
+      "tags": [
+        "강남헤드스파",
+        "강남마사지",
+        "한옥스파",
+        "신논현",
+        "강남",
+        "뷰티투어",
+        "일본어가능",
+        "넋에스테틱"
+      ],
+      "kind": "place",
+      "useTime": "10:00~21:00",
+      "hours": {
+        "open": "10:00",
+        "close": "21:00",
+        "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOPiwgzz3",
+      "source": "visit-seoul",
+      "title": "라일라 스튜디오",
+      "summary": "연두색 타일 건물 2층, 이웃집 정원이 내려다보이는 연희동의 취미 미술 화실",
+      "category": "기타체험",
+      "place": "라일라 스튜디오",
+      "address": "서울 서대문구 연희로11다길 9 (연희동) 2층",
+      "lat": 37.5670689633717,
+      "lng": 126.927677220257,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83372&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "http://www.instagram.com/lylastudio_yeonhui",
+      "isFree": false,
+      "subwayInfo": "지하철 2호선/경의중앙/공항철도 홍대입구역 3번출구, 1.2km",
+      "tags": [
+        "연희동화실",
+        "취미미술",
+        "원데이클래스",
+        "유화",
+        "수채화",
+        "연희동",
+        "서대문구",
+        "라일라스튜디오"
+      ],
+      "kind": "place",
+      "useTime": "10:00~22:00",
+      "closedDays": "매주 월·화요일",
+      "hours": {
+        "open": "10:00",
+        "close": "22:00",
+        "closedWeekdays": [
+          2
+        ]
+      }
+    },
+    {
       "id": "vs-KOP9i4l1b",
       "source": "visit-seoul",
       "title": "ANA DANCE(아나 댄스) — 홍대 K-pop 댄스 원데이 클래스",
@@ -16519,13 +16721,10 @@
       ],
       "kind": "place",
       "useTime": "10:00~19:00\r\n(자개 클래스 진행 시 약 90분)",
-      "closedDays": "일요일, 국가 지정 공휴일",
       "hours": {
         "open": "10:00",
         "close": "19:00",
-        "closedWeekdays": [
-          0
-        ]
+        "closedWeekdays": []
       }
     },
     {
@@ -16612,11 +16811,11 @@
         "1:1케어"
       ],
       "kind": "place",
-      "useTime": "평일 10:00~22:00, 토요일 10:00~18:00",
+      "useTime": "평일 10:00~21:00, 토요일 10:00~18:00",
       "closedDays": "매주 일요일, 공휴일",
       "hours": {
         "open": "10:00",
-        "close": "22:00",
+        "close": "21:00",
         "closedWeekdays": [
           0,
           6
@@ -16727,8 +16926,8 @@
       "isFree": false,
       "subwayInfo": "지하철 7호선/ 신분당선 논현역 9번 출구,  250m",
       "tags": [
+        "K-pop tour",
         "K-pop",
-        " K-pop tour",
         "K-pop recording",
         "K-drama",
         " K-Experience"

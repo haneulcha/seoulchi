@@ -81506,7 +81506,7 @@
     }
   },
   "KOP5gy81t": {
-    "updtDtText": "2026.08.29",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP5gy81t",
       "lang_code_id": "ko",
@@ -81524,7 +81524,7 @@
       "post_sj": "한글파크아카데미",
       "sumry": "회화 수업을 중심으로 정규회화과정, 단기유학과정, 원데이클래스, 토픽대책반 등 다양한 수업을 개설하고 있습니다.",
       "creat_dt_text": "2023.10.20",
-      "updt_dt_text": "2026.08.29",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "한국어",
         "한국어교실",
@@ -81544,6 +81544,7 @@
         "closed_days": "토요일, 일요일, 공휴일 "
       },
       "traffic": {
+        "zip_code": "06241",
         "adres": "서울 강남구 역삼동 826-28",
         "new_zip_code": "06241",
         "new_adres": "서울 강남구 테헤란로4길 28 (역삼동, 송민빌딩)",
@@ -83100,7 +83101,7 @@
     }
   },
   "KOP6zvjr6": {
-    "updtDtText": "2026.07.14",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP6zvjr6",
       "lang_code_id": "ko",
@@ -83118,7 +83119,7 @@
       "post_sj": "뚝섬한강공원 X-게임장",
       "sumry": "스케이트보드, 인라인스케이트 등을 즐길 수 있는 X-게임장 ",
       "creat_dt_text": "2023.06.14",
-      "updt_dt_text": "2026.07.14",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "BMX",
         "뚝섬",
@@ -83145,13 +83146,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "뚝섬한강공원의 X-게임장은 스케이트보드와 인라인, BMX 자전거를 이용할 수 있는 곳입니다. 평지 공간과 점프 기술을 위한 점프대, 경사진 레일, 여러가지 기물 등 자유롭게 이용할 수 있는 넓은 공간이 준비되어 있습니다. 경사대와 점프대 뿐만 아니라 사이드에 누구나 이용할 수 있는 트랙도 잘 되어있어 초보자도 즐길 수 있는 공간입니다. 한강공원에서 색다른 스포츠를 즐기고 싶다면 이용해 보기 좋습니다. 가끔 프로대회도 개최되어 연중 스포츠 열기로 가득합니다. 이용 시에는 헬멧, 무릎보호대 등 보호장비 착용을 잊지 말자. X-게임장에서는 스케이트보드, 어그레시브 인라인, BMX자전거만 이용이 가능합니다."
     }
   },
   "KOPa0muuu": {
-    "updtDtText": "2026.08.21",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOPa0muuu",
       "lang_code_id": "ko",
@@ -83169,7 +83171,7 @@
       "post_sj": "한강이야기전시관 ",
       "sumry": "한강이야기전시관은 한강의 역사와 문화적 가치를 일상에서 누리고 체험할 수 있는 오직 한강만을 주제로 한 유일한 전시관입니다. ",
       "creat_dt_text": "2023.06.14",
-      "updt_dt_text": "2026.08.21",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "한강이야기전시관",
         "한강전시관",
@@ -83187,7 +83189,10 @@
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "화요일~목요일 10:00~19:00\r\n금요일~토요일10:00~22:00 (8월~12월 야간 운영)\r\n일요일, 공휴일 10:00~20:00 ",
         "trrsrt_use_chrge": "F",
-        "disabled_facility": [],
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "접근가능"
+        ],
         "closed_days": "월요일, 1/1, 설날 및 추석 당일 "
       },
       "traffic": {
@@ -83262,7 +83267,7 @@
     }
   },
   "KOP129lpb": {
-    "updtDtText": "2026.07.17",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP129lpb",
       "lang_code_id": "ko",
@@ -83278,7 +83283,7 @@
       "post_sj": "SM엔터테인먼트",
       "sumry": "국내 대표적인 연예기획사 중 하나인 SM엔터테인먼트",
       "creat_dt_text": "2023.06.07",
-      "updt_dt_text": "2026.07.17",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "음반기획사",
         "서울숲",
@@ -83290,10 +83295,7 @@
         "cmmn_hmpg_url": "https://www.smtown.com/",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": [
-          "장애인화장실",
-          "장애인 전용 주차장"
-        ]
+        "disabled_facility": []
       },
       "traffic": {
         "adres": "서울 성동구 성수동1가 685-700",
@@ -83580,7 +83582,7 @@
     }
   },
   "KOPav9wgq": {
-    "updtDtText": "2026.08.18",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOPav9wgq",
       "lang_code_id": "ko",
@@ -83598,13 +83600,13 @@
       "post_sj": "B the B",
       "sumry": "서울만의 뷰티를 세계에 선보이는, 서울 뷰티·패션의 핵심거점",
       "creat_dt_text": "2023.03.02",
-      "updt_dt_text": "2026.08.18",
+      "updt_dt_text": "2026.11.02",
       "tag": [
-        "DDP",
         "뷰티",
         " 패션",
         "전시",
-        " 비더비"
+        " 비더비",
+        "DDP"
       ],
       "extra": {
         "cmmn_telno": "02-2153-0770",
@@ -83615,8 +83617,8 @@
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
           "장애인화장실",
-          "엘리베이터",
-          "장애인 안내(휠체어 대여 및 기타)"
+          "장애인 전용 주차장",
+          "엘리베이터"
         ],
         "business_days": "매일"
       },
@@ -83632,6 +83634,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "동대문역사문화공원과 DDP, 주변 동대문 시장과 연결되어 있는 뷰티복합문화공간 B the B는 서울의 뷰티 기업과 시민들이 가깝게 소통할 수 있는 공간이자, 도심 속 자연에서 휴식을 즐길 수 있는 크리에이티브 라운지입니다. 서울 뷰티 대표 기업들의 브랜드 팝업 및 트렌드 컨셉에 맞는 제품 큐레이션 기획 전시, 혁신기술 결합형 제품 체험 등 다양한 콘텐츠를 무료로 감상할 수 있습니다. 또한 숲 속 휴양림을 연상하는 힐링 공간에서 뷰티 관련 콘텐츠와 정보를 접할 수 있는 시즌별 이벤트가 수시로 전개됩니다."
@@ -104482,7 +104485,7 @@
     }
   },
   "KOP2ikgt3": {
-    "updtDtText": "2026.07.21",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP2ikgt3",
       "lang_code_id": "ko",
@@ -104500,7 +104503,7 @@
       "post_sj": "채율",
       "sumry": "한국 전통공예 명장 및 작가들의 작품 전시, 판매되며 자개를 이용한 전통 공예체험 가능",
       "creat_dt_text": "2024.03.29",
-      "updt_dt_text": "2026.07.21",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "수공예",
         "명품",
@@ -104516,8 +104519,7 @@
         "cmmn_important": "자개 전통공예 체험의 경우 사전 예약 필수이며, 최소 3인 이상부터 클래스 진행 가능\r\n",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "월요일 ~ 토요일 ",
-        "closed_days": "일요일, 국가 지정 공휴일"
+        "business_days": "매일\r\n"
       },
       "traffic": {
         "adres": "서울 강남구 신사동 536-17",
@@ -104537,7 +104539,7 @@
     }
   },
   "KOP4rwpvy": {
-    "updtDtText": "2026.07.20",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP4rwpvy",
       "lang_code_id": "ko",
@@ -104552,7 +104554,7 @@
       "post_sj": "시범사우나",
       "sumry": "서울 금융의 중심지 여의도에 위치한 24시간 목욕탕.",
       "creat_dt_text": "2023.12.01",
-      "updt_dt_text": "2026.07.20",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "서울목욕탕",
         "온천",
@@ -104584,7 +104586,7 @@
     }
   },
   "KOPmil2we": {
-    "updtDtText": "2026.07.15",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOPmil2we",
       "lang_code_id": "ko",
@@ -104599,7 +104601,7 @@
       "post_sj": "매일온천",
       "sumry": "뉴트로 감성이 가득한 을지로에 위치한 1986년 문을 연 '매일온천' 목욕탕",
       "creat_dt_text": "2023.12.01",
-      "updt_dt_text": "2026.07.15",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "온천",
         "사우나",
@@ -104616,6 +104618,7 @@
         "closed_days": "일요일, 공휴일"
       },
       "traffic": {
+        "zip_code": "04549",
         "adres": "서울 중구 인현동1가 46-3",
         "new_zip_code": "04549",
         "new_adres": "서울시 중구 을지로16길 5-10",
@@ -104631,7 +104634,7 @@
     }
   },
   "KOPwi2gw4": {
-    "updtDtText": "2026.08.21",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOPwi2gw4",
       "lang_code_id": "ko",
@@ -104649,7 +104652,7 @@
       "post_sj": "닥터포헤어 케어랩",
       "sumry": "두피 ∙ 탈모 전문 닥터포헤어의 두피관리센터",
       "creat_dt_text": "2023.11.20",
-      "updt_dt_text": "2026.08.21",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "스파",
         "탈모",
@@ -104661,7 +104664,7 @@
         "cmmn_telno": "0507-1344-4927",
         "cmmn_hmpg_url": "https://drforhair.co.kr/board/list.php?bdId=carelab",
         "cmmn_hmpg_lang": "한국어",
-        "cmmn_use_time": "평일 10:00~22:00, 토요일 10:00~18:00",
+        "cmmn_use_time": "평일 10:00~21:00, 토요일 10:00~18:00",
         "cmmn_important": "외국인 응대 가능 직원 있음\r\n시술 프로그램에 따라 60분~80분 소요",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
@@ -104788,7 +104791,7 @@
     }
   },
   "KOPou8ab9": {
-    "updtDtText": "2026.08.18",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOPou8ab9",
       "lang_code_id": "ko",
@@ -104805,7 +104808,7 @@
       "post_sj": "미스맥 서촌한옥스튜디오",
       "sumry": "서촌 한옥에서 즐기는 한글캘리그라피 체험",
       "creat_dt_text": "2023.07.18",
-      "updt_dt_text": "2026.08.18",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "한글캘리그라피체험",
         "한글",
@@ -104824,6 +104827,7 @@
         "usage_fee": "인당 10,000원"
       },
       "traffic": {
+        "zip_code": "03044",
         "adres": "서울 종로구 통의동 7-8",
         "new_zip_code": "03044",
         "new_adres": "서울 종로구 효자로7길 8 (통의동)",
@@ -104839,7 +104843,7 @@
     }
   },
   "KOP3wv0j4": {
-    "updtDtText": "2026.10.14",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP3wv0j4",
       "lang_code_id": "ko",
@@ -104857,10 +104861,10 @@
       "post_sj": "K-익스피리언스 HEMA 스튜디오",
       "sumry": "전문적인 시설과 1:1 디렉팅, 멋진 커버영상 제작 등 K-pop 체험",
       "creat_dt_text": "2023.05.18",
-      "updt_dt_text": "2026.10.14",
+      "updt_dt_text": "2026.11.02",
       "tag": [
+        "K-pop tour",
         "K-pop",
-        " K-pop tour",
         "K-pop recording",
         "K-drama",
         " K-Experience"
@@ -104884,14 +104888,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
-        "parking_fclty": "3",
+        "parking_fclty": "2",
         "safe_mng": "ul"
       },
       "post_desc": "K-pop을 좋아하는 분들에게 서울 강남에 위치한 K-Experience 를 소개합니다. K-Experience 에서는 외국인 관광객들이 좋아하는 K-pop 노래를 녹음하고 개인 뮤직비디오를 촬영할 수 있는 상품을 제공하고 있습니다. 1:1 담당 디렉터와 함께 녹음부터 커버 뮤직비디오 촬영까지 모든 과정을 진행할 수 있습니다.커버 녹음과 뮤직비디오 촬영이 끝난 후에는, 완성된 작품을 USB에 담아 지인이나 가족과 함께 공유할 수 있습니다. 또한, 유튜브, 틱톡같은 SNS에 업로드 하는 것도 가능합니다. K-Experience 는 강남의 번화가에 위치해 있어, 지하철과 버스 등 대중교통을 통해 쉽게 찾아올 수 있습니다. 전문 시설과 디렉터, 멋진 커버영상 제작 등 K-pop 체험을 위한 모든 요소가 갖춰진 K-Experience 에서 자신만의 음악과 영상을 만들어 보세요! 노래를 녹음하거나, 춤을 촬영하거나, 둘 다 해보세요. 우상급 영상을 직접 가지고 떠나세요."
     }
   },
   "KOP5dtalk": {
-    "updtDtText": "2026.09.29",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP5dtalk",
       "lang_code_id": "ko",
@@ -104908,7 +104912,7 @@
       "post_sj": "아다모스튜디오",
       "sumry": "전국에서 손님들이 모여드는 명품 의류 수선집",
       "creat_dt_text": "2023.05.03",
-      "updt_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "밍크",
         " 모피",
@@ -104926,8 +104930,8 @@
         "cmmn_use_time": "화요일~금요일 10:30~19:00 (휴게시간 12:30~13:30) \r\n토요일 10:30~16:00 (휴게시간 12:30~13:30)",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [
-          "장애인화장실",
           "장애인 전용 주차장",
+          "장애인화장실",
           "접근가능"
         ],
         "business_days": "화요일~토요일",
@@ -104944,13 +104948,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "아다모스튜디오는 1982년 문을 연 정화패션의 새 이름으로 2대를 이어 운영하는 수선집입니다. 지속적 가치를 위하여 옷을 만들고 고치는 작업을 하며, 다양한 패턴과 실용적인 디자인을 개발하기 위한 연구를 계속하고 있습니다. 특히 패턴의 경우 고객의 체형을 고려하여 단점을 보완하고 옷을 입었을 때 불편함이 없는 선을 찾는 데 중점을 두고 있습니다. 간결함을 철학으로 내세운 아다모스튜디오는 모피와 같은 까다로운 소재까지도 재활용하는 작업을 하고 있습니다."
     }
   },
   "KOP56qewe": {
-    "updtDtText": "2026.09.29",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP56qewe",
       "lang_code_id": "ko",
@@ -104966,7 +104971,7 @@
       "post_sj": "설화철물",
       "sumry": "50년의 세월을 지켜온 남성역 철물점",
       "creat_dt_text": "2023.05.03",
-      "updt_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "철물점",
         "건축자재판매",
@@ -104984,6 +104989,7 @@
         "closed_days": "없음"
       },
       "traffic": {
+        "zip_code": "07011",
         "adres": "서울 동작구 사당동 318-13",
         "new_zip_code": "07011",
         "new_adres": "서울 동작구 사당로16길 7 (사당동)",
@@ -104999,7 +105005,7 @@
     }
   },
   "KOPoflaca": {
-    "updtDtText": "2026.09.29",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOPoflaca",
       "lang_code_id": "ko",
@@ -105016,7 +105022,7 @@
       "post_sj": "학사당구장",
       "sumry": "의자 하나까지도 그대로인 고대 앞 당구장",
       "creat_dt_text": "2023.05.03",
-      "updt_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "추억",
         "대학가앞",
@@ -105037,6 +105043,7 @@
         "usage_fee": "10분 1,800원 / 기본요금 6,000원"
       },
       "traffic": {
+        "zip_code": "02473",
         "adres": "서울 동대문구 제기동 137-46",
         "new_zip_code": "02473",
         "new_adres": "서울 동대문구 안암로 154 (제기동)",
@@ -105106,7 +105113,7 @@
     }
   },
   "KOP851vd2": {
-    "updtDtText": "2026.09.29",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP851vd2",
       "lang_code_id": "ko",
@@ -105120,7 +105127,7 @@
       "post_sj": "삼양탕",
       "sumry": "여관을 개조한 레트로 카페와 추억의 목욕탕",
       "creat_dt_text": "2023.05.03",
-      "updt_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "오래가게",
         "목욕탕",
@@ -105142,6 +105149,7 @@
         "usage_fee": "성인 8,000원"
       },
       "traffic": {
+        "zip_code": "01097",
         "adres": "서울 강북구 수유동 461-35",
         "new_zip_code": "01097",
         "new_adres": "서울 강북구 덕릉로8길 6 (수유동, 삼양여관)",
@@ -105157,7 +105165,7 @@
     }
   },
   "KOP1vsos3": {
-    "updtDtText": "2026.09.29",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOP1vsos3",
       "lang_code_id": "ko",
@@ -105174,7 +105182,7 @@
       "post_sj": "서울스튜디오",
       "sumry": "최상급 장비와 재료로 정성스레 찍어주는 기념사진",
       "creat_dt_text": "2023.05.03",
-      "updt_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "오래가게",
         "사진관",
@@ -105187,9 +105195,10 @@
       "extra": {
         "cmmn_telno": "02-980-6970",
         "cmmn_use_time": "월요일 ~ 금요일 09:40 ~ 19:00\r\n토/일요일 09:40~17:00\r\n",
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "C",
         "disabled_facility": [],
-        "closed_days": "매달 2,4째주 일요일"
+        "closed_days": "매달 2,4째주 일요일",
+        "usage_fee": "반명함사진 25,000원"
       },
       "traffic": {
         "adres": "서울 강북구 미아동 777-6",
@@ -105202,13 +105211,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "군대 시절 만난 분대장을 통해 사진사라는 직업을 알게 되어 1969년부터 사진업에 뛰어든 사장님은 사진관을 연 이후부터 지금까지 항상 최상품 장비와 재료를 통해 최고의 사진을 뽑아내는 분으로 유명합니다. 아버지의 장인정신을 보며 자란 아들도 사진을 공부해, 아버지 가게 건물 3층에 '설담스튜디오'를 내어 2대째 사진관 역사를 쓰는 부자가 됐습니다."
     }
   },
   "KOPnel0nx": {
-    "updtDtText": "2026.09.29",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOPnel0nx",
       "lang_code_id": "ko",
@@ -105225,7 +105235,7 @@
       "post_sj": "상신당",
       "sumry": "나만의 사주팔자 맞춤 명품 도장",
       "creat_dt_text": "2023.05.03",
-      "updt_dt_text": "2026.09.29",
+      "updt_dt_text": "2026.11.02",
       "tag": [
         "오래가게",
         "도장",
@@ -105255,6 +105265,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "3대째 이어져 오는 수제 인감도장 가게로, 성명 감정을 통해 이름의 획수가 길할 수 있도록 하는 독특한 도장 제작기법을 보유하고 있습니다. 제작 기간이 평균 5일로 장인의 정성이 깃든 도장을 만날 수 있습니다. 또한 우리나라에서 유일하게 금도금 도장을 만드는 곳으로, 금도금 도장 관련 기술만 해도 벌써 30년째 이어지고 있습니다."
@@ -123350,7 +123361,7 @@
     }
   },
   "KOPtyl058": {
-    "updtDtText": "2026.10.30",
+    "updtDtText": "2026.11.02",
     "detail": {
       "cid": "KOPtyl058",
       "lang_code_id": "ko",
@@ -123371,9 +123382,8 @@
       "schdul_info_endde": "2026.11.16",
       "place": "롯데월드몰 8층 롯데콘서트홀",
       "creat_dt_text": "2026.10.26",
-      "updt_dt_text": "2026.10.30",
+      "updt_dt_text": "2026.11.02",
       "tag": [
-        "롯데콘서트홀",
         "유영욱",
         "브람스",
         "교향곡",
@@ -123384,7 +123394,8 @@
         "함신익",
         "베토벤",
         "피아노",
-        "연주"
+        "연주",
+        "롯데콘서트홀"
       ],
       "extra": {
         "cmmn_telno": "롯데콘서트홀 : 1544-7744",
@@ -123394,8 +123405,8 @@
         "cmmn_important": "초등학생 이상 입장 (미취학아동 입장불가)",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [
-          "장애인화장실",
           "장애인 전용 주차장",
+          "장애인화장실",
           "접근가능",
           "엘리베이터",
           "장애인 안내(휠체어 대여 및 기타)"
@@ -123414,7 +123425,7 @@
         "guidance_service": "ul",
         "safe_mng": "ul"
       },
-      "post_desc": "공연 제목 : 브람스 페스티벌 일시 : 2026.11.16 월 오후7시30분 장소 : 롯데콘서트홀 프로그램 : Ludwig van Beethoven | Egmont Overture, Op. 84 베토벤 | 에그몬트 서곡, 작품번호 84 Johannes Brahms | Piano Concerto No. 2 in Bb Major, Op. 83 브람스 | 피아노 협주곡 제2번 내림나장조, 작품번호 83 Johannes Brahms | Symphony No. 1 in C minor, Op. 68 브람스 | 교향곡 제1번 다단조, 작품번호 68 미취학아동 입장불가(초등학생 이상 입장 가능) 이번 공연은 베토벤과 브람스의 걸작들을 통해 운명과 투쟁, 승리와 영광을 담아낸 웅장한 음악적 서사를 선사합니다. 베토벤의 'Egmont Overture'는 자유를 위한 투쟁을 그린 작품으로, 비장한 서주와 폭발적인 피날레가 돋보입니다. 이어지는 브람스의 'Piano Concerto No. 2'은 피아니스트 유영욱의 깊이 있는 해석으로, 장엄함과 서정성을 동시에 전달합니다. 마지막으로 브람스의 'Symphony No. 1'은 고뇌 속에서 승리를 향해 나아가는 여정을 그리며, 찬란한 C장조의 피날레로 감동을 선사합니다. 함신익과 심포니 송 마스터즈 시리즈 VII에서는 에그몬트 서곡은 베토벤의 전형적인 웅장함과 드라마틱한 긴장감을 담고 있는 작품으로, 자유와 정의를 위한 투쟁을 그립니다. 이어지는 브람스의 피아노 협주곡은 피아니스트 유영욱이 협연하며, 깊고 풍부한 피아노 선율과 오케스트라의 조화를 선보입니다. 마지막으로 브람스의 교향곡 1번은 강렬한 감정과 절제된 아름다움이 조화를 이루는 작품입니다. 두 브람스 작품은 세밀하고 풍부한 해석을 통해 재현됩니다. 오케스트라는 각 작품의 특징을 살려 감동적이고 극적인 연주를 펼칠 것입니다."
+      "post_desc": "공연 제목 : 브람스 페스티벌 일시 : 2026.11.16 월 오후7시30분 장소 : 롯데콘서트홀 프로그램 : Ludwig van Beethoven | Egmont Overture, Op. 84 베토벤 | 에그몬트 서곡, 작품번호 84 Johannes Brahms | Piano Concerto No. 2 in Bb Major, Op. 83 브람스 | 피아노 협주곡 제2번 내림나장조, 작품번호 83 Johannes Brahms | Symphony No. 1 in C minor, Op. 68 브람스 | 교향곡 제1번 다단조, 작품번호 68 지휘：함신익 피아노：유영욱 미취학아동 입장불가(초등학생 이상 입장 가능) 이번 공연은 베토벤과 브람스의 걸작들을 통해 운명과 투쟁, 승리와 영광을 담아낸 웅장한 음악적 서사를 선사합니다. 베토벤의 'Egmont Overture'는 자유를 위한 투쟁을 그린 작품으로, 비장한 서주와 폭발적인 피날레가 돋보입니다. 이어지는 브람스의 'Piano Concerto No. 2'은 피아니스트 유영욱의 깊이 있는 해석으로, 장엄함과 서정성을 동시에 전달합니다. 마지막으로 브람스의 'Symphony No. 1'은 고뇌 속에서 승리를 향해 나아가는 여정을 그리며, 찬란한 C장조의 피날레로 감동을 선사합니다. 함신익과 심포니 송 마스터즈 시리즈 VII에서는 에그몬트 서곡은 베토벤의 전형적인 웅장함과 드라마틱한 긴장감을 담고 있는 작품으로, 자유와 정의를 위한 투쟁을 그립니다. 이어지는 브람스의 피아노 협주곡은 피아니스트 유영욱이 협연하며, 깊고 풍부한 피아노 선율과 오케스트라의 조화를 선보입니다. 마지막으로 브람스의 교향곡 1번은 강렬한 감정과 절제된 아름다움이 조화를 이루는 작품입니다. 두 브람스 작품은 세밀하고 풍부한 해석을 통해 재현됩니다. 오케스트라는 각 작품의 특징을 살려 감동적이고 극적인 연주를 펼칠 것입니다."
     }
   },
   "KOPhkjndg": {
@@ -123818,6 +123829,345 @@
         "safe_mng": "ul"
       },
       "post_desc": "ANA DANCE는 서울 홍대 인근 댄스 스튜디오(OC Studio, 지하 1층)에서 열리는 외국인 여행객 대상 K-pop 댄스 원데이 클래스입니다. 강사 아나는 aespa·ATEEZ·레드벨벳·BTS·BOYNEXTDOOR 등 K-pop 아티스트와 작업했고 Mnet '스트릿 월드 파이터 : 디렉터스 워'에 출연한 현직 댄서로, 한국과 미국 LA에서 6년 동안 가르쳤습니다. 수업은 영어로 진행되며 워밍업 15분, 안무 60분, 숏폼 영상 촬영 15분으로 구성됩니다. 춤을 처음 추는 사람도 참여할 수 있고, 수업이 끝나면 편집된 숏폼 댄스 영상을 받습니다. 최대 8명이 함께하는 조인인 클래스와, 원하는 곡을 골라 스튜디오를 단독으로 쓰는 프라이빗 클래스가 있습니다."
+    }
+  },
+  "KOPgcq5pt": {
+    "updtDtText": "2026.11.02",
+    "detail": {
+      "cid": "KOPgcq5pt",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cy6j7j7",
+      "cate_depth": " 문화관광  > 전시시설 > 기타전시시설",
+      "multi_lang_list": "ko:KOPgcq5pt,en:ENPgcq5pt,ja:JPPgcq5pt,zh-CN:CNPgcq5pt,zh-TW:TCPgcq5pt,ru:RUPgcq5pt,ms:MLPgcq5pt",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83396&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83397&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83398&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83399&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83400&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83401&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "써저리",
+      "sumry": "시기마다 국내외 작가의 기획전이 열리는 청담동의 무료 현대미술 전시 공간",
+      "creat_dt_text": "2026.10.27",
+      "updt_dt_text": "2026.11.02",
+      "tag": [
+        "써저리",
+        "SURGERY",
+        "청담동갤러리",
+        "현대미술",
+        "무료전시",
+        "청담동",
+        "강남",
+        "서울전시"
+      ],
+      "extra": {
+        "cmmn_hmpg_url": "https://www.stephaniekimgallery.com/surgery-seoul",
+        "cmmn_hmpg_lang": "영어",
+        "cmmn_use_time": "12:00~18:00 (예약제)",
+        "cmmn_important": "무료 관람 · 전시마다 바뀌는 국내외 작가 기획전 · 전시 내 포토 스폿 · 건물 이름 '에덴5'를 확인하고 지하 2층으로",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "business_days": "매일 "
+      },
+      "traffic": {
+        "adres": "서울 강남구 청담동 91-15",
+        "new_zip_code": "06016",
+        "new_adres": "서울 강남구 도산대로57길 6 (청담동) 지하2층",
+        "map_position_x": "127.041631137979",
+        "map_position_y": "37.5240693579614",
+        "subway_info": "지하철 수인분당선 압구정로데오역 4번출구, 392m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "써저리는 청담동 건물 지하 2층에 자리한 현대미술 전시 공간입니다. '손으로 다루고 치유한다'는 그리스어 어원에서 이름을 따, 동시대 문화를 섬세한 감각으로 매만지는 공간을 지향합니다. 20년간 세계 무대에서 활동해 온 닥터 스테파니 킴이 총괄하며, 세계적인 거장부터 떠오르는 신예까지 다양한 작가의 전시를 기획합니다. 전시는 시기마다 바뀌어 방문할 때마다 새로운 작품과 공간 연출을 만날 수 있습니다. 2026년에는 영국 출신 작가 존 버거만의 개인전 《LOUNGE with Jon Burgerman》이 열려, 바나나우유와 참기름, 초코파이, 참이슬 등 한국적인 아이템을 모티프로 한 유쾌한 작품을 선보이기도 했습니다. 입장은 무료이며, 전시 안에 마련된 포토 스폿에서 여행 기념사진을 남기기에도 좋습니다. 인근에 패션 브랜드 플래그십 스토어가 모여 있어 아트와 패션을 함께 둘러보는 청담동 산책 코스로 추천합니다."
+    }
+  },
+  "KOPhpotfh": {
+    "updtDtText": "2026.11.02",
+    "detail": {
+      "cid": "KOPhpotfh",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cr0q2v2",
+      "cate_depth": " 문화관광  > 전시시설 > 박물관",
+      "multi_lang_list": "ko:KOPhpotfh,en:ENPhpotfh,ja:JPPhpotfh,zh-CN:CNPhpotfh,zh-TW:TCPhpotfh,ru:RUPhpotfh,ms:MLPhpotfh",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83366&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83367&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83368&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83369&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83370&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83371&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "박서보미술관",
+      "sumry": "단색화 거장 박서보의 자택 겸 작업실 곁에 문을 연 연희동 골목 속 미술관",
+      "creat_dt_text": "2026.10.27",
+      "updt_dt_text": "2026.11.02",
+      "tag": [
+        "박서보미술관",
+        "박서보",
+        "단색화",
+        "묘법",
+        "연희동",
+        "연희동미술관",
+        "서대문구",
+        "연희동산책"
+      ],
+      "extra": {
+        "cmmn_telno": "0507-1373-7927",
+        "cmmn_hmpg_url": "https://parkseobomuseum.org/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "11:00~18:00 (입장 마감 17:30)",
+        "cmmn_important": "박서보 자택 겸 작업실 '기지' 옆에 자리한 미술관 · 층마다 자연광과 조명을 달리한 전시 공간 · 주차장이 협소하니 대중교통 이용 권장",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "접근가능"
+        ],
+        "business_days": "화~일",
+        "closed_days": "매주 월요일",
+        "usage_fee": "입장료 5,000원"
+      },
+      "traffic": {
+        "adres": "서울 서대문구 연희동 79-41",
+        "new_zip_code": "03723",
+        "new_adres": "서울 서대문구 연희로24길 9-54 (연희동)",
+        "map_position_x": "126.935600689093",
+        "map_position_y": "37.5718119760327",
+        "subway_info": "지하철 2호선/경의중앙/공항철도 홍대입구역 4번출구, 1.9km"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "박서보미술관은 한국 단색화를 대표하는 화가 박서보의 예술과 정신을 잇기 위해 서대문구 연희동에 문을 연 미술관입니다. 박서보가 생전에 살며 작업하던 자택 겸 작업실 '기지' 바로 옆에 자리하며, 약 2,000㎡ 규모로 그의 오랜 꿈이 실현된 공간입니다. 정원과 창밖 풍경을 고스란히 끌어들인 전시장은 층마다 작품의 성격에 맞춰 자연광과 조명을 달리 써서, 같은 그림도 가까이에서 볼 때와 멀리서 볼 때 전혀 다른 인상을 줍니다. 멀리서는 고요한 화면이 가까이 다가가면 수없이 긋고 밀어낸 '묘법'의 흔적으로 살아납니다. 개관전 《박서보와 흐엉 도딘: 비움 그 충만》에서는 박서보와 프랑스에서 활동하는 베트남 출신 작가 흐엉 도딘의 작품을 함께 소개합니다. 관람 후에는 박서보가 평생 마주했을 연희동의 낮은 집들과 골목을 천천히 걸어 보기를 권합니다."
+    }
+  },
+  "KOPl3n834": {
+    "updtDtText": "2026.11.02",
+    "detail": {
+      "cid": "KOPl3n834",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cq3m6s6",
+      "cate_depth": " 체험관광 > 공예체험",
+      "multi_lang_list": "ko:KOPl3n834,en:ENPl3n834,ja:JPPl3n834,zh-CN:CNPl3n834,zh-TW:TCPl3n834,ru:RUPl3n834,ms:MLPl3n834",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83426&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83427&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83428&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83429&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83430&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83431&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "역(Yeok)",
+      "sumry": "버려질 뻔한 자투리 천으로 옷과 소품을 만드는 부암동 업사이클링 봉제 공방",
+      "creat_dt_text": "2026.10.27",
+      "updt_dt_text": "2026.11.02",
+      "tag": [
+        "역",
+        "Yeok",
+        "업사이클링",
+        "봉제클래스",
+        "원데이클래스",
+        "친환경",
+        "부암동",
+        "종로구"
+      ],
+      "extra": {
+        "cmmn_hmpg_url": "http://instagram.com/buam_station",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "12:00~19:00",
+        "cmmn_important": "업사이클링 봉제 원데이클래스(120~150분, 네이버 예약) · 영어 소통 가능(수업 언어는 예약 시 확인) · 반려동물 동반 가능 · 당일 예약 변경 불가",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "business_days": "목~일",
+        "closed_days": "매주 월·화·수요일"
+      },
+      "traffic": {
+        "adres": "서울 종로구 부암동 254-2",
+        "new_zip_code": "03020",
+        "new_adres": "서울 종로구 창의문로 136 (부암동)",
+        "map_position_x": "126.96544134109",
+        "map_position_y": "37.5927746538404",
+        "subway_info": "지하철 3호선 경복궁역 3번출구 앞 정류장에서 버스 1020·7022·7212번 승차, 부암동주민센터 하차, 30m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "역(Yeok)은 부암동에 자리한 업사이클링 봉제 공방으로, 천을 출발점 삼아 손으로 만드는 이야기를 전합니다. 매장에는 재활용 원단으로 만든 옷과 생활 소품이 진열되어 있는데, 천마다 무늬와 질감이 달라 이어 붙인 모습이 하나도 같지 않습니다. 공방에서 쓰는 원단의 상당수는 봉제 공장에서 버려질 뻔한 자투리 천입니다. 이를 다시 고르고 자르고 꿰매 일상에서 계속 쓸 수 있는 물건으로 되살립니다. 120~150분 동안 진행되는 업사이클링 봉제 클래스에서는 공방에 전시된 작품 가운데 원하는 것을 골라 직접 만들어 볼 수 있으며, 원하는 디자인이 있다면 참고 이미지나 드로잉을 보여 주고 상담 후 작업할 수 있습니다. 클래스는 네이버에서 확인·예약할 수 있고, 주인은 영어로 소통이 가능하니 수업 언어는 예약 시 확인하기를 권합니다."
+    }
+  },
+  "KOPk7wokj": {
+    "updtDtText": "2026.11.02",
+    "detail": {
+      "cid": "KOPk7wokj",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cl8f8q1",
+      "cate_depth": " 체험관광 > 기타체험",
+      "multi_lang_list": "ko:KOPk7wokj,en:ENPk7wokj,ja:JPPk7wokj,zh-CN:CNPk7wokj,zh-TW:TCPk7wokj,ru:RUPk7wokj,ms:MLPk7wokj",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83420&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83421&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83422&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83423&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83424&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83425&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "식물작업실 송하",
+      "sumry": "60년 된 건물 속에서 분재와 식물을 만나고 직접 배워 보는 부암동 식물작업실",
+      "creat_dt_text": "2026.10.27",
+      "updt_dt_text": "2026.11.02",
+      "tag": [
+        "식물작업실송하",
+        "송하",
+        "분재",
+        "분재클래스",
+        "식물샵",
+        "부암동",
+        "종로구",
+        "부암동산책"
+      ],
+      "extra": {
+        "cmmn_hmpg_url": "http://www.songha.info",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "14:00~19:00 (영업일 외에는 예약제)",
+        "cmmn_important": "분재 클래스 운영 · 약 60년 된 건물 속 식물 공간 · 카페 스코프 옆 골목, 앵두나무 아래 나무 대문집(초인종을 눌러 주세요)",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "business_days": "수, 토, 일",
+        "closed_days": "월, 화, 목, 금 (예약 시 방문 가능)",
+        "usage_fee": "분재 클래스(예약제), 식물·분재 판매"
+      },
+      "traffic": {
+        "adres": "서울 종로구 부암동 306-2",
+        "new_zip_code": "03022",
+        "new_adres": "서울 종로구 창의문로 149-5 (부암동) 1층",
+        "map_position_x": "126.963426927011",
+        "map_position_y": "37.5928869411329",
+        "subway_info": "지하철 3호선 홍제역 2번출구에서 버스 7018번 승차, 자하문터널입구·석파정 정류장 하차, 319m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "식물작업실 송하는 인왕산과 북악산 사이 부암동에 자리한 식물 공간으로, 약 60년 된 건물에 문을 열었습니다. 실내에 들어서면 저마다 다른 모양의 식물과 분재가 공간 곳곳에 놓여 건물 본래의 모습과 어우러지고, 언덕길을 오르던 걸음도 자연스레 느려집니다. 식물을 사랑하는 주인은 분재를 대를 이어 전해야 할 손기술로 여기며, 더 많은 사람이 직접 만지고 이해할 수 있도록 분재 클래스를 운영합니다. 작가들과 협업해 공간의 다양한 가능성도 실험하고 있습니다. 클래스를 듣지 않더라도 식물을 둘러보며 고요한 분위기 속에 잠시 머물기 좋은 곳입니다. 정해진 영업일 외에는 예약제로 운영되며, 클래스·협업·대관 문의는 홈페이지나 인스타그램으로 받습니다."
+    }
+  },
+  "KOPu0f2tx": {
+    "updtDtText": "2026.11.02",
+    "detail": {
+      "cid": "KOPu0f2tx",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cf1y9k1",
+      "cate_depth": " 체험관광 > 웰니스관광",
+      "multi_lang_list": "ko:KOPu0f2tx,en:ENPu0f2tx,ja:JPPu0f2tx,zh-CN:CNPu0f2tx,ru:RUPu0f2tx,ms:MLPu0f2tx",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83414&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83415&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83416&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83417&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83418&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83419&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "넋 에스테틱",
+      "sumry": "한옥의 정취를 담은 개별 룸에서 한국식 힐링 케어를 받는 신논현역 앞 에스테틱",
+      "creat_dt_text": "2026.10.27",
+      "updt_dt_text": "2026.11.02",
+      "tag": [
+        "강남헤드스파",
+        "강남마사지",
+        "한옥스파",
+        "신논현",
+        "강남",
+        "뷰티투어",
+        "일본어가능",
+        "넋에스테틱"
+      ],
+      "extra": {
+        "cmmn_telno": "0507-1312-5666",
+        "cmmn_hmpg_url": "https://neokaesthetic.imweb.me/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "10:00~21:00",
+        "cmmn_important": "일본어 응대 가능 · 한옥 분위기의 1인 개별 룸 · 신논현역 5번 출구 도보 1분(1층 투썸플레이스 옆 건물) · 예약 권장",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "접근가능"
+        ],
+        "business_days": "매일",
+        "usage_fee": "소담 다스림(헤드스파) 60분 160,000원 / 귀품 다스림(윤곽) 60분 180,000원"
+      },
+      "traffic": {
+        "adres": "서울 강남구 역삼동 809-1",
+        "new_zip_code": "06123",
+        "new_adres": "서울 강남구 강남대로110길 6 (역삼동)",
+        "map_position_x": "127.025447892521",
+        "map_position_y": "37.5040392297245",
+        "subway_info": "지하철 9호선/신분당선 신논현역 5번출구, 61m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "넋 에스테틱은 신논현역 5번 출구에서 도보 1분 거리에 있는 프라이빗 힐링 공간으로, 건물 한 채를 통째로 사용합니다. 한국 고유의 손기술과 깊은 이완 중심의 테라피를 바탕으로, 헤드스파부터 얼굴 윤곽 관리, 전신 밸런스 수기 관리, 피부 케어까지 몸과 피부를 하나로 연결해 관리합니다. 매장에 들어서면 나무의 온기가 느껴지는 차분한 인테리어와 한옥을 떠올리게 하는 한국적인 장식이 은은한 조명과 어우러집니다. 관리는 나무 격자문이 인상적인 개별 룸에서 진행되어 주변을 신경 쓰지 않고 편안히 쉴 수 있으며, 관련 전공을 이수한 전문 테라피스트가 컨디션에 맞춘 프로그램을 제공합니다. 많이 걸은 날에는 발바닥부터 종아리까지 꼼꼼히 풀어 주는 풋 케어도 추천합니다. 관리 후에는 따뜻한 차와 한국 과자를 즐기며 여운을 느낄 수 있고, 일본어 응대도 가능합니다."
+    }
+  },
+  "KOPiwgzz3": {
+    "updtDtText": "2026.11.02",
+    "detail": {
+      "cid": "KOPiwgzz3",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cl8f8q1",
+      "cate_depth": " 체험관광 > 기타체험",
+      "multi_lang_list": "ko:KOPiwgzz3,en:ENPiwgzz3,ja:JPPiwgzz3,zh-CN:CNPiwgzz3,zh-TW:TCPiwgzz3,ru:RUPiwgzz3,ms:MLPiwgzz3",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83372&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83373&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83374&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83375&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83376&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83377&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "라일라 스튜디오",
+      "sumry": "연두색 타일 건물 2층, 이웃집 정원이 내려다보이는 연희동의 취미 미술 화실",
+      "creat_dt_text": "2026.10.27",
+      "updt_dt_text": "2026.11.02",
+      "tag": [
+        "연희동화실",
+        "취미미술",
+        "원데이클래스",
+        "유화",
+        "수채화",
+        "연희동",
+        "서대문구",
+        "라일라스튜디오"
+      ],
+      "extra": {
+        "cmmn_hmpg_url": "http://www.instagram.com/lylastudio_yeonhui",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "10:00~22:00",
+        "cmmn_important": "원데이클래스 운영(예약제) · 유화·수채화·색연필 등 원하는 재료로 자유롭게 그리기 · 화실 입구는 연두색 타일 건물 대문 안쪽 계단",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "business_days": "수~일",
+        "closed_days": "매주 월·화요일",
+        "usage_fee": "1회권 80,000원 / 정규반(4회권) 200,000원"
+      },
+      "traffic": {
+        "adres": "서울 서대문구 연희동 128-30",
+        "new_zip_code": "03707",
+        "new_adres": "서울 서대문구 연희로11다길 9 (연희동) 2층",
+        "map_position_x": "126.927677220257",
+        "map_position_y": "37.5670689633717",
+        "subway_info": "지하철 2호선/경의중앙/공항철도 홍대입구역 3번출구, 1.2km"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "라일라 스튜디오는 연희동 주택가에 자리한 취미 미술 화실입니다. 청량한 연두색 타일 건물의 계단을 올라 2층에 들어서면 담장 너머로 잘 가꾸어진 이웃집 정원이 보이고, 커다란 책상과 정갈한 가구, 서재의 책들까지 주인의 취향이 고스란히 담겨 있습니다. 이곳에서는 정해진 커리큘럼보다 각자 그리고 싶은 그림을 그립니다. 유화를 그리는 사람 옆에서 누군가는 색연필을, 또 누군가는 수채화를 즐기며, 선생님이 미리 갖춰 둔 좋은 재료와 함께 차분한 지도를 받을 수 있습니다. 따뜻한 차를 마시며 몇 시간 동안 휴대폰 대신 종이에 집중하다 보면 낯선 사람들과도 자연스럽게 이야기가 이어집니다. 정규반과 원데이클래스를 예약제로 운영하며, 때로는 수강생들이 작은 음악감상회를 열거나 각자의 드로잉북을 펼쳐 전시하기도 하는 연희동의 작은 살롱 같은 공간입니다."
     }
   }
 }
