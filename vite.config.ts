@@ -1,3 +1,4 @@
+import { execSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
@@ -37,7 +38,22 @@ function catalogPagePaths(): Array<{ path: string }> {
 
 // /browse는 아직 어디서도 링크하지 않는다(헤더 세그먼트는 Task 11) — crawlLinks가
 // 못 줍는 라우트라 명시 목록에 직접 추가한다. 앞에 두는 이유는 없다(순서 무관, 같은 큐).
-const pages = [{ path: '/browse' }, ...catalogPagePaths()]
+// /playground도 링크가 없다(주소로만 연다, 디자인 플레이그라운드 스펙 3장).
+// 견본 카드가 없는 id(/e/sc-playground-1)로 링크하므로 그 페이지에서는 크롤하지 않는다 — 크롤하면 404로 빌드가 깨진다
+const pages = [
+  { path: '/browse' },
+  { path: '/playground', prerender: { crawlLinks: false } },
+  ...catalogPagePaths(),
+]
+
+/** 플레이그라운드 머리에 찍는 빌드 기준 커밋. git이 없는 환경에서도 빌드는 돈다 */
+function commitSha(): string {
+  try {
+    return execSync('git rev-parse --short HEAD', { encoding: 'utf8' }).trim()
+  } catch {
+    return 'unknown'
+  }
+}
 
 // GitHub Pages 프로젝트 사이트는 https://<user>.github.io/seoulchi/ 아래에 얹힌다.
 // 이 값이 없으면 에셋 URL이 전부 /로 시작해 404가 난다. router.tsx의 basepath와 짝이다.
@@ -78,6 +94,7 @@ function staticFnBasePath(): Plugin {
 export default defineConfig({
   base,
   server: { port: 3000 }, // 검증 단계의 curl들이 3000을 가정한다
+  define: { __COMMIT__: JSON.stringify(commitSha()) },
   resolve: {
     // vitest.config.ts와 같은 수동 alias. vite-tsconfig-paths 의존성을 하나 아낀다
     alias: { '~': fileURLToPath(new URL('./src', import.meta.url)) },
