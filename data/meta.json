@@ -1,15 +1,21 @@
 {
-  "updatedAt": "2026-11-03T02:44:12.407Z",
-  "llmProvider": "rule",
+  "updatedAt": "2026-11-04T01:08:35.097Z",
   "sourceCounts": {
-    "seoul-culture": 19695,
-    "visit-seoul": 2312
+    "seoul-culture": 19705,
+    "visit-seoul": 2312,
+    "kopis": 1057
   },
   "weekKey": "2026-W45",
   "counts": {
-    "events": 271,
+    "events": 650,
     "places": 752
   },
   "anomalies": 3,
-  "unmappedCategories": []
+  "unmappedCategories": [],
+  "kopis": {
+    "listed": 1318,
+    "fetched": 125,
+    "missing": 261,
+    "blocked": true
+  }
 }
