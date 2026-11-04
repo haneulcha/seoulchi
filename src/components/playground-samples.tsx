@@ -24,7 +24,7 @@ const ALWAYS_OPEN = { open: '00:00', close: '24:00', closedWeekdays: [] }
 const EVENTS: CatalogEventIndexItem[] = [
   {
     id: 'sc-playground-1', kind: 'event', title: '[서울시립미술관] 서울 사진 축제 2026',
-    group: '보러 가기', genre: '사진', district: '중구', place: '서울시립미술관 서소문본관',
+    group: '보러 가기', genre: '전시', district: '중구', place: '서울시립미술관 서소문본관',
     isFree: true, startDate: '2026-10-20', endDate: '2026-11-08', time: '10:00~20:00',
   },
   {
