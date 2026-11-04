@@ -120,7 +120,7 @@ describe('buildCatalogIndex', () => {
   it('행사 항목은 목록·필터에 필요한 필드만 담고 group을 계산한다', () => {
     const [item] = build([fullEvent()], []).items
     expect(item).toEqual({
-      id: 'sc-full', kind: 'event', title: '전시', group: '보러 가기', district: '중구',
+      id: 'sc-full', kind: 'event', title: '전시', group: '보러 가기', genre: '전시', district: '중구',
       place: '시립미술관', lat: 37.56, lng: 126.97, isFree: true,
       imageUrl: 'https://example.com/p.jpg', startDate: '2026-09-03', endDate: '2026-11-30',
       time: '10:00~18:00', fee: '무료', minPrice: 0,

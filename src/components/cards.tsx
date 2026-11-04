@@ -11,11 +11,12 @@ import type { CatalogEventIndexItem } from '~/types/files'
  */
 const POSTER = 'aspect-[2/3]'
 
-/** 제목 맨 앞 대괄호 기관명은 제목 아래 작은 줄로 내린다(PRODUCT.md 안티레퍼런스 1번) */
-function CardTitle({ title, className }: { title: string; className: string }) {
+/** 제목 맨 앞 대괄호 기관명은 제목 아래 작은 줄로 내린다(PRODUCT.md 안티레퍼런스 1번). 장르는 제목 위 가장 약한 줄이다 */
+function CardTitle({ title, genre, className }: { title: string; genre?: string; className: string }) {
   const t = splitTitle(title)
   return (
     <>
+      {genre && <p className="truncate text-caption text-ink-subtle">{genre}</p>}
       <h3 className={className}>{t.title}</h3>
       {t.org && <p className="truncate text-caption text-ink-subtle">{t.org}</p>}
     </>
@@ -57,6 +58,7 @@ function FactLines({
  * 같은 모양이 됐다. 위계는 크기가 아니라 **모양**(선반 대 목록)으로 만든다.
  */
 export function EventPosterCard({ item: e, today }: { item: CatalogEventIndexItem; today: string }) {
+  const facts = cardFacts(e, { today })
   return (
     <Link to="/e/$id" params={{ id: e.id }} className="block w-40 shrink-0 snap-start md:w-48">
       <ItemImage
@@ -66,8 +68,8 @@ export function EventPosterCard({ item: e, today }: { item: CatalogEventIndexIte
         className={`${POSTER} w-full rounded-100 object-cover`}
       />
       <div className="mt-100 min-w-0">
-        <CardTitle title={e.title} className="line-clamp-2 text-title-row" />
-        <FactLines facts={cardFacts(e, { today })} />
+        <CardTitle title={e.title} genre={facts.genre} className="line-clamp-2 text-title-row" />
+        <FactLines facts={facts} />
       </div>
     </Link>
   )
@@ -97,7 +99,7 @@ export function ListRow({
         className={`${image.shape === 'poster' ? `${POSTER} w-20` : 'aspect-[4/3] w-28'} shrink-0 self-start rounded-050 object-cover`}
       />
       <div className="min-w-0">
-        <CardTitle title={title} className="line-clamp-2 text-title-row" />
+        <CardTitle title={title} genre={facts.genre} className="line-clamp-2 text-title-row" />
         <FactLines facts={facts} badge={badge} />
       </div>
     </Link>

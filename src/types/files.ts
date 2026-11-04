@@ -47,7 +47,7 @@ export const categoryGroupSchema = z.enum(CATEGORY_GROUPS)
 export const catalogIndexItemSchema = z.discriminatedUnion('kind', [
   z.object({
     id: z.string(), kind: z.literal('event'), title: z.string().min(1),
-    group: categoryGroupSchema, district: z.string().optional(), place: z.string(),
+    group: categoryGroupSchema, genre: z.string().optional(), district: z.string().optional(), place: z.string(),
     lat: z.number().min(-90).max(90).optional(), lng: z.number().min(-180).max(180).optional(),
     isFree: z.boolean().optional(), imageUrl: z.string().optional(),
     startDate: isoDateSchema, endDate: isoDateSchema,

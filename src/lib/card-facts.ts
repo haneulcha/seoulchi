@@ -8,6 +8,7 @@ import type { ParsedHours } from '~/types/item'
  * 조건부 층은 값이 있을 때만 나온다. 조각마다 아이콘을 붙일 예정이라 배열이 아니라 이름 붙은 객체다.
  */
 export type CardFacts = {
+  genre?: string
   where?: string
   distance?: string
   time?: string
@@ -23,7 +24,7 @@ export type CardFactsInput = {
   isFree?: boolean
   fee?: string
 } & (
-  | { kind: 'event'; startDate: string; endDate: string; time?: string }
+  | { kind: 'event'; startDate: string; endDate: string; time?: string; genre?: string }
   | { kind: 'place'; hours?: ParsedHours | null }
 )
 
@@ -49,6 +50,7 @@ export function cardFacts(
     }
     return facts
   }
+  facts.genre = item.genre
   facts.where = district ?? item.place
   facts.time = item.time
   // 오래 진행되는 행사의 'M/D까지'는 결정에 쓸모가 없다 — 곧 끝나거나 아직 시작 전일 때만 말한다
