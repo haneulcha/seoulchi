@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { categoryGroup, isKnownCategory, unmappedCategories, CATEGORY_GROUPS } from '~/lib/category'
+import { categoryGroup, genreLabel, isKnownCategory, unmappedCategories, CATEGORY_GROUPS } from '~/lib/category'
 
 /**
  * 2026-08-31 실측 원시값 전부 (W33·W34·W35 합집합 행사 18종 + 장소 37종 = 55자리).
@@ -90,4 +90,20 @@ describe('KOPIS 장르', () => {
       expect(isKnownCategory(g)).toBe(true)
     },
   )
+})
+
+describe('genreLabel', () => {
+  it.each([
+    ['서양음악(클래식)', '클래식'], ['클래식', '클래식'], ['대중음악', '콘서트'], ['콘서트', '콘서트'],
+    ['한국음악(국악)', '국악'], ['전시/미술', '전시'], ['전시시설', '전시'], ['교육/체험', '체험'],
+    ['축제-문화/예술', '축제'], ['축제/공연/행사', '축제'], ['연극', '연극'], ['뮤지컬/오페라', '뮤지컬'],
+    ['무용(서양/한국무용)', '무용'], ['대중무용', '무용'],
+  ])('%s → %s', (raw, label) => {
+    expect(genreLabel(raw)).toBe(label)
+  })
+
+  it('기타와 모르는 값은 라벨이 없다', () => {
+    expect(genreLabel('기타')).toBeUndefined()
+    expect(genreLabel('신규')).toBeUndefined()
+  })
 })

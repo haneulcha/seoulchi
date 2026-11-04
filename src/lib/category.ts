@@ -61,3 +61,20 @@ export function isKnownCategory(raw: string): boolean {
 export function unmappedCategories(items: ReadonlyArray<{ category: string }>): string[] {
   return [...new Set(items.map((i) => i.category).filter((c) => !isKnownCategory(c)))].sort()
 }
+
+/**
+ * 원시 분류값 → 카드 제목 위의 짧은 장르 이름. 그룹(필터 칩)과 달리 무엇을 하러 가는지를 말한다.
+ * 출처마다 같은 장르의 이름이 다르다('서양음악(클래식)'·'클래식'). 기타·미매핑은 라벨 없이 둔다.
+ */
+const GENRE_BY_RAW: Record<string, string> = {
+  '서양음악(클래식)': '클래식', '클래식': '클래식', '대중음악': '콘서트', '콘서트': '콘서트',
+  '한국음악(국악)': '국악', '국악': '국악', '연극': '연극', '뮤지컬': '뮤지컬', '뮤지컬/오페라': '뮤지컬',
+  '무용': '무용', '무용(서양/한국무용)': '무용', '대중무용': '무용', '복합': '공연',
+  '서커스/마술': '서커스·마술', '영화': '영화', '전시/미술': '전시', '전시시설': '전시', '교육/체험': '체험',
+  '축제': '축제', '축제/공연/행사': '축제', '축제-문화/예술': '축제', '축제-기타': '축제',
+  '축제-전통/역사': '축제', '축제-관광/체육': '축제', '축제-자연/경관': '축제', '축제-시민화합': '축제',
+}
+
+export function genreLabel(raw: string): string | undefined {
+  return GENRE_BY_RAW[raw]
+}
