@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
+import { className, parseDesignTokens } from '../../src/lib/design-tokens'
 
 const SPACING = /^-?(?:m[trblxyse]?|p[trblxyse]?|gap(?:-[xy])?|space-[xy]|scroll-[mp][trblxyse]?)-(\d[\d.]*|\[.*\])$/
 const OFF = [
@@ -23,6 +24,19 @@ function offFoundation(source: string, spacingNames: Set<string>): string[] {
 const tokens = readFileSync('src/styles/foundation.css', 'utf8')
 const spacingNames = new Set([...tokens.matchAll(/--spacing-([\w]+):/g)].map((m) => m[1]!))
 
+// 템플릿 조각(`text-on-${r}`)은 끝이 [\w-]가 아니라 걸리지 않는다 — 문자열로는 판정할 수 없다
+const COLOR = /^(?:bg|text|border|divide)-(?:accent|neutral|danger|warning|success|info|on-|base|ink|surface|error|orange|gray|red|yellow|green|blue)[\w-]*$/
+
+/** 색 역할·옛 이름·원시 hue로 시작하는데 시맨틱 토큰에 없는 클래스. 정의가 없으면 Tailwind가 조용히 버린다 */
+function offColor(source: string, known: Set<string>): string[] {
+  return source.split(/[\s"'`{}()]+/).filter((raw) => {
+    const cls = raw.slice(raw.lastIndexOf(':') + 1)
+    return COLOR.test(cls) && !known.has(cls.replace(/^divide-/, 'border-'))
+  })
+}
+
+const known = new Set(parseDesignTokens(readFileSync('src/styles/theme.css', 'utf8'), tokens).semantics.map(className))
+
 function sources(dir: string): string[] {
   return readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
     e.isDirectory() ? sources(join(dir, e.name)) : /\.tsx?$/.test(e.name) ? [join(dir, e.name)] : [],
@@ -41,7 +55,23 @@ describe('offFoundation', () => {
   })
 })
 
+describe('offColor', () => {
+  it('정의된 시맨틱 클래스와 색 아닌 클래스는 통과한다', () => {
+    expect(offColor('bg-base text-neutral-muted md:border-danger [&.active]:border-neutral-solid divide-neutral text-caption text-center border-b-2', known)).toEqual([])
+  })
+
+  it('옛 이름, 없는 단계, 원시 hue를 잡는다', () => {
+    const src = 'text-ink bg-surface text-danger-muted bg-orange-500 [&.active]:border-ink border-neutral-border'
+    expect(offColor(src, known)).toEqual(['text-ink', 'bg-surface', 'text-danger-muted', 'bg-orange-500', '[&.active]:border-ink', 'border-neutral-border'])
+  })
+})
+
 describe('src', () => {
+  it.each(sources('src'))('%s는 정의되지 않은 색 클래스를 쓰지 않는다', (file) => {
+    expect(offColor(readFileSync(file, 'utf8'), known)).toEqual([])
+  })
+
+
   it.each(sources('src'))('%s는 토큰 밖 간격·글자·모서리를 쓰지 않는다', (file) => {
     expect(offFoundation(readFileSync(file, 'utf8'), spacingNames)).toEqual([])
   })

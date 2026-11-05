@@ -36,7 +36,7 @@ function Browse() {
       {state.status === 'ready' && (
         <header>
           {/* 범위 줄이 탭마다 다르다 — 탐색에서 '이번 주'가 거짓말이 되지 않게(스펙 7장) */}
-          <p className="text-body text-ink-subtle">
+          <p className="text-body text-neutral-subtle">
             {formatWeekRange({ start: state.today, end: state.index.horizonEnd })}
           </p>
         </header>
@@ -128,7 +128,7 @@ function BrowseResults({
   return (
     <>
       {search.near === true && geo.status === 'waiting' && (
-        <p className="mt-200 text-body text-ink-subtle">위치 확인 중…</p>
+        <p className="mt-200 text-body text-neutral-subtle">위치 확인 중…</p>
       )}
       {groups.map((g) => (
         <TimelineSection key={g.key} group={g} today={today}
@@ -141,7 +141,7 @@ function BrowseResults({
         <section className="mt-section">
           <div className="flex items-baseline justify-between">
             <h2 className="text-title-section">언제든 갈 수 있는 곳</h2>
-            <span className="text-body text-ink-muted">{places.length}건</span>
+            <span className="text-body text-neutral-muted">{places.length}건</span>
           </div>
           <div className="mt-150">
             {places.map((p) => (

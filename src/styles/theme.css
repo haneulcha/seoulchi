@@ -1,6 +1,6 @@
 /* 색 토큰 — Tailwind v4 테마 */
 /* 원시 색은 @theme 밖 :root라서 클래스가 없다. 시맨틱이 var()로만 가리킨다. */
-/* .dark는 시맨틱만 바꾼다. 재선언되지 않은 것(solid, on-{i})은 테마를 가로질러 같다. */
+/* .dark는 시맨틱만 바꾼다. 다섯 역할(accent·danger·warning·success·info)의 {i}-solid, on-{i}는 재선언하지 않아 테마를 가로질러 같다. neutral-solid, on-neutral은 다크에서 뒤집힌다. */
 
 :root {
   --orange-50: #fff6ee;

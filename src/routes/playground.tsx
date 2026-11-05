@@ -36,12 +36,12 @@ function px(value: string): string {
 
 function Playground() {
   const hues = [...new Set(tokens.primitives.map((p) => p.hue))]
-  const roles = [...new Set(tokens.semantics.map((s) => s.role))]
+  const roles = ['accent', 'neutral', 'danger', 'warning', 'success', 'info']
   return (
     <main className={`${PAGE} space-y-section py-page`}>
       <header>
         <h2 className="text-title-page">디자인 시스템</h2>
-        <p className="mt-050 text-caption text-ink-subtle">
+        <p className="mt-050 text-caption text-neutral-subtle">
           빌드 기준 커밋 <code>{__COMMIT__}</code> · 근거{' '}
           <a className="underline" href={`${REPO}/DESIGN.md`}>DESIGN.md</a> ·{' '}
           <a className="underline" href={`${REPO}/PRODUCT.md`}>PRODUCT.md</a>
@@ -56,10 +56,10 @@ function Playground() {
               <div className="grid min-w-[44rem] grid-cols-11 gap-050">
                 {tokens.primitives.filter((p) => p.hue === hue).map((p) => (
                   <div key={p.name}>
-                    <div className="h-10 rounded-050 border border-neutral-border" style={{ backgroundColor: p.value }} />
+                    <div className="h-10 rounded-050 border border-neutral" style={{ backgroundColor: p.value }} />
                     <p className="mt-050 text-caption">{p.name.slice(hue.length + 1)}</p>
-                    <p className="text-caption text-ink-subtle">var(--{p.name})</p>
-                    <p className="text-caption text-ink-subtle">{p.value}</p>
+                    <p className="text-caption text-neutral-subtle">var(--{p.name})</p>
+                    <p className="text-caption text-neutral-subtle">{p.value}</p>
                   </div>
                 ))}
               </div>
@@ -75,14 +75,14 @@ function Playground() {
       </Section>
 
       <Section title="글자">
-        <div className="mt-200 divide-y divide-neutral-border">
+        <div className="mt-200 divide-y divide-neutral">
           {tokens.text.map((t) => (
             <div key={t.name} className="py-150">
               <p style={{ fontSize: t.size, lineHeight: t.lineHeight, fontWeight: Number(t.weight) }}>
                 이번 주 서울에서 갈 만한 곳
               </p>
-              <p className="mt-050 text-caption text-ink-subtle">
-                <code className="text-ink">text-{t.name}</code> · {px(t.size)} / {t.lineHeight} / {t.weight}
+              <p className="mt-050 text-caption text-neutral-subtle">
+                <code className="text-neutral">text-{t.name}</code> · {px(t.size)} / {t.lineHeight} / {t.weight}
                 {t.at.map((a) => ` · ≥${a.minWidth} ${a.size} / ${a.lineHeight}`).join('')}
               </p>
             </div>
@@ -100,9 +100,9 @@ function Playground() {
         <div className="mt-200 flex flex-wrap gap-300">
           {tokens.radius.map((r) => (
             <div key={r.name}>
-              <div className="h-14 w-14 border border-neutral-border bg-neutral-subtle-bg" style={{ borderRadius: r.value }} />
+              <div className="h-14 w-14 border border-neutral bg-neutral-subtle" style={{ borderRadius: r.value }} />
               <p className="mt-100 text-caption"><code>rounded-{r.name}</code></p>
-              <p className="text-caption text-ink-subtle">{px(r.value)}</p>
+              <p className="text-caption text-neutral-subtle">{px(r.value)}</p>
             </div>
           ))}
         </div>
@@ -128,7 +128,7 @@ function ColorTable({ colors }: { colors: Semantic[] }) {
   return (
     <div className="mt-150 overflow-x-auto">
       <table className="w-full min-w-[40rem] text-left text-caption">
-        <thead className="text-ink-subtle">
+        <thead className="text-neutral-subtle">
           <tr>
             <th className="py-050 pr-150">클래스</th>
             <th className="py-050 pr-150">라이트</th>
@@ -138,15 +138,15 @@ function ColorTable({ colors }: { colors: Semantic[] }) {
         </thead>
         <tbody>
           {colors.map((c) => (
-            <tr key={className(c)} className="border-t border-neutral-border align-top">
+            <tr key={className(c)} className="border-t border-neutral align-top">
               <td className="py-100 pr-150"><code>{className(c)}</code></td>
               {(['light', 'dark'] as const).map((theme) => (
                 <td key={theme} className="py-100 pr-150">
                   <div className="flex items-center gap-100">
-                    <span className="h-6 w-6 shrink-0 rounded-050 border border-neutral-border" style={{ backgroundColor: c.value[theme] }} />
+                    <span className="h-6 w-6 shrink-0 rounded-050 border border-neutral" style={{ backgroundColor: c.value[theme] }} />
                     <span>
                       {c.value[theme]}
-                      {c.ref[theme] && <span className="block text-ink-subtle">{c.ref[theme]}</span>}
+                      {c.ref[theme] && <span className="block text-neutral-subtle">{c.ref[theme]}</span>}
                     </span>
                   </div>
                 </td>
@@ -169,7 +169,7 @@ function Contrast({ fg }: { fg: string }) {
     <ul>
       {rows.map((p) => (
         <li key={p.bg}>
-          <span className="text-ink-subtle">on {p.bg}</span> {ratio('light', p.bg)} / {ratio('dark', p.bg)}
+          <span className="text-neutral-subtle">on {p.bg}</span> {ratio('light', p.bg)} / {ratio('dark', p.bg)}
         </li>
       ))}
     </ul>
@@ -185,8 +185,8 @@ function LengthRows({ items, cls, sample }: {
         <div key={s.name} className="grid grid-cols-[7rem_1fr] items-center gap-150">
           <div className="text-caption">
             <code>{cls(s.name)}</code>
-            <p className="text-ink-subtle">{px(s.value)}</p>
-            {s.at.map((a) => <p key={a.minWidth} className="text-ink-subtle">≥{a.minWidth} {px(a.value)}</p>)}
+            <p className="text-neutral-subtle">{px(s.value)}</p>
+            {s.at.map((a) => <p key={a.minWidth} className="text-neutral-subtle">≥{a.minWidth} {px(a.value)}</p>)}
           </div>
           {sample(s)}
         </div>
@@ -202,18 +202,18 @@ function SampleBlock({ sample }: { sample: Sample }) {
   return (
     <div className="mt-300">
       <h4 className="text-title-row">
-        {sample.name} <span className="text-caption text-ink-subtle">{sample.source}</span>
+        {sample.name} <span className="text-caption text-neutral-subtle">{sample.source}</span>
       </h4>
       <div className="mt-100 grid gap-100 md:grid-cols-2">
-        <div style={LIGHT_VARS} className="min-w-0 rounded-100 border border-neutral-border bg-surface p-200 text-ink">
+        <div style={LIGHT_VARS} className="min-w-0 rounded-100 border border-neutral bg-base p-200 text-neutral">
           {sample.render()}
         </div>
-        <div className="dark min-w-0 rounded-100 border border-neutral-border bg-surface p-200 text-ink">
+        <div className="dark min-w-0 rounded-100 border border-neutral bg-base p-200 text-neutral">
           {sample.render()}
         </div>
       </div>
       <div className="mt-100 flex items-start gap-100">
-        <pre className="min-w-0 flex-1 overflow-x-auto text-caption text-ink-muted"><code>{sample.code}</code></pre>
+        <pre className="min-w-0 flex-1 overflow-x-auto text-caption text-neutral-muted"><code>{sample.code}</code></pre>
         {sample.code.length > COPY_MIN && (
           <button
             type="button"

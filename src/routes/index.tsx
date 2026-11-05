@@ -121,10 +121,10 @@ function DayList({
     <section id="list" className="mt-section scroll-mt-200">
       <div className="flex items-baseline justify-between">
         <h2 className="text-title-section">{DAY_LABELS[day]}</h2>
-        <span className="text-body text-ink-muted">{list.length}건</span>
+        <span className="text-body text-neutral-muted">{list.length}건</span>
       </div>
       {near && geo.status === 'waiting' && (
-        <p className="mt-100 text-body text-ink-subtle">위치 확인 중…</p>
+        <p className="mt-100 text-body text-neutral-subtle">위치 확인 중…</p>
       )}
       <div className="mt-150">
         {rows.map(({ item, km }) => (

@@ -83,7 +83,7 @@ function Detail() {
         />
         <div className="min-w-0">
           <h2 className="mt-200 text-title-section md:mt-0">{item.title}</h2>
-          <p className="mt-050 text-body text-ink-subtle">
+          <p className="mt-050 text-body text-neutral-subtle">
             {item.category}
             {item.district ? ` · ${item.district}` : ''}
           </p>
@@ -148,7 +148,7 @@ function Fact({ label, value, badge }: { label: string; value?: string; badge?: 
   if (!value) return null
   return (
     <div className="flex gap-150 text-body">
-      <dt className="w-14 shrink-0 text-ink-subtle">{label}</dt>
+      <dt className="w-14 shrink-0 text-neutral-subtle">{label}</dt>
       <dd className="min-w-0 whitespace-pre-line">
         {value}
         {badge}

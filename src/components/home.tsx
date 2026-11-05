@@ -53,7 +53,7 @@ export function HomeControls({
         </ChipSelect>
       </div>
       {nearDisabledReason !== undefined && (
-        <p className="text-body text-warning-text">{nearDisabledReason}</p>
+        <p className="text-body text-warning">{nearDisabledReason}</p>
       )}
     </div>
   )
@@ -73,7 +73,7 @@ export function HomeEmpty({ search }: { search: HomeSearch }) {
         <ul className="mt-200 space-y-100 text-body">
           {links.map((l) => (
             <li key={l.key}>
-              <Link to="/" search={l.to} className="text-ink-muted underline">{l.label}</Link>
+              <Link to="/" search={l.to} className="text-neutral-muted underline">{l.label}</Link>
             </li>
           ))}
         </ul>
@@ -92,7 +92,7 @@ export function HomePager({ search, page, pages }: { search: HomeSearch; page: n
       )}
       {pageNumbers(page, pages).map((n, i) =>
         n === '…' ? (
-          <span key={`gap-${i}`} className="text-body text-ink-subtle">…</span>
+          <span key={`gap-${i}`} className="text-body text-neutral-subtle">…</span>
         ) : (
           <Link key={n} to="/" search={to(n)} hash="list" aria-current={n === page ? 'page' : undefined}
             className={chip(n === page)}>

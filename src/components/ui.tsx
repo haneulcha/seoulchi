@@ -5,8 +5,8 @@ import type { ReactNode } from 'react'
  * outline도 solid와 같은 1px 테두리를 가져야 두 버튼을 나란히 둘 때 높이가 같다.
  */
 const BUTTON_TONE = {
-  solid: 'border-ink bg-ink text-surface',
-  outline: 'border-neutral-border text-ink',
+  solid: 'border-neutral-solid bg-neutral-solid text-on-neutral',
+  outline: 'border-neutral text-neutral',
 }
 const BUTTON_SIZE = { md: 'px-300 py-150', sm: 'px-200 py-100' }
 
@@ -17,7 +17,7 @@ export function button(tone: keyof typeof BUTTON_TONE, size: keyof typeof BUTTON
 /** 칩 모양. 켜진 칩도 테두리를 유지해야 켜고 끌 때 높이가 2px 흔들리지 않는다 */
 export function chip(active = false) {
   return `shrink-0 rounded-full border px-150 py-075 text-label ${
-    active ? 'border-ink bg-ink text-surface' : 'border-neutral-border bg-surface text-ink-muted'
+    active ? 'border-neutral-solid bg-neutral-solid text-on-neutral' : 'border-neutral bg-base text-neutral-muted'
   }`
 }
 
@@ -42,7 +42,7 @@ export function ChipSelect({
   value, onChange, label, children,
 }: { value: string; onChange: (value: string) => void; label: string; children: ReactNode }) {
   return (
-    <span className="relative inline-flex shrink-0 text-ink-muted">
+    <span className="relative inline-flex shrink-0 text-neutral-muted">
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -59,8 +59,8 @@ export function ChipSelect({
 }
 
 const CALLOUT_TONE = {
-  error: { box: 'border-error-border bg-error-subtle-bg', title: 'text-error-text-strong', body: 'text-error-text' },
-  warning: { box: 'border-warning-border bg-warning-subtle-bg', title: 'text-warning-text-strong', body: 'text-warning-text' },
+  error: { box: 'border-danger bg-danger-subtle', title: 'text-danger-strong', body: 'text-danger' },
+  warning: { box: 'border-warning bg-warning-subtle', title: 'text-warning-strong', body: 'text-warning' },
 }
 
 /** 목록 대신 놓이는 상태 안내. 실패는 error, 오래됨은 warning이다 */

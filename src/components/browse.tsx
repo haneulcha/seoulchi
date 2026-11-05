@@ -45,7 +45,7 @@ export function BrowsePlaceRow({
         <>
           <OpenNowBadge hours={item.hours ?? null} />
           {hoursUnknownNote && !item.hours && (
-            <span className="mr-100 text-caption text-ink-subtle">영업시간 미상</span>
+            <span className="mr-100 text-caption text-neutral-subtle">영업시간 미상</span>
           )}
         </>
       }
@@ -71,9 +71,9 @@ export function TimelineSection({
     <>
       <h2 className="text-title-section">
         {group.label}
-        <span className="ml-100 text-body text-ink-subtle">{md(group.start)}–{md(group.end)}</span>
+        <span className="ml-100 text-body text-neutral-subtle">{md(group.start)}–{md(group.end)}</span>
       </h2>
-      <span className="text-body text-ink-muted">
+      <span className="text-body text-neutral-muted">
         {group.items.length}건{collapsible && <span className="ml-050">{expanded ? '⌄' : '›'}</span>}
       </span>
     </>
@@ -105,10 +105,10 @@ export function CatalogSkeleton() {
     <div aria-hidden className="mt-400 space-y-200">
       {Array.from({ length: 6 }, (_, i) => (
         <div key={i} className="flex gap-150">
-          <div className="aspect-[2/3] w-20 animate-pulse rounded-050 bg-neutral-subtle-bg" />
+          <div className="aspect-[2/3] w-20 animate-pulse rounded-050 bg-neutral-subtle" />
           <div className="flex-1 space-y-100 py-050">
-            <div className="h-4 w-2/3 animate-pulse rounded-050 bg-neutral-subtle-bg" />
-            <div className="h-3 w-1/3 animate-pulse rounded-050 bg-neutral-subtle-bg" />
+            <div className="h-4 w-2/3 animate-pulse rounded-050 bg-neutral-subtle" />
+            <div className="h-3 w-1/3 animate-pulse rounded-050 bg-neutral-subtle" />
           </div>
         </div>
       ))}
@@ -221,7 +221,7 @@ export function BrowseControls({
         </ChipSelect>
       </div>
       {nearDisabledReason !== undefined && (
-        <p className="text-body text-warning-text">{nearDisabledReason}</p>
+        <p className="text-body text-warning">{nearDisabledReason}</p>
       )}
     </div>
   )
@@ -242,14 +242,14 @@ export function EmptyResult({
           {suggestions.map((s) => (
             <li key={s.filter}>
               <Link to="/browse" search={{ ...search, [s.filter]: undefined }}
-                className="text-ink-muted underline">
+                className="text-neutral-muted underline">
                 '{FILTER_LABELS[s.filter]}'을(를) 풀면 {s.count}건
               </Link>
             </li>
           ))}
         </ul>
       ) : (
-        <p className="mt-100 text-body text-ink-subtle">모든 필터를 풀어도 결과가 없습니다</p>
+        <p className="mt-100 text-body text-neutral-subtle">모든 필터를 풀어도 결과가 없습니다</p>
       )}
     </div>
   )

@@ -16,9 +16,9 @@ function CardTitle({ title, genre, className }: { title: string; genre?: string;
   const t = splitTitle(title)
   return (
     <>
-      {genre && <p className="truncate text-caption text-ink-subtle">{genre}</p>}
+      {genre && <p className="truncate text-caption text-neutral-subtle">{genre}</p>}
       <h3 className={className}>{t.title}</h3>
-      {t.org && <p className="truncate text-caption text-ink-subtle">{t.org}</p>}
+      {t.org && <p className="truncate text-caption text-neutral-subtle">{t.org}</p>}
     </>
   )
 }
@@ -34,12 +34,12 @@ function FactLines({
   const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
   return (
     <>
-      <p className="mt-100 truncate text-caption text-ink-muted">{fixed}</p>
+      <p className="mt-100 truncate text-caption text-neutral-muted">{fixed}</p>
       {(badge || facts.price || facts.deadline) && (
-        <p className="truncate text-caption text-ink-muted">
+        <p className="truncate text-caption text-neutral-muted">
           {badge}
           {facts.price && (
-            <span className={facts.price === '무료' ? 'text-success-text' : undefined}>{facts.price}</span>
+            <span className={facts.price === '무료' ? 'text-success' : undefined}>{facts.price}</span>
           )}
           {facts.price && facts.deadline && ' · '}
           {facts.deadline}
@@ -91,7 +91,7 @@ export function ListRow({
   badge?: ReactNode
 }) {
   return (
-    <Link to="/e/$id" params={{ id }} className="flex gap-150 border-t border-neutral-border py-150">
+    <Link to="/e/$id" params={{ id }} className="flex gap-150 border-t border-neutral py-150">
       <ItemImage
         src={image.src}
         alt=""

@@ -52,7 +52,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <head>
         <HeadContent />
       </head>
-      <body className="bg-surface text-ink">
+      <body className="bg-base text-neutral">
         {/*
          * 두 화면 공통 헤더(스펙 7장). 제목 유지 + 세그먼트.
          * 범위 줄은 탭마다 달라서 여기 없다 — 각 라우트가 자기 범위 줄을 그린다.
@@ -64,11 +64,11 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
               <h1 className="text-title-page">
                 <Link to="/">이번 주 서울</Link>
               </h1>
-              <p className="text-caption text-ink-subtle">{updatedLabel}</p>
+              <p className="text-caption text-neutral-subtle">{updatedLabel}</p>
             </div>
             <ThemeToggle />
           </div>
-          <nav aria-label="화면 전환" className="mt-150 flex gap-300 border-b border-neutral-border">
+          <nav aria-label="화면 전환" className="mt-150 flex gap-300 border-b border-neutral">
             <TabLink to="/" label="추천" />
             <TabLink to="/browse" label="탐색" />
           </nav>
@@ -90,7 +90,7 @@ function TabLink({ to, label }: { to: '/' | '/browse'; label: string }) {
     <Link
       to={to}
       activeOptions={{ exact: to === '/' }}
-      className="-mb-px border-b-2 border-transparent pb-100 text-label text-ink-muted [&.active]:border-ink [&.active]:text-ink"
+      className="-mb-px border-b-2 border-transparent pb-100 text-label text-neutral-muted [&.active]:border-neutral-solid [&.active]:text-neutral"
     >
       {label}
     </Link>
