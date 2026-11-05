@@ -189,6 +189,8 @@ PRODUCT.md가 대비를 접근성 이전에 **기능 요건**으로 못박고 �
 - **Tailwind 기본 팔레트는 꺼져 있습니다.** `theme.css`의 `--color-*: initial` 때문에
   `text-gray-500` 같은 클래스는 아예 컴파일되지 않습니다. 시스템 밖 색이 조용히 새는 걸 막습니다.
   `white`·`black`·`transparent`·`current`만 남겨 뒀습니다.
+- **색 토큰은 `bg`·`text`·`border`(`divide`) 접두사에만 있습니다.** `ring`·`outline`·`fill` 등에 쓰면
+  아무것도 칠해지지 않습니다. `tests/styles/foundation.test.ts`가 막습니다.
 
 ## 고칠 때
 
@@ -319,6 +321,7 @@ PRODUCT.md가 대비를 접근성 이전에 **기능 요건**으로 못박고 �
 | 간격 | `mt-100`, `gap-gutter` | 테스트 (기본 숫자 스케일은 크기 클래스 때문에 못 끔) |
 | 글자 | `text-title-card` | 컴파일러 (`--text-*`, `--font-weight-*`를 `initial`) + 테스트 |
 | 모서리 | `rounded-100` | 컴파일러 (`--radius-*`를 `initial`) + 테스트 |
+| 색 | `bg-base`, `text-neutral-muted` | 컴파일러 (`--color-*`를 `initial`, 원시 색은 `:root`) + 테스트 |
 
 컴파일러가 막은 클래스는 에러 없이 사라지기만 합니다. 그래서 `text-sm`, `font-bold`, `rounded-lg`처럼
 꺼진 이름이 남아 있으면 `tests/styles/foundation.test.ts`가 잡습니다.

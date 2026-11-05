@@ -1,5 +1,5 @@
 /**
- * theme.css·foundation.css 원문을 토큰 모델로 바꾼다. 플레이그라운드(/playground)의 유일한 입력이다 —
+ * theme.css·foundation.css 원문을 토큰 모델로 바꾼다. 플레이그라운드(/playground)와 색 가드 테스트의 입력이다 —
  * 표에 나오는 이름·값·순서는 전부 여기서 나오고, 손으로 옮긴 값이 없다.
  */
 

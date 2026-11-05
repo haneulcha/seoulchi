@@ -44,6 +44,10 @@ describe('parseDesignTokens — 색', () => {
     expect(sem('text-neutral-subtle')).toMatchObject({ role: 'neutral', value: { light: '#71717c', dark: '#9f9fa9' } })
     expect(sem('bg-base').role).toBe('neutral')
   })
+
+  it('역할은 정확히 6개다 — 오타 난 역할은 플레이그라운드 고정 목록에서 조용히 빠진다', () => {
+    expect(new Set(t.semantics.map((s) => s.role))).toEqual(new Set(['accent', 'neutral', 'danger', 'warning', 'success', 'info']))
+  })
 })
 
 describe('parseDesignTokens — 간격·글자·모서리', () => {
