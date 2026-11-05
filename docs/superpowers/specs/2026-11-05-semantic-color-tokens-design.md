@@ -140,7 +140,7 @@
   - 스케일 이름: `accent-`, `neutral-`, `error-`, `warning-`, `success-`, `info-` 뒤에 숫자가 붙은 것
 - 빌드한 CSS에 `bg-base`, `text-neutral-muted`, `border-neutral`이 있고, `bg-orange-500` 같은 원시 색 클래스는 없다.
 - `.dark` 아래에서 `bg-base`가 950으로 바뀐다. 빌드 결과물이나 플레이그라운드 화면으로 확인한다.
-- 대비 검사는 라이트와 다크 모두에서 지금과 같은 쌍이 새 이름으로 4.5 이상이다.
+- 대비 검사가 라이트·다크 모두 4.5 이상이다. 쌍은 33에서 29로 줄어든다 — `neutral-text`·`neutral-text-strong` 쌍이 토큰과 함께 없어진다(계획 Task 1).
 - 홈, 상세, 플레이그라운드 화면이 바꾸기 전과 픽셀상 같다. 예외는 `neutral-solid`를 새로 쓰기 시작한 곳뿐이고, 그곳도 지금의 `ink`와 같은 값이라 화면은 같아야 한다.
 
 ## 10. 빌더에게 남긴 것
