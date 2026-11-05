@@ -4,7 +4,7 @@ import { PAGE } from '~/components/page'
 import { SAMPLES, type Sample } from '~/components/playground-samples'
 import { button } from '~/components/ui'
 import {
-  type ColorToken, contrastPairs, type LengthToken, lightVars, parseDesignTokens, type Theme,
+  className, contrastPairs, type LengthToken, lightVars, parseDesignTokens, type Semantic, type Theme,
 } from '~/lib/design-tokens'
 import foundationCss from '~/styles/foundation.css?raw'
 import themeCss from '~/styles/theme.css?raw'
@@ -34,15 +34,9 @@ function px(value: string): string {
   return rem ? `${value} · ${Number(rem[1]) * 16}px` : value
 }
 
-function colorClass(c: ColorToken): string {
-  if (c.kind === 'primitive') return `bg-${c.name}`
-  if (c.name.endsWith('border')) return `border-${c.name}`
-  if (/-text|on-solid|^ink/.test(c.name)) return `text-${c.name}`
-  return `bg-${c.name}`
-}
-
 function Playground() {
-  const scales = [...new Set(tokens.colors.flatMap((c) => (c.scale ? [c.scale] : [])))]
+  const hues = [...new Set(tokens.primitives.map((p) => p.hue))]
+  const roles = [...new Set(tokens.semantics.map((s) => s.role))]
   return (
     <main className={`${PAGE} space-y-section py-page`}>
       <header>
@@ -55,27 +49,29 @@ function Playground() {
       </header>
 
       <Section title="색">
-        {scales.map((scale) => (
-          <div key={scale} className="mt-300">
-            <h4 className="text-title-row">{scale}</h4>
+        {hues.map((hue) => (
+          <div key={hue} className="mt-300">
+            <h4 className="text-title-row">{hue}</h4>
             <div className="mt-100 overflow-x-auto">
               <div className="grid min-w-[44rem] grid-cols-11 gap-050">
-                {tokens.colors.filter((c) => c.scale === scale && c.kind === 'primitive').map((c) => (
-                  <div key={c.name}>
-                    <div className="h-10 rounded-050 border border-neutral-border" style={{ backgroundColor: c.value.light }} />
-                    <p className="mt-050 text-caption">{c.name.slice(scale.length + 1)}</p>
-                    <p className="text-caption text-ink-subtle">{c.value.light}</p>
+                {tokens.primitives.filter((p) => p.hue === hue).map((p) => (
+                  <div key={p.name}>
+                    <div className="h-10 rounded-050 border border-neutral-border" style={{ backgroundColor: p.value }} />
+                    <p className="mt-050 text-caption">{p.name.slice(hue.length + 1)}</p>
+                    <p className="text-caption text-ink-subtle">var(--{p.name})</p>
+                    <p className="text-caption text-ink-subtle">{p.value}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <ColorTable colors={tokens.colors.filter((c) => c.scale === scale && c.kind === 'role')} />
           </div>
         ))}
-        <div className="mt-300">
-          <h4 className="text-title-row">표면·잉크</h4>
-          <ColorTable colors={tokens.colors.filter((c) => c.kind === 'surface')} />
-        </div>
+        {roles.map((role) => (
+          <div key={role} className="mt-300">
+            <h4 className="text-title-row">{role}</h4>
+            <ColorTable colors={tokens.semantics.filter((s) => s.role === role)} />
+          </div>
+        ))}
       </Section>
 
       <Section title="글자">
@@ -128,13 +124,13 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
   )
 }
 
-function ColorTable({ colors }: { colors: ColorToken[] }) {
+function ColorTable({ colors }: { colors: Semantic[] }) {
   return (
     <div className="mt-150 overflow-x-auto">
       <table className="w-full min-w-[40rem] text-left text-caption">
         <thead className="text-ink-subtle">
           <tr>
-            <th className="py-050 pr-150">토큰 · 클래스</th>
+            <th className="py-050 pr-150">클래스</th>
             <th className="py-050 pr-150">라이트</th>
             <th className="py-050 pr-150">다크</th>
             <th className="py-050">대비</th>
@@ -142,11 +138,8 @@ function ColorTable({ colors }: { colors: ColorToken[] }) {
         </thead>
         <tbody>
           {colors.map((c) => (
-            <tr key={c.name} className="border-t border-neutral-border align-top">
-              <td className="py-100 pr-150">
-                <p>{c.name}</p>
-                <code className="text-ink-subtle">{colorClass(c)}</code>
-              </td>
+            <tr key={className(c)} className="border-t border-neutral-border align-top">
+              <td className="py-100 pr-150"><code>{className(c)}</code></td>
               {(['light', 'dark'] as const).map((theme) => (
                 <td key={theme} className="py-100 pr-150">
                   <div className="flex items-center gap-100">
@@ -158,7 +151,7 @@ function ColorTable({ colors }: { colors: ColorToken[] }) {
                   </div>
                 </td>
               ))}
-              <td className="py-100"><Contrast fg={c.name} /></td>
+              <td className="py-100"><Contrast fg={className(c)} /></td>
             </tr>
           ))}
         </tbody>
