@@ -1239,6 +1239,41 @@
       }
     },
     {
+      "id": "vs-KOP485v7h",
+      "source": "visit-seoul",
+      "title": "서울시립 서서울미술관",
+      "summary": "뉴미디어 전시와 미래 예술 교육을 중심으로 하는 서울 서남권의 시립미술관",
+      "category": "미술관/화랑",
+      "place": "서울시립 서서울미술관",
+      "address": "서울 금천구 시흥대로79길 65 (독산동)",
+      "lat": 37.4577462883391,
+      "lng": 126.895539272251,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83447&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://sema.seoul.go.kr/",
+      "isFree": true,
+      "subwayInfo": "지하철 1호선 금천구청역 1번출구, 266m",
+      "tags": [
+        "서울시립미술관",
+        "SeMA",
+        "뉴미디어",
+        "현대미술",
+        "서서울미술관",
+        "무료전시",
+        "금천구",
+        "예술관광"
+      ],
+      "kind": "place",
+      "useTime": "화~금 10:00~20:00 / 토·일·공휴일 10:00~19:00 (관람 종료 30분 전까지 입장)",
+      "closedDays": "매주 월요일(공휴일인 경우 정상 개관), 1월 1일",
+      "hours": {
+        "open": "10:00",
+        "close": "20:00",
+        "closedWeekdays": [
+          1
+        ]
+      }
+    },
+    {
       "id": "vs-KOPgcq5pt",
       "source": "visit-seoul",
       "title": "써저리",

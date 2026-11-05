@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-11-04T01:08:35.097Z",
+  "updatedAt": "2026-11-05T01:11:47.127Z",
   "sourceCounts": {
-    "seoul-culture": 19705,
-    "visit-seoul": 2312,
-    "kopis": 1057
+    "seoul-culture": 19701,
+    "visit-seoul": 2313,
+    "kopis": 1038
   },
   "weekKey": "2026-W45",
   "counts": {
-    "events": 650,
-    "places": 752
+    "events": 621,
+    "places": 753
   },
   "anomalies": 3,
   "unmappedCategories": [],
   "kopis": {
-    "listed": 1318,
-    "fetched": 125,
-    "missing": 261,
+    "listed": 1038,
+    "fetched": 0,
+    "missing": 0,
     "blocked": true
   }
 }

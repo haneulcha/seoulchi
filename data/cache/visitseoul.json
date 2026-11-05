@@ -124169,5 +124169,68 @@
       },
       "post_desc": "라일라 스튜디오는 연희동 주택가에 자리한 취미 미술 화실입니다. 청량한 연두색 타일 건물의 계단을 올라 2층에 들어서면 담장 너머로 잘 가꾸어진 이웃집 정원이 보이고, 커다란 책상과 정갈한 가구, 서재의 책들까지 주인의 취향이 고스란히 담겨 있습니다. 이곳에서는 정해진 커리큘럼보다 각자 그리고 싶은 그림을 그립니다. 유화를 그리는 사람 옆에서 누군가는 색연필을, 또 누군가는 수채화를 즐기며, 선생님이 미리 갖춰 둔 좋은 재료와 함께 차분한 지도를 받을 수 있습니다. 따뜻한 차를 마시며 몇 시간 동안 휴대폰 대신 종이에 집중하다 보면 낯선 사람들과도 자연스럽게 이야기가 이어집니다. 정규반과 원데이클래스를 예약제로 운영하며, 때로는 수강생들이 작은 음악감상회를 열거나 각자의 드로잉북을 펼쳐 전시하기도 하는 연희동의 작은 살롱 같은 공간입니다."
     }
+  },
+  "KOP485v7h": {
+    "updtDtText": "2026.11.04",
+    "detail": {
+      "cid": "KOP485v7h",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Ct9t6m8",
+      "cate_depth": " 문화관광  > 전시시설 > 미술관/화랑",
+      "multi_lang_list": "ko:KOP485v7h,en:ENP485v7h,ja:JPP485v7h,zh-CN:CNP485v7h,zh-TW:TCP485v7h,ru:RUP485v7h,ms:MLP485v7h",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83447&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83448&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83449&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83450&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83451&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "서울시립 서서울미술관",
+      "sumry": "뉴미디어 전시와 미래 예술 교육을 중심으로 하는 서울 서남권의 시립미술관",
+      "creat_dt_text": "2026.10.29",
+      "updt_dt_text": "2026.11.04",
+      "tag": [
+        "서울시립미술관",
+        "SeMA",
+        "뉴미디어",
+        "현대미술",
+        "서서울미술관",
+        "무료전시",
+        "금천구",
+        "예술관광"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2124-5800",
+        "cmmn_hmpg_url": "https://sema.seoul.go.kr/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "화~금 10:00~20:00 / 토·일·공휴일 10:00~19:00 (관람 종료 30분 전까지 입장)",
+        "cmmn_important": "한국어 도슨트 운영 · SeMA 애플리케이션 영문 작품 설명 지원 · 금천구청역 도보 5분",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "장애인화장실",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "business_days": "화~일",
+        "closed_days": "매주 월요일(공휴일인 경우 정상 개관), 1월 1일",
+        "usage_fee": "무료(전시별 상이)"
+      },
+      "traffic": {
+        "adres": "서울 금천구 독산동 1151",
+        "new_zip_code": "08611",
+        "new_adres": "서울 금천구 시흥대로79길 65 (독산동)",
+        "map_position_x": "126.895539272251",
+        "map_position_y": "37.4577462883391",
+        "subway_info": "지하철 1호선 금천구청역 1번출구, 266m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "parking_fclty": "1",
+        "safe_mng": "ul"
+      },
+      "post_desc": "서울시립 서서울미술관은 서울시립미술관(SeMA)의 분관으로, 금천구 독산동에 자리한 서울 서남권의 미술관입니다. 새로운 매체와 언어를 실험하는 뉴미디어 전시와 연구 프로그램을 운영하며, 청소년과 미래 예술 인재를 키우는 예술 교육에 중점을 둡니다. 2026년 개관특별전 《우리의 시간은 여기서부터》로 문을 열었으며, 동시대 미술의 흐름을 소개하는 다양한 기획전과 교육 프로그램을 선보이고 있습니다. 한국어 도슨트를 운영하고, SeMA 애플리케이션을 통해 작품의 영문 설명도 제공합니다. 지하철 1호선 금천구청역에서 걸어서 5분 거리로 접근성이 좋고, 전시 대부분을 무료로 관람할 수 있어 서울 서남권 여행 중 가볍게 들러 현대미술을 감상하기 좋습니다."
+    }
   }
 }
