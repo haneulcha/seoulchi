@@ -3060,7 +3060,6 @@
       ],
       "kind": "place",
       "useTime": "물품보관함 06:00~24:00",
-      "closedDays": "연중무휴",
       "hours": {
         "open": "06:00",
         "close": "24:00",
@@ -3600,7 +3599,7 @@
       ],
       "kind": "place",
       "useTime": "여름기간 휴무\r\n동계, 주말 및 공휴일 13:00 ~ 18:00\r\n*기상악화시 체험이 제한될 수 있습니다.",
-      "closedDays": "매장 이전으로 인한 영업중지.\r\n매장 이전 후 9월중 재오픈 예정",
+      "closedDays": "매장 이전으로 인한 영업중지.",
       "hours": {
         "open": "13:00",
         "close": "18:00",
@@ -3640,38 +3639,6 @@
       }
     },
     {
-      "id": "vs-KOP9fwlch",
-      "source": "visit-seoul",
-      "title": "그라운드시소 서촌",
-      "summary": "서촌에 위치한 전시 보러가기 좋은 복합문화공간",
-      "category": "전시시설",
-      "place": "그라운드시소 서촌",
-      "address": "서울 종로구 자하문로6길 18-8 (통의동)",
-      "lat": 37.577840393396,
-      "lng": 126.972916073118,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75573&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "http://www.instagram.com/groundseesaw",
-      "isFree": false,
-      "subwayInfo": "지하철 3호선 경복궁역 3번 출구,  223m",
-      "tags": [
-        "서촌전시",
-        "그라운드시소",
-        "그라운드시소서촌",
-        "복합문화공간",
-        "전시"
-      ],
-      "kind": "place",
-      "useTime": "10:00~19:00 (입장마감 18:00)",
-      "closedDays": "매달 1번째 월요일 정기휴무",
-      "hours": {
-        "open": "10:00",
-        "close": "19:00",
-        "closedWeekdays": [
-          1
-        ]
-      }
-    },
-    {
       "id": "vs-KOP0rc3u4",
       "source": "visit-seoul",
       "title": "케이타운포유 코엑스",
@@ -3693,7 +3660,7 @@
         "IDOL"
       ],
       "kind": "place",
-      "useTime": "2층 SQUARE 11:00 ~ 20:00 / 3층 Academy 12:00 ~ 22:00 / 4층 SPACE 11:00 ~ 20:00",
+      "useTime": "2층 SQUARE 11:00 ~ 20:00 / 3층 Academy 12:00 ~ 21:00 / 4층 SPACE 11:00 ~ 20:00",
       "hours": {
         "open": "11:00",
         "close": "20:00",
@@ -3968,7 +3935,7 @@
       "summary": "스토리몰입형 미디어아트 극장, 띠아트",
       "category": "전시시설",
       "place": "THART 띠아트",
-      "address": "서울 마포구 와우산로21길 20-11 (서교동, 철록헌)",
+      "address": "서울 마포구 서교동 370-12",
       "lat": 37.5528042865018,
       "lng": 126.922691072426,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=66609&fileTy=MEDIA&fileNo=1&thumbTy=M",
@@ -3976,12 +3943,12 @@
       "isFree": false,
       "subwayInfo": "지하철 2호선/경의중앙선/공항철도 홍대입구역 9번 출구,  461m",
       "tags": [
-        "전시관",
-        "전시회",
         "미디어아트",
         "띠아트",
         "홍대",
-        "전시"
+        "전시",
+        "전시관",
+        "전시회"
       ],
       "kind": "place",
       "useTime": "매일 10:30 ~ 19:00\r\n(매표 및 입장 마감 18:00)",
@@ -4065,18 +4032,19 @@
       "isFree": false,
       "subwayInfo": "지하철 7호선 자양역 2번 출구,  1.3km",
       "tags": [
-        "뚝섬",
         "뚝섬한강공원",
         "자양역",
         "수상레저",
         "수상스포츠",
         "윈드서핑",
         "패들보드",
+        "뚝섬",
         "카약",
         "패들요가"
       ],
       "kind": "place",
       "useTime": "업체별 상이",
+      "closedDays": "11월~4월",
       "hours": null
     },
     {
@@ -14871,6 +14839,50 @@
       }
     },
     {
+      "id": "vs-KOP45qiyz",
+      "source": "visit-seoul",
+      "title": "런포트 마포 (RUNPORT Mapo)",
+      "summary": "러닝과 리커버리를 한 건물에서 경험하는 국내 최초 액티브 웰니스 빌딩",
+      "category": "웰니스관광",
+      "place": "런포트 마포 (RUNPORT Mapo)",
+      "address": "서울 마포구 토정로 282 (용강동) 버핏클럽하우스 1층",
+      "lat": 37.5415493654341,
+      "lng": 126.940757959249,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83616&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.runport.kr",
+      "isFree": false,
+      "subwayInfo": "지하철 5호선 마포역 1번출구, 566m",
+      "tags": [
+        "한강",
+        "러닝",
+        "마포",
+        "웰니스",
+        "사우나",
+        "아이스배스",
+        "하이록스",
+        "HYROX",
+        "피트니스",
+        "리커버리",
+        "한강러닝",
+        "콘트라스트사우나",
+        "러닝크루",
+        "액티브웰니스",
+        "토정나들목",
+        "루프탑",
+        "마포역"
+      ],
+      "kind": "place",
+      "useTime": "평일 06:00~24:00 (사우나 23:00까지)\r\n주말·공휴일 08:00~21:00 (사우나 20:00까지)",
+      "closedDays": "매월 넷째 주 일요일",
+      "hours": {
+        "open": "06:00",
+        "close": "24:00",
+        "closedWeekdays": [
+          0
+        ]
+      }
+    },
+    {
       "id": "vs-KOPl3n834",
       "source": "visit-seoul",
       "title": "역(Yeok)",
@@ -16199,8 +16211,8 @@
       "lat": 37.53324550739,
       "lng": 127.126552611535,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74812&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "https://en.journeypick.com/reservation/detail.html?product_no=49",
-      "isFree": false,
+      "linkUrl": "https://gangdong.go.kr/web/culture/contents/gdc010_020_010",
+      "isFree": true,
       "subwayInfo": "지하철 5호선 강동역 4번출구 (호스트와 함께 도보 이동)",
       "tags": [
         "웹툰",
@@ -16215,7 +16227,16 @@
         "강풀"
       ],
       "kind": "place",
-      "hours": null
+      "useTime": "화·목요일 10:00~12:00 / 토요일 10:00~12:00, 14:00~16:00 / 일요일 14:00~16:00",
+      "hours": {
+        "open": "10:00",
+        "close": "12:00",
+        "closedWeekdays": [
+          0,
+          4,
+          6
+        ]
+      }
     },
     {
       "id": "vs-KOP0jakmu",
@@ -16296,7 +16317,7 @@
       "lat": 37.5570070653463,
       "lng": 126.982701317956,
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=73649&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "linkUrl": "https://heesum.com/",
+      "linkUrl": "https://heesum.com/korean",
       "isFree": false,
       "subwayInfo": "지하철 4호선, 명동역 4번 출구, 684m",
       "tags": [
@@ -16509,12 +16530,12 @@
       "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=71982&fileTy=MEDIA&fileNo=3&thumbTy=M",
       "linkUrl": "https://www.instagram.com/boan1942/",
       "isFree": false,
-      "subwayInfo": "지하철 3호선 경복궁역 3번 출구,  580m",
+      "subwayInfo": "지하철 3호선 경복궁역 3번 출구,  453m",
       "tags": [
-        "통의동",
         "보안여관",
         "서촌",
-        "문화공간"
+        "문화공간",
+        "통의동"
       ],
       "kind": "place",
       "useTime": "12:00 ~ 18:00",

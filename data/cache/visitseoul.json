@@ -69926,7 +69926,7 @@
     }
   },
   "KOPn0qtcb": {
-    "updtDtText": "2026.09.02",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOPn0qtcb",
       "lang_code_id": "ko",
@@ -69944,7 +69944,7 @@
       "post_sj": "리버시티수상스키장",
       "sumry": "한강에서 수상 액티비티를 즐길 수 있는 곳",
       "creat_dt_text": "2025.07.30",
-      "updt_dt_text": "2026.09.02",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "수상스키",
         "수상액티비티",
@@ -69982,7 +69982,7 @@
     }
   },
   "KOP2s8isl": {
-    "updtDtText": "2026.09.02",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOP2s8isl",
       "lang_code_id": "ko",
@@ -70000,7 +70000,7 @@
       "post_sj": "잠원 한강공원 수영장",
       "sumry": "여름에만 즐길 수 있는 한강공원 수영장",
       "creat_dt_text": "2025.07.30",
-      "updt_dt_text": "2026.09.02",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "잠원수영장",
         "한강공원수영장",
@@ -70017,7 +70017,8 @@
         "cmmn_important": "- 36개월 미만 영유아 입장 제한\r\n- 돗자리 준비 필수 (선베드 유료 대여 가능)",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
-        "closed_days": "리모델링 공사로 '26~27년까지 운영하지 않습니다.",
+        "business_days": "2028년 재오픈 예정",
+        "closed_days": "리모델링 공사로 '26~27년까지 운영하지 않습니다.\r\n",
         "usage_fee": "- 수영장 어린이(6~12세) 3000원, 청소년(13~18세) 4000원, 성인(19세 이상) 5000원\r\n- 물놀이장 어린이 1000원, 청소년 2000원, 성인 3000원\r\n- 물품 보관함 대여 1회권 3000원, 선베드 10000원"
       },
       "traffic": {
@@ -70036,7 +70037,7 @@
     }
   },
   "KOP3fknzc": {
-    "updtDtText": "2026.09.02",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOP3fknzc",
       "lang_code_id": "ko",
@@ -70054,7 +70055,7 @@
       "post_sj": "BLUE SQUARE 블루스퀘어",
       "sumry": "한국 뮤지컬 팬이라면 꼭 들러야 할 대표 공연장",
       "creat_dt_text": "2025.07.25",
-      "updt_dt_text": "2026.09.02",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "블루스퀘어",
         "뮤지컬",
@@ -70072,7 +70073,9 @@
         "cmmn_hmpg_url": "www.bluesquare.kr",
         "cmmn_hmpg_lang": "한국어",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": []
+        "disabled_facility": [
+          "접근가능"
+        ]
       },
       "traffic": {
         "adres": "서울 용산구 한남동 727-56",
@@ -70365,7 +70368,7 @@
     }
   },
   "KOPh15wjf": {
-    "updtDtText": "2026.09.02",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOPh15wjf",
       "lang_code_id": "ko",
@@ -70383,7 +70386,7 @@
       "post_sj": "여의나루역 러너스테이션",
       "sumry": "운동 전·후 이용할 수 있는 한강 러너들을 위한 지하철 체육 편의시설",
       "creat_dt_text": "2025.07.18",
-      "updt_dt_text": "2026.09.02",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "러너스테이션",
         "러너스베이스캠프",
@@ -70396,14 +70399,13 @@
         "러닝코스"
       ],
       "extra": {
-        "cmmn_telno": "02-6311-5271",
+        "cmmn_telno": "070-7725-3460",
         "cmmn_hmpg_url": "www.runnerstation.co.kr",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "물품보관함 06:00~24:00",
         "cmmn_important": "*정기 러닝 클래스 및 이색 프로그램 운영(사전 신청)\r\n*러닝 크루 대상 무료 공간 대관 가능",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
-        "closed_days": "연중무휴",
         "usage_fee": "무료 입장\t\r\n[물품보관함-유료]\r\n-주중(4시간) : 소형(2,200원) 중형(3,300원) 대형(4,400원)\r\n-주말(4시간) : 소형(3,100원) 중형(4,600원) 대형(6,100원)\r\n-추가요금(1시간당) : 소형(+500원) 중형(+800원) 대형(+1,000원)"
       },
       "traffic": {
@@ -71993,7 +71995,7 @@
     }
   },
   "KOPitng4e": {
-    "updtDtText": "2026.08.31",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOPitng4e",
       "lang_code_id": "ko",
@@ -72009,7 +72011,7 @@
       "post_sj": "하이커 그라운드",
       "sumry": "한류 문화를 즐길 수 있는 복합문화공간",
       "creat_dt_text": "2025.05.28",
-      "updt_dt_text": "2026.08.31",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "한류문화",
         "K-콘텐츠",
@@ -72022,7 +72024,7 @@
       "extra": {
         "cmmn_telno": "02-729-9498",
         "cmmn_hmpg_url": "https://hikr.visitkorea.or.kr/",
-        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),중국어(번체)",
         "cmmn_use_time": "화-일 10:00~20:00\r\n*5층 관광안내센터 및 카페 연중무휴",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
@@ -72039,6 +72041,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "을지로에 위치한 하이커 그라운드는 전 세계적으로 열풍이 불고 있는 K-콘텐츠에 관한 모든 것이 모여 있는 복합문화공간입니다. 하이커 그라운드의 이름에는 '한국(KR)이 건네는 반가운 인사(Hi)'라는 뜻과 '지구촌 여행자들의 놀이터(Playground)가 되겠다'라는 뜻이 담겨있습니다.1층은 한국문화 관광을 소재로 한 대형 미디어월 전시 공간인 ‘하이커 월’, 2층은 라이브 스튜디오와 뮤직비디오 무대장치를 체험하며 직접 한류 콘텐츠의 주인공이 되어 볼 수 있는 ‘K-팝 그라운드’, 3층은 K-아트 기획 전시관인 ‘하이커 아트리움’, 4층은 한국의 대표 관광지를 오감으로 느낄 수 있는 ‘하이커 케이브’와 다양한 지역 축제를 만나볼 수 있는 ‘축제체험관’이 있습니다. 5층은 청계천을 조망할 수 있는 ‘하이커 라운지’와 ‘관광안내센터’가 있습니다. 하이커 그라운드에서는 다양한 정기 프로그램도 운영하고 있으며, 공식 홈페이지에서 예약 가능합니다."
@@ -72266,7 +72269,7 @@
     }
   },
   "KOPqspquw": {
-    "updtDtText": "2026.08.30",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPqspquw",
       "lang_code_id": "ko",
@@ -72283,7 +72286,7 @@
       "post_sj": "스트라이크존 서울 잠실구장",
       "sumry": "열띤 야구 응원에 이어 야구 체험이 가능한 스크린 야구장 ",
       "creat_dt_text": "2025.05.16",
-      "updt_dt_text": "2026.08.30",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "야구체험",
         "야구게임",
@@ -72294,7 +72297,7 @@
       "extra": {
         "cmmn_telno": "02-422-8529",
         "cmmn_use_time": "매일 11:00-02:00",
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "C",
         "disabled_facility": []
       },
       "traffic": {
@@ -73574,7 +73577,7 @@
     }
   },
   "KOP9hdag0": {
-    "updtDtText": "2026.08.19",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP9hdag0",
       "lang_code_id": "ko",
@@ -73592,7 +73595,7 @@
       "post_sj": "piknic",
       "sumry": "2018년 개관한 피크닉은 전시장, 카페, 상점, 레스토랑, 정원과 텃밭이 함께 자리하는 도심 속 문화 공간입니다. ",
       "creat_dt_text": "2025.02.17",
-      "updt_dt_text": "2026.08.19",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "전시",
         "예술",
@@ -73612,6 +73615,7 @@
         "usage_fee": "전시 티켓: 성인 15,000원, 어린이/청소년 10,000원\r\n+ 예술인 패스 제시 시 현장 결제 20% 할인\r\n+ 복지 카드 제시 시 현장 결제 20% 할인\r\n+ 현대카드로 현장 결제 시 20% 할인\r\n+ 문화누리카드 현장 결제 가능\r\n+ 모든 할인 혜택은 중복 불가"
       },
       "traffic": {
+        "zip_code": "04635",
         "adres": "서울 중구 퇴계로6가길 30 피크닉 piknic",
         "new_zip_code": "04635",
         "new_adres": "서울시 중구 퇴계로6가길 30 피크닉",
@@ -73628,7 +73632,7 @@
     }
   },
   "KOP3elqxf": {
-    "updtDtText": "2026.08.18",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP3elqxf",
       "lang_code_id": "ko",
@@ -73645,7 +73649,7 @@
       "post_sj": "월하보이",
       "sumry": "북촌에 자리한 보이차 전문 티룸",
       "creat_dt_text": "2025.01.16",
-      "updt_dt_text": "2026.08.18",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "다도체험",
         "북촌다도",
@@ -73659,8 +73663,8 @@
         "cmmn_important": "주차는 정독도서관 또는 국립현대미술관 서울관에 주차하시면 편리합니다.",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "수 ~ 금",
-        "closed_days": "월, 화, 토, 일"
+        "business_days": "수 ~ 금\r\n* 내부 공사중",
+        "closed_days": "월, 화, 토, 일\r\n"
       },
       "traffic": {
         "adres": "서울 종로구 화동 118-2",
@@ -73679,7 +73683,7 @@
     }
   },
   "KOPwo1ido": {
-    "updtDtText": "2026.08.18",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPwo1ido",
       "lang_code_id": "ko",
@@ -73699,7 +73703,7 @@
       "schdul_info_endde": "2025.02.16",
       "place": "여의도 한강공원",
       "creat_dt_text": "2025.01.16",
-      "updt_dt_text": "2026.08.18",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "겨울철액티비티",
         "눈썰매장",
@@ -73707,7 +73711,7 @@
         "한강공원"
       ],
       "extra": {
-        "cmmn_telno": "02-785-0478",
+        "cmmn_telno": "02-3780-0561~6",
         "cmmn_hmpg_url": "https://hangang.seoul.go.kr/www/facility/map.tab?opt2=REST&opt3=POOL&opt11=SNOW_SLEDDING",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "10:00 ~ 17:00\r\n*노면정비: 12:00 ~ 12:40",
@@ -73732,7 +73736,7 @@
     }
   },
   "KOPxzqqj2": {
-    "updtDtText": "2026.08.18",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPxzqqj2",
       "lang_code_id": "ko",
@@ -73749,7 +73753,7 @@
       "post_sj": "아크앤북 TP타워 여의도점",
       "sumry": "일상을 풍요롭게 만드는 도심형 북라운지",
       "creat_dt_text": "2025.01.16",
-      "updt_dt_text": "2026.08.18",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "여의도카페",
         " 여의도북카페",
@@ -73777,13 +73781,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "아크앤북 TP타워 여의도점은 책과 문화를 사랑하는 사람들을 위한 도심형 북라운지로, 단순한 서점을 넘어선 복합문화공간입니다. 이곳에서는 조용한 독서와 활기찬 문화 활동이 공존하며, 독서 모임, 저자와의 만남, 예술 전시 등 다양한 행사가 열려 일상을 풍요롭게 합니 다. 카페와 디저트는 물론, 맥주와 와인까지 즐길 수 있는 편안한 분위기 속에서 책과 함께하는 특별한 순간을 경험할 수 있습니다. 여의도역과 바로 연결된 TP타워 지하 2층에 위치하며, 최신 신간이 빠르게 입고되고 깔끔한 시설을 갖춘 것이 특징입니다. 또한 프린트룸, 쪽잠공간, 셀프스타일러 및 슈케어 서비스도 마련되어 있어 업무와 휴식, 취미를 모두 충족시켜줍니다. 1만 원 이상 이용 시 평일 90분, 주말 120분 주차 지원 혜택도 제공되며, 카운터에서 미리 등록이 필요합니다. 다양한 문화적 경험을 제공하는 특별한 공간으로, 책과 함께하는 새로운 여정을 시작하기에 최적의 장소입니다."
     }
   },
   "KOP68y59t": {
-    "updtDtText": "2026.08.29",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP68y59t",
       "lang_code_id": "ko",
@@ -73801,7 +73806,7 @@
       "sumry": "눈썰매와 다양한 놀이·체험 공간으로 온 가족이 겨울의 즐거움을 만끽",
       "place": "뚝섬한강공원",
       "creat_dt_text": "2025.01.15",
-      "updt_dt_text": "2026.08.29",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "한강공원",
         "한강눈썰매장",
@@ -73809,7 +73814,7 @@
         "눈썰매장"
       ],
       "extra": {
-        "cmmn_telno": "02-452-5955",
+        "cmmn_telno": "02-3780-0521~4",
         "cmmn_hmpg_url": "https://hangang.seoul.go.kr/www/facility/map.tab?opt2=REST&opt3=POOL&opt11=SNOW_SLEDDING ",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "10:00 ~ 17:00\r\n*노면정비: 12:00 ~ 13:00",
@@ -74017,7 +74022,7 @@
     }
   },
   "KOPup1c05": {
-    "updtDtText": "2026.07.14",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPup1c05",
       "lang_code_id": "ko",
@@ -74034,7 +74039,7 @@
       "post_sj": "국립정동극장 세실",
       "sumry": "232석의 공연장을 운영하고 있는 국립정동극장 세실",
       "creat_dt_text": "2024.12.17",
-      "updt_dt_text": "2026.07.14",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "정동극장세실",
         "시청역",
@@ -74049,7 +74054,9 @@
         "cmmn_use_time": "고객지원실: 월요일~금요일  09:00~18:00",
         "cmmn_important": "국립정동극장 세실극장은 서울시 미래유산으로, 별도의 주차공간이 확보되어 있지 않습니다. 차량을 이용하실 경우 인근 주차장을 활용해 주시기 바랍니다.",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": [],
+        "disabled_facility": [
+          "접근가능"
+        ],
         "business_days": "공연 일정에 따라 다름",
         "closed_days": "공연 일정에 따라 다름"
       },
@@ -74069,7 +74076,7 @@
     }
   },
   "KOPfynf9l": {
-    "updtDtText": "2026.07.14",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPfynf9l",
       "lang_code_id": "ko",
@@ -74087,7 +74094,7 @@
       "post_sj": "그래픽 바이 대신 ",
       "sumry": "다양한 종류의 만화책이 있는 신상 만화/북카페",
       "creat_dt_text": "2024.12.17",
-      "updt_dt_text": "2026.07.14",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "카페",
         "만화카페",
@@ -74119,6 +74126,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "넓고 쾌적한 공간에서 편안하게 만화책을 즐길 수 있는 그래픽 바이 대신은 이태원에 1호점을 둔 곳입니다. 오픈한 지 얼마 되지 않아 깨끗하고 감각적인 공간이 사람들을 끌어들이고 있습니다. 만화책뿐만 아니라 아트북, 그래픽 노블 등 다양한 아트서적이 비치되어 있어 자유롭게 감상할 수 있고, 2만원의 입장료를 내면 모든 음료를 무료로 제공받을 수 있습니다. 벽난로 뷰, 정원 뷰, 부스형 좌석 등 다양한 분위기의 공간이 마련되어 있어, 원하는 곳에서 편안하게 독서할 수 있습니다. 노트북 좌석도 따로 준비되어 있어 필요시 해당 좌석을 이용하면 됩니 다."
@@ -74467,7 +74475,7 @@
     }
   },
   "KOPl4rnb2": {
-    "updtDtText": "2026.07.20",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPl4rnb2",
       "lang_code_id": "ko",
@@ -74485,7 +74493,7 @@
       "post_sj": "하늘그네 왕십리",
       "sumry": "왕십리에서 짜릿한 익스트림을 경험할 수 있는 하늘그네",
       "creat_dt_text": "2024.11.28",
-      "updt_dt_text": "2026.07.20",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "Healswing",
         "360Swing",
@@ -74509,7 +74517,7 @@
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
         "business_days": "화요일~일요일\r\n동계 기간동안 금,토,일,공휴일만 영업",
-        "closed_days": "매장 이전으로 인한 영업중지.\r\n매장 이전 후 9월중 재오픈 예정",
+        "closed_days": "매장 이전으로 인한 영업중지.",
         "usage_fee": "1회요금 성인 8,000원, 청소년 5,000원 \r\n2회요금 : 12,000원\r\nK-민속놀이 무료"
       },
       "traffic": {
@@ -75932,7 +75940,7 @@
     }
   },
   "KOP0rc3u4": {
-    "updtDtText": "2026.07.21",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP0rc3u4",
       "lang_code_id": "ko",
@@ -75950,7 +75958,7 @@
       "post_sj": "케이타운포유 코엑스",
       "sumry": "전세계인의 K-POP NO.1 SPOT , 국내 최대 규모의 K-Culture 복합시설 ",
       "creat_dt_text": "2024.10.21",
-      "updt_dt_text": "2026.07.21",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "DANCE",
         "VOCAL",
@@ -75962,7 +75970,7 @@
         "cmmn_telno": "02-552-9602(아카데미)",
         "cmmn_hmpg_url": "https://www.ktown4u.com/",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),중국어(번체),러시아어,말레이어",
-        "cmmn_use_time": "2층 SQUARE 11:00 ~ 20:00 / 3층 Academy 12:00 ~ 22:00 / 4층 SPACE 11:00 ~ 20:00",
+        "cmmn_use_time": "2층 SQUARE 11:00 ~ 20:00 / 3층 Academy 12:00 ~ 21:00 / 4층 SPACE 11:00 ~ 20:00",
         "cmmn_important": "외국어 응대 가능 직원 상주\r\nAcademy의 경우 수강생 또는 상담을 원하는 고객만 출입이 가능함",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [],
@@ -76042,7 +76050,7 @@
     }
   },
   "KOPjlcb9a": {
-    "updtDtText": "2026.07.17",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPjlcb9a",
       "lang_code_id": "ko",
@@ -76057,7 +76065,7 @@
       "post_sj": "빅이슈코리아 ",
       "sumry": "홈리스들을 위한 비영리, 사회적 기업으로 매거진을 발행하는 회사",
       "creat_dt_text": "2024.10.18",
-      "updt_dt_text": "2026.07.17",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "빅이슈",
         "잡지",
@@ -76071,8 +76079,8 @@
         "cmmn_use_time": "09:00~18:00",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [
-          "장애인 전용 주차장",
           "장애인화장실",
+          "장애인 전용 주차장",
           "접근가능",
           "엘리베이터"
         ],
@@ -76089,6 +76097,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "3",
         "safe_mng": "ul"
       },
       "post_desc": "빅이슈 코리아는 홈리스, 소외된 사람들, 불우한 사람들이 자신의 삶을 긍정적으로 변화시킬 수 있는 해결책을 개발하는 비영리, 사회적 기업으로 매거진을 발행하는 회사입니다. 주거취약계층인 홈리스의 자립을 위해 운영하며 서울의 길거리를 돌아다니다보면 빅이슈 잡지를 판매하는 홈리스들을 종종 마주칠 수 있습니다. 이들은 잡지 판매를 통해 합법적 수입을 올리며 생활을 이어나갈 수 있습니다. 빅이슈는 현재 영국, 호주, 남아프리카공화국, 일본, 대만, 한국에서 발행되고 있으며 설립때부터 지금까지 많은 이들의 삶에 도움이 되었습니다. 현재 여성 홈리스와 장애인 홈리스의 일거리 서비스 확장을 위한 신사업을 개발하고 있으며 미션확대를 위한 기타 사업으로는 출판, 인쇄, 디자인, 홍보대행 사업을 펼쳐나가고 있습니다."
@@ -78294,7 +78303,7 @@
     }
   },
   "KOPcyotr4": {
-    "updtDtText": "2026.08.25",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPcyotr4",
       "lang_code_id": "ko",
@@ -78312,30 +78321,27 @@
       "post_sj": "THART 띠아트",
       "sumry": "스토리몰입형 미디어아트 극장, 띠아트",
       "creat_dt_text": "2024.07.22",
-      "updt_dt_text": "2026.08.25",
+      "updt_dt_text": "2026.11.05",
       "tag": [
-        "전시관",
-        "전시회",
         "미디어아트",
         "띠아트",
         "홍대",
-        "전시"
+        "전시",
+        "전시관",
+        "전시회"
       ],
       "extra": {
-        "cmmn_telno": "0507-1354-9894",
+        "cmmn_telno": "070-8854-9895",
         "cmmn_hmpg_url": "https://thart.co.kr/",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "매일 10:30 ~ 19:00\r\n(매표 및 입장 마감 18:00)",
-        "cmmn_important": "자세한 정보는 인스타그램 @thart_official 을 참고해주시길 바랍니다.",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
         "business_days": "매일"
       },
       "traffic": {
-        "adres": "서울 마포구 서교동 358-121",
-        "new_zip_code": "04040",
-        "new_adres": "서울 마포구 와우산로21길 20-11 (서교동, 철록헌)",
-        "new_adres2": "지하층",
+        "zip_code": "04039",
+        "adres": "서울 마포구 서교동 370-12",
         "map_position_x": "126.922691072426",
         "map_position_y": "37.5528042865018",
         "subway_info": "지하철 2호선/경의중앙선/공항철도 홍대입구역 9번 출구,  461m"
@@ -78348,7 +78354,7 @@
     }
   },
   "KOPnnbbgy": {
-    "updtDtText": "2026.08.08",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPnnbbgy",
       "lang_code_id": "ko",
@@ -78366,7 +78372,7 @@
       "post_sj": "숲속한방랜드",
       "sumry": "신촌에 위치한 도심 속 숯가마 찜질방",
       "creat_dt_text": "2024.07.19",
-      "updt_dt_text": "2026.08.08",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "찜질방",
         "서울찜질방",
@@ -78377,7 +78383,7 @@
       "extra": {
         "cmmn_telno": "02-365-2700",
         "cmmn_use_time": " 06:30 ~ 22:00\r\n(* 숯가마 이용시간 08:00~21:00)",
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "C",
         "disabled_facility": [],
         "business_days": "매일"
       },
@@ -78714,7 +78720,7 @@
     }
   },
   "KOPrn1wrn": {
-    "updtDtText": "2026.09.11",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPrn1wrn",
       "lang_code_id": "ko",
@@ -78732,7 +78738,7 @@
       "post_sj": "서울달 (SEOULDAL)",
       "sumry": "서울의 야경을 하늘에서 가장 생생하게 관람할 수 있는 헬륨가스기구",
       "creat_dt_text": "2024.07.11",
-      "updt_dt_text": "2026.09.11",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "여의도공원",
         "서울달",
@@ -78760,13 +78766,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "2",
         "safe_mng": "ul"
       },
       "post_desc": "2024년 서울의 신규 야간관광 콘텐츠 서울달(SEOULDAL)은 여의도 상공을 수직 비행하는 계류식 헬륨가스 기구로, 여의도공원 하늘에서 서울의 멋진 야경을 가장 생생하게 즐길 수 있는 체험시설입니다. 서울의 화려한 야경을 조망할 수도 있지만, 멀리서 서울 야경을 바라보면 서울달(SEOULDAL)도 멋진 서울 야경의 한 부분이 됩니다. 서울달(SEOULDAL) 안과 밖에서 다양하게 서울을 즐겨보세요!"
     }
   },
   "KOPqkuw4r": {
-    "updtDtText": "2026.05.12",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPqkuw4r",
       "lang_code_id": "ko",
@@ -78784,15 +78791,15 @@
       "post_sj": "뚝섬 윈드서핑장",
       "sumry": "한강에서 윈드서핑, 카약등다양한 수상스포츠를 즐길 수 있는 곳",
       "creat_dt_text": "2024.07.08",
-      "updt_dt_text": "2026.05.12",
+      "updt_dt_text": "2026.11.05",
       "tag": [
-        "뚝섬",
         "뚝섬한강공원",
         "자양역",
         "수상레저",
         "수상스포츠",
         "윈드서핑",
         "패들보드",
+        "뚝섬",
         "카약",
         "패들요가"
       ],
@@ -78804,7 +78811,8 @@
         "cmmn_important": "이용기간: 5월~10월",
         "trrsrt_use_chrge": "N",
         "disabled_facility": [],
-        "business_days": "업체별 상이"
+        "business_days": "업체별 상이",
+        "closed_days": "11월~4월"
       },
       "traffic": {
         "adres": "서울 광진구 자양동 564 ",
@@ -78988,7 +78996,7 @@
     }
   },
   "KOPbhq8vy": {
-    "updtDtText": "2026.07.14",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPbhq8vy",
       "lang_code_id": "ko",
@@ -79007,7 +79015,7 @@
       "sumry": "뚝섬한강공원에 위치한 야외 인공암벽장",
       "place": "뚝섬한강공원",
       "creat_dt_text": "2024.06.27",
-      "updt_dt_text": "2026.07.14",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "뚝섬한강공원",
         "스포츠",
@@ -79037,6 +79045,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "뚝섬 한강공원에 위치한 야외 인공암벽장으로 높이 15m에 폭 40m 규모의 시설입니다. 2006년에 조성되었으며 무료로 운영 중이라 클라이밍을 즐기는 사람들에게 많은 사랑을 받고 있는 레포츠 시설입니다. 왼쪽 벽 15M, 중앙 벽 18M, 오른쪽 벽 13M로 구성되어 있어 이용자의 실력에 맞는 코스를 진행하는 것이 중요합니다. 또한 관리사무소 뒤편에 탈의실이 설치되어 있어 이용이 가능합니다. 이뿐만 아니라 왼쪽 벽 옆에 초보자를 위한 벽이 따로 설치되어 있어 사전에 시설 관리자와 협의하에 교육 진행이 가능합니다. 운동이 끝난 후 손과 발을 씻을 수 있는 곳도 준비되어 있습니다."
@@ -103513,7 +103522,7 @@
     }
   },
   "KOPgu3ezw": {
-    "updtDtText": "2026.09.02",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOPgu3ezw",
       "lang_code_id": "ko",
@@ -103530,7 +103539,7 @@
       "post_sj": "강풀 만화 거리 투어",
       "sumry": "  강풀 만화거리 벽화 투어와 만화 캐릭터 그리는 방법 배우는 프로그램",
       "creat_dt_text": "2025.08.05",
-      "updt_dt_text": "2026.09.02",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "웹툰",
         "벽화",
@@ -103544,13 +103553,13 @@
         "강풀"
       ],
       "extra": {
-        "cmmn_telno": "02-3425-6174",
-        "cmmn_hmpg_url": "https://en.journeypick.com/reservation/detail.html?product_no=49",
-        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_telno": "02-3425-6175",
+        "cmmn_hmpg_url": "https://gangdong.go.kr/web/culture/contents/gdc010_020_010",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "화·목요일 10:00~12:00 / 토요일 10:00~12:00, 14:00~16:00 / 일요일 14:00~16:00",
         "cmmn_important": "영어와 한국어로 설명하고, 사전 예약시에 일본어도 가능",
-        "trrsrt_use_chrge": "C",
-        "disabled_facility": [],
-        "usage_fee": "5만원"
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
       },
       "traffic": {
         "adres": "서울 강동구 성내동 285-8",
@@ -103568,7 +103577,7 @@
     }
   },
   "KOP0jakmu": {
-    "updtDtText": "2026.09.11",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOP0jakmu",
       "lang_code_id": "ko",
@@ -103586,7 +103595,7 @@
       "post_sj": "파크하비오 워터킹덤 워터파크&찜질스파",
       "sumry": "도심 속에서 즐기는 실내 워터파크와 찜찔방 ",
       "creat_dt_text": "2025.07.11",
-      "updt_dt_text": "2026.09.11",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "워터킹덤하비오",
         "워터파크",
@@ -103602,7 +103611,7 @@
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "찜질방 07:00-22:00 / 사우나 07:00-23:00 / 워터파크 10:00-18:00 (워터파크 입장 : 마감 1시간 전까지 가능)",
         "cmmn_important": "*워터킹덤&스파는 현금 대용으로 입장료 외 모든 결제는 라카키로 결제 가능 (후불 결제로 운영되는 시스템)\r\n*홈페이지에서 예약 가능",
-        "trrsrt_use_chrge": "N",
+        "trrsrt_use_chrge": "C",
         "disabled_facility": [],
         "closed_days": "매주 화, 수 워터파크 휴장\r\n매달 마지막주 수요일 전체(워터&찜질&스파) 휴장"
       },
@@ -103623,7 +103632,7 @@
     }
   },
   "KOPccgonx": {
-    "updtDtText": "2026.09.01",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOPccgonx",
       "lang_code_id": "ko",
@@ -103639,7 +103648,7 @@
       "post_sj": "스파고결",
       "sumry": "한국 전통 수기관리를 기반으로 고유의 결을 살리는 스파샵",
       "creat_dt_text": "2025.06.23",
-      "updt_dt_text": "2026.09.01",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "청담동에스테틱",
         "피부관리",
@@ -103670,13 +103679,14 @@
       "tourist": {
         "guidance_service": "ul",
         "parking_fclty": "1",
+        "parking_fclty_chrge_hour_car": "9000",
         "safe_mng": "ul"
       },
       "post_desc": "한국 전통 수기관리를 기반으로 고유의 결을 살리는 테라피를 선사하는 스파고결은 고객의 마음결, 피부결, 근육결에 따라 맞춤형 테라피를 제안하며, 오로지 테라피스트 손의 온기로 스킨케어와 바디 마사지,패키지 관리를 제공합니다. 1인 1실 프라이빗 룸과 2명이 이용가능한 커플룸이 있으며 호텔 스파베드와 동일한 퀄리티로 높은 수준의 관리 서비스를 지향합니다."
     }
   },
   "KOP8qrjci": {
-    "updtDtText": "2026.05.29",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOP8qrjci",
       "lang_code_id": "ko",
@@ -103693,7 +103703,7 @@
       "post_sj": "희섬",
       "sumry": "차 전문가에게 배우는 한국 전통차 체험 클래스",
       "creat_dt_text": "2025.06.12",
-      "updt_dt_text": "2026.05.29",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "한국전통차문화",
         "문화체험",
@@ -103702,8 +103712,8 @@
         "원데이 클래스"
       ],
       "extra": {
-        "cmmn_hmpg_url": "https://heesum.com/",
-        "cmmn_hmpg_lang": "영어,독일어",
+        "cmmn_hmpg_url": "https://heesum.com/korean",
+        "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "매일 10:00-20:00 라스트오더 19:30 ※예약방문만 가능합니다.",
         "trrsrt_use_chrge": "N",
         "disabled_facility": []
@@ -103725,7 +103735,7 @@
     }
   },
   "KOP8j6kof": {
-    "updtDtText": "2026.08.31",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOP8j6kof",
       "lang_code_id": "ko",
@@ -103741,7 +103751,7 @@
       "post_sj": "뷰티플레이 홍대점",
       "sumry": "한국 화장품과 K-뷰티를 온전히 경험할 수 있는 뷰티체험공간",
       "creat_dt_text": "2025.05.28",
-      "updt_dt_text": "2026.08.31",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "뷰티플레이",
         "뷰티체험",
@@ -103760,6 +103770,7 @@
         "closed_days": "매주 일요일"
       },
       "traffic": {
+        "zip_code": "04041",
         "adres": "서울 마포구 서교동 363-16",
         "new_zip_code": "04041",
         "new_adres": "서울 마포구 잔다리로 16 2층-5층",
@@ -103776,7 +103787,7 @@
     }
   },
   "KOPpz1oh8": {
-    "updtDtText": "2026.08.31",
+    "updtDtText": "2026.11.06",
     "detail": {
       "cid": "KOPpz1oh8",
       "lang_code_id": "ko",
@@ -103793,7 +103804,7 @@
       "post_sj": "더봄 : 퍼스널컬러,메이크업 명동",
       "sumry": "나를 재발견하는 퍼스널 컬러 체험",
       "creat_dt_text": "2025.05.28",
-      "updt_dt_text": "2026.08.31",
+      "updt_dt_text": "2026.11.06",
       "tag": [
         "퍼스널컬러",
         " 명동",
@@ -103821,6 +103832,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "퍼스널 컬러 테스트를 통해 다양한 색상의 원단이 자신과 어떻게 어울리는지 확인하고 특정 색상이 피부톤을 미묘하게 밝게 하고 얼굴 윤곽을 부드럽게 보이게 하는 방식을 느껴볼 수 있습니다. 이에 따라 나에게 어울리는 메이크업, 의상, 액세서리 등에 대한 자세한 조언을 받아보세요. 외국인을 위한 영어, 중국어, 일본어 통역을 사용할 수 있으며, 1:1 (40-50분), 1:2(60-75분), 1:3(80-95분) 인원별 소요시간을 참고해주세요."
@@ -103915,7 +103927,7 @@
     }
   },
   "KOP4b0nj3": {
-    "updtDtText": "2026.08.24",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP4b0nj3",
       "lang_code_id": "ko",
@@ -103932,7 +103944,7 @@
       "post_sj": "서울서초글램핑청계산장",
       "sumry": "청계산 입구에서 도보 5분 거리에 위치한 프라이빗 글램핑 공간",
       "creat_dt_text": "2025.02.19",
-      "updt_dt_text": "2026.08.24",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "서울글램핑",
         " 서울캠핑장",
@@ -103962,7 +103974,7 @@
     }
   },
   "KOP512i62": {
-    "updtDtText": "2026.08.17",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP512i62",
       "lang_code_id": "ko",
@@ -103979,7 +103991,7 @@
       "post_sj": "북한산둘레캠프",
       "sumry": "북한산둘레캠프는 북한산 뷰를 즐길 수 있는 캠핑장",
       "creat_dt_text": "2025.02.19",
-      "updt_dt_text": "2026.08.17",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "은평바베큐장",
         "서울캠핑장",
@@ -104060,7 +104072,7 @@
     }
   },
   "KOPk1cyet": {
-    "updtDtText": "2026.07.22",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPk1cyet",
       "lang_code_id": "ko",
@@ -104078,12 +104090,12 @@
       "post_sj": "통의동 보안여관",
       "sumry": "80여 년 역사를 간직하며 문화와 예술이 숨 쉬는 복합문화예술공간",
       "creat_dt_text": "2025.02.03",
-      "updt_dt_text": "2026.07.22",
+      "updt_dt_text": "2026.11.05",
       "tag": [
-        "통의동",
         "보안여관",
         "서촌",
-        "문화공간"
+        "문화공간",
+        "통의동"
       ],
       "extra": {
         "cmmn_telno": "02-720-8409",
@@ -104101,7 +104113,7 @@
         "new_adres": "서울 종로구 효자로 33",
         "map_position_x": "126.973666093445",
         "map_position_y": "37.5790626714898",
-        "subway_info": "지하철 3호선 경복궁역 3번 출구,  580m"
+        "subway_info": "지하철 3호선 경복궁역 3번 출구,  453m"
       },
       "tourist": {
         "guidance_service": "ul",
@@ -104112,7 +104124,7 @@
     }
   },
   "KOPpr4e29": {
-    "updtDtText": "2026.07.20",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPpr4e29",
       "lang_code_id": "ko",
@@ -104128,7 +104140,7 @@
       "post_sj": "채그로",
       "sumry": "채그로는 책과 사람이 만나는 곳, 한강뷰가 아름다운 독서 피트니스",
       "creat_dt_text": "2025.02.03",
-      "updt_dt_text": "2026.07.20",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "마포복합문화공간",
         "한강뷰카페",
@@ -104154,13 +104166,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "1",
         "safe_mng": "ul"
       },
       "post_desc": "마포역 인근에 위치한 채그로는 총 9층으로 이루어진 복합문화공간으로, 층마다 다른 컨셉과 테이블 구조, 분위기를 자랑합니다. 북카페와 라운지는 음료를 주문하면 최대 3시간까지 이용할 수 있으며, 창가 자리에서는 마포대교를 비롯한 아름다운 풍경과 일몰을 감상할 수 있습니다. 채그로 서점에서는 온·오프라인으로 진행되는 대표 독서모임 ‘토요아침 독서모임’을 통해 독서 문화를 확산하고 있습니다. 마포대교 주변 뷰맛집으로도 유명한 채그로는 책과 커피, 풍경이 어우러진 특별한 공간입니다."
     }
   },
   "KOP9qf7aa": {
-    "updtDtText": "2026.07.10",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP9qf7aa",
       "lang_code_id": "ko",
@@ -104176,7 +104189,7 @@
       "post_sj": "ㅎㄷ카페(홍대카페)",
       "sumry": "ㅎㄷ카페는 홍대의 젊음과 예술을 담아낸 대형 복합문화공간",
       "creat_dt_text": "2025.02.03",
-      "updt_dt_text": "2026.07.10",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "홍대복합문화공간",
         " 서울대관",
@@ -104205,13 +104218,14 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "3",
         "safe_mng": "ul"
       },
       "post_desc": "홍대카페는 서울 최대 규모의 복합문화공간으로, 홍대 중심에 위치한 8개 층과 옥상 루프탑으로 이루어져 있습니다. 각 층마다 다른 테마로 구성되어 있어 공연, 전시, K-pop 미디어, LP뮤직, 갤러리, 식물관, 자연 조경 등 다양한 경험을 제공하며, 커피 한 잔으로 모든 공간을 자유롭게 이용할 수 있습니다. 홍대의 젊음과 에너지를 그대로 담아낸 이 공간은 365일 멈추지 않는 공연과 다양한 행사를 통해 2030 세대에게 예술적 가치를 일깨우고자 합니 다. 서울패션위크와 같은 대형 행사도 진행된 바 있는 홍대카페는 언제든지 찾아올 수 있는 특별한 랜드마크로 자리매김하고 있습니다."
     }
   },
   "KOP76fq4a": {
-    "updtDtText": "2026.08.21",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP76fq4a",
       "lang_code_id": "ko",
@@ -104229,7 +104243,7 @@
       "post_sj": "단오풍정 한옥점",
       "sumry": "여성전용 1인 프라이빗 세신샵 단오풍정",
       "creat_dt_text": "2025.01.16",
-      "updt_dt_text": "2026.08.21",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "서울사우나",
         "1인세신",
@@ -104244,6 +104258,7 @@
         "usage_fee": "그린티 수딩 코스 (75분) : 132,000원\r\n임산부 스페셜 코스 (80분) : 143,000원"
       },
       "traffic": {
+        "zip_code": "02843",
         "adres": "서울 성북구 안암동2가 97-16",
         "adres2": "1층",
         "new_zip_code": "02843",
@@ -104262,7 +104277,7 @@
     }
   },
   "KOP8bplee": {
-    "updtDtText": "2026.05.05",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOP8bplee",
       "lang_code_id": "ko",
@@ -104280,7 +104295,7 @@
       "post_sj": "강남실탄사격장 송파하비오호텔 ",
       "sumry": "평범한 일상에 \"두근두근\" 실탄사격 체험 강남실탄사격장",
       "creat_dt_text": "2024.12.18",
-      "updt_dt_text": "2026.05.05",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "서울여행",
         "한국실탄사격장",
@@ -104292,7 +104307,7 @@
         "한국여행"
       ],
       "extra": {
-        "cmmn_telno": "010-4794-8269",
+        "cmmn_telno": "0507-1345-8269",
         "cmmn_hmpg_url": "https://map.naver.com/p/search/%EA%B0%95%EB%82%A8%EC%8B%A4%ED%83%84%EC%82%AC%EA%B2%A9%EC%9E%A5/place/1759010765?c=15.14,0,0,0,dh&placePath=%2Fphoto%3Fentry%253Dbmp",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "12:00 ~ 20:30",
@@ -104322,7 +104337,7 @@
     }
   },
   "KOPi8afi4": {
-    "updtDtText": "2026.08.21",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPi8afi4",
       "lang_code_id": "ko",
@@ -104340,7 +104355,7 @@
       "post_sj": "SEOUL CULTURE LOUNGE 서울컬쳐라운지",
       "sumry": "한국 문화의 다양한 매력을 체험할 수 있는 공간, 서울컬쳐라운지!",
       "creat_dt_text": "2024.09.02",
-      "updt_dt_text": "2026.08.21",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "한류체험",
         "외국인",
@@ -104365,6 +104380,7 @@
         "closed_days": "일요일, 월요일, 공휴일 휴무"
       },
       "traffic": {
+        "zip_code": "03190",
         "adres": "서울 종로구 관철동 10-2",
         "new_zip_code": "03190",
         "new_adres": "서울 종로구 청계천로 85 (관철동, 삼일빌딩)  11층",
@@ -104380,7 +104396,7 @@
     }
   },
   "KOPp8olr5": {
-    "updtDtText": "2026.05.12",
+    "updtDtText": "2026.11.05",
     "detail": {
       "cid": "KOPp8olr5",
       "lang_code_id": "ko",
@@ -104398,7 +104414,7 @@
       "post_sj": "아리랑 하우스",
       "sumry": "한강 뚝섬유원지내에 위치해 수상레저기구와 다양한 음식 및 편의시설이 준비된 곳",
       "creat_dt_text": "2024.06.27",
-      "updt_dt_text": "2026.05.12",
+      "updt_dt_text": "2026.11.05",
       "tag": [
         "자양역",
         "수상레저",
@@ -104408,7 +104424,7 @@
         "뚝섬한강공원"
       ],
       "extra": {
-        "cmmn_telno": "0507-1471-5568",
+        "cmmn_telno": "02-447-5555",
         "cmmn_use_time": "12:00~22:00",
         "cmmn_important": "23시 이후 오리배 이용시에는 별도 문의바랍니다. (홈페이지 참고)",
         "trrsrt_use_chrge": "N",
@@ -124231,6 +124247,344 @@
         "safe_mng": "ul"
       },
       "post_desc": "서울시립 서서울미술관은 서울시립미술관(SeMA)의 분관으로, 금천구 독산동에 자리한 서울 서남권의 미술관입니다. 새로운 매체와 언어를 실험하는 뉴미디어 전시와 연구 프로그램을 운영하며, 청소년과 미래 예술 인재를 키우는 예술 교육에 중점을 둡니다. 2026년 개관특별전 《우리의 시간은 여기서부터》로 문을 열었으며, 동시대 미술의 흐름을 소개하는 다양한 기획전과 교육 프로그램을 선보이고 있습니다. 한국어 도슨트를 운영하고, SeMA 애플리케이션을 통해 작품의 영문 설명도 제공합니다. 지하철 1호선 금천구청역에서 걸어서 5분 거리로 접근성이 좋고, 전시 대부분을 무료로 관람할 수 있어 서울 서남권 여행 중 가볍게 들러 현대미술을 감상하기 좋습니다."
+    }
+  },
+  "KOP2vf8eo": {
+    "updtDtText": "2026.11.05",
+    "detail": {
+      "cid": "KOP2vf8eo",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP2vf8eo,en:ENP2vf8eo,ja:JPP2vf8eo,zh-CN:CNP2vf8eo,zh-TW:TCP2vf8eo,ru:RUP2vf8eo",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83813&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83814&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83815&fileTy=MEDIA&fileNo=2&thumbTy=M"
+      ],
+      "post_sj": "2026 서울여행주간 ",
+      "sumry": "K-콘텐츠로 채우는 특별한 일주일, ‘2026 서울여행주간’ ",
+      "schdul_info_bgnde": "2026.11.14",
+      "schdul_info_endde": "2026.11.20",
+      "place": "DDP 어울림광장 등 5개 장소 ",
+      "creat_dt_text": "2026.11.03",
+      "updt_dt_text": "2026.11.05",
+      "tag": [
+        "한류관광",
+        "K콘텐츠",
+        "K-POP",
+        "한류체험"
+      ],
+      "extra": {
+        "cmmn_telno": " cs_help_center@naver.com",
+        "cmmn_hmpg_url": "http://seoulkcontent.com/",
+        "cmmn_hmpg_lang": "영어",
+        "cmmn_important": "• (11.20.14시) K-POP 댄스 버스킹 공연 '랜덤 플레이 댄스' (DDP 어울림광장)\r\n- ‘K-POP 랜덤 플레이 댄스’ 공연 및 K-POP 댄스 체험\r\n\r\n• 외국인 관광객 대상 체험 프로그램 운영\r\n- (11.18. 14시) K-배우와 함께하는 서울촬영지 도슨트 투어\r\n- (11.16. 14시) K-전통공예 체험 클래스 X 북촌전통공예체험관\r\n- (11.17. 14시/16시) K-뷰티 메이크업 체험 클래스 X 아모레퍼시픽\r\n- (11.18./ 17시30분) 서울 나이트 시티 스냅 투어(야경투어)\r\n-(11.19.11시 )K-푸드 쿠킹 체험 클래스 X 오뚜기",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "접근가능"
+        ],
+        "usage_fee": "유료프로그램 5,000원(프로그램별 별도 확인 필요) "
+      },
+      "traffic": {
+        "adres": "서울 중구 을지로7가 143",
+        "new_zip_code": "04566",
+        "new_adres": "서울 중구 을지로 281 (을지로7가) DDP 어울림광장",
+        "map_position_x": "127.010890355484",
+        "map_position_y": "37.5680445876689",
+        "subway_info": "지하철 1호선/2호선/5호선 동대문역사문화공원역 1번출구, 26m"
+      },
+      "post_desc": "K-콘텐츠로 채우는 특별한 일주일, ‘2026 서울여행주간’으로 여러분을 초대합니다! DDP 어울림광장에서 펼쳐지는 신나는 ‘K-팝 랜덤플레이댄스’공연 부터 배우 남정우와 함께하는 감성 가득 ‘DDP 도슨트 투어', 'DDP 야경스냅투어' 까지! 북촌의 전통공예, K-뷰티 메이크업, K-푸드 쿠킹 클래스 등 서울 주요 거점에 다채로운 K-체험이 펼쳐집니다. <2026 서울여행주간 프로그램> • 2026 멜론뮤직어워드(MMA) 연계 홍보 팝업 / 일정 : 11.14(토)~11.15(일) / 장소 : 고척스카이돔 • K-팝 버스킹 공연 및 K-댄스 체험 / 일정 : 11.20(금) 14시 / 장소 : DDP 어울림광장 - 외국인 관광객 대상 체험 프로그램 운영 • K-배우와 함께하는 서울촬영지 도슨트 투어 / 일정 : 11.18(수) 14시 / 장소 : DDP 권역 • K-전통공예 체험 클래스 / 일정 : 11.16(월) 14시 / 장소 : 북촌전통공예체험관 • K-메이크업 체험 클래스 / 일정 : 11.17(화) 14시, 16시 / 장소 : 아모레용산 • 서울 나이트 시티 스냅 투어 / 일정 : 11.18(수) 17시 30분 / 장소 : DDP 권역 • K-푸드 체험 클래스 / 일정 : 11.19(목) 11시 / 장소 : 오뚜기 '오키친스튜디오' ※ 외국인 관광객 대상 체험 사전신청 (K-콘텐츠 체험 예약 페이지 http://seoulkcontent.com/), 사전신청 11.5.(목) 14시 오픈"
+    }
+  },
+  "KOPi0rhml": {
+    "updtDtText": "2026.11.05",
+    "detail": {
+      "cid": "KOPi0rhml",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPi0rhml,en:ENPi0rhml,ja:JPPi0rhml,zh-CN:CNPi0rhml,zh-TW:TCPi0rhml,ru:RUPi0rhml",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83799&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83800&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83801&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83802&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83803&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83804&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 서울빛초롱축제",
+      "sumry": "전통한지 등((燈), 미디어아트 중심의 빛 조형물 전시, 체험 프로그램 운영",
+      "schdul_info_bgnde": "2026.12.11",
+      "schdul_info_endde": "2027.01.31",
+      "place": "청계천(청계광장 ~ 삼일교)",
+      "creat_dt_text": "2026.11.03",
+      "updt_dt_text": "2026.11.05",
+      "tag": [
+        "겨울축제",
+        "서울빛축제",
+        "서울빛초롱",
+        "빛축제",
+        "서울빛초롱축제",
+        "축제",
+        "서울축제",
+        "빛초롱축제"
+      ],
+      "extra": {
+        "cmmn_telno": "02-3788-8168",
+        "cmmn_hmpg_url": "https://www.stolantern.com/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "매일 18:00~23:00 ",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "접근가능",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 중구 무교동 96",
+        "new_zip_code": "04520",
+        "new_adres": "서울 중구 태평로1가 1",
+        "map_position_x": "126.978212033714",
+        "map_position_y": "37.5688599221033",
+        "subway_info": "지하철 5호선 광화문역 5번출구, 146m"
+      },
+      "post_desc": "서울빛초롱축제는 2009년부터 시작하여 18회차를 맞이하는 서울 대표 야간 빛 축제로, 빛 조형물 전시와 다양한 체험 프로그램 등 화려한 볼거리를 제공합니다. 특히, 이번 2026 서울빛초롱축제는 “서울의 낭만: 빛의 교향곡”을 주제로 청계천 일대에서 열립니다. 빛으로 물든 서울의 겨울밤, 당신의 마음을 따스하게 채울 낭만적인 순간으로 여러분을 초대합니다."
+    }
+  },
+  "KOP0rc1ic": {
+    "updtDtText": "2026.11.05",
+    "detail": {
+      "cid": "KOP0rc1ic",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP0rc1ic,en:ENP0rc1ic,ja:JPP0rc1ic,zh-CN:CNP0rc1ic,zh-TW:TCP0rc1ic,ru:RUP0rc1ic",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83806&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83807&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83808&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83809&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83810&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83811&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 광화문 마켓",
+      "sumry": "마켓 빌리지 조성을 통한 크리스마스 시즌 소품·먹거리 판매 부스, 글로벌 협업 부스, 몰입형 포토존·체험존 운영",
+      "schdul_info_bgnde": "2026.12.11",
+      "schdul_info_endde": "2027.01.10",
+      "place": "광화문광장 및 세종로공원 일대",
+      "creat_dt_text": "2026.11.03",
+      "updt_dt_text": "2026.11.05",
+      "tag": [
+        "광화문마켓",
+        "크리스마스마켓",
+        "광화문크리스마스마켓",
+        "마켓",
+        "크리스마스명소",
+        "광화문광장",
+        "광화문"
+      ],
+      "extra": {
+        "cmmn_telno": "02-3788-8168",
+        "cmmn_hmpg_url": "https://www.stolantern.com/bbs/page.php?hid=m02_01",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "(일~목) 17:30 ~ 22:00, (금,토) 17:30 ~ 22:30",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "접근가능",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 종로구 세종로 81-3",
+        "new_zip_code": "03172",
+        "new_adres": "서울 종로구 세종로 81-3  ",
+        "map_position_x": "126.976009573881",
+        "map_position_y": "37.5721952500531",
+        "subway_info": "지하철 5호선 광화문역 9번출구, 181m"
+      },
+      "post_desc": "서울의 겨울밤을 밝히는 「광화문 마켓」이 올해도 광화문광장을 찾아옵니다. 5회차를 맞이한 올해는 ‘시간이 멈춘 산타마을’을 주제로, 바쁜 일상 속 잠시 머물러 크리스마스의 설렘을 만끽할 수 있는 특별한 겨울 풍경을 선보입니다. 대형 트리와 마켓 빌리지를 중심으로 크리스마스 시즌 소품과 따뜻한 먹거리를 한자리에서 만나볼 수 있으며, 오감을 자극하는 몰입형 포토존과 다채로운 체험 프로그램도 곳곳에 마련됩니다. 크리스마스의 설렘이 머무는 곳, 올겨울 광화문 마켓에서 특별한 겨울밤을 만나보세요."
+    }
+  },
+  "KOPgm8kd4": {
+    "updtDtText": "2026.11.06",
+    "detail": {
+      "cid": "KOPgm8kd4",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPgm8kd4,en:ENPgm8kd4,ja:JPPgm8kd4,zh-CN:CNPgm8kd4,zh-TW:TCPgm8kd4,ru:RUPgm8kd4",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83828&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83829&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83830&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83832&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 제3회 아트노마드 아트페어(2026 ARTNOMAD ARTFAIR)",
+      "sumry": "국내외 장애예술인 48인의 작품을 남산골한옥마을의 한옥 공간에서 만나는 아트페어",
+      "schdul_info_bgnde": "2026.11.17",
+      "schdul_info_endde": "2026.11.22",
+      "place": "남산골한옥마을",
+      "creat_dt_text": "2026.11.03",
+      "updt_dt_text": "2026.11.06",
+      "tag": [
+        "아트페어",
+        "장애예술",
+        "장애예술인",
+        "남산골한옥마을",
+        "한옥전시",
+        "아트노마드",
+        "현대미술",
+        "작품구매"
+      ],
+      "extra": {
+        "cmmn_telno": "02-812-1762 ",
+        "cmmn_hmpg_url": "https://www.instagram.com/sa.artnomad",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "2026.11.17(화) ~ 11.22(일) 10:00~18:00 (개막식 11.17 14:00~16:00)",
+        "cmmn_important": "전시 작품 현장·온라인(네이버 스마트스토어) 구매 가능 / 김홍표 배우의 '그림 읽어주는 남자' 도슨트 프로그램",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 중구 필동2가 84-1",
+        "new_zip_code": "04626",
+        "new_adres": "서울 중구 퇴계로34길 28 (필동2가, 남산골한옥마을)",
+        "map_position_x": "126.994738735334",
+        "map_position_y": "37.5595422700067",
+        "subway_info": "지하철 3호선/4호선 충무로역 4번출구, 307m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "「Art Beyond Limits, 경계를 넘어선 아름다움」을 주제로 국내외 장애예술인의 작품을 소개하고, 예술가와 관람객이 작품으로 소통하는 아트페어입니다. 여전히 해결되지 않은 장애인 이동권을 주제로, 이동의 제약이라는 경계를 예술로 넘어서고자 합니다. · 참여 작가: 국내 공모 선정 40인(라이징작가 4인 포함), 영국 벤처스아트(Venture Arts) 4인, 중국 서안미술대학교 특수교육예술학원 4인 · 전시 구성: A존 사랑채의 초대 / B존 별당채의 발견 / C존 안채의 울림 / D존 이방의 조우 · 부대프로그램: 공연, 포럼, 김홍표 배우의 '그림 읽어주는 남자'(도슨트 및 관객과의 만남), 라이브드로잉, 모두의 캔버스 · 작품 판매: 현장 판매 및 온라인 판매(네이버 스마트스토어 https://mkt.shopping.naver.com/link/6ad7388cb8ba063dc6cec481) · 개막식: 2026년 11월 17일(화) 14:00~16:00 · 인스타그램: @sa.artnomad 주최·주관 주식회사 스페셜아트 / 공동주관 남산골한옥마을 / 후원 한국장애인문화예술원"
+    }
+  },
+  "KOPczx5lv": {
+    "updtDtText": "2026.11.06",
+    "detail": {
+      "cid": "KOPczx5lv",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPczx5lv,en:ENPczx5lv,ja:JPPczx5lv,zh-CN:CNPczx5lv,zh-TW:TCPczx5lv,ru:RUPczx5lv",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83597&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83600&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83601&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83602&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83603&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83604&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "세 번째 시: 에스 데블린, 다시 집으로 3rd Poem: Es Devlin, Come Home Again",
+      "sumry": "책을 남긴 사람들, 거울 속 타인, 빛과 자연, 그리고 인간을 넘어선 생명들은 하나의 공간 안에서 서로를 비추며 연결되는 <세 번째 시: 에스 데블린, 다시 집으로>는 현존(Presence)을 주제로 한 전시",
+      "schdul_info_bgnde": "2026.08.20",
+      "schdul_info_endde": "2027.01.17",
+      "place": "푸투라서울",
+      "creat_dt_text": "2026.11.03",
+      "updt_dt_text": "2026.11.06",
+      "tag": [
+        "전시",
+        "현대미술",
+        "미술전시",
+        "미술관",
+        "안국전시",
+        "북촌한옥마을"
+      ],
+      "extra": {
+        "cmmn_telno": "02-3676-1000",
+        "cmmn_hmpg_url": "https://futuraseoul.org/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": " 10:00 - 18:00 (화,수,목,금,일) ㅣ 10:00 - 19:00 (토) ",
+        "cmmn_important": "음성 도슨트 구비",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "엘리베이터"
+        ],
+        "usage_fee": "성인 22,000원 / 대학생 15,000원 / 청소년&어린이 12,000원"
+      },
+      "traffic": {
+        "adres": "서울 종로구 가회동 30-1",
+        "new_zip_code": "03052",
+        "new_adres": "서울 종로구 북촌로 61 (가회동, 북촌로 61빌딩)",
+        "map_position_x": "126.984765933785",
+        "map_position_y": "37.5822562160516",
+        "subway_info": "지하철 3호선 안국역 2번출구, 600m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "에스 데블린의 한국 첫 개인전 《세 번째 시: 에스 데블린, 다시 집으로》는 35년 넘게 이어온 작가의 드로잉과 공간 작업을 푸투라서울의 건축과 자연광, 관객의 움직임 속에서 새롭게 구성합니다. 책이 불러오는 타인의 목소리, 거울 속 자신과 타인, 인간 이외의 생명, 시간에 따라 변화하는 빛을 따라가며 ‘존재한다’는 것이 타인과 생명, 공간과 시간의 관계 속에서 만들어지는 경험임을 보여줍니다."
+    }
+  },
+  "KOP45qiyz": {
+    "updtDtText": "2026.11.05",
+    "detail": {
+      "cid": "KOP45qiyz",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cf1y9k1",
+      "cate_depth": " 체험관광 > 웰니스관광",
+      "multi_lang_list": "ko:KOP45qiyz,en:ENP45qiyz,ja:JPP45qiyz,zh-CN:CNP45qiyz,zh-TW:TCP45qiyz,ru:RUP45qiyz,ms:MLP45qiyz",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83616&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83618&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83619&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83620&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83621&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83622&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "런포트 마포 (RUNPORT Mapo)",
+      "sumry": "러닝과 리커버리를 한 건물에서 경험하는 국내 최초 액티브 웰니스 빌딩",
+      "creat_dt_text": "2026.11.03",
+      "updt_dt_text": "2026.11.05",
+      "tag": [
+        "한강",
+        "러닝",
+        "마포",
+        "웰니스",
+        "사우나",
+        "아이스배스",
+        "하이록스",
+        "HYROX",
+        "피트니스",
+        "리커버리",
+        "한강러닝",
+        "콘트라스트사우나",
+        "러닝크루",
+        "액티브웰니스",
+        "토정나들목",
+        "루프탑",
+        "마포역"
+      ],
+      "extra": {
+        "cmmn_telno": "0507-1313-3624, 02-877-3624",
+        "cmmn_hmpg_url": "https://www.runport.kr",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "평일 06:00~24:00 (사우나 23:00까지)\r\n주말·공휴일 08:00~21:00 (사우나 20:00까지)",
+        "cmmn_important": "영어 응대 가능. 외국인 전용 영문 페이지에서 온라인 사전 결제 후 방문할 수 있습니다.\r\n운동복·러닝화·사우나복을 현장에서 대여할 수 있어 준비물 없이 방문 가능합니다.\r\n한강 토정나들목 도보 1분. 한강 러닝과 사우나·아이스배스를 하루에 함께 경험할 수 있습니다\r\n루프탑 야외 아이스배스에서 한강과 서울 도심 전경을 조망할 수 있습니다.",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "엘리베이터"
+        ],
+        "business_days": "연중무휴",
+        "closed_days": "매월 넷째 주 일요일",
+        "usage_fee": "[이용권]\r\n1회 이용권 39,000원\r\n5회 이용권 165,000원 (정가 195,000원, 15% 할인)\r\n10회 이용권 290,000원 (정가 390,000원, 25% 할인)\r\n첫 구매 체험권 69,900원 (15일간, 1인 1회 한정)\r\n구독권 Plus 4 월 129,900원\r\n\r\n[외국인 방문객 전용 — 온라인 사전 결제]\r\n1-Day Pass US$85 / 7-Day Pass US$109\r\n\r\n[대여]\r\n아디다스 러닝화 4,000원 / 상의·하의 각 2,000원\r\n※ 사우나복·타월은 이용권에 포함"
+      },
+      "traffic": {
+        "adres": "서울 마포구 용강동 122-1",
+        "new_zip_code": "04163",
+        "new_adres": "서울 마포구 토정로 282 (용강동) 버핏클럽하우스 1층",
+        "map_position_x": "126.940757959249",
+        "map_position_y": "37.5415493654341",
+        "subway_info": "지하철 5호선 마포역 1번출구, 566m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "런포트 마포는 한강변에 자리한 국내 최초의 액티브 웰니스 빌딩입니다. 지하 2층부터 루프탑까지 총 10개 층이 '러닝 → 트레이닝 → 리커버리'라는 하나의 흐름으로 설계되어 있습니다. 건물 바로 앞에 한강 토정나들목이 있어 문을 나서면 곧바로 한강 러닝 코스로 이어지며, 런포트 클럽이 운영하는 그룹 러닝 세션에 누구나 참여할 수 있습니다. 내부에는 글로벌 피트니스 레이스 종목인 하이록스(HYROX) 전용 존과 버핏그라운드 피트니스가 있어 스키에르그, 로잉, 러닝머신 등 전문 장비로 러닝 전후 트레이닝이 가능합니다. 리커버리 공간은 최고 95℃의 콘트라스트 사우나와 2℃까지 내려가는 아이스배스, 온욕탕으로 구성됩니다. 루프탑에는 야외 아이스배스와 선베드가 마련되어 한강과 서울 도심 전경을 바라보며 회복할 수 있습니다. 운동복과 러닝화는 1층 데스크에서 아디다스 제품으로 대여할 수 있고 사우나복과 타월도 함께 제공되어, 별도의 준비물 없이 가볍게 방문할 수 있습니다. 1일권 하나로 러닝 클럽부터 피트니스, 사우나, 아이스배스까지 전 시설을 이용할 수 있으며 평균 체류 시간은 3~4시간입니다. 외국인 방문객을 위한 영문 안내 페이지와 온라인 사전 결제 서비스를 운영하고 있어 방한 중에도 간편하게 예약할 수 있습니다."
     }
   }
 }
