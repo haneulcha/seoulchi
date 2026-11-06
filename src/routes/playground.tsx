@@ -151,7 +151,7 @@ function ColorTable({ colors }: { colors: Semantic[] }) {
                     <div className="flex items-center gap-100">
                       <span className="h-6 w-6 shrink-0 rounded-050 border border-neutral" style={{ backgroundColor: c.value[theme] }} />
                       <span>
-                        {c.ref[theme] ?? c.value[theme]}
+                        {c.ref[theme] ? <code>{c.ref[theme]}</code> : c.value[theme]}
                         {c.ref[theme] && <span className="block text-neutral-subtle">{c.value[theme]}</span>}
                       </span>
                     </div>
