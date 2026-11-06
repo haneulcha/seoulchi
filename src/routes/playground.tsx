@@ -4,7 +4,7 @@ import { PAGE } from '~/components/page'
 import { SAMPLES, type Sample } from '~/components/playground-samples'
 import { button } from '~/components/ui'
 import {
-  className, contrastPairs, type LengthToken, lightVars, parseDesignTokens, type Semantic, type Theme,
+  CLASS_PREFIX, className, contrastPairs, type LengthToken, lightVars, parseDesignTokens, type Semantic, type Theme,
 } from '~/lib/design-tokens'
 import foundationCss from '~/styles/foundation.css?raw'
 import themeCss from '~/styles/theme.css?raw'
@@ -136,25 +136,32 @@ function ColorTable({ colors }: { colors: Semantic[] }) {
             <th className="py-050">대비</th>
           </tr>
         </thead>
-        <tbody>
-          {colors.map((c) => (
-            <tr key={className(c)} className="border-t border-neutral align-top">
-              <td className="py-100 pr-150"><code>{className(c)}</code></td>
-              {(['light', 'dark'] as const).map((theme) => (
-                <td key={theme} className="py-100 pr-150">
-                  <div className="flex items-center gap-100">
-                    <span className="h-6 w-6 shrink-0 rounded-050 border border-neutral" style={{ backgroundColor: c.value[theme] }} />
-                    <span>
-                      {c.value[theme]}
-                      {c.ref[theme] && <span className="block text-neutral-subtle">{c.ref[theme]}</span>}
-                    </span>
-                  </div>
-                </td>
-              ))}
-              <td className="py-100"><Contrast fg={className(c)} /></td>
+        {(['background', 'text', 'border'] as const).map((property, i) => (
+          <tbody key={property}>
+            <tr>
+              <td colSpan={4} className={`${i > 0 ? 'pt-200' : 'pt-050'} pb-050 text-neutral-subtle`}>
+                <code>{CLASS_PREFIX[property]}-</code>
+              </td>
             </tr>
-          ))}
-        </tbody>
+            {colors.filter((c) => c.property === property).map((c) => (
+              <tr key={className(c)} className="border-t border-neutral align-top">
+                <td className="py-100 pr-150"><code>{className(c)}</code></td>
+                {(['light', 'dark'] as const).map((theme) => (
+                  <td key={theme} className="py-100 pr-150">
+                    <div className="flex items-center gap-100">
+                      <span className="h-6 w-6 shrink-0 rounded-050 border border-neutral" style={{ backgroundColor: c.value[theme] }} />
+                      <span>
+                        {c.value[theme]}
+                        {c.ref[theme] && <span className="block text-neutral-subtle">{c.ref[theme]}</span>}
+                      </span>
+                    </div>
+                  </td>
+                ))}
+                <td className="py-100"><Contrast fg={className(c)} /></td>
+              </tr>
+            ))}
+          </tbody>
+        ))}
       </table>
     </div>
   )
