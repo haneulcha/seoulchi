@@ -1,13 +1,16 @@
 /**
- * theme.css·foundation.css 원문을 토큰 모델로 바꾼다. 플레이그라운드(/playground)의 유일한 입력이다 —
+ * theme.css·foundation.css 원문을 토큰 모델로 바꾼다. 플레이그라운드(/playground)와 색 가드 테스트의 입력이다 —
  * 표에 나오는 이름·값·순서는 전부 여기서 나오고, 손으로 옮긴 값이 없다.
  */
 
 export type Theme = 'light' | 'dark'
-export type ColorToken = {
+export type ColorProperty = 'background' | 'text' | 'border'
+export const CLASS_PREFIX: Record<ColorProperty, string> = { background: 'bg', text: 'text', border: 'border' }
+export type Primitive = { name: string; hue: string; value: string }
+export type Semantic = {
   name: string
-  kind: 'primitive' | 'role' | 'surface'
-  scale?: string
+  property: ColorProperty
+  role: string
   value: Record<Theme, string>
   ref: Partial<Record<Theme, string>>
 }
@@ -17,8 +20,11 @@ export type TextToken = {
   at: Array<{ minWidth: string; size: string; lineHeight: string }>
 }
 export type DesignTokens = {
-  colors: ColorToken[]; spacing: LengthToken[]; radius: LengthToken[]; text: TextToken[]; fontSans: string
+  primitives: Primitive[]; semantics: Semantic[]; spacing: LengthToken[]; radius: LengthToken[]; text: TextToken[]; fontSans: string
 }
+
+export const className = (s: Semantic) => `${CLASS_PREFIX[s.property]}-${s.name}`
+export const cssVar = (s: Semantic) => `--${s.property}-color-${s.name}`
 
 type Decls = Map<string, string>
 
@@ -41,36 +47,37 @@ function resolve(value: string, base: Decls): string {
   })
 }
 
-const refOf = (raw: string) => /^var\(--color-([\w-]+)\)$/.exec(raw)?.[1]
+const refOf = (raw: string) => /^var\(--([a-z]+-\d+)\)$/.exec(raw)?.[1]
 
-const NOT_SYSTEM = new Set(['white', 'black', 'transparent', 'current'])
+const roleOf = (name: string) => (name === 'base' ? 'neutral' : name.replace(/^on-/, '').split('-')[0]!)
 
 export function parseDesignTokens(themeCss: string, foundationCss: string): DesignTokens {
+  const prim = decls(block(themeCss, /:root\s*\{([^}]*)\}/))
   const light = decls(block(themeCss, /@theme static\s*\{([\s\S]*?)\n\}/))
   const dark = decls(block(themeCss, /\.dark\s*\{([^}]*)\}/))
   const base = decls(block(foundationCss, /@theme\s*\{([\s\S]*?)\n\}/))
   const media = [...foundationCss.matchAll(/@media\s*\(width\s*>=\s*([^)]+)\)\s*\{\s*:root\s*\{([^}]*)\}\s*\}/g)]
     .map((m) => ({ minWidth: m[1]!.trim(), decls: decls(m[2]!) }))
   // 미디어 쿼리 안의 별칭도 기본 스케일(@theme)을 가리킨다
-  const all: Decls = new Map([...light, ...base])
+  const all: Decls = new Map([...prim, ...light, ...base])
 
-  const names = [...light.keys()].filter((k) => k.startsWith('color-')).map((k) => k.slice('color-'.length))
-  const scales = new Set(names.map((n) => /^([a-z]+)-\d+$/.exec(n)?.[1]).filter((s): s is string => !!s))
-  const colors = names.filter((n) => !NOT_SYSTEM.has(n)).map((name): ColorToken => {
-    const rawLight = light.get(`color-${name}`)!
-    const rawDark = dark.get(`color-${name}`) ?? rawLight
-    const scale = name.split('-')[0]!
-    const kind = !scales.has(scale) ? 'surface' : /-\d+$/.test(name) ? 'primitive' : 'role'
-    const ref: ColorToken['ref'] = {}
+  const primitives = [...prim].map(([name, value]): Primitive => ({ name, hue: name.replace(/-\d+$/, ''), value }))
+
+  const semantics = [...light].flatMap(([key, rawLight]): Semantic[] => {
+    const m = /^(background|text|border)-color-([\w-]+)$/.exec(key)
+    if (!m) return []
+    const name = m[2]!
+    const rawDark = dark.get(key) ?? rawLight
+    const ref: Semantic['ref'] = {}
     const refLight = refOf(rawLight)
     const refDark = refOf(rawDark)
     if (refLight) ref.light = refLight
     if (refDark) ref.dark = refDark
-    return {
-      name, kind, ...(kind !== 'surface' && { scale }),
+    return [{
+      name, property: m[1] as ColorProperty, role: roleOf(name),
       value: { light: resolve(rawLight, all), dark: resolve(rawDark, all) },
       ref,
-    }
+    }]
   })
 
   const lengths = (prefix: string): LengthToken[] =>
@@ -92,7 +99,7 @@ export function parseDesignTokens(themeCss: string, foundationCss: string): Desi
     }
   })
 
-  return { colors, spacing: lengths('spacing-'), radius: lengths('radius-'), text, fontSans: base.get('font-sans')! }
+  return { primitives, semantics, spacing: lengths('spacing-'), radius: lengths('radius-'), text, fontSans: base.get('font-sans')! }
 }
 
 function luminance(hex: string): number {
@@ -111,14 +118,15 @@ export function contrastRatio(a: string, b: string): number {
 
 /** DESIGN.md "대비" 장의 검사 쌍. 글자 역할을 그 역할이 놓이는 바탕 위에서 잰다 */
 export function contrastPairs(tokens: DesignTokens, theme: Theme): Array<{ fg: string; bg: string; ratio: number }> {
-  const hex = new Map(tokens.colors.map((c) => [c.name, c.value[theme]]))
-  const scales = [...new Set(tokens.colors.flatMap((c) => (c.kind === 'role' ? [c.scale!] : [])))]
+  const hex = new Map(tokens.semantics.map((s) => [className(s), s.value[theme]]))
+  const roles = [...new Set(tokens.semantics.map((s) => s.role))].filter((r) => r !== 'neutral')
   const pairs: Array<[string, string]> = [
-    ...scales.flatMap((s): Array<[string, string]> => [
-      [`${s}-text`, 'surface'], [`${s}-text`, `${s}-subtle-bg`], [`${s}-text`, `${s}-hover-bg`],
-      [`${s}-text-strong`, `${s}-subtle-bg`], [`${s}-on-solid`, `${s}-solid`],
+    ...roles.flatMap((r): Array<[string, string]> => [
+      [`text-${r}`, 'bg-base'], [`text-${r}`, `bg-${r}-subtle`], [`text-${r}`, `bg-${r}-subtle-hover`],
+      [`text-${r}-strong`, `bg-${r}-subtle`], [`text-on-${r}`, `bg-${r}-solid`],
     ]),
-    ['ink', 'surface'], ['ink-muted', 'surface'], ['ink-subtle', 'surface'],
+    ['text-neutral', 'bg-base'], ['text-neutral-muted', 'bg-base'], ['text-neutral-subtle', 'bg-base'],
+    ['text-on-neutral', 'bg-neutral-solid'],
   ]
   return pairs.map(([fg, bg]) => ({ fg, bg, ratio: contrastRatio(hex.get(fg)!, hex.get(bg)!) }))
 }
@@ -129,6 +137,6 @@ export function contrastPairs(tokens: DesignTokens, theme: Theme): Array<{ fg: s
  */
 export function lightVars(tokens: DesignTokens): Record<string, string> {
   return Object.fromEntries(
-    tokens.colors.filter((c) => c.value.light !== c.value.dark).map((c) => [`--color-${c.name}`, c.value.light]),
+    tokens.semantics.filter((s) => s.value.light !== s.value.dark).map((s) => [cssVar(s), s.value.light]),
   )
 }
