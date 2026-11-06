@@ -28,10 +28,15 @@ const CONTRAST = {
 }
 const REPO = 'https://github.com/haneulcha/seoulchi/blob/main'
 
+const remToPx = (value: string) => {
+  const rem = /^([\d.]+)rem$/.exec(value)
+  return rem ? `${Number(rem[1]) * 16}px` : value
+}
+
 /** 길이 표기는 원문 그대로 두고 px을 곁들인다(1rem = 16px) */
 function px(value: string): string {
-  const rem = /^([\d.]+)rem$/.exec(value)
-  return rem ? `${value} · ${Number(rem[1]) * 16}px` : value
+  const converted = remToPx(value)
+  return converted === value ? value : `${value} · ${converted}`
 }
 
 function Playground() {
@@ -75,18 +80,31 @@ function Playground() {
       </Section>
 
       <Section title="글자">
-        <div className="mt-200 divide-y divide-neutral">
-          {tokens.text.map((t) => (
-            <div key={t.name} className="py-150">
-              <p style={{ fontSize: t.size, lineHeight: t.lineHeight, fontWeight: Number(t.weight) }}>
-                이번 주 서울에서 갈 만한 곳
-              </p>
-              <p className="mt-050 text-caption text-neutral-subtle">
-                <code className="text-neutral">text-{t.name}</code> · {px(t.size)} / {t.lineHeight} / {t.weight}
-                {t.at.map((a) => ` · ≥${a.minWidth} ${a.size} / ${a.lineHeight}`).join('')}
-              </p>
-            </div>
-          ))}
+        <div className="mt-150 overflow-x-auto">
+          <table className="w-full min-w-[40rem] text-left text-caption">
+            <thead className="text-neutral-subtle">
+              <tr>
+                <th className="py-050 pr-150">클래스</th>
+                <th className="py-050 pr-150">견본</th>
+                <th className="py-050 pr-150">크기</th>
+                <th className="py-050 pr-150">줄 높이</th>
+                <th className="py-050">굵기</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tokens.text.map((t) => (
+                <tr key={t.name} className="border-t border-neutral align-top">
+                  <td className="py-150 pr-150"><code>text-{t.name}</code></td>
+                  <td className="py-150 pr-150">
+                    <p style={{ fontSize: t.size, lineHeight: t.lineHeight, fontWeight: Number(t.weight) }}>이번 주 서울</p>
+                  </td>
+                  <td className="py-150 pr-150"><Length value={t.size} at={t.at.map((a) => [a.minWidth, a.size])} /></td>
+                  <td className="py-150 pr-150"><Length value={t.lineHeight} at={t.at.map((a) => [a.minWidth, a.lineHeight])} /></td>
+                  <td className="py-150">{t.weight}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </Section>
 
@@ -164,6 +182,19 @@ function ColorTable({ colors }: { colors: Semantic[] }) {
         ))}
       </table>
     </div>
+  )
+}
+
+/** px을 위에, 원문 rem을 아래에. 폭별 값은 그 밑에 */
+function Length({ value, at }: { value: string; at: Array<[string, string]> }) {
+  return (
+    <>
+      {remToPx(value)}
+      <span className="block text-neutral-subtle">{value}</span>
+      {at.map(([minWidth, v]) => (
+        <span key={minWidth} className="mt-050 block">≥{minWidth} {remToPx(v)}</span>
+      ))}
+    </>
   )
 }
 
