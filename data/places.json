@@ -1253,11 +1253,11 @@
       "isFree": true,
       "subwayInfo": "지하철 1호선 금천구청역 1번출구, 266m",
       "tags": [
+        "서서울미술관",
         "서울시립미술관",
         "SeMA",
         "뉴미디어",
         "현대미술",
-        "서서울미술관",
         "무료전시",
         "금천구",
         "예술관광"
@@ -2542,11 +2542,11 @@
       "subwayInfo": "지하철 6호선/공항철도/경의중앙 디지털미디어시티역 9번출구, 811m",
       "tags": [
         "e스포츠 명예의 전당",
+        "VR",
         "전시관",
         "e스포츠 전시",
         "서울전시",
-        "스튜디오체험",
-        "VR"
+        "스튜디오체험"
       ],
       "kind": "place",
       "useTime": "11:00-18:00",
@@ -2776,16 +2776,16 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 안국역 2번출구, 355m",
       "tags": [
-        "한국공예디자인문화진흥원",
         "한지",
         "북촌한옥마을 명소",
+        "한국공예디자인문화진흥원",
         "안국역 명소",
         "한지가헌",
         "한지문화홍보관"
       ],
       "kind": "place",
       "useTime": "10:00-19:00",
-      "closedDays": "임시휴관 (2027년 3월 재개관 예정)\r\n월요일 휴관",
+      "closedDays": "임시휴관 (2027년 3월 재개관 예정)\r\n문의사항은 이메일로 문의 바랍니다. hanji@kcdf.kr\r\n월요일 휴관",
       "hours": {
         "open": "10:00",
         "close": "19:00",
@@ -8218,26 +8218,26 @@
     {
       "id": "vs-KOP023460",
       "source": "visit-seoul",
-      "title": "백남준기념관",
+      "title": "서울시립 백남준을 기억하는 집",
       "summary": "백남준의 삶과 예술을 기념하는 공간",
       "category": "기타전시시설",
-      "place": "백남준기념관",
+      "place": "서울시립 백남준을 기억하는 집",
       "address": "서울 종로구 종로53길 12-1 (창신동)",
       "lat": 37.5730620206,
       "lng": 127.0137651211,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=23460&fileTy=POSTTHUMB&fileNo=1&thumbTy=M&postTy=P",
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84010&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "https://sema.seoul.go.kr/kr/index",
       "isFree": true,
       "subwayInfo": "지하철 1호선/4호선 동대문역 3번 출구,  220m\r\n지하철1호선/6호선 동묘앞역 8번 출구, 205m",
       "tags": [
-        " 동대문역",
-        "백남준기념관",
+        "백남준을기억하는집",
         " 동대문",
         "백남준",
         "창신동",
         "예술",
         " 종로",
-        "동묘앞역"
+        "동묘앞역",
+        "동대문역"
       ],
       "kind": "place",
       "useTime": "10:00~19:00 (관람종료 30분 전까지 입장)",
@@ -15784,11 +15784,11 @@
         "경복궁"
       ],
       "kind": "place",
-      "useTime": "11:00-19:00",
+      "useTime": "10:00-18:00",
       "closedDays": "화요일",
       "hours": {
-        "open": "11:00",
-        "close": "19:00",
+        "open": "10:00",
+        "close": "18:00",
         "closedWeekdays": [
           2
         ]
@@ -16135,7 +16135,7 @@
         "딜리센트"
       ],
       "kind": "place",
-      "useTime": "월-금 10:00-22:00 / 일 10:00-16:00",
+      "useTime": "월- 10:00-22:00 / 일 10:00-16:00",
       "hours": {
         "open": "10:00",
         "close": "22:00",
@@ -16157,16 +16157,16 @@
       "isFree": false,
       "subwayInfo": "지하철 1호선/2호선 시청역 5번출구, 168m",
       "tags": [
-        "공방체험",
         "한글 레터링 주얼리 체험",
         "장신구 만들기",
         "레터링 주얼리",
         "을지로 공방",
-        "원데이 클래스"
+        "원데이 클래스",
+        "공방체험"
       ],
       "kind": "place",
       "useTime": "오전 10:30 / 오후 2:00 / 오후 5:00\r\n※ 업체 사정으로 인해 이용 시간 혹은 운영일 변경 가능성 있으므로 방문 전 업체로 사전 문의해주세요.",
-      "closedDays": "일요일",
+      "closedDays": "일요일, 설날, 추석 전날 및 당일",
       "hours": null
     },
     {
