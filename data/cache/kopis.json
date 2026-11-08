@@ -18611,6 +18611,2815 @@
       "relateurls": [
         "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=14155"
       ]
+    },
+    "PF305655": {
+      "mt20id": "PF305655",
+      "prfnm": "기업인을 위한 서경 송년음악회",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "세종문화회관 (세종대극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305655_261106_113510.png",
+      "genrenm": "복합",
+      "openrun": false,
+      "mt10id": "FC000020",
+      "pcseguidance": "전석무료",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37837&menuNo=200320"
+      ]
+    },
+    "PF305581": {
+      "mt20id": "PF305581",
+      "prfnm": "BOUND RUSH vol.4",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "웨스트브릿지 라이브홀 (웨스트브릿지 라이브홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305581_261105_142210.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001608",
+      "pcseguidance": "사전예약 35,000원, 현장판매 40,000원",
+      "dtguidance": "토요일(17:30)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1640000"
+      ]
+    },
+    "PF305580": {
+      "mt20id": "PF305580",
+      "prfnm": "숲세권 라이브, 보이드 단독 공연: Evergreen",
+      "prfpdfrom": "2026.11.28",
+      "prfpdto": "2026.11.28",
+      "fcltynm": "숲세권 라이브 카인드스퀘어점  (숲세권 라이브 카인드스퀘어점 )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305580_261105_142054.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC005062",
+      "pcseguidance": "전석 44,000원",
+      "dtguidance": "토요일(17:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214214"
+      ]
+    },
+    "PF305578": {
+      "mt20id": "PF305578",
+      "prfnm": "제1회 소리QUEEN 이신예 단독 콘서트",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "H-스테이지 (H-스테이지)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305578_261105_141648.gif",
+      "genrenm": "한국음악(국악)",
+      "openrun": false,
+      "mt10id": "FC003003",
+      "pcseguidance": "전석 10,000원",
+      "dtguidance": "토요일(16:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015970"
+      ]
+    },
+    "PF305577": {
+      "mt20id": "PF305577",
+      "prfnm": "별이 쏟아 지는 물창아래서 [서울]",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.09",
+      "fcltynm": "성수아트홀(성수문화복지회관) (성수아트홀(성수문화복지회관))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305577_261105_141302.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001173",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "화요일 ~ 수요일(19:30)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66514"
+      ]
+    },
+    "PF305576": {
+      "mt20id": "PF305576",
+      "prfnm": "라율아트홀 살롱클래식, 예 트리오: Moonlight Across Time",
+      "prfpdfrom": "2026.11.19",
+      "prfpdto": "2026.11.19",
+      "fcltynm": "라율아트홀 (라율아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305576_261105_141242.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC002132",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "목요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014932"
+      ]
+    },
+    "PF305575": {
+      "mt20id": "PF305575",
+      "prfnm": "예인열전: 이태백, 회고 60년",
+      "prfpdfrom": "2026.11.22",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "한국문화의집 KOUS (한국문화의집 KOUS)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305575_261105_141241.jpg",
+      "genrenm": "한국음악(국악)",
+      "openrun": false,
+      "mt10id": "FC000065",
+      "pcseguidance": "전석 20,000원, 시야제한석(사전예매) 5,000원",
+      "dtguidance": "일요일(15:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/677689"
+      ]
+    },
+    "PF305574": {
+      "mt20id": "PF305574",
+      "prfnm": "BOUND RUSH vol.5",
+      "prfpdfrom": "2026.11.22",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "아스트라홀 (아스트라홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305574_261105_140908.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004646",
+      "pcseguidance": "현장판매 40,000원, 사전예약 35,000원",
+      "dtguidance": "일요일(17:40)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1640000"
+      ]
+    },
+    "PF305573": {
+      "mt20id": "PF305573",
+      "prfnm": "자신의 이름으로 [대학로]",
+      "prfpdfrom": "2026.11.14",
+      "prfpdto": "2026.11.15",
+      "fcltynm": "제이원 씨어터 (구. 서완소극장, 구. 씨어터고리) (제이원 씨어터 (구. 서완소극장, 구. 씨어터고리) )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305573_261105_140623.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001201",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "토요일(16:00,19:00), 일요일(15:00,18:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015870"
+      ]
+    },
+    "PF305565": {
+      "mt20id": "PF305565",
+      "prfnm": "제3회 정필링 온 더 웨이브 단독콘서트",
+      "prfpdfrom": "2026.11.19",
+      "prfpdto": "2026.11.19",
+      "fcltynm": "롤링홀 (롤링홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305565_261105_134947.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000073",
+      "pcseguidance": "스탠딩석  44,000원",
+      "dtguidance": "목요일(20:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015886"
+      ]
+    },
+    "PF305564": {
+      "mt20id": "PF305564",
+      "prfnm": "베리타스 뮤지케 음악제, TVT와의 국제교류 작품발표회",
+      "prfpdfrom": "2026.11.10",
+      "prfpdto": "2026.11.10",
+      "fcltynm": "일신홀 (일신홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305564_261105_134340.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001629",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "https://ticket.yes24.com/Perf/60613"
+      ]
+    },
+    "PF305561": {
+      "mt20id": "PF305561",
+      "prfnm": "CK ON STAGE: 어디로든 맨발로, 산초: 가디언 오브 드림즈",
+      "prfpdfrom": "2026.11.13",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "한예극장 (한예극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305561_261105_134335.jpg",
+      "genrenm": "복합",
+      "openrun": false,
+      "mt10id": "FC003249",
+      "pcseguidance": "전석무료",
+      "dtguidance": "금요일(19:00), 토요일 ~ 일요일(15:00,19:30)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4625"
+      ]
+    },
+    "PF305560": {
+      "mt20id": "PF305560",
+      "prfnm": "밤을 건너는 시인",
+      "prfpdfrom": "2026.11.19",
+      "prfpdto": "2026.11.20",
+      "fcltynm": "호원아트홀 (호원아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305560_261105_133749.gif",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC000070",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "목요일 ~ 금요일(20:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015896"
+      ]
+    },
+    "PF305558": {
+      "mt20id": "PF305558",
+      "prfnm": "HANIL FES vol.8",
+      "prfpdfrom": "2026.11.22",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "아스트라홀 (아스트라홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305558_261105_133326.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004646",
+      "pcseguidance": "전석 35,000원, 현장판매 40,000원",
+      "dtguidance": "일요일(11:50)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1640000"
+      ]
+    },
+    "PF305554": {
+      "mt20id": "PF305554",
+      "prfnm": "서울시민 생활음악 심포니 페스티벌",
+      "prfpdfrom": "2026.11.10",
+      "prfpdto": "2026.11.12",
+      "fcltynm": "서대문문화체육회관 (대극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305554_261105_132636.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001668",
+      "pcseguidance": "전석무료",
+      "dtguidance": "화요일(18:30), 수요일 ~ 목요일(19:30)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4759"
+      ]
+    },
+    "PF305551": {
+      "mt20id": "PF305551",
+      "prfnm": "모든 날 모든 순간",
+      "prfpdfrom": "2026.11.20",
+      "prfpdto": "2027.01.31",
+      "fcltynm": "지즐소극장 (지즐소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305551_261105_131753.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001156",
+      "pcseguidance": "전석 45,000원",
+      "dtguidance": "화요일 ~ 금요일(19:00), 토요일 ~ 일요일(14:00,16:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015436"
+      ]
+    },
+    "PF305523": {
+      "mt20id": "PF305523",
+      "prfnm": "유송은의 보성소리 심청가 완창",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "서울돈화문국악당 (서울돈화문국악당)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305523_261105_110647.jpg",
+      "genrenm": "한국음악(국악)",
+      "openrun": false,
+      "mt10id": "FC001441",
+      "pcseguidance": "전석무료",
+      "dtguidance": "토요일(15:00)",
+      "relateurls": [
+        "http://sdtt.moonhwain.kr/rsvc/rsv_pm.html?b_id=sdtt&p_idx=708"
+      ]
+    },
+    "PF305519": {
+      "mt20id": "PF305519",
+      "prfnm": "Sophie Powers Asia Tour: MANIC PIXIE in Seoul",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "예스24 원더로크홀 (예스24 원더로크홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305519_261105_110320.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC003954",
+      "pcseguidance": "SVIP석 120,000원, VIP석 80,000원, 일반석 60,000원",
+      "dtguidance": "토요일(18:00)",
+      "relateurls": [
+        "https://ticket.yes24.com/Perf/60948"
+      ]
+    },
+    "PF305518": {
+      "mt20id": "PF305518",
+      "prfnm": "원과 선 프로젝트, 아임 낫 차이니즈 Im not Chinese",
+      "prfpdfrom": "2026.11.27",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "Small but great (Small but great)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305518_261105_105809.png",
+      "genrenm": "복합",
+      "openrun": false,
+      "mt10id": "FC005174",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "금요일(19:30), 토요일(15:00,19:00), 일요일(15:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1767712"
+      ]
+    },
+    "PF305517": {
+      "mt20id": "PF305517",
+      "prfnm": "제2회 N뮤즈페스티벌, 죄 없는 수감",
+      "prfpdfrom": "2026.12.03",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "나인진홀 (구.청년극장) (나인진홀 3관(5F))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305517_261105_105809.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001121",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "목요일 ~ 금요일(20:00), 토요일(14:00,18:00), 일요일(15:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015797"
+      ]
+    },
+    "PF305516": {
+      "mt20id": "PF305516",
+      "prfnm": "제26회 월드 2인극 페스티벌, ROOM",
+      "prfpdfrom": "2026.11.12",
+      "prfpdto": "2026.11.12",
+      "fcltynm": "광복극장 (광복극장(B1))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305516_261105_105439.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004482",
+      "pcseguidance": "전석무료",
+      "dtguidance": "목요일(19:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4674"
+      ]
+    },
+    "PF305515": {
+      "mt20id": "PF305515",
+      "prfnm": "미호제작소 사계절여행연극시리즈 #겨울: Merry Christmas in Prague",
+      "prfpdfrom": "2026.12.04",
+      "prfpdto": "2026.12.12",
+      "fcltynm": "성북마을극장 (성북마을극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305515_261105_105439.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001361",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "목요일 ~ 금요일(20:00), 토요일(14:00,17:00,20:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015977"
+      ]
+    },
+    "PF305508": {
+      "mt20id": "PF305508",
+      "prfnm": "서울가야금앙상블 창단10주년 기념 정기연주회",
+      "prfpdfrom": "2026.11.18",
+      "prfpdto": "2026.11.18",
+      "fcltynm": "국립국악원 (우면당)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305508_261105_103417.jpg",
+      "genrenm": "한국음악(국악)",
+      "openrun": false,
+      "mt10id": "FC000009",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "수요일(19:30)",
+      "relateurls": [
+        "https://www.gugak.go.kr/site/program/performance/detail?menuid=001001001001&performance_id=396621"
+      ]
+    },
+    "PF305505": {
+      "mt20id": "PF305505",
+      "prfnm": "서리풀악동문화공연, 빨간모자야 조심해 (11월)",
+      "prfpdfrom": "2026.11.18",
+      "prfpdto": "2026.11.18",
+      "fcltynm": "반포심산아트홀 (반포심산아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305505_261105_102745.jpg",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC001958",
+      "pcseguidance": "전석 5,000원",
+      "dtguidance": "수요일(19:00)",
+      "relateurls": [
+        "https://ticket.yes24.com/Perf/60963"
+      ]
+    },
+    "PF305504": {
+      "mt20id": "PF305504",
+      "prfnm": "제26회 월드 2인극 페스티벌, 극장의 죽음",
+      "prfpdfrom": "2026.11.14",
+      "prfpdto": "2026.11.15",
+      "fcltynm": "다케이씨어터 (구. 창조소극장)  (다케이씨어터 (구. 창조소극장) )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305504_261105_102359.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001636",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(15:00,18:00), 일요일(15:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014923"
+      ]
+    },
+    "PF305503": {
+      "mt20id": "PF305503",
+      "prfnm": "정혜",
+      "prfpdfrom": "2026.11.26",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "안똔체홉극장 (안똔체홉극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305503_261105_102357.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001137",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "목요일 ~ 금요일(19:30), 토요일(15:00,18:00), 일요일(15:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1769650"
+      ]
+    },
+    "PF305502": {
+      "mt20id": "PF305502",
+      "prfnm": "제26회 월드 2인극 페스티벌, 살아남은 자의 이력서",
+      "prfpdfrom": "2026.11.14",
+      "prfpdto": "2026.11.15",
+      "fcltynm": "극장 동국 (극장 동국)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305502_261105_102357.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001226",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(15:00,18:00), 일요일(15:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014985"
+      ]
+    },
+    "PF305496": {
+      "mt20id": "PF305496",
+      "prfnm": "먼데이프로젝트 IN 라이브클럽, Mombrimz 단독콘서트",
+      "prfpdfrom": "2026.11.26",
+      "prfpdto": "2026.11.26",
+      "fcltynm": "공상온도 (공상온도)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305496_261105_100641.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC002075",
+      "pcseguidance": "스탠딩 33,000원",
+      "dtguidance": "목요일(20:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214190"
+      ]
+    },
+    "PF305490": {
+      "mt20id": "PF305490",
+      "prfnm": "숲세권 라이브, KEYVITUP 단독 공연: Marigold",
+      "prfpdfrom": "2026.11.12",
+      "prfpdto": "2026.11.12",
+      "fcltynm": "숲세권 라이브 카인드스퀘어점  (숲세권 라이브 카인드스퀘어점 )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305490_261104_152906.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC005062",
+      "pcseguidance": "전석 50,000원",
+      "dtguidance": "목요일(20:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214205"
+      ]
+    },
+    "PF305489": {
+      "mt20id": "PF305489",
+      "prfnm": "제27회 중구구립합창단 정기 연주회",
+      "prfpdfrom": "2026.11.10",
+      "prfpdto": "2026.11.10",
+      "fcltynm": "충무아트센터 (대극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305489_261104_152156.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000014",
+      "pcseguidance": "전석무료",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016014"
+      ]
+    },
+    "PF305487": {
+      "mt20id": "PF305487",
+      "prfnm": "오소라 피아노 독주회: 모차르트 탄생 270주년 기념, 모차르트 피아노 소나타 전곡 시리즈 Ⅰ",
+      "prfpdfrom": "2026.11.09",
+      "prfpdto": "2026.11.09",
+      "fcltynm": "금호아트홀 연세 (금호아트홀 연세)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305487_261104_151652.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001556",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "월요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014633"
+      ]
+    },
+    "PF305486": {
+      "mt20id": "PF305486",
+      "prfnm": "국립극단 청년교육단원 연극제, 어떤 연극: 한밤의 북소리",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "우란2경 (우란2경)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305486_261104_151202.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC002016",
+      "pcseguidance": "전석무료",
+      "dtguidance": "토요일 ~ 일요일(19:30)",
+      "relateurls": [
+        "http://www.ntck.or.kr/ko/performance/info/257367"
+      ]
+    },
+    "PF305485": {
+      "mt20id": "PF305485",
+      "prfnm": "국립극단 청년교육단원 연극제: 어떤 연극, 하늘 Ciels",
+      "prfpdfrom": "2026.12.03",
+      "prfpdto": "2026.12.04",
+      "fcltynm": "우란2경 (우란2경)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305485_261104_151125.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC002016",
+      "pcseguidance": "전석무료",
+      "dtguidance": "목요일 ~ 금요일(19:30)",
+      "relateurls": [
+        "http://www.ntck.or.kr/ko/performance/info/257369"
+      ]
+    },
+    "PF305481": {
+      "mt20id": "PF305481",
+      "prfnm": "재능 혜화 마티네",
+      "prfpdfrom": "2026.11.19",
+      "prfpdto": "2026.11.19",
+      "fcltynm": "JCC 아트센터 (콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305481_261104_150439.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001575",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "목요일(11:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015908"
+      ]
+    },
+    "PF305479": {
+      "mt20id": "PF305479",
+      "prfnm": "프롬 단독 콘서트: 에테르",
+      "prfpdfrom": "2026.11.28",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "서보아트스페이스(서보미술문화공간)[서울] (보이드 홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305479_261104_145623.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004146",
+      "pcseguidance": "전석 77,000원",
+      "dtguidance": "토요일(18:00), 일요일(17:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66723"
+      ]
+    },
+    "PF305477": {
+      "mt20id": "PF305477",
+      "prfnm": "숲세권 라이브, 아멘 단독 공연: ANEMONE",
+      "prfpdfrom": "2026.11.27",
+      "prfpdto": "2026.11.27",
+      "fcltynm": "숲세권 라이브 카인드스퀘어점  (숲세권 라이브 카인드스퀘어점 )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305477_261104_145201.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC005062",
+      "pcseguidance": "전석 38,000원",
+      "dtguidance": "금요일(20:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214204"
+      ]
+    },
+    "PF305470": {
+      "mt20id": "PF305470",
+      "prfnm": "나루아티스트와 함께하는 살롱음악회 (11월)",
+      "prfpdfrom": "2026.11.25",
+      "prfpdto": "2026.11.25",
+      "fcltynm": "나루아트센터 (갤러리(전시실))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305470_261104_143247.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000039",
+      "pcseguidance": "전석 1,000원",
+      "dtguidance": "수요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015714"
+      ]
+    },
+    "PF305465": {
+      "mt20id": "PF305465",
+      "prfnm": "김기태 연말 콘서트: Mapo Winter Edition",
+      "prfpdfrom": "2026.12.04",
+      "prfpdto": "2026.12.04",
+      "fcltynm": "마포아트센터 (아트홀맥)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305465_261104_142137.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000788",
+      "pcseguidance": "1층석 132,000원, 2층석 121,000원",
+      "dtguidance": "금요일(20:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1768625",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015743",
+        "https://ticket.yes24.com/Perf/60915"
+      ]
+    },
+    "PF305464": {
+      "mt20id": "PF305464",
+      "prfnm": "국립극단 청년교육단원 연극제: 어떤 연극, 우스꽝스럽고 안스러운 인간들",
+      "prfpdfrom": "2026.11.26",
+      "prfpdto": "2026.11.27",
+      "fcltynm": "우란2경 (우란2경)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305464_261104_141848.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC002016",
+      "pcseguidance": "전석무료",
+      "dtguidance": "목요일 ~ 금요일(19:30)",
+      "relateurls": [
+        "http://www.ntck.or.kr/ko/performance/info/257368"
+      ]
+    },
+    "PF305456": {
+      "mt20id": "PF305456",
+      "prfnm": "나 지금 맨발이야",
+      "prfpdfrom": "2026.11.12",
+      "prfpdto": "2026.11.14",
+      "fcltynm": "신촌문화발전소 (소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305456_261104_140109.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001854",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "목요일 ~ 금요일(19:30), 토요일(14:00,18:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4758"
+      ]
+    },
+    "PF305450": {
+      "mt20id": "PF305450",
+      "prfnm": "청소년극 단막극 연작, 동물X사람X공룡",
+      "prfpdfrom": "2026.12.01",
+      "prfpdto": "2026.12.13",
+      "fcltynm": "아르코 꿈밭극장 (아르코꿈밭극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305450_261104_134945.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004422",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "화요일 ~ 금요일(19:30), 토요일(15:00,19:00), 일요일(15:00)",
+      "relateurls": [
+        "http://www.ntck.or.kr/ko/performance/info/257339",
+        "https://theater.arko.or.kr/product/performance/259587"
+      ]
+    },
+    "PF305447": {
+      "mt20id": "PF305447",
+      "prfnm": "世代共感 세대공감7, 해리빅버튼 X 크래쉬",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "우무지 (우무지)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305447_261104_134257.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004500",
+      "pcseguidance": "현장판매 45,000원, 사전예약 40,000원",
+      "dtguidance": "토요일(18:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214228"
+      ]
+    },
+    "PF305440": {
+      "mt20id": "PF305440",
+      "prfnm": "제6회 SAL 기획공연: DELTA",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "국립극장 (해오름극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305440_261104_132956.jpg",
+      "genrenm": "무용(서양/한국무용)",
+      "openrun": false,
+      "mt10id": "FC000003",
+      "pcseguidance": "VIP석 100,000원, R석 80,000원, S석 50,000원, A석 20,000원",
+      "dtguidance": "토요일(19:30), 일요일(16:00)",
+      "relateurls": [
+        "https://www.ntok.go.kr/kr/Ticket/Performance/Details?performanceId=267245"
+      ]
+    },
+    "PF305433": {
+      "mt20id": "PF305433",
+      "prfnm": "제15회 라파엘코러스 정기연주회: Now, We Sing of Dreams! Ep.2 나그네의 노래",
+      "prfpdfrom": "2026.12.07",
+      "prfpdto": "2026.12.07",
+      "fcltynm": "세종문화회관 (세종체임버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305433_261104_131613.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000020",
+      "pcseguidance": "전석무료",
+      "dtguidance": "월요일(19:30)",
+      "relateurls": [
+        "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37812&menuNo=200320"
+      ]
+    },
+    "PF305431": {
+      "mt20id": "PF305431",
+      "prfnm": "이도희 귀국 첼로 독주회",
+      "prfpdfrom": "2026.11.29",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "금호아트홀 연세 (금호아트홀 연세)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305431_261104_130304.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001556",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "일요일(15:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015302"
+      ]
+    },
+    "PF305428": {
+      "mt20id": "PF305428",
+      "prfnm": "Heritage Series; The Fellowship, 피아니스트 김대진 & 문지영",
+      "prfpdfrom": "2026.11.20",
+      "prfpdto": "2026.11.20",
+      "fcltynm": "신영체임버홀 (신영체임버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305428_261104_125133.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001868",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "금요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015807"
+      ]
+    },
+    "PF305427": {
+      "mt20id": "PF305427",
+      "prfnm": "처음 만나는 클래식: 사자왕의 생일 파티 (11월)",
+      "prfpdfrom": "2026.11.07",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "콘서트홀 나누 (콘서트홀 나누)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305427_261104_125045.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC004204",
+      "pcseguidance": "전석 27,000원",
+      "dtguidance": "토요일(11:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015100"
+      ]
+    },
+    "PF305425": {
+      "mt20id": "PF305425",
+      "prfnm": "화이트 캔디",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "구로창의아트홀 (구로창의아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305425_261104_124444.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC004310",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(17:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015711"
+      ]
+    },
+    "PF305417": {
+      "mt20id": "PF305417",
+      "prfnm": "정말 안녕하세요",
+      "prfpdfrom": "2026.11.12",
+      "prfpdto": "2026.11.15",
+      "fcltynm": "여행자극장 (여행자극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305417_261104_113943.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001529",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "목요일 ~ 금요일(20:00), 토요일 ~ 일요일(16:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015951"
+      ]
+    },
+    "PF305416": {
+      "mt20id": "PF305416",
+      "prfnm": "펀치 소극장 단독 콘서트: 펀치의 아지트",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "구름아래소극장 (구름아래소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305416_261104_113524.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC002033",
+      "pcseguidance": "전석 88,000원",
+      "dtguidance": "일요일(15:00,19:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214189"
+      ]
+    },
+    "PF305411": {
+      "mt20id": "PF305411",
+      "prfnm": "운명",
+      "prfpdfrom": "2026.11.18",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "북촌나래홀 (북촌나래홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305411_261104_112656.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC000558",
+      "pcseguidance": "전석 10,000원",
+      "dtguidance": "수요일 ~ 금요일(19:00), 토요일 ~ 일요일(18:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4765"
+      ]
+    },
+    "PF305410": {
+      "mt20id": "PF305410",
+      "prfnm": "HHF VOL.2",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "아스트라홀 (아스트라홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305410_261104_112008.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004646",
+      "pcseguidance": "전석 45,000원, 현장판매 55,000원",
+      "dtguidance": "토요일(19:30)",
+      "relateurls": [
+        "https://azito.kr/genba/4446"
+      ]
+    },
+    "PF305403": {
+      "mt20id": "PF305403",
+      "prfnm": "WITH STAGE & 시즌6, #2. 수민, 에이트레인, 윤다혜",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "한국콘텐츠진흥원 CKL스테이지 (한국콘텐츠진흥원 CKL스테이지)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305403_261104_110842.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001428",
+      "pcseguidance": "전석무료",
+      "dtguidance": "토요일(18:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015149"
+      ]
+    },
+    "PF305397": {
+      "mt20id": "PF305397",
+      "prfnm": "제85회 라이브 클럽 데이",
+      "prfpdfrom": "2026.11.27",
+      "prfpdto": "2026.11.27",
+      "fcltynm": "라이브클럽 협동조합 (라이브클럽 협동조합)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305397_261104_105659.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC002323",
+      "pcseguidance": "블라인드 티켓 35,000원",
+      "dtguidance": "금요일(20:00)",
+      "relateurls": [
+        "https://ticket.29cm.co.kr/catalog/4328035"
+      ]
+    },
+    "PF305392": {
+      "mt20id": "PF305392",
+      "prfnm": "바리톤 박세진 독창회",
+      "prfpdfrom": "2026.11.14",
+      "prfpdto": "2026.11.14",
+      "fcltynm": "영산아트홀 (영산아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305392_261104_104509.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000384",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "토요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015409"
+      ]
+    },
+    "PF305390": {
+      "mt20id": "PF305390",
+      "prfnm": "더벨과 함께하는 송년음악회: 겨울의 시, 라포엠",
+      "prfpdfrom": "2026.12.04",
+      "prfpdto": "2026.12.04",
+      "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305390_261104_104205.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001513",
+      "pcseguidance": "전석 50,000원",
+      "dtguidance": "금요일(19:30)",
+      "relateurls": [
+        "https://www.lotteconcerthall.com/product/performance/261275"
+      ]
+    },
+    "PF305386": {
+      "mt20id": "PF305386",
+      "prfnm": "SLOW FORWARD",
+      "prfpdfrom": "2026.11.25",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "광복극장 (광복극장(B1))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305386_261104_103531.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004482",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "수요일 ~ 금요일(19:30), 토요일(15:00,18:30), 일요일(15:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015688"
+      ]
+    },
+    "PF305375": {
+      "mt20id": "PF305375",
+      "prfnm": "라떼는 커피다",
+      "prfpdfrom": "2026.11.24",
+      "prfpdto": "2026.11.26",
+      "fcltynm": "열린극장 (열린극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305375_261104_100900.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC000516",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "화요일 ~ 목요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015071"
+      ]
+    },
+    "PF305349": {
+      "mt20id": "PF305349",
+      "prfnm": "META FES VOL.61",
+      "prfpdfrom": "2026.11.20",
+      "prfpdto": "2026.11.20",
+      "fcltynm": "아지토 라이브 홀 (라이브 홀 )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305349_261103_161416.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004583",
+      "pcseguidance": "사전예약 20,000원, 현장판매 25,000원",
+      "dtguidance": "금요일(18:50)",
+      "relateurls": [
+        "https://azito.kr/genba/4360"
+      ]
+    },
+    "PF305260": {
+      "mt20id": "PF305260",
+      "prfnm": "DAILY: DIRECTION 1st FAN: CON: SUN: DAY CLUB: ORIENTATION",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "XSCALA(엑스칼라) (공연장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305260_261103_134356.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004693",
+      "pcseguidance": "전석 110,000원",
+      "dtguidance": "토요일(14:00,19:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015519"
+      ]
+    },
+    "PF305206": {
+      "mt20id": "PF305206",
+      "prfnm": "윤염광 바이올린 독주회",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "예술의전당 [서울] (리사이틀홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305206_261103_105512.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(14:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015657"
+      ]
+    },
+    "PF305194": {
+      "mt20id": "PF305194",
+      "prfnm": "RAI BIRTHDAY LIVE: 백색소음",
+      "prfpdfrom": "2026.11.15",
+      "prfpdto": "2026.11.15",
+      "fcltynm": "웨스트브릿지 라이브홀 (웨스트브릿지 라이브홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305194_261103_102322.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001608",
+      "pcseguidance": "S티켓 (사전예약) 180,000원, 사전예약 25,000원, 현장판매 30,000원",
+      "dtguidance": "일요일(15:30)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1293964"
+      ]
+    },
+    "PF305190": {
+      "mt20id": "PF305190",
+      "prfnm": "수상한스테이지 (11.20)",
+      "prfpdfrom": "2026.11.20",
+      "prfpdto": "2026.11.20",
+      "fcltynm": "수상한창고 (수상한창고)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305190_261103_101006.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC003365",
+      "pcseguidance": "현장판매 16,000원, 사전예약 14,000원",
+      "dtguidance": "금요일(20:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/726879"
+      ]
+    },
+    "PF305148": {
+      "mt20id": "PF305148",
+      "prfnm": "Ob/scene Festival (옵/신) , 해미 클레멘세비츠 x 정원미: 먼 발화",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "LDK (LDK)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305148_261102_163411.png",
+      "genrenm": "복합",
+      "openrun": false,
+      "mt10id": "FC003927",
+      "pcseguidance": "전석 15,000원",
+      "dtguidance": "토요일(22:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1759520"
+      ]
+    },
+    "PF305093": {
+      "mt20id": "PF305093",
+      "prfnm": "그 후에, 다시 그 숲에서 [대학로]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "미래아트홀 (미래아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305093_261102_142308.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004394",
+      "pcseguidance": "전석 15,000원",
+      "dtguidance": "토요일(15:00,19:00), 일요일(15:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014782"
+      ]
+    },
+    "PF305064": {
+      "mt20id": "PF305064",
+      "prfnm": "김영진 피아노 독주회: 23번째 피아노 이야기: 건반 위의 산책",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "예술의전당 [서울] (리사이틀홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305064_261102_132758.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "토요일(20:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015710"
+      ]
+    },
+    "PF305061": {
+      "mt20id": "PF305061",
+      "prfnm": "김영중 바이올린 독주회",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "세종문화회관 (세종체임버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305061_261102_132512.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000020",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37824&menuNo=200320"
+      ]
+    },
+    "PF305056": {
+      "mt20id": "PF305056",
+      "prfnm": "Licht: Christmas Prelude",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "푸르지오아트홀 (푸르지오아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305056_261102_131537.gif",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC002246",
+      "pcseguidance": "전석 88,000원",
+      "dtguidance": "일요일(17:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015550"
+      ]
+    },
+    "PF305019": {
+      "mt20id": "PF305019",
+      "prfnm": "피장파장의 오류 [대학로]",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2027.02.28",
+      "fcltynm": "브릭스씨어터 (구. 콘텐츠 그라운드) (브릭스씨어터 (구. 콘텐츠 그라운드))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305019_261102_111529.jpg",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC001199",
+      "pcseguidance": "전석 66,000원",
+      "dtguidance": "화요일(20:00), 수요일(16:00,20:00), 목요일 ~ 금요일(20:00), 토요일(15:00,19:00), 일요일(14:00,18:00), HOL(14:00,18:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66613",
+        "https://ticket.yes24.com/Perf/60863"
+      ]
+    },
+    "PF305012": {
+      "mt20id": "PF305012",
+      "prfnm": "제9회 2인전통음악축제: I AM YOU, 이수현x현수진: 합류",
+      "prfpdfrom": "2026.11.08",
+      "prfpdto": "2026.11.08",
+      "fcltynm": "선릉아트홀 (선릉아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305012_261102_110218.jpg",
+      "genrenm": "한국음악(국악)",
+      "openrun": false,
+      "mt10id": "FC002517",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "일요일(16:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/787876"
+      ]
+    },
+    "PF305009": {
+      "mt20id": "PF305009",
+      "prfnm": "제3회 고래 단막극 페스티벌",
+      "prfpdfrom": "2026.11.26",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "미마지아트센터 (물빛극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305009_261102_105535.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC000227",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "목요일 ~ 금요일(19:30), 토요일 ~ 일요일(15:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1758793"
+      ]
+    },
+    "PF305005": {
+      "mt20id": "PF305005",
+      "prfnm": "넥스트 스테이지: 신은원 피아노 리사이틀",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "대주아트 엔터뮤직 2호점 (대주아트 엔터뮤직 2호점)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305005_261102_104427.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC004354",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015715"
+      ]
+    },
+    "PF305000": {
+      "mt20id": "PF305000",
+      "prfnm": "제14회 사단법인 포아피아노연구회 정기연주회: Robert Schumann: 낭만의 정수",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305000_261102_103611.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(14:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015735"
+      ]
+    },
+    "PF304966": {
+      "mt20id": "PF304966",
+      "prfnm": "AWAFE 라이부, PAREO Birthday 너의 오시가 되고말겠어!",
+      "prfpdfrom": "2026.11.22",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "아틀리에홀 (아틀리에홀 (B1) )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304966_261030_151028.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004202",
+      "pcseguidance": "사전예약 22,000원, 현장판매 25,000원",
+      "dtguidance": "일요일(17:20)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1186223"
+      ]
+    },
+    "PF304963": {
+      "mt20id": "PF304963",
+      "prfnm": "윌리엄과 윌리엄의 윌리엄들",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2027.02.28",
+      "fcltynm": "티오엠씨어터(구. 문화공간필링) (1관)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304963_261030_145717.jpeg",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC000382",
+      "pcseguidance": "R석 70,000원, S석 50,000원",
+      "dtguidance": "화요일(20:00), 수요일(16:00,20:00), 목요일 ~ 금요일(20:00), 토요일(15:00,19:00), 일요일(14:00,18:00), HOL(14:00,18:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66624",
+        "https://booking.naver.com/booking/12/bizes/1766321",
+        "https://www.thebestplay.co.kr/program/perf_view.asp?id=280145",
+        "https://ticket.yes24.com/Perf/60836"
+      ]
+    },
+    "PF304959": {
+      "mt20id": "PF304959",
+      "prfnm": "제196회 아트엠콘서트, 로워 스트링 콰르텟: 깊은 울림, 춤추는 현",
+      "prfpdfrom": "2026.11.19",
+      "prfpdto": "2026.11.19",
+      "fcltynm": "신영체임버홀 (신영체임버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304959_261030_144350.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001868",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "목요일(19:30)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1765128"
+      ]
+    },
+    "PF304945": {
+      "mt20id": "PF304945",
+      "prfnm": "김나영 콘서트: Na On The Voice: 우리, 마침내 이곳에 [서울]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "연세대학교 대강당 (연세대학교 대강당)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304945_261030_141042.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001792",
+      "pcseguidance": "R석 154,000원, S석 132,000원",
+      "dtguidance": "토요일 ~ 일요일(17:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66599",
+        "https://booking.naver.com/booking/12/bizes/1767173"
+      ]
+    },
+    "PF304904": {
+      "mt20id": "PF304904",
+      "prfnm": "제26회 월드 2인극 페스티벌: 때, 사랑할",
+      "prfpdfrom": "2026.11.10",
+      "prfpdto": "2026.11.10",
+      "fcltynm": "광복극장 (광복극장(B1))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304904_261105_175235.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004482",
+      "pcseguidance": "전석무료",
+      "dtguidance": "화요일(16:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4662"
+      ]
+    },
+    "PF304878": {
+      "mt20id": "PF304878",
+      "prfnm": "제1회 피오레 피아노 콩쿠르 위너스 갈라 콘서트 (11.29)",
+      "prfpdfrom": "2026.11.29",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "피오레아트앤엔터(피오레움) (공연장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304878_261030_103141.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC004802",
+      "pcseguidance": "전석 10,000원",
+      "dtguidance": "일요일(15:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1764837"
+      ]
+    },
+    "PF304874": {
+      "mt20id": "PF304874",
+      "prfnm": "음악공방 피오레움, 윤피아노 클래스 초청: 유하준",
+      "prfpdfrom": "2026.11.20",
+      "prfpdto": "2026.11.20",
+      "fcltynm": "피오레아트앤엔터(피오레움) (공연장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304874_261030_102622.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC004802",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "금요일(19:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1610089"
+      ]
+    },
+    "PF304872": {
+      "mt20id": "PF304872",
+      "prfnm": "월간 피오레, 김민정 피아니스트 (11월)",
+      "prfpdfrom": "2026.11.25",
+      "prfpdto": "2026.11.25",
+      "fcltynm": "피오레아트앤엔터(피오레움) (공연장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304872_261030_102116.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC004802",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "수요일(19:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1616848"
+      ]
+    },
+    "PF304843": {
+      "mt20id": "PF304843",
+      "prfnm": "동화콘서트, 내 음표 돌려줘요!",
+      "prfpdfrom": "2026.11.28",
+      "prfpdto": "2026.11.28",
+      "fcltynm": "까망돌어울마당 (아트홀 )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304843_261029_140745.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC005046",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(11:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1487803"
+      ]
+    },
+    "PF304772": {
+      "mt20id": "PF304772",
+      "prfnm": "HNL: HUKEZ NIGHT LIVE",
+      "prfpdfrom": "2026.11.22",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "후케즈 (공연장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304772_261029_095809.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC003016",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "일요일(17:30)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/651415"
+      ]
+    },
+    "PF304712": {
+      "mt20id": "PF304712",
+      "prfnm": "프라이빗컬렉션: 시인을 위하여 단독 콘서트",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "우무지 (우무지)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304712_261028_141834.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004500",
+      "pcseguidance": "전석 44,000원, 현장판매 55,000원",
+      "dtguidance": "일요일(17:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214169"
+      ]
+    },
+    "PF304651": {
+      "mt20id": "PF304651",
+      "prfnm": "코리안챔버오케스트라 송년음악회",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "예술의전당 [서울] (콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304651_261028_105506.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "R석 100,000원, S석 80,000원, A석 50,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015487"
+      ]
+    },
+    "PF304650": {
+      "mt20id": "PF304650",
+      "prfnm": "제26회 월드 2인극 페스티벌, 섬",
+      "prfpdfrom": "2026.11.09",
+      "prfpdto": "2026.11.09",
+      "fcltynm": "동숭무대소극장 (동숭무대소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304650_261104_165248.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001203",
+      "pcseguidance": "전석무료",
+      "dtguidance": "월요일(15:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4656"
+      ]
+    },
+    "PF304626": {
+      "mt20id": "PF304626",
+      "prfnm": "제26회 월드 2인극페스티벌, 파수꾼",
+      "prfpdfrom": "2026.11.10",
+      "prfpdto": "2026.11.10",
+      "fcltynm": "광복극장 (광복극장(B1))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304626_261027_155036.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004482",
+      "pcseguidance": "전석무료",
+      "dtguidance": "화요일(19:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4665"
+      ]
+    },
+    "PF304615": {
+      "mt20id": "PF304615",
+      "prfnm": "헤르만아트홀 기획연주, 목혜진 첼로 리사이틀",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "헤르만아트홀 (헤르만아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304615_261027_144615.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC003168",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(17:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1417626"
+      ]
+    },
+    "PF304551": {
+      "mt20id": "PF304551",
+      "prfnm": "짧은대본",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2027.01.31",
+      "fcltynm": "비유아트홀(구. 효천아트센터 그라운드씬) (비유아트홀(구. 효천아트센터 그라운드씬))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304551_261027_104319.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001600",
+      "pcseguidance": "전석 55,000원",
+      "dtguidance": "화요일(19:30), 수요일(16:30,19:30), 목요일(19:30), 금요일(16:00,18:00,20:00), 토요일(16:00,18:00,20:00), 일요일(16:00), HOL(16:00,18:00,20:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66549",
+        "https://booking.naver.com/booking/12/bizes/1765200"
+      ]
+    },
+    "PF304531": {
+      "mt20id": "PF304531",
+      "prfnm": "Chanpan autogratis World Tour In Seoul",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "KT&G 상상마당 라이브홀 [마포] (KT&G 상상마당 라이브홀 [마포] )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304531_261026_170417.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000328",
+      "pcseguidance": "VIP석 121,000원, 일반석  77,000원",
+      "dtguidance": "화요일(20:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015368"
+      ]
+    },
+    "PF304510": {
+      "mt20id": "PF304510",
+      "prfnm": "한수진 바이올린 리사이틀",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "거암아트홀 (거암아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304510_261026_155245.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC003195",
+      "pcseguidance": "전석 50,000원",
+      "dtguidance": "토요일(16:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015342"
+      ]
+    },
+    "PF304490": {
+      "mt20id": "PF304490",
+      "prfnm": "임현정 귀국 피아노 독주회",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "금호아트홀 연세 (금호아트홀 연세)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304490_261026_151459.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001556",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "일요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015431"
+      ]
+    },
+    "PF304485": {
+      "mt20id": "PF304485",
+      "prfnm": "이 공연은 딱 알맞게 미완성",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "클럽 A.O.R(All Of Rock) (클럽 A.O.R(All Of Rock))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304485_261026_150610.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC002303",
+      "pcseguidance": "현장판매 20,000원, 사전예약 15,000원",
+      "dtguidance": "토요일(17:30)",
+      "relateurls": [
+        "https://live.linkook.it/live/258"
+      ]
+    },
+    "PF304338": {
+      "mt20id": "PF304338",
+      "prfnm": "제26회 월드 2인극 페스티벌, 지구가 둥글다면",
+      "prfpdfrom": "2026.11.09",
+      "prfpdto": "2026.11.09",
+      "fcltynm": "동숭무대소극장 (동숭무대소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304338_261105_175915.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001203",
+      "pcseguidance": "전석무료",
+      "dtguidance": "월요일(18:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4659"
+      ]
+    },
+    "PF304329": {
+      "mt20id": "PF304329",
+      "prfnm": "제26회 월드 2인극 페스티벌, 그럼에도 불구하고",
+      "prfpdfrom": "2026.11.11",
+      "prfpdto": "2026.11.11",
+      "fcltynm": "동숭무대소극장 (동숭무대소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304329_261104_173414.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001203",
+      "pcseguidance": "전석무료",
+      "dtguidance": "수요일(17:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4668"
+      ]
+    },
+    "PF304327": {
+      "mt20id": "PF304327",
+      "prfnm": "제26회 월드 2인극 페스티벌, 공백으로부터",
+      "prfpdfrom": "2026.11.15",
+      "prfpdto": "2026.11.15",
+      "fcltynm": "동숭무대소극장 (동숭무대소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304327_261023_144514.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001203",
+      "pcseguidance": "전석무료",
+      "dtguidance": "일요일(20:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4688"
+      ]
+    },
+    "PF304323": {
+      "mt20id": "PF304323",
+      "prfnm": "제26회 월드 2인극 페스티벌, 도살장의 왈츠",
+      "prfpdfrom": "2026.11.11",
+      "prfpdto": "2026.11.11",
+      "fcltynm": "동숭무대소극장 (동숭무대소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304323_261105_175702.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001203",
+      "pcseguidance": "전석무료",
+      "dtguidance": "수요일(16:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4667"
+      ]
+    },
+    "PF304271": {
+      "mt20id": "PF304271",
+      "prfnm": "KNK 10th ANNIVERSARY CONCERT: 10VE DAY [서울]",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "GB성암아트홀 (GB성암아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304271_261023_114059.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001444",
+      "pcseguidance": "VIP석 110,000원, R석 99,000원",
+      "dtguidance": "일요일(13:00,18:30)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66357"
+      ]
+    },
+    "PF304257": {
+      "mt20id": "PF304257",
+      "prfnm": "Dragon Pony (드래곤포니) Concert: Calling back",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "블루스퀘어 (우리WON뱅킹홀(구. SOL트래블홀) )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304257_261023_105545.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000031",
+      "pcseguidance": "전석 121,000원",
+      "dtguidance": "토요일(18:00), 일요일(17:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014585"
+      ]
+    },
+    "PF304192": {
+      "mt20id": "PF304192",
+      "prfnm": "제26회 월드 2인극 페스티벌, 스위치",
+      "prfpdfrom": "2026.11.12",
+      "prfpdto": "2026.11.12",
+      "fcltynm": "광복극장 (광복극장(B1))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304192_261029_163329.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004482",
+      "pcseguidance": "전석무료",
+      "dtguidance": "목요일(17:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4672"
+      ]
+    },
+    "PF304191": {
+      "mt20id": "PF304191",
+      "prfnm": "제1205회 하우스콘서트: 우리 (Vibraphone) , 김재원 (Piano)",
+      "prfpdfrom": "2026.12.07",
+      "prfpdto": "2026.12.07",
+      "fcltynm": "예술가의 집 (예술가의 집)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304191_261022_140754.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC002634",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "월요일(20:00)",
+      "relateurls": [
+        "https://thehouseconcert.com/sub/concert/schedule_view.php?idx=1517"
+      ]
+    },
+    "PF304139": {
+      "mt20id": "PF304139",
+      "prfnm": "AND2BLE FAN-CON: W!nter inside [서울]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "고려대학교 화정체육관 (주경기장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304139_261022_120733.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001908",
+      "pcseguidance": "전석 143,000원",
+      "dtguidance": "토요일(17:00), 일요일(16:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214098"
+      ]
+    },
+    "PF304044": {
+      "mt20id": "PF304044",
+      "prfnm": "제26회 월드 2인극페스티벌, 아이",
+      "prfpdfrom": "2026.11.12",
+      "prfpdto": "2026.11.12",
+      "fcltynm": "광복극장 (광복극장(B1))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304044_261029_171857.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004482",
+      "pcseguidance": "전석무료",
+      "dtguidance": "목요일(20:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4675"
+      ]
+    },
+    "PF304015": {
+      "mt20id": "PF304015",
+      "prfnm": "귀여운 올렌카",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2027.01.03",
+      "fcltynm": "뜻밖의 극장(구. 해우소소극장) (뜻밖의 극장(구. 해우소소극장))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF304015_261021_135141.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001671",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "화요일 ~ 금요일(19:30), 토요일 ~ 일요일(15:00,19:00), HOL(15:00,19:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014806"
+      ]
+    },
+    "PF303993": {
+      "mt20id": "PF303993",
+      "prfnm": "산타와 루돌프의 크리스마스 기적 [서울 강북]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "꿈의숲아트센터 (퍼포먼스홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303993_261021_130706.gif",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC000567",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "토요일 ~ 일요일(11:00,14:00,16:30)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1757519",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015140"
+      ]
+    },
+    "PF303935": {
+      "mt20id": "PF303935",
+      "prfnm": "하나미야 니나 217find! Earth Caravan in KOREA",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "큐브컨벤션센터(CCC) (CCC 스테이지)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303935_261020_170053.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004821",
+      "pcseguidance": "전석 99,000원",
+      "dtguidance": "일요일(12:30,16:30)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66292"
+      ]
+    },
+    "PF303908": {
+      "mt20id": "PF303908",
+      "prfnm": "오픈 더 도어 [대학로]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2027.03.07",
+      "fcltynm": "예스24아트원(구.대학로아트원씨어터) (3관)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303908_261020_142951.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC000833",
+      "pcseguidance": "전석 66,000원",
+      "dtguidance": "화요일 ~ 금요일(19:30), 토요일 ~ 일요일(14:00,18:00), HOL(14:00,18:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1759289",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015045",
+        "https://ticket.yes24.com/Perf/60711"
+      ]
+    },
+    "PF303613": {
+      "mt20id": "PF303613",
+      "prfnm": "신지훈 단독 콘서트: J의 작업실",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "연세대학교 백주년기념관 (콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303613_261016_141953.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001793",
+      "pcseguidance": "VIP석 110,000원, R석 99,000원, 휠체어석 110,000원",
+      "dtguidance": "토요일(17:00), 일요일(16:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66261",
+        "https://booking.naver.com/booking/12/bizes/1757110"
+      ]
+    },
+    "PF303562": {
+      "mt20id": "PF303562",
+      "prfnm": "풍류고생: 차라리 춤추다 죽겠어",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "명화라이브홀 (명화라이브홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303562_261016_124122.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC003645",
+      "pcseguidance": "전석 110,000원",
+      "dtguidance": "토요일 ~ 일요일(18:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014584"
+      ]
+    },
+    "PF303451": {
+      "mt20id": "PF303451",
+      "prfnm": "조인혁 클라리넷 리사이틀",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303451_261015_134645.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "R석 50,000원, S석 30,000원",
+      "dtguidance": "토요일(20:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014884"
+      ]
+    },
+    "PF303428": {
+      "mt20id": "PF303428",
+      "prfnm": "이관욱 피아노 리사이틀",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "금호아트홀 연세 (금호아트홀 연세)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303428_261015_125021.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001556",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014726"
+      ]
+    },
+    "PF303318": {
+      "mt20id": "PF303318",
+      "prfnm": "롯데콘서트홀 마티네콘서트, 아이와 함께 듣는 겨울의 클래식 동화: 비발디에서 디즈니까지",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303318_261014_143102.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001513",
+      "pcseguidance": "전석 35,000원",
+      "dtguidance": "토요일(11:30)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66110",
+        "https://nol.yanolja.com/ticket/products/26014397",
+        "https://www.lotteconcerthall.com/product/performance/261232",
+        "https://ticket.yes24.com/Perf/60581"
+      ]
+    },
+    "PF303093": {
+      "mt20id": "PF303093",
+      "prfnm": "민트페스타 vol.89",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "KT&G 상상마당 라이브홀 [마포] (KT&G 상상마당 라이브홀 [마포] )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF303093_261012_185156.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000328",
+      "pcseguidance": "전석 66,000원",
+      "dtguidance": "일요일(17:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014245"
+      ]
+    },
+    "PF302914": {
+      "mt20id": "PF302914",
+      "prfnm": "한국·벨기에 수교 125주년 기념음악회",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302914_261012_125714.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "R석 50,000원, S석 30,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014493"
+      ]
+    },
+    "PF302838": {
+      "mt20id": "PF302838",
+      "prfnm": "이동숙의 춤, 자주동샘",
+      "prfpdfrom": "2026.11.12",
+      "prfpdto": "2026.11.12",
+      "fcltynm": "국립국악원 (우면당)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302838_261106_155216.png",
+      "genrenm": "무용(서양/한국무용)",
+      "openrun": false,
+      "mt10id": "FC000009",
+      "pcseguidance": "전석무료",
+      "dtguidance": "목요일(19:30)",
+      "relateurls": [
+        "https://www.gugak.go.kr/site/program/performance/detail?menuid=&performance_id=394921"
+      ]
+    },
+    "PF302791": {
+      "mt20id": "PF302791",
+      "prfnm": "지브리 & 디즈니 영화음악 FESTA [서울]",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "세종문화회관 (세종대극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302791_261008_112038.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000020",
+      "pcseguidance": "VIP석 120,000원, R석 100,000원, S석 80,000원, A석 60,000원, B석 50,000원",
+      "dtguidance": "일요일(16:00)",
+      "relateurls": [
+        "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37680&menuNo=200320"
+      ]
+    },
+    "PF302741": {
+      "mt20id": "PF302741",
+      "prfnm": "강혜연 콘서트: 혜연이의 초대",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "GB가빈아트홀 (GB가빈아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302741_261007_144922.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001832",
+      "pcseguidance": "전석 110,000원",
+      "dtguidance": "토요일(14:00,18:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66127",
+        "https://booking.naver.com/booking/12/bizes/1755405"
+      ]
+    },
+    "PF302491": {
+      "mt20id": "PF302491",
+      "prfnm": "디에이드 전국 카페 투어: 모해? 나와! #2 [서울]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "연남장 (연남장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302491_261006_125324.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC002037",
+      "pcseguidance": "전석 66,000원",
+      "dtguidance": "토요일(18:00), 일요일(17:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=213989"
+      ]
+    },
+    "PF302471": {
+      "mt20id": "PF302471",
+      "prfnm": "김광진 콘서트: FLY AWAY",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "KBS스포츠월드(아레나) (KBS아레나)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302471_261006_112549.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001589",
+      "pcseguidance": "VIP석 143,000원, R석 132,000원, S석 110,000원",
+      "dtguidance": "토요일(18:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/65908",
+        "https://booking.naver.com/booking/12/bizes/1747162",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014122"
+      ]
+    },
+    "PF302392": {
+      "mt20id": "PF302392",
+      "prfnm": "봄 작가, 겨울 무대: 새벽 운동회",
+      "prfpdfrom": "2026.11.13",
+      "prfpdto": "2026.11.15",
+      "fcltynm": "대학로예술극장 (소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302392_261106_155735.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC002633",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "금요일(19:30), 토요일(15:00,19:30), 일요일(15:00)",
+      "relateurls": [
+        "https://nol.yanolja.com/ticket/products/26014618",
+        "https://theater.arko.or.kr/product/performance/259573"
+      ]
+    },
+    "PF302383": {
+      "mt20id": "PF302383",
+      "prfnm": "러브액츄얼리 인 콘서트 [서울]",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302383_261002_143258.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001513",
+      "pcseguidance": "R석 150,000원, S석 120,000원, A석 90,000원, B석 60,000원, 시야방해 R석 105,000원, 시야방해 A석 63,000원, 시야방해 B석 42,000원",
+      "dtguidance": "일요일(17:00)",
+      "relateurls": [
+        "https://nol.yanolja.com/ticket/products/26013765",
+        "https://www.lotteconcerthall.com/product/performance/261218"
+      ]
+    },
+    "PF302347": {
+      "mt20id": "PF302347",
+      "prfnm": "바리톤 유영광 리사이틀: STORY OF GLORY, The Heritage (시간에 새긴 노래)",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "로데아트센터 (콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302347_261002_132336.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC003861",
+      "pcseguidance": "전석 50,000원",
+      "dtguidance": "토요일(19:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26014065"
+      ]
+    },
+    "PF302170": {
+      "mt20id": "PF302170",
+      "prfnm": "비 (RAIN) 콘서트: THE SMOKE",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "올림픽공원 (올림픽홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302170_260930_155921.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001247",
+      "pcseguidance": "VVIP석 198,000원, VIP석 165,000원, R석 143,000원, S석 110,000원",
+      "dtguidance": "토요일(18:00), 일요일(17:00)",
+      "relateurls": [
+        "https://ticket.yes24.com/Perf/60211"
+      ]
+    },
+    "PF302092": {
+      "mt20id": "PF302092",
+      "prfnm": "윤아인 x 블라디미르 페트로프 듀오콘서트",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "영산아트홀 (영산아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302092_260930_124610.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000384",
+      "pcseguidance": "VIP석 80,000원, R석 70,000원, S석 60,000원, A석 50,000원, B석 40,000원",
+      "dtguidance": "토요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013717"
+      ]
+    },
+    "PF302015": {
+      "mt20id": "PF302015",
+      "prfnm": "시카고 [서울]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2027.03.14",
+      "fcltynm": "LG아트센터 서울 (LG SIGNATURE 홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302015_260929_151431.gif",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC003045",
+      "pcseguidance": "OP석 170,000원, VIP석 170,000원, 시카고석 160,000원, R석 150,000원, S석 110,000원, A석 80,000원",
+      "dtguidance": "화요일 ~ 목요일(19:30), 금요일(15:00,19:30), 토요일(14:00,18:30), 일요일(14:00)",
+      "relateurls": [
+        "https://www.lgart.com/product/performance/252983",
+        "http://www.ticketlink.co.kr/product/65846",
+        "https://booking.naver.com/booking/12/bizes/1746995",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=L0000150",
+        "http://www.iseensee.com/Home/Perf/MakingDetail.aspx?IdPerf=1226"
+      ]
+    },
+    "PF301250": {
+      "mt20id": "PF301250",
+      "prfnm": "도슨트 이창용과 함께하는 아르츠 콘서트 시즌 2: 구스타프 클림트",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301250_260918_104029.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "R석 65,000원, S석 55,000원",
+      "dtguidance": "일요일(14:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013583",
+        "https://ticket.yes24.com/Perf/60492"
+      ]
+    },
+    "PF301220": {
+      "mt20id": "PF301220",
+      "prfnm": "카키 내한공연 (Khaki ONE-MAN Live in Seoul)",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "KT&G 상상마당 라이브홀 [마포] (KT&G 상상마당 라이브홀 [마포] )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301220_260917_142505.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000328",
+      "pcseguidance": "스탠딩  88,000원",
+      "dtguidance": "토요일(19:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012829"
+      ]
+    },
+    "PF301022": {
+      "mt20id": "PF301022",
+      "prfnm": "AI로봇과 함께하는 사이언스 마술쇼 [서울 강동]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "강동구민회관 (대강당)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301022_260916_103216.jpg",
+      "genrenm": "서커스/마술",
+      "openrun": false,
+      "mt10id": "FC001451",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "토요일(11:00,14:00,16:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/65537",
+        "https://booking.naver.com/booking/12/bizes/1734820"
+      ]
+    },
+    "PF301003": {
+      "mt20id": "PF301003",
+      "prfnm": "알버트 카노 스미트 피아노 리사이틀 [서울]",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "일신홀 (일신홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301003_260915_144314.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001629",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011076"
+      ]
+    },
+    "PF300888": {
+      "mt20id": "PF300888",
+      "prfnm": "김장훈 전국투어 콘서트: 원맨쇼 [서울]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "잠실학생체육관 (본관)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300888_260914_161940.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC002049",
+      "pcseguidance": "R석 77,000원, S석 66,000원",
+      "dtguidance": "토요일(18:00), 일요일(16:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/65445",
+        "https://booking.naver.com/booking/12/bizes/1736058",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013013"
+      ]
+    },
+    "PF300754": {
+      "mt20id": "PF300754",
+      "prfnm": "강아지 똥 [대학로]",
+      "prfpdfrom": "2026.09.22",
+      "prfpdto": "2026.11.30",
+      "fcltynm": "북극곰소극장 (북극곰소극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300754_260911_173722.jpg",
+      "genrenm": "연극",
+      "openrun": true,
+      "mt10id": "FC001814",
+      "pcseguidance": "전석 35,000원",
+      "dtguidance": "화요일 ~ 수요일(19:00), 토요일 ~ 일요일(11:00,13:00,15:00), HOL(11:00,13:00,15:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/257023",
+        "https://nol.yanolja.com/ticket/products/26013308",
+        "https://timeticket.co.kr/product/7389"
+      ]
+    },
+    "PF300669": {
+      "mt20id": "PF300669",
+      "prfnm": "헐리우드 인 블록버스터 [서울]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300669_260911_111445.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001513",
+      "pcseguidance": "R석 120,000원, S석 100,000원, A석 80,000원, B석 60,000원, 시야방해 S석 70,000원, 시야방해 A석 56,000원, 시야방해 B석 42,000원",
+      "dtguidance": "토요일(19:30)",
+      "relateurls": [
+        "https://nol.yanolja.com/ticket/products/26013066",
+        "https://www.lotteconcerthall.com/product/performance/261204"
+      ]
+    },
+    "PF300590": {
+      "mt20id": "PF300590",
+      "prfnm": "ZAZEN BOYS MATSURI SESSION [서울]",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "무신사 개러지 (구. 왓챠홀) (무신사 개러지 (구. 왓챠홀) )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300590_260910_124229.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC002949",
+      "pcseguidance": "스탠딩 99,000원",
+      "dtguidance": "일요일(17:00)",
+      "relateurls": [
+        "https://ticket.29cm.co.kr/catalog/4190403",
+        "https://ticket.yes24.com/Perf/59963"
+      ]
+    },
+    "PF300334": {
+      "mt20id": "PF300334",
+      "prfnm": "RETRORIRON LIVE [서울 (앵콜) ]",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어) (동양생명홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300334_260907_163451.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000847",
+      "pcseguidance": "전석 99,000원",
+      "dtguidance": "토요일(18:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012552"
+      ]
+    },
+    "PF299778": {
+      "mt20id": "PF299778",
+      "prfnm": "슬로우다이브 내한 공연",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "KBS스포츠월드(아레나) (KBS아레나)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299778_260831_160438.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001589",
+      "pcseguidance": "P석 143,000원, R석 132,000원, 스탠딩 132,000원",
+      "dtguidance": "화요일(20:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/65083",
+        "https://booking.naver.com/booking/12/bizes/1763030",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012276"
+      ]
+    },
+    "PF298220": {
+      "mt20id": "PF298220",
+      "prfnm": "KANA-BOON, CRITICAL HIT PARADE: Asian Adventure",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "예스24 라이브홀 (구. 악스코리아) (예스24 라이브홀 (구. 악스코리아))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298220_260811_131418.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000205",
+      "pcseguidance": "스탠딩 138,000원, 지정석 138,000원",
+      "dtguidance": "토요일(18:00)",
+      "relateurls": [
+        "https://ticket.yes24.com/Perf/59553"
+      ]
+    },
+    "PF295977": {
+      "mt20id": "PF295977",
+      "prfnm": "국립극장, 마당놀이: 춘풍처도 온다",
+      "prfpdfrom": "2026.11.27",
+      "prfpdto": "2027.01.24",
+      "fcltynm": "국립극장 (하늘극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295977_261104_130521.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC000003",
+      "pcseguidance": "전석 70,000원",
+      "dtguidance": "화요일 ~ 목요일(15:00), 금요일(19:30), 토요일 ~ 일요일(15:00), HOL(15:00)",
+      "relateurls": [
+        "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&perfId=267149",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009842"
+      ]
+    },
+    "PF295970": {
+      "mt20id": "PF295970",
+      "prfnm": "국립합창단, 한국 가곡의 모든 것",
+      "prfpdfrom": "2026.12.08",
+      "prfpdto": "2026.12.08",
+      "fcltynm": "국립극장 (해오름극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295970_260713_160621.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000003",
+      "pcseguidance": "R석 40,000원, S석 30,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "https://www.ntok.go.kr/ntok/pm/prfmng/performanceDetail.do?mi=21008&perfId=267154",
+        "https://tickets.interpark.com/goods/26008831"
+      ]
+    },
+    "PF295290": {
+      "mt20id": "PF295290",
+      "prfnm": "서리풀 고음악 시리즈, 바로크 노엘",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "반포심산아트홀 (반포심산아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295290_260703_134225.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001958",
+      "pcseguidance": "R석 20,000원, S석 15,000원",
+      "dtguidance": "토요일(15:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009596"
+      ]
+    },
+    "PF294057": {
+      "mt20id": "PF294057",
+      "prfnm": "제120회 강남심포니오케스트라 정기연주회",
+      "prfpdfrom": "2026.12.06",
+      "prfpdto": "2026.12.06",
+      "fcltynm": "예술의전당 [서울] (콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294057_260618_152843.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "R석 50,000원, S석 30,000원, A석 20,000원",
+      "dtguidance": "일요일(17:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008717",
+        "https://ticket.yes24.com/Perf/58939"
+      ]
+    },
+    "PF285694": {
+      "mt20id": "PF285694",
+      "prfnm": "마피아게임 [대학로]",
+      "prfpdfrom": "2026.03.05",
+      "prfpdto": "2026.11.30",
+      "fcltynm": "아라아트홀 (아라아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF285694_260813_111840.gif",
+      "genrenm": "연극",
+      "openrun": true,
+      "mt10id": "FC003839",
+      "pcseguidance": "전석 50,000원",
+      "dtguidance": "월요일(19:30), 수요일 ~ 금요일(19:30), 토요일(15:30,17:30,19:30), 일요일(15:30,17:30)",
+      "relateurls": [
+        "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=13530",
+        "https://booking.naver.com/booking/12/bizes/1578857",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26002527",
+        "http://www.maketicket.co.kr/ticket/GD29789",
+        "https://ticket.yes24.com/Perf/57503",
+        "https://booking.kakao.com/detail/ticket/656730",
+        "https://trip.coupang.com/tp/products/30000011321250",
+        "https://timeticket.co.kr/product/6665"
+      ]
+    },
+    "PF265271": {
+      "mt20id": "PF265271",
+      "prfnm": "흉터 [서울 홍대]",
+      "prfpdfrom": "2025.03.01",
+      "prfpdto": "2026.11.30",
+      "fcltynm": "홍대 씨어터 윤 (홍대 씨어터 윤)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF265271_250519_160940.gif",
+      "genrenm": "연극",
+      "openrun": true,
+      "mt10id": "FC004364",
+      "pcseguidance": "전석 35,000원",
+      "dtguidance": "월요일 ~ 금요일(19:30), 토요일(14:00,15:00,17:00,18:00), 일요일(15:00), HOL(15:00)",
+      "relateurls": [
+        "https://www.ticketlink.co.kr/product/56385",
+        "https://booking.naver.com/booking/12/bizes/1347112",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=25006966",
+        "http://www.maketicket.co.kr/ticket/GD27689",
+        "http://ticket.yes24.com/Perf/53950",
+        "https://trip.coupang.com/tp/products/30000011096265",
+        "https://timeticket.co.kr/product/4819"
+      ]
+    },
+    "PF234123": {
+      "mt20id": "PF234123",
+      "prfnm": "나의PS파트너 [대학로]",
+      "prfpdfrom": "2024.02.03",
+      "prfpdto": "2026.11.30",
+      "fcltynm": "마루아트홀 (마루아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF234123_260626_134241.gif",
+      "genrenm": "연극",
+      "openrun": true,
+      "mt10id": "FC001815",
+      "pcseguidance": "전석 65,000원",
+      "dtguidance": "월요일(16:00,17:00,18:00), 화요일(13:00,15:00,16:00,17:00,18:00,19:00,21:00), 토요일(14:00,16:00,18:00,20:00), 일요일(14:00,16:00,18:00,20:00), HOL(14:00,15:00,16:00,17:00,18:00), 수요일 ~ 금요일(16:00,17:00,18:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/48147",
+        "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=12066",
+        "https://booking.naver.com/booking/12/bizes/68736",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=24001114",
+        "http://www.maketicket.co.kr/ticket/GD24529",
+        "http://ticket.yes24.com/Perf/48465",
+        "https://ticket.yes24.com/Perf/48465",
+        "https://trip.coupang.com/tp/products/100000013480",
+        "http://playticket.co.kr/nav/detail.html?idx=4337",
+        "https://www.timeticket.co.kr/?number=3476",
+        "www.tmon.co.kr/deal/25322787914",
+        "https://ticket.wemakeprice.com/product/3000009222"
+      ]
+    },
+    "PF151901": {
+      "mt20id": "PF151901",
+      "prfnm": "요리하는 마술사 [대학로]",
+      "prfpdfrom": "2019.01.27",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "맛있는 극장 (맛있는 극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF151901_241219_103733.gif",
+      "genrenm": "서커스/마술",
+      "openrun": true,
+      "mt10id": "FC001105",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "수요일 ~ 금요일(11:00,13:00,15:00), 토요일 ~ 일요일(11:00,13:00,15:00), HOL(11:00,13:00,15:00)",
+      "relateurls": [
+        "http://ticket.11st.co.kr/Product/Detail/257700",
+        "https://booking.naver.com/booking/12/bizes/257898?area=bni",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=20007770",
+        "https://ticket.wemakeprice.com/product/3000010122",
+        "www.tmon.co.kr/deal/5435260822"
+      ]
+    },
+    "PF175093": {
+      "mt20id": "PF175093",
+      "prfnm": "뷰티풀라이프",
+      "prfpdfrom": "2016.10.02",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "JTN 아트홀(구. 대학로예술마당) (4관)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF175093_241218_105921.jpg",
+      "genrenm": "연극",
+      "openrun": true,
+      "mt10id": "FC000139",
+      "pcseguidance": "전석 50,000원",
+      "dtguidance": "화요일(17:00), 수요일(14:00), 목요일 ~ 금요일(17:00), 토요일 ~ 일요일(15:00,17:30)",
+      "relateurls": [
+        "http://ticket.11st.co.kr/Product/Detail/258921",
+        "http://www.ticketlink.co.kr/product/64785",
+        "https://booking.naver.com/booking/12/bizes/162613?area=bni",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=18001569",
+        "http://www.maketicket.co.kr/ticket/GD12340",
+        "http://ticket.yes24.com/Pages/Perf/Detail/Detail.aspx?IdPerf=29003",
+        "http://ticket1.auction.co.kr/VIP/Item?IdPerf=34171",
+        "https://trip.coupang.com/tp/products/100000013255",
+        "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=78257",
+        "https://paybooc.co.kr/app/paybooc/Culture.do?returnURL=https://m-ticket.paybooc.co.kr:8604/Play/PlayDetail?playNum=70729",
+        "https://www.timeticket.co.kr/index.php?number=3471",
+        "https://ticket.wemakeprice.com/product/3000005676",
+        "www.tmon.co.kr/deal/24641590486"
+      ]
+    },
+    "PF305691": {
+      "mt20id": "PF305691",
+      "prfnm": "현대카드 Curated 110, ADOY",
+      "prfpdfrom": "2026.12.19",
+      "prfpdto": "2026.12.20",
+      "fcltynm": "현대카드 언더스테이지 (스튜디오)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305691_261106_142412.png",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001826",
+      "pcseguidance": "전석 88,000원",
+      "dtguidance": "토요일(18:00), 일요일(17:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214227"
+      ]
+    },
+    "PF305689": {
+      "mt20id": "PF305689",
+      "prfnm": "용궁에서 온 편지",
+      "prfpdfrom": "2026.12.25",
+      "prfpdto": "2026.12.25",
+      "fcltynm": "강동아트센터 (소극장 드림)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305689_261106_141249.png",
+      "genrenm": "복합",
+      "openrun": false,
+      "mt10id": "FC000028",
+      "pcseguidance": "전석 50,000원",
+      "dtguidance": "금요일(14:00,17:00)",
+      "relateurls": [
+        "https://www.gdfac.or.kr/product/performance/258542?q=ZmJhMjYxMjUwZGM1NGYxNzg0YzRlYmFjMmQwMWIxZGQ%3d"
+      ]
+    },
+    "PF305671": {
+      "mt20id": "PF305671",
+      "prfnm": "크라잉넛 콘서트, 크크크: 크레이지 크라잉넛 크리스마스",
+      "prfpdfrom": "2026.12.25",
+      "prfpdto": "2026.12.25",
+      "fcltynm": "예스24 원더로크홀 (예스24 원더로크홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305671_261106_131439.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC003954",
+      "pcseguidance": "전석 99,000원",
+      "dtguidance": "금요일(18:00)",
+      "relateurls": [
+        "https://ticket.yes24.com/Perf/60976"
+      ]
+    },
+    "PF305666": {
+      "mt20id": "PF305666",
+      "prfnm": "라라라 송년음악회",
+      "prfpdfrom": "2026.12.28",
+      "prfpdto": "2026.12.28",
+      "fcltynm": "롯데콘서트홀 (롯데콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305666_261106_130053.jpg",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001513",
+      "pcseguidance": "R석 120,000원, S석 100,000원, A석 80,000원, B석 60,000원, 시야방해 S석 70,000원, 시야방해 A석 56,000원",
+      "dtguidance": "월요일(19:00)",
+      "relateurls": [
+        "https://www.lotteconcerthall.com/product/performance/261277"
+      ]
+    },
+    "PF305659": {
+      "mt20id": "PF305659",
+      "prfnm": "이진아 연말 단독 공연: 꿈꾸는 크리스마스",
+      "prfpdfrom": "2026.12.25",
+      "prfpdto": "2026.12.26",
+      "fcltynm": "백암아트홀 (백암아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305659_261106_120143.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000062",
+      "pcseguidance": "전석 110,000원",
+      "dtguidance": "금요일(19:00), 토요일(19:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214198"
+      ]
+    },
+    "PF305567": {
+      "mt20id": "PF305567",
+      "prfnm": "제31회 (사) 프렌즈오브뮤직 정기연주회: Furious French",
+      "prfpdfrom": "2026.12.22",
+      "prfpdto": "2026.12.22",
+      "fcltynm": "세종문화회관 (세종체임버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305567_261105_135422.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000020",
+      "pcseguidance": "R석 50,000원, S석 30,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004901",
+        "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37819&menuNo=200320"
+      ]
+    },
+    "PF305548": {
+      "mt20id": "PF305548",
+      "prfnm": "N.Flying LIVE: Once Upon a Snowball",
+      "prfpdfrom": "2026.12.24",
+      "prfpdto": "2026.12.26",
+      "fcltynm": "고려대학교 화정체육관 (주경기장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305548_261105_131101.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001908",
+      "pcseguidance": "전석 143,000원",
+      "dtguidance": "목요일(19:30), 금요일(17:00), 토요일(16:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214183"
+      ]
+    },
+    "PF305507": {
+      "mt20id": "PF305507",
+      "prfnm": "아가사 AGATHA [대학로]",
+      "prfpdfrom": "2026.12.09",
+      "prfpdto": "2027.02.28",
+      "fcltynm": "NOL 서경스퀘어(구. 서경대학교 공연예술센터) (스콘1관)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305507_261105_103416.gif",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC001877",
+      "pcseguidance": "R석 80,000원, S석 60,000원",
+      "dtguidance": "화요일 ~ 수요일(19:30), 목요일(15:00,19:30), 금요일(19:30), 토요일 ~ 일요일(14:00,18:30), HOL(14:00,18:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015729",
+        "https://ticket.yes24.com/Perf/60940"
+      ]
+    },
+    "PF305499": {
+      "mt20id": "PF305499",
+      "prfnm": "풍월주",
+      "prfpdfrom": "2026.12.09",
+      "prfpdto": "2027.03.01",
+      "fcltynm": "플러스씨어터(구. 컬처스페이스 엔유) (플러스씨어터(구. 컬처스페이스 엔유))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305499_261105_101442.jpg",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC001459",
+      "pcseguidance": "R석 70,000원, S석 55,000원",
+      "dtguidance": "화요일 ~ 금요일(20:00), 토요일(15:00,19:00), 일요일(14:00,18:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66746",
+        "https://ticket.yes24.com/Perf/60967"
+      ]
+    },
+    "PF305498": {
+      "mt20id": "PF305498",
+      "prfnm": "김연우 크리스마스 콘서트: 오마이갓연우",
+      "prfpdfrom": "2026.12.24",
+      "prfpdto": "2026.12.25",
+      "fcltynm": "경희대학교 평화의전당 (경희대학교 평화의전당)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305498_261105_101441.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001291",
+      "pcseguidance": "R석 169,000원, S석 159,000원",
+      "dtguidance": "목요일(19:30), HOL(17:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66792"
+      ]
+    },
+    "PF305478": {
+      "mt20id": "PF305478",
+      "prfnm": "베베핀, 두근두근 새친구 [서울 영등포]",
+      "prfpdfrom": "2026.12.24",
+      "prfpdto": "2026.12.27",
+      "fcltynm": "영등포아트홀 (영등포아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305478_261104_145342.gif",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC000059",
+      "pcseguidance": "VIP석 77,000원",
+      "dtguidance": "목요일(11:00,14:00), 토요일 ~ 일요일(11:00,14:00,16:30), HOL(11:00,14:00,16:30)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66741",
+        "https://booking.naver.com/booking/12/bizes/1770795",
+        "https://nol.yanolja.com/ticket/products/26015844"
+      ]
+    },
+    "PF305471": {
+      "mt20id": "PF305471",
+      "prfnm": "국립극단 청년교육단원 연극제: 어떤 연극, 한여름 밤의 꿈 The Clown",
+      "prfpdfrom": "2026.12.10",
+      "prfpdto": "2026.12.11",
+      "fcltynm": "우란2경 (우란2경)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305471_261104_143248.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC002016",
+      "pcseguidance": "전석무료",
+      "dtguidance": "목요일 ~ 금요일(19:30)",
+      "relateurls": [
+        "http://www.ntck.or.kr/ko/performance/info/257370"
+      ]
+    },
+    "PF305469": {
+      "mt20id": "PF305469",
+      "prfnm": "박서진 전국투어 콘서트, MY NAME IS SEOJIN: 갓 [서울]",
+      "prfpdfrom": "2026.12.25",
+      "prfpdto": "2026.12.26",
+      "fcltynm": "코엑스 (D홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305469_261104_142830.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000170",
+      "pcseguidance": "VIP석 165,000원, R석 154,000원, S석 132,000원, A석 121,000원",
+      "dtguidance": "토요일(17:00), HOL(17:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66697",
+        "https://booking.naver.com/booking/12/bizes/1770355"
+      ]
+    },
+    "PF305467": {
+      "mt20id": "PF305467",
+      "prfnm": "오연택 피아노 독주회",
+      "prfpdfrom": "2026.12.19",
+      "prfpdto": "2026.12.19",
+      "fcltynm": "세종문화회관 (세종체임버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305467_261104_142625.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000020",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(17:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004896",
+        "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37785&menuNo=200320"
+      ]
+    },
+    "PF305466": {
+      "mt20id": "PF305466",
+      "prfnm": "안예은 단독공연: 제10회 오타쿠리스마스",
+      "prfpdfrom": "2026.12.12",
+      "prfpdto": "2026.12.13",
+      "fcltynm": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어) (동양생명홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305466_261104_142137.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC000847",
+      "pcseguidance": "전석 110,000원",
+      "dtguidance": "토요일(18:00), 일요일(16:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015635"
+      ]
+    },
+    "PF305458": {
+      "mt20id": "PF305458",
+      "prfnm": "어린이 서커스 매직쇼 [서울 도봉]",
+      "prfpdfrom": "2026.12.13",
+      "prfpdto": "2026.12.13",
+      "fcltynm": "도봉구민회관 (대강당(하모니홀))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305458_261104_140451.jpg",
+      "genrenm": "서커스/마술",
+      "openrun": false,
+      "mt10id": "FC000218",
+      "pcseguidance": "전석 30,000원, 사전예약 19,900원",
+      "dtguidance": "일요일(11:00,13:30,15:30)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1768285",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015901"
+      ]
+    },
+    "PF305452": {
+      "mt20id": "PF305452",
+      "prfnm": "제19회 앙상블 우리 정기연주회",
+      "prfpdfrom": "2026.12.19",
+      "prfpdto": "2026.12.19",
+      "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305452_261104_135251.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "R석 50,000원, S석 30,000원",
+      "dtguidance": "토요일(20:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015738"
+      ]
+    },
+    "PF305441": {
+      "mt20id": "PF305441",
+      "prfnm": "김규연 피아노 리사이틀 3. 환상 속 원형",
+      "prfpdfrom": "2026.12.22",
+      "prfpdto": "2026.12.22",
+      "fcltynm": "예술의전당 [서울] (IBK챔버홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305441_261104_133429.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000001",
+      "pcseguidance": "R석 50,000원, S석 30,000원",
+      "dtguidance": "화요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016005"
+      ]
+    },
+    "PF305409": {
+      "mt20id": "PF305409",
+      "prfnm": "온: 모먼트, 웅클래식의 브람스: 전통과 혁신 사이",
+      "prfpdfrom": "2026.12.12",
+      "prfpdto": "2026.12.12",
+      "fcltynm": "온쉼표 (온쉼표)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305409_261104_112008.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC004127",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "토요일(10:30)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1246855"
+      ]
+    },
+    "PF305407": {
+      "mt20id": "PF305407",
+      "prfnm": "국립현대무용단, Being Being 氷 빙빙빙",
+      "prfpdfrom": "2026.12.11",
+      "prfpdto": "2026.12.12",
+      "fcltynm": "서소문성지 역사박물관 (콘솔레이션 홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305407_261104_111533.gif",
+      "genrenm": "무용(서양/한국무용)",
+      "openrun": false,
+      "mt10id": "FC002641",
+      "pcseguidance": "전석 45,000원",
+      "dtguidance": "금요일(19:30), 토요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015805"
+      ]
+    },
+    "PF305393": {
+      "mt20id": "PF305393",
+      "prfnm": "김주환 Swings Christmas 콘서트: A Touch of Romance",
+      "prfpdfrom": "2026.12.24",
+      "prfpdto": "2026.12.24",
+      "fcltynm": "거암아트홀 (거암아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305393_261104_105047.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC003195",
+      "pcseguidance": "전석 66,000원",
+      "dtguidance": "목요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015787"
+      ]
+    },
+    "PF305384": {
+      "mt20id": "PF305384",
+      "prfnm": "호두까기인형 [서울 강남]",
+      "prfpdfrom": "2026.12.26",
+      "prfpdto": "2026.12.26",
+      "fcltynm": "강남구민회관 (강당)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305384_261104_103133.png",
+      "genrenm": "뮤지컬",
+      "openrun": false,
+      "mt10id": "FC000787",
+      "pcseguidance": "네이버 1인권 판매석 14,900원, 네이버 특가 판매석 9,900원",
+      "dtguidance": "토요일(11:30,14:00,16:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/12/bizes/1768921"
+      ]
+    },
+    "PF305286": {
+      "mt20id": "PF305286",
+      "prfnm": "소프라노 이은미 리사이틀: NONOSTANTE",
+      "prfpdfrom": "2026.12.13",
+      "prfpdto": "2026.12.13",
+      "fcltynm": "거암아트홀 (거암아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305286_261103_143933.png",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC003195",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "일요일(16:00)",
+      "relateurls": [
+        "https://www.tinyticket.net/event/EVdCirl74gdu"
+      ]
+    },
+    "PF305278": {
+      "mt20id": "PF305278",
+      "prfnm": "홍이삭 소극장 콘서트: 결",
+      "prfpdfrom": "2026.12.11",
+      "prfpdto": "2026.12.27",
+      "fcltynm": "이화여자대학교 영산극장 (이화여자대학교 영산극장)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305278_261103_142051.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC004242",
+      "pcseguidance": "전석 121,000원",
+      "dtguidance": "목요일 ~ 금요일(20:00), 토요일 ~ 일요일(17:00), HOL(17:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66486"
+      ]
+    },
+    "PF305276": {
+      "mt20id": "PF305276",
+      "prfnm": "변진섭 전국투어 콘서트: 변천사 시즌 2.7: 타임머신 [서울 (앵콜) ]",
+      "prfpdfrom": "2026.12.19",
+      "prfpdto": "2026.12.19",
+      "fcltynm": "KBS스포츠월드(아레나) (KBS아레나)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305276_261103_141347.gif",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC001589",
+      "pcseguidance": "VIP석 132,000원, R석 110,000원, S석 99,000원, A석 88,000원",
+      "dtguidance": "토요일(15:00)",
+      "relateurls": [
+        "https://www.ticketlink.co.kr/product/66706",
+        "https://booking.naver.com/booking/12/bizes/1769775",
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015752",
+        "https://ticket.yes24.com/Perf/60938"
+      ]
     }
   },
   "venues": {
@@ -20851,6 +23660,120 @@
       "lat": 37.534975,
       "lng": 126.994987,
       "fcltychartr": "민간(대학로 외)"
+    },
+    "FC003003": {
+      "adres": "서울특별시 마포구 와우산로 97(서교동)",
+      "lat": 37.553094,
+      "lng": 126.9243535,
+      "fcltychartr": "민간(대학로 외)"
+    },
+    "FC001201": {
+      "adres": "서울특별시 종로구 창경궁로34길 18-12",
+      "lat": 37.5841705,
+      "lng": 127.00042899999994,
+      "fcltychartr": "민간(대학로)"
+    },
+    "FC003249": {
+      "adres": "서울특별시 종로구 이화장길 66(동숭동)",
+      "lat": 37.5782086,
+      "lng": 127.0047187,
+      "fcltychartr": "민간(대학로)"
+    },
+    "FC000070": {
+      "adres": "서울특별시 강동구 성안로 30 (성내동)",
+      "lat": 37.5262867,
+      "lng": 127.1303173,
+      "fcltychartr": "민간(대학로 외)"
+    },
+    "FC001668": {
+      "adres": "서울특별시 서대문구 백련사길 39 (홍은동)",
+      "lat": 37.5808378,
+      "lng": 126.93175139999994,
+      "fcltychartr": "공공(문예회관)"
+    },
+    "FC005174": {
+      "adres": "서울특별시 종로구 필운대로7길 12 (옥인동)",
+      "lat": 37.581596,
+      "lng": 126.967857,
+      "fcltychartr": "기타(비공연장)"
+    },
+    "FC000558": {
+      "adres": "서울특별시 종로구 창덕궁길 29 - 38",
+      "lat": 37.5788502465793,
+      "lng": 126.988448176969,
+      "fcltychartr": "민간(대학로 외)"
+    },
+    "FC002303": {
+      "adres": "서울특별시 마포구 와우산로 156 (서교동)",
+      "lat": 37.5548494,
+      "lng": 126.9304125,
+      "fcltychartr": "민간(대학로 외)"
+    },
+    "FC001444": {
+      "adres": "서울특별시 강남구 선릉로111길 6 (논현동)",
+      "lat": 37.5110252,
+      "lng": 127.04299979999996,
+      "fcltychartr": "민간(대학로 외)"
+    },
+    "FC001451": {
+      "adres": "서울특별시 강동구 상암로 168 (천호동) 강동구민회관",
+      "lat": 37.5457299,
+      "lng": 127.14120419999995,
+      "fcltychartr": "공공(기타)"
+    },
+    "FC002049": {
+      "adres": "서울특별시 송파구 올림픽로 25 (잠실동)",
+      "lat": 37.5164791,
+      "lng": 127.0729996,
+      "fcltychartr": "공공(기타)"
+    },
+    "FC001814": {
+      "adres": "서울특별시 종로구 이화장1길 24 (이화동)",
+      "lat": 37.5773694,
+      "lng": 127.00575709999998,
+      "fcltychartr": "민간(대학로)"
+    },
+    "FC003839": {
+      "adres": "서울특별시 종로구 대학로8가길 30 (동숭동)",
+      "lat": 37.582294,
+      "lng": 127.0025606,
+      "fcltychartr": "민간(대학로)"
+    },
+    "FC004364": {
+      "adres": "서울특별시 마포구 와우산로 147-1 (서교동)",
+      "lat": 37.5544451,
+      "lng": 126.9294953,
+      "fcltychartr": "민간(대학로 외)"
+    },
+    "FC001815": {
+      "adres": "서울특별시 종로구 대학로8가길 30 (동숭동)",
+      "lat": 37.582253,
+      "lng": 127.00254580000001,
+      "fcltychartr": "민간(대학로)"
+    },
+    "FC001303": {
+      "adres": "서울특별시 종로구 대학로10길 5 (동숭동)",
+      "lat": 37.5818197,
+      "lng": 127.00255949999996,
+      "fcltychartr": "민간(대학로)"
+    },
+    "FC001105": {
+      "adres": "서울특별시 종로구 혜화로 4 (혜화동)",
+      "lat": 37.5862156,
+      "lng": 127.00072090000003,
+      "fcltychartr": "민간(대학로)"
+    },
+    "FC000170": {
+      "adres": "서울특별시 강남구 영동대로 513 (삼성동)",
+      "lat": 37.5116833,
+      "lng": 127.05910799999992,
+      "fcltychartr": "민간(대학로 외)"
+    },
+    "FC000787": {
+      "adres": "서울특별시 강남구 삼성로 154 (대치동)",
+      "lat": 37.493823,
+      "lng": 127.06421320000004,
+      "fcltychartr": "공공(기타)"
     }
   }
 }
