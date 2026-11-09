@@ -83,10 +83,10 @@
   --background-color-danger-solid: var(--red-600);
   --background-color-warning-subtle: var(--yellow-50);
   --background-color-warning-subtle-hover: var(--yellow-100);
-  --background-color-warning-solid: var(--yellow-600);
+  --background-color-warning-solid: var(--yellow-500);
   --background-color-success-subtle: var(--green-50);
   --background-color-success-subtle-hover: var(--green-100);
-  --background-color-success-solid: var(--green-600);
+  --background-color-success-solid: var(--green-500);
   --background-color-info-subtle: var(--blue-50);
   --background-color-info-subtle-hover: var(--blue-100);
   --background-color-info-solid: var(--blue-600);
@@ -116,7 +116,7 @@
   --border-color-danger: var(--red-200);
   --border-color-danger-solid: var(--red-600);
   --border-color-warning: var(--yellow-200);
-  --border-color-warning-solid: var(--yellow-600);
+  --border-color-warning-solid: var(--yellow-700);
   --border-color-success: var(--green-200);
   --border-color-success-solid: var(--green-600);
   --border-color-info: var(--blue-200);

@@ -586,8 +586,8 @@
           "name": "background/warning-solid",
           "type": "COLOR",
           "valuesByMode": {
-            "mode-light": "#a99600",
-            "mode-dark": "#a99600"
+            "mode-light": "#ccb500",
+            "mode-dark": "#ccb500"
           }
         },
         {
@@ -610,8 +610,8 @@
           "name": "background/success-solid",
           "type": "COLOR",
           "valuesByMode": {
-            "mode-light": "#00a648",
-            "mode-dark": "#00a648"
+            "mode-light": "#00c65a",
+            "mode-dark": "#00c65a"
           }
         },
         {
@@ -850,8 +850,8 @@
           "name": "border/warning-solid",
           "type": "COLOR",
           "valuesByMode": {
-            "mode-light": "#a99600",
-            "mode-dark": "#a99600"
+            "mode-light": "#877700",
+            "mode-dark": "#877700"
           }
         },
         {
