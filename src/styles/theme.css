@@ -83,7 +83,7 @@
   --background-color-base: var(--color-white);
   --background-color-accent-subtle: var(--orange-50);
   --background-color-accent-subtle-hover: var(--orange-100);
-  --background-color-accent-solid: var(--orange-600);
+  --background-color-accent-solid: var(--orange-500);
   --background-color-neutral-subtle: var(--gray-50);
   --background-color-neutral-subtle-hover: var(--gray-100);
   --background-color-neutral-solid: var(--gray-900);

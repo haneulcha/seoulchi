@@ -514,8 +514,8 @@
           "name": "background/accent-solid",
           "type": "COLOR",
           "valuesByMode": {
-            "mode-light": "#d27800",
-            "mode-dark": "#d27800"
+            "mode-light": "#fa9216",
+            "mode-dark": "#fa9216"
           }
         },
         {
