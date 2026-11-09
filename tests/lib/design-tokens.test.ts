@@ -31,7 +31,12 @@ describe('parseDesignTokens — 색', () => {
   })
 
   it('다크 재선언이 없으면 라이트 값을 그대로 쓴다', () => {
-    expect(sem('bg-accent-solid').value).toEqual({ light: '#d27800', dark: '#d27800' })
+    expect(sem('bg-accent-solid').value).toEqual({ light: '#fa9216', dark: '#fa9216' })
+    expect(sem('border-accent-solid').value).toEqual({ light: '#d27800', dark: '#d27800' })
+    expect(sem('bg-warning-solid').value.light).toBe('#ccb500')
+    expect(sem('border-warning-solid').value.light).toBe('#877700')
+    expect(sem('bg-success-solid').value.light).toBe('#00c65a')
+    expect(sem('border-success-solid').value.light).toBe('#00a648')
   })
 
   it('neutral-solid와 on-neutral은 다크에서 뒤집힌다', () => {
