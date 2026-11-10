@@ -176,7 +176,7 @@ git commit -m "refactor: 글자 역할을 새 이름으로 옮기고 없는 역�
 `npm run dev`(이미 떠 있으면 그대로) 후 headless Chrome이나 DevTools로 계산된 스타일을 잰다.
 - 홈 `/seoulchi/` 390px 폭: 카드 제목 14px/20px/500, 사실 줄 12px/18px, 추천 선반에서 글자가 잘리지 않음
 - 1024px 폭: 사이트 이름(`heading-l`) 32px/40px/700
-- 탐색 `/seoulchi/browse`: 목록 행 글자 잘림 없음, 빈 결과 안내 제목이 15px/500
+- 탐색 `/seoulchi/browse`: 목록 행 글자 잘림 없음, 빈 결과 안내 제목이 16px/500(`title-l`, 지금과 같음)
 - 덧붙인 굵기: 화면에 `text-body font-medium`을 쓰는 곳이 없으므로, DevTools `evaluate_script`로 임의 요소에 두 클래스를 붙여 `getComputedStyle().fontWeight`가 `500`인지 잰다(코드는 바꾸지 않는다).
 - `/seoulchi/playground`: 원시·굵기·역할 표가 보이고, `heading-l`이 `text-600`·`font-bold`를 가리킨다
 
