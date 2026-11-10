@@ -16,9 +16,9 @@ function CardTitle({ title, genre, className }: { title: string; genre?: string;
   const t = splitTitle(title)
   return (
     <>
-      {genre && <p className="truncate text-caption text-neutral-subtle">{genre}</p>}
+      {genre && <p className="truncate text-body-s text-neutral-subtle">{genre}</p>}
       <h3 className={className}>{t.title}</h3>
-      {t.org && <p className="truncate text-caption text-neutral-subtle">{t.org}</p>}
+      {t.org && <p className="truncate text-body-s text-neutral-subtle">{t.org}</p>}
     </>
   )
 }
@@ -34,9 +34,9 @@ function FactLines({
   const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
   return (
     <>
-      <p className="mt-100 truncate text-caption text-neutral-muted">{fixed}</p>
+      <p className="mt-100 truncate text-body-s text-neutral-muted">{fixed}</p>
       {(badge || facts.price || facts.deadline) && (
-        <p className="truncate text-caption text-neutral-muted">
+        <p className="truncate text-body-s text-neutral-muted">
           {badge}
           {facts.price && (
             <span className={facts.price === '무료' ? 'text-success' : undefined}>{facts.price}</span>
@@ -68,7 +68,7 @@ export function EventPosterCard({ item: e, today }: { item: CatalogEventIndexIte
         className={`${POSTER} w-full rounded-100 object-cover`}
       />
       <div className="mt-100 min-w-0">
-        <CardTitle title={e.title} genre={facts.genre} className="line-clamp-2 text-title-row" />
+        <CardTitle title={e.title} genre={facts.genre} className="line-clamp-2 text-title-s" />
         <FactLines facts={facts} />
       </div>
     </Link>
@@ -99,7 +99,7 @@ export function ListRow({
         className={`${image.shape === 'poster' ? `${POSTER} w-20` : 'aspect-[4/3] w-28'} shrink-0 self-start rounded-050 object-cover`}
       />
       <div className="min-w-0">
-        <CardTitle title={title} genre={facts.genre} className="line-clamp-2 text-title-row" />
+        <CardTitle title={title} genre={facts.genre} className="line-clamp-2 text-title-s" />
         <FactLines facts={facts} badge={badge} />
       </div>
     </Link>

@@ -68,7 +68,7 @@ export function HomeEmpty({ search }: { search: HomeSearch }) {
 
   return (
     <div className="mt-600 py-400 text-center">
-      <p className="text-title-card">조건에 맞는 행사가 없습니다</p>
+      <p className="text-title-l">조건에 맞는 행사가 없습니다</p>
       {links.length > 0 && (
         <ul className="mt-200 space-y-100 text-body">
           {links.map((l) => (

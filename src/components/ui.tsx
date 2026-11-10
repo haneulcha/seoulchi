@@ -70,7 +70,7 @@ export function Callout({
   const t = CALLOUT_TONE[tone]
   return (
     <div className={`mt-400 rounded-100 border p-200 ${t.box}`}>
-      <p className={`text-title-card ${t.title}`}>{title}</p>
+      <p className={`text-title-l ${t.title}`}>{title}</p>
       <div className={`mt-050 space-y-050 text-body ${t.body}`}>{children}</div>
     </div>
   )

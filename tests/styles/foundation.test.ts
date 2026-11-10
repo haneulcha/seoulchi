@@ -6,7 +6,7 @@ import { className, parseDesignTokens } from '~/lib/design-tokens'
 const SPACING = /^-?(?:m[trblxyse]?|p[trblxyse]?|gap(?:-[xy])?|space-[xy]|scroll-[mp][trblxyse]?)-(\d[\d.]*|\[.*\])$/
 const OFF = [
   /^text-(?:xs|sm|base|lg|[2-9]?xl)$/,
-  /^font-(?:thin|extralight|light|normal|medium|semibold|bold|extrabold|black)$/,
+  /^font-(?:thin|extralight|light|normal|semibold|extrabold|black)$/,
   /^leading-/,
   /^rounded(?:-(?:[trblse]|tl|tr|bl|br|ss|se|es|ee))?(?:-(?:none|xs|sm|md|lg|xl|[2-4]xl))?$/,
 ]
@@ -35,7 +35,19 @@ function offColor(source: string, known: Set<string>): string[] {
   })
 }
 
-const known = new Set(parseDesignTokens(readFileSync('src/styles/theme.css', 'utf8'), tokens).semantics.map(className))
+const parsed = parseDesignTokens(readFileSync('src/styles/theme.css', 'utf8'), tokens)
+const known = new Set(parsed.semantics.map(className))
+
+const TEXT_ROLE = /^text-(?:display|heading|title|body|label|caption)(?:-[\w-]+)?$/
+const textNames = new Set([...parsed.text.map((x) => `text-${x.name}`), ...parsed.textScale.map((x) => `text-${x.name}`)])
+
+/** 글자 역할 범주·옛 이름으로 시작하는데 역할·원시에 없는 클래스. 정의가 없으면 Tailwind가 조용히 버린다 */
+function offText(source: string, names: Set<string>): string[] {
+  return source.split(/[\s"'`{}()]+/).filter((raw) => {
+    const cls = raw.slice(raw.lastIndexOf(':') + 1)
+    return TEXT_ROLE.test(cls) && !names.has(cls)
+  })
+}
 
 function sources(dir: string): string[] {
   return readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
@@ -45,19 +57,19 @@ function sources(dir: string): string[] {
 
 describe('offFoundation', () => {
   it('숫자 여백, 꺼진 글자·굵기·모서리 클래스를 잡는다', () => {
-    const found = offFoundation('mt-3 md:px-6 -mx-4 gap-x-6 space-y-2 py-1.5 mt-[13px] text-sm font-bold leading-6 rounded rounded-lg rounded-t-xl', spacingNames)
-    expect(found).toEqual(['mt-3', 'md:px-6', '-mx-4', 'gap-x-6', 'space-y-2', 'py-1.5', 'mt-[13px]', 'text-sm', 'font-bold', 'leading-6', 'rounded', 'rounded-lg', 'rounded-t-xl'])
+    const found = offFoundation('mt-3 md:px-6 -mx-4 gap-x-6 space-y-2 py-1.5 mt-[13px] text-sm font-semibold leading-6 rounded rounded-lg rounded-t-xl', spacingNames)
+    expect(found).toEqual(['mt-3', 'md:px-6', '-mx-4', 'gap-x-6', 'space-y-2', 'py-1.5', 'mt-[13px]', 'text-sm', 'font-semibold', 'leading-6', 'rounded', 'rounded-lg', 'rounded-t-xl'])
   })
 
   it('토큰 이름과 시스템과 무관한 클래스는 통과한다', () => {
-    const ok = 'mt-100 mt-0 -mx-gutter gap-gutter py-page mt-section -mb-px w-14 h-4 text-neutral text-title-card text-center rounded-100 rounded-full font-sans'
+    const ok = 'mt-100 mt-0 -mx-gutter gap-gutter py-page mt-section -mb-px w-14 h-4 text-neutral text-title-l text-100 font-medium text-center rounded-100 rounded-full font-sans'
     expect(offFoundation(ok, spacingNames)).toEqual([])
   })
 })
 
 describe('offColor', () => {
   it('정의된 시맨틱 클래스와 색 아닌 클래스는 통과한다', () => {
-    expect(offColor('bg-base text-neutral-muted md:border-danger [&.active]:border-neutral-solid bg-neutral-solid/50 divide-neutral text-caption text-center border-b-2', known)).toEqual([])
+    expect(offColor('bg-base text-neutral-muted md:border-danger [&.active]:border-neutral-solid bg-neutral-solid/50 divide-neutral text-body-s text-center border-b-2', known)).toEqual([])
   })
 
   it('옛 이름, 없는 단계, 원시 hue를 잡는다', () => {
@@ -66,7 +78,18 @@ describe('offColor', () => {
   })
 })
 
+describe('offText', () => {
+  it('없는 글자 역할을 잡는다', () => {
+    expect(offText('text-caption text-title-row md:text-title-page text-body-s text-heading-l text-center', textNames))
+      .toEqual(['text-caption', 'text-title-row', 'md:text-title-page'])
+  })
+})
+
 describe('src', () => {
+  it.each(sources('src'))('%s는 정의되지 않은 글자 역할을 쓰지 않는다', (file) => {
+    expect(offText(readFileSync(file, 'utf8'), textNames)).toEqual([])
+  })
+
   it.each(sources('src'))('%s는 정의되지 않은 색 클래스를 쓰지 않는다', (file) => {
     expect(offColor(readFileSync(file, 'utf8'), known)).toEqual([])
   })

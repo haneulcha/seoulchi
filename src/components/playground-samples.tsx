@@ -98,7 +98,7 @@ export const SAMPLES: Sample[] = [
         </Callout>
         <Callout tone="warning" title="목록이 오래됐습니다">
           <p>이 카탈로그는 2026-10-31까지를 담고 있고 오늘은 그 뒤입니다.</p>
-          <p className="text-caption">{formatUpdatedAt('2026-10-30T21:00:00Z')}</p>
+          <p className="text-body-s">{formatUpdatedAt('2026-10-30T21:00:00Z')}</p>
         </Callout>
       </>
     ),

@@ -45,7 +45,7 @@ export function BrowsePlaceRow({
         <>
           <OpenNowBadge hours={item.hours ?? null} />
           {hoursUnknownNote && !item.hours && (
-            <span className="mr-100 text-caption text-neutral-subtle">영업시간 미상</span>
+            <span className="mr-100 text-body-s text-neutral-subtle">영업시간 미상</span>
           )}
         </>
       }
@@ -69,7 +69,7 @@ export function TimelineSection({
   if (group.items.length === 0) return null
   const header = (
     <>
-      <h2 className="text-title-section">
+      <h2 className="text-heading-s">
         {group.label}
         <span className="ml-100 text-body text-neutral-subtle">{md(group.start)}–{md(group.end)}</span>
       </h2>
@@ -143,7 +143,7 @@ export function StaleCatalog({ index }: { index: CatalogIndexFile }) {
   return (
     <Callout tone="warning" title="목록이 오래됐습니다">
       <p>이 카탈로그는 {index.horizonEnd}까지를 담고 있고 오늘은 그 뒤입니다.</p>
-      <p className="text-caption">{formatUpdatedAt(index.generatedAt)}</p>
+      <p className="text-body-s">{formatUpdatedAt(index.generatedAt)}</p>
     </Callout>
   )
 }
@@ -236,7 +236,7 @@ export function EmptyResult({
 }: { suggestions: RelaxSuggestion[]; search: BrowseSearch }) {
   return (
     <div className="mt-600 py-400 text-center">
-      <p className="text-title-card">조건에 맞는 게 없습니다</p>
+      <p className="text-title-l">조건에 맞는 게 없습니다</p>
       {suggestions.length > 0 ? (
         <ul className="mt-200 space-y-100 text-body">
           {suggestions.map((s) => (
