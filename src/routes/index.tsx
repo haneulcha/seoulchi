@@ -56,7 +56,7 @@ function Home() {
       */}
       {shelf.length > 0 && (
         <section>
-          <h2 className="text-title-section">추천</h2>
+          <h2 className="text-heading-s">추천</h2>
           <div className="-mx-gutter mt-150 flex snap-x snap-mandatory scroll-px-gutter gap-gutter overflow-x-auto px-gutter [scrollbar-width:none] md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden">
             {shelf.map((item) => (
               <EventPosterCard key={item.id} item={item} today={today} />
@@ -120,7 +120,7 @@ function DayList({
   return (
     <section id="list" className="mt-section scroll-mt-200">
       <div className="flex items-baseline justify-between">
-        <h2 className="text-title-section">{DAY_LABELS[day]}</h2>
+        <h2 className="text-heading-s">{DAY_LABELS[day]}</h2>
         <span className="text-body text-neutral-muted">{list.length}건</span>
       </div>
       {near && geo.status === 'waiting' && (

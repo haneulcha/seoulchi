@@ -45,8 +45,8 @@ function Playground() {
   return (
     <main className={`${PAGE} space-y-section py-page`}>
       <header>
-        <h2 className="text-title-page">디자인 시스템</h2>
-        <p className="mt-050 text-caption text-neutral-subtle">
+        <h2 className="text-heading-l">디자인 시스템</h2>
+        <p className="mt-050 text-body-s text-neutral-subtle">
           빌드 기준 커밋 <code>{__COMMIT__}</code> · 근거{' '}
           <a className="underline" href={`${REPO}/DESIGN.md`}>DESIGN.md</a> ·{' '}
           <a className="underline" href={`${REPO}/PRODUCT.md`}>PRODUCT.md</a>
@@ -56,15 +56,15 @@ function Playground() {
       <Section title="색">
         {hues.map((hue) => (
           <div key={hue} className="mt-300">
-            <h4 className="text-title-row">{hue}</h4>
+            <h4 className="text-title-s">{hue}</h4>
             <div className="mt-100 overflow-x-auto">
               <div className="grid min-w-[44rem] grid-cols-11 gap-050">
                 {tokens.primitives.filter((p) => p.hue === hue).map((p) => (
                   <div key={p.name}>
                     <div className="h-10 rounded-050 border border-neutral" style={{ backgroundColor: p.value }} />
-                    <p className="mt-050 text-caption">{p.name.slice(hue.length + 1)}</p>
-                    <p className="text-caption text-neutral-subtle">var(--{p.name})</p>
-                    <p className="text-caption text-neutral-subtle">{p.value}</p>
+                    <p className="mt-050 text-body-s">{p.name.slice(hue.length + 1)}</p>
+                    <p className="text-body-s text-neutral-subtle">var(--{p.name})</p>
+                    <p className="text-body-s text-neutral-subtle">{p.value}</p>
                   </div>
                 ))}
               </div>
@@ -73,15 +73,62 @@ function Playground() {
         ))}
         {roles.map((role) => (
           <div key={role} className="mt-300">
-            <h4 className="text-title-row">{role}</h4>
+            <h4 className="text-title-s">{role}</h4>
             <ColorTable colors={tokens.semantics.filter((s) => s.role === role)} />
           </div>
         ))}
       </Section>
 
       <Section title="글자">
+        <h4 className="mt-300 text-title-s">원시 크기</h4>
         <div className="mt-150 overflow-x-auto">
-          <table className="w-full min-w-[40rem] text-left text-caption">
+          <table className="w-full min-w-[40rem] text-left text-body-s">
+            <thead className="text-neutral-subtle">
+              <tr>
+                <th className="py-050 pr-150">클래스</th>
+                <th className="py-050 pr-150">견본</th>
+                <th className="py-050 pr-150">크기</th>
+                <th className="py-050">줄 높이</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tokens.textScale.map((t) => (
+                <tr key={t.name} className="border-t border-neutral align-top">
+                  <td className="py-150 pr-150"><code>text-{t.name}</code></td>
+                  <td className="py-150 pr-150"><p style={{ fontSize: t.size, lineHeight: t.lineHeight }}>이번 주 서울</p></td>
+                  <td className="py-150 pr-150"><Length value={t.size} at={[]} /></td>
+                  <td className="py-150"><Length value={t.lineHeight} at={[]} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h4 className="mt-300 text-title-s">굵기</h4>
+        <div className="mt-150 overflow-x-auto">
+          <table className="w-full min-w-[40rem] text-left text-body-s">
+            <thead className="text-neutral-subtle">
+              <tr>
+                <th className="py-050 pr-150">클래스</th>
+                <th className="py-050 pr-150">견본</th>
+                <th className="py-050">값</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tokens.fontWeight.map((w) => (
+                <tr key={w.name} className="border-t border-neutral align-top">
+                  <td className="py-150 pr-150"><code>font-{w.name}</code></td>
+                  <td className="py-150 pr-150"><p className="text-body" style={{ fontWeight: Number(w.value) }}>이번 주 서울</p></td>
+                  <td className="py-150">{w.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h4 className="mt-300 text-title-s">역할</h4>
+        <div className="mt-150 overflow-x-auto">
+          <table className="w-full min-w-[40rem] text-left text-body-s">
             <thead className="text-neutral-subtle">
               <tr>
                 <th className="py-050 pr-150">클래스</th>
@@ -91,19 +138,30 @@ function Playground() {
                 <th className="py-050">굵기</th>
               </tr>
             </thead>
-            <tbody>
-              {tokens.text.map((t) => (
-                <tr key={t.name} className="border-t border-neutral align-top">
-                  <td className="py-150 pr-150"><code>text-{t.name}</code></td>
-                  <td className="py-150 pr-150">
-                    <p style={{ fontSize: t.size, lineHeight: t.lineHeight, fontWeight: Number(t.weight) }}>이번 주 서울</p>
-                  </td>
-                  <td className="py-150 pr-150"><Length value={t.size} at={t.at.map((a) => [a.minWidth, a.size])} /></td>
-                  <td className="py-150 pr-150"><Length value={t.lineHeight} at={t.at.map((a) => [a.minWidth, a.lineHeight])} /></td>
-                  <td className="py-150">{t.weight}</td>
+            {[...new Set(tokens.text.map((t) => t.name.split('-')[0]!))].map((category, i) => (
+              <tbody key={category}>
+                <tr>
+                  <td colSpan={5} className={`${i > 0 ? 'pt-200' : 'pt-050'} pb-050 text-neutral-subtle`}><code>text-{category}</code></td>
                 </tr>
-              ))}
-            </tbody>
+                {tokens.text.filter((t) => t.name.split('-')[0] === category).map((t) => (
+                  <tr key={t.name} className="border-t border-neutral align-top">
+                    <td className="py-150 pr-150"><code>text-{t.name}</code></td>
+                    <td className="py-150 pr-150">
+                      <p style={{ fontSize: t.size, lineHeight: t.lineHeight, fontWeight: Number(t.weight) }}>이번 주 서울</p>
+                    </td>
+                    <td className="py-150 pr-150">
+                      <code className="block">text-{t.sizeRef}</code>
+                      <Length value={t.size} at={t.at.map((a) => [a.minWidth, a.size])} />
+                    </td>
+                    <td className="py-150 pr-150"><Length value={t.lineHeight} at={t.at.map((a) => [a.minWidth, a.lineHeight])} /></td>
+                    <td className="py-150">
+                      <code className="block">font-{t.weightRef}</code>
+                      <span className="text-neutral-subtle">{t.weight}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            ))}
           </table>
         </div>
       </Section>
@@ -119,8 +177,8 @@ function Playground() {
           {tokens.radius.map((r) => (
             <div key={r.name}>
               <div className="h-14 w-14 border border-neutral bg-neutral-subtle" style={{ borderRadius: r.value }} />
-              <p className="mt-100 text-caption"><code>rounded-{r.name}</code></p>
-              <p className="text-caption text-neutral-subtle">{px(r.value)}</p>
+              <p className="mt-100 text-body-s"><code>rounded-{r.name}</code></p>
+              <p className="text-body-s text-neutral-subtle">{px(r.value)}</p>
             </div>
           ))}
         </div>
@@ -136,7 +194,7 @@ function Playground() {
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section>
-      <h3 className="text-title-section">{title}</h3>
+      <h3 className="text-heading-s">{title}</h3>
       {children}
     </section>
   )
@@ -145,7 +203,7 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 function ColorTable({ colors }: { colors: Semantic[] }) {
   return (
     <div className="mt-150 overflow-x-auto">
-      <table className="w-full min-w-[40rem] text-left text-caption">
+      <table className="w-full min-w-[40rem] text-left text-body-s">
         <thead className="text-neutral-subtle">
           <tr>
             <th className="py-050 pr-150">클래스</th>
@@ -221,7 +279,7 @@ function LengthRows({ items, cls, sample }: {
     <div className="mt-200 space-y-100">
       {items.map((s) => (
         <div key={s.name} className="grid grid-cols-[7rem_1fr] items-center gap-150">
-          <div className="text-caption">
+          <div className="text-body-s">
             <code>{cls(s.name)}</code>
             <p className="text-neutral-subtle">{px(s.value)}</p>
             {s.at.map((a) => <p key={a.minWidth} className="text-neutral-subtle">≥{a.minWidth} {px(a.value)}</p>)}
@@ -239,8 +297,8 @@ const COPY_MIN = 80
 function SampleBlock({ sample }: { sample: Sample }) {
   return (
     <div className="mt-300">
-      <h4 className="text-title-row">
-        {sample.name} <span className="text-caption text-neutral-subtle">{sample.source}</span>
+      <h4 className="text-title-s">
+        {sample.name} <span className="text-body-s text-neutral-subtle">{sample.source}</span>
       </h4>
       <div className="mt-100 grid gap-100 md:grid-cols-2">
         <div style={LIGHT_VARS} className="min-w-0 rounded-100 border border-neutral bg-base p-200 text-neutral">
@@ -251,7 +309,7 @@ function SampleBlock({ sample }: { sample: Sample }) {
         </div>
       </div>
       <div className="mt-100 flex items-start gap-100">
-        <pre className="min-w-0 flex-1 overflow-x-auto text-caption text-neutral-muted"><code>{sample.code}</code></pre>
+        <pre className="min-w-0 flex-1 overflow-x-auto text-body-s text-neutral-muted"><code>{sample.code}</code></pre>
         {sample.code.length > COPY_MIN && (
           <button
             type="button"

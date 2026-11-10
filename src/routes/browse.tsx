@@ -140,7 +140,7 @@ function BrowseResults({
       {places.length > 0 && (
         <section className="mt-section">
           <div className="flex items-baseline justify-between">
-            <h2 className="text-title-section">언제든 갈 수 있는 곳</h2>
+            <h2 className="text-heading-s">언제든 갈 수 있는 곳</h2>
             <span className="text-body text-neutral-muted">{places.length}건</span>
           </div>
           <div className="mt-150">

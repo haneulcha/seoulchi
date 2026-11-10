@@ -61,10 +61,10 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
         <header className={`${PAGE} pt-200`}>
           <div className="flex items-start justify-between">
             <div className="flex items-baseline gap-150">
-              <h1 className="text-title-page">
+              <h1 className="text-heading-l">
                 <Link to="/">이번 주 서울</Link>
               </h1>
-              <p className="text-caption text-neutral-subtle">{updatedLabel}</p>
+              <p className="text-body-s text-neutral-subtle">{updatedLabel}</p>
             </div>
             <ThemeToggle />
           </div>
@@ -102,7 +102,7 @@ function NotFound() {
   return (
     <main className={`${PAGE} py-800 text-center`}>
       {/* 루트 헤더가 shell의 h1을 갖는다 — 이건 그 안의 콘텐츠라 h2다. h1로 되돌리지 말 것 */}
-      <h2 className="text-title-page">없는 페이지입니다</h2>
+      <h2 className="text-heading-l">없는 페이지입니다</h2>
       <Link to="/" className="mt-300 inline-block underline">홈으로</Link>
     </main>
   )

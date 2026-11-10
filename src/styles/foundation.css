@@ -27,27 +27,80 @@
 
   --text-*: initial;
   --font-weight-*: initial;
-  --text-title-page: 1.5rem;
-  --text-title-page--line-height: 2rem;
-  --text-title-page--font-weight: 700;
-  --text-title-section: 1.125rem;
-  --text-title-section--line-height: 1.625rem;
-  --text-title-section--font-weight: 700;
-  --text-title-card: 1rem;
-  --text-title-card--line-height: 1.5rem;
-  --text-title-card--font-weight: 500;
-  --text-title-row: 0.875rem;
-  --text-title-row--line-height: 1.25rem;
-  --text-title-row--font-weight: 500;
-  --text-body: 0.875rem;
-  --text-body--line-height: 1.375rem;
-  --text-body--font-weight: 400;
-  --text-label: 0.875rem;
-  --text-label--line-height: 1.25rem;
-  --text-label--font-weight: 500;
-  --text-caption: 0.75rem;
-  --text-caption--line-height: 1rem;
-  --text-caption--font-weight: 400;
+  --text-25: 0.625rem;
+  --text-25--line-height: 0.875rem;
+  --text-50: 0.75rem;
+  --text-50--line-height: 1.125rem;
+  --text-75: 0.875rem;
+  --text-75--line-height: 1.25rem;
+  --text-100: 0.9375rem;
+  --text-100--line-height: 1.375rem;
+  --text-200: 1rem;
+  --text-200--line-height: 1.5rem;
+  --text-300: 1.125rem;
+  --text-300--line-height: 1.625rem;
+  --text-400: 1.25rem;
+  --text-400--line-height: 1.75rem;
+  --text-500: 1.375rem;
+  --text-500--line-height: 1.875rem;
+  --text-600: 1.5rem;
+  --text-600--line-height: 2rem;
+  --text-700: 1.75rem;
+  --text-700--line-height: 2.25rem;
+  --text-800: 2rem;
+  --text-800--line-height: 2.5rem;
+  --text-900: 2.25rem;
+  --text-900--line-height: 2.75rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* 역할은 원시를 가리킨다. 범주 구간은 DESIGN.md "글자" 장 */
+  --text-display-l: var(--text-900);
+  --text-display-l--line-height: var(--text-900--line-height);
+  --text-display-l--font-weight: var(--font-weight-bold);
+  --text-display: var(--text-800);
+  --text-display--line-height: var(--text-800--line-height);
+  --text-display--font-weight: var(--font-weight-bold);
+  --text-display-s: var(--text-700);
+  --text-display-s--line-height: var(--text-700--line-height);
+  --text-display-s--font-weight: var(--font-weight-bold);
+  --text-heading-l: var(--text-600);
+  --text-heading-l--line-height: var(--text-600--line-height);
+  --text-heading-l--font-weight: var(--font-weight-bold);
+  --text-heading: var(--text-400);
+  --text-heading--line-height: var(--text-400--line-height);
+  --text-heading--font-weight: var(--font-weight-bold);
+  --text-heading-s: var(--text-300);
+  --text-heading-s--line-height: var(--text-300--line-height);
+  --text-heading-s--font-weight: var(--font-weight-bold);
+  --text-title-l: var(--text-200);
+  --text-title-l--line-height: var(--text-200--line-height);
+  --text-title-l--font-weight: var(--font-weight-medium);
+  --text-title: var(--text-100);
+  --text-title--line-height: var(--text-100--line-height);
+  --text-title--font-weight: var(--font-weight-medium);
+  --text-title-s: var(--text-75);
+  --text-title-s--line-height: var(--text-75--line-height);
+  --text-title-s--font-weight: var(--font-weight-medium);
+  --text-body-l: var(--text-200);
+  --text-body-l--line-height: var(--text-200--line-height);
+  --text-body-l--font-weight: var(--font-weight-regular);
+  --text-body: var(--text-100);
+  --text-body--line-height: var(--text-100--line-height);
+  --text-body--font-weight: var(--font-weight-regular);
+  --text-body-s: var(--text-50);
+  --text-body-s--line-height: var(--text-50--line-height);
+  --text-body-s--font-weight: var(--font-weight-regular);
+  --text-label-l: var(--text-100);
+  --text-label-l--line-height: var(--text-100--line-height);
+  --text-label-l--font-weight: var(--font-weight-medium);
+  --text-label: var(--text-75);
+  --text-label--line-height: var(--text-75--line-height);
+  --text-label--font-weight: var(--font-weight-medium);
+  --text-label-s: var(--text-50);
+  --text-label-s--line-height: var(--text-50--line-height);
+  --text-label-s--font-weight: var(--font-weight-medium);
 
   --radius-*: initial;
   --radius-050: 0.25rem;
@@ -56,7 +109,7 @@
   --radius-full: 9999px;
 }
 
-/* 반응형은 레이아웃 토큰과 title-page만 진다. 호출부에 md: 짝을 쓰지 않는다 */
+/* 반응형은 레이아웃 토큰과 heading-l만 진다. 호출부에 md: 짝을 쓰지 않는다 */
 @media (width >= 40rem) {
   :root { --spacing-gutter: var(--spacing-300); }
 }
@@ -64,8 +117,8 @@
   :root {
     --spacing-section: var(--spacing-700);
     --spacing-page: var(--spacing-500);
-    --text-title-page: 1.875rem;
-    --text-title-page--line-height: 2.375rem;
+    --text-heading-l: var(--text-800);
+    --text-heading-l--line-height: var(--text-800--line-height);
   }
 }
 @media (width >= 64rem) {

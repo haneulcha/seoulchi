@@ -15,12 +15,15 @@ export type Semantic = {
   ref: Partial<Record<Theme, string>>
 }
 export type LengthToken = { name: string; value: string; at: Array<{ minWidth: string; value: string }> }
+export type TextScale = { name: string; size: string; lineHeight: string }
+export type FontWeight = { name: string; value: string }
 export type TextToken = {
-  name: string; size: string; lineHeight: string; weight: string
+  name: string; size: string; lineHeight: string; weight: string; sizeRef: string; weightRef: string
   at: Array<{ minWidth: string; size: string; lineHeight: string }>
 }
 export type DesignTokens = {
-  primitives: Primitive[]; semantics: Semantic[]; spacing: LengthToken[]; radius: LengthToken[]; text: TextToken[]; fontSans: string
+  primitives: Primitive[]; semantics: Semantic[]; spacing: LengthToken[]; radius: LengthToken[]
+  textScale: TextScale[]; fontWeight: FontWeight[]; text: TextToken[]; fontSans: string
 }
 
 export const className = (s: Semantic) => `${CLASS_PREFIX[s.property]}-${s.name}`
@@ -87,19 +90,29 @@ export function parseDesignTokens(themeCss: string, foundationCss: string): Desi
       at: media.flatMap((m) => (m.decls.has(k) ? [{ minWidth: m.minWidth, value: resolve(m.decls.get(k)!, all) }] : [])),
     }))
 
-  const text = [...base.keys()].filter((k) => /^text-[\w-]+$/.test(k) && !k.includes('--')).map((k): TextToken => {
-    const size = base.get(k)!
-    const lineHeight = base.get(`${k}--line-height`)!
+  const textKeys = [...base.keys()].filter((k) => /^text-[\w-]+$/.test(k) && !k.includes('--'))
+  const textScale = textKeys.filter((k) => /^text-\d+$/.test(k)).map((k): TextScale => ({
+    name: k.slice('text-'.length), size: base.get(k)!, lineHeight: base.get(`${k}--line-height`)!,
+  }))
+  const fontWeight = [...base.keys()].filter((k) => k.startsWith('font-weight-'))
+    .map((k): FontWeight => ({ name: k.slice('font-weight-'.length), value: base.get(k)! }))
+
+  const text = textKeys.filter((k) => !/^text-\d+$/.test(k)).map((k): TextToken => {
+    const size = resolve(base.get(k)!, all)
+    const lineHeight = resolve(base.get(`${k}--line-height`)!, all)
+    const rawWeight = base.get(`${k}--font-weight`)!
     return {
-      name: k.slice('text-'.length), size, lineHeight, weight: base.get(`${k}--font-weight`)!,
+      name: k.slice('text-'.length), size, lineHeight, weight: resolve(rawWeight, all),
+      sizeRef: /^var\(--text-(\d+)\)$/.exec(base.get(k)!)![1]!,
+      weightRef: /^var\(--font-weight-(\w+)\)$/.exec(rawWeight)![1]!,
       at: media.flatMap((m) =>
         m.decls.has(k) || m.decls.has(`${k}--line-height`)
-          ? [{ minWidth: m.minWidth, size: m.decls.get(k) ?? size, lineHeight: m.decls.get(`${k}--line-height`) ?? lineHeight }]
+          ? [{ minWidth: m.minWidth, size: resolve(m.decls.get(k) ?? size, all), lineHeight: resolve(m.decls.get(`${k}--line-height`) ?? lineHeight, all) }]
           : []),
     }
   })
 
-  return { primitives, semantics, spacing: lengths('spacing-'), radius: lengths('radius-'), text, fontSans: base.get('font-sans')! }
+  return { primitives, semantics, spacing: lengths('spacing-'), radius: lengths('radius-'), textScale, fontWeight, text, fontSans: base.get('font-sans')! }
 }
 
 function luminance(hex: string): number {

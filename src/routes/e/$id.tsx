@@ -82,7 +82,7 @@ function Detail() {
           className={`${item.kind === 'event' ? 'aspect-[2/3] w-2/3 md:w-full' : 'aspect-[4/3] w-full'} rounded-150 object-cover`}
         />
         <div className="min-w-0">
-          <h2 className="mt-200 text-title-section md:mt-0">{item.title}</h2>
+          <h2 className="mt-200 text-heading-s md:mt-0">{item.title}</h2>
           <p className="mt-050 text-body text-neutral-subtle">
             {item.category}
             {item.district ? ` · ${item.district}` : ''}

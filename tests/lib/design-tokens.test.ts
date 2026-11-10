@@ -67,14 +67,25 @@ describe('parseDesignTokens — 간격·글자·모서리', () => {
     expect(t.spacing.find((s) => s.name === '100')!.at).toEqual([])
   })
 
-  it('글자 역할 7개와 폭별 값', () => {
-    expect(t.text).toHaveLength(7)
-    const page = t.text.find((x) => x.name === 'title-page')!
-    expect(page).toMatchObject({ size: '1.5rem', lineHeight: '2rem', weight: '700' })
-    expect(page.at).toEqual([{ minWidth: '48rem', size: '1.875rem', lineHeight: '2.375rem' }])
-    expect(t.text.find((x) => x.name === 'caption')).toEqual({
-      name: 'caption', size: '0.75rem', lineHeight: '1rem', weight: '400', at: [],
+  it('글자 원시 12단계와 굵기 3단계', () => {
+    expect(t.textScale.map((s) => s.name)).toEqual(['25', '50', '75', '100', '200', '300', '400', '500', '600', '700', '800', '900'])
+    expect(t.textScale.find((s) => s.name === '100')).toEqual({ name: '100', size: '0.9375rem', lineHeight: '1.375rem' })
+    expect(t.textScale.find((s) => s.name === '50')).toEqual({ name: '50', size: '0.75rem', lineHeight: '1.125rem' })
+    expect(t.fontWeight).toEqual([{ name: 'regular', value: '400' }, { name: 'medium', value: '500' }, { name: 'bold', value: '700' }])
+  })
+
+  it('글자 역할 15개는 원시를 가리킨다', () => {
+    expect(t.text.map((x) => x.name)).toEqual([
+      'display-l', 'display', 'display-s', 'heading-l', 'heading', 'heading-s', 'title-l', 'title', 'title-s',
+      'body-l', 'body', 'body-s', 'label-l', 'label', 'label-s',
+    ])
+    expect(t.text.find((x) => x.name === 'body')).toEqual({
+      name: 'body', size: '0.9375rem', lineHeight: '1.375rem', weight: '400', sizeRef: '100', weightRef: 'regular', at: [],
     })
+    const h = t.text.find((x) => x.name === 'heading-l')!
+    expect(h).toMatchObject({ size: '1.5rem', lineHeight: '2rem', weight: '700', sizeRef: '600', weightRef: 'bold' })
+    expect(h.at).toEqual([{ minWidth: '48rem', size: '2rem', lineHeight: '2.5rem' }])
+    expect(t.text.find((x) => x.name === 'title-s')).toMatchObject({ size: '0.875rem', weight: '500', sizeRef: '75' })
   })
 
   it('모서리 4개', () => {
