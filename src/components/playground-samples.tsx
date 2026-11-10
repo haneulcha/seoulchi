@@ -1,13 +1,12 @@
 import type { ReactNode } from 'react'
-import { EventPosterCard, ListRow } from '~/components/cards'
+import { Badge, PosterCard, Thumbnail, ThumbnailRow } from '~/components/cards'
 import { ItemImage } from '~/components/ItemImage'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
 import { ThemeToggle } from '~/components/ThemeToggle'
 import { button, Callout, chip, Chip, ChipSelect } from '~/components/ui'
-import { cardFacts } from '~/lib/card-facts'
 import { CATEGORY_GROUPS } from '~/lib/category'
+import { categoryColor } from '~/lib/colors'
 import { formatUpdatedAt } from '~/lib/dates'
-import type { CatalogEventIndexItem } from '~/types/files'
 
 /**
  * /playground의 컴포넌트 견본. 다섯 컴포넌트 파일의 export마다 하나씩이고,
@@ -16,26 +15,22 @@ import type { CatalogEventIndexItem } from '~/types/files'
  */
 export type Sample = { name: string; source: string; code: string; render: () => ReactNode }
 
-/** 카드의 '남은 기간'이 언제 열어도 같게 나오도록 고정한다 */
-const TODAY = '2026-11-04'
 /** OpenNowBadge는 브라우저 시각으로 판정한다. 하루 종일 열려 있어야 언제 열어도 보인다 */
 const ALWAYS_OPEN = { open: '00:00', close: '24:00', closedWeekdays: [] }
 
-const EVENTS: CatalogEventIndexItem[] = [
+/** view 견본의 고정 값. 도메인 컴포넌트가 만들어 넘기는 모양 그대로다 */
+const CARDS = [
   {
-    id: 'sc-playground-1', kind: 'event', title: '[서울시립미술관] 서울 사진 축제 2026',
-    group: '보러 가기', genre: '전시', district: '중구', place: '서울시립미술관 서소문본관',
-    isFree: true, startDate: '2026-10-20', endDate: '2026-11-08', time: '10:00~20:00',
+    image: { fallbackColor: categoryColor('보러 가기') }, eyebrow: '전시', title: '서울 사진 축제 2026', subtitle: '서울시립미술관',
+    meta: '중구 · 10:00~20:00', extra: <><span className="text-success">무료</span> · 11/8까지</>,
   },
   {
-    id: 'kp-playground-2', kind: 'event', title: '뮤지컬 〈지킬 앤 하이드〉',
-    group: '보러 가기', genre: '뮤지컬', district: '송파구', place: '샤롯데씨어터',
-    fee: 'VIP석 170,000원', startDate: '2026-11-12', endDate: '2027-02-28',
+    image: { fallbackColor: categoryColor('보러 가기') }, eyebrow: '뮤지컬', title: '뮤지컬 〈지킬 앤 하이드〉',
+    meta: '송파구', extra: <>VIP석 170,000원 · 11/12부터</>,
   },
   {
-    id: 'sc-playground-3', kind: 'event', title: '한강 야간 걷기 체험',
-    group: '체험하기', genre: '체험', district: '영등포구', place: '여의도한강공원',
-    isFree: true, startDate: '2026-11-07', endDate: '2026-11-07', time: '19:00~21:00',
+    image: { fallbackColor: categoryColor('체험하기') }, eyebrow: '체험', title: '한강 야간 걷기 체험',
+    meta: '영등포구 · 19:00~21:00', extra: <><span className="text-success">무료</span> · 11/7</>,
   },
 ]
 
@@ -104,34 +99,36 @@ export const SAMPLES: Sample[] = [
     ),
   },
   {
-    name: 'EventPosterCard', source: SRC.cards,
-    code: `<EventPosterCard item={event} today={today} />`,
+    name: 'PosterCard', source: SRC.cards,
+    code: `<PosterCard image={{ src, fallbackColor }} eyebrow="전시" title="…" subtitle="기관명" meta="중구 · 10:00~20:00" extra={…} />`,
     render: () => (
       <div className="flex gap-150 overflow-x-auto">
-        {EVENTS.map((e) => <EventPosterCard key={e.id} item={e} today={TODAY} />)}
+        {CARDS.map((c) => <div key={c.title} className="w-40 shrink-0 md:w-48"><PosterCard {...c} /></div>)}
       </div>
     ),
   },
   {
-    name: 'ListRow', source: SRC.cards,
-    code: `<ListRow id={item.id} image={{ src: item.imageUrl, category: item.group, shape: 'poster' }} title={item.title} facts={cardFacts(item, { today })} badge={<OpenNowBadge hours={item.hours} />} />`,
+    name: 'ThumbnailRow', source: SRC.cards,
+    code: `<ThumbnailRow image={{ src, fallbackColor }} shape="poster" title="…" meta="…" extra={<Badge tone="success">지금 열림</Badge>} />`,
     render: () => (
       <div>
-        {EVENTS.slice(0, 2).map((e) => (
-          <ListRow
-            key={e.id} id={e.id} title={e.title}
-            image={{ category: e.group, shape: 'poster' }}
-            facts={cardFacts(e, { today: TODAY })}
-          />
-        ))}
-        <ListRow
-          id="vs-playground-4" title="경복궁"
-          image={{ category: '걸으러 가기', shape: 'photo' }}
-          facts={cardFacts({ kind: 'place', district: '종로구', hours: ALWAYS_OPEN }, { km: 1.2 })}
-          badge={<OpenNowBadge hours={ALWAYS_OPEN} />}
+        {CARDS.slice(0, 2).map((c) => <ThumbnailRow key={c.title} {...c} shape="poster" />)}
+        <ThumbnailRow
+          image={{ fallbackColor: categoryColor('걸으러 가기') }} shape="photo" title="경복궁" meta="종로구 · 1.2km · 24시간"
+          extra={<Badge tone="success">지금 열림</Badge>}
         />
       </div>
     ),
+  },
+  {
+    name: 'Thumbnail', source: SRC.cards,
+    code: `<Thumbnail src={src} alt="" fallbackColor={color} className="aspect-[2/3] w-20 rounded-050 object-cover" />`,
+    render: () => <Thumbnail alt="" fallbackColor={categoryColor('보러 가기')} className="aspect-[2/3] w-14 rounded-050" />,
+  },
+  {
+    name: 'Badge', source: SRC.cards,
+    code: `<Badge tone="success">지금 열림</Badge>`,
+    render: () => <Badge tone="success">지금 열림</Badge>,
   },
   {
     name: 'ItemImage', source: 'src/components/ItemImage.tsx',

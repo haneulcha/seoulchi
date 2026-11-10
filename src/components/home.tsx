@@ -1,8 +1,25 @@
 import { Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
+import { cardText } from '~/components/card-text'
+import { PosterCard } from '~/components/cards'
 import { chip, Chip, ChipSelect } from '~/components/ui'
+import { cardFacts } from '~/lib/card-facts'
+import { categoryColor } from '~/lib/colors'
 import { HOME_GROUPS, pageNumbers, type HomeSearch } from '~/lib/home-search'
 import type { DayTab } from '~/lib/today'
+import type { CatalogEventIndexItem } from '~/types/files'
+
+/**
+ * 추천 3개 — 포스터 카드. 모바일 전폭 포스터는 한 장이 화면을 다 먹는다. 그래서 모바일에서는 폭 62%의 카드를
+ * 가로로 넘기는 선반에 담고(홈이 정한다), md 이상에서는 3단 그리드에 선다.
+ */
+export function EventPosterCard({ item: e, today }: { item: CatalogEventIndexItem; today: string }) {
+  return (
+    <Link to="/e/$id" params={{ id: e.id }} className="block w-40 shrink-0 snap-start md:w-48">
+      <PosterCard image={{ src: e.imageUrl, fallbackColor: categoryColor(e.group) }} {...cardText(e.title, cardFacts(e, { today }))} />
+    </Link>
+  )
+}
 
 export const DAY_LABELS: Record<DayTab, string> = { today: '오늘', tomorrow: '내일', weekend: '이번 주말' }
 

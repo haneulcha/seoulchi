@@ -1,8 +1,10 @@
-import { Link } from '@tanstack/react-router'
-import type { ReactNode } from 'react'
-import { ItemImage } from '~/components/ItemImage'
-import { cardFacts, splitTitle, type CardFacts } from '~/lib/card-facts'
-import type { CatalogEventIndexItem } from '~/types/files'
+import { useState, type ReactNode } from 'react'
+
+/**
+ * 썸네일 카드의 view. 도메인을 모른다 — 받은 값을 자리에 놓기만 한다.
+ * 값을 만드는 일(사실 계산, 기관명 떼기, 링크)은 감싸는 도메인 컴포넌트가 한다.
+ * tests/components/cards.test.ts가 이 파일의 도메인 import를 막는다.
+ */
 
 /**
  * 행사 이미지는 거의 전부 세로 포스터다 — 실측한 원본 비율이 0.67~0.71에 몰려 있다.
@@ -11,97 +13,101 @@ import type { CatalogEventIndexItem } from '~/types/files'
  */
 const POSTER = 'aspect-[2/3]'
 
-/** 제목 맨 앞 대괄호 기관명은 제목 아래 작은 줄로 내린다(PRODUCT.md 안티레퍼런스 1번). 장르는 제목 위 가장 약한 줄이다 */
-function CardTitle({ title, genre, className }: { title: string; genre?: string; className: string }) {
-  const t = splitTitle(title)
-  return (
-    <>
-      {genre && <p className="truncate text-body-s text-neutral-subtle">{genre}</p>}
-      <h3 className={className}>{t.title}</h3>
-      {t.org && <p className="truncate text-body-s text-neutral-subtle">{t.org}</p>}
-    </>
-  )
+/** 카드 본문. eyebrow는 제목 위 가장 약한 줄, subtitle은 제목 아래 작은 줄, meta는 늘 있는 사실 줄, extra는 값이 있을 때만 나오는 줄 */
+export type CardText = {
+  eyebrow?: string
+  title: string
+  subtitle?: string
+  meta: string
+  extra?: ReactNode
 }
 
 /**
- * 모든 카드 공통의 사실 두 줄. 고정 줄(어디 · 거리 · 시간)은 늘 같은 자리에 있고,
- * 조건부 줄(지금 열림 · 가격 · 남은 기간)은 조각이 없으면 통째로 접는다.
+ * 이미지가 못 뜨면(onError) fallbackColor 블록으로 대신한다(스펙 14장 #3).
+ * alt는 호출 측이 정한다. 제목이 바로 옆에 있는 카드에서는 ''(장식)이 맞다.
+ */
+export function Thumbnail(props: {
+  src?: string
+  alt: string
+  fallbackColor: string
+  className?: string
+}) {
+  const [failed, setFailed] = useState(false)
+
+  if (!props.src || failed) {
+    return (
+      <div
+        aria-hidden
+        className={props.className}
+        style={{ backgroundColor: props.fallbackColor }}
+      />
+    )
+  }
+
+  return (
+    <img
+      src={props.src}
+      alt={props.alt}
+      loading="lazy"
+      className={props.className}
+      onError={() => setFailed(true)}
+    />
+  )
+}
+
+const BADGE_TONE = { success: 'bg-success-subtle text-success' }
+
+export function Badge({ tone, children }: { tone: keyof typeof BADGE_TONE; children: ReactNode }) {
+  return <span className={`mr-100 rounded-full px-100 py-025 text-body-s ${BADGE_TONE[tone]}`}>{children}</span>
+}
+
+/** 이미지 자리. src가 없거나 못 뜨면 fallbackColor 블록이다 */
+type CardImage = { src?: string; fallbackColor: string }
+
+/**
+ * 모든 카드 공통의 본문. 고정 줄(meta)은 늘 같은 자리에 있고, 조건부 줄(extra)은 없으면 통째로 접는다.
  * 배지는 조건부 줄 맨 앞에 둔다 — 고정 줄 끝에 붙이면 장소 2열 칸에서 시간 뒤로 밀려 잘렸다.
  */
-function FactLines({
-  facts, badge,
-}: { facts: CardFacts; badge?: ReactNode }) {
-  const fixed = [facts.where, facts.distance, facts.time].filter(Boolean).join(' · ')
+function CardBody({ eyebrow, title, subtitle, meta, extra, className }: CardText & { className: string }) {
   return (
-    <>
-      <p className="mt-100 truncate text-body-s text-neutral-muted">{fixed}</p>
-      {(badge || facts.price || facts.deadline) && (
-        <p className="truncate text-body-s text-neutral-muted">
-          {badge}
-          {facts.price && (
-            <span className={facts.price === '무료' ? 'text-success' : undefined}>{facts.price}</span>
-          )}
-          {facts.price && facts.deadline && ' · '}
-          {facts.deadline}
-        </p>
-      )}
-    </>
+    <div className={className}>
+      {eyebrow && <p className="truncate text-body-s text-neutral-subtle">{eyebrow}</p>}
+      <h3 className="line-clamp-2 text-title-s">{title}</h3>
+      {subtitle && <p className="truncate text-body-s text-neutral-subtle">{subtitle}</p>}
+      <p className="mt-100 truncate text-body-s text-neutral-muted">{meta}</p>
+      {extra && <p className="truncate text-body-s text-neutral-muted">{extra}</p>}
+    </div>
   )
 }
 
 /**
- * 추천 3개 — 포스터 카드. 폭과 상관없이 **세로 카드**다.
- *
- * 모바일 전폭 3/4 포스터는 477px이라 한 장이 화면을 다 먹는다. 그래서 모바일에서는 폭 62%의 카드를
- * 가로로 넘기는 선반에 담고(홈이 정한다), md 이상에서는 3단 그리드에 선다.
- * 예전 모바일 구조(96px 포스터 + 텍스트 가로 행)는 아래 목록 행에 썸네일이 돌아오면서 크기만 다른
- * 같은 모양이 됐다. 위계는 크기가 아니라 **모양**(선반 대 목록)으로 만든다.
+ * 포스터 카드. 폭과 상관없이 **세로 카드**다. 폭은 담는 쪽(선반)이 정한다.
+ * 위계는 크기가 아니라 **모양**(선반 대 목록)으로 만든다.
  */
-export function EventPosterCard({ item: e, today }: { item: CatalogEventIndexItem; today: string }) {
-  const facts = cardFacts(e, { today })
+export function PosterCard({ image, ...text }: CardText & { image: CardImage }) {
   return (
-    <Link to="/e/$id" params={{ id: e.id }} className="block w-40 shrink-0 snap-start md:w-48">
-      <ItemImage
-        src={e.imageUrl}
-        alt=""
-        category={e.group}
-        className={`${POSTER} w-full rounded-100 object-cover`}
-      />
-      <div className="mt-100 min-w-0">
-        <CardTitle title={e.title} genre={facts.genre} className="line-clamp-2 text-title-s" />
-        <FactLines facts={facts} />
-      </div>
-    </Link>
+    <div>
+      <Thumbnail {...image} alt="" className={`${POSTER} w-full rounded-100 object-cover`} />
+      <CardBody {...text} className="mt-100 min-w-0" />
+    </div>
   )
 }
 
 /**
- * 목록 행 — 홈의 그날 목록과 탐색의 행사·장소 행이 모두 이 모양이다. 썸네일 비율만 다르다.
- *
+ * 썸네일 행. 썸네일 비율만 다르다 — 포스터는 2/3, 장소 사진은 가로형이라 4/3.
  * 한때 64px 1:1 썸네일을 뺐다 — 세로 포스터를 정사각으로 자른 조각은 알아볼 수 없었다.
- * 3/4로 담으면 크롭이 약 5%라 작아도 포스터로 읽힌다(탐색에서 확인). 장소 사진은 가로형이라 4/3.
  */
-export function ListRow({
-  id, image, title, facts, badge,
-}: {
-  id: string
-  image: { src?: string; category: string; shape: 'poster' | 'photo' }
-  title: string
-  facts: CardFacts
-  badge?: ReactNode
-}) {
+export function ThumbnailRow({
+  image, shape, ...text
+}: CardText & { image: CardImage; shape: 'poster' | 'photo' }) {
   return (
-    <Link to="/e/$id" params={{ id }} className="flex gap-150 border-t border-neutral py-150">
-      <ItemImage
-        src={image.src}
+    <div className="flex gap-150 border-t border-neutral py-150">
+      <Thumbnail
+        {...image}
         alt=""
-        category={image.category}
-        className={`${image.shape === 'poster' ? `${POSTER} w-20` : 'aspect-[4/3] w-28'} shrink-0 self-start rounded-050 object-cover`}
+        className={`${shape === 'poster' ? `${POSTER} w-20` : 'aspect-[4/3] w-28'} shrink-0 self-start rounded-050 object-cover`}
       />
-      <div className="min-w-0">
-        <CardTitle title={title} genre={facts.genre} className="line-clamp-2 text-title-s" />
-        <FactLines facts={facts} badge={badge} />
-      </div>
-    </Link>
+      <CardBody {...text} className="min-w-0" />
+    </div>
   )
 }

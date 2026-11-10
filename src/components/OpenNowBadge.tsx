@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Badge } from '~/components/cards'
 import { isOpenNow } from '~/lib/open-now'
 import type { ParsedHours } from '~/types/item'
 
@@ -16,9 +17,5 @@ export function OpenNowBadge({ hours }: { hours: ParsedHours | null }) {
   }, [hours])
 
   if (!open) return null
-  return (
-    <span className="mr-100 rounded-full bg-success-subtle px-100 py-025 text-body-s text-success">
-      지금 열림
-    </span>
-  )
+  return <Badge tone="success">지금 열림</Badge>
 }
