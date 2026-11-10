@@ -38,7 +38,7 @@ function offColor(source: string, known: Set<string>): string[] {
 const parsed = parseDesignTokens(readFileSync('src/styles/theme.css', 'utf8'), tokens)
 const known = new Set(parsed.semantics.map(className))
 
-const TEXT_ROLE = /^text-(?:display|heading|title|body|label|caption)(?:-[\w-]+)?$/
+const TEXT_ROLE = /^text-(?:\d+$|display|heading|title|body|label|caption)(?:-[\w-]+)?$/
 const textNames = new Set([...parsed.text.map((x) => `text-${x.name}`), ...parsed.textScale.map((x) => `text-${x.name}`)])
 
 /** 글자 역할 범주·옛 이름으로 시작하는데 역할·원시에 없는 클래스. 정의가 없으면 Tailwind가 조용히 버린다 */
@@ -79,9 +79,9 @@ describe('offColor', () => {
 })
 
 describe('offText', () => {
-  it('없는 글자 역할을 잡는다', () => {
-    expect(offText('text-caption text-title-row md:text-title-page text-body-s text-heading-l text-center', textNames))
-      .toEqual(['text-caption', 'text-title-row', 'md:text-title-page'])
+  it('없는 글자 역할과 크기 단계를 잡는다', () => {
+    expect(offText('text-caption text-title-row md:text-title-page text-150 text-body-s text-heading-l text-100 text-center', textNames))
+      .toEqual(['text-caption', 'text-title-row', 'md:text-title-page', 'text-150'])
   })
 })
 
