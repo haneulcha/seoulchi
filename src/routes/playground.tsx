@@ -80,6 +80,53 @@ function Playground() {
       </Section>
 
       <Section title="글자">
+        <h4 className="mt-300 text-title-s">원시 크기</h4>
+        <div className="mt-150 overflow-x-auto">
+          <table className="w-full min-w-[40rem] text-left text-body-s">
+            <thead className="text-neutral-subtle">
+              <tr>
+                <th className="py-050 pr-150">클래스</th>
+                <th className="py-050 pr-150">견본</th>
+                <th className="py-050 pr-150">크기</th>
+                <th className="py-050">줄 높이</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tokens.textScale.map((t) => (
+                <tr key={t.name} className="border-t border-neutral align-top">
+                  <td className="py-150 pr-150"><code>text-{t.name}</code></td>
+                  <td className="py-150 pr-150"><p style={{ fontSize: t.size, lineHeight: t.lineHeight }}>이번 주 서울</p></td>
+                  <td className="py-150 pr-150"><Length value={t.size} at={[]} /></td>
+                  <td className="py-150"><Length value={t.lineHeight} at={[]} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h4 className="mt-300 text-title-s">굵기</h4>
+        <div className="mt-150 overflow-x-auto">
+          <table className="w-full min-w-[40rem] text-left text-body-s">
+            <thead className="text-neutral-subtle">
+              <tr>
+                <th className="py-050 pr-150">클래스</th>
+                <th className="py-050 pr-150">견본</th>
+                <th className="py-050">값</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tokens.fontWeight.map((w) => (
+                <tr key={w.name} className="border-t border-neutral align-top">
+                  <td className="py-150 pr-150"><code>font-{w.name}</code></td>
+                  <td className="py-150 pr-150"><p className="text-body" style={{ fontWeight: Number(w.value) }}>이번 주 서울</p></td>
+                  <td className="py-150">{w.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h4 className="mt-300 text-title-s">역할</h4>
         <div className="mt-150 overflow-x-auto">
           <table className="w-full min-w-[40rem] text-left text-body-s">
             <thead className="text-neutral-subtle">
@@ -91,19 +138,30 @@ function Playground() {
                 <th className="py-050">굵기</th>
               </tr>
             </thead>
-            <tbody>
-              {tokens.text.map((t) => (
-                <tr key={t.name} className="border-t border-neutral align-top">
-                  <td className="py-150 pr-150"><code>text-{t.name}</code></td>
-                  <td className="py-150 pr-150">
-                    <p style={{ fontSize: t.size, lineHeight: t.lineHeight, fontWeight: Number(t.weight) }}>이번 주 서울</p>
-                  </td>
-                  <td className="py-150 pr-150"><Length value={t.size} at={t.at.map((a) => [a.minWidth, a.size])} /></td>
-                  <td className="py-150 pr-150"><Length value={t.lineHeight} at={t.at.map((a) => [a.minWidth, a.lineHeight])} /></td>
-                  <td className="py-150">{t.weight}</td>
+            {[...new Set(tokens.text.map((t) => t.name.split('-')[0]!))].map((category, i) => (
+              <tbody key={category}>
+                <tr>
+                  <td colSpan={5} className={`${i > 0 ? 'pt-200' : 'pt-050'} pb-050 text-neutral-subtle`}><code>text-{category}</code></td>
                 </tr>
-              ))}
-            </tbody>
+                {tokens.text.filter((t) => t.name.split('-')[0] === category).map((t) => (
+                  <tr key={t.name} className="border-t border-neutral align-top">
+                    <td className="py-150 pr-150"><code>text-{t.name}</code></td>
+                    <td className="py-150 pr-150">
+                      <p style={{ fontSize: t.size, lineHeight: t.lineHeight, fontWeight: Number(t.weight) }}>이번 주 서울</p>
+                    </td>
+                    <td className="py-150 pr-150">
+                      <code className="block">text-{t.sizeRef}</code>
+                      <Length value={t.size} at={t.at.map((a) => [a.minWidth, a.size])} />
+                    </td>
+                    <td className="py-150 pr-150"><Length value={t.lineHeight} at={t.at.map((a) => [a.minWidth, a.lineHeight])} /></td>
+                    <td className="py-150">
+                      <code className="block">font-{t.weightRef}</code>
+                      <span className="text-neutral-subtle">{t.weight}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            ))}
           </table>
         </div>
       </Section>
