@@ -71048,7 +71048,7 @@
     }
   },
   "KOP20kefn": {
-    "updtDtText": "2026.10.16",
+    "updtDtText": "2026.11.10",
     "detail": {
       "cid": "KOP20kefn",
       "lang_code_id": "ko",
@@ -71063,13 +71063,13 @@
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74205&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74206&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
-      "post_sj": "청계천 미디어아트 <청계 소울 오션>",
+      "post_sj": "청계천 미디어아트 &lt;청계 소울 오션&gt;",
       "sumry": "서울관광재단에서 운영하는 청계 소울 오션 미디어아트 전시",
       "schdul_info_bgnde": "2026.05.15",
       "schdul_info_endde": "2026.12.31",
       "place": "청계천 광교 하단, 광교 갤러리 일대",
       "creat_dt_text": "2025.07.08",
-      "updt_dt_text": "2026.10.16",
+      "updt_dt_text": "2026.11.10",
       "tag": [
         "서울관광재단",
         "청계소울오션",
@@ -124762,6 +124762,169 @@
         "safe_mng": "ul"
       },
       "post_desc": "프리즘을 닮은 빛의 조각들과 자연이 전하는 생명의 메시지 동양의 여백과 서양의 색채가 조화를 이루는 반추상 회화를 특징으로 하는 백영희 화백 초대전이 'InORBIT' 인오빛 한남에서 열립니다. 미국 워싱턴 중심 반세기 동안 '빛과 자연'을 화폭에 담아 온 백영희. 천경자 화백의 제자로서 동양적 정서와 서구 모더니즘의 조형 언어를 결합, 자신만의 예술적 여정을 조명합니다."
+    }
+  },
+  "KOPfq5ffd": {
+    "updtDtText": "2026.11.10",
+    "detail": {
+      "cid": "KOPfq5ffd",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPfq5ffd,en:ENPfq5ffd,zh-CN:CNPfq5ffd,zh-TW:TCPfq5ffd,ru:RUPfq5ffd",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83965&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83966&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83967&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83968&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 명동스퀘어 미션페스타",
+      "sumry": "명동 거리를 탐험하며 숨겨진 단서를 찾는 무료 야외 방탈출 축제. 모바일 미션과 공연, 랜덤플레이댄스, 도전! 명동벨, 베스트드레서 콘테스트를 즐길 수 있는 미션페스타",
+      "schdul_info_bgnde": "2026.11.16",
+      "schdul_info_endde": "2026.11.21",
+      "place": "명동스퀘어 일원 / 메인무대: 명동 Y광장 야외 행사장(롯데 영플라자 맞은편)",
+      "creat_dt_text": "2026.11.09",
+      "updt_dt_text": "2026.11.10",
+      "tag": [
+        "명동스퀘어",
+        "미션페스타",
+        "서울축제",
+        "야외방탈출",
+        "모바일미션",
+        "명동",
+        "무료체험",
+        "랜덤플레이댄스",
+        "명동벨",
+        "베스트드레서",
+        "가족나들이"
+      ],
+      "extra": {
+        "cmmn_telno": "(주)인스에듀테인먼트031-242-6164 / 명동스퀘어사무국02-3789-7719 ",
+        "cmmn_hmpg_url": "https://www.instagram.com/myeongdong_square/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "사전행사: 11/16 ~ 11/20 상시 운영(모바일 미션)\r\n본행사: 11/21 10:00 ~ 19:00",
+        "cmmn_important": "앱 지원 언어: 한국어·영어·중국어·일본어\r\n준비물: 스마트폰, 충분한 배터리, 걷기 편한 신발\r\n방탈출 체험권: 사전예약 후 미션 체험 및 참여 인증 완료 시 제공(세부 조건은 예약 안내 확인)\r\n랜덤플레이댄스·도전! 명동벨: 사전예약 및 현장접수 가능\r\n사전행사 기간에는 공연·현장 이벤트·경품 추첨 미운영",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 중구 명동2가 83-5",
+        "new_zip_code": "04536",
+        "new_adres": "서울 중구 명동길 14 인근, 명동 Y광장 야외 행사장 ※ 명동길 14는 눈스퀘어 주소이며, 행사장은 인근 야외 공간임",
+        "map_position_x": "126.982910468568",
+        "map_position_y": "37.5634407542979",
+        "subway_info": "지하철 2호선 을지로입구역 6번출구, 250m"
+      },
+      "post_desc": "명동 거리를 탐험하며 숨겨진 단서를 찾고 미션을 해결하는 야외 방탈출 페스티벌이 열립니다. 「2026 명동스퀘어 미션페스타」는 스마트폰 앱으로 명동 곳곳의 미션을 해결하고, 공연과 현장 이벤트를 함께 즐기는 야외 체험형 축제입니다. 참가자는 ‘명동스퀘어’ 앱을 이용해 명동 곳곳을 돌아다니며 미션에 도전할 수 있습니다. 한국어·영어·중국어·일본어로 참여할 수 있어 외국인 방문객도 함께 즐길 수 있습니다. 행사 당일에는 랜덤플레이댄스, 퀴즈 프로그램 ‘도전! 명동벨’, 베스트드레서 콘테스트 등 다양한 현장 이벤트와 공연이 펼쳐집니다. 블랙 또는 비밀요원 콘셉트의 의상으로 축제 분위기를 더해보세요. 일시: 2026년 11월 21일(토) 장소: 명동스퀘어 일원 메인무대: 명동 Y광장(롯데 영플라자 맞은편) 참가비: 무료 사전 체험: 2026년 11월 16일(월)~20일(금) 참여 안내: 스마트폰에 ‘명동스퀘어’ 앱을 설치해 미션에 참여하세요. 사전예약 후 미션 체험과 참여 인증을 완료하면 다른 지역의 야외 방탈출 콘텐츠를 즐길 수 있는 체험권을 받을 수 있습니다. 자세한 제공 조건은 사전예약 안내를 확인해주세요. 사전 체험 기간에는 모바일 미션을 즐길 수 있으며, 공연과 현장 이벤트는 11월 21일(토)에 진행됩니다. 사전예약·상세 안내: [사전예약 및 행사 안내 링크] 공식 인스타그램: [공식 인스타그램 링크] 문의: 031-242-6164"
+    }
+  },
+  "KOPk8e0mk": {
+    "updtDtText": "2026.11.10",
+    "detail": {
+      "cid": "KOPk8e0mk",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPk8e0mk,en:ENPk8e0mk,ja:JPPk8e0mk,zh-CN:CNPk8e0mk,zh-TW:TCPk8e0mk,ru:RUPk8e0mk",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83952&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83953&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83954&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83955&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83956&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83957&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "BEAUTY IN LAYERS",
+      "sumry": "가을의 깊은 색감과 겨울의 포근한 온기 속에서 뷰티 루틴과 테크 기반 체험, 감성적인 휴식. DDP 비더비에서 나를 돌보는 새로운 방식을 발견할 수 있는 체험형 전시",
+      "schdul_info_bgnde": "2026.10.01",
+      "schdul_info_endde": "2027.02.09",
+      "place": "서울 중구 을지로 281, DDP 마켓 지하 2층 B the B UPTOWN",
+      "creat_dt_text": "2026.11.09",
+      "updt_dt_text": "2026.11.10",
+      "tag": [
+        "DDP",
+        "동대문역사문화공원역",
+        "서울전시",
+        "서울볼거리",
+        "서울여행"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2153-0770",
+        "cmmn_hmpg_url": "https://btheb.sba.kr/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "12:00 ~ 20:00",
+        "cmmn_important": "전시 안내 도슨트 운영, 외국어 해설 가능(영어, 중국어)",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인 전용 주차장",
+          "엘리베이터",
+          "장애인화장실",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "business_days": "매일"
+      },
+      "traffic": {
+        "adres": "서울 중구 을지로7가 143",
+        "new_zip_code": "04566",
+        "new_adres": "서울 중구 을지로 281 (을지로7가)",
+        "map_position_x": "127.010890355484",
+        "map_position_y": "37.5680445876689",
+        "subway_info": "지하철 2호선/4호선/5호선 동대문역사문화공원역 1번출구, 50m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "BEAUTY IN LAYERS — 나만의 아름다움이 겹겹이 깊어지는 순간 아름다움은 나를 이루는 감각과 경험이 겹겹이 쌓여 완성됩니다. 가을의 깊은 색감과 겨울의 포근한 온기 사이에서, 서로 다른 감각과 경험이 일상 위에 한 겹씩 쌓이며 나만의 아름다움이 깊어지는 과정을 선보입니다. 피부를 부드럽게 감싸는 촉촉함, 오늘의 기분을 담아내는 컬러, 기술을 통해 새롭게 발견하는 나의 모습, 하루의 끝에서 몸과 마음을 편안하게 돌보는 루틴까지 다양한 뷰티 경험을 만나볼 수 있습니다. 관람객은 전시 공간을 따라 이동하며 시각적 무드와 뷰티 루틴, 테크 기반 체험, 감성적 휴식 요소를 순차적으로 경험하고 각자의 방식으로 '나를 돌보는 아름다움'을 발견할 수 있습니다. DDP B the B UPTOWN에서 나만의 아름다움이 겹겹이 깊어지는 순간을 직접 경험해 보세요."
+    }
+  },
+  "KOP8u9lo4": {
+    "updtDtText": "2026.11.10",
+    "detail": {
+      "cid": "KOP8u9lo4",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP8u9lo4,en:ENP8u9lo4",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84000&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84001&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "〈Color Shake〉 서울",
+      "sumry": "누구나 스프레이 캔을 흔들어 디지털 벽에 흔적을 남기고, 그 움직임을 색과 글자로 바꿔 응답하는 전시",
+      "schdul_info_bgnde": "2026.11.13",
+      "schdul_info_endde": "2026.11.15",
+      "place": "레이어11 (서울 마포구 광성로 41-11)",
+      "creat_dt_text": "2026.11.06",
+      "updt_dt_text": "2026.11.10",
+      "tag": [
+        "레벨나인",
+        "거리",
+        "흔적",
+        "낙서",
+        "그래피티",
+        "인터랙티브"
+      ],
+      "extra": {
+        "cmmn_hmpg_url": "https://color-shake.com/seoul-2026/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "2026. 11. 13.(금) 17:00–21:00 [프리뷰]\r\n2026. 11. 14.(토) 12:00–21:00\r\n2026. 11. 15.(일) 12:00–18:00",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 마포구 신수동 93-4",
+        "new_zip_code": "04094",
+        "new_adres": "서울 마포구 광성로 41-11 (신수동)",
+        "map_position_x": "126.936897161678",
+        "map_position_y": "37.5504569836394",
+        "subway_info": "지하철 경의중앙선 서강대역 1번출구, 324m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "색은 세계를 이루는 가장 공통되면서도 가장 개별적인 언어입니다. 〈Color Shake〉에서는 누구나 스프레이 캔을 흔들어 디지털 벽 위에 자신의 흔적을 남기고, 그 흔적은 다른 사람의 움직임과 만나 글자와 리듬, 표정이 되어 응답합니다. 거리의 낙서처럼 이 벽은 모두의 것이어서, 흔적은 덧대어지고 언젠가는 지워지며 다른 사람에게 자리를 내어줍니다. \"내가 여기 있었다\"는 오래된 외침이 \"우리가 함께 여기 있다\"는 울림으로 이어지는 곳, 〈Color Shake〉는 혼자서는 만들 수 없는 풍경을 함께 그리는 장소입니다."
     }
   }
 }

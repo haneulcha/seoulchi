@@ -24694,6 +24694,102 @@
         "https://booking.naver.com/booking/12/bizes/1773405",
         "https://ticket.yes24.com/Perf/61027"
       ]
+    },
+    "PF306008": {
+      "mt20id": "PF306008",
+      "prfnm": "타조소년들 [대학로]",
+      "prfpdfrom": "2026.11.26",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "보라 아트홀(구. 지구인아트홀) (보라 아트홀(구. 지구인아트홀))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF306008_261110_152433.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001250",
+      "pcseguidance": "R석 30,000원, A석 15,000원",
+      "dtguidance": "목요일 ~ 금요일(20:00), 토요일 ~ 일요일(14:00,18:00)",
+      "relateurls": [
+        "http://www.ticketlink.co.kr/product/66833"
+      ]
+    },
+    "PF305998": {
+      "mt20id": "PF305998",
+      "prfnm": "한국마임: 언제 어디서나 마임",
+      "prfpdfrom": "2026.11.17",
+      "prfpdto": "2026.11.21",
+      "fcltynm": "봄날아트홀 (구. 아리랑소극장) (1관 (지하1층) )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305998_261110_145605.gif",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC000453",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "화요일 ~ 금요일(19:00), 토요일(19:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015971"
+      ]
+    },
+    "PF305995": {
+      "mt20id": "PF305995",
+      "prfnm": "필그림스 뮤직 크리스마스 콘서트",
+      "prfpdfrom": "2026.12.09",
+      "prfpdto": "2026.12.09",
+      "fcltynm": "영산아트홀 (영산아트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305995_261110_144454.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC000384",
+      "pcseguidance": "전석 70,000원",
+      "dtguidance": "수요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016078"
+      ]
+    },
+    "PF305990": {
+      "mt20id": "PF305990",
+      "prfnm": "플레이티켓 낭독쇼케이스, 낙차 (11월)",
+      "prfpdfrom": "2026.11.21",
+      "prfpdto": "2026.11.22",
+      "fcltynm": "서울연극센터 (스튜디오(3F))",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305990_261110_143618.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC004035",
+      "pcseguidance": "전석무료",
+      "dtguidance": "토요일 ~ 일요일(15:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4775"
+      ]
+    },
+    "PF305985": {
+      "mt20id": "PF305985",
+      "prfnm": "idol wave vol.30",
+      "prfpdfrom": "2026.11.24",
+      "prfpdto": "2026.11.24",
+      "fcltynm": "감마홀 [홍대]  (감마홀 [홍대] )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305985_261110_142613.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC005063",
+      "pcseguidance": "현장판매 25,000원, 사전예약 22,000원",
+      "dtguidance": "화요일(19:00)",
+      "relateurls": [
+        "https://booking.naver.com/booking/5/bizes/1472775"
+      ]
+    },
+    "PF305981": {
+      "mt20id": "PF305981",
+      "prfnm": "숲세권 라이브, 정수민 쇼케이스: Home",
+      "prfpdfrom": "2026.11.20",
+      "prfpdto": "2026.11.20",
+      "fcltynm": "숲세권 라이브 카인드스퀘어점  (숲세권 라이브 카인드스퀘어점 )",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF305981_261110_141402.jpg",
+      "genrenm": "대중음악",
+      "openrun": false,
+      "mt10id": "FC005062",
+      "pcseguidance": "전석 66,000원",
+      "dtguidance": "금요일(20:00)",
+      "relateurls": [
+        "https://ticket.melon.com/performance/index.htm?prodId=214260"
+      ]
     }
   },
   "venues": {
@@ -27090,6 +27186,12 @@
       "lat": 37.543723,
       "lng": 126.984361,
       "fcltychartr": "기타(비공연장)"
+    },
+    "FC004035": {
+      "adres": "서울특별시 종로구 대명길 3 (명륜4가)",
+      "lat": 37.5833896,
+      "lng": 127.0013221,
+      "fcltychartr": "공공(문예회관)"
     }
   }
 }
