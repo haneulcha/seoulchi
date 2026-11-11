@@ -1,11 +1,13 @@
 import { Link, useNavigate } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
-import { ListRow } from '~/components/cards'
+import { cardText } from '~/components/card-text'
+import { ThumbnailRow } from '~/components/cards'
 import { OpenNowBadge } from '~/components/OpenNowBadge'
 import { button, Callout, Chip, ChipSelect } from '~/components/ui'
 import { FILTER_LABELS, type RelaxSuggestion, type TimelineGroup } from '~/lib/browse-filter'
 import { CHIP_GROUPS, type BrowseSearch } from '~/lib/browse-search'
 import { cardFacts } from '~/lib/card-facts'
+import { categoryColor } from '~/lib/colors'
 import { formatUpdatedAt } from '~/lib/dates'
 import type {
   CatalogEventIndexItem, CatalogIndexFile, CatalogPlaceIndexItem,
@@ -22,8 +24,10 @@ export function BrowseEventRow({
   item, today, km,
 }: { item: CatalogEventIndexItem; today: string; km?: number }) {
   return (
-    <ListRow id={item.id} image={{ src: item.imageUrl, category: item.group, shape: 'poster' }}
-      title={item.title} facts={cardFacts(item, { today, km })} />
+    <Link to="/e/$id" params={{ id: item.id }} className="block">
+      <ThumbnailRow image={{ src: item.imageUrl, fallbackColor: categoryColor(item.group) }} shape="poster"
+        {...cardText(item.title, cardFacts(item, { today, km }))} />
+    </Link>
   )
 }
 
@@ -36,20 +40,20 @@ export function BrowsePlaceRow({
   item, km, hoursUnknownNote = false,
 }: { item: CatalogPlaceIndexItem; km?: number; hoursUnknownNote?: boolean }) {
   return (
-    <ListRow
-      id={item.id}
-      image={{ src: item.imageUrl, category: item.group, shape: 'photo' }}
-      title={item.title}
-      facts={cardFacts(item, { km })}
-      badge={
-        <>
-          <OpenNowBadge hours={item.hours ?? null} />
-          {hoursUnknownNote && !item.hours && (
-            <span className="mr-100 text-body-s text-neutral-subtle">영업시간 미상</span>
-          )}
-        </>
-      }
-    />
+    <Link to="/e/$id" params={{ id: item.id }} className="block">
+      <ThumbnailRow
+        image={{ src: item.imageUrl, fallbackColor: categoryColor(item.group) }}
+        shape="photo"
+        {...cardText(item.title, cardFacts(item, { km }), (
+          <>
+            <OpenNowBadge hours={item.hours ?? null} />
+            {hoursUnknownNote && !item.hours && (
+              <span className="mr-100 text-body-s text-neutral-subtle">영업시간 미상</span>
+            )}
+          </>
+        ))}
+      />
+    </Link>
   )
 }
 

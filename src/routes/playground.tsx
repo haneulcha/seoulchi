@@ -92,7 +92,7 @@ function Playground() {
               </tr>
             </thead>
             <tbody>
-              {tokens.textScale.map((t) => (
+              {[...tokens.textScale].reverse().map((t) => (
                 <tr key={t.name} className="border-t border-neutral align-top">
                   <td className="py-150 pr-150"><code>text-{t.name}</code></td>
                   <td className="py-150 pr-150"><p style={{ fontSize: t.size, lineHeight: t.lineHeight }}>이번 주 서울</p></td>
