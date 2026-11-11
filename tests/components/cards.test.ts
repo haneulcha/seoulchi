@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 
 /** cards.tsx는 view다 — 도메인 타입·헬퍼와 라우터를 모른다. 값과 링크는 감싸는 도메인 컴포넌트가 넘긴다 */
-const imports = (source: string) => [...source.matchAll(/from '([^']+)'/g)].map((m) => m[1])
+const imports = (source: string) => [...source.matchAll(/from '([^']+)'/g)].map((m) => m[1]!)
 const domain = (spec: string) => /^~\/(lib|types|data)\/|^@tanstack\//.test(spec)
 
 describe('cards.tsx', () => {
