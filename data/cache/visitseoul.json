@@ -121818,15 +121818,38 @@
     }
   },
   "KOPzy2tqe": {
-    "updtDtText": "2026.10.27",
+    "updtDtText": "2026.11.11",
     "detail": {
       "cid": "KOPzy2tqe",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Cl8f8q1",
       "cate_depth": " 체험관광 > 기타체험",
       "multi_lang_list": "ko:KOPzy2tqe,en:ENPzy2tqe,ja:JPPzy2tqe,zh-CN:CNPzy2tqe,zh-TW:TCPzy2tqe,ru:RUPzy2tqe,ms:MLPzy2tqe",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82887&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82887&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82887&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84234&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82888&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82889&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82890&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84234&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82888&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82889&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82890&fileTy=MEDIA&fileNo=1&thumbTy=M"
@@ -121834,15 +121857,15 @@
       "post_sj": "클로버베이킹 홍대 (Clover Baking Hongdae)",
       "sumry": "한국에서 유행하는 디저트를 초보자도 쉽고 재미있게 만들어 보는 홍대 실내 체험. 친구·연인과 함께 즐기는 예약제 소규모 디저트 클래스",
       "creat_dt_text": "2026.10.12",
-      "updt_dt_text": "2026.10.27",
+      "updt_dt_text": "2026.11.11",
       "tag": [
-        "홍대 놀거리",
         "홍대 실내 체험",
         "상수",
         "서울 여행",
         "디저트 만들기",
         "베이킹",
-        "커플 체험"
+        "커플 체험",
+        "홍대 놀거리"
       ],
       "extra": {
         "cmmn_telno": "010-2491-7742 ",

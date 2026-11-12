@@ -24790,6 +24790,86 @@
       "relateurls": [
         "https://ticket.melon.com/performance/index.htm?prodId=214260"
       ]
+    },
+    "PF306164": {
+      "mt20id": "PF306164",
+      "prfnm": "꿈깨 [대학로]",
+      "prfpdfrom": "2026.11.24",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "달밤엔씨어터 (달밤엔씨어터)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF306164_261111_163353.png",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC001884",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "화요일 ~ 금요일(15:00,19:30), 토요일 ~ 일요일(15:00,19:30)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4736"
+      ]
+    },
+    "PF306160": {
+      "mt20id": "PF306160",
+      "prfnm": "화음챔버오케스트라, Sonority of Strings",
+      "prfpdfrom": "2026.11.23",
+      "prfpdto": "2026.11.23",
+      "fcltynm": "서소문성지 역사박물관 (콘솔레이션 홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF306160_261111_161338.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC002641",
+      "pcseguidance": "전석 40,000원",
+      "dtguidance": "월요일(19:30)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015054"
+      ]
+    },
+    "PF306159": {
+      "mt20id": "PF306159",
+      "prfnm": "제3회 더 사운드 스테이지 앙상블 정기연주회: The Classic",
+      "prfpdfrom": "2026.11.29",
+      "prfpdto": "2026.11.29",
+      "fcltynm": "로데아트센터 (콘서트홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF306159_261111_161141.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC003861",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "일요일(14:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26015312"
+      ]
+    },
+    "PF306156": {
+      "mt20id": "PF306156",
+      "prfnm": "제4회 정: 지페스티벌 살롱극, 생존자",
+      "prfpdfrom": "2026.12.12",
+      "prfpdto": "2026.12.13",
+      "fcltynm": "인혜야 (인혜야)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF306156_261111_160530.jpg",
+      "genrenm": "연극",
+      "openrun": false,
+      "mt10id": "FC005186",
+      "pcseguidance": "전석 20,000원",
+      "dtguidance": "토요일 ~ 일요일(17:00)",
+      "relateurls": [
+        "http://playticket.co.kr/nav/detail.html?idx=4762"
+      ]
+    },
+    "PF306153": {
+      "mt20id": "PF306153",
+      "prfnm": "이연진 피아노 독주회",
+      "prfpdfrom": "2026.12.05",
+      "prfpdto": "2026.12.05",
+      "fcltynm": "일신홀 (일신홀)",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF306153_261111_155409.gif",
+      "genrenm": "서양음악(클래식)",
+      "openrun": false,
+      "mt10id": "FC001629",
+      "pcseguidance": "전석 30,000원",
+      "dtguidance": "토요일(15:00)",
+      "relateurls": [
+        "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26016125"
+      ]
     }
   },
   "venues": {
@@ -27192,6 +27272,12 @@
       "lat": 37.5833896,
       "lng": 127.0013221,
       "fcltychartr": "공공(문예회관)"
+    },
+    "FC005186": {
+      "adres": "서울특별시 성북구 동소문로2길 31 (동소문동2가)",
+      "lat": 37.587954,
+      "lng": 127.008054,
+      "fcltychartr": "기타(비공연장)"
     }
   }
 }
