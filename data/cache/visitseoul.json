@@ -99082,25 +99082,35 @@
     }
   },
   "KOP002251": {
-    "updtDtText": "2026.09.15",
+    "updtDtText": "2026.11.12",
     "detail": {
       "cid": "KOP002251",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Ct9t6m8",
       "cate_depth": " 문화관광  > 전시시설 > 미술관/화랑",
       "multi_lang_list": "ko:KOP002251,en:ENP002251,ja:JPP002251,zh-CN:CNP002251,zh-TW:TCP002251,ru:RUP002251,ms:MLP002251",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75734&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75734&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75734&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75733&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17294&fileTy=MEDIA&fileNo=3&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17295&fileTy=MEDIA&fileNo=3&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17296&fileTy=MEDIA&fileNo=3&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17297&fileTy=MEDIA&fileNo=3&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75733&fileTy=MEDIA&fileNo=1&thumbTy=M"
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17294&fileTy=MEDIA&fileNo=4&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17295&fileTy=MEDIA&fileNo=4&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17296&fileTy=MEDIA&fileNo=4&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=17297&fileTy=MEDIA&fileNo=4&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=75733&fileTy=MEDIA&fileNo=2&thumbTy=M"
       ],
       "post_sj": "일민미술관",
       "sumry": "일민 김상만을 기념하여 1996년에 세운 미술관",
       "creat_dt_text": "2009.05.27",
-      "updt_dt_text": "2026.09.15",
+      "updt_dt_text": "2026.11.12",
       "tag": [
         "문화",
         "신문박물관",
@@ -99120,12 +99130,12 @@
         "cmmn_hmpg_url": "https://ilmin.org/",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "11:00~19:00",
-        "cmmn_important": "신문박물관\r\n일민미술관과 연결된 동아미디어센터 3, 4층에는 2000년에 개관한 신문박물관이 있습니다. 신문 역사관과 기획 전시관, 미디어 상영관으로 구성돼 있으며 신문의 과거와 현재, 미래를 확인할 수 있습니다. 주목할 만한 기획전도 자주 열립니다.",
+        "cmmn_important": "일민미술관 5, 6층에는 2000년에 개관한 신문박물관이 있습니다. 신문 역사관과 기획 전시관, 미디어 상영관으로 구성돼 있으며 신문의 과거와 현재, 미래를 확인할 수 있습니다. 주목할 만한 기획전도 자주 열립니다. ",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [],
         "business_days": "화~일",
-        "closed_days": "월요일, 추석",
-        "usage_fee": "일반 9,000\r\n학생 7,000 (만 24세 이하 학생증 소지자)"
+        "closed_days": "매주 월요일, 새해 첫날, 설날 및 추석 당일",
+        "usage_fee": "일반 9,000원\r\n학생 7,000원 (만 24세 이하 학생증 또는 청소년증 소지자)"
       },
       "traffic": {
         "zip_code": "110-050",
@@ -124558,7 +124568,7 @@
     }
   },
   "KOP45qiyz": {
-    "updtDtText": "2026.11.06",
+    "updtDtText": "2026.11.12",
     "detail": {
       "cid": "KOP45qiyz",
       "lang_code_id": "ko",
@@ -124566,6 +124576,32 @@
       "cate_depth": " 체험관광 > 웰니스관광",
       "multi_lang_list": "ko:KOP45qiyz,en:ENP45qiyz,ja:JPP45qiyz,zh-CN:CNP45qiyz,zh-TW:TCP45qiyz,ru:RUP45qiyz,ms:MLP45qiyz",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83616&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83616&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83618&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83619&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83620&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83621&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83622&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83618&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=83619&fileTy=MEDIA&fileNo=1&thumbTy=M",
@@ -124576,7 +124612,7 @@
       "post_sj": "런포트 마포 (RUNPORT Mapo)",
       "sumry": "러닝과 리커버리를 한 건물에서 경험하는 국내 최초 액티브 웰니스 빌딩",
       "creat_dt_text": "2026.11.03",
-      "updt_dt_text": "2026.11.06",
+      "updt_dt_text": "2026.11.12",
       "tag": [
         "한강",
         "러닝",
@@ -124598,7 +124634,7 @@
       ],
       "extra": {
         "cmmn_telno": "0507-1313-3624, 02-877-3624",
-        "cmmn_hmpg_url": "https://www.runport.kr",
+        "cmmn_hmpg_url": "https://service.butfit.io/lead/travel?utm_source=visitseoul&utm_medium=referral&utm_campaign=visitseoul_listing&utm_content=ko",
         "cmmn_hmpg_lang": "한국어,영어",
         "cmmn_use_time": "평일 06:00~24:00 (사우나 23:00까지)\r\n주말·공휴일 08:00~21:00 (사우나 20:00까지)",
         "cmmn_important": "영어 응대 가능. 외국인 전용 영문 페이지에서 온라인 사전 결제 후 방문할 수 있습니다.\r\n운동복·러닝화·사우나복을 현장에서 대여할 수 있어 준비물 없이 방문 가능합니다.\r\n한강 토정나들목 도보 1분. 한강 러닝과 사우나·아이스배스를 하루에 함께 경험할 수 있습니다\r\n루프탑 야외 아이스배스에서 한강과 서울 도심 전경을 조망할 수 있습니다.",
@@ -124788,7 +124824,7 @@
     }
   },
   "KOPfq5ffd": {
-    "updtDtText": "2026.11.10",
+    "updtDtText": "2026.11.12",
     "detail": {
       "cid": "KOPfq5ffd",
       "lang_code_id": "ko",
@@ -124807,7 +124843,7 @@
       "schdul_info_endde": "2026.11.21",
       "place": "명동스퀘어 일원 / 메인무대: 명동 Y광장 야외 행사장(롯데 영플라자 맞은편)",
       "creat_dt_text": "2026.11.09",
-      "updt_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.12",
       "tag": [
         "명동스퀘어",
         "미션페스타",
@@ -124842,7 +124878,7 @@
     }
   },
   "KOPk8e0mk": {
-    "updtDtText": "2026.11.10",
+    "updtDtText": "2026.11.12",
     "detail": {
       "cid": "KOPk8e0mk",
       "lang_code_id": "ko",
@@ -124863,13 +124899,13 @@
       "schdul_info_endde": "2027.02.09",
       "place": "서울 중구 을지로 281, DDP 마켓 지하 2층 B the B UPTOWN",
       "creat_dt_text": "2026.11.09",
-      "updt_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.12",
       "tag": [
-        "DDP",
         "동대문역사문화공원역",
         "서울전시",
         "서울볼거리",
-        "서울여행"
+        "서울여행",
+        "DDP"
       ],
       "extra": {
         "cmmn_telno": "02-2153-0770",
@@ -124879,9 +124915,9 @@
         "cmmn_important": "전시 안내 도슨트 운영, 외국어 해설 가능(영어, 중국어)",
         "trrsrt_use_chrge": "F",
         "disabled_facility": [
+          "장애인화장실",
           "장애인 전용 주차장",
           "엘리베이터",
-          "장애인화장실",
           "장애인 안내(휠체어 대여 및 기타)"
         ],
         "business_days": "매일"
@@ -124902,7 +124938,7 @@
     }
   },
   "KOP8u9lo4": {
-    "updtDtText": "2026.11.10",
+    "updtDtText": "2026.11.12",
     "detail": {
       "cid": "KOP8u9lo4",
       "lang_code_id": "ko",
@@ -124910,6 +124946,16 @@
       "cate_depth": " 문화관광  > 전시시설",
       "multi_lang_list": "ko:KOP8u9lo4,en:ENP8u9lo4",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84000&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84000&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84001&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84001&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
@@ -124919,7 +124965,7 @@
       "schdul_info_endde": "2026.11.15",
       "place": "레이어11 (서울 마포구 광성로 41-11)",
       "creat_dt_text": "2026.11.06",
-      "updt_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.12",
       "tag": [
         "레벨나인",
         "거리",
@@ -124948,6 +124994,63 @@
         "safe_mng": "ul"
       },
       "post_desc": "색은 세계를 이루는 가장 공통되면서도 가장 개별적인 언어입니다. 〈Color Shake〉에서는 누구나 스프레이 캔을 흔들어 디지털 벽 위에 자신의 흔적을 남기고, 그 흔적은 다른 사람의 움직임과 만나 글자와 리듬, 표정이 되어 응답합니다. 거리의 낙서처럼 이 벽은 모두의 것이어서, 흔적은 덧대어지고 언젠가는 지워지며 다른 사람에게 자리를 내어줍니다. \"내가 여기 있었다\"는 오래된 외침이 \"우리가 함께 여기 있다\"는 울림으로 이어지는 곳, 〈Color Shake〉는 혼자서는 만들 수 없는 풍경을 함께 그리는 장소입니다."
+    }
+  },
+  "KOPqjti55": {
+    "updtDtText": "2026.11.12",
+    "detail": {
+      "cid": "KOPqjti55",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPqjti55",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84231&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84231&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84233&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84233&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "대한민국 성탄축제",
+      "sumry": "서울광장 대형 성탄트리 점등식으로 시작해 정동길 거리축제로 이어지는 도심 성탄 축제",
+      "schdul_info_bgnde": "2026.11.16",
+      "schdul_info_endde": "2026.12.31",
+      "place": "서울광장, 덕수궁·정동길 일대",
+      "creat_dt_text": "2026.11.11",
+      "updt_dt_text": "2026.11.12",
+      "tag": [
+        "대한민국성탄축제",
+        "성탄트리",
+        "서울광장",
+        "크리스마스트리",
+        "점등식",
+        "정동길",
+        "덕수궁",
+        "크리스마스"
+      ],
+      "extra": {
+        "cmmn_hmpg_url": "https://festival.seoul.go.kr/festival/main/festivalView.do?festacode=377",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),중국어(번체)",
+        "cmmn_important": "성탄트리는 해가 진 뒤 불이 켜졌을 때 가장 아름다우니 저녁 시간에 서울광장을 찾아보세요. 덕수궁 돌담길과 정동길을 따라 걸으면 거리축제까지 함께 즐길 수 있습니다.",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 중구 태평로1가 31",
+        "new_zip_code": "04524",
+        "new_adres": "서울 중구 세종대로 110 (태평로1가, 서울특별시청)",
+        "map_position_x": "126.977918351844",
+        "map_position_y": "37.566370776634",
+        "subway_info": "지하철 1호선/2호선 시청역 5번출구, 89m"
+      },
+      "post_desc": "대한민국 성탄축제는 음악과 공연, 빛 연출을 엮은 도심형 겨울 문화축제입니다. 종교와 세대, 국적에 관계없이 시민과 관광객 누구나 성탄 시즌을 함께 즐길 수 있도록 기획됐으며, CTS기독교TV가 2002년부터 서울광장에 대형 성탄트리를 세워 불을 밝혀 왔습니다. 축제는 서울광장(서울시 중구 세종대로 110)의 대형 성탄트리 점등식으로 막을 엽니다. 점등 퍼포먼스와 성탄 기념 음악회가 함께 열리고, 불을 밝힌 트리는 연말연시 서울시청 앞 풍경을 화사하게 채웁니다. 지난해에는 높이 20m의 트리를 희망과 용기를 뜻하는 해당화로 장식했습니다. 이어 덕수궁과 정동길 일대에서 성탄거리축제가 펼쳐집니다. 개막 퍼포먼스와 축하 공연을 비롯해 거리를 빛으로 꾸민 일루미네이션 스트리트, 시민 참여 체험 부스, 캐럴·합창·대중음악을 들려주는 라이브 스테이지가 마련될 예정입니다."
     }
   }
 }
