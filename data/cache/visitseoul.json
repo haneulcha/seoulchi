@@ -99992,25 +99992,25 @@
     }
   },
   "KOP001707": {
-    "updtDtText": "2026.09.12",
+    "updtDtText": "2026.11.13",
     "detail": {
       "cid": "KOP001707",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Ct9t6m8",
       "cate_depth": " 문화관광  > 전시시설 > 미술관/화랑",
       "multi_lang_list": "ko:KOP001707,en:ENP001707,ja:JPP001707,zh-CN:CNP001707,zh-TW:TCP001707,ru:RUP001707,ms:MLP001707",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=1708&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84270&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "relate_img": [
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=22661&fileTy=MEDIA&fileNo=2&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=22662&fileTy=MEDIA&fileNo=2&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=22663&fileTy=MEDIA&fileNo=2&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74752&fileTy=MEDIA&fileNo=1&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74753&fileTy=MEDIA&fileNo=1&thumbTy=M"
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=22661&fileTy=MEDIA&fileNo=3&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=22662&fileTy=MEDIA&fileNo=3&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=22663&fileTy=MEDIA&fileNo=3&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74752&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74753&fileTy=MEDIA&fileNo=2&thumbTy=M"
       ],
       "post_sj": "국립현대미술관 덕수궁관",
       "sumry": "국립현대미술관 덕수궁관은 1998년 덕수궁 내 분관으로 개관",
       "creat_dt_text": "2009.05.20",
-      "updt_dt_text": "2026.09.12",
+      "updt_dt_text": "2026.11.13",
       "tag": [
         "현대미술",
         "예술",
@@ -120326,7 +120326,7 @@
     }
   },
   "KOP31i5bz": {
-    "updtDtText": "2026.10.02",
+    "updtDtText": "2026.11.13",
     "detail": {
       "cid": "KOP31i5bz",
       "lang_code_id": "ko",
@@ -120342,17 +120342,15 @@
       "sumry": "경상북도 칠곡군",
       "schdul_info_bgnde": "2026.10.15",
       "schdul_info_endde": "2026.10.18",
-      "place": "경북 칠곡군 석적읍 중지리 552",
+      "place": "경상북도 칠곡군",
       "creat_dt_text": "2026.10.02",
-      "updt_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.11.13",
       "tag": [
-        "제13회 칠곡낙동강평화축제. 칠곡"
+        "경상북도 칠곡군"
       ],
       "extra": {
-        "cmmn_srvc_24h_at": "N",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": [],
-        "stroller_rent": "N"
+        "disabled_facility": []
       },
       "traffic": {
         "adres": "경북 칠곡군 석적읍 중지리 산 49-6",
@@ -120361,11 +120359,11 @@
         "map_position_x": "128.401094270123",
         "map_position_y": "36.0109821837613"
       },
-      "post_desc": "칠곡낙동강평화축제는 한국전쟁 당시 최후의 방어선이었던 낙동강 전투의 역사적 의미를 기리고 , 호국 정신을 되새기기 위한 축제다 . 2026 년 열세번째로 개최하는 축제에서는 평화를 주제로 즐길 수 있는 공연 , 참여 체험 , 먹거리 프로그램을 마련했다 . 또한 ' 소년 , 소년병이 되다 ' 라는 슬로건 아래 어린 소년병들의 존재를 알리고 그들의 넋을 기리기 위한 프로그램을 함께 기획하여 축제의 역사적 , 평화적 메시지를 더욱 강화하였다 . 행사명 제13회 칠곡낙동강평화축제 기간 2026. 10. 15.( 목 ).~ 10. 18.( 일 ) 장소 칠곡보 생태공원 , 경북 칠곡군 석적읍 중지리 552 홈페이지 https://cnpf.kr/ SNS https://www.instagram.com/nakdongriver_peacefestival"
+      "post_desc": "칠곡낙동강평화축제는 한국전쟁 당시 최후의 방어선이었던 낙동강 전투의 역사적 의미를 기리고 , 호국 정신을 되새기기 위한 축제다 . 2026 년 열세번째로 개최하는 축제에서는 평화를 주제로 즐길 수 있는 공연 , 참여 체험 , 먹거리 프로그램을 마련했다 . 또한 ' 소년 , 소년병이 되다 ' 라는 슬로건 아래 어린 소년병들의 존재를 알리고 그들의 넋을 기리기 위한 프로그램을 함께 기획하여 축제의 역사적 , 평화적 메시지를 더욱 강화하였다 . 행사명 제 13회 칠곡낙동강평화축제 기간 2026. 10. 15.( 목 ).~ 10. 18.( 일 ) 장소 칠곡보 생태공원 , 경북 칠곡군 석적읍 중지리 552 홈페이지 https://cnpf.kr/ SNS https://www.instagram.com/nakdongriver_peacefestival"
     }
   },
   "KOPo2bt3b": {
-    "updtDtText": "2026.10.02",
+    "updtDtText": "2026.11.13",
     "detail": {
       "cid": "KOPo2bt3b",
       "lang_code_id": "ko",
@@ -120377,21 +120375,18 @@
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82838&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
       "post_sj": "청도세계코미디아트페스티벌",
-      "sumry": "경상북도 청도군",
+      "sumry": "청도세계코미디아트페스티벌, 청도군",
       "schdul_info_bgnde": "2026.10.16",
       "schdul_info_endde": "2026.10.18",
-      "place": "청도야외공연장 일원, 경북 청도군 화양읍 청려로 1846",
+      "place": "경상북도 청도군 ",
       "creat_dt_text": "2026.10.02",
-      "updt_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.11.13",
       "tag": [
-        "청도세계코미디아트페스티벌",
-        " 청도군"
+        "경상북도 청도군"
       ],
       "extra": {
-        "cmmn_srvc_24h_at": "N",
         "trrsrt_use_chrge": "N",
-        "disabled_facility": [],
-        "stroller_rent": "N"
+        "disabled_facility": []
       },
       "traffic": {
         "adres": "경북 청도군 화양읍 동천리 457",
@@ -125051,6 +125046,964 @@
         "subway_info": "지하철 1호선/2호선 시청역 5번출구, 89m"
       },
       "post_desc": "대한민국 성탄축제는 음악과 공연, 빛 연출을 엮은 도심형 겨울 문화축제입니다. 종교와 세대, 국적에 관계없이 시민과 관광객 누구나 성탄 시즌을 함께 즐길 수 있도록 기획됐으며, CTS기독교TV가 2002년부터 서울광장에 대형 성탄트리를 세워 불을 밝혀 왔습니다. 축제는 서울광장(서울시 중구 세종대로 110)의 대형 성탄트리 점등식으로 막을 엽니다. 점등 퍼포먼스와 성탄 기념 음악회가 함께 열리고, 불을 밝힌 트리는 연말연시 서울시청 앞 풍경을 화사하게 채웁니다. 지난해에는 높이 20m의 트리를 희망과 용기를 뜻하는 해당화로 장식했습니다. 이어 덕수궁과 정동길 일대에서 성탄거리축제가 펼쳐집니다. 개막 퍼포먼스와 축하 공연을 비롯해 거리를 빛으로 꾸민 일루미네이션 스트리트, 시민 참여 체험 부스, 캐럴·합창·대중음악을 들려주는 라이브 스테이지가 마련될 예정입니다."
+    }
+  },
+  "KOPv35ft5": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPv35ft5",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPv35ft5",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84266&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84266&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84269&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84268&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84267&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84269&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84268&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84267&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "포천펫스타",
+      "sumry": "포천펫스타",
+      "schdul_info_bgnde": "2026.11.29",
+      "schdul_info_endde": "2026.11.29",
+      "place": "경기도 포천시 ",
+      "creat_dt_text": "2026.11.13",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "Pocheon Petsta"
+      ],
+      "extra": {
+        "cmmn_srvc_24h_at": "N",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "stroller_rent": "N"
+      },
+      "traffic": {
+        "adres": "경기 포천시 신북면 기지리 282",
+        "new_zip_code": "11139",
+        "new_adres": "경기 포천시 신북면 아트밸리로 234 (기지리)",
+        "map_position_x": "127.236500949033",
+        "map_position_y": "37.9234466506997"
+      },
+      "post_desc": "반려동물과 시민이 함께 만드는 포천 반려문화 축제 행사명 포천펫스타 기간 2026.11.29 장소 반려동물과 시민이 함께 만드는 포천 반려문화 축제 홈페이지 2026 포천 펫스타 in 아트밸리"
+    }
+  },
+  "KOPu3cvzv": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPu3cvzv",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPu3cvzv",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84261&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84262&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84263&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84264&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84265&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "경기‧양주‧지작사 드론봇 페스티벌",
+      "sumry": "경기‧양주‧지작사 드론봇 페스티벌\r\n",
+      "schdul_info_bgnde": "2026.10.30",
+      "schdul_info_endde": "2026.11.01",
+      "place": "경기도 양주시",
+      "creat_dt_text": "2026.11.13",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "Gyeonggi Yangju Ground Operations Command Dronebot Festival"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "경기 양주시 광적면 석우리 235-1",
+        "new_zip_code": "11414",
+        "new_adres": "경기 양주시 광적면 삼일로247번가길 52 (석우리)",
+        "map_position_x": "126.982469763467",
+        "map_position_y": "37.840149011932"
+      },
+      "post_desc": "민·관·군이 함께하는 첨단 드론봇 축제 행사명 경기‧양주‧지작사 드론봇 페스티벌 기간 2026.10.30 ~ 2026.11.01 장소 경기도 양주시 광적면 삼일로 52 가납리비행장 홈페이지 축제 개요 | 양주시 드론봇인재교육센터"
+    }
+  },
+  "KOPu13qqk": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPu13qqk",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPu13qqk",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84257&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84260&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84259&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84258&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "단풍나무숲길 힐링축제",
+      "sumry": "단풍나무숲길 힐링축제",
+      "schdul_info_bgnde": "2026.10.15",
+      "schdul_info_endde": "2026.11.15",
+      "place": "충청남도 천안시",
+      "creat_dt_text": "2026.11.13",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "Maple Forest Trail Healing Festival"
+      ],
+      "extra": {
+        "cmmn_srvc_24h_at": "N",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "stroller_rent": "N"
+      },
+      "traffic": {
+        "adres": "충남 천안시 동남구 목천읍 남화리 230-1",
+        "new_zip_code": "31232",
+        "new_adres": "충남 천안시 동남구 목천읍 독립기념관로 1 (남화리, 독립기념관)",
+        "map_position_x": "127.230398111736",
+        "map_position_y": "36.7818719998049"
+      },
+      "post_desc": "별 헤는 밤 행사명 단풍나무숲길 힐링축제 기간 2026.10.15 ~ 2026.11.15 장소 충청남도 천안시 동남구 목천읍 독립기념관로 1 독립기념관 단풍나무숲길, 겨레의집 홈페이지 기념관소식 > 자세히 보기 | 소식 | 독립기념관 SNS Instagram"
+    }
+  },
+  "KOPegyzt7": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPegyzt7",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPegyzt7",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84252&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84252&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84253&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84254&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84255&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84256&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84253&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84254&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84255&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84256&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "평창송어축제",
+      "sumry": "평창송어축제",
+      "schdul_info_bgnde": "2027.01.01",
+      "schdul_info_endde": "2027.01.31",
+      "place": "강원특별자치도 평창군 ",
+      "creat_dt_text": "2026.11.13",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "Pyeongchang Trout Festival"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "강원특별자치도 평창군 진부면 하진부리 325",
+        "new_zip_code": "25332",
+        "new_adres": "강원특별자치도 평창군 진부면 경강로 3562 (하진부리)",
+        "map_position_x": "128.557040465139",
+        "map_position_y": "37.6332210105299"
+      },
+      "post_desc": "다시 겨울, 더 특별한 추억 평창송어축제에서 만드세요 행사명 평창송어축제 기간 2027.01.01 ~ 2027.01.31 장소 강원특별자치도 평창군 진부면 경강로 3562 홈페이지 평창 송어 축제 SNS 평창 송어 축제"
+    }
+  },
+  "KOPlxssge": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPlxssge",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPlxssge",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84247&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84248&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84249&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84250&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84251&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "철원 한탄강 얼음트레킹 축제 ",
+      "sumry": "철원 한탄강 얼음트레킹 축제\r\n",
+      "schdul_info_bgnde": "2027.01.16",
+      "schdul_info_endde": "2027.02.14",
+      "place": "강원특별자치도 철원군 ",
+      "creat_dt_text": "2026.11.13",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "Cheorwon Hantangang River Ice Trekking Festival"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "10,000원"
+      },
+      "traffic": {
+        "adres": "강원특별자치도 철원군 동송읍 장흥리 725",
+        "new_zip_code": "24023",
+        "map_position_x": "127.276734773747",
+        "map_position_y": "38.2008091373045"
+      },
+      "post_desc": "수려한 철원 한탄강의 설경을 배경으로 하는 철원군 대표 겨울축제 행사명 철원 한탄강 얼음트레킹 축제 기간 2027.01.16 ~ 2027.02.14 장소 강원특별자치도 철원군 동송읍 장흥리 725 철원 한탄강 물윗길트레킹 코스 일원 홈페이지 제14회 철원 한탄강 얼음트레킹 축제 > 축제개요 | 철원문화재단 SNS Instagram"
+    }
+  },
+  "KOP9wqedv": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOP9wqedv",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP9wqedv",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84242&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84246&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84245&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84244&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84243&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "순창 KOREA 떡볶이 페스타",
+      "sumry": "순창 KOREA 떡볶이 페스타",
+      "schdul_info_bgnde": "2026.11.21",
+      "schdul_info_endde": "2026.11.22",
+      "place": "전북특별자치도 순창군",
+      "creat_dt_text": "2026.11.13",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "KOREA"
+      ],
+      "extra": {
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "전북특별자치도 순창군 순창읍 백산리 1001",
+        "new_zip_code": "56048",
+        "new_adres": "전북특별자치도 순창군 순창읍 장류로 55 (백산리)",
+        "map_position_x": "127.111096553696",
+        "map_position_y": "35.367826751254"
+      },
+      "post_desc": "근본부터 다르다! 발효의 고장 순창에서 만나는 특별한 떡볶이! 행사명 순창 KOREA 떡볶이 페스타 기간 2026.11.21 ~ 2026.11.22 장소 전북특별자치도 순창군 순창읍 장류로 55 순창발효테마파크 및 전통고추장민속마을 일원 홈페이지 순창코리아떡볶이페스타 SNS Instagram"
+    }
+  },
+  "KOP77po3t": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOP77po3t",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP77po3t,en:ENP77po3t,ja:JPP77po3t,zh-CN:CNP77po3t,zh-TW:TCP77po3t,ru:RUP77po3t",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84129&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84130&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "인사도시유적전시관 기획전시 《다시 모은 조각들, 인사동의 시간》",
+      "sumry": "서울 도심에서 발견된 도시유적의 역사적 가치를 조명하고, 인사동 유적에서 출토된 유물을 통해 조선시대부터 근대까지의 생활상을 보여주는 전시\r\n",
+      "schdul_info_bgnde": "2026.11.17",
+      "schdul_info_endde": "2027.03.28",
+      "place": "인사도시유적전시관 기획전시실",
+      "creat_dt_text": "2026.11.11",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "인사동",
+        "전시",
+        "도시유적",
+        "인사도시유적전시관",
+        "서울역사",
+        "서울 유적",
+        "유적"
+      ],
+      "extra": {
+        "cmmn_telno": "02-724-9710",
+        "cmmn_hmpg_url": "https://museum.seoul.go.kr/www/board/NR_boardView.do?bbsCd=1002&seq=20261106093257087&q_exhSttus=next&sso=ok#",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
+        "cmmn_use_time": "09:00 ~ 18:00 (입장마감 : 17:30)",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "closed_days": "1월 1일, 월요일"
+      },
+      "traffic": {
+        "adres": "서울 종로구 인사동 280",
+        "new_zip_code": "03164",
+        "new_adres": "서울 종로구 종로11길 18 (인사동)",
+        "map_position_x": "126.986588465797",
+        "map_position_y": "37.5708155200405",
+        "subway_info": "지하철 1호선 종각역 3번출구, 280m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "2020~2021년 대규모환경정비사업 과정 중 발견된 인사동 유적은 조선시대 도시구조와 과학문화를 품은 도시유적입니다. 이곳에서는 조선시대부터 근대까지 종로 뒷골목에서 살았던 사람들의 생활상을 보여주는 유물이 출토되었습니다. 일상의 그릇부터 생활용품까지 당시의 생활상을 보여주는 유물을 살펴보며, 인사동의 시간을 되새기고 오늘날 우리의 도시가 어떤 시간으로 남겨질지 생각해보는 시간이 되길 바랍니다."
+    }
+  },
+  "KOPzwnqt7": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPzwnqt7",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPzwnqt7,en:ENPzwnqt7,ja:JPPzwnqt7,zh-CN:CNPzwnqt7,zh-TW:TCPzwnqt7,ru:RUPzwnqt7",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84132&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84132&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84133&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84133&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "천류선무-하늘의 예, 궁중의 미",
+      "sumry": "옛 왕실에서 추어졌던 궁중무용 중 신선의 이야기를 담은 당악정재에 주목한 공연",
+      "schdul_info_bgnde": "2026.11.25",
+      "schdul_info_endde": "2026.11.25",
+      "place": "서울남산국악당",
+      "creat_dt_text": "2026.11.11",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "한국무용",
+        "전통예술",
+        "전통무용",
+        "무용",
+        "공연",
+        "전통공연"
+      ],
+      "extra": {
+        "cmmn_telno": "010-2059-3872",
+        "cmmn_hmpg_url": "https://sgtt.kr/program/detail/7391",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "19:30 (1시간 10분)\r\n",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "usage_fee": "전석 30,000원 / 단체할인 등 문의"
+      },
+      "traffic": {
+        "adres": "서울 중구 필동2가 84-1",
+        "new_zip_code": "04626",
+        "new_adres": "서울 중구 퇴계로34길 28 (필동2가, 남산골한옥마을) 서울남산국악당",
+        "map_position_x": "126.994738735334",
+        "map_position_y": "37.5595422700067",
+        "subway_info": "지하철 3호선/4호선 충무로역 3/4번출구, 350m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "《천류선무》는 옛 왕실에서 추어졌던 궁중무용 중 신선의 이야기를 담은 당악정재에 주목한 공연입니다. 궁중무용에 담긴 수많은 이야기 가운데 왜 신선이 등장하고 신선은 인간에게 무엇을 전하려 했을까? 라는 질문에서 출발한 공연입니다. 하늘의 존재가 인간 세상에 내려와 축복을 전하고 다시 하늘로 돌아가는 이야기를 하나의 공연으로 엮어 한국 궁중무용이 지닌 상상력과 아름다움을 새롭게 보여주고자 합니다. 이번 공연에서는 조선시대 궁중에서 전해져 온 세 가지 당악정재인 헌선도, 오양선, 연화대를 중심으로 이야기를 펼쳐냅니다. 신선이 복숭아를 바치며 장수를 기원하는 춤과 다섯 신선이 등장해 축복을 전하는 춤 그리고 연꽃 속에서 아름다운 춤이 펼쳐지는 장면까지 신비로운 이야기가 무대 위에 펼쳐집니다."
+    }
+  },
+  "KOPqrrqzc": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPqrrqzc",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cy6j7j7",
+      "cate_depth": " 문화관광  > 전시시설 > 기타전시시설",
+      "multi_lang_list": "ko:KOPqrrqzc,en:ENPqrrqzc,ja:JPPqrrqzc,zh-CN:CNPqrrqzc,zh-TW:TCPqrrqzc,ru:RUPqrrqzc,ms:MLPqrrqzc",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84037&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84038&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84039&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84040&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84041&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84042&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "배봉산 미디어파사드",
+      "sumry": "채석장이었던 배봉산 숲속폭포 절벽을 스크린 삼아 빛의 이야기를 펼치는 서울 첫 상설 미디어파사드",
+      "creat_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "배봉산미디어파사드",
+        "배봉산",
+        "숲속폭포",
+        "미디어파사드",
+        "미디어아트",
+        "동대문구가볼만한곳",
+        "야경명소",
+        "무료관람"
+      ],
+      "extra": {
+        "cmmn_use_time": "토·일 19:00 - 20:30 (3회, 회당 30분)",
+        "cmmn_important": "상영 시간은 계절과 일몰 시각에 따라 바뀌고 날씨에 따라 조정될 수 있으니 방문 전 동대문구 소식을 확인하세요. 5~9월에는 오후 1시부터 5시까지 숲속폭포가 가동돼 낮에도 시원한 물줄기를 볼 수 있습니다.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "business_days": "토~일",
+        "closed_days": "매주 월~금요일"
+      },
+      "traffic": {
+        "adres": "서울 동대문구 전농동 산 32-20",
+        "new_zip_code": "02508",
+        "new_adres": "서울 동대문구 전농로16길 97  배봉산 열린광장",
+        "map_position_x": "127.06273508839",
+        "map_position_y": "37.578443110427",
+        "subway_info": "지하철 1호선 청량리역 하차 후 버스 환승, 전농동SK아파트 정류장에서 도보 5분"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "배봉산 미디어파사드는 배봉산 열린광장 숲속폭포 절벽 전체를 스크린 삼아 미디어아트를 상영하는 야외 영상 공간입니다. 2025년 11월 서울에서 처음으로 연중 상설 운영하는 미디어파사드로 문을 열었습니다. 폭 41m, 최대 높이 19m에 이르는 숲속폭포 암벽에 프로젝션 맵핑과 레이저 연출을 더하고, 3D 스캔 기술로 바위의 질감과 입체감을 살렸습니다. 물소리와 바람 소리를 담은 사운드 디자인이 어우러져 몰입감을 높입니다. 대표 작품은 채석장이었던 배봉산의 기억을 빛과 생명의 이야기로 풀어낸 「돌의 숨, 숨의 빛」과 바위틈에 피는 야생화의 강인함을 색채로 표현한 「야생화, 피어나다」입니다. 2026년 봄에는 은하수처럼 빛나는 폭포와 반딧불이, 숲속 동물들이 등장하는 「루미니아」가 더해졌습니다. 맞은편 배봉산숲속도서관과 둘레길을 함께 둘러보는 저녁 산책 코스로도 좋습니다."
+    }
+  },
+  "KOPu56s31": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPu56s31",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cy6j7j7",
+      "cate_depth": " 문화관광  > 전시시설 > 기타전시시설",
+      "multi_lang_list": "ko:KOPu56s31,en:ENPu56s31,ja:JPPu56s31,zh-CN:CNPu56s31,zh-TW:TCPu56s31,ru:RUPu56s31,ms:MLPu56s31",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84064&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84064&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84065&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84066&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84067&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84068&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84069&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84065&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84066&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84067&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84068&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84069&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "송파의 명물, 더 스피어",
+      "sumry": "석촌호수 서호에 자리한 지름 7m 구형 LED 미디어아트 조형물",
+      "creat_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "더스피어",
+        "석촌호수",
+        "송파구가볼만한곳",
+        "미디어아트",
+        "잠실데이트",
+        "야경명소",
+        "송파나루공원",
+        "포토스팟"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2147-2150",
+        "cmmn_hmpg_url": "https://www.songpa.go.kr/culture/detailInfo.do?resrceCd=TR0147-1063031&sc1=TR0147&rcpp=6&key=3822",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "07:30 - 22:00 / 3~11월 09:00 - 22:00, 12~2월 09:00 - 21:00",
+        "cmmn_important": "키오스크에서 AI 캐리커처나 나만의 메시지를 만들면 지름 7m 화면에 직접 띄워 볼 수 있어요. 어두워진 뒤 석촌호수 야경과 함께 감상하는 것을 추천합니다.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "business_days": "매일"
+      },
+      "traffic": {
+        "adres": "서울 송파구 잠실동 47",
+        "new_zip_code": "05608",
+        "new_adres": "서울 송파구 송파나루길 256 (잠실동, 문화실험공간호수)",
+        "map_position_x": "127.101106591308",
+        "map_position_y": "37.5102854620616",
+        "subway_info": "지하철 8호선/9호선 석촌역 8번출구, 450m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "더 스피어(The Sphere)는 송파구가 2025년 석촌호수 서호에 조성한 지름 7m의 구형 미디어아트 조형물입니다. 특수 곡면형 LED 패널 3,096개를 이어 붙여 만들었으며, 송파대로 걷고 싶은 가로정원의 시작점에 놓여 석촌호수의 새로운 랜드마크가 되었습니다. 둥근 화면에서는 명화 시리즈, 자개로 표현한 한국의 미, 태양계, 석촌호수의 사계 등 27종의 미디어아트가 번갈아 상영되고, 가정의 달·추석·크리스마스처럼 시기에 맞춘 특별 영상도 선보입니다. 주변 키오스크에서는 관람객이 직접 참여하는 콘텐츠를 즐길 수 있습니다. 사진을 찍어 수채화·동양화·애니메이션 풍의 AI 캐리커처로 바꾸거나 단어 조각을 조합해 나만의 메시지를 만들면 더 스피어 화면에 띄워지고, 휴대전화로 내려받을 수도 있습니다. 밤의 호수와 어우러진 빛의 구가 석촌호수 산책에 특별함을 더합니다."
+    }
+  },
+  "KOPsk589r": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPsk589r",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Co0g3x0",
+      "cate_depth": " 문화관광  > 레저스포츠시설",
+      "multi_lang_list": "ko:KOPsk589r,en:ENPsk589r,ja:JPPsk589r,zh-CN:CNPsk589r,zh-TW:TCPsk589r,ru:RUPsk589r,ms:MLPsk589r",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84070&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84071&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84072&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84073&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84074&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "장충체육관",
+      "sumry": "1963년 문을 연 국내 최초의 실내체육관이자 프로배구·공연이 열리는 복합 문화체육공간",
+      "creat_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "실내체육관",
+        "프로배구",
+        "V리그",
+        "우리카드",
+        "GS칼텍스",
+        "서울미래유산",
+        "콘서트",
+        "동대입구역",
+        "장충체육관"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2128-2800",
+        "cmmn_hmpg_url": "https://www.sisul.or.kr/open_content/jangchung/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_important": "지하철 3호선 동대입구역 5번출구가 체육관과 바로 연결되니 대중교통을 이용하세요. 행사 기간에는 일반 차량 주차가 되지 않습니다.",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [
+          "장애인 전용 주차장"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 중구 장충동2가 200-102",
+        "new_zip_code": "04605",
+        "new_adres": "서울 중구 동호로 241 (장충동2가, 장충체육관)",
+        "map_position_x": "127.006680342407",
+        "map_position_y": "37.558638768464",
+        "subway_info": "지하철 3호선 동대입구역 5번출구, 2m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "장충체육관은 1963년 문을 연 우리나라 최초의 실내체육관입니다. 1955년 노천 육군체육관으로 시작해 서울시가 인수한 뒤 돔 지붕을 갖춘 실내 경기장으로 다시 지어졌으며, 지금은 서울시설공단이 운영합니다. 반세기 넘는 동안 한국 스포츠의 굵직한 장면이 이곳에서 펼쳐졌습니다. 김기수 선수가 한국 최초의 프로복싱 세계챔피언에 올랐고, 김일의 프로레슬링 경기와 제1회 천하장사 씨름대회, 1988년 서울올림픽 유도 경기가 열려 서울미래유산으로도 선정됐습니다. 2015년 옛 돔 지붕의 모습을 살린 리모델링을 마치고 재개장했으며, 현재는 프로배구 V리그 남자부 우리카드와 여자부 GS칼텍스의 홈 경기장으로 쓰여 배구 시즌이면 응원 열기로 가득합니다. 콘서트와 팬미팅, 격투기 대회 등 다양한 공연과 행사도 연중 열립니다."
+    }
+  },
+  "KOPmylity": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPmylity",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cy6j7j7",
+      "cate_depth": " 문화관광  > 전시시설 > 기타전시시설",
+      "multi_lang_list": "ko:KOPmylity,en:ENPmylity,ja:JPPmylity,zh-CN:CNPmylity,zh-TW:TCPmylity,ru:RUPmylity,ms:MLPmylity",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84059&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84060&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84061&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84062&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84063&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "서울로 미디어캔버스",
+      "sumry": "서울로7017 만리동광장 건물 외벽을 밤마다 미디어아트로 물들이는 대형 야외 스크린",
+      "creat_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "서울로미디어캔버스",
+        "미디어아트",
+        "서울로7017",
+        "만리동광장",
+        "서울역",
+        "야경",
+        "미디어파사드",
+        "야외전시"
+      ],
+      "extra": {
+        "cmmn_telno": "서울시 도시경관담당관 02-2133-1937",
+        "cmmn_hmpg_url": "https://news.seoul.go.kr/culture/archives/tag/서울로미디어캔버스",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "18:00 - 23:00",
+        "cmmn_important": "작품은 해가 진 뒤 저녁 6시부터 상영되니 서울로7017 야경 산책과 함께 들러 보세요. 전시는 계절마다 바뀌므로 서울시 누리집에서 현재 상영작을 미리 확인하면 좋습니다.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "business_days": "매일"
+      },
+      "traffic": {
+        "adres": "서울 중구 만리동1가 38",
+        "new_zip_code": "04508",
+        "new_adres": "서울 중구 만리재로 215 (만리동1가, 우리은행)",
+        "map_position_x": "126.968148438254",
+        "map_position_y": "37.5566331857979",
+        "subway_info": "지하철 1호선/4호선/공항철도/경의중앙선 서울역 15번출구, 388m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "서울로미디어캔버스는 서울로7017과 만리동광장 사이, 우리은행 중림동금융센터 외벽 상부에 설치된 대형 미디어 스크린입니다. 2017년 서울시가 문을 연 뒤 매일 밤 미디어아트 작품을 상영하는 야외 전시 플랫폼으로 자리 잡았습니다. 투명 LED 유리 스크린이 건물 외벽 전체를 하나의 캔버스로 바꿉니다. 광고 영상을 내보내는 미디어파사드와 달리 전문 작가의 작품과 공모로 뽑힌 신진 예술가·시민의 영상을 소개하는 공공 전시 공간이라는 점이 특징입니다. 웹툰·일러스트 기획전, 대학 협력전, 신진예술가 지원전 등 전시가 계절마다 바뀌어 찾을 때마다 새로운 작품을 만날 수 있습니다. 만리동광장이나 서울로7017 위에서 편하게 감상할 수 있어 서울역 일대 야경 산책 코스로 함께 즐기기 좋습니다."
+    }
+  },
+  "KOP4mdfio": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOP4mdfio",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cr0q2v2",
+      "cate_depth": " 문화관광  > 전시시설 > 박물관",
+      "multi_lang_list": "ko:KOP4mdfio,en:ENP4mdfio,ja:JPP4mdfio,zh-CN:CNP4mdfio,zh-TW:TCP4mdfio,ru:RUP4mdfio,ms:MLP4mdfio",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84015&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84015&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84016&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84017&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84018&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84019&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84020&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84016&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84017&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84018&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84019&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84020&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "G밸리산업박물관",
+      "sumry": "구로공단에서 G밸리까지 이어진 서울 산업의 역사를 담은 국내 첫 산업박물관",
+      "creat_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "구로공단",
+        "구로디지털단지",
+        "산업박물관",
+        "무료전시",
+        "서울시립박물관",
+        "아이와가볼만한곳",
+        "구로가볼만한곳",
+        "G밸리산업박물관"
+      ],
+      "extra": {
+        "cmmn_telno": "02-6734-6900",
+        "cmmn_hmpg_url": "https://www.seoul.go.kr/museumg/index.do",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "10:00 - 18:00 (입장 마감 17:30)",
+        "cmmn_important": "2027년 1월 23일까지 기획전 '타자기, 글씨쓰는 긔계'가 열리고 있으니 상설전과 함께 둘러보세요. 일요일에도 휴관하니 방문 요일을 꼭 확인하세요.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "business_days": "화~토",
+        "closed_days": "매주 일요일·월요일, 1월 1일, 설날·추석 당일 (휴관일이 공휴일이면 개관 후 다음 날 휴관)",
+        "stroller_rent": "Y"
+      },
+      "traffic": {
+        "adres": "서울 구로구 구로동 832",
+        "new_zip_code": "08393",
+        "new_adres": "서울 구로구 디지털로26길 38 (구로동, G-Tower) 3층",
+        "map_position_x": "126.895318461208",
+        "map_position_y": "37.4798477003537",
+        "subway_info": "지하철 2호선 구로디지털단지역 2번출구, 845m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "G밸리산업박물관은 1964년 조성된 한국수출산업공단, 이른바 구로공단의 역사를 기록하는 서울시립 박물관입니다. 옛 구로정수장 부지에 들어선 G타워에 자리한 서울 서남권 첫 공공박물관으로, 2021년 문을 열었습니다. 상설전시 ‘구로공단에서 G밸리로’는 공단 계획과 완성, 첨단 산업단지로 바뀐 오늘까지 구로 일대의 변화를 단계별로 보여 줍니다. 인형과 가발, 봉제 기구부터 전화기, 텔레비전, 카메라, 컴퓨터까지 수출 산업을 이끈 제품을 직접 볼 수 있습니다. 영상실에서는 지방에서 올라온 노동자들의 삶을 다룬 ‘가리봉동 133번지’를 상영하고, 미디어 라이브러리에서는 산업유산을 3D로 살펴보는 ‘G밸리 디지털 수장고’와 구술 기록 ‘G밸리 익스플로러’를 만날 수 있습니다. 부모 세대에게는 추억을, 아이들에게는 한국 산업의 역사를 전하는 곳입니다."
+    }
+  },
+  "KOPd5s54q": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPd5s54q",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cf1y9k1",
+      "cate_depth": " 체험관광 > 웰니스관광",
+      "multi_lang_list": "ko:KOPd5s54q,en:ENPd5s54q,ja:JPPd5s54q,zh-CN:CNPd5s54q,zh-TW:TCPd5s54q,ru:RUPd5s54q,ms:MLPd5s54q",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84106&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84106&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84107&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84108&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84109&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84110&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84111&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84107&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84108&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84109&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84110&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84111&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "까사델아구아 (CASA DEL AGUA – Retreat Space & Tea House)",
+      "sumry": "스페인어로 '물의 집'. 요가·명상·티 클래스로 도시의 속도를 잠시 내려놓아 볼 수 있는 한남동 FEZH 맨 위층의 작은 리트릿 공간",
+      "creat_dt_text": "2026.11.11",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "서울명상",
+        "한남동요가",
+        "티클래스",
+        "웰니스여행",
+        "리트릿",
+        "FEZH"
+      ],
+      "extra": {
+        "cmmn_telno": "02-6956-5547",
+        "cmmn_hmpg_url": "https://www.instagram.com/casadelagua.fezh/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "11:00~18:00 (클래스 일정에 따라 다름)",
+        "cmmn_important": "클래스 후 티 타임 / 야외 테라스",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [],
+        "business_days": "수~일요일",
+        "closed_days": "월·화요일",
+        "usage_fee": "30,000원~"
+      },
+      "traffic": {
+        "adres": "서울 용산구 한남동 657-133",
+        "new_zip_code": "04400",
+        "new_adres": "서울 용산구 대사관로11길 41 (한남동), FEZH 4층",
+        "map_position_x": "127.001660152517",
+        "map_position_y": "37.5356006737155",
+        "subway_info": "지하철 6호선 한강진역 3번출구, 615m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "까사델아구아는 한남동 복합문화공간 FEZH 꼭대기 층에 자리한 리트릿 공간입니다. 요가와 명상 클래스로 몸과 호흡을 정돈하고, 클래스가 끝나면 차 한 잔으로 마무리합니다. 날씨가 좋은 날에는 야외 테라스에서 쉬어 갈 수 있습니다. 원하는 클래스를 골라 예약하는 방식이라, 바쁜 서울 여행 일정 속에 짧고 고요한 한 시간을 끼워 넣기 좋습니다. 같은 건물의 카페 '미나앤폴', 재즈바 '블루캣'과 함께 오전 요가와 차, 오후 커피, 저녁 재즈로 이어지는 한남동 하루 코스를 만들어 보세요."
+    }
+  },
+  "KOPxjv1zw": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPxjv1zw",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cb9c5i3",
+      "cate_depth": " 역사관광 > 역사유적지 > 고분/능",
+      "multi_lang_list": "ko:KOPxjv1zw,en:ENPxjv1zw,ja:JPPxjv1zw,zh-CN:CNPxjv1zw,zh-TW:TCPxjv1zw,ru:RUPxjv1zw,ms:MLPxjv1zw",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84054&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84054&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84055&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84056&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84057&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84058&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84055&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84056&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84057&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84058&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "서울 석촌동 고분군",
+      "sumry": "근초고왕릉으로 추정되는 거대한 돌무지무덤이 남아 있는 한성백제 왕실 무덤군",
+      "creat_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "석촌동고분군",
+        "한성백제",
+        "백제고분",
+        "돌무지무덤",
+        "적석총",
+        "근초고왕",
+        "사적",
+        "송파가볼만한곳",
+        "석촌고분역"
+      ],
+      "extra": {
+        "cmmn_telno": "송파구청 문화유산과 02-2147-2001, 02-2147-2608",
+        "cmmn_hmpg_url": "https://www.songpa.go.kr/culture/contents.do?key=3851",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
+        "cmmn_use_time": "상시 개방",
+        "cmmn_important": "가장 큰 3호분은 계단식으로 쌓은 기단이 잘 드러나 있으니 가까이에서 꼭 살펴보세요. 한성백제의 역사를 더 알고 싶다면 송파구 올림픽공원 안 한성백제박물관과 함께 둘러보는 것도 좋습니다.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "business_days": "매일"
+      },
+      "traffic": {
+        "adres": "서울 송파구 석촌동 248",
+        "new_zip_code": "05682",
+        "new_adres": "서울 송파구 가락로7길 21 (석촌동, 백제초기적석총)",
+        "map_position_x": "127.102814053912",
+        "map_position_y": "37.5021416078618",
+        "subway_info": "지하철 9호선 석촌고분역 3번출구, 531m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "서울 석촌동 고분군은 백제가 한성(지금의 서울)에 도읍했던 시기에 조성된 왕과 귀족의 무덤군으로, 1975년 국가 사적으로 지정됐습니다. 일제강점기만 해도 석촌동과 가락동 일대에 300여 기의 무덤이 있었으나 도시 개발로 지금은 일부만 남아 있습니다. 발굴조사에서 대형 돌무지무덤 7기와 널무덤, 독무덤 등 30여 기의 무덤이 확인됐습니다. 돌을 계단처럼 쌓아 올린 돌무지무덤은 고구려 무덤과 같은 양식이어서 백제 지배층과 고구려의 관계를 보여 주는 유적으로 꼽힙니다. 가장 큰 3호분은 너비 50.8m의 기단식 돌무지무덤으로, 백제 전성기를 이끈 근초고왕의 무덤으로 추정됩니다. 고분 주변은 잔디밭과 산책로가 어우러진 공원으로 가꿔져 있어 도심에서 1,600여 년 전 백제 왕실의 흔적을 가까이 만날 수 있습니다."
+    }
+  },
+  "KOPzqpv74": {
+    "updtDtText": "2026.11.13",
+    "detail": {
+      "cid": "KOPzqpv74",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cp3b3j9",
+      "cate_depth": " 자연관광 > 자연공원",
+      "multi_lang_list": "ko:KOPzqpv74,en:ENPzqpv74,ja:JPPzqpv74,zh-CN:CNPzqpv74,zh-TW:TCPzqpv74,ru:RUPzqpv74,ms:MLPzqpv74",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84027&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84027&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84028&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84029&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84030&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84031&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84028&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84029&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84030&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84031&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "난지거울분수",
+      "sumry": "분수를 멈추면 하늘을 비추는 거울 연못이 되는 난지한강공원의 대형 바닥분수",
+      "creat_dt_text": "2026.11.10",
+      "updt_dt_text": "2026.11.13",
+      "tag": [
+        "난지한강공원",
+        "한강분수",
+        "바닥분수",
+        "거울연못",
+        "음악분수",
+        "난지거울분수",
+        "상암동",
+        "여름나들이"
+      ],
+      "extra": {
+        "cmmn_telno": "미래한강본부 기반시설과 02-3780-0628",
+        "cmmn_hmpg_url": "https://hangang.seoul.go.kr/www/contents/857.do?mid=850",
+        "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체),중국어(번체)",
+        "cmmn_use_time": "5·6·9·10월 12:00, 17:00, 18:00, 19:00, 20:00 / 7·8월 12:00 - 21:00 매 정각 (매회 20분)",
+        "cmmn_important": "분수는 매 정각에 20분씩 가동하니 시간을 맞춰 방문하세요. 비가 오거나 바람이 초속 5m 이상으로 강하게 불면 가동이 중지됩니다.",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "business_days": "5월~10월 화~일",
+        "closed_days": "매주 월요일, 11월~4월"
+      },
+      "traffic": {
+        "adres": "서울 마포구 상암동 487-116",
+        "new_zip_code": "03900",
+        "new_adres": "서울 마포구 한강난지로 162 (상암동, 한강공원 난지안내센터)",
+        "map_position_x": "126.885422860585",
+        "map_position_y": "37.5628372373648",
+        "subway_info": "지하철 6호선 마포구청역 7번출구, 1,300m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "난지 거울분수는 난지한강공원 평화의 공원 연결브릿지 앞에 자리한 지름 60m, 면적 1만 2,300㎡ 규모의 원형 바닥분수입니다. 이름에 ‘거울’이 붙은 이유는 분수를 멈춘 시간에 있습니다. 바닥에 3㎝ 깊이로 물을 채워 두면 하늘과 주변 풍경이 수면에 고스란히 비쳐 거대한 거울 연못이 됩니다. 고요한 거울 연못과 역동적인 분수가 번갈아 펼쳐지는 것이 이곳만의 매력입니다. 분수가 가동되면 1,100여 개의 노즐과 수중 조명이 어우러져 최고 30m 높이까지 솟는 물줄기가 10가지가 넘는 연출을 선보입니다. 영화 OST와 팝, 가요에 맞춰 물줄기가 춤추듯 움직이고, 해가 진 뒤에는 조명이 더해져 한층 화려해집니다. 노을공원·하늘공원의 억새와 월드컵경기장을 함께 둘러보는 가족 나들이 코스로도 좋습니다."
     }
   }
 }

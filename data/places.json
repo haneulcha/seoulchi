@@ -1239,6 +1239,168 @@
       }
     },
     {
+      "id": "vs-KOPqrrqzc",
+      "source": "visit-seoul",
+      "title": "배봉산 미디어파사드",
+      "summary": "채석장이었던 배봉산 숲속폭포 절벽을 스크린 삼아 빛의 이야기를 펼치는 서울 첫 상설 미디어파사드",
+      "category": "기타전시시설",
+      "place": "배봉산 미디어파사드",
+      "address": "서울 동대문구 전농로16길 97  배봉산 열린광장",
+      "lat": 37.578443110427,
+      "lng": 127.06273508839,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84037&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "isFree": true,
+      "subwayInfo": "지하철 1호선 청량리역 하차 후 버스 환승, 전농동SK아파트 정류장에서 도보 5분",
+      "tags": [
+        "배봉산미디어파사드",
+        "배봉산",
+        "숲속폭포",
+        "미디어파사드",
+        "미디어아트",
+        "동대문구가볼만한곳",
+        "야경명소",
+        "무료관람"
+      ],
+      "kind": "place",
+      "useTime": "토·일 19:00 - 20:30 (3회, 회당 30분)",
+      "closedDays": "매주 월~금요일",
+      "hours": {
+        "open": "19:00",
+        "close": "20:30",
+        "closedWeekdays": [
+          5
+        ]
+      }
+    },
+    {
+      "id": "vs-KOPu56s31",
+      "source": "visit-seoul",
+      "title": "송파의 명물, 더 스피어",
+      "summary": "석촌호수 서호에 자리한 지름 7m 구형 LED 미디어아트 조형물",
+      "category": "기타전시시설",
+      "place": "송파의 명물, 더 스피어",
+      "address": "서울 송파구 송파나루길 256 (잠실동, 문화실험공간호수)",
+      "lat": 37.5102854620616,
+      "lng": 127.101106591308,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84064&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.songpa.go.kr/culture/detailInfo.do?resrceCd=TR0147-1063031&sc1=TR0147&rcpp=6&key=3822",
+      "isFree": true,
+      "subwayInfo": "지하철 8호선/9호선 석촌역 8번출구, 450m",
+      "tags": [
+        "더스피어",
+        "석촌호수",
+        "송파구가볼만한곳",
+        "미디어아트",
+        "잠실데이트",
+        "야경명소",
+        "송파나루공원",
+        "포토스팟"
+      ],
+      "kind": "place",
+      "useTime": "07:30 - 22:00 / 3~11월 09:00 - 22:00, 12~2월 09:00 - 21:00",
+      "hours": {
+        "open": "07:30",
+        "close": "22:00",
+        "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOPsk589r",
+      "source": "visit-seoul",
+      "title": "장충체육관",
+      "summary": "1963년 문을 연 국내 최초의 실내체육관이자 프로배구·공연이 열리는 복합 문화체육공간",
+      "category": "레저스포츠시설",
+      "place": "장충체육관",
+      "address": "서울 중구 동호로 241 (장충동2가, 장충체육관)",
+      "lat": 37.558638768464,
+      "lng": 127.006680342407,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84070&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.sisul.or.kr/open_content/jangchung/",
+      "isFree": false,
+      "subwayInfo": "지하철 3호선 동대입구역 5번출구, 2m",
+      "tags": [
+        "실내체육관",
+        "프로배구",
+        "V리그",
+        "우리카드",
+        "GS칼텍스",
+        "서울미래유산",
+        "콘서트",
+        "동대입구역",
+        "장충체육관"
+      ],
+      "kind": "place",
+      "hours": null
+    },
+    {
+      "id": "vs-KOPmylity",
+      "source": "visit-seoul",
+      "title": "서울로 미디어캔버스",
+      "summary": "서울로7017 만리동광장 건물 외벽을 밤마다 미디어아트로 물들이는 대형 야외 스크린",
+      "category": "기타전시시설",
+      "place": "서울로 미디어캔버스",
+      "address": "서울 중구 만리재로 215 (만리동1가, 우리은행)",
+      "lat": 37.5566331857979,
+      "lng": 126.968148438254,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84059&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://news.seoul.go.kr/culture/archives/tag/서울로미디어캔버스",
+      "isFree": true,
+      "subwayInfo": "지하철 1호선/4호선/공항철도/경의중앙선 서울역 15번출구, 388m",
+      "tags": [
+        "서울로미디어캔버스",
+        "미디어아트",
+        "서울로7017",
+        "만리동광장",
+        "서울역",
+        "야경",
+        "미디어파사드",
+        "야외전시"
+      ],
+      "kind": "place",
+      "useTime": "18:00 - 23:00",
+      "hours": {
+        "open": "18:00",
+        "close": "23:00",
+        "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOP4mdfio",
+      "source": "visit-seoul",
+      "title": "G밸리산업박물관",
+      "summary": "구로공단에서 G밸리까지 이어진 서울 산업의 역사를 담은 국내 첫 산업박물관",
+      "category": "박물관",
+      "place": "G밸리산업박물관",
+      "address": "서울 구로구 디지털로26길 38 (구로동, G-Tower) 3층",
+      "lat": 37.4798477003537,
+      "lng": 126.895318461208,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84015&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.seoul.go.kr/museumg/index.do",
+      "isFree": true,
+      "subwayInfo": "지하철 2호선 구로디지털단지역 2번출구, 845m",
+      "tags": [
+        "구로공단",
+        "구로디지털단지",
+        "산업박물관",
+        "무료전시",
+        "서울시립박물관",
+        "아이와가볼만한곳",
+        "구로가볼만한곳",
+        "G밸리산업박물관"
+      ],
+      "kind": "place",
+      "useTime": "10:00 - 18:00 (입장 마감 17:30)",
+      "closedDays": "매주 일요일·월요일, 1월 1일, 설날·추석 당일 (휴관일이 공휴일이면 개관 후 다음 날 휴관)",
+      "hours": {
+        "open": "10:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          0,
+          1
+        ]
+      }
+    },
+    {
       "id": "vs-KOP485v7h",
       "source": "visit-seoul",
       "title": "서울시립 서서울미술관",
@@ -13641,7 +13803,7 @@
       "address": "서울특별시 중구 세종대로 99 (정동)",
       "lat": 37.56578581241752,
       "lng": 126.97508072543988,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=POST&parentSn=1708&fileTy=POSTTHUMB&fileNo=2&thumbTy=M&postTy=P",
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84270&fileTy=MEDIA&fileNo=1&thumbTy=M",
       "linkUrl": "http://www.mmca.go.kr/",
       "isFree": false,
       "subwayInfo": "지하철 1호선 시청역 1번 출구,  72m",
@@ -14835,6 +14997,39 @@
         "closedWeekdays": [
           0,
           6
+        ]
+      }
+    },
+    {
+      "id": "vs-KOPd5s54q",
+      "source": "visit-seoul",
+      "title": "까사델아구아 (CASA DEL AGUA – Retreat Space & Tea House)",
+      "summary": "스페인어로 '물의 집'. 요가·명상·티 클래스로 도시의 속도를 잠시 내려놓아 볼 수 있는 한남동 FEZH 맨 위층의 작은 리트릿 공간",
+      "category": "웰니스관광",
+      "place": "까사델아구아 (CASA DEL AGUA – Retreat Space & Tea House)",
+      "address": "서울 용산구 대사관로11길 41 (한남동), FEZH 4층",
+      "lat": 37.5356006737155,
+      "lng": 127.001660152517,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84106&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.instagram.com/casadelagua.fezh/",
+      "isFree": false,
+      "subwayInfo": "지하철 6호선 한강진역 3번출구, 615m",
+      "tags": [
+        "서울명상",
+        "한남동요가",
+        "티클래스",
+        "웰니스여행",
+        "리트릿",
+        "FEZH"
+      ],
+      "kind": "place",
+      "useTime": "11:00~18:00 (클래스 일정에 따라 다름)",
+      "closedDays": "월·화요일",
+      "hours": {
+        "open": "11:00",
+        "close": "18:00",
+        "closedWeekdays": [
+          2
         ]
       }
     },
@@ -19335,6 +19530,39 @@
       "hours": null
     },
     {
+      "id": "vs-KOPxjv1zw",
+      "source": "visit-seoul",
+      "title": "서울 석촌동 고분군",
+      "summary": "근초고왕릉으로 추정되는 거대한 돌무지무덤이 남아 있는 한성백제 왕실 무덤군",
+      "category": "고분/능",
+      "place": "서울 석촌동 고분군",
+      "address": "서울 송파구 가락로7길 21 (석촌동, 백제초기적석총)",
+      "lat": 37.5021416078618,
+      "lng": 127.102814053912,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84054&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.songpa.go.kr/culture/contents.do?key=3851",
+      "isFree": true,
+      "subwayInfo": "지하철 9호선 석촌고분역 3번출구, 531m",
+      "tags": [
+        "석촌동고분군",
+        "한성백제",
+        "백제고분",
+        "돌무지무덤",
+        "적석총",
+        "근초고왕",
+        "사적",
+        "송파가볼만한곳",
+        "석촌고분역"
+      ],
+      "kind": "place",
+      "useTime": "상시 개방",
+      "hours": {
+        "open": "00:00",
+        "close": "24:00",
+        "closedWeekdays": []
+      }
+    },
+    {
       "id": "vs-KOP9rb5w8",
       "source": "visit-seoul",
       "title": "후암동 108계단",
@@ -22198,6 +22426,41 @@
         "open": "09:00",
         "close": "18:00",
         "closedWeekdays": []
+      }
+    },
+    {
+      "id": "vs-KOPzqpv74",
+      "source": "visit-seoul",
+      "title": "난지거울분수",
+      "summary": "분수를 멈추면 하늘을 비추는 거울 연못이 되는 난지한강공원의 대형 바닥분수",
+      "category": "자연공원",
+      "place": "난지거울분수",
+      "address": "서울 마포구 한강난지로 162 (상암동, 한강공원 난지안내센터)",
+      "lat": 37.5628372373648,
+      "lng": 126.885422860585,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84027&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://hangang.seoul.go.kr/www/contents/857.do?mid=850",
+      "isFree": true,
+      "subwayInfo": "지하철 6호선 마포구청역 7번출구, 1,300m",
+      "tags": [
+        "난지한강공원",
+        "한강분수",
+        "바닥분수",
+        "거울연못",
+        "음악분수",
+        "난지거울분수",
+        "상암동",
+        "여름나들이"
+      ],
+      "kind": "place",
+      "useTime": "5·6·9·10월 12:00, 17:00, 18:00, 19:00, 20:00 / 7·8월 12:00 - 21:00 매 정각 (매회 20분)",
+      "closedDays": "매주 월요일, 11월~4월",
+      "hours": {
+        "open": "12:00",
+        "close": "21:00",
+        "closedWeekdays": [
+          1
+        ]
       }
     },
     {
