@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-15T00:32:48.404Z",
+  "updatedAt": "2026-11-16T00:34:22.196Z",
   "sourceCounts": {
-    "seoul-culture": 19744,
+    "seoul-culture": 19743,
     "visit-seoul": 2341,
-    "kopis": 1135
+    "kopis": 1029
   },
-  "weekKey": "2026-W46",
+  "weekKey": "2026-W47",
   "counts": {
-    "events": 478,
+    "events": 652,
     "places": 761
   },
   "anomalies": 3,
@@ -15,7 +15,7 @@
     "독주/독창회"
   ],
   "kopis": {
-    "listed": 1135,
+    "listed": 1029,
     "fetched": 0,
     "missing": 0,
     "blocked": true
