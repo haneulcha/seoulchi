@@ -10651,7 +10651,7 @@
       "address": "서울 종로구 삼청로 30 (소격동)",
       "lat": 37.57862929003526,
       "lng": 126.98008890019835,
-      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78006&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78006&fileTy=MEDIA&fileNo=2&thumbTy=M",
       "linkUrl": "https://www.mmca.go.kr/",
       "isFree": false,
       "subwayInfo": "지하철 3호선 안국역 1번 출구,  764m",
@@ -10668,18 +10668,13 @@
         "문화의거리"
       ],
       "kind": "place",
-      "useTime": "월요일, 화요일, 목요일, 금요일, 일요일 : 10:00 ~ 18:00\r\n수요일, 토요일 : 10:00 ~ 21:00 (18:00 ~ 21:00 야간개장)\r\n* 발권시간 : 관람종료 1시간 전까지 가능",
+      "useTime": "월, 화, 목, 금, 일요일 10:00-18:00\r\n수, 토요일 10:00-21:00",
       "closedDays": "1월1일, 설날, 추석",
       "hours": {
         "open": "10:00",
         "close": "18:00",
         "closedWeekdays": [
           0,
-          1,
-          2,
-          3,
-          4,
-          5,
           6
         ]
       }
@@ -13808,7 +13803,6 @@
       "isFree": false,
       "subwayInfo": "지하철 1호선 시청역 1번 출구,  72m",
       "tags": [
-        "현대미술",
         "예술",
         " 덕수궁돌담길",
         " 미술관",
@@ -13819,22 +13813,19 @@
         " 전시",
         "대한문",
         " 덕수궁미술관",
+        "현대미술",
         " 덕수궁관",
         " 관광지"
       ],
       "kind": "place",
-      "useTime": "월요일, 화요일, 목요일, 금요일, 일요일 10:00~18:00 \r\n수요일, 토요일 야간개장 10:00~21:00",
-      "closedDays": "1월1일, 설날, 추석",
+      "useTime": "화, 목, 금, 일요일 10:00-18:00\r\n수, 토요일 10:00-21:00",
+      "closedDays": "매주 월요일, 1월1일, 설날, 추석",
       "hours": {
         "open": "10:00",
         "close": "18:00",
         "closedWeekdays": [
           0,
           1,
-          2,
-          3,
-          4,
-          5,
           6
         ]
       }

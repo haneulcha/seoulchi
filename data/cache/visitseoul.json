@@ -94531,25 +94531,43 @@
     }
   },
   "KOP011658": {
-    "updtDtText": "2026.09.18",
+    "updtDtText": "2026.11.17",
     "detail": {
       "cid": "KOP011658",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Ct9t6m8",
       "cate_depth": " 문화관광  > 전시시설 > 미술관/화랑",
       "multi_lang_list": "ko:KOP011658,en:ENP011658,ja:JPP011658,zh-CN:CNP011658,zh-TW:TCP011658,ru:RUP011658,ms:MLP011658",
-      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78006&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78006&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78006&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78002&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78004&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78005&fileTy=MEDIA&fileNo=3&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78002&fileTy=MEDIA&fileNo=1&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78004&fileTy=MEDIA&fileNo=1&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=12794&fileTy=MEDIA&fileNo=2&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=12795&fileTy=MEDIA&fileNo=2&thumbTy=M",
-        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78005&fileTy=MEDIA&fileNo=2&thumbTy=M"
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78002&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78004&fileTy=MEDIA&fileNo=2&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=12794&fileTy=MEDIA&fileNo=3&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=12795&fileTy=MEDIA&fileNo=3&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78005&fileTy=MEDIA&fileNo=3&thumbTy=M"
       ],
       "post_sj": "국립현대미술관 서울관",
       "sumry": "민현준 건축가에 의해 설계되어 '문화의 거리' 삼청로에 2013년 11월 개관.",
       "creat_dt_text": "2014.06.13",
-      "updt_dt_text": "2026.09.18",
+      "updt_dt_text": "2026.11.17",
       "tag": [
         "현대미술",
         "국립현대미술관",
@@ -94566,12 +94584,12 @@
         "cmmn_telno": "02-3701-9500",
         "cmmn_hmpg_url": "https://www.mmca.go.kr/",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
-        "cmmn_use_time": "월요일, 화요일, 목요일, 금요일, 일요일 : 10:00 ~ 18:00\r\n수요일, 토요일 : 10:00 ~ 21:00 (18:00 ~ 21:00 야간개장)\r\n* 발권시간 : 관람종료 1시간 전까지 가능",
+        "cmmn_use_time": "월, 화, 목, 금, 일요일 10:00-18:00\r\n수, 토요일 10:00-21:00",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [
-          "장애인화장실",
           "접근가능",
-          "엘리베이터"
+          "엘리베이터",
+          "장애인화장실"
         ],
         "business_days": "월요일~일요일",
         "closed_days": "1월1일, 설날, 추석",
@@ -94592,7 +94610,7 @@
         "parking_fclty": "1",
         "safe_mng": "ul"
       },
-      "post_desc": "국립현대미술관 서울관은 민현준 건축가에 의해 설계되어 '문화의 거리' 삼청로에 2013년 11월 개관하였습니다. 서울관 부지는 조선시대 소격서, 종친부, 규장각, 사간원이 있던 자리로서 한국 전쟁 후에는 국군수도통합병원, 기무사 등이 위치했던 역사적 유래를 가진 정치, 문화의 중심지입니다. 국립현대미술관 서울관은 전시동 및 교육동을 비롯하여 디지털정보실, 멀티프로젝트홀, 영화관 등 다양한 시설을 갖춘 복합문화예술센터입니다. 현대미술의 흐름을 한 눈에 볼 수 있는 다채로운 전시와 영화, 공연, 교육 등을 통해 다양한 장르의 문화예술을 만날 수 있습니다. 또한 마당으로 둘러싸인 서울관은 옛 기무사 건물과 종친부가 조화를 이루고, 멀리 겸재 정선의 인왕제색도 안에 담긴 인왕산의 모습도 감상할 수 있습니다. 어렵게만 느껴졌던 동시대 현대미술을 누구나 즐길 수 있는 곳, 국립현대미술관 서울관에서 문화예술 향유의 즐거움을 느껴보세요."
+      "post_desc": "국립현대미술관 서울은 동시대 현대미술의 흐름을 한눈에 볼 수 있는 다채로운 전시와 교육, 영화, 공연을 선보입니다. 문화의 거리 삼청로에서 국립현대미술관 서울을 만나보세요."
     }
   },
   "KOP011622": {
@@ -99992,7 +100010,7 @@
     }
   },
   "KOP001707": {
-    "updtDtText": "2026.11.13",
+    "updtDtText": "2026.11.17",
     "detail": {
       "cid": "KOP001707",
       "lang_code_id": "ko",
@@ -100010,9 +100028,8 @@
       "post_sj": "국립현대미술관 덕수궁관",
       "sumry": "국립현대미술관 덕수궁관은 1998년 덕수궁 내 분관으로 개관",
       "creat_dt_text": "2009.05.20",
-      "updt_dt_text": "2026.11.13",
+      "updt_dt_text": "2026.11.17",
       "tag": [
-        "현대미술",
         "예술",
         " 덕수궁돌담길",
         " 미술관",
@@ -100023,6 +100040,7 @@
         " 전시",
         "대한문",
         " 덕수궁미술관",
+        "현대미술",
         " 덕수궁관",
         " 관광지"
       ],
@@ -100030,7 +100048,7 @@
         "cmmn_telno": "02-2022-0600",
         "cmmn_hmpg_url": "http://www.mmca.go.kr/",
         "cmmn_hmpg_lang": "한국어,영어,일어,중국어(간체)",
-        "cmmn_use_time": "월요일, 화요일, 목요일, 금요일, 일요일 10:00~18:00 \r\n수요일, 토요일 야간개장 10:00~21:00",
+        "cmmn_use_time": "화, 목, 금, 일요일 10:00-18:00\r\n수, 토요일 10:00-21:00",
         "cmmn_important": "영국식 정원과 분수대\r\n석조전의 동관과 서관으로 둘러싸인 직각의 공간 안에는 청동 분수대를 갖춘 정원이 자리합니다. 우리나라 최초의 서양식 정원으로 지금도 분수대로서의 역할을 다하고 있습니다. 정원 건너 서관의 맞은편 파고라 벤치는 분수를 감상하기에 최적의 장소입니다.",
         "trrsrt_use_chrge": "C",
         "disabled_facility": [
@@ -100040,8 +100058,8 @@
           "엘리베이터",
           "장애인 안내(휠체어 대여 및 기타)"
         ],
-        "business_days": "월요일~일요일",
-        "closed_days": " 1월1일, 설날, 추석",
+        "business_days": "화요일~일요일",
+        "closed_days": " 매주 월요일, 1월1일, 설날, 추석",
         "stroller_rent": "Y",
         "usage_fee": "관람권 : 전시별 별도\r\n*자세한 사항은 홈페이지 참조"
       },
@@ -100060,7 +100078,7 @@
         "parking_fclty": "2",
         "safe_mng": "ul"
       },
-      "post_desc": "국립현대미술관 덕수궁관은 1998년 덕수궁 내 분관으로 개관하였습니다. 인근에 세종문화회관, 정동공원, 서울시립미술관, 남대문 시장 등이 있어 여러 관광지를 함께 둘러볼 수 있습니다. 시청역 1번 출구를 이용하면 쉽게 방문할 수 있습니다. 관람료는 전시에 따라 변동됩니다."
+      "post_desc": "국립현대미술관 덕수궁은 근대미술 관련 기획전 및 소장품전, 각종 교육 프로그램과 국제 교류 등 다양한 사업을 추진하고 있습니다. 고즈넉한 고궁 속에서 만나는 근대미술을 국립현대미술관 덕수궁에서 경험하세요."
     }
   },
   "KOP001694": {
