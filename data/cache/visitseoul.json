@@ -119203,26 +119203,44 @@
     }
   },
   "KOPhsonp9": {
-    "updtDtText": "2026.09.04",
+    "updtDtText": "2026.11.18",
     "detail": {
       "cid": "KOPhsonp9",
       "lang_code_id": "ko",
       "com_ctgry_sn": "Cv7s8m5",
       "cate_depth": " 축제/공연/행사",
-      "multi_lang_list": "ko:KOPhsonp9,en:ENPhsonp9",
+      "multi_lang_list": "ko:KOPhsonp9",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82138&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82138&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82141&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82140&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82139&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82141&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82140&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82139&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
       "post_sj": "2026 제51회 정선아리랑제",
-      "sumry": "정선, 아리랑, 정선공설운동장",
+      "sumry": "강원특별자치도 정선군",
       "schdul_info_bgnde": "2026.10.01",
       "schdul_info_endde": "2026.10.04",
       "place": "정선공설운동장 일대",
       "creat_dt_text": "2026.09.04",
-      "updt_dt_text": "2026.09.04",
+      "updt_dt_text": "2026.11.18",
       "tag": [
         "정선아리랑제",
         " 정선축제",
@@ -120305,7 +120323,7 @@
     }
   },
   "KOP8quif3": {
-    "updtDtText": "2026.10.02",
+    "updtDtText": "2026.11.18",
     "detail": {
       "cid": "KOP8quif3",
       "lang_code_id": "ko",
@@ -120313,6 +120331,12 @@
       "cate_depth": " 축제/공연/행사",
       "multi_lang_list": "ko:KOP8quif3",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82703&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82703&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=82703&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
@@ -120320,9 +120344,9 @@
       "sumry": "경상북도 김천시",
       "schdul_info_bgnde": "2026.10.23",
       "schdul_info_endde": "2026.10.25",
-      "place": "직지문화공원,사명대사공원, 친환경생태공원",
+      "place": "경상북도 김천시",
       "creat_dt_text": "2026.10.02",
-      "updt_dt_text": "2026.10.02",
+      "updt_dt_text": "2026.11.18",
       "tag": [
         "2026 GIMCHEON GIMBAP FESTIVAL",
         "김천김밥축제",
@@ -126022,6 +126046,46 @@
         "safe_mng": "ul"
       },
       "post_desc": "난지 거울분수는 난지한강공원 평화의 공원 연결브릿지 앞에 자리한 지름 60m, 면적 1만 2,300㎡ 규모의 원형 바닥분수입니다. 이름에 ‘거울’이 붙은 이유는 분수를 멈춘 시간에 있습니다. 바닥에 3㎝ 깊이로 물을 채워 두면 하늘과 주변 풍경이 수면에 고스란히 비쳐 거대한 거울 연못이 됩니다. 고요한 거울 연못과 역동적인 분수가 번갈아 펼쳐지는 것이 이곳만의 매력입니다. 분수가 가동되면 1,100여 개의 노즐과 수중 조명이 어우러져 최고 30m 높이까지 솟는 물줄기가 10가지가 넘는 연출을 선보입니다. 영화 OST와 팝, 가요에 맞춰 물줄기가 춤추듯 움직이고, 해가 진 뒤에는 조명이 더해져 한층 화려해집니다. 노을공원·하늘공원의 억새와 월드컵경기장을 함께 둘러보는 가족 나들이 코스로도 좋습니다."
+    }
+  },
+  "KOP4e3wfh": {
+    "updtDtText": "2026.11.17",
+    "detail": {
+      "cid": "KOP4e3wfh",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOP4e3wfh",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84318&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84317&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84316&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84315&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "얼음나라화천 산천어축제",
+      "sumry": "얼음나라화천 산천어축제, Sancheoneo Ice Festival",
+      "schdul_info_bgnde": "2027.01.09",
+      "schdul_info_endde": "2027.01.31",
+      "place": "강원특별자치도 화천군",
+      "creat_dt_text": "2026.11.17",
+      "updt_dt_text": "2026.11.17",
+      "tag": [
+        "Sancheoneo Ice Festival"
+      ],
+      "extra": {
+        "cmmn_srvc_24h_at": "N",
+        "trrsrt_use_chrge": "N",
+        "disabled_facility": [],
+        "stroller_rent": "N"
+      },
+      "traffic": {
+        "adres": "강원특별자치도 화천군 화천읍 중리 186-5",
+        "new_zip_code": "24114",
+        "new_adres": "강원특별자치도 화천군 화천읍 산천어길 137 (중리)",
+        "map_position_x": "127.709852848785",
+        "map_position_y": "38.1124868704272"
+      },
+      "post_desc": "얼지않는 인정, 녹지않는 추억 행사명 얼음나라화천 산천어축제 기간 2027.01.09 ~ 2027.01.31 장소 강원특별자치도 화천군 화천읍 산천어길 137 홈페이지 산천어축제 SNS Instagram"
     }
   }
 }
