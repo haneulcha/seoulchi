@@ -125539,7 +125539,7 @@
     }
   },
   "KOPu56s31": {
-    "updtDtText": "2026.11.13",
+    "updtDtText": "2026.11.19",
     "detail": {
       "cid": "KOPu56s31",
       "lang_code_id": "ko",
@@ -125547,32 +125547,6 @@
       "cate_depth": " 문화관광  > 전시시설 > 기타전시시설",
       "multi_lang_list": "ko:KOPu56s31,en:ENPu56s31,ja:JPPu56s31,zh-CN:CNPu56s31,zh-TW:TCPu56s31,ru:RUPu56s31,ms:MLPu56s31",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84064&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "image_message": [
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84064&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84065&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84066&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84067&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84068&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84069&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        }
-      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84065&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84066&fileTy=MEDIA&fileNo=1&thumbTy=M",
@@ -125583,7 +125557,7 @@
       "post_sj": "송파의 명물, 더 스피어",
       "sumry": "석촌호수 서호에 자리한 지름 7m 구형 LED 미디어아트 조형물",
       "creat_dt_text": "2026.11.10",
-      "updt_dt_text": "2026.11.13",
+      "updt_dt_text": "2026.11.19",
       "tag": [
         "더스피어",
         "석촌호수",
@@ -125607,9 +125581,9 @@
       "traffic": {
         "adres": "서울 송파구 잠실동 47",
         "new_zip_code": "05608",
-        "new_adres": "서울 송파구 송파나루길 256 (잠실동, 문화실험공간호수)",
-        "map_position_x": "127.101106591308",
-        "map_position_y": "37.5102854620616",
+        "new_adres": "서울 송파구 송파나루길 256 (잠실동, 더스피어)",
+        "map_position_x": "127.103104178878",
+        "map_position_y": "37.5085044320187",
         "subway_info": "지하철 8호선/9호선 석촌역 8번출구, 450m"
       },
       "tourist": {
