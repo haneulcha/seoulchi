@@ -126061,5 +126061,376 @@
       },
       "post_desc": "얼지않는 인정, 녹지않는 추억 행사명 얼음나라화천 산천어축제 기간 2027.01.09 ~ 2027.01.31 장소 강원특별자치도 화천군 화천읍 산천어길 137 홈페이지 산천어축제 SNS Instagram"
     }
+  },
+  "KOPm1s2m9": {
+    "updtDtText": "2026.11.20",
+    "detail": {
+      "cid": "KOPm1s2m9",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cv7s8m5",
+      "cate_depth": " 축제/공연/행사",
+      "multi_lang_list": "ko:KOPm1s2m9,en:ENPm1s2m9,ja:JPPm1s2m9,zh-CN:CNPm1s2m9,zh-TW:TCPm1s2m9,ru:RUPm1s2m9",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84277&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84277&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84280&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84281&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84282&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84283&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84284&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84280&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84281&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84282&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84283&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84284&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 강남아이즈 미디어 윈터페스타",
+      "sumry": "화려한 초대형 미디어아트 퍼포먼스와 홍보대사 츄(CHUU)의 개막 축하공연을 비롯해 버스킹, 브랜드 이벤트, 사일런트 디스코 등 다채로운 프로그램을 만나볼 수 있는 2026 강남아이즈 미디어 윈터페스타",
+      "schdul_info_bgnde": "2026.12.03",
+      "schdul_info_endde": "2026.12.27",
+      "place": "삼성역 5번 출구 무역센터 디지털 미디어 일대 광장",
+      "creat_dt_text": "2026.11.18",
+      "updt_dt_text": "2026.11.20",
+      "tag": [
+        "gangnameyes",
+        "강남축제",
+        "서울겨울축제",
+        "크리스마스축제",
+        "삼성역",
+        "미디어아트",
+        "강남아이즈",
+        "윈터페스타",
+        "버스킹공연",
+        "사일런트디스코",
+        "서울가볼만한곳"
+      ],
+      "extra": {
+        "cmmn_telno": "02-552-1281",
+        "cmmn_hmpg_url": "https://gangnameyes.com/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "12:00 ~ 22:00",
+        "cmmn_important": "일일 총 14회 초대형 미디어아트 퍼포먼스\r\n총 14회차 공연 진행\r\n일일 이벤트 운영",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "접근가능"
+        ],
+        "usage_fee": "무료, 푸드트럭 이용 시 별도 비용 발생"
+      },
+      "traffic": {
+        "adres": "서울 강남구 삼성동 172-66",
+        "new_zip_code": "06181",
+        "new_adres": "서울 강남구 삼성역(무역센터) 5번출구",
+        "map_position_x": "127.063073009788",
+        "map_position_y": "37.5088619974404",
+        "subway_info": "지하철 2호선 삼성역 5번출구"
+      },
+      "post_desc": "올겨울, 삼성역 일대가 화려한 빛과 음악으로 물듭니다! 2026 강남아이즈 미디어 윈터페스타는 초대형 미디어아트 퍼포먼스와 다채로운 문화공연, 체험 이벤트가 어우러진 겨울 축제입니다. 화려한 미디어쇼부터 K-POP 공연, 사일런트 디스코, 브랜드 이벤트까지 도심 속에서 특별한 크리스마스의 낭만을 즐겨보세요! [주요 프로그램] ① 윈터페스타 개막쇼 12월 3일 오후 6시, 홍보대사 츄(CHUU)의 축하공연과 화려한 개막 세레머니, 그랜드 피날레 미디어쇼가 펼쳐집니다. • 일시: 12. 3.(목) 18:00~19:00 • 장소: 상설 무대 ② 초대형 미디어아트 퍼포먼스 축제 기간 동안 매일 14회, 초대형 미디어아트와 겨울 테마 영상이 어우러진 환상적인 미디어쇼가 진행됩니다. • 운영 시간: 1회차 12:26 / 2회차 13:26 / 3회차 14:26 / 4회차 15:26 / 5회차 16:26 / 6회차 17:26 / 7회차 17:56 8회차 18:26 / 9회차 18:56 / 10회차 19:26 / 11회차 19:56 / 12회차 20:26 / 13회차 20:56 / 14회차 21:26 ③ 브랜디데이 이벤트 매일 새로운 브랜드의 상품을 만날 수 있는 특별한 이벤트! 현장 게임 또는 SNS 인증에 참여해 이벤트 코인을 획득하고 행운의 뽑기에 도전해 보세요. • 운영 시간: 매일 14:00 이후 • SNS 인증: @gangnameyes #gangnameyes *기념품은 일일 준비 수량 소진 시까지 제공 ④ 버스킹 공연 팝페라, R&B, K-POP, 밴드, 마술 등 다양한 장르의 아티스트들이 참여하는 버스킹 공연이 총 12회 진행됩니다. • 공연 기간: 12. 4.(금) ~ 12. 27.(일) 중 지정일 • 주요 출연진: 가호, 앳하트, 이규라, 마술사, 장진호, 뉴비스, 위나 등 ⑤ 크리스마스이브 사일런트 디스코 • 12월 24일 크리스마스이브에는 무선 헤드셋으로 음악을 즐기는 특별한 사일런트 디제잉 파티가 열립니다. • 일시: 12. 24.(목) 19:00~20:00 예정 • 장소: 상설 무대 예정 • 참여 방법: 온라인 사전 예약 및 현장 접수 예정 ※ 사전 예약 관련 내용은 추후 안내되며, 운영 시간 및 참여 인원은 현장 상황에 따라 변동될 수 있습니다. ⑥ 푸드 스트리트 겨울철 생각나는 다양한 먹거리를 즐길 수 있는 푸드 스트리트도 함께 운영됩니다."
+    }
+  },
+  "KOP0tr3vu": {
+    "updtDtText": "2026.11.20",
+    "detail": {
+      "cid": "KOP0tr3vu",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP0tr3vu,en:ENP0tr3vu,ja:JPP0tr3vu,zh-CN:CNP0tr3vu,zh-TW:TCP0tr3vu,ru:RUP0tr3vu",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84304&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84305&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84306&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84307&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84308&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84309&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "권순창 2026 초대전 < /noclip >",
+      "sumry": "게임 속 벽이 여전히 보이면서도 이동을 가로막지 않는 상태처럼, 형태와 그것을 성립시키던 규칙 사이의 어긋남을 읽는 단서가 된다. 형태는 남아 있지만 그것을 설명하던 이야기는 희미해진 상태를 들여다보는 권순창 개인전",
+      "schdul_info_bgnde": "2026.11.16",
+      "schdul_info_endde": "2026.12.02",
+      "place": "갤러리제이원  GALLERY J. ONE",
+      "creat_dt_text": "2026.11.18",
+      "updt_dt_text": "2026.11.20",
+      "tag": [
+        "갤러리제이원서울",
+        "권순창개인전",
+        "삼청동전시",
+        "경복궁전시"
+      ],
+      "extra": {
+        "cmmn_telno": "02-733-0101",
+        "cmmn_hmpg_url": "https://www.galleryjone.com/",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "권순창 초대전 운영시간 안내/ 월-금: 12PM~7PM/ 토 11AM~5PM ",
+        "cmmn_important": "영어로 작품 해설 및 구매상담 가능",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 종로구 팔판동 132-1",
+        "new_zip_code": "03054",
+        "new_adres": "서울 종로구 팔판길 13 (팔판동)",
+        "map_position_x": "126.980738496133",
+        "map_position_y": "37.5825613346848",
+        "subway_info": "지하철 3호선 안국역 1번출구, 900m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "권순창의 개인전《/noclip》은 형태는 남아 있지만 그것을 설명하던 이야기는 희미해진 상태를 들여다봅니다. 작가는 종교와 신화, 역사를 다룬 고전 회화에서 사건의 내용보다 인물의 자세와 구성, 형태에 주목합니다. 수집한 이미지를 데생하고 기억 속 잔상을 따라 다시 낙서하는 동안, 원작의 이야기는 씻겨 나가고 익숙하면서도 낯선 형상들이 만들어집니다. 그는 그 빈자리를 자신의 서사로 채우지 않습니다. 이미지들은 서로 관계가 있는 듯 놓여 있지만 하나의 사건으로 이어지지 않습니다. 전시명 《/noclip》은 이러한 어긋남을 읽는 단서가 됩니다. 게임에서 noclip이 활성화되면 벽은 여전히 보이지만 이동을 가로막지 않습니다. 보이는 형태와 기능 사이에 틈이 생기듯, 작가의 화면에서도 자세와 구성의 흔적은 남아 있으나 본래의 이야기와 맺던 관계는 느슨해져 있습니다. 작가는 아무것도 없는 상태보다, 이유와 규칙이 작동하지 않는데도 무언가가 지속되는 모습에서 더 큰 공허함을 느낍니다. 《/noclip》은 그 간극을 새로운 이야기로 채우지 않은 채, 서사에서 멀어진 형상들의 불확실한 관계를 남겨둡니다. 여전히 남아 있는 것을 통해, 이미 사라진 것을 감지하는 자리입니다."
+    }
+  },
+  "KOPabe63e": {
+    "updtDtText": "2026.11.20",
+    "detail": {
+      "cid": "KOPabe63e",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPabe63e,en:ENPabe63e,ja:JPPabe63e,zh-CN:CNPabe63e,zh-TW:TCPabe63e,ru:RUPabe63e",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84301&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84301&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84302&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84302&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "도시의 경계, 중랑천",
+      "sumry": "청계천박물관 중랑천 기획전시, 조선시대부터 해방 이후까지 〈도시의 경계, 중랑천〉",
+      "schdul_info_bgnde": "2026.11.17",
+      "schdul_info_endde": "2027.03.28",
+      "place": "청계천박물관 기획전시실",
+      "creat_dt_text": "2026.11.18",
+      "updt_dt_text": "2026.11.20",
+      "tag": [
+        "중랑천",
+        "청계천박물관",
+        "서울의역사",
+        "하천의역사",
+        "도시의경계",
+        "한성부",
+        "양주군",
+        "경성",
+        "일제강점기",
+        "서울동부",
+        "지역의변천",
+        "도시공간",
+        "생활공간",
+        "서울의변화",
+        "역사전시"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2286-3410",
+        "cmmn_hmpg_url": "https://museum.seoul.go.kr/cgcm/board/NR_boardView.do?bbsCd=1002&seq=20261102161113083",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "화/수/목/금/토/일 09:00 - 18:00 *17:30 입장마감",
+        "cmmn_important": "화/수/목/금/토/일 *17:30 입장마감 합니다!",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "closed_days": "월요일, 1월 1일"
+      },
+      "traffic": {
+        "adres": "서울 성동구 마장동 527-4",
+        "new_zip_code": "04704",
+        "new_adres": "서울 성동구 청계천로 530 (마장동, 청계천박물관)",
+        "map_position_x": "127.03504316401",
+        "map_position_y": "37.5712661734969",
+        "subway_info": "지하철 2호선 용두역 4번출구, 475m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "청계천박물관은 2026년 하반기 기획전시 《도시의 경계, 중랑천》을 개최합니다. 중랑천은 조선시대 한성부와 경기도 양주군의 경계였으며, 일제강점기에는 경성의 교외 지역이었습니다. 해방이후 중랑천은 서울 동부 지역을 흐르는 주요 하천이자 여러 자치구 간의 경계가 되었습니다. 이번 전시에서는 청계천과 합류하는 중랑천의 하류 지역을 중심으로, 조선시대부터 해방 이후 까지 달라진 중랑천과 주변 지역의 모습을 살펴보고자 합니다. 전시를 통해 경계에서 서울 시민의 생활공간으로 변화해 온 중랑천의 역사와 의미를 생각해 볼 수 있는 시간이 되었으면 합니다."
+    }
+  },
+  "KOPlppcdd": {
+    "updtDtText": "2026.11.20",
+    "detail": {
+      "cid": "KOPlppcdd",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPlppcdd,en:ENPlppcdd,ja:JPPlppcdd,zh-CN:CNPlppcdd,zh-TW:TCPlppcdd,ru:RUPlppcdd",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84295&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84296&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84297&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84298&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84299&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "육아 가족의 성장",
+      "sumry": "광복 이후부터 오늘날까지 산업화와 도시화 등 사회적 변화에 따라 달라진 서울의 육아 문화와 돌봄 방식, 가족과 사회의 역할 변화를 살펴보는 전시",
+      "schdul_info_bgnde": "2026.11.06",
+      "schdul_info_endde": "2027.03.28",
+      "place": "서울생활사박물관 기획전시실",
+      "creat_dt_text": "2026.11.18",
+      "updt_dt_text": "2026.11.20",
+      "tag": [
+        "서울생활사박물관",
+        "육아",
+        "가족의성장",
+        "서울의역사",
+        "서울생활사",
+        "육아문화",
+        "돌봄문화",
+        "가족문화",
+        "부모와자녀",
+        "어린이",
+        "유아교육",
+        "놀이와배움",
+        "산업화",
+        "도시화",
+        "시대별생활상",
+        "생활문화",
+        "기획전시"
+      ],
+      "extra": {
+        "cmmn_telno": "02-3399-2900",
+        "cmmn_hmpg_url": "https://museum.seoul.go.kr/sulm/board/NR_boardView.do?bbsCd=1002&seq=20261104133629673",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "화/수/목/금/토/일 09:00 - 18:00 *17:30 입장마감",
+        "cmmn_important": "화/수/목/금/토/일 *17:30 입장마감 합니다!",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "closed_days": "월요일, 1월 1일"
+      },
+      "traffic": {
+        "adres": "서울 노원구 공릉동 622",
+        "new_zip_code": "01849",
+        "new_adres": "서울 노원구 동일로174길 27 (공릉동)",
+        "map_position_x": "127.076936195632",
+        "map_position_y": "37.6201739154268",
+        "subway_info": "지하철 6호선/7호선 태릉입구역 4번출구, 326m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "서울생활사박물관은 광복 이후부터 오늘날까지 서울 사람들의 육아 문화 변화를 조망하는 기획전시 <육아, 가족의 성장>을 개최합니다. 이번 전시는 산업화와 도시화, 핵가족화, 맞벌이, 저출생 등 시대적 변화 속에서 육아가 가정의 책임에서 사회적 책임으로 확대되는 과정과 육아 방식의 변화를 조명합니다. 전시는 <1부. 육아, 가족에서 사회로: 개별 돌봄에서 제도화된 돌봄으로>, <2부. 육아의 일상: 먹이고 입히고 재우는 일상 속 육아 방식의 변화>, <3부. 놀이와 배움: 놀며 배우며 자라나는 아이들>의 세 부분으로 구성하였습니다. 전시실 곳곳에서 자신의 어린 시절과 부모로서의 시간을 떠올리며 '서울에서 아이를 키운다'는 말의 어제와 오늘, 그리고 내일을 함께 생각해 보면 좋겠습니다."
+    }
+  },
+  "KOPlixex1": {
+    "updtDtText": "2026.11.20",
+    "detail": {
+      "cid": "KOPlixex1",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPlixex1,en:ENPlixex1,ja:JPPlixex1,zh-CN:CNPlixex1,zh-TW:TCPlixex1,ru:RUPlixex1",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84236&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84236&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84237&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84238&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84239&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84240&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84241&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84237&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84238&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84239&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84240&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84241&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "대부분의 아름다움: 시간을 · 견디고 · 남은 것들",
+      "sumry": " 오랜 시간 이어온 아름다움에 대한 사유를 하나의 주제로 모은 윤주동 개인전",
+      "schdul_info_bgnde": "2026.11.05",
+      "schdul_info_endde": "2026.12.12",
+      "place": "삼세영 갤러리",
+      "creat_dt_text": "2026.11.18",
+      "updt_dt_text": "2026.11.20",
+      "tag": [
+        "전시",
+        "평창동전시",
+        "설치미술",
+        "윤주동",
+        "달항아리",
+        "도자전시",
+        "삼세영",
+        "현대미술전시",
+        "문화예술"
+      ],
+      "extra": {
+        "cmmn_telno": "02-391-0333",
+        "cmmn_hmpg_url": "https://www.samseyoung.com/118",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "화~토 11:00-18:00",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "closed_days": "일•월 휴무"
+      },
+      "traffic": {
+        "adres": "서울 종로구 평창동 437-2",
+        "new_zip_code": "03003",
+        "new_adres": "서울 종로구 평창44길 2 (평창동) , 삼세영 갤러리",
+        "map_position_x": "126.978292871538",
+        "map_position_y": "37.6136318587605",
+        "subway_info": "지하철 3호선 경복궁역 3번 출구, 1711번 버스 탑승 후 평창동삼성아파트에서 하차, 삼세영 갤러리까지 약 301m (도보 8분)"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "오랜 시간을 지나 지금까지 남아 있는 것들에는 저마다의 생명력이 있습니다. 작가 윤주동은 시간의 변화와 소멸 속에서도 본연의 아름다움을 간직한 존재들에 주목하며, 흙과 도자, 조각, 회화, 사진 등 다양한 매체를 통해 아름다움의 본질을 탐구해 왔습니다. 이번 전시는 작가가 오랜 시간 이어온 아름다움에 대한 사유를 하나의 주제로 모은 자리로, 조선백자의 상징적 형상인 달항아리를 중심으로 전통의 원형을 탐구하고 이를 동시대적 조형 언어로 확장해 온 예술적 여정을 조명합니다. 작가는 문헌 연구와 전국의 광산 및 가마터 답사를 통해 백토의 산지와 특성을 연구하고, 전통 달항아리의 형태와 제작 방식을 탐구하며 자신만의 조형 세계를 구축해 왔습니다. 전통의 재현을 새로운 창작의 출발점으로 삼는 작가는 달항아리의 형태를 변주한 반달항아리와 달접시, 달그릇 등 다양한 작업을 선보입니다. 과거와 현재, 비움과 채움, 분리와 결합의 관계를 통해 전통적 형상에 새로운 감각과 의미를 더합니다. 이번 전시는 시간을 견디며 남겨진 것들의 아름다움과 그 안에 축적된 생명력을 마주하는 자리입니다. 오래되었으나 낡지 않고, 시대를 건너와 여전히 새로운 아름다움을 만들어 내는 존재들. 작가 윤주동의 시선을 통해 시간 속에 남겨진 아름다움의 의미를 되새겨 봅니다."
+    }
   }
 }
