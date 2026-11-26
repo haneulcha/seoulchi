@@ -94412,7 +94412,7 @@
     }
   },
   "KOP012709": {
-    "updtDtText": "2026.08.04",
+    "updtDtText": "2026.11.24",
     "detail": {
       "cid": "KOP012709",
       "lang_code_id": "ko",
@@ -94420,6 +94420,20 @@
       "cate_depth": " 문화관광  > 기타문화관광지",
       "multi_lang_list": "ko:KOP012709,en:ENP012709,ja:JPP012709,zh-CN:CNP012709,zh-TW:TCP012709,ru:RUP012709",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=76131&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=76131&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=76129&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=76130&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=6178&fileTy=MEDIA&fileNo=2&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=6180&fileTy=MEDIA&fileNo=2&thumbTy=M",
@@ -94430,7 +94444,7 @@
       "post_sj": "핫트랙스 영등포점",
       "sumry": "감각적인 인테리어 상품들과 문구류, 음반, 선물을 판매하는 스테이셔너리 숍",
       "creat_dt_text": "2015.02.01",
-      "updt_dt_text": "2026.08.04",
+      "updt_dt_text": "2026.11.24",
       "tag": [
         "타임스퀘어핫트랙스",
         " 문구류",
@@ -94446,7 +94460,7 @@
       ],
       "extra": {
         "cmmn_telno": "02-2678-9961",
-        "cmmn_hmpg_url": "http://www.hottracks.co.kr",
+        "cmmn_hmpg_url": "https://hottracks.kyobobook.co.kr/",
         "cmmn_hmpg_lang": "한국어",
         "cmmn_use_time": "10:30~22:00",
         "trrsrt_use_chrge": "N",
@@ -94531,7 +94545,7 @@
     }
   },
   "KOP011658": {
-    "updtDtText": "2026.11.17",
+    "updtDtText": "2026.11.24",
     "detail": {
       "cid": "KOP011658",
       "lang_code_id": "ko",
@@ -94564,10 +94578,10 @@
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=12795&fileTy=MEDIA&fileNo=3&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78005&fileTy=MEDIA&fileNo=3&thumbTy=M"
       ],
-      "post_sj": "국립현대미술관 서울관",
+      "post_sj": "국립현대미술관 서울",
       "sumry": "민현준 건축가에 의해 설계되어 '문화의 거리' 삼청로에 2013년 11월 개관.",
       "creat_dt_text": "2014.06.13",
-      "updt_dt_text": "2026.11.17",
+      "updt_dt_text": "2026.11.24",
       "tag": [
         "현대미술",
         "국립현대미술관",
@@ -100010,7 +100024,7 @@
     }
   },
   "KOP001707": {
-    "updtDtText": "2026.11.17",
+    "updtDtText": "2026.11.24",
     "detail": {
       "cid": "KOP001707",
       "lang_code_id": "ko",
@@ -100025,10 +100039,10 @@
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74752&fileTy=MEDIA&fileNo=2&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=74753&fileTy=MEDIA&fileNo=2&thumbTy=M"
       ],
-      "post_sj": "국립현대미술관 덕수궁관",
-      "sumry": "국립현대미술관 덕수궁관은 1998년 덕수궁 내 분관으로 개관",
+      "post_sj": "국립현대미술관 덕수궁",
+      "sumry": "국립현대미술관 덕수궁은 1998년 덕수궁 내 분관으로 개관",
       "creat_dt_text": "2009.05.20",
-      "updt_dt_text": "2026.11.17",
+      "updt_dt_text": "2026.11.24",
       "tag": [
         "예술",
         " 덕수궁돌담길",
@@ -100041,7 +100055,7 @@
         "대한문",
         " 덕수궁미술관",
         "현대미술",
-        " 덕수궁관",
+        " 덕수궁",
         " 관광지"
       ],
       "extra": {
@@ -103885,7 +103899,7 @@
     }
   },
   "KOPuqpj4a": {
-    "updtDtText": "2026.10.17",
+    "updtDtText": "2026.11.25",
     "detail": {
       "cid": "KOPuqpj4a",
       "lang_code_id": "ko",
@@ -103893,6 +103907,32 @@
       "cate_depth": " 체험관광",
       "multi_lang_list": "ko:KOPuqpj4a,zh-CN:CNPuqpj4a",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72140&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72140&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72141&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72142&fileTy=MEDIA&fileNo=3&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72143&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72144&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=78218&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72141&fileTy=MEDIA&fileNo=2&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=72142&fileTy=MEDIA&fileNo=3&thumbTy=M",
@@ -103903,7 +103943,7 @@
       "post_sj": "녹사평 육교",
       "sumry": "녹사평 육교는 해방촌과 남산타워의 감각적인 뷰를 담을 수 있는 곳",
       "creat_dt_text": "2025.02.21",
-      "updt_dt_text": "2026.10.17",
+      "updt_dt_text": "2026.11.25",
       "tag": [
         "이태원클라쓰",
         "드라마촬영지",
@@ -126063,7 +126103,7 @@
     }
   },
   "KOPm1s2m9": {
-    "updtDtText": "2026.11.20",
+    "updtDtText": "2026.11.24",
     "detail": {
       "cid": "KOPm1s2m9",
       "lang_code_id": "ko",
@@ -126110,7 +126150,7 @@
       "schdul_info_endde": "2026.12.27",
       "place": "삼성역 5번 출구 무역센터 디지털 미디어 일대 광장",
       "creat_dt_text": "2026.11.18",
-      "updt_dt_text": "2026.11.20",
+      "updt_dt_text": "2026.11.24",
       "tag": [
         "gangnameyes",
         "강남축제",
@@ -126148,7 +126188,7 @@
     }
   },
   "KOP0tr3vu": {
-    "updtDtText": "2026.11.20",
+    "updtDtText": "2026.11.24",
     "detail": {
       "cid": "KOP0tr3vu",
       "lang_code_id": "ko",
@@ -126156,6 +126196,32 @@
       "cate_depth": " 문화관광  > 전시시설",
       "multi_lang_list": "ko:KOP0tr3vu,en:ENP0tr3vu,ja:JPP0tr3vu,zh-CN:CNP0tr3vu,zh-TW:TCP0tr3vu,ru:RUP0tr3vu",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84304&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84304&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84305&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84306&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84307&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84308&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84309&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84305&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84306&fileTy=MEDIA&fileNo=1&thumbTy=M",
@@ -126169,7 +126235,7 @@
       "schdul_info_endde": "2026.12.02",
       "place": "갤러리제이원  GALLERY J. ONE",
       "creat_dt_text": "2026.11.18",
-      "updt_dt_text": "2026.11.20",
+      "updt_dt_text": "2026.11.24",
       "tag": [
         "갤러리제이원서울",
         "권순창개인전",
@@ -126201,7 +126267,7 @@
     }
   },
   "KOPabe63e": {
-    "updtDtText": "2026.11.20",
+    "updtDtText": "2026.11.24",
     "detail": {
       "cid": "KOPabe63e",
       "lang_code_id": "ko",
@@ -126209,16 +126275,6 @@
       "cate_depth": " 문화관광  > 전시시설",
       "multi_lang_list": "ko:KOPabe63e,en:ENPabe63e,ja:JPPabe63e,zh-CN:CNPabe63e,zh-TW:TCPabe63e,ru:RUPabe63e",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84301&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "image_message": [
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84301&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84302&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        }
-      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84302&fileTy=MEDIA&fileNo=1&thumbTy=M"
       ],
@@ -126228,13 +126284,13 @@
       "schdul_info_endde": "2027.03.28",
       "place": "청계천박물관 기획전시실",
       "creat_dt_text": "2026.11.18",
-      "updt_dt_text": "2026.11.20",
+      "updt_dt_text": "2026.11.24",
       "tag": [
         "중랑천",
         "청계천박물관",
         "서울의역사",
-        "하천의역사",
         "도시의경계",
+        "하천의역사",
         "한성부",
         "양주군",
         "경성",
@@ -126278,7 +126334,7 @@
     }
   },
   "KOPlppcdd": {
-    "updtDtText": "2026.11.20",
+    "updtDtText": "2026.11.24",
     "detail": {
       "cid": "KOPlppcdd",
       "lang_code_id": "ko",
@@ -126286,6 +126342,28 @@
       "cate_depth": " 문화관광  > 전시시설",
       "multi_lang_list": "ko:KOPlppcdd,en:ENPlppcdd,ja:JPPlppcdd,zh-CN:CNPlppcdd,zh-TW:TCPlppcdd,ru:RUPlppcdd",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84295&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84295&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84296&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84297&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84298&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84299&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84296&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84297&fileTy=MEDIA&fileNo=1&thumbTy=M",
@@ -126298,7 +126376,7 @@
       "schdul_info_endde": "2027.03.28",
       "place": "서울생활사박물관 기획전시실",
       "creat_dt_text": "2026.11.18",
-      "updt_dt_text": "2026.11.20",
+      "updt_dt_text": "2026.11.24",
       "tag": [
         "서울생활사박물관",
         "육아",
@@ -126350,7 +126428,7 @@
     }
   },
   "KOPlixex1": {
-    "updtDtText": "2026.11.20",
+    "updtDtText": "2026.11.24",
     "detail": {
       "cid": "KOPlixex1",
       "lang_code_id": "ko",
@@ -126358,32 +126436,6 @@
       "cate_depth": " 문화관광  > 전시시설",
       "multi_lang_list": "ko:KOPlixex1,en:ENPlixex1,ja:JPPlixex1,zh-CN:CNPlixex1,zh-TW:TCPlixex1,ru:RUPlixex1",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84236&fileTy=MEDIA&fileNo=1&thumbTy=M",
-      "image_message": [
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84236&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84237&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84238&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84239&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84240&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        },
-        {
-          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84241&fileTy=MEDIA&fileNo=1&thumbTy=M",
-          "message": "내 단체만 사용가능"
-        }
-      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84237&fileTy=MEDIA&fileNo=1&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84238&fileTy=MEDIA&fileNo=1&thumbTy=M",
@@ -126397,7 +126449,7 @@
       "schdul_info_endde": "2026.12.12",
       "place": "삼세영 갤러리",
       "creat_dt_text": "2026.11.18",
-      "updt_dt_text": "2026.11.20",
+      "updt_dt_text": "2026.11.24",
       "tag": [
         "전시",
         "평창동전시",
