@@ -1239,6 +1239,40 @@
       }
     },
     {
+      "id": "vs-KOPgc0sr3",
+      "source": "visit-seoul",
+      "title": "앰배서더박물관 의종관",
+      "summary": "앰배서더 호텔 창업주 가족이 살던 집을 고쳐 우리나라 최초의 민영 호텔 '금수장'부터 이어진 호텔의 역사를 보여 주는 무료 박물관",
+      "category": "박물관",
+      "place": "앰배서더박물관 의종관",
+      "address": "서울 중구 동호로25길 38-5 (장충동2가)",
+      "lat": 37.559578955008,
+      "lng": 127.001731874358,
+      "imageUrl": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84390&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "linkUrl": "https://www.ambatel.com/ko/about/museum.do",
+      "isFree": true,
+      "subwayInfo": "지하철 3호선 동대입구역 6번출구, 435m",
+      "tags": [
+        "장충동가볼만한곳",
+        "앰배서더박물관",
+        "의종관",
+        "호텔역사",
+        "금수장",
+        "무료박물관",
+        "동대입구역"
+      ],
+      "kind": "place",
+      "useTime": "10:00-17:00 (입장 마감 16:30)",
+      "closedDays": "월·토·일요일, 공휴일",
+      "hours": {
+        "open": "10:00",
+        "close": "17:00",
+        "closedWeekdays": [
+          0
+        ]
+      }
+    },
+    {
       "id": "vs-KOPqrrqzc",
       "source": "visit-seoul",
       "title": "배봉산 미디어파사드",
@@ -6267,7 +6301,6 @@
       "isFree": false,
       "subwayInfo": "지하철 3호선 안국역 1번 출구,  60m",
       "tags": [
-        "서울동행상회",
         "로컬마켓",
         "로컬푸드",
         "안전한먹거리",
@@ -6276,7 +6309,8 @@
         "선물",
         "안국",
         "농수특산물",
-        "서울"
+        "서울",
+        "서울동행상회"
       ],
       "kind": "place",
       "useTime": "10:30~19:00",

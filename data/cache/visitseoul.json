@@ -86798,7 +86798,7 @@
     }
   },
   "KOP034835": {
-    "updtDtText": "2026.07.08",
+    "updtDtText": "2026.11.26",
     "detail": {
       "cid": "KOP034835",
       "lang_code_id": "ko",
@@ -86806,6 +86806,24 @@
       "cate_depth": " 문화관광  > 기타문화관광지",
       "multi_lang_list": "ko:KOP034835,en:ENP034835,ja:JPP034835,zh-CN:CNP034835,zh-TW:TCP034835,ru:RUP034835,ms:MLP034835",
       "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77799&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77799&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77800&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77801&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77802&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
       "relate_img": [
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77800&fileTy=MEDIA&fileNo=2&thumbTy=M",
         "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=77801&fileTy=MEDIA&fileNo=2&thumbTy=M",
@@ -86814,9 +86832,8 @@
       "post_sj": "서울동행상회",
       "sumry": "농수특산물 지역과 서울의 상생을 위한 안전한 먹거리 로컬마켓",
       "creat_dt_text": "2020.08.18",
-      "updt_dt_text": "2026.07.08",
+      "updt_dt_text": "2026.11.26",
       "tag": [
-        "서울동행상회",
         "로컬마켓",
         "로컬푸드",
         "안전한먹거리",
@@ -86825,7 +86842,8 @@
         "선물",
         "안국",
         "농수특산물",
-        "서울"
+        "서울",
+        "서울동행상회"
       ],
       "extra": {
         "cmmn_telno": "02-738-1010",
@@ -86848,6 +86866,7 @@
       },
       "tourist": {
         "guidance_service": "ul",
+        "parking_fclty": "3",
         "safe_mng": "ul"
       },
       "post_desc": "2018년 11월에 문을 열었고, 지역과 서울의 상생을 목표로 하는 취지를 살려 생산자에게는 낮은 수수료를 적용하고 소비자에게는 안전한 먹거리를 제공하는 일을 하고 있습니다. 현재 150개 지역 403개 업체에서 생산한 농수특산물과 가공식품 등 2,000여개 상품이 입점되어 있으며, 정기적인 입점 심사를 통해 상품 입점과 지원의 폭을 넓혀가고 있습니다.온라인(쇼핑몰), 오프라인(매장) 다양한 활동을 통해 지역과 동행을 확산하고 있습니다."
@@ -126483,6 +126502,343 @@
         "safe_mng": "ul"
       },
       "post_desc": "오랜 시간을 지나 지금까지 남아 있는 것들에는 저마다의 생명력이 있습니다. 작가 윤주동은 시간의 변화와 소멸 속에서도 본연의 아름다움을 간직한 존재들에 주목하며, 흙과 도자, 조각, 회화, 사진 등 다양한 매체를 통해 아름다움의 본질을 탐구해 왔습니다. 이번 전시는 작가가 오랜 시간 이어온 아름다움에 대한 사유를 하나의 주제로 모은 자리로, 조선백자의 상징적 형상인 달항아리를 중심으로 전통의 원형을 탐구하고 이를 동시대적 조형 언어로 확장해 온 예술적 여정을 조명합니다. 작가는 문헌 연구와 전국의 광산 및 가마터 답사를 통해 백토의 산지와 특성을 연구하고, 전통 달항아리의 형태와 제작 방식을 탐구하며 자신만의 조형 세계를 구축해 왔습니다. 전통의 재현을 새로운 창작의 출발점으로 삼는 작가는 달항아리의 형태를 변주한 반달항아리와 달접시, 달그릇 등 다양한 작업을 선보입니다. 과거와 현재, 비움과 채움, 분리와 결합의 관계를 통해 전통적 형상에 새로운 감각과 의미를 더합니다. 이번 전시는 시간을 견디며 남겨진 것들의 아름다움과 그 안에 축적된 생명력을 마주하는 자리입니다. 오래되었으나 낡지 않고, 시대를 건너와 여전히 새로운 아름다움을 만들어 내는 존재들. 작가 윤주동의 시선을 통해 시간 속에 남겨진 아름다움의 의미를 되새겨 봅니다."
+    }
+  },
+  "KOPgc0sr3": {
+    "updtDtText": "2026.11.26",
+    "detail": {
+      "cid": "KOPgc0sr3",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cr0q2v2",
+      "cate_depth": " 문화관광  > 전시시설 > 박물관",
+      "multi_lang_list": "ko:KOPgc0sr3,en:ENPgc0sr3,ja:JPPgc0sr3,zh-CN:CNPgc0sr3,zh-TW:TCPgc0sr3,ru:RUPgc0sr3,ms:MLPgc0sr3",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84390&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84390&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84391&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84392&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84393&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84394&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84395&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84391&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84392&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84393&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84394&fileTy=MEDIA&fileNo=1&thumbTy=M",
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84395&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "앰배서더박물관 의종관",
+      "sumry": "앰배서더 호텔 창업주 가족이 살던 집을 고쳐 우리나라 최초의 민영 호텔 '금수장'부터 이어진 호텔의 역사를 보여 주는 무료 박물관",
+      "creat_dt_text": "2026.11.24",
+      "updt_dt_text": "2026.11.26",
+      "tag": [
+        "장충동가볼만한곳",
+        "앰배서더박물관",
+        "의종관",
+        "호텔역사",
+        "금수장",
+        "무료박물관",
+        "동대입구역"
+      ],
+      "extra": {
+        "cmmn_telno": "02-2270-3140",
+        "cmmn_hmpg_url": "https://www.ambatel.com/ko/about/museum.do",
+        "cmmn_hmpg_lang": "한국어,영어",
+        "cmmn_use_time": "10:00-17:00 (입장 마감 16:30)",
+        "cmmn_important": "입장료 무료, 테라스에서 무료 커피 제공",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [],
+        "business_days": "화~금",
+        "closed_days": "월·토·일요일, 공휴일"
+      },
+      "traffic": {
+        "adres": "서울 중구 장충동2가 193-68",
+        "new_zip_code": "04618",
+        "new_adres": "서울 중구 동호로25길 38-5 (장충동2가)",
+        "map_position_x": "127.001731874358",
+        "map_position_y": "37.559578955008",
+        "subway_info": "지하철 3호선 동대입구역 6번출구, 435m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "앰배서더박물관 의종관은 앰배서더 서울 풀만 호텔 뒤편, 호텔 창업주 가족이 살던 집을 고쳐 만든 작은 박물관입니다. 1955년 '금수장'이라는 이름으로 문을 연 우리나라 최초의 민영 호텔이 오늘에 이르기까지 걸어온 역사를 살펴볼 수 있습니다. 2층 건물 안에는 옛 호텔 직원들이 입던 유니폼과 식기, 메뉴판, 사진 등이 전시되어 있어 수십 년 전 호텔 서비스의 모습을 생생하게 엿볼 수 있습니다. 계단을 따라 올라가면 장충동 풍경과 호텔 건물이 내려다보이는 넓은 테라스가 나오며, 커피도 무료로 제공됩니다. 입장료가 없어 장충동을 산책하다 가볍게 들르기 좋습니다."
+    }
+  },
+  "KOPyhohl3": {
+    "updtDtText": "2026.11.26",
+    "detail": {
+      "cid": "KOPyhohl3",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPyhohl3,en:ENPyhohl3,ja:JPPyhohl3,zh-CN:CNPyhohl3,zh-TW:TCPyhohl3,ru:RUPyhohl3",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84339&fileTy=MEDIA&fileNo=2&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84339&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84340&fileTy=MEDIA&fileNo=2&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84340&fileTy=MEDIA&fileNo=2&thumbTy=M"
+      ],
+      "post_sj": "제51회 대한민국전승공예대전",
+      "sumry": "반세기 넘는 역사 속에서 전통공예의 정통성을 잇고 미래를 이끌어갈 장인을 발굴해 온 대한민국전승공예대전의 가치와 성과를 선보이는 전시",
+      "schdul_info_bgnde": "2026.12.16",
+      "schdul_info_endde": "2026.12.24",
+      "place": "국가무형유산전수교육관 2, 3층 전시장 결, 올",
+      "creat_dt_text": "2026.11.23",
+      "updt_dt_text": "2026.11.26",
+      "tag": [
+        "대한민국전승공예대전",
+        "제51회대한민국전승공예대전",
+        "국가무형유산기능협회",
+        "국가유산청",
+        "문화체육관광부",
+        "한국문화예술위원회",
+        "국가유산진흥원",
+        "한국공예디자인문화진흥원",
+        "문화유산국민신탁",
+        "전승공예",
+        "전통공예"
+      ],
+      "extra": {
+        "cmmn_telno": "사무국 02-3453-1685~6",
+        "cmmn_hmpg_url": "http://www.kpicaa.co.kr/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "10:00 ~ 19:00",
+        "cmmn_important": "개막식 및 시상식: 2026년 12월 15일(화) 오후 2시, 국가무형유산전수교육관 1층 극장 「풍류」",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ]
+      },
+      "traffic": {
+        "adres": "서울 강남구 삼성동 112-2",
+        "new_zip_code": "06153",
+        "new_adres": "서울 강남구 봉은사로 406",
+        "new_adres2": " 국가무형유산전수교육관 2, 3층 전시장 결, 올 (삼성동 112-2)",
+        "map_position_x": "127.044719493024",
+        "map_position_y": "37.5100707800711",
+        "subway_info": "지하철 9호선/수인분당선 선정릉역 3번출구, 95m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "올해로 제51회를 맞이하는 대한민국전승공예대전은 반세기 넘는 역사 속에서 우리 전통공예의 정통성을 잇고 최고 권위의 장인들을 배출해 온 대표 공모전입니다. 급변하는 현대 사회 속에서 전통 기법과 장인정신을 온전히 보존하고 미래를 이끌어갈 유망 작가를 발굴·육성하며, 전통공예가 지닌 가치를 대중과 공유하여 지속 가능한 문화예술 생태계를 구축해 나가는 이번 전시에서 그 깊은 숨결을 마주하실 수 있습니다."
+    }
+  },
+  "KOP307eid": {
+    "updtDtText": "2026.11.26",
+    "detail": {
+      "cid": "KOP307eid",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP307eid,en:ENP307eid,ja:JPP307eid,zh-CN:CNP307eid,zh-TW:TCP307eid,ru:RUP307eid",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84343&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84344&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "《조르조 모란디》 GIORGIO MORANDI",
+      "sumry": "‘병의 화가’로 알려진 20세기 이탈리아 미술의 거장 조르조 모란디의 국내 최대 규모 특별전. 피렌체 우피치 미술관 소장 〈자화상〉 (1924) 국내 최초공개",
+      "schdul_info_bgnde": "2026.11.21",
+      "schdul_info_endde": "2027.03.01",
+      "place": "더현대 서울 6층 ALT.1(알트원)",
+      "creat_dt_text": "2026.11.23",
+      "updt_dt_text": "2026.11.26",
+      "tag": [
+        "모란디",
+        "GiorgioMorandi",
+        "더현대서울",
+        "ALT1",
+        "알트원",
+        "여의도전시",
+        "서울전시",
+        "겨울전시",
+        "조르조모란디"
+      ],
+      "extra": {
+        "cmmn_telno": "1533-2738",
+        "cmmn_hmpg_url": "https://www.instagram.com/haji_inc/",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "월~목 10:30~20:00 (입장마감 19:00)\r\n금~일·공휴일 10:30~20:30 (입장마감 19:30)",
+        "cmmn_important": "수 많은 이미지가 스쳐 지나가는 시대, 모란디가 일깨우는 깊이 바라보는 것의 가치",
+        "trrsrt_use_chrge": "C",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "closed_days": "백화점 휴점일 휴관",
+        "usage_fee": "[개인] 성인 (만 19 ~ 64세) : 24,000원\r\n[개인] 청소년 (만 13세 ~ 18세) : 19,000원 \r\n[개인] 어린이 (만 4세 ~ 12세) : 15,000원\r\n[단체] 성인 (만 19~64세) : 20,000원 \r\n[단체] 청소년 (만 13세 ~ 18세) : 15,000원 \r\n[단체] 어린이 (만 4세 ~ 12세) : 12,000원\r\n\r\n특별할인 : 14,000원 (만 65세 이상 본인, 장애인 중증(1-3급) 본인 및 동반 1인, 장애인 경증(4-5급) 본인 / 국가유공자, 의사상자, 국가유공자 유족, 의사상자 유족 본인) \r\n현대백화점 & H.POINT 앱 회원 25% 할인 (성인권 동반 1인까지/ 앱쿠폰)\r\n무료 : 48개월 미만 (보호자 동반 입장 시 적용, 증빙서류 지참)"
+      },
+      "traffic": {
+        "adres": "서울 영등포구 여의도동 22",
+        "new_zip_code": "07335",
+        "new_adres": "서울 영등포구 여의대로 108, 더현대 서울 6층 ALT.1",
+        "map_position_x": "126.929108448093",
+        "map_position_y": "37.5252014942155",
+        "subway_info": "지하철 5호선 여의나루역 1번출구, 450m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "20세기 이탈리아 미술의 거장 조르조 모란디(Giorgio Morandi, 1890–1964)의 국내 최대 규모 특별전 《조르조 모란디》가 2026년 11월 21일부터 2027년 3월 1일까지 더현대 서울 ALT.1에서 열립니다. 모란디는 평생 고향 볼로냐를 중심으로 활동하며 병과 그릇, 상자 등 일상적인 사물을 반복해서 그려 자신만의 독창적인 회화 세계를 구축한 화가입니다. 절제된 색채와 치밀한 구성으로 완성한 그의 작품은 현대미술 뿐 아니라 패션, 디자인, 건축 등 다양한 분야의 창작자들에게 영감을 주고 있습니다. BTS의 RM이 작품을 소장한 화가로도 알려져 있습니다. 이번 전시에서는 볼로냐 모란디 미술관의 주요 소장품을 중심으로 유화·수채화·드로잉·동판화 등 원작 80여 점을 선보입니다. 특히 피렌체 우피치 미술관 소장 <자화상>(1924)이 국내 최초로 공개되며, 모란디 특유의 색채와 구성이 돋보이는 정물화부터 꽃과 풍경을 그린 작품까지 폭넓게 만나볼 수 있습니다. 또한 모란디가 실제 사용했던 화구와 그림의 소재가 된 오브제를 작품과 나란히 전시해 그의 예술적 탐구와 창작의 흔적을 생생하게 보여줍니다. 관람 소요시간 약 90분, 전 연령 관람 가능."
+    }
+  },
+  "KOP6ohbo4": {
+    "updtDtText": "2026.11.26",
+    "detail": {
+      "cid": "KOP6ohbo4",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOP6ohbo4,en:ENP6ohbo4,ja:JPP6ohbo4,zh-CN:CNP6ohbo4,zh-TW:TCP6ohbo4,ru:RUP6ohbo4",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84330&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84331&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "다시, 보다",
+      "sumry": "23명의 신진작가가 참여하는 아트페어 형식으로 진행되어, 다채로운 동시대 작품들을 한자리에서 만나보고 소장하는 즐거움을 경험할 수 있는 아트보다 갤러리의 개관 기념 그룹전",
+      "schdul_info_bgnde": "2026.12.08",
+      "schdul_info_endde": "2026.12.31",
+      "place": "아트보다 갤러리",
+      "creat_dt_text": "2026.11.19",
+      "updt_dt_text": "2026.11.26",
+      "tag": [
+        "강남전시회추천",
+        "연말데이트",
+        "12월볼만한전시회",
+        "아트페어전시회",
+        "seoulexhibition",
+        "gangnamexhibition",
+        "artgift",
+        "서초동전시회"
+      ],
+      "extra": {
+        "cmmn_telno": "0507-1368-4645",
+        "cmmn_hmpg_url": "https://artbodagallery.com/202",
+        "cmmn_hmpg_lang": "한국어",
+        "cmmn_use_time": "12:30 ~ 18:00",
+        "cmmn_important": "영어 해설 가능",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": []
+      },
+      "traffic": {
+        "adres": "서울 서초구 서초동 1508-35",
+        "new_zip_code": "06659",
+        "new_adres": "서울 서초구 명달로22길 33-4 (서초동) B1",
+        "map_position_x": "127.006244271022",
+        "map_position_y": "37.4867485113912",
+        "subway_info": "지하철 2호선 서초역 3번출구, 690m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "서초동에 새롭게 문을 연 아트보다 갤러리의 개관 기념 그룹전입니다. 《다시, 보다》는 반가운 인연들과 다시 만나 소통하고, 익숙함 너머에 놓인 예술 본연의 가치와 작가들의 세계를 한층 깊게 바라보고자 기획되었습니다. 23명의 신진작가가 참여하는 아트페어 형식으로 진행되어, 다채로운 동시대 작품들을 한자리에서 만나보고 소장하는 즐거움을 경험할 수 있습니다."
+    }
+  },
+  "KOPvl5a85": {
+    "updtDtText": "2026.11.26",
+    "detail": {
+      "cid": "KOPvl5a85",
+      "lang_code_id": "ko",
+      "com_ctgry_sn": "Cg1x6l1",
+      "cate_depth": " 문화관광  > 전시시설",
+      "multi_lang_list": "ko:KOPvl5a85,en:ENPvl5a85,ja:JPPvl5a85,zh-CN:CNPvl5a85,zh-TW:TCPvl5a85,ru:RUPvl5a85",
+      "main_img": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84327&fileTy=MEDIA&fileNo=1&thumbTy=M",
+      "image_message": [
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84327&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        },
+        {
+          "url": "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84328&fileTy=MEDIA&fileNo=1&thumbTy=M",
+          "message": "내 단체만 사용가능"
+        }
+      ],
+      "relate_img": [
+        "https://api.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=84328&fileTy=MEDIA&fileNo=1&thumbTy=M"
+      ],
+      "post_sj": "2026 서울특별시 사진동호회 사진전",
+      "sumry": "올해 16번째를 맞은 사진전시회, 전·현직 공무원들이 담아낸 다채로운 사진 작품을 만나볼 수 있는 서울특별시 사진 동호회 정기 사진전 《머무른 시간, 흘러가는 시선》",
+      "schdul_info_bgnde": "2026.11.16",
+      "schdul_info_endde": "2026.12.02",
+      "place": "서울시청 본관 8층 하늘광장 갤러리",
+      "creat_dt_text": "2026.11.19",
+      "updt_dt_text": "2026.11.26",
+      "tag": [
+        "서울시청전시",
+        "하늘광장갤러리",
+        "서울특별시사진동호회",
+        "머무른시간흘러가는시선",
+        "서울무료전시",
+        "사진전",
+        "서울가볼만한곳",
+        "시청역전시"
+      ],
+      "extra": {
+        "cmmn_telno": "010-6391-5588 (사진동호회 회장), 02-120 (다산콜센터)",
+        "cmmn_use_time": "10:00~17:00",
+        "cmmn_important": "서울시청 9층 전망대와 연결되어 있어 도심 풍경과 함께 무료 사진 전시 관람 가능",
+        "trrsrt_use_chrge": "F",
+        "disabled_facility": [
+          "장애인화장실",
+          "장애인 전용 주차장",
+          "접근가능",
+          "엘리베이터",
+          "장애인 안내(휠체어 대여 및 기타)"
+        ],
+        "business_days": "매일 "
+      },
+      "traffic": {
+        "adres": "서울 중구 태평로1가 31",
+        "new_zip_code": "04524",
+        "new_adres": "서울 중구 세종대로 110 (태평로1가, 서울특별시청)",
+        "map_position_x": "126.977918351844",
+        "map_position_y": "37.566370776634",
+        "subway_info": "지하철 1호선/2호선 시청역 5번출구, 147m"
+      },
+      "tourist": {
+        "guidance_service": "ul",
+        "safe_mng": "ul"
+      },
+      "post_desc": "1989년 창립 이래 37주년을 맞은 서울특별시 사진 동호회가 정기 사진전 《머무른 시간, 흘러가는 시선》을 엽니다. 이번 전시는 전·현직 공무원들이 지난 1년간 체계적인 이론 교육과 야외 출사를 병행하며 담아낸 결실을 시민 및 국내외 관광객과 나누기 위해 마련됐습니다. 특히 개막에 앞서 13일 열린 사전 오프닝에서 만장일치로 추대된 김용암 신임 회장이 전시 총괄기획을 맡아 의미를 더했습니다. 현직 공직자의 생동감 있는 시선과 선배들의 깊이 있는 시선이 한 공간에 어우러지며, 전문가의 지도와 섬세한 보정·인화 작업을 거쳐 작품의 완성도를 높였습니다. 전시는 일일 최대 1,600여 명이 찾는 시청 본관 9층 전망대와 연결된 8층 하늘광장 갤러리에서 진행됩니다. 도심 산책길에 잠시 발걸음을 멈추고, 사진 속에 담긴 특별한 순간을 만나 일상에 작은 감동과 여유를 더해 보길 바랍니다."
     }
   }
 }
